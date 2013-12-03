@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--   <meta name="google-site-verification" content="aexITLS38FdIRzwj25OVWxm87rpa9l-UV0URTyC9cTs" /> -->
+  <title>
+    HTML & CSS 초보자 가이드 - 2강 : Elements & Semantics
+    
+    - Nolboo's Blog
+    
+  </title>
+  <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:700,400|Titillium+Web:700,400">
+  <link rel="stylesheet" href="/css/site.css">
+  <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+  <meta name="description" content="일단 코딩을 시작하게 되면 semantic 코딩을 반드시 원하게 될 것이다. semantic 코딩을 한다는 것은 코드를 잘 정리하고 풍부한 정보를 갖춘 결정도 할 수 있다는 것이다." />
+  <link rel="alternate" type="application/atom+xml" title="RSS Feed for Nolboo's blog" href="/feed.xml" />
+
+<!--    -->
+
+  
+</head>
+<body>
+  <div class="top-bar"></div>
+
+  <div class="container">
+    <div class="site">
+      <header>
+        <nav>
+          <a class="" href="/">Home</a>
+          <a class=" selected " href="/archive/">Archive</a>
+          <a class="" href="/trans/">번역글 모음</a>
+        </nav>
+        <div class="pull-right right logo">
+          <div class="name">
+            <a href="/">Nolboo's Blog</a><br />
+            <small>
+              <em>
+                  <a href="/">호모스터디쿠스를 꿈꾸는 놀부</a>
+              </em>
+            </small>
+          </div>
+          <!-- <img class="avatar" src="/images/sebastien_saunier.jpg" alt="My profile picture" /> -->
+        </div>
+        <div class="clear"></div>
+      </header>
+      <div class="separator"></div>
+      <article>
+  <h1>
+    HTML & CSS 초보자 가이드 - 2강 : Elements & Semantics
+  </h1>
+  <div class="center">
+    <p class="meta">22 Jul 2013</p>
+  </div>
+
+<!--    -->
+
+  <div class="post">
+  <p>원본 : <a href="http://learn.shayhowe.com/html-css/elements-semantics">A Beginner’s Guide to HTML &amp; CSS - LESSON 2 : Elements &amp; Semantics</a></p>
+
+<p>일단 코딩을 시작하게 되면 semantic 코딩을 반드시 원하게 될 것이다. semantic 코딩을 한다는 것은 코드를 잘 정리하고 풍부한 정보를 갖춘 결정도 할 수 있다는 것이다.</p>
+
+<h2>Semantics Overview(시맨틱 개요)</h2>
+
+<p>HTML에서 <a href="http://boagworld.com/dev/semantic-code-what-why-how/">Semantics</a>는 페이지의 의미와 구조 위에 컨텐츠를 올려놓는 것이다. 페이지에서 컨텐츠의 <strong>가치</strong>를 표현하며, 스타일링 목적으로**만 사용되진 않는다**. semantic 코딩은 웹 페이지를 적절히 읽고 이해하는 능력을 컴퓨터, 스크린 리더, 검색엔진이나 다른 기기들에게 제공하는 등의 이점을 제공한다. 게다가 semnatic 코드는 각 컨텐츠의 특성을 명확하게 알 수 있어 관리하거나 일하는 것이 더 쉽다.  </p>
+
+<p>역자 참고링크:</p>
+
+<ul>
+<li><a href="http://m.mkexdev.net/77">HTML5 : 의미있는 문서, 시맨틱(SEMANTIC) 요소</a></li>
+<li><a href="http://ko.wikipedia.org/wiki/%EC%8B%9C%EB%A7%A8%ED%8B%B1_%EC%9B%B9">시맨틱 웹</a></li>
+</ul>
+
+<h2>Divisions &amp; Spans</h2>
+
+<p>div(division)와 span은 켄텐츠의 컨테이너로 작동되는 HTML 엘리먼트다. p(paragraph)는 단락을 나타내는 시멘틱 엘리먼트이지만 div와 span은 그런 의미를 가지지않는 단순한 컨테이너다. 그러나, CSS 스타일링을 세부적으로 지정할 수 있기 때문에 는 웹사이트 제작 시 매우 쓸모있는 것이다.</p>
+
+<p>div는 웹 사이트의 큰 섹션을 정의하는 데에 주로 사용되는 블럭 엘리먼트이며, 레이아웃과 디자인을 만드는 것을 도와준다. 한편, span은 문단(p)과 같은 블럭 엘리먼트 안의 일부 텍스트 부분을 정의하는 데에 주로 사용되는 inline 엘리먼트다.</p>
+
+<blockquote>
+<h4>Block vs. Inline Elements</h4>
+
+<p>모든 엘리먼트는 블럭 또는 inline 엘리먼트다. 그 차이점은?</p>
+
+<p><strong>블럭 엘리먼트</strong>는 페이지의 새로운 줄에 시작되며, 가능한 최대의 너비를 갖는다. inline 레벨 엘리먼트 뿐만 아니라 다른 블럭 엘리먼트도 포함할 수 있다.</p>
+
+<p><strong>inline 엘리먼트</strong>는 새로운 줄에서 시작되지 않으며, 문서의 흐름을 따르고 필요한 너비만을 가진다. 블럭 엘리먼트를 포함할 수 없으나 다른 inline 엘리먼트를 포함할 수는 있다.</p>
+</blockquote>
+
+<p>div와 span은 class나 id를 주어 값을 더해줄 수 있다. class와 id는 대체로 스타일링 목적으로 사용되거나 다른 div, span과의 차이를 나타낼 수 있다. 그러므로 클래스나 id 이름은 semantic하게 선택하는 것이 중요하다.</p>
+
+<p>예를 들면, 오렌지 배경색를 가진 소셜미디어 링크를 “orange” 클래스로 이름을 주게되면, 나중에 배경색이 파란색으로 바뀌면 “orange” 클래스는 더 이상 의미가 없어진다. 좀 더 낫게 시멘틱한 클래스 이름은 <code>div</code> 스타일이 아닌 컨텐츠에 적합한 “social”이 될 것이다.</p>
+<div class="highlight"><pre><code class="html language-html" data-lang="html"><span class="c">&lt;!-- div --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;social&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;p&gt;</span>Lorem ipsum dolor sit amet...<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;p&gt;</span>Lorem ipsum dolor sit amet...<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="c">&lt;!-- span --&gt;</span>
+<span class="nt">&lt;p&gt;</span>Lorem ipsum dolor sit amet, <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;tooltip&quot;</span><span class="nt">&gt;</span>consectetur<span class="nt">&lt;/span&gt;</span> elit.<span class="nt">&lt;/p&gt;</span>
+</code></pre></div>
+<h2>Typography</h2>
+
+<p>온라인 컨텐츠의 아주 많은 부분은 문자 위주다.</p>
+
+<h3>Headings</h3>
+
+<p>블럭 엘리먼트이며 <code>h1</code>~<code>h6</code>까지 6개이다. <code>h1</code>은 페이지나 섹션의 주 헤딩으로 쓰여야 하며, 보조적 헤딩으로 <code>h2</code>가 필요할 때 쓰여져야 한다. 텍스트를 굵게하거나 크게하기 위해 쓰여져서는 안된다.</p>
+<div class="highlight"><pre><code class="html language-html" data-lang="html"><span class="nt">&lt;h1&gt;</span>This is a Level 1 Heading<span class="nt">&lt;/h1&gt;</span>
+<span class="nt">&lt;h2&gt;</span>This is a Level 2 Heading<span class="nt">&lt;/h2&gt;</span>
+<span class="nt">&lt;h3&gt;</span>This is a Level 3 Heading<span class="nt">&lt;/h3&gt;</span>
+</code></pre></div>
+<blockquote>
+<h4>Headings Demo</h4>
+
+<h2>This is a Level 2 Heading ### This is a Level 3 Heading</h2>
+</blockquote>
+
+<h3>Paragraphs</h3>
+
+<p><code>p</code> 블럭 엘리먼트로 정의한다</p>
+
+<h3>Bold Text with Strong</h3>
+
+<p><code>strong</code>과 <code>b</code>는 모두 텍스트를 굵은체로 표시한다. 둘의 <a href="http://html5doctor.com/i-b-em-strong-element/">semantic 차이</a>를 이해하는 것이 중요하다. <code>strong</code>은 중요하여 강조하는 굵은 체이며, <code>b</code>는 스타일 상 굵은 체이나 항상 주목받는 텍스트는 아니다.</p>
+
+<h3>Italicize Text with Emphasis</h3>
+
+<p><code>em</code>과 <code>i</code>의 차이도 거의 ditto다.</p>
+
+<h2>Hyperlinks(하이퍼링크)</h2>
+
+<p><code>a</code>(nchor) inline 엘리먼트로 정의되며 <code>href</code>(hyperlink reference)로 링크의 목적지를 정한다.</p>
+
+<p>HTML5에서는 <code>a</code> inline 엘리먼트가 블럭 또는 inline 레벨 엘리먼트를 포함할 수 있게 되어, 페이지의 컨텐츠 블럭 전체를 링크할 수 있다.</p>
+
+<h3>Relative &amp; Absolute Paths(상대주소와 절대주소)</h3>
+
+<p>링크의 일반적인 두가지 형태는 한 웹사이트 안에서 <em>다른 페이지_로의 링크와 _다른 웹사이트</em>로의 링크다.</p>
+
+<p>같은 웹사이트 안의 다른 페이지로 링크를 <strong>상대주소</strong>라고 하며, <code>href</code> 속성값에 <code>/about.html</code>과 같이 도메인이 없다. 서브디렉토리를 지정하려면 <code>/page/about.html</code>과 같이 한다.</p>
+
+<p>다른 웹사이트로 링크하려면 <strong>절대주소</strong>가 필요하며, <code>href</code> 속성값에 <code>http</code>와 <code>.com</code> 등의 전체 도메인이 포함되어야 한다.</p>
+<div class="highlight"><pre><code class="html language-html" data-lang="html"><span class="c">&lt;!-- Relative Path --&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;/about.html&quot;</span><span class="nt">&gt;</span>About<span class="nt">&lt;/a&gt;</span>
+
+<span class="c">&lt;!-- Absolute Path --&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;http://www.google.com/&quot;</span><span class="nt">&gt;</span>Google<span class="nt">&lt;/a&gt;</span>
+</code></pre></div>
+<h3>Linking to an Email Address(이메일 링크)</h3>
+
+<p>이메일 링크를 만들려면 <code>href</code> 속성값에 <code>mailto:</code>로 시작되는 이메일 주소를 준다.</p>
+
+<p>추가적으로 이메일의 제목과 본문도 줄 수 있다. 제목은 추가하려면 이메일 주소 바로 뒤 패러미터(<code>?</code> 바로 뒤에 위치)로 <code>subject=</code>로 지정하며 여러 단어를 사용할 경우에는 빈칸으로 해석되는 <code>%20</code>을 사용하여 나열할 수 있다. 본문을 추가하려면 <code>body=</code> 패터미터를 사용한다. 마찬가지로 빈칸은 <code>%20</code>을 사용하고 줄바꿈은 <code>%0A</code>를 사용한다.</p>
+
+<p>여러 개의 이메일 주소, cc, bcc 패러미터 등을 추가하는 방법은 <a href="http://yoast.com/guide-mailto-links/">The Full mailto Link Syntax</a>를 참조.</p>
+<div class="highlight"><pre><code class="html language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;mailto:shay@awesome.com?subject=Still%20Awesome&amp;body=This%20is%20awesome&quot;</span><span class="nt">&gt;</span>Email Me<span class="nt">&lt;/a&gt;</span>
+</code></pre></div>
+<h3>Opening Links in a New Window(새 창으로 링크 열기)</h3>
+
+<p>아래와 같이 <code>target</code> 속성에 <code>_blank</code>값을 준다.</p>
+<div class="highlight"><pre><code class="html language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;http://shayhowe.com/&quot;</span> <span class="na">target=</span><span class="s">&quot;_blank&quot;</span><span class="nt">&gt;</span>Shay Howe<span class="nt">&lt;/a&gt;</span>
+</code></pre></div>
+<h3>Linking to Elements within the Same Page(같은 페이지 내의 엘리먼트 링크)</h3>
+
+<p>아래와 같이 링크하기를 원하는 엘리먼트에 ID를 지정하고 <code>href</code>의 속성값을로 그 ID를 사용한다.</p>
+<div class="highlight"><pre><code class="html language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#awesome&quot;</span><span class="nt">&gt;</span>Awesome<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;awesome&quot;</span><span class="nt">&gt;</span>Awesome Section<span class="nt">&lt;/div&gt;</span>
+</code></pre></div>
+<h2>HTML5 Structural Elements(HTML5 구조 엘리먼트)</h2>
+
+<p>HTML5에서는 좀 더 시맨틱한 코드를 허용하는 몇 개의 새로운 블럭 엘리먼트가 제공된다.</p>
+
+<p><img src="http://learn.shayhowe.com/assets/courses/html-css-guide/elements-semantics/html5.png" alt="HTML5 Document Structure"></p>
+
+<p><strong>Fig. 2.01</strong> The new HTML5 structural elements outline.</p>
+
+<p><code>header</code>는 페이지, article, section 혹은 페이지의 세그먼트의 머리 부분을 정의한다. 일반적으로 헤딩, 도입 구문, 네비게이션을 포함하기도 한다. 한 페이지에 한 개 이상의 <code>header</code>를 사용할 수 있다. 페이지의 시작에 <code>header</code>를 포함하는 것이 이상적이나 구자거으로 article의 헤더나 섹션에 필요한 만큼 사용할 수 있다.</p>
+
+<blockquote>
+<p><code>header</code> 엘리먼트는 <code>head</code> 또는 <code>h1</code> ~ <code>h6</code>의 heading과 혼동하면 안된다.</p>
+
+<p><code>header</code> 엘리먼트는 <code>body</code> 엘리먼트에 포함되는 페이지 헤딩을 잡아주는 구조적 엘리먼트다. <code>head</code> 엘리먼트는 페이지에 표시되지 않으며 메타데이터, 도큐먼트 제목, 외부 화일 링크 등의 정보를 지정하기 위해 사용된다.</p>
+
+<p><code>h1</code> ~ <code>h6</code>의 heading은 페이지에 걸친 텍스트 헤딩의 여러 단계를 표현하기 위해 사용된다.</p>
+</blockquote>
+
+<h3>Navigation</h3>
+
+<p><code>nav</code>는 웹사이트의 주요 항해 링크들을 하나로 모은 블럭 엘리먼트다.</p>
+<div class="highlight"><pre><code class="html language-html" data-lang="html"><span class="nt">&lt;nav&gt;</span>
+  <span class="nt">&lt;ul&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>...<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>...<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;/nav&gt;</span>
+</code></pre></div>
+<h3>Article</h3>
+
+<p><code>article</code>은 <code>div</code>나 <code>section</code>과 매우 유사한 블럭 엘리먼트이나 독립적으로 분배되거나 재사용할 수 있는 컨텐츠를 특별히 지정한다. 대부분의 경우 <code>article</code>은 블로그나 퍼블리싱 웹사이트 내의 공개된 컨텐츠를 정의한다. <code>article</code> 안의 컨텐츠는 RSS 피드 컨텐츠와 같이 다른 곳에 배포될 수 있어야 한다.</p>
+
+<h3>Section</h3>
+
+<p><code>section</code>은 <code>article</code>보다는 <code>div</code>와 좀 더 혼동될 수 있다. <code>section</code>은 일반 도큐멘트 혹은 앱의 섹션을 정의한다. <code>section</code>은 스타일링이나 스크립팅의 편의를 위해 사용되지 않는 것이 <code>div</code>와의 차이점이다.</p>
+
+<p><code>section</code>에 스타일을 적용할 수 있으나, 스타일 적용만을 목적으로 사용되지 않는다.</p>
+
+<blockquote>
+<h4>Deciding When to Use a section or div</h4>
+
+<p><code>div</code>와 대비하여 <code>section</code>을 사용하기를 결정하는 가장 좋은 방법은 실제 컨텐츠를 보는 것이다. 만약 컨텐츠 블럭이 데이타베이스 안의 레코드로 존재하고 CSS 스타일링 훅이 명백히 필요하지 않다면 <code>section</code> 엘리먼트가 가장 좋을 것이다. 섹션은 페이지를 나누기 위해 사용되어져야 하며, 자연스런 계층을 제공하고 대부분 적절한 헤딩이 가지고 있다.</p>
+
+<p>반면 <code>div</code>는 컨텐츠 블럭에 스타일을 적용할 때 사용될 수 있다. 예를 들면 한 쌍의 문단이 페이지의 나머지 컨텐츠보다 두드러질 필요가 있다면 그것들을 <code>div</code>로 감싸고 백그라운드, 보더와 같은 적절한 스타일을 주어야 한다.</p>
+</blockquote>
+
+<h3>Aside</h3>
+
+<p><code>aside</code>는 도큐멘트나 섹션과 관련된 컨텐츠를 정의하는 블럭 엘리먼트이며, 필요하다면 한 페이지에서 여러번 사용될 수 있다.</p>
+
+<p>좌우로 위치시키려면 <code>aside</code> 엘리먼트를 <code>float</code>하는 것이 필요하고 이는 나중에 <a href="http://learn.shayhowe.com/html-css/box-model">floating and positioning</a> 에서 배울 것이다.</p>
+
+<h3>Footer</h3>
+
+<p><code>footer</code>는 <code>header</code>와 동일하나 페이지, article, section이나 다른 페이지 세그먼트의 아래 부분을 위한 것이다.</p>
+
+<h2>D.R.Y. – Don’t Repeat Yourself</h2>
+
+<p>개발의 원칙 중 하나는 코드를 여러번 되풀이하지 말라는 D.R.Y.이다. CSS에서는 계속해서 같은 스타일을 지속적으로 코딩하기 쉽기 때문에 이 원칙은 많은 걸 말해준다. 절대 하지 마라. CSS는 스타일을 적용하고 상속하기 쉽게 하도록 cascade와 class를 허락하게 디자인되어 있다. 최종 목표는 깨끗하고 가벼운 코드를 쓰고 시맨틱하고 쉽게 관리되는 것이다.</p>
+
+<h2>Resources &amp; Links</h2>
+
+<ul>
+<li><a href="http://boagworld.com/dev/semantic-code-what-why-how/">Semantic code: What? Why? How?</a> via Boagworld</li>
+<li><a href="http://html5doctor.com/">HTML5 Doctor</a></li>
+<li><a href="http://html5doctor.com/i-b-em-strong-element/">The i, b, em, &amp; strong Elements</a> via HTML5 Doctor</li>
+<li><a href="http://yoast.com/guide-mailto-links/">The Full mailto Link Syntax</a> via Joost de Valk</li>
+<li><a href="http://dev.opera.com/articles/view/new-structural-elements-in-html5/">New Structural Elements in HTML5</a> via Dev.Opera</li>
+</ul>
+
+  </div>
+</article>
+
+<section class="post-footer">
+  <a href="/feed.xml" class="pull-right">
+    <img src="/images/rss.jpg" alt="RSS" />
+  </a>
+</section>
+
+<div class="separator"></div>
+
+<section class="comments">
+  <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'nolboo'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+      <div class="separator"></div>
+    </div>
+  </div>
+
+  <div class="clear"></div>
+
+  <footer>
+    <p>
+      Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a>,
+      hosted on <a href="http://pages.github.com/">Github Pages</a>
+      | Template inspired by <a href="http://sebastien.saunier.me/">sebastien.saunier.me</a>
+    </p>
+    <ul class="links">
+      <!-- <li><a href="https://github.com/nolboo" title="Show me the code"><i class="icon-github"></i></a></li> -->
+      <li><a href="https://twitter.com/n0lb00" title="follow me"><i class="icon-twitter"></i></a></li>
+      <li><a href="mailto:nolboo.kim@gmail.com" title="AMA"><i class="icon-sparrow"></i></a></li>
+    </ul>
+  </footer>
+
+  <script type="text/javascript">
+    // var _gaq = _gaq || [];
+    // _gaq.push(['_setAccount', 'GOOGLE-ANALYTICS-TRACK-ID']);
+    // _gaq.push(['_trackPageview']);
+
+    // (function() {
+    //   var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    //   ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    //   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    // })();
+
+    // /*!
+    //  * http://github.com/ssaunier/track-outbound-links
+    //  * Copyright 2013 Sébastien Saunier
+    //  * @license MIT
+    //  */
+    // !function(e,t){function n(){for(var n=t.getElementsByTagName("a"),a=[],r=0;r<n.length;++r){var o=n[r];o.host!=e.location.host&&a.push(o)}return a}function a(n){for(var a=n.srcElement||n.target;a&&("undefined"==typeof a.tagName||"a"!=a.tagName.toLowerCase()||!a.href);)a=a.parentNode;a&&a.href&&(e._gaq&&_gaq.push(["_trackEvent","Outbound link","Click",a.href]),(!a.target||a.target.match(/^_(self|parent|top)$/i))&&(setTimeout(function(){t.location.href=a.href},150),n.preventDefault?n.preventDefault():n.returnValue=!1))}e.addEventListener("load",function(){var e=n();for(var t in e)e[t].addEventListener("click",a)})}(window,document);
+  </script>
+
+  
+</body>
+</html>

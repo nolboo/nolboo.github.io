@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--   <meta name="google-site-verification" content="aexITLS38FdIRzwj25OVWxm87rpa9l-UV0URTyC9cTs" /> -->
+  <title>
+    깃허브로 협업하는 법
+    
+    - Nolboo's Blog
+    
+  </title>
+  <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:700,400|Titillium+Web:700,400">
+  <link rel="stylesheet" href="/css/site.css">
+  <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+  <meta name="description" content="오픈소스에 공헌하기 위해서 git의 사용은 필수적이다. git의 협업 부분을 위주로 설명한 글의 번역" />
+  <link rel="alternate" type="application/atom+xml" title="RSS Feed for Nolboo's blog" href="/feed.xml" />
+
+<!--    -->
+
+  
+</head>
+<body>
+  <div class="top-bar"></div>
+
+  <div class="container">
+    <div class="site">
+      <header>
+        <nav>
+          <a class="" href="/">Home</a>
+          <a class=" selected " href="/archive/">Archive</a>
+          <a class="" href="/trans/">번역글 모음</a>
+        </nav>
+        <div class="pull-right right logo">
+          <div class="name">
+            <a href="/">Nolboo's Blog</a><br />
+            <small>
+              <em>
+                  <a href="/">호모스터디쿠스를 꿈꾸는 놀부</a>
+              </em>
+            </small>
+          </div>
+          <!-- <img class="avatar" src="/images/sebastien_saunier.jpg" alt="My profile picture" /> -->
+        </div>
+        <div class="clear"></div>
+      </header>
+      <div class="separator"></div>
+      <article>
+  <h1>
+    깃허브로 협업하는 법
+  </h1>
+  <div class="center">
+    <p class="meta">29 Aug 2013</p>
+  </div>
+
+<!--    -->
+
+  <div class="post">
+  <p>원문 : <a href="http://net.tutsplus.com/tutorials/tools-and-tips/how-to-collaborate-on-github/">How to Collaborate On GitHub</a></p>
+
+<p>필요한 부분만 완전 요약하여 번역하였으니 원문을 반드시 참조하세요!</p>
+
+<h2>Learn the Ecosystem of the Project</h2>
+
+<p>공헌하기 위해서는 프로젝트와 관련된 모든 문서를 읽어라. 예를 들면, 깃허브는 표준화된 <code>CONTRIBUTING.md</code>를 가지고 있다. <a href="https://github.com/jquery/jquery/blob/master/CONTRIBUTING.md">jQuery 공헌 가이드</a>는 완벽한 예제이다. 프로젝트 생태계를 이해하는 또 다른 방법은 기존 코드베이스와 <code>git log</code>를 살펴보는 것이다. 프로젝트의 문서를 전부 읽고 어휘를 습득하라.</p>
+
+<h2>The Pull-Request Workflow for Code Contribution</h2>
+
+<p>깃허브의 일반적인 워크플로우는 꽤 단순하다.</p>
+
+<ol>
+<li>자신의 계정으로 target 저장소를 fork한다. </li>
+<li>로컬 컴퓨터에 저장소를 clone한다. </li>
+<li>“topic 브랜치”로 check out하고 소스를 변경한다. </li>
+<li>자신의 fork에 topic 브랜치를 push한다. </li>
+<li>토론을 통해 pull request를 만들기위해 깃허브의 diff 뷰어를 사용한다. </li>
+<li>요청된 변경을 만든다. </li>
+<li>pull 요청이 (보통 master 브랜치 안으로) merge되고 topic 브랜치는 upstream(target) 저장소에서 지워진다.</li>
+</ol>
+
+<p>워크플로우에서 각 프로젝트마다 많은 차이가 있다. 예로, topic 브랜치의 이름 규약은 서로 다르다. 어떤 프로젝트는 깃허브 이슈의 ID #가 345일 때 <code>bug_345</code>와 같은 규약을 사용한다. 어떤 프로젝트에선 더 짧은 커밋 메시지를 선호한다.</p>
+
+<h3>Step 1: Forking</h3>
+
+<p>깃허브에서 저장소를 fork한다.</p>
+
+<p><img src="http://cdn.tutsplus.com/net.tutsplus.com/uploads/2013/08/github_header.png" alt=""></p>
+
+<p><img src="http://cdn.tutsplus.com/net.tutsplus.com/uploads/2013/08/forking.png" alt=""></p>
+
+<h3>Step 2: Cloning</h3>
+
+<p>우측 사이드바의 URL을 사용하여 저장소를 clone한다.</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">git clone git@github.com:jcutrell/jquery.git
+</code></pre></div>
+<p><img src="http://cdn.tutsplus.com/net.tutsplus.com/uploads/2013/08/clone_url.png" alt=""></p>
+
+<h3>Step 3: Adding the Upstream Remote</h3>
+
+<p>클론한 디렉토리로 변경하고, 이 지점에서 upstream remote를 추가한다.</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">cd jquery
+git remote add upstream git@github.com:jquery/jquery.git
+</code></pre></div>
+<p>이렇게 하면 로컬에서 소스 변경을 Pull하고 merge할 수 있다. 이렇게:</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">git fetch upstream
+git merge upstream/master
+</code></pre></div>
+<h3>Step 4: Checking Out a Topic Branch</h3>
+
+<p>자신의 변경사항을 만들기 전에, topic 브랜치로 checkout한다.</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">git checkout -b enhancement_345
+</code></pre></div>
+<h3>Step 5: Committing</h3>
+
+<p>이제 소스를 변경하고 변경에 대한 추적하는 커밋을 만든다.</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">git commit -am &quot;adding a smileyface to the documentation.&quot;
+</code></pre></div>
+<h3>Step 6: Pushing</h3>
+
+<p>자신의 fork에 topic 브랜치를 push한다.</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">git push origin enhancment_345
+</code></pre></div>
+<h3>Step 7: Creating a Pull Request</h3>
+
+<p>최종적으로 pull 요청을 만들 것이다. 먼저 자신의 fork로 간다. “your recently pushed branches”에서 “Compare and Pull Request”를 선택한다. 그렇지 않으면 뜨랍다운에서 브랜치를 선택하고, 저장소 섹션의 우상에 있는 “Pull Request” 나 “Compare”를 클릭한다.</p>
+
+<p><img src="http://cdn.tutsplus.com/net.tutsplus.com/uploads/2013/08/compare_pull_request.png" alt=""></p>
+
+<p><img src="http://cdn.tutsplus.com/net.tutsplus.com/uploads/2013/08/switch_branches.png" alt=""></p>
+
+<p><a href="http://zachholman.com/talk/how-github-uses-github-to-build-github/">“How GitHub Uses GitHub to Build GitHub”</a>에 따르면 pull 요청은 대화이다.</p>
+
+<h2>GitHub Issues %2B Pull Requests = Project Management Zen</h2>
+
+<p>이슈의 가장 놀라운 특징은 pull 요청과의 통합이다. 사용자는 키밋 메시지에 이슈 숫자 IO를 포함하여 커밋 메시지에서 이슈를 참조할 수 있다. 예를 들면:</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">git commit -am &quot;Adding a header; fixes #3&quot;
+</code></pre></div>
+<p>위의 커밋 메시지는 pull 요청이 받아들여지면 이슈 #3를 자동으로 닫는다.</p>
+
+<h2>Seek Out Secondary Channels of Collaboration</h2>
+
+<p>pull 요청만이 공헌할 수 있는 유일한 방법이라고 생각하지 마라. 포럼이나 IRC 대화에서도 가능하다.</p>
+
+  </div>
+</article>
+
+<section class="post-footer">
+  <a href="/feed.xml" class="pull-right">
+    <img src="/images/rss.jpg" alt="RSS" />
+  </a>
+</section>
+
+<div class="separator"></div>
+
+<section class="comments">
+  <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'nolboo'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+      <div class="separator"></div>
+    </div>
+  </div>
+
+  <div class="clear"></div>
+
+  <footer>
+    <p>
+      Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a>,
+      hosted on <a href="http://pages.github.com/">Github Pages</a>
+      | Template inspired by <a href="http://sebastien.saunier.me/">sebastien.saunier.me</a>
+    </p>
+    <ul class="links">
+      <!-- <li><a href="https://github.com/nolboo" title="Show me the code"><i class="icon-github"></i></a></li> -->
+      <li><a href="https://twitter.com/n0lb00" title="follow me"><i class="icon-twitter"></i></a></li>
+      <li><a href="mailto:nolboo.kim@gmail.com" title="AMA"><i class="icon-sparrow"></i></a></li>
+    </ul>
+  </footer>
+
+  <script type="text/javascript">
+    // var _gaq = _gaq || [];
+    // _gaq.push(['_setAccount', 'GOOGLE-ANALYTICS-TRACK-ID']);
+    // _gaq.push(['_trackPageview']);
+
+    // (function() {
+    //   var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    //   ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    //   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    // })();
+
+    // /*!
+    //  * http://github.com/ssaunier/track-outbound-links
+    //  * Copyright 2013 Sébastien Saunier
+    //  * @license MIT
+    //  */
+    // !function(e,t){function n(){for(var n=t.getElementsByTagName("a"),a=[],r=0;r<n.length;++r){var o=n[r];o.host!=e.location.host&&a.push(o)}return a}function a(n){for(var a=n.srcElement||n.target;a&&("undefined"==typeof a.tagName||"a"!=a.tagName.toLowerCase()||!a.href);)a=a.parentNode;a&&a.href&&(e._gaq&&_gaq.push(["_trackEvent","Outbound link","Click",a.href]),(!a.target||a.target.match(/^_(self|parent|top)$/i))&&(setTimeout(function(){t.location.href=a.href},150),n.preventDefault?n.preventDefault():n.returnValue=!1))}e.addEventListener("load",function(){var e=n();for(var t in e)e[t].addEventListener("click",a)})}(window,document);
+  </script>
+
+  
+</body>
+</html>

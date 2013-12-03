@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--   <meta name="google-site-verification" content="aexITLS38FdIRzwj25OVWxm87rpa9l-UV0URTyC9cTs" /> -->
+  <title>
+    부트스트랩 3에서 새롭게 바뀐 것
+    
+    - Nolboo's Blog
+    
+  </title>
+  <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:700,400|Titillium+Web:700,400">
+  <link rel="stylesheet" href="/css/site.css">
+  <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+  <meta name="description" content="모바일 퍼스트를 주장하고 나온 트위터 부트스트랩 3에서 새로워진 부분을 모아서 잘 설명한 글의 번역" />
+  <link rel="alternate" type="application/atom+xml" title="RSS Feed for Nolboo's blog" href="/feed.xml" />
+
+<!--    -->
+
+  
+</head>
+<body>
+  <div class="top-bar"></div>
+
+  <div class="container">
+    <div class="site">
+      <header>
+        <nav>
+          <a class="" href="/">Home</a>
+          <a class=" selected " href="/archive/">Archive</a>
+          <a class="" href="/trans/">번역글 모음</a>
+        </nav>
+        <div class="pull-right right logo">
+          <div class="name">
+            <a href="/">Nolboo's Blog</a><br />
+            <small>
+              <em>
+                  <a href="/">호모스터디쿠스를 꿈꾸는 놀부</a>
+              </em>
+            </small>
+          </div>
+          <!-- <img class="avatar" src="/images/sebastien_saunier.jpg" alt="My profile picture" /> -->
+        </div>
+        <div class="clear"></div>
+      </header>
+      <div class="separator"></div>
+      <article>
+  <h1>
+    부트스트랩 3에서 새롭게 바뀐 것
+  </h1>
+  <div class="center">
+    <p class="meta">17 Sep 2013</p>
+  </div>
+
+<!--    -->
+
+  <div class="post">
+  <p>원문 : <a href="http://julienrenaux.fr/2013/08/11/whats-new-in-twitter-bootstrap-3/">What’s new in Twitter Bootstrap 3?</a></p>
+
+<h2>Scaffolding</h2>
+
+<ul>
+<li>모바일 퍼스트, 반응형 12행 그리드</li>
+</ul>
+
+<h2>그리드 시스템</h2>
+
+<p><code>.span*</code>에서 <code>.col-xs</code>, <code>.col-sm-*</code>, <code>.col-md-*</code>, <code>.col-lg-*</code>로 변경. 디폴트로 fluid이므로 <code>.container-fluid</code>와 <code>.row-fluid</code>은 제거.</p>
+
+<p>모바일, 태블릿, 테스트탑에서 그리드 예제:</p>
+<div class="highlight"><pre><code class="html language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;row&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;col-xs-6 col-sm-6 col-md-6 col-lg-6&quot;</span><span class="nt">&gt;</span>6<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;col-xs-6 col-sm-6 col-md-6 col-lg-6&quot;</span><span class="nt">&gt;</span>6<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div>
+<h2>반응형 디자인</h2>
+
+<h3>반응형 이미지</h3>
+
+<p>구글 맵스와 <a href="https://github.com/twbs/bootstrap/issues/1552">문제</a>가 있었는데, BS3에선 <code>.img-responsive</code> 클래스를 넣어 해결했다. 이 클래스는 이미지에 <code>max-width: 100%;</code>와 <code>height: auto;</code>를 적용하여 부모 엘리먼트에 따라 크기가 달라진다.</p>
+
+<h3>반응형 유틸리티</h3>
+
+<p><code>.visible-xs</code>, <code>.visible-sm</code>, <code>.visible-md</code>, <code>.visible-lg</code> 4개의 클래스로 크기별로 보이거나, <code>.hidden-xs</code>, <code>.hidden-sm</code>, <code>.hidden-md</code>, <code>.hidden-lg</code> 클래스로 숨길 수 있다.</p>
+
+<h2>CSS</h2>
+
+<p>글로발 CSS 설정, 기본 HTML 엘리먼트 스타일링 <code>*zoom: 1</code>, <code>-moz-box-shadow</code> 등의 hack을 없애고 IE7과 파이어폭스 3.6을 지원하지 않는다.</p>
+
+<h3>Typography</h3>
+
+<p>헤딩, 리스트, 텍스트 클래스명이 좀 더 일관성있게 되었다. 예: <code>.list-unstyled</code>, <code>.list-inline</code>, <code>.text-muted</code>, <code>.h1</code>, <code>.h2</code>, <code>.h3</code> 등을 사용</p>
+
+<h3>테이블</h3>
+
+<p>기본적으로 <code>&lt;table&gt;</code>에 스타일링하지 않으며, <code>.table</code>을 사용하여 기본 스타일링을 한다. <code>.table-hover</code>로 마우스 오버했을 때와 같이 <code>.active</code>로 열을 하일라이트할 수 있다.</p>
+
+<h3>Forms</h3>
+
+<p><code>.input-prepend</code>, <code>.input-append</code>를 사용하지 않고 <code>input-group</code>을 사용한다. 수평폼도 모바일 퍼스트이므로, 768px 보다 작은 화면에서는 그냥 쌓인다. <em><code>.form-control</code>과 함께 <code>&lt;input&gt;</code>, <code>&lt;textarea&gt;</code>, <code>&lt;select&gt;</code> 엘리먼트는 기본적으로 <code>width: 100%;</code>로 설정된다.</em></p>
+
+<p><code>.radio-inline</code>은 그대로이고 <code>.form-group</code>이 추가되었으며, 다음은 없어졌다:</p>
+
+<ul>
+<li>.inline-help</li>
+<li>.help-inline</li>
+<li>.uneditable-input</li>
+<li>.form-search</li>
+<li>.input-block-level</li>
+<li>.controls-row</li>
+<li>.input-prepend</li>
+<li>.input-append</li>
+</ul>
+
+<h4>Height sizing</h4>
+
+<p><code>.input-small</code>, <code>.input-large</code> 등을 사용할 때 버튼 크기에 따라 폼의 높이도 변경된다.</p>
+
+<h3>Buttons</h3>
+
+<p>기본 버튼도 <code>.button-default</code>가 필요하며, <code>.btn-inverse</code>는 없어졌다. 나머지 버튼 크기는 <code>btn-xs</code>, <code>.btn-sm</code>, <code>.btn-lg</code>로 바뀌었다.</p>
+
+<h3>Images</h3>
+
+<p><code>.img-polaroid</code>는 없어졌으며, 보통의 inline(-block) 이미지를 위한 <code>.img-thumbnail</code>이 추가되었다. <em><code>.img-responsive</code> 클래스를 추가하여 반응형에 가깝게 사용할 수 있다.</em></p>
+
+<h2>Components</h2>
+
+<p>드랍다운 메뉴에 헤더를 줄 수 있다.</p>
+
+<h3>Buttons</h3>
+
+<p><code>.btn-group-justified</code> 클래스로 부모 엘리먼트의 전체 너비와 같은 크기를 가질 수 있다.</p>
+
+<h3>Alerts</h3>
+
+<p><code>.alert</code> 컴포넌트 안의 <code>hr</code> 엘리먼트는 alert 색의 경계선으로 스타일링될 것이다. 링크도 가독성을 위해 자동으로 알맞게 스타일링된다.</p>
+
+<h3>Navs</h3>
+
+<p><code>.nav-list</code>가 없어졌고, List group이 대신한다. 왼쪽/오른쪽/아래쪽 탭이 없어졌다. <strong>자바스크립트 플러그인과 커스텀 CSS로 왼쪽/오른쪽 탭을 사용할 수 있다. 그러나 이제 핵심 기능에 포함되지 않는다.</strong></p>
+
+<h3>Navbar</h3>
+
+<p>navbar의 높이가 모바일 기기에선 44px에서 62px로, 데스크탑에선 50px로 커졌고, 박스 그림자나 그라디언트되지 않는다. <code>.navbar-search</code>, <code>.divider-vertical</code>, <code>.navbar-inner</code>가 없어졌으며, 변경된 것은 다음과 같다:</p>
+
+<table><thead>
+<tr>
+<th>BS2</th>
+<th>BS3</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>.navbar &gt; .nav</td>
+<td>.navbar-nav</td>
+</tr>
+<tr>
+<td>.btn-navbar</td>
+<td>.navbar-toggle</td>
+</tr>
+<tr>
+<td>.brand</td>
+<td>.navbar-brand</td>
+</tr>
+</tbody></table>
+
+<h3>List group(NEW)</h3>
+
+<h4>Basic list group</h4>
+
+<p>기본적으로 BS2의 <code>.nav-list</code>와 같다. <strong>리스트 그룹 항목엔 배지를 추가할 수 있으며, 자동으로 오른쪽에 위치한다.</strong></p>
+<div class="highlight"><pre><code class="html language-html" data-lang="html"><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">&quot;list-group&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;list-group-item&quot;</span><span class="nt">&gt;</span>Cras justo odio<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;list-group-item&quot;</span><span class="nt">&gt;</span>Dapibus ac facilisis in<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;list-group-item&quot;</span><span class="nt">&gt;</span>Morbi leo risus<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+</code></pre></div>
+<h4>Linked list group</h4>
+<div class="highlight"><pre><code class="html language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;list-group&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">class=</span><span class="s">&quot;list-group-item active&quot;</span><span class="nt">&gt;</span>Cras justo odio<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">class=</span><span class="s">&quot;list-group-item&quot;</span><span class="nt">&gt;</span>Dapibus ac facilisis in<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">class=</span><span class="s">&quot;list-group-item&quot;</span><span class="nt">&gt;</span>Morbi leo risus<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div>
+<h4>Custom content</h4>
+<div class="highlight"><pre><code class="html language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;list-group&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">class=</span><span class="s">&quot;list-group-item active&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">&quot;list-group-item-heading&quot;</span><span class="nt">&gt;</span>List group item heading<span class="nt">&lt;/h4&gt;</span>
+        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;list-group-item-text&quot;</span><span class="nt">&gt;</span>Donec id elit non mi porta gravida at eget metus.<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">class=</span><span class="s">&quot;list-group-item&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">&quot;list-group-item-heading&quot;</span><span class="nt">&gt;</span>List group item heading<span class="nt">&lt;/h4&gt;</span>
+        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;list-group-item-text&quot;</span><span class="nt">&gt;</span>Donec id elit non mi porta gravida at eget metus.<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div>
+<h3>Typographic components</h3>
+
+<p>헤딩 <code>font-weight</code>가 가벼워졌으며, <strong>반응형 뷰에서 폰트 사이즈가 변경된다.</strong> <code>.hero-unit</code>이 <code>.jumbotron</code>으로 바뀌었다.</p>
+
+<h3>Progress bars</h3>
+
+<p>구조가 다음과 같으며:</p>
+<div class="highlight"><pre><code class="html language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;progress&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;progress-bar&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div>
+<p><code>.progress-bar-info</code>과 같은 클래스가 <code>.progress-bar</code>에 바로 옆에 오며, 다음과 같이 클래스가 바뀌었다.</p>
+
+<table><thead>
+<tr>
+<th>BS2</th>
+<th>BS3</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>.bar</td>
+<td>.progress-bar</td>
+</tr>
+<tr>
+<td>.progress-info</td>
+<td>.progress-bar-info</td>
+</tr>
+<tr>
+<td>.progress-success</td>
+<td>.progress-bar-success</td>
+</tr>
+<tr>
+<td>.progress-warning</td>
+<td>.progress-bar-warning</td>
+</tr>
+<tr>
+<td>.progress-danger</td>
+<td>.progress-bar-danger</td>
+</tr>
+</tbody></table>
+
+<h3>Panels(NEW)</h3>
+
+<p>헤더와 푸터를 가진 박스를 만들 수 있다.</p>
+
+<h4>Panel with heading</h4>
+<div class="highlight"><pre><code class="html language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;panel&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;panel-heading&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">&quot;panel-title&quot;</span><span class="nt">&gt;</span>Panel title<span class="nt">&lt;/h3&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    Panel content
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div>
+<h4>Panel with footer</h4>
+<div class="highlight"><pre><code class="html language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;panel&quot;</span><span class="nt">&gt;</span>
+    Panel content
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;panel-footer&quot;</span><span class="nt">&gt;</span>Panel footer<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div>
+<h4>Contextual alternatives</h4>
+
+<p>문맥 상태(success, warning, danger, info)를 나타내는 <code>.panel-success</code> 등의 클래스를 사용하여 의미있는 패널을 만들 수 있다.</p>
+<div class="highlight"><pre><code class="html language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;panel panel-success&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;panel-heading&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">&quot;panel-title&quot;</span><span class="nt">&gt;</span>Panel title<span class="nt">&lt;/h3&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    Panel content
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div>
+<h2>Sources</h2>
+
+<ul>
+<li><a href="http://blog.getbootstrap.com/">Bootstrap Blog</a></li>
+<li><a href="https://github.com/twbs/bootstrap/pull/6342">List of changes and useful tips</a></li>
+</ul>
+
+<h2>역자추가링크</h2>
+
+<ul>
+<li><a href="http://designyoutrust.com/technology/bootstrap-3-0-tutorial/">Bootstrap 3.0: What’s new and how to migrate from 2.x to 3.x</a></li>
+</ul>
+
+  </div>
+</article>
+
+<section class="post-footer">
+  <a href="/feed.xml" class="pull-right">
+    <img src="/images/rss.jpg" alt="RSS" />
+  </a>
+</section>
+
+<div class="separator"></div>
+
+<section class="comments">
+  <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'nolboo'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+      <div class="separator"></div>
+    </div>
+  </div>
+
+  <div class="clear"></div>
+
+  <footer>
+    <p>
+      Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a>,
+      hosted on <a href="http://pages.github.com/">Github Pages</a>
+      | Template inspired by <a href="http://sebastien.saunier.me/">sebastien.saunier.me</a>
+    </p>
+    <ul class="links">
+      <!-- <li><a href="https://github.com/nolboo" title="Show me the code"><i class="icon-github"></i></a></li> -->
+      <li><a href="https://twitter.com/n0lb00" title="follow me"><i class="icon-twitter"></i></a></li>
+      <li><a href="mailto:nolboo.kim@gmail.com" title="AMA"><i class="icon-sparrow"></i></a></li>
+    </ul>
+  </footer>
+
+  <script type="text/javascript">
+    // var _gaq = _gaq || [];
+    // _gaq.push(['_setAccount', 'GOOGLE-ANALYTICS-TRACK-ID']);
+    // _gaq.push(['_trackPageview']);
+
+    // (function() {
+    //   var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    //   ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    //   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    // })();
+
+    // /*!
+    //  * http://github.com/ssaunier/track-outbound-links
+    //  * Copyright 2013 Sébastien Saunier
+    //  * @license MIT
+    //  */
+    // !function(e,t){function n(){for(var n=t.getElementsByTagName("a"),a=[],r=0;r<n.length;++r){var o=n[r];o.host!=e.location.host&&a.push(o)}return a}function a(n){for(var a=n.srcElement||n.target;a&&("undefined"==typeof a.tagName||"a"!=a.tagName.toLowerCase()||!a.href);)a=a.parentNode;a&&a.href&&(e._gaq&&_gaq.push(["_trackEvent","Outbound link","Click",a.href]),(!a.target||a.target.match(/^_(self|parent|top)$/i))&&(setTimeout(function(){t.location.href=a.href},150),n.preventDefault?n.preventDefault():n.returnValue=!1))}e.addEventListener("load",function(){var e=n();for(var t in e)e[t].addEventListener("click",a)})}(window,document);
+  </script>
+
+  
+</body>
+</html>

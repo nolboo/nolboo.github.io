@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--   <meta name="google-site-verification" content="aexITLS38FdIRzwj25OVWxm87rpa9l-UV0URTyC9cTs" /> -->
+  <title>
+    Markdoc 설치
+    
+    - Nolboo's Blog
+    
+  </title>
+  <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:700,400|Titillium+Web:700,400">
+  <link rel="stylesheet" href="/css/site.css">
+  <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+  <meta name="description" content="마크다운으로 위키를 운영할 수 있는 오픈소스 Markdoc을 설치하는 방법" />
+  <link rel="alternate" type="application/atom+xml" title="RSS Feed for Nolboo's blog" href="/feed.xml" />
+
+<!--    -->
+
+  
+</head>
+<body>
+  <div class="top-bar"></div>
+
+  <div class="container">
+    <div class="site">
+      <header>
+        <nav>
+          <a class="" href="/">Home</a>
+          <a class=" selected " href="/archive/">Archive</a>
+          <a class="" href="/trans/">번역글 모음</a>
+        </nav>
+        <div class="pull-right right logo">
+          <div class="name">
+            <a href="/">Nolboo's Blog</a><br />
+            <small>
+              <em>
+                  <a href="/">호모스터디쿠스를 꿈꾸는 놀부</a>
+              </em>
+            </small>
+          </div>
+          <!-- <img class="avatar" src="/images/sebastien_saunier.jpg" alt="My profile picture" /> -->
+        </div>
+        <div class="clear"></div>
+      </header>
+      <div class="separator"></div>
+      <article>
+  <h1>
+    Markdoc 설치
+  </h1>
+  <div class="center">
+    <p class="meta">22 Jul 2013</p>
+  </div>
+
+<!--    -->
+
+  <div class="post">
+  <ul>
+<li><a href="http://markdoc.org/">Markdoc 공식 사이트</a></li>
+</ul>
+
+<p>터미널에서</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">$ easy_install Markdoc
+
+Finished processing dependencies for Markdoc
+</code></pre></div>
+<p>위의 메시지가 나오면 성공.</p>
+
+<h2>위키 만들기</h2>
+
+<h3>위키 초기화</h3>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">$ markdoc init my-wiki --vcs-ignore hg
+
+markdoc.vcs-ignore: INFO: Writing ignore file to .hgignore
+markdoc.init: INFO: Wiki initialization complete
+markdoc.init: INFO: Your new wiki is at: .../my-wiki
+
+$ cd .../my-wiki 
+</code></pre></div>
+<h3>페이지 편집</h3>
+
+<p>wiki/ 서브 디렉토리에 문서가 위치하며, 마크다운 파일이다. .md 확장자를 가지며, wiki configuration에서 추가할 수 있다. wiki/ 디렉토리에서 마크다운 화일 작성.</p>
+
+<h3>빌드</h3>
+
+<p>아래 명령을 내리면 .html/ 서브디렉토리에 모든 HTML이 제너레이트된다.</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">$ markdoc build
+</code></pre></div>
+<h3>보기</h3>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">$ markdoc serve
+markdoc.serve: INFO: Serving on http://127.0.0.1:8008
+</code></pre></div>
+<p>웹브라우저에서 를 열면 보인다.</p>
+
+<h2>기타 기능</h2>
+
+<ul>
+<li>구글 애널리틱스를 한줄 코드로 삽입</li>
+<li>rsync를 이용해 원격 서버와 동기화</li>
+<li>Pygments 지원 문법<br></li>
+</ul>
+
+  </div>
+</article>
+
+<section class="post-footer">
+  <a href="/feed.xml" class="pull-right">
+    <img src="/images/rss.jpg" alt="RSS" />
+  </a>
+</section>
+
+<div class="separator"></div>
+
+<section class="comments">
+  <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'nolboo'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+      <div class="separator"></div>
+    </div>
+  </div>
+
+  <div class="clear"></div>
+
+  <footer>
+    <p>
+      Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a>,
+      hosted on <a href="http://pages.github.com/">Github Pages</a>
+      | Template inspired by <a href="http://sebastien.saunier.me/">sebastien.saunier.me</a>
+    </p>
+    <ul class="links">
+      <!-- <li><a href="https://github.com/nolboo" title="Show me the code"><i class="icon-github"></i></a></li> -->
+      <li><a href="https://twitter.com/n0lb00" title="follow me"><i class="icon-twitter"></i></a></li>
+      <li><a href="mailto:nolboo.kim@gmail.com" title="AMA"><i class="icon-sparrow"></i></a></li>
+    </ul>
+  </footer>
+
+  <script type="text/javascript">
+    // var _gaq = _gaq || [];
+    // _gaq.push(['_setAccount', 'GOOGLE-ANALYTICS-TRACK-ID']);
+    // _gaq.push(['_trackPageview']);
+
+    // (function() {
+    //   var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    //   ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    //   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    // })();
+
+    // /*!
+    //  * http://github.com/ssaunier/track-outbound-links
+    //  * Copyright 2013 Sébastien Saunier
+    //  * @license MIT
+    //  */
+    // !function(e,t){function n(){for(var n=t.getElementsByTagName("a"),a=[],r=0;r<n.length;++r){var o=n[r];o.host!=e.location.host&&a.push(o)}return a}function a(n){for(var a=n.srcElement||n.target;a&&("undefined"==typeof a.tagName||"a"!=a.tagName.toLowerCase()||!a.href);)a=a.parentNode;a&&a.href&&(e._gaq&&_gaq.push(["_trackEvent","Outbound link","Click",a.href]),(!a.target||a.target.match(/^_(self|parent|top)$/i))&&(setTimeout(function(){t.location.href=a.href},150),n.preventDefault?n.preventDefault():n.returnValue=!1))}e.addEventListener("load",function(){var e=n();for(var t in e)e[t].addEventListener("click",a)})}(window,document);
+  </script>
+
+  
+</body>
+</html>

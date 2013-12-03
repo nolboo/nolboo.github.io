@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--   <meta name="google-site-verification" content="aexITLS38FdIRzwj25OVWxm87rpa9l-UV0URTyC9cTs" /> -->
+  <title>
+    HTML & CSS 중급자 가이드 - 6강 : jQuery
+    
+    - Nolboo's Blog
+    
+  </title>
+  <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:700,400|Titillium+Web:700,400">
+  <link rel="stylesheet" href="/css/site.css">
+  <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+  <meta name="description" content="상위 10,000 웹사이트에서 자바스크립트는 92%가 넘게 사용되고, jQuery는 63%를 넘게 사용되고 있다." />
+  <link rel="alternate" type="application/atom+xml" title="RSS Feed for Nolboo's blog" href="/feed.xml" />
+
+<!--    -->
+
+  
+</head>
+<body>
+  <div class="top-bar"></div>
+
+  <div class="container">
+    <div class="site">
+      <header>
+        <nav>
+          <a class="" href="/">Home</a>
+          <a class=" selected " href="/archive/">Archive</a>
+          <a class="" href="/trans/">번역글 모음</a>
+        </nav>
+        <div class="pull-right right logo">
+          <div class="name">
+            <a href="/">Nolboo's Blog</a><br />
+            <small>
+              <em>
+                  <a href="/">호모스터디쿠스를 꿈꾸는 놀부</a>
+              </em>
+            </small>
+          </div>
+          <!-- <img class="avatar" src="/images/sebastien_saunier.jpg" alt="My profile picture" /> -->
+        </div>
+        <div class="clear"></div>
+      </header>
+      <div class="separator"></div>
+      <article>
+  <h1>
+    HTML & CSS 중급자 가이드 - 6강 : jQuery
+  </h1>
+  <div class="center">
+    <p class="meta">22 Jul 2013</p>
+  </div>
+
+<!--    -->
+
+  <div class="post">
+  <p>원본 : <a href="http://learn.shayhowe.com/advanced-html-css/jquery">An Advanced Guide to HTML &amp; CSS - LESSON 6 : jQuery</a></p>
+
+<p>웹 디자이너나 프론트 엔드 개발자가 되려면 일반적으로 어느 정도는 (종종 JS라고 불리우는) 자바스크립트와 jQuery에 부딪칠 것이다. 상위 10,000 웹사이트에서 자바스크립트는 <a href="http://trends.builtwith.com/docinfo/Javascript">92%가 넘게</a> 사용되고, jQuery는 <a href="http://trends.builtwith.com/javascript/jQuery">63%를 넘게</a> 사용되고 있다. 말할 필요도 없이 매우 인기가 있다. 미래의 어떤 시기에 자신의 행동을 구축하기위해 자바스크립트나 jQuery를 <a href="http://jsforcats.com/">코딩하길</a> 열망할 수도 있다.</p>
+
+<p>자바스크립트와 jQuery가 정확히 무엇인지 묻고 있다면, 두려워말라. 이 단원에서 자바스크립트의 간략한 개요를 보여줄 것이고 jQuery도 살펴볼 것이다.</p>
+
+<h2>JavaScript Intro</h2>
+
+<p><a href="https://developer.mozilla.org/en-US/docs/JavaScript/A_re-introduction_to_JavaScript">자바스크립트</a>는 웹사이트에 상호작용성을 추가할 수 있게 해주고 유저 경험을 풍부하게 하는 것을 돕는다. HTML은 페이지에 <strong>구조</strong>를 제공하고 CSS는 <strong>외모</strong>를 제공하고 자바스크립트는 <strong>행동</strong>을 제공한다.  CSS처럼, 자바스크립트는 <code>.js</code> 화일 확장자로 외부 화일에 저장해야하며, <code>script</code> 엘리먼트를 사용하여 HTML 문서 안에서 참조(reference)된다. HTML 안의 자바스크립트 참조가 어디에 있느냐는 그것이 언제 실행되야하는가에 따라 다르다. 일반적으로 말하면 자바스크립트 화일이 연급되는 가장 좋은 위치는 - 모든 HTML이 파싱되고난 후에 자바스크립트가 로드되도록 - `<code>태그가 끝나기 바로 전이다. 그러나, 때론 HTML을 렌더링하거나 그것의 행동을 결정하는 것을 도와야하기 때문에 문서의</code>head` 안에서 참조될 수 있다.</p>
+<div class="highlight"><pre><code class="js language-js" data-lang="js"><span class="o">&lt;</span><span class="nx">script</span> <span class="nx">src</span><span class="o">=</span><span class="s2">&quot;script.js&quot;</span><span class="o">&gt;&lt;</span><span class="err">/script&gt;</span>
+</code></pre></div>
+<h3>Values &amp; Variables</h3>
+
+<p>값(value)과 변수(variable)는 자바스크립트 기초의 일부다. 일반적으로 값은 자바스크립트가 인식할 다양한 종류의 값이고, 변수는 이 값들을 저장하고 공유하기 위해 사용된다.</p>
+
+<p>값은 문자열, 참/거짓 불린(Boolean), 숫자, <code>undefined</code>, <code>null</code>, 혹은 함수와 객체 같은 값들도 포함할 수 있다.</p>
+
+<p>변수가 정의되는 인기있는 방법 중 하나는 <code>var</code> 키워드와 뒤따르는 변수명, 등호 기호 (<code>=</code>), 그리고 값과 세미콜론 (<code>;</code>)으로 마친다. 변수 이름은 문자, 밑줄 (<code>_</code>)이나 달러 기호 (<code>$</code>)로 시작되어야 한다. 변수는 숫자로 시작될 수 없으나 시작 이후에는 사용될 수 있다. 어떤 경우에도 하이픈은 사용할 수 없다. 더불어 자바스크립트는 대소문자를 구분하기 때문에 문자는 <code>a</code>에서 <code>z</code>까지의 대/소문자 모두가 포함된다.</p>
+
+<p>역자 참조 : MDN <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Values,_variables,_and_literals#Variables">Values, variables, and literals</a></p>
+
+<p>변수를 명하는 일반적인 규칙은 대쉬나 밑줄을 젼혀 사용하지 않고 캐멀케이스(<a href="http://en.wikipedia.org/wiki/CamelCase">camelCase</a>)를 사용하는 것이다. 캐멀케이스는 빈칸을 없애고 첫 단어를 제외한 각 단어를 대문자로 시작하여 단어들을 조합한다. 예를 들면 <code>shay_is_awesome</code>은 <code>shayIsAwesome</code>으로 이름짓는 것이 더 일반적이다.</p>
+<div class="highlight"><pre><code class="js language-js" data-lang="js"><span class="kd">var</span> <span class="nx">theStarterLeague</span> <span class="o">=</span> <span class="mi">125</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">food_truck</span> <span class="o">=</span> <span class="s1">&#39;Coffee&#39;</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">mixtape01</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">vinyl</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Miles Davis&#39;</span><span class="p">,</span> <span class="s1">&#39;Frank Sinatra&#39;</span><span class="p">,</span> <span class="s1">&#39;Ray Charles&#39;</span><span class="p">];</span>
+</code></pre></div>
+<h3>Statements</h3>
+
+<p>전반적으로 자바스크립트는 쓰여진 순서대로 브라우저에 의해 실행되는 문장(statement)의 집합이다. 이 문장들은 수행될 댜양한 행동들을 결정하는 명령을 제공한다. 문장들은 다양한 형태와 크기가 되고, 여러 문장은 세미콜론 <code>;</code>으로 나뉜다. 새로운 문장은 새로운 줄에서 시작되어야하며 들여쓰기는 문장들을 더 읽기쉽게 하기위해 사용해야하지만, 반드시 요구되는 것은 아니다.</p>
+<div class="highlight"><pre><code class="js language-js" data-lang="js"><span class="nx">log</span><span class="p">(</span><span class="nx">polaroid</span><span class="p">);</span>
+<span class="k">return</span><span class="p">(</span><span class="s1">&#39;bicycle lane&#39;</span><span class="p">);</span>
+<span class="nx">alert</span><span class="p">(</span><span class="s1">&#39;Congratulations, you &#39;</span> <span class="o">%</span><span class="mi">2</span><span class="nx">B</span> <span class="nx">outcome</span><span class="p">);</span>
+</code></pre></div>
+<h3>Functions</h3>
+
+<p>자바스크립트 기초에 더해, 함수(function)을 살펴보는 것은 중요하다. 함수는 지금, 또는 나중을 위해 저장된, 다른 인수(argument)를 받아들이기도 하는 함수에 의존하는, 기술된 일련의 행동을 수행하는 방법을 제공한다.</p>
+
+<p>함수는 <code>function</code> 키워드와 뒤따르는 함수명, 필요할 경우, 쉼표로 분리된 인수 목록(전체가 소괄호로 감싸진다)과 함수를 정의하는 자바스크립트 문장 또는 문장들(전체가 중괄호 <code>{}</code>로 둘러싸여진다)을 사용해 정의된다.</p>
+<div class="highlight"><pre><code class="js language-js" data-lang="js"><span class="kd">function</span> <span class="nx">sayHello</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">return</span><span class="p">(</span><span class="s1">&#39;Hello &#39;</span> <span class="o">%</span><span class="mi">2</span><span class="nx">B</span> <span class="nx">name</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3>Arrays</h3>
+
+<p>인정하듯이 몇몇 값은 배열로 반환될 수 있다. 배열은 항목이나 값의 목록을 저장하는 방법을 포함한다. 여러 가지 이유로 배열은 다양한 매서드와 연산자로 팀색할 수 있어 도움이 된다. 게다가 상황에 따라 배열은 다양한 값을 저장하고 반환하는 데 사용될 수 있다.</p>
+
+<p>일반적으로 말하면 배열은 대괄호 <code>[]</code>와 쉼표로 분리된 항목들로 식별된다. 항목은 <code>0</code>에서 시작되어 증가한다. 한 목록에서 세번째 아이템을 식별할 때는 실제 <code>[2]</code>로서 식별된다.</p>
+
+<h3>Objects</h3>
+
+<p>자바스크립트는 키/값의 한 쌍인 객체의 기초 위에 만들어진 것이기도 하다. 예를 들어 <code>school</code>로 이름지어진 객체가 있고, 이 객체가 <code>name</code>, <code>location</code>, <code>students</code>, <code>teachers</code> 키들(프로퍼티/속성으로도 알려짐)과 그들의 값을 포함하고 있다고 하자.</p>
+
+<p>아래 예제에서 변수 <code>school</code>은 여러 속성을 보유하는 객체로 설정된다. 각 속성은 하나의 키와 값을 가진다. 전체 객체는 중괄호 <code>{}</code>로 감싸졌고, 속성은 쉽표로 분리되며, 각 속성은 콜론과 값이 뒤따르는 하나의 키를 갖는다.</p>
+
+<p>OBJECTS</p>
+<div class="highlight"><pre><code class="js language-js" data-lang="js"><span class="kd">var</span> <span class="nx">school</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;The Starter League&#39;</span><span class="p">,</span>
+  <span class="nx">location</span><span class="o">:</span> <span class="s1">&#39;Merchandise Mart&#39;</span><span class="p">,</span>
+  <span class="nx">students</span><span class="o">:</span> <span class="mi">120</span><span class="p">,</span>
+  <span class="nx">teachers</span><span class="o">:</span> <span class="p">[</span><span class="s1">&#39;Jeff&#39;</span><span class="p">,</span> <span class="s1">&#39;Raghu&#39;</span><span class="p">,</span> <span class="s1">&#39;Carolyn&#39;</span><span class="p">,</span> <span class="s1">&#39;Shay&#39;</span><span class="p">]</span>
+<span class="p">};</span>
+</code></pre></div>
+<p>ARRAY</p>
+<div class="highlight"><pre><code class="js language-js" data-lang="js"><span class="kd">var</span> <span class="nx">school</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Austin&quot;</span><span class="p">,</span> <span class="s2">&quot;Chicago&quot;</span><span class="p">,</span> <span class="s2">&quot;Portland&quot;</span><span class="p">];</span>
+</code></pre></div>
+<p><img src="http://learn.shayhowe.com/assets/courses/advanced-html-css-guide/jquery/console.png" alt="Web Inspector Console"></p>
+
+<p><strong>Fig. 6.01</strong>  크롬 웹브라우저 안에 내장된 개발자 도구를 사용하면 자바스크립트를 콘솔 안에서 실행시킬 수 있다.</p>
+
+<h2>jQuery Intro</h2>
+
+<p>자바스크립트와 그 기초의 일부에 대한 기본적인 이해와 함께 jQuery를 살펴볼 차례다. jQuery는 HTML, CSS와 자바스크립트 간의 상호 작용을 단순화시키기 위해 존 레식이 작성한 오픈소스 자바스크립트 라이브러리다. jQuery가 출시된 2006년 이후 급성장하였고 크고 작은 웹사이트와 기업에서 사용되고 있다.</p>
+
+<p>jQuery를 그렇게 인기있게 만든 것은 CSS를 닯은 실렉션과 동작의 알기쉬운 분리와 같은 <a href="https://tutsplus.com/course/30-days-to-learn-jquery/">손쉬운 사용</a>이었다. jQuery의 이점은 막대하지만 우리 목적은 엘리먼트를 찾고 그것들과 작업을 수행하는 능력에 대해서만 고려해볼 것이다.</p>
+
+<h3>Getting Started with jQuery</h3>
+
+<p>jQuery 사용의 첫걸음은 HTML 문서 안에 그것을 참조하는 것이다. 자바스크립트에서 이전에 말했듯이 `<code>태그의 바로 앞에</code>script` 엘리먼트를 사용함으로 행해진다. jQuery는 자신이 라이브러리이기 때문에 다른 자바스트립트가 쓰여진 것과는 전부 분리시키는 것이 가장 좋다.</p>
+
+<p>jQuery를 참조하는 것은 몇 가지 옵션이 있다. 특히, 축소되거나 압축되지 않은 버전을 사용할지 여부, 그리고 <a href="https://developers.google.com/speed/libraries/devguide">구글 호스팅 라이브러리</a>와 같은 컨텐츠 전송 네트워크(CDN)을 사용할지 여부와 같은 옵션이 있다. 라이브 프로덕션 환경에서 코드가 쓰여지는 경우에는 더 나은 로딩 시간을 위해 축소된 버전을 사용하는 것이 권장된다. 게다가 구글과 같은 CDN은 로딩 시간과 잠재적인 캐싱 이득에 도움이 된다.</p>
+<div class="highlight"><pre><code class="js language-js" data-lang="js"><span class="o">&lt;</span><span class="nx">script</span> <span class="nx">src</span><span class="o">=</span><span class="s2">&quot;//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js&quot;</span><span class="o">&gt;&lt;</span><span class="err">/script&gt;</span>
+<span class="o">&lt;</span><span class="nx">script</span> <span class="nx">src</span><span class="o">=</span><span class="s2">&quot;script.js&quot;</span><span class="o">&gt;&lt;</span><span class="err">/script&gt;</span>
+</code></pre></div>
+<p>위의 코드 예제에서 두번째 <code>script</code> 엘리먼트는 또 하나의 자바스크립트 화일을 참조하고 있는 것을 주목하라. 모든 커스텀, 직접 쓴 자바스크립트과 JQuery는 이 화일에서 쓰여져야한다. 더불어 이 화일은 이미 정의된 JQuery 함수를 참조할 수 있도록 jQuery 화일 뒤에 명확하게 위치하여야 한다.</p>
+
+<blockquote>
+<h4>Where is the leading http?</h4>
+
+<p>위 예제에서 구글 CDN 참조 안에 선행하는(leading) <code>http</code>가 없는 것을 발견할 수 있다. <code>http</code>와 <code>https</code> 연결을 모두 허용하기위해, <code>http</code>를 의도적으로 생략한 것이다. 웹 서버의 이점없이 로컬에서 동작할 때는 시스템의 로컬 디스크 드라이브의 화일을 찾는 것을 방지하려면 선행하는 <code>http</code>가 필요할 것이다.</p>
+</blockquote>
+
+<h3>jQuery Object</h3>
+
+<p>jQuery는 자신의 객체 - 달러 기호 <code>$</code>, <code>jQuery</code>라고도 알려진 - 와 함께 제공된다. <code>$</code> 객체는 엘리먼트를 선택하고 작업을 수행하려하는 엘리먼트 노드를 반환하기위해 특별히 만들어졌다. 이 선택과 행동은 실제 jQuery 라이브러리의 바깥에서 참조되는 새로운 화일에 작성되어야 한다.</p>
+<div class="highlight"><pre><code class="js language-js" data-lang="js"><span class="nx">$</span><span class="p">();</span>
+<span class="nx">jQuery</span><span class="p">();</span>
+</code></pre></div>
+<h3>Document Ready</h3>
+
+<p>페이지를 탐색하고 조작하기위해 jQuery를 시동하기(역자주 : trigging은 triggering의 오타인듯) 전에 DOM의 로딩이 끝날 때까지 기다리는 것이 가장 좋다. 다행히 jQuery는 <code>.ready()</code> 이벤트를 가지고 있다. 우리가 손수 쓴 jQuery 코드를 이 함수 안에 모두 배치하여 페이지가 로드되어 DOM이 준비될 때 까지 그것이 실행되지 않을 것을 보장할 수 있다.</p>
+<div class="highlight"><pre><code class="js language-js" data-lang="js"><span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">){</span>
+  <span class="c1">// jQuery code</span>
+<span class="p">});</span>
+</code></pre></div>
+<h2>Selectors</h2>
+
+<p>앞에서 언급하였듯이 jQuery의 핵심 개념 중 하나는 <a href="http://api.jquery.com/category/selectors/">엘리먼트를 선택</a>하는 것과 작업을 수행하는 것이다. jQuery는, CSS를 모방함으로써 극도로 쉽게, 선택 작업과 엘리먼트나 엘리먼트들의 작업을 훌륭하게 해왔다. 일반적인 CSS 실렉터에 뛰어넘어 jQuery는 사용 브라우저에 상관없이 작동하는 고유 CSS3 실렉터를 모두 지원한다.</p>
+
+<p>jQuery 객체 <code>$()</code>를 호출할 때 실렉터를 포함하면 그것을 조작할 수 있는 DOM 노드를 반환할 것이다. 실렉터는 소괄호 <code>(&#39;...&#39;)</code> 안에 넣고 CSS의 실렉터와 똑같은 엘리먼트를 선택할 수 있다.</p>
+<div class="highlight"><pre><code class="js language-js" data-lang="js"><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;.feature&#39;</span><span class="p">);</span>              <span class="c1">// Class selector</span>
+<span class="nx">$</span><span class="p">(</span><span class="s1">&#39;li strong&#39;</span><span class="p">);</span>             <span class="c1">// Descendant selector</span>
+<span class="nx">$</span><span class="p">(</span><span class="s1">&#39;em, i&#39;</span><span class="p">);</span>                 <span class="c1">// Multiple selector</span>
+<span class="nx">$</span><span class="p">(</span><span class="s1">&#39;a[target=&quot;_blank&quot;]&#39;</span><span class="p">);</span>    <span class="c1">// Attribute selector</span>
+<span class="nx">$</span><span class="p">(</span><span class="s1">&#39;p:nth-child(2)&#39;</span><span class="p">);</span>        <span class="c1">// Pseudo-class selector</span>
+</code></pre></div>
+<h3>This Selection Keyword</h3>
+
+<p>jQuery 함수 안에서 작업할 때 원래의 실렉터 안에서 참조되었던 엘리먼트를 선택하고 싶을 것이다. 이 경우에는 <code>this</code> 키워드가 현재 핸들러에서 선택된 엘리먼트를 참조하는 데 사용될 수 있다.</p>
+<div class="highlight"><pre><code class="js language-js" data-lang="js"><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;div&#39;</span><span class="p">).</span><span class="nx">click</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">){</span>
+  <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">);</span>
+<span class="p">});</span>
+</code></pre></div>
+<blockquote>
+<h4>jQuery Selection Filters</h4>
+
+<p>CSS 실렉터가 충분치 못하다면 JQuery에 내장된 커스텀 <a href="http://api.jquery.com/category/selectors/jquery-selector-extensions/">필터들</a>이 도움이 될 것이다. 이 필터들은 CSS의 확장이고 엘리먼트나 관련자를 선택할 때 더 많은 제어할 수 있다.</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">  $(&#39;div:has(strong)&#39;);
+</code></pre></div>
+<p>있는 그대로 이 필터들은 실렉터 안에서 사용될 수 있지만, DOM에 순수하지(native) 않기 때문에 약간 느려진다. 필터를 사용할 때 최고의 결과는 jQuery 탐색 기능 중 <code>:filter()</code> 매서드를 이용하여 얻어진다.</p>
+</blockquote>
+
+<h2>Traversing</h2>
+
+<p>종종 일반적인 CSS 실렉터만으로는 잘라내듯 선택되지 않아 좀 더 세세한 제어가 요구된다. 다행히 jQuery는 DOM 트리를 위아래로 탐색(traverse)하여 필요한 대로 엘리먼트를 걸러내고 선택하는 몇 가지 매서드를 제공한다.</p>
+
+<p>DOM 내부의 엘리먼트를 걸러내기 시작하려면 상대적으로 탐색하는 것이 필요하다. 아래 예에서 애초의 선택은 DOM의 모든 <code>div</code> 엘리먼트를 찾고 난 후, <code>.not()</code> 매서드를 사용하여 필터링한다. 이 구체적인 매서드로 <code>type</code>나 <code>collection</code> 클래스를 갖지 않는 <code>div</code> 엘리먼트가 선택될 것이다.</p>
+<div class="highlight"><pre><code class="js language-js" data-lang="js"><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;div&#39;</span><span class="p">).</span><span class="nx">not</span><span class="p">(</span><span class="s1">&#39;.type, .collection&#39;</span><span class="p">);</span>
+</code></pre></div>
+<h3>Chaining Methods</h3>
+
+<p>선택된 엘리먼트를 훨씬 더 많이 제어하기 위해, 다양한 탐색 매서드들을 단순히 점을 사용하여 서로 연결할 수 있다.</p>
+
+<p>아래 코드 예제는 <code>.not()</code> 매서드와 <code>.parent()</code>를 모두 사용한다. 함께 결합해서 <code>type</code> 혹은 <code>collection</code> 클래스를 갖지않는 <code>div</code> 엘리먼트의 부모 엘리먼트만을 선택할 것이다.</p>
+<div class="highlight"><pre><code class="js language-js" data-lang="js"><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;div&#39;</span><span class="p">).</span><span class="nx">not</span><span class="p">(</span><span class="s1">&#39;.type, .collection&#39;</span><span class="p">).</span><span class="nx">parent</span><span class="p">();</span>
+</code></pre></div>
+<h3>Traversing Methods</h3>
+
+<p>JQuery는 상당수의 <a href="http://api.jquery.com/category/traversing/">탐색</a> 매서드를 사용할 수 있다. 그것들은 일반적으로 필터링(filtering), 기타 탐색(miscellaneous traversing), DOM 트리 탐색(DOM tree traversing)의 세가지 범주에 속한다. 각 범주의 구체적인 메서드는 아래와 같다.</p>
+
+<h4>Filtering</h4>
+
+<ul>
+<li><code>.eq()</code></li>
+<li><code>.filter()</code></li>
+<li><code>.first()</code></li>
+<li><code>.has()</code></li>
+<li><code>.is()</code></li>
+<li><code>.last()</code></li>
+<li><code>.map()</code></li>
+<li><code>.not()</code></li>
+<li><code>.slice()</code></li>
+</ul>
+
+<h4>Miscellaneous Traversing</h4>
+
+<ul>
+<li><code>.add()</code></li>
+<li><code>.andSelf()</code></li>
+<li><code>.contents()</code></li>
+<li><code>.end()</code></li>
+</ul>
+
+<h4>DOM Tree Traversal</h4>
+
+<ul>
+<li><code>.children()</code></li>
+<li><code>.closest()</code></li>
+<li><code>.find()</code></li>
+<li><code>.next()</code></li>
+<li><code>.nextAll()</code></li>
+<li><code>.nextUntil()</code></li>
+<li><code>.offsetParent()</code></li>
+<li><code>.parent()</code></li>
+<li><code>.parents()</code></li>
+<li><code>.parentsUntil()</code></li>
+<li><code>.prev()</code></li>
+<li><code>.prevAll()</code></li>
+<li><code>.prevUntil()</code></li>
+<li><code>.siblings()</code></li>
+</ul>
+
+<h2>Manipulation</h2>
+
+<p>DOM에서 엘리먼트를 선택하고 탐색하는 것은 jQuery가 제공하는 것의 부분일 뿐이고, 또 다른 주요 부분은 일단 찾아낸 엘리먼트와 뭘 할 수있는 것인가이다. 가능한 것 중 하나는 이 엘리먼트들을 읽거나 추가하고, 속성이나 스타일을 변경하여 <a href="http://api.jquery.com/category/manipulation">조작</a>하는 것이다. 추가적으로 엘리먼트는 DOM 안에서 변경되고, 위치를 바꾸고, 제거하고, 새 엘리먼트를 추가하는 것 등을 할 수 있다. 전반적으로 엘리먼트를 조작하는 옵션은 매우 광대하다.</p>
+
+<h3>Getting &amp; Setting</h3>
+
+<p>주목해야힐 조작 매서드는 정보를 얻거나(_getting_) 혹은 설정하는(_setting_) 두 개의 지시자 중 하나로 사용된다는 것이 매우 일반적이다. 정보를 얻는다는 것은 가져올 정보 조각이 무엇인지를 결정하기 위해 매서드와 함께 실렉터를 사용하게 되는 것이다. 더불어 똑같은 실렉터와 매서드를 정보 조각을 설정하는 데에도 사용할 수 있다.</p>
+<div class="highlight"><pre><code class="js language-js" data-lang="js"><span class="c1">// Gets the value of the alt attribute</span>
+<span class="nx">$</span><span class="p">(</span><span class="s1">&#39;img&#39;</span><span class="p">).</span><span class="nx">attr</span><span class="p">(</span><span class="s1">&#39;alt&#39;</span><span class="p">);</span>
+
+<span class="c1">// Sets the value of the alt attribute</span>
+<span class="nx">$</span><span class="p">(</span><span class="s1">&#39;img&#39;</span><span class="p">).</span><span class="nx">attr</span><span class="p">(</span><span class="s1">&#39;alt&#39;</span><span class="p">,</span> <span class="s1">&#39;Wild kangaroo&#39;</span><span class="p">);</span>
+</code></pre></div>
+<p>뒤따르는 예제와 스니핏에서, 매서드는 주로 설정 모드에서 사용되지만, getting 모드에서도 사용될 수 있다.</p>
+
+<h3>Attribute Manipulation</h3>
+
+<p>검사되고 조작될 수 있는 엘리먼트의 한 부분은 속성이다. 몇 가지 선택사항은 속성이나 값을 추가, 제거, 변경할 수 있는 것이다. 아래 예제에서 <code>.addClass()</code> 매서드는 모든 짝수번 째의 <code>li</code> 항목에 클래스를 추가한다. <code>.removeClass()</code> 매서드는 모든 단락에서 클래스를 모두 제거하고 마지막으로 <code>.attr()</code> 매서드는 <code>abbr</code> 엘리먼트의 <code>title</code> 속성을 찾아서 그것을 <code>Hello World</code>로 설정한다.</p>
+<div class="highlight"><pre><code class="js language-js" data-lang="js"><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;li:even&#39;</span><span class="p">).</span><span class="nx">addClass</span><span class="p">(</span><span class="s1">&#39;even-item&#39;</span><span class="p">);</span>
+<span class="nx">$</span><span class="p">(</span><span class="s1">&#39;p&#39;</span><span class="p">).</span><span class="nx">removeClass</span><span class="p">();</span>
+<span class="nx">$</span><span class="p">(</span><span class="s1">&#39;abbr&#39;</span><span class="p">).</span><span class="nx">attr</span><span class="p">(</span><span class="s1">&#39;title&#39;</span><span class="p">,</span> <span class="s1">&#39;Hello World&#39;</span><span class="p">);</span>
+</code></pre></div>
+<h4>Attribute Manipulation Methods</h4>
+
+<ul>
+<li><code>.addClass()</code></li>
+<li><code>.attr()</code></li>
+<li><code>.hasClass()</code></li>
+<li><code>.prop()</code></li>
+<li><code>.removeAttr()</code></li>
+<li><code>.removeClass()</code></li>
+<li><code>.removeProp()</code></li>
+<li><code>.toggleClass()</code></li>
+<li><code>.val()</code></li>
+</ul>
+
+<h3>Style Manipulation</h3>
+
+<p>속성을 조작하는 것에 더해, 엘리먼트의 스타일도 다양한 매서드로 조작될 수 있다. 엘리먼트의 높이, 너비, 위치를 읽거나 설정할 때 몇몇 특정 매서드를 사용할 수 있고, <code>.css()</code> 매서드를 사용하면 어떤 CSS 스타일 변경도 다룰 수 있다.</p>
+
+<p>특별히 <code>.css()</code> 매서드는 하나 또는 여러 개의 속성을 설정하거나, 각 변화에 대한 문법을 설정할 수 있다. 하나의 속성을 설정하려면 속성 이름과 값은 각각 따옴표와 쉼표로 분리되어야 한다. 여러 속성을 설정하려면 속성은 중괄호 안에 포함되어야 한다. 속성명은 캐멀케이스되어야 하고, 필요한 경우 하이픈은 제거된다. 그 뒤에 콜론과 인용부호로 감싼 값이 따른다. 속성과 값으로 짝지워진 각 쌍은 쉼표로 분리된다.</p>
+
+<p>높이, 너비, 위치 매서드는 모두 픽셀값을 기본으로 하나, 다른 측정 단위도 사용될 수 있다. 아래에서 보여지듯이, 측정 단위를 변경하면 값 다음에 더하기 부호와 뒤따르는 인용부호된 측정단위를 사용하여 식별한다.</p>
+<div class="highlight"><pre><code class="js language-js" data-lang="js"><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;h1 span&#39;</span><span class="p">).</span><span class="nx">css</span><span class="p">(</span><span class="s1">&#39;font-size&#39;</span><span class="p">,</span> <span class="s1">&#39;normal&#39;</span><span class="p">);</span>
+<span class="nx">$</span><span class="p">(</span><span class="s1">&#39;div&#39;</span><span class="p">).</span><span class="nx">css</span><span class="p">({</span>
+  <span class="nx">fontSize</span><span class="o">:</span> <span class="s1">&#39;13px&#39;</span><span class="p">,</span>
+  <span class="nx">background</span><span class="o">:</span> <span class="s1">&#39;http://nolboo.github.io#f60&#39;</span>
+<span class="p">});</span>
+<span class="nx">$</span><span class="p">(</span><span class="s1">&#39;header&#39;</span><span class="p">).</span><span class="nx">height</span><span class="p">(</span><span class="mi">200</span><span class="p">);</span>
+<span class="nx">$</span><span class="p">(</span><span class="s1">&#39;.extend&#39;</span><span class="p">).</span><span class="nx">height</span><span class="p">(</span><span class="mi">30</span> <span class="o">%</span><span class="mi">2</span><span class="nx">B</span> <span class="s1">&#39;em&#39;</span><span class="p">);</span>
+</code></pre></div>
+<h4>Style Manipulation Methods</h4>
+
+<ul>
+<li><code>.css()</code></li>
+<li><code>.height()</code></li>
+<li><code>.innerHeight()</code></li>
+<li><code>.innerWidth()</code></li>
+<li><code>.offset()</code></li>
+<li><code>.outerHeight()</code></li>
+<li><code>.outerWidth()</code></li>
+<li><code>.position()</code></li>
+<li><code>.scrollLeft()</code></li>
+<li><code>.scrollTop()</code></li>
+<li><code>.width()</code></li>
+</ul>
+
+<h3>DOM Manipulation</h3>
+
+<p>마지막으로, 엘리먼트의 위치를 변경하거나 추가하고 제거하고, 노골적으로 엘리먼트를 변경하여 DOM을 검사하고 조작할 수 있다. 여기서의 선택사항은 DOM 안에서 어떤 잠재적인 변화도 허용할 정도로 깊고 다양하다.</p>
+
+<p>각 개개의 DOM 조작 매서드는 자신의 문법을 가지고 있지만, 아래 예에서 그 중 일부를 대강 설명해본다. <code>.prepend()</code> 매서드는 모든 <code>section</code>에 <code>h3</code> 엘리먼트를 새로 추가하고, <code>.after()</code> 매서드는 링크 바로 뒤에 <code>em</code> 엘리먼트를 새로 추가하며, <code>.text()</code> 매서드는 모든 <code>h1</code> 엘리먼트의 문자를 <code>Hello World</code>로 바꾼다.</p>
+<div class="highlight"><pre><code class="js language-js" data-lang="js"><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;section&#39;</span><span class="p">).</span><span class="nx">prepend</span><span class="p">(</span><span class="s1">&#39;Featured&#39;</span><span class="p">);</span>
+<span class="nx">$</span><span class="p">(</span><span class="s1">&#39;a[target=&quot;_blank&quot;]&#39;</span><span class="p">).</span><span class="nx">after</span><span class="p">(</span><span class="s1">&#39;New window.&#39;</span><span class="p">);</span>
+<span class="nx">$</span><span class="p">(</span><span class="s1">&#39;h1&#39;</span><span class="p">).</span><span class="nx">text</span><span class="p">(</span><span class="s1">&#39;Hello World&#39;</span><span class="p">);</span>
+</code></pre></div>
+<h4>DOM Manipulation Methods</h4>
+
+<ul>
+<li><code>.after()</code></li>
+<li><code>.append()</code></li>
+<li><code>.appendTo()</code></li>
+<li><code>.before()</code></li>
+<li><code>.clone()</code></li>
+<li><code>.detach()</code></li>
+<li><code>.empty()</code></li>
+<li><code>.html()</code></li>
+<li><code>.insertAfter()</code></li>
+<li><code>.insertBefore()</code></li>
+<li><code>.prepend()</code></li>
+<li><code>.prependTo()</code></li>
+<li><code>.remove()</code></li>
+<li><code>.replaceAll()</code></li>
+<li><code>.replaceWith()</code></li>
+<li><code>.text()</code></li>
+<li><code>.unwrap()</code></li>
+<li><code>.wrap()</code></li>
+<li><code>.wrapAll()</code></li>
+<li><code>.wrapInner()</code></li>
+</ul>
+
+<h2>Events</h2>
+
+<p>jQuery의 아름다움 중 하나는 벌어지는 특정 이벤트나 액션에서만 호출되는 매서드인 <a href="http://api.jquery.com/category/events/">이벤트 핸들러</a>를 쉽게 추가하는 수 있는 것이다. 예를 들어, 엘리먼트에 클래스를 추가하는 매서드를 클릭된 엘리먼트에서 발생되도록 설정될 수 있다.</p>
+
+<p>아래에서 모든 <code>li</code> 항목을 잡아채는 표준 실렉터가 있다. <code>.click()</code> 이벤트 매서드는 <code>li</code> 아이템 실렉터에 구속되어 있으며(binding), <code>li</code> 아이템을 클릭할 때 발생되는 액션을 설정한다. <code>.click()</code> 이벤트 매서드 안에 실행될 액션을 보장하는 함수가 있다. 함수 바로 다음의 소괄호는 함수를 위한 패러미터(속성)를 전달할 수있으며, 이 예제에서는 <code>event</code> 객체가 사용되었다.</p>
+
+<p>함수 안에 <code>.addClass()</code> 매서드가 구속된 또하나의 실렉터가 있다. 이제 <code>li</code> 항목이 클릭되면 <code>this</code> 키워드를 통해 <code>li</code> 항목은 <code>saved-item</code> 클래스를 받을 수 있다.</p>
+<div class="highlight"><pre><code class="js language-js" data-lang="js"><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;li&#39;</span><span class="p">).</span><span class="nx">click</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">){</span>
+  <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">addClass</span><span class="p">(</span><span class="s1">&#39;saved-item&#39;</span><span class="p">);</span>
+<span class="p">});</span>
+</code></pre></div>
+<h3>Event Flexibility</h3>
+
+<p><code>.click()</code> 이벤트 매서드는, 소수의 다른 이벤트 매서드와 함께, jQuery 1.7부터 도입된 <code>.on()</code> 매서드를 사용하는 숏핸드 매서드이다. <code>.on()</code> 매서드는, 페이지에 동적으로 추가되는 엘리먼트를 위한 자동 위임을 사용하여, 상당한 유연성을 제공한다.</p>
+
+<p><code>.on()</code> 매서드를 이용하여 첫번째 인수는 네이티브 이벤트 이름이어야 하는 반면 두번째 인수는 이벤트 핸들러 함수이어야 한다. 이전의 예제를 살펴보면 <code>.on()</code> 매서드가 <code>.click()</code> 매서드의 자리에서 호출되고 있다. 이제 <code>click</code> 이벤트 이름은 전과 똑같이 자리잡은 이벤트 핸들러 함수와 함께 <code>.on()</code> 매서드 안에서 첫번째 인수로서 전달된다.</p>
+<div class="highlight"><pre><code class="js language-js" data-lang="js"><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;li&#39;</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;click&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">){</span>
+  <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">addClass</span><span class="p">(</span><span class="s1">&#39;saved-item&#39;</span><span class="p">);</span>
+<span class="p">});</span>
+</code></pre></div>
+<h3>Nesting Events</h3>
+
+<p>또 다른 하나 안에 하나를 품게함으로써 여러 개의 이벤트 핸들러와 트리거를 가질 수 있다. 예재로 <code>.on()</code> 이벤트 매서드 밑으로 <code>hover</code> 인수를 전달하여 <code>pagination</code> 클래스를 가진 엘리먼트 위를 호버할 때 호출될 수 있다. <code>.on()</code> 이벤트를 호출하면 <code>.click()</code> 아벤트 <code>up</code> ID를 가진 앵커를 호출된다.</p>
+<div class="highlight"><pre><code class="js language-js" data-lang="js"><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;.pagination&#39;</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;hover&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">){</span>
+  <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;a#up&#39;</span><span class="p">).</span><span class="nx">click</span><span class="p">();</span>
+<span class="p">});</span>
+</code></pre></div>
+<h3>Event Demo</h3>
+
+<p>데모로서 경고 메시지를 사용하여 다음 코드 스니핏은 경고 메시지를 만들고나서 닫기 아이콘을 클릭하면 메시지를 제거하는 방법을 보여준다.</p>
+
+<h6>HTML</h6>
+<div class="highlight"><pre><code class="html language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;alert-warning&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;strong&gt;</span>Warning!<span class="nt">&lt;/strong&gt;</span> I’m about to lose my cool.
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;alert-close&quot;</span><span class="nt">&gt;</span>×<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div>
+<h6>JavaScript</h6>
+<div class="highlight"><pre><code class="js language-js" data-lang="js"><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;.alert-close&#39;</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;click&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">){</span>
+  <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;.alert-warning&#39;</span><span class="p">).</span><span class="nx">remove</span><span class="p">();</span>
+<span class="p">});</span>
+</code></pre></div>
+<h4><a href="http://j.mp/19Lrgr1">Demo</a></h4>
+
+<h3>Event Methods</h3>
+
+<p>jQuery는 브라우저와 상호작용할 때 유저 행동을 등록하는 데에 기반을 둔 모든 매서드를 아주 많이 제공한다. 이런 매서드들은 아주 인기가 많지만 브라우저, 폼, 키보드, 마우스 등의 이벤트에 제한적이지 않은 꽤 많은 이벤트를 등록한다. 가장 인기있는 매서드들은 다음과 같다:</p>
+
+<h4>Browser Events</h4>
+
+<ul>
+<li><code>.resize()</code></li>
+<li><code>.scroll()</code></li>
+</ul>
+
+<h4>Document Loading</h4>
+
+<ul>
+<li><code>.ready()</code></li>
+</ul>
+
+<h4>Event Handler Attachment</h4>
+
+<ul>
+<li><code>.off()</code></li>
+<li><code>.on()</code></li>
+<li><code>.one()</code></li>
+<li><code>jQuery.proxy()</code></li>
+<li><code>.trigger()</code></li>
+<li><code>.triggerHandler()</code></li>
+<li><code>.unbind()</code></li>
+<li><code>.undelegate()</code></li>
+</ul>
+
+<h4>Event Object</h4>
+
+<ul>
+<li><code>event.currentTarget</code></li>
+<li><code>event.preventDefault()</code></li>
+<li><code>event.stopPropagation()</code></li>
+<li><code>event.target</code></li>
+<li><code>event.type</code></li>
+</ul>
+
+<h4>Form Events</h4>
+
+<ul>
+<li><code>.blur()</code></li>
+<li><code>.change()</code></li>
+<li><code>.focus()</code></li>
+<li><code>.select()</code></li>
+<li><code>.submit()</code></li>
+</ul>
+
+<h4>Keyboard Events</h4>
+
+<ul>
+<li><code>.focusin()</code></li>
+<li><code>.focusout()</code></li>
+<li><code>.keydown()</code></li>
+<li><code>.keypress()</code></li>
+<li><code>.keyup()</code></li>
+</ul>
+
+<h4>Mouse Events</h4>
+
+<ul>
+<li><code>.click()</code></li>
+<li><code>.dblclick()</code></li>
+<li><code>.focusin()</code></li>
+<li><code>.focusout()</code></li>
+<li><code>.hover()</code></li>
+<li><code>.mousedown()</code></li>
+<li><code>.mouseenter()</code></li>
+<li><code>.mouseleave()</code></li>
+<li><code>.mousemove()</code></li>
+<li><code>.mouseout()</code></li>
+<li><code>.mouseover()</code></li>
+<li><code>.mouseup()</code></li>
+</ul>
+
+<h2>Effects</h2>
+
+<p>이벤트와 버금가게, jQuery는 소수의 커스터마이징 가능한 효과도 제공한다. 이 효과들은 다양한 매서드로 행해지며, 컨텐츠를 보여주고 숨기고, 페이드 인/아웃, 슬라이드 업/다운 등을 위한 이벤트 매서드를 포함한다. 이들 모두가 사용될 매서드가 준비되어 있으며 최적으로 보이도록 커스터마이징될 수 있다.</p>
+
+<p>각 이펙트 매서드는 자신만의 구문을 가지고 있어서, 각 매서드의 특정 구문은 jQuery <a href="http://api.jquery.com/category/effects/">효과 문서</a>를 참조하는 것이 가장 좋다. 그렇지만, 일반적으로 효과는 지속기간(duraton), 이징(easing 역자주: 움직일 때의 애니메이션 <a href="http://gsgd.co.uk/sandbox/jquery/easing/">효과</a>), 콜백함수(역자주 : 애니메이션이 끝난 후 실행되는 함수) 지정 등을 허용한다.</p>
+
+<blockquote>
+<h4>jQuery CSS Animations</h4>
+
+<p>CSS 자체가 최근 애니메이션을 다루는 것과는 관계가 좀 떨어지지만, 다양한 CSS 속성의 맞춤형 애니메이션이 jQuery에서 수행될 수 있다. CSS 애니메이션은 브라우저 처리 관점에서 더 나은 성능을 제공하며, 가능한 곳에선 더 선호된다. jQuery 애니메이션 효과는 - Modernizr의 도움을 받아 - CSS 애니메이션을 지원하는 브라우저에 완벽한 백업 솔루션을 만들어준다.</p>
+</blockquote>
+
+<h3>Effect Duration</h3>
+
+<p>예로서 <code>.show()</code> 매서드를 사용하면, (선택적으로) 대입할 수 있는 첫 패러미터는 지속시간이며, 키워드와 밀리초 값을 사용해 수행될 수 있다. <code>slow</code> 키워드는 <code>600</code> 밀리초를, <code>fast</code> 키워드는 <code>200</code> 밀리초를 기본으로 한다. 키워드 값을 사용하는 건 완벽하지만, 밀리초 값을 직접 대입할 수도 있다. 키워드 값은 인용부호로 감싸지만, 밀리초 값은 그러지 않는다.</p>
+<div class="highlight"><pre><code class="js language-js" data-lang="js"><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;.error&#39;</span><span class="p">).</span><span class="nx">show</span><span class="p">();</span>
+<span class="nx">$</span><span class="p">(</span><span class="s1">&#39;.error&#39;</span><span class="p">).</span><span class="nx">show</span><span class="p">(</span><span class="s1">&#39;slow&#39;</span><span class="p">);</span>
+<span class="nx">$</span><span class="p">(</span><span class="s1">&#39;.error&#39;</span><span class="p">).</span><span class="nx">show</span><span class="p">(</span><span class="mi">500</span><span class="p">);</span>
+</code></pre></div>
+<h3>Effect Easing</h3>
+
+<p>지속시간을 설정함과 더불어, 애니메이션 안에서 다양한 시간 동안 애니메이션이 처리되는 이징(easing) 혹은 속도 등도 설정될 수 있다. 기본적으로 jQuery는 두 개의 이징 키워드 값이 있다. 기본값은 <code>swing</code>이고 추가적인 값은 <code>linear</code>이다. 기본 <code>swing</code> 값은 느린 속도로 애니메이션을 시작하여 애니메이션 되는 중에 속도를 내지만, 끝나기 전에는 속도를 늦춘다. <code>linear</code> 값은 처움부터 끝까지 하나의 일정한 속도로 애니메이션이 진행된다.</p>
+<div class="highlight"><pre><code class="js language-js" data-lang="js"><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;.error&#39;</span><span class="p">).</span><span class="nx">show</span><span class="p">(</span><span class="s1">&#39;slow&#39;</span><span class="p">,</span> <span class="s1">&#39;linear&#39;</span><span class="p">);</span>
+<span class="nx">$</span><span class="p">(</span><span class="s1">&#39;.error&#39;</span><span class="p">).</span><span class="nx">show</span><span class="p">(</span><span class="mi">500</span><span class="p">,</span> <span class="s1">&#39;linear&#39;</span><span class="p">);</span>
+</code></pre></div>
+<blockquote>
+<h4>jQuery UI</h4>
+
+<p>jQuery에서 제공되는 두 개의 이징 값은 추가적인 값을 제공할 수 있는 다양한 플러그인을 사용하여 확장될 수 있다. 가장 인기있는 플러그인 중 하나는 <a href="http://jqueryui.com/">jQuery UI</a> 이다.</p>
+
+<p>새 이징 값에 더해 jQuery UI는 살펴볼만한 소수의 다른 상호작용, 효과, 위젯과 도움되는 리소스를 제공한다.</p>
+</blockquote>
+
+<h3>Effect Callback</h3>
+
+<p>애니메이션이 끝나면 콜백 함수라 불리는 또 다른 함수를 실행할 수 있다. 콜백 함수는, 존재한다면, 지속시간(duration)이나 이징(easing) 뒤에 배치해야 한다. 이 함수에서 새로운 이벤트나 효과가 배치될 수 있으며, 각각 자신의 필요한 구문을 따른다.</p>
+<div class="highlight"><pre><code class="js language-js" data-lang="js"><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;.error&#39;</span><span class="p">).</span><span class="nx">show</span><span class="p">(</span><span class="s1">&#39;slow&#39;</span><span class="p">,</span> <span class="s1">&#39;linear&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">){</span>
+  <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;.error .status&#39;</span><span class="p">).</span><span class="nx">text</span><span class="p">(</span><span class="s1">&#39;Continue&#39;</span><span class="p">);</span>
+<span class="p">});</span>
+</code></pre></div>
+<h3>Effect Syntax</h3>
+
+<p>전에 언급되었듯이 각 효과 매서드는 jQuery <a href="http://api.jquery.com/category/effects/">효과 문서</a>에서 찾을 수 있는 자신의 구문을 가진다. 여기서 약술한 지속시간, 이징, 콜백 매개변수는 일반적인 것이고 모든 매서드에서 쓸 수 있는 것은 아니다. 관련해서 의문 사항이 생기면 매서드의 구문을 재검토하는 것이 가장 좋다.</p>
+
+<h3>Effects Demo</h3>
+
+<p>위에서와 같은 이벤트 데모를 취하면, 여기서 <code>.remove()</code> 매서드는 <code>.fadeOut()</code> 매서드에서 콜백 함수의 부분으로 사용된다. <code>.fadeOut()</code> 매서드를 사용하면 경고 메시지가 재빨리 사라지기 보단 점차로 페이드 아웃되게 하며, 애니메이션이 완료된 후 DOM에서 제거된다.</p>
+
+<h6>HTML</h6>
+<div class="highlight"><pre><code class="html language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;alert-warning&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;strong&gt;</span>Warning!<span class="nt">&lt;/strong&gt;</span> I’m about to lose my cool.
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;alert-close&quot;</span><span class="nt">&gt;</span>×<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div>
+<h6>JavaScript</h6>
+<div class="highlight"><pre><code class="js language-js" data-lang="js"><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;.alert-close&#39;</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;click&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">){</span>
+  <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;.alert-warning&#39;</span><span class="p">).</span><span class="nx">fadeOut</span><span class="p">(</span><span class="s1">&#39;slow&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">){</span>
+    <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">remove</span><span class="p">();</span>
+  <span class="p">});</span>
+<span class="p">});</span>
+</code></pre></div>
+<h4><a href="http://j.mp/ZExZyB">Demo</a></h4>
+
+<h4>Basic Effects</h4>
+
+<ul>
+<li><code>.hide()</code></li>
+<li><code>.show()</code></li>
+<li><code>.toggle()</code></li>
+</ul>
+
+<h4>Custom Effects</h4>
+
+<ul>
+<li><code>.animate()</code></li>
+<li><code>.clearQueue()</code></li>
+<li><code>.delay()</code></li>
+<li><code>.dequeue()</code></li>
+<li><code>jQuery.fx.interval</code></li>
+<li><code>jQuery.fx.off</code></li>
+<li><code>.queue()</code></li>
+<li><code>.stop()</code></li>
+</ul>
+
+<h4>Fading Effects</h4>
+
+<ul>
+<li><code>.fadeIn()</code></li>
+<li><code>.fadeOut()</code></li>
+<li><code>.fadeTo()</code></li>
+<li><code>.fadeToggle()</code></li>
+</ul>
+
+<h4>Sliding Effects</h4>
+
+<ul>
+<li><code>.slideDown()</code></li>
+<li><code>.slideToggle()</code></li>
+<li><code>.slideUp()</code></li>
+</ul>
+
+<h3>Slide Demo</h3>
+
+<h6>HTML</h6>
+<div class="highlight"><pre><code class="html language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;panel&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;panel-stage&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">class=</span><span class="s">&quot;panel-tab&quot;</span><span class="nt">&gt;</span>Open <span class="nt">&lt;span&gt;</span>▼<span class="nt">&lt;/span&gt;&lt;/a&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div>
+<h6>JavaScript</h6>
+<div class="highlight"><pre><code class="js language-js" data-lang="js"><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;.panel-tab&#39;</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;click&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">){</span>
+  <span class="nx">event</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">();</span>
+  <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;.panel-stage&#39;</span><span class="p">).</span><span class="nx">slideToggle</span><span class="p">(</span><span class="s1">&#39;slow&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">){</span>
+    <span class="k">if</span><span class="p">(</span><span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">is</span><span class="p">(</span><span class="s1">&#39;:visible&#39;</span><span class="p">)){</span>
+      <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;.panel-tab&#39;</span><span class="p">).</span><span class="nx">html</span><span class="p">(</span><span class="s1">&#39;Close ▲&#39;</span><span class="p">);</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+      <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;.panel-tab&#39;</span><span class="p">).</span><span class="nx">html</span><span class="p">(</span><span class="s1">&#39;Open ▼&#39;</span><span class="p">);</span>
+    <span class="p">}</span>
+  <span class="p">});</span>
+<span class="p">});</span>
+</code></pre></div>
+<h4><a href="http://j.mp/11Cl156">Demo</a></h4>
+
+<h3>Tabs Demo</h3>
+
+<h6>HTML</h6>
+<div class="highlight"><pre><code class="html language-html" data-lang="html"><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">&quot;tabs-nav&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#tab-1&quot;</span><span class="nt">&gt;</span>Features<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#tab-2&quot;</span><span class="nt">&gt;</span>Details<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;tabs-stage&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;tab-1&quot;</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;tab-2&quot;</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div>
+<h6>JavaScript</h6>
+<div class="highlight"><pre><code class="js language-js" data-lang="js"><span class="c1">// Show the first tab by default</span>
+<span class="nx">$</span><span class="p">(</span><span class="s1">&#39;.tabs-stage div&#39;</span><span class="p">).</span><span class="nx">hide</span><span class="p">();</span>
+<span class="nx">$</span><span class="p">(</span><span class="s1">&#39;.tabs-stage div:first&#39;</span><span class="p">).</span><span class="nx">show</span><span class="p">();</span>
+<span class="nx">$</span><span class="p">(</span><span class="s1">&#39;.tabs-nav li:first&#39;</span><span class="p">).</span><span class="nx">addClass</span><span class="p">(</span><span class="s1">&#39;tab-active&#39;</span><span class="p">);</span>
+<span class="c1">// Change tab class and display content</span>
+<span class="nx">$</span><span class="p">(</span><span class="s1">&#39;.tabs-nav a&#39;</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;click&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">){</span>
+  <span class="nx">event</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">();</span>
+  <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;.tabs-nav li&#39;</span><span class="p">).</span><span class="nx">removeClass</span><span class="p">(</span><span class="s1">&#39;tab-active&#39;</span><span class="p">);</span>
+  <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">parent</span><span class="p">().</span><span class="nx">addClass</span><span class="p">(</span><span class="s1">&#39;tab-active&#39;</span><span class="p">);</span>
+  <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;.tabs-stage div&#39;</span><span class="p">).</span><span class="nx">hide</span><span class="p">();</span>
+  <span class="nx">$</span><span class="p">(</span><span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">attr</span><span class="p">(</span><span class="s1">&#39;href&#39;</span><span class="p">)).</span><span class="nx">show</span><span class="p">();</span>
+<span class="p">});</span>
+</code></pre></div>
+<h4><a href="http://j.mp/1052YX1">Demo</a></h4>
+
+<h2>Resources &amp; Links</h2>
+
+<ul>
+<li><a href="http://jsforcats.com/">JavaScript For Cats</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/A_re-introduction_to_JavaScript">A Re-introduction to JavaScript</a> via Mozilla Developer Network</li>
+<li><a href="https://tutsplus.com/course/30-days-to-learn-jquery/">30 Days to Learn jQuery</a> via Tuts+ Premium</li>
+<li><a href="https://developers.google.com/speed/libraries/devguide">Google Hosted Libraries</a></li>
+<li><a href="http://docs.jquery.com/">jQuery Documentation</a></li>
+<li><a href="http://jqfundamentals.com/">jQuery Fundamentals</a> via Bocoup</li>
+<li><a href="http://jqueryui.com/">jQuery UI</a></li>
+</ul>
+
+<h3>역자참조링크</h3>
+
+<ul>
+<li><a href="http://www.jquerykorea.pe.kr/xe/?mid=document&amp;CT=All">jQuery API 한글 번역</a></li>
+<li><a href="http://direct.co.kr/cs/jQuery.pdf">한글 jQuery 시리즈 강좌 리스트 : PDF와 동영상 링크</a></li>
+</ul>
+
+  </div>
+</article>
+
+<section class="post-footer">
+  <a href="/feed.xml" class="pull-right">
+    <img src="/images/rss.jpg" alt="RSS" />
+  </a>
+</section>
+
+<div class="separator"></div>
+
+<section class="comments">
+  <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'nolboo'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+      <div class="separator"></div>
+    </div>
+  </div>
+
+  <div class="clear"></div>
+
+  <footer>
+    <p>
+      Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a>,
+      hosted on <a href="http://pages.github.com/">Github Pages</a>
+      | Template inspired by <a href="http://sebastien.saunier.me/">sebastien.saunier.me</a>
+    </p>
+    <ul class="links">
+      <!-- <li><a href="https://github.com/nolboo" title="Show me the code"><i class="icon-github"></i></a></li> -->
+      <li><a href="https://twitter.com/n0lb00" title="follow me"><i class="icon-twitter"></i></a></li>
+      <li><a href="mailto:nolboo.kim@gmail.com" title="AMA"><i class="icon-sparrow"></i></a></li>
+    </ul>
+  </footer>
+
+  <script type="text/javascript">
+    // var _gaq = _gaq || [];
+    // _gaq.push(['_setAccount', 'GOOGLE-ANALYTICS-TRACK-ID']);
+    // _gaq.push(['_trackPageview']);
+
+    // (function() {
+    //   var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    //   ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    //   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    // })();
+
+    // /*!
+    //  * http://github.com/ssaunier/track-outbound-links
+    //  * Copyright 2013 Sébastien Saunier
+    //  * @license MIT
+    //  */
+    // !function(e,t){function n(){for(var n=t.getElementsByTagName("a"),a=[],r=0;r<n.length;++r){var o=n[r];o.host!=e.location.host&&a.push(o)}return a}function a(n){for(var a=n.srcElement||n.target;a&&("undefined"==typeof a.tagName||"a"!=a.tagName.toLowerCase()||!a.href);)a=a.parentNode;a&&a.href&&(e._gaq&&_gaq.push(["_trackEvent","Outbound link","Click",a.href]),(!a.target||a.target.match(/^_(self|parent|top)$/i))&&(setTimeout(function(){t.location.href=a.href},150),n.preventDefault?n.preventDefault():n.returnValue=!1))}e.addEventListener("load",function(){var e=n();for(var t in e)e[t].addEventListener("click",a)})}(window,document);
+  </script>
+
+  
+</body>
+</html>

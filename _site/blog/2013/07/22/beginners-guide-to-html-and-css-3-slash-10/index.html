@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--   <meta name="google-site-verification" content="aexITLS38FdIRzwj25OVWxm87rpa9l-UV0URTyC9cTs" /> -->
+  <title>
+    HTML & CSS 초보자 가이드 - 3강 : Box Model & Positioning
+    
+    - Nolboo's Blog
+    
+  </title>
+  <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:700,400|Titillium+Web:700,400">
+  <link rel="stylesheet" href="/css/site.css">
+  <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+  <meta name="description" content="HTML과 CSS를 완전히 이해하는데 필요한 하나의 원칙은 박스모델이다." />
+  <link rel="alternate" type="application/atom+xml" title="RSS Feed for Nolboo's blog" href="/feed.xml" />
+
+<!--    -->
+
+  
+</head>
+<body>
+  <div class="top-bar"></div>
+
+  <div class="container">
+    <div class="site">
+      <header>
+        <nav>
+          <a class="" href="/">Home</a>
+          <a class=" selected " href="/archive/">Archive</a>
+          <a class="" href="/trans/">번역글 모음</a>
+        </nav>
+        <div class="pull-right right logo">
+          <div class="name">
+            <a href="/">Nolboo's Blog</a><br />
+            <small>
+              <em>
+                  <a href="/">호모스터디쿠스를 꿈꾸는 놀부</a>
+              </em>
+            </small>
+          </div>
+          <!-- <img class="avatar" src="/images/sebastien_saunier.jpg" alt="My profile picture" /> -->
+        </div>
+        <div class="clear"></div>
+      </header>
+      <div class="separator"></div>
+      <article>
+  <h1>
+    HTML & CSS 초보자 가이드 - 3강 : Box Model & Positioning
+  </h1>
+  <div class="center">
+    <p class="meta">22 Jul 2013</p>
+  </div>
+
+<!--    -->
+
+  <div class="post">
+  <p>원본 : <a href="http://learn.shayhowe.com/html-css/box-model">A Beginner’s Guide to HTML &amp; CSS - LESSON 3 : Box Model &amp; Positioning</a></p>
+
+<p>HTML과 CSS를 완전히 이해하는데 필요한 하나의 원칙은 박스모델이다.</p>
+
+<p><strong>“페이지의 모든 엘리먼트는 사각형 박스이다.”</strong></p>
+
+<p>박스 모델을 이해하는 것은 어렵고 까다로울 수 있으나 일반적인 웹사이트를 만들기 위해서는 필요하다. 더불어 레이아웃을 만들기 위해, 페이지에 엘리먼트를 배치하는 방법을 아는 것도 똑같이 중요하다.</p>
+
+<h2>Box Sizing</h2>
+
+<p>이전의 강의를 통해 페이지에 모든 엘리먼트는, 블럭이나 인라인 레벨이건, 모두 사각형 박스라는 것을 알았을 것이다. 박스는 다른 크기를 가질 수 있으며, 마진, 패딩, 경계선 등이 크기를 변경할 수도 있다. 이것들을 통틀어 <em>the box model</em> 이라 한다. 박스 모델의 한 예를 보자.</p>
+
+<p>Fig. 3.01 <img src="http://learn.shayhowe.com/assets/courses/html-css-guide/box-model/square-elements.jpg" alt=""></p>
+
+<h2>The Box Model</h2>
+
+<p>알다시피 모든 엘리먼트는 높이(height)와 너비(width)를 가지는 사각형 박스이며, 다른 마진(margin), 패딩(padding), 보더(boarder)로 구성되어 있다. 이 모든 값들이 합쳐져 <a href="http://css-tricks.com/the-css-box-model/">박스모델</a>을 만든다.</p>
+
+<p>박스는 엘리먼트의 <code>height</code>와 <code>width</code>의 속성값을 주는 것으로 시작된다. <code>padding</code>과 <code>border</code>가 차례로 <code>height</code> 와 <code>width</code>를 둘러싼다. 그런 다음 <code>margin</code>이 <code>border</code>를 둘러싼다. 그러나, 마진은 박스의 실제 크기에는 포함되지 않으며, 박스모델을 정의하는 것에는 도움을 준다.</p>
+<div class="highlight"><pre><code class="css language-css" data-lang="css">    <span class="nt">div</span> <span class="p">{</span>
+      <span class="k">background</span><span class="o">:</span> <span class="m">#fff</span><span class="p">;</span>
+      <span class="k">border</span><span class="o">:</span> <span class="m">6px</span> <span class="k">solid</span> <span class="m">#ccc</span><span class="p">;</span>
+      <span class="k">height</span><span class="o">:</span> <span class="m">100px</span><span class="p">;</span>
+      <span class="k">margin</span><span class="o">:</span> <span class="m">20px</span><span class="p">;</span>
+      <span class="k">padding</span><span class="o">:</span> <span class="m">20px</span><span class="p">;</span>
+      <span class="k">width</span><span class="o">:</span> <span class="m">400px</span><span class="p">;</span>
+    <span class="p">}</span>
+</code></pre></div>
+<p>박스모델에서 엘리먼트의 전체 너비는 다음 공식을 사용한다:</p>
+
+<p><code>margin-right</code> + <code>border-right</code> + <code>padding-right</code> + <code>width</code> + <code>padding-left</code> + <code>border-left</code> + <code>margin-left</code></p>
+
+<p>엘리먼트의 전체 높이 공식은</p>
+
+<p><code>margin-top</code> + <code>border-top</code> + <code>padding-top</code> + <code>height</code> + <code>padding-bottom</code> + <code>border-bottom</code> + <code>margin-bottom</code></p>
+
+<p>Fig. 3.02 박스모델 </p>
+
+<p><img src="http://learn.shayhowe.com/assets/courses/html-css-guide/box-model/box-model.png" alt=""></p>
+
+<p>공식을 사용하여 위 그림의 전체 높이와 너비를 계산하면</p>
+
+<p><strong>Width</strong>: <code>492px</code> = <code>20px</code> + <code>6px</code> + <code>20px</code> + <code>400px</code> + <code>20px</code> + <code>6px</code> + <code>20px</code>
+<strong>Height</strong>: <code>192px</code> = <code>20px</code> + <code>6px</code> + <code>20px</code> + <code>100px</code> + <code>20px</code> + <code>6px</code> + <code>20px</code></p>
+
+<h2>Height &amp; Width</h2>
+
+<p>모든 엘리먼트는 상속된 <code>height</code>와 <code>width</code>를 갖는다. 어떤 엘리먼트가 페이지의 레이아웃과 디자인에 핵심요소(key)가 된다면 특정한 <code>height</code>와 <code>width</code>가 필요할 것이고 이때 블럭 레벨 엘리먼트의 디폴트 값은 (새로 지정된 값으로) 덮어씌워질 것이다.(overrided)</p>
+
+<p>역자참조링크 : <a href="http://www.clearboth.org/28_inheritance_and_cascade/">상속과 캐스케이딩</a></p>
+
+<h3>CSS Height Property</h3>
+
+<p>엘리먼트의 <code>height</code>의 디폴트 값은 컨텐츠에 의해 결정된다. 컨텐츠를 수용하기 위해 필요한 만큼 수직으로 늘어나거나 줄어들 것이다. 블럭 엘리먼트의 높이를 지정하기 위해는 <code>height</code> 속성이 사용된다.</p>
+<div class="highlight"><pre><code class="css language-css" data-lang="css"><span class="nt">div</span> <span class="p">{</span>
+  <span class="k">height</span><span class="o">:</span> <span class="m">100px</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3>CSS Width Property</h3>
+
+<p>엘리먼트의 <code>width</code>의 디폴트값은 보여지는 방식에 달려있다. 블럭 레벨 엘리먼트는 width = 100% 가 디폴트이며, 가능한 모든 너비를 차지한다. inline 엘리먼트는 컨텐츠가 차지하는 만큼 수평적으로 늘어나고 줄어든다. 인라인 레벨 엘리먼트는 정해진 값을 가질 수 없으므로, <code>height</code> 속성처럼 <code>width</code> 속성은 블럭 레벨 엘리먼트와만 관계가 있다.</p>
+<div class="highlight"><pre><code class="css language-css" data-lang="css"><span class="nt">div</span> <span class="p">{</span>
+  <span class="k">width</span><span class="o">:</span> <span class="m">400px</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+<h2>Margin &amp; Padding</h2>
+
+<p><code>margin</code> 과 <code>padding</code>은 브라우저마다 엘리먼트마다 가독성을 이유로 다른 디폴트 값을 가진다. 이러한 디폴트값을 모두 0로 맞추기 위해 제1강에서 <a href="http://learn.shayhowe.com/html-css/terminology-syntax-intro#reset">CSS reset</a>을 사용하는 것을 논의했다.</p>
+
+<h3>CSS Margin Property</h3>
+
+<p><code>margin</code> 속성으로 엘리먼트를 둘러싼 여백의 크기를 정할 수 있다. 마진은 경계선(border)의 바깥에 위치하며 완전히 투명하다. 마진으로 페이지의 특정 위치에 엘리먼트가 배치되는 것을 돕거나 다른 엘리먼트가 충분한 거리를 두도록 여백만을 줄 수도 있다.</p>
+<div class="highlight"><pre><code class="css language-css" data-lang="css"><span class="nt">div</span> <span class="p">{</span>
+  <span class="k">margin</span><span class="o">:</span> <span class="m">20px</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3>CSS Padding Property</h3>
+
+<p><code>padding</code> 속성은 <code>margin</code> 속성과 매우 유사하나 엘리먼트의 경계선(<code>border</code>)안에 위치한다. 패딩은 엘리먼트의 백그라운드를 상속한다. <code>margin</code> 속성은 엘리먼트를 배치하기 위한 것이지만 패딩은 엘리먼트 안의 여백을 제공한다.</p>
+<div class="highlight"><pre><code class="css language-css" data-lang="css"><span class="nt">div</span> <span class="p">{</span>
+  <span class="k">padding</span><span class="o">:</span> <span class="m">20px</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>Fig. 3.03 <img src="http://learn.shayhowe.com/assets/courses/html-css-guide/box-model/margin-padding.png" alt=""></p>
+
+<h3>Margin &amp; Padding Declarations(선언)</h3>
+
+<p><code>margin</code> 과 <code>padding</code> 값은 롱핸드와 숏핸드 형식으로 줄 수 있다.</p>
+
+<p>엘리먼트의 네 변을 하나의 값으로 설정하거나 상하, 좌우, 상우하좌로 한번에 설정할 수 있다.(숏핸드)</p>
+<div class="highlight"><pre><code class="css language-css" data-lang="css"><span class="nt">margin</span><span class="o">:</span> <span class="nt">20px</span><span class="o">;</span>             <span class="c">/* 상하좌우 모두 20px */</span>
+<span class="nt">margin</span><span class="o">:</span> <span class="nt">10px</span> <span class="nt">20px</span><span class="o">;</span>        <span class="c">/* 상하 10px, 좌우 20px */</span>
+<span class="nt">margin</span><span class="o">:</span> <span class="nt">10px</span> <span class="nt">20px</span> <span class="nt">0</span> <span class="nt">15px</span><span class="o">;</span> <span class="c">/* 상부터 시계 방향으로 상우하좌 순 */</span>
+</code></pre></div>
+<p>한 개의 속성을 사용해서 한 번에 한 변의 값을 설정할 수 있다. 각 속성은 <code>margin</code> 혹은 <code>padding</code>으로 시작하며 -와 적용할 <code>top</code>, <code>right</code>, <code>bottom</code>, or <code>left</code> 으로 적용할 변을 뒤따라 지정한다. 예를 들어 <code>padding-left</code>는 엘리먼트의 왼쪽 패딩에 값을 적용한다.(롱핸드)</p>
+<div class="highlight"><pre><code class="css language-css" data-lang="css"><span class="nt">div</span> <span class="p">{</span>
+  <span class="k">margin-top</span><span class="o">:</span> <span class="m">10px</span><span class="p">;</span>
+  <span class="k">padding-left</span><span class="o">:</span> <span class="m">6px</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+<h2>Borders(경계선)</h2>
+
+<p>경계선은 <code>padding</code>과 <code>margin</code>사이에 위치하며, 엘리먼트 주위의 아웃라인을 제공한다. 모든 경계선은 너비, 스타일, 색상의 세가지 값이 필요하다. 숏핸드 값은 너비, 스타일, 색상 순으로 주어진다. 롱핸드의 경우 <code>border-width</code>, <code>border-style</code>, <code>border-color</code> 값으로 나뉘어진다.</p>
+
+<p>대부분 단순한 사이즈, 실선, 한가지 색의 경계를 볼 수 있을 것이다. 그러나 <a href="http://www.quackit.com/html/codes/html_borders.cfm">수많은</a> 사이즈와 모양과 색상이 가능하다.</p>
+<div class="highlight"><pre><code class="css language-css" data-lang="css">    <span class="nt">div</span> <span class="p">{</span>
+      <span class="k">border</span><span class="o">:</span> <span class="m">6px</span> <span class="k">solid</span> <span class="m">#ccc</span><span class="p">;</span>
+    <span class="p">}</span>
+</code></pre></div>
+<blockquote>
+<h4>Length Value</h4>
+
+<p>마진, 패딩, 경계선과 쓸 수 있는 <a href="https://developer.mozilla.org/en/CSS/length">길이 값</a>은 상대적인, 절대적인 값으로 여러 가지가 있다.</p>
+
+<p><strong>상대 값</strong>은 값이 적용되는 엘리먼트와 상관관계가 있다. <code>em</code>과 퍼센티지 등이 있다.</p>
+
+<p><strong>절대 값</strong>은 엘리먼트와 상관없이 측정 단위로 고정된다. 픽셀, 포인트, 인치, 센티미터 등이 있다.</p>
+</blockquote>
+
+<h2>Floating Elements</h2>
+
+<p>박스모델로 엘리먼트의 모양새를 다듬는 것은 페이지 레이아웃을 코딩하는 전체에서 반을 차지한다. 나머지 반은 페이지의 다른 엘리먼트들을 적절하게 정렬하는 방법을 아는 것이다. 다른 엘리먼트 옆에 엘리먼트를 배치하는 방법 중 하나는 <code>float</code> 속성을 이용하는 것이다. <code>float</code> 속성은 엘리먼트들을 왼쪽과 오른쪽으로 연속으로 배치하게 한다.</p>
+
+<p><strong>역자 링크</strong> : 역자는 <code>float</code> 개념이 처음에 많이 헷갈렸다. 그래서 도움을 얻을만한 글들을 몇 개 링크한다.<sup>^</sup></p>
+
+<ul>
+<li><a href="http://celestarry.egloos.com/3595449">float 속성의 이해와 웹 페이지 레이아웃 잡기</a></li>
+<li><a href="http://tranbot.net/ALA/css-floats-101/">CSS 플로트 기초</a></li>
+<li><a href="http://techbug.tistory.com/181">CSS Float 속성의 모든것 (All About Floats)</a></li>
+<li><a href="http://naradesign.net/wp/2008/05/27/144/">float을 clear하는 4가지 방법</a></li>
+<li><a href="http://blog.wystan.net/2009/01/12/relationships-between-position-float-display">position, float, display 속성간의 관계</a></li>
+</ul>
+
+<p>블럭 엘리먼트인 <code>section</code>과 <code>aside</code>로 일반적인 페이지 레이아웃을 잡을 때 기본적으로는 수직적으로 쌓여버릴 것이다. 나란히 옆으로 배치하고 싶다면 각각 특정 <code>width</code>를 준 후에 하나는 왼쪽으로 다른 하나는 오른쪽으로 플로트하면 된다.</p>
+
+<p>Fig. 3.04 <img src="http://learn.shayhowe.com/assets/courses/html-css-guide/box-model/floats.png" alt=""></p>
+
+<p><a href="http://coding.smashingmagazine.com/2007/05/01/css-float-theory-things-you-should-know/">엘리먼트를 플로팅</a>할 때 주목해야 할 몇가지 것들이 있다. 첫번째는 플로팅 엘리먼트가 부모 컨테이너의 가장자리에 붙어버린다는 것이다. 만약 부모 엘리먼트가 없다면 페이지의 가장자리에 붙어버릴 것이다. 추가적으로 하나의 엘리먼트를 폴로트하면 다른 엘리먼트는 페이지 흐름 안에서 자연스럽게 이어붙을 것이다.</p>
+<div class="highlight"><pre><code class="css language-css" data-lang="css"><span class="nt">section</span> <span class="p">{</span>
+  <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span>
+  <span class="k">margin</span><span class="o">:</span> <span class="m">10px</span><span class="p">;</span>
+  <span class="k">width</span><span class="o">:</span> <span class="m">600px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">aside</span> <span class="p">{</span>
+  <span class="k">float</span><span class="o">:</span> <span class="k">right</span><span class="p">;</span>
+  <span class="k">margin</span><span class="o">:</span> <span class="m">10px</span><span class="p">;</span>
+  <span class="k">width</span><span class="o">:</span> <span class="m">320px</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3>Clearing Floated Elements</h3>
+
+<p>엘리먼트가 플로트될 때마다 페이지의 보통 흐름이 깨지고 다른 엘리먼트는 필요한대로 플로팅된 것 주위로 랩핑된다. 켄텐츠 옆에 이미지를 플로팅한 것과 같이 좋을 때도 있지만 때론 좋지 않다.</p>
+
+<p>하나나 여러 개의 엘리먼트를 플로팅한 후 <code>clear</code> 속성을 이용하여 도큐먼트를 보통 흐름으로 되돌린다.</p>
+
+<p>위의 예젱에서는 <code>section</code>과 <code>aside</code>를 플로트한 후 두 플로트된 엘리먼트 밑에 위치하는 <code>footer</code>에 클리어를 적용했다.</p>
+<div class="highlight"><pre><code class="css language-css" data-lang="css"><span class="nt">footer</span> <span class="p">{</span>
+  <span class="k">clear</span><span class="o">:</span> <span class="k">both</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+<h2>Positioning Elements</h2>
+
+<p>플로팅하는 것 외에 엘리먼트를 정렬할 때 <code>position</code> 속성을 사용할 수도 있다. <code>position</code> 속성은 <a href="http://www.alistapart.com/articles/css-positioning-101/">다른 기능</a>을 하는 여러 값을 가진다.</p>
+
+<p>디폴트 <code>position</code> 값은 <code>static</code>이다. <code>realtive</code> 값은 <code>top</code>, <code>right</code>, <code>bottom</code>, <code>left</code>과 같은 오프셋 값을 사용할 수 있다. <code>absolute</code>와 <code>fixed</code>는 <code>relative</code> 값을 가진 부모 엘리먼트와 함께 사용된다.</p>
+
+<p>Fig. 3.05</p>
+
+<p><img src="http://learn.shayhowe.com/assets/courses/html-css-guide/box-model/position.png" alt=""></p>
+
+<p>위의 예에서, <code>header</code> 엘리먼트는 고정된 엘리먼트로 동작하기 위해 <code>relative</code>로 배치되고, 그 안에 <code>absolute</code>로 배치되는 엘리먼트의 주된 컨테이너 역할을 한다. <code>ul</code> 엘리먼트는 <code>header</code> 엘리먼트의 위쪽과 오른쪽에서 <code>10px</code> 떨어진 절대 위치에 배치된다.</p>
+
+<p>코드는 다음과 같을 것이다.</p>
+
+<h6>HTML</h6>
+<div class="highlight"><pre><code class="html language-html" data-lang="html"><span class="nt">&lt;header&gt;</span>
+  <span class="nt">&lt;ul&gt;</span>...<span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;/header&gt;</span>
+</code></pre></div>
+<h6>CSS</h6>
+<div class="highlight"><pre><code class="css language-css" data-lang="css"><span class="nt">header</span> <span class="p">{</span>
+  <span class="k">position</span><span class="o">:</span> <span class="k">relative</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">ul</span> <span class="p">{</span>
+  <span class="k">position</span><span class="o">:</span> <span class="k">absolute</span><span class="p">;</span>
+  <span class="k">right</span><span class="o">:</span> <span class="m">10px</span><span class="p">;</span>
+  <span class="k">top</span><span class="o">:</span> <span class="m">10px</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3>Box Offset Properties</h3>
+
+<p>엘리먼트의 <code>position</code>이 <code>static</code>으로 설정되지 않는 한, 박스 오프셋 속성이 사용될 수 있다. 오프셋 값은 <code>top</code>, <code>right</code>, <code>bottom</code>, <code>left</code> 등이 있다.</p>
+
+<p>예를 들면, <code>bottom: 32px;</code>은 <code>realtive</code> 배치 속성값을 가진 부모 엘리먼트의 바닥에서 32 픽셀에 위치될 것이다. 반대로 <code>bottom: -32px;</code>은 <code>realtive</code> 배치 속성값을 가진 부모 엘리먼트의 아래 32 픽셀에 위치될 것이다</p>
+
+<blockquote>
+<h4>Grids &amp; Frameworks</h4>
+
+<p>사이트의 레이아웃을 만들 때 고려하는 툴과 실제예는 셀 수없이 많다. 그 중 그리드와 프레임워크가 가장 선두에 있다.</p>
+
+<p><strong>Grid</strong>는 - vertical과 baseline 모두 - 웹사이트에 일련의 흐름을 더해주고 모든 것을 정렬하는 훌륭한 방법을 제공한다. 수년동안 인기있는 수십 개의 서로 다른 <a href="http://vandelaydesign.com/blog/design/resources-grid-based-design/">추천 그리드</a>가 있으며, 자신의 프로젝트에 가장 알맞는 것을 선택할 수 있다.</p>
+
+<p><strong>Framework</strong>는 미리 선정된 표준 세트를 바탕으로 웹사이트를 빠르게 만들 수 있는 방법을 제공한다. 프로젝트에 따라 프레임워크는 훌륭한 시작점을 제공하거나 완벽한 솔루션을 제공하기도 한다.</p>
+</blockquote>
+
+<h2>Resources &amp; Links</h2>
+
+<ul>
+<li><a href="https://developer.mozilla.org/en/CSS/length">CSS Length Values</a> via Mozilla Developer Network</li>
+<li><a href="http://www.quackit.com/html/codes/html_borders.cfm">HTML Borders</a> via Quackit.com</li>
+<li><a href="http://css-tricks.com/the-css-box-model/">The CSS Box Model</a> via CSS-Tricks</li>
+<li><a href="http://coding.smashingmagazine.com/2007/05/01/css-float-theory-things-you-should-know/">CSS Float Theory</a> via Smashing Magazine</li>
+<li><a href="http://www.alistapart.com/articles/css-positioning-101/">CSS Positioning 101</a> via A List Apart</li>
+<li><a href="http://vandelaydesign.com/blog/design/resources-grid-based-design/">Resources for Grid-Based Design</a> via Vandelay Design</li>
+</ul>
+
+  </div>
+</article>
+
+<section class="post-footer">
+  <a href="/feed.xml" class="pull-right">
+    <img src="/images/rss.jpg" alt="RSS" />
+  </a>
+</section>
+
+<div class="separator"></div>
+
+<section class="comments">
+  <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'nolboo'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+      <div class="separator"></div>
+    </div>
+  </div>
+
+  <div class="clear"></div>
+
+  <footer>
+    <p>
+      Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a>,
+      hosted on <a href="http://pages.github.com/">Github Pages</a>
+      | Template inspired by <a href="http://sebastien.saunier.me/">sebastien.saunier.me</a>
+    </p>
+    <ul class="links">
+      <!-- <li><a href="https://github.com/nolboo" title="Show me the code"><i class="icon-github"></i></a></li> -->
+      <li><a href="https://twitter.com/n0lb00" title="follow me"><i class="icon-twitter"></i></a></li>
+      <li><a href="mailto:nolboo.kim@gmail.com" title="AMA"><i class="icon-sparrow"></i></a></li>
+    </ul>
+  </footer>
+
+  <script type="text/javascript">
+    // var _gaq = _gaq || [];
+    // _gaq.push(['_setAccount', 'GOOGLE-ANALYTICS-TRACK-ID']);
+    // _gaq.push(['_trackPageview']);
+
+    // (function() {
+    //   var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    //   ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    //   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    // })();
+
+    // /*!
+    //  * http://github.com/ssaunier/track-outbound-links
+    //  * Copyright 2013 Sébastien Saunier
+    //  * @license MIT
+    //  */
+    // !function(e,t){function n(){for(var n=t.getElementsByTagName("a"),a=[],r=0;r<n.length;++r){var o=n[r];o.host!=e.location.host&&a.push(o)}return a}function a(n){for(var a=n.srcElement||n.target;a&&("undefined"==typeof a.tagName||"a"!=a.tagName.toLowerCase()||!a.href);)a=a.parentNode;a&&a.href&&(e._gaq&&_gaq.push(["_trackEvent","Outbound link","Click",a.href]),(!a.target||a.target.match(/^_(self|parent|top)$/i))&&(setTimeout(function(){t.location.href=a.href},150),n.preventDefault?n.preventDefault():n.returnValue=!1))}e.addEventListener("load",function(){var e=n();for(var t in e)e[t].addEventListener("click",a)})}(window,document);
+  </script>
+
+  
+</body>
+</html>

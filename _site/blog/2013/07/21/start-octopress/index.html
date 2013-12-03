@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--   <meta name="google-site-verification" content="aexITLS38FdIRzwj25OVWxm87rpa9l-UV0URTyC9cTs" /> -->
+  <title>
+    옥토프레스로 블로깅하기
+    
+    - Nolboo's Blog
+    
+  </title>
+  <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:700,400|Titillium+Web:700,400">
+  <link rel="stylesheet" href="/css/site.css">
+  <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+  <meta name="description" content="옥토프레스를 설치하여 워드프레스 블로그를 마이그레이션하고, 무료 호스팅 서비스를 제공하는 깃허브에 올리고 운영하는 방법" />
+  <link rel="alternate" type="application/atom+xml" title="RSS Feed for Nolboo's blog" href="/feed.xml" />
+
+<!--    -->
+
+  
+</head>
+<body>
+  <div class="top-bar"></div>
+
+  <div class="container">
+    <div class="site">
+      <header>
+        <nav>
+          <a class="" href="/">Home</a>
+          <a class=" selected " href="/archive/">Archive</a>
+          <a class="" href="/trans/">번역글 모음</a>
+        </nav>
+        <div class="pull-right right logo">
+          <div class="name">
+            <a href="/">Nolboo's Blog</a><br />
+            <small>
+              <em>
+                  <a href="/">호모스터디쿠스를 꿈꾸는 놀부</a>
+              </em>
+            </small>
+          </div>
+          <!-- <img class="avatar" src="/images/sebastien_saunier.jpg" alt="My profile picture" /> -->
+        </div>
+        <div class="clear"></div>
+      </header>
+      <div class="separator"></div>
+      <article>
+  <h1>
+    옥토프레스로 블로깅하기
+  </h1>
+  <div class="center">
+    <p class="meta">21 Jul 2013</p>
+  </div>
+
+<!--    -->
+
+  <div class="post">
+  <h2>이전 동기와 간단한 과정 소개</h2>
+
+<p>워드프레스닷컴의 두 개의 블로그 중 학습을 위해 번역과 요약을 주로 올리던 <code>nolboos.wordpress.com</code> 블로그가 워드프레스닷컴에 의해 <a href="http://en.support.wordpress.com/suspended-blogs/">중지</a>되었다. 워드프레스 설치 호스팅 서비스를 세 곳이나 친절하게 알려주긴 했지만 도메인이나 비용, 속도 등 여러 사항이 걸리고, 아마존 이외에는 이용하던 호스팅 서비스도 없어 난감해 하고 있었다. 예전부터 Github Page로 블로그를 올리는 방법을 염두에 두고 있었는데 <a href="https://twitter.com/sungchi">@sungchi</a>님이 <a href="http://sungchi.github.io/">Github</a>와 <a href="http://tryghost.org/">Ghost</a>를 추천하셨다. 고스트는 아직 개발 중이어서 고려대상에서 제외하였고 깃허브는 블로그글을 쓸 때마다 메인페이지에 링크를 다는 불편함 등이 있었다. 게으른 놀부는 불편함을 없애주는 방법을 찾기 시작했고, 두 개가 눈에 들어왔다.</p>
+
+<p><a href="http://haroopress.com/">하루프레스</a>와 <a href="http://octopress.org/">옥토프레스</a> 옥토프레스가 먼저 나왔고 해외에서 사용자 수가 점차적으로 늘어가고 있는 것 같으나 개발이 일년 이상 중지되어 있는 것 같았고, 하루프레스는 한국분이 <a href="https://twitter.com/Rhiokim">@Rhiokim</a> 만들어서인지 디자인이나 기능적인 측면에서 좀 더 끌리는 면이 있었다. 그래서 하루프레스를 설치하기 시작하였다. 그러나, 중간에 Xcode를 요구하는 에러메시지가 나와 물어보았더니 Xcode가 반드시 있어야 한다는 <a href="https://twitter.com/n0lb00/status/356388684259528705">답</a>이 돌아왔다. 디스크 용량을 걱정해야 하는 상황에선 Xcode 설치는 무리였다. 낙망하고 별 수 없이 옥토프레스를 설치하기 시작하였다.</p>
+
+<h2>사전 경험 얻기</h2>
+
+<p>검색을 해봐도 옥토프레스에 대한 한글 블로그 글이 거의 없었고,(해커들을 위한 블로그 시스템이라 설명을 안하나?ㅠㅠ) <a href="http://doomed-lover.com/archives/migrating-to-octopress/">옥토프레스 이전 과정</a>에서 몇 가지 사전 지식을 얻을 수 있었다.</p>
+
+<ul>
+<li><a href="https://github.com/thomasf/exitwp">Exitwp</a> : 워드프레스 블로그를 지킬 블로그 엔진으로 쉽게 이전. 마크다운으로 변환</li>
+<li>동영상 임베딩 등은 플러그인을 사용하지말고 원 코드를 사용하는 것이 좋다.</li>
+<li>블로그의 제목, 태그는 모두 영문 사용을 기본으로 하는 것이 좋을듯.</li>
+</ul>
+
+<h2>기존 블로그 글을 <a href="http://jekyllrb.com/docs/migrations/">지킬로 마이그레이션</a></h2>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">$ gem install jekyll-import --pre
+</code></pre></div>
+<p>공개/비공개 포스트를 구별하지 않으니 확인해야 한다.</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">$ gem install hpricot
+</code></pre></div>
+<p><code>https://YOUR-USER-NAME.wordpress.com/wp-admin/export.php</code>에서 내려받은 <code>wordpress.xml</code>을 변환</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">$ ruby -rubygems -e &#39;require &quot;jekyll/jekyll-import/wordpressdotcom&quot;;
+JekyllImport::WordpressDotCom.process({ :source =&gt; &quot;wordpress.xml&quot; })&#39;
+</code></pre></div>
+<p><code>_posts</code>, <code>_pages</code>, <code>_nav_menu_items</code>의 세 개의 디렉토리에 <code>.html</code> 화일들이 추출된다.</p>
+
+<h2>설치</h2>
+
+<p>git과 Ruby를 <a href="http://octopress.org/docs/setup/">설치</a>하고 테마를 적용하였다.(글이 너무 길어지니 이 부분은 링크에서 보세요)</p>
+
+<p>이제 <a href="http://octopress.org/docs/deploying/github/">깃허브에 올려보자</a>.</p>
+
+<p>원하던 블로그 도메인인 <code>nolboo.github.com</code>으로 <a href="https://github.com/repositories/new">새 저장소</a>를 만든다.</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">$ rake setup_github_pages //저장소 URL을 물어보면 내 경우엔 `https://github.com/nolboo/nolboo.github.com.git`을 입력
+
+$ rake generate
+$ rake deploy
+</code></pre></div>
+<p>위의 과정까지 마치면 <code>nolboo.github.com</code>이나 <code>nolboo.github.io</code>로 가보면 기본테마가 적용된 최초의 블로그를 볼 수 있다. 의외로 간단하다.</p>
+
+<p><code>Rakefile</code>과 <code>_config.yml</code>만 변경하는 것으로 충분하나 설정 화일 리스트는 다음과 같다.</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">_config.yml       # Main config (Jekyll&#39;s settings)
+Rakefile          # Configs for deployment
+config.rb         # Compass config
+config.ru         # Rack config
+</code></pre></div>
+<p><code>Rakefile</code>도 <code>rsync</code>를 사용하지 않는 한 변경할 것이 없다.</p>
+
+<h3>블로그 설정</h3>
+
+<p><code>_config.yml</code>은 세 섹션으로 되어있다. <em><code>url</code>, <code>title</code>, <code>subtitle</code>, <code>author</code>는 반드시 변경해야 하고, 서드파티 서비스를 활성화시켜주어야 한다.</em></p>
+
+<h4>주요 설정</h4>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">url:                # For rewriting urls for RSS, etc
+title:              # Used in the header and title tags
+subtitle:           # A description used in the header
+author:             # Your name, for RSS, Copyright, Metadata
+simple_search:      # Search engine for simple site search
+description:        # A default meta description for your site
+</code></pre></div>
+<p>위의 것만 확인하면서 변경하였다.</p>
+
+<p>플러그인에서는 일단 <code>disqus_short_name</code>에 숏네임을 하나 정해서 넣어주었고, <code>google_analytics_tracking_id</code>에 추적 ID를 생성해서 입력했다.</p>
+
+<h2>블로깅 하기</h2>
+
+<p>블로그 포스트는 <code>source/_posts</code> 디렉토리에 지킬 방식인 <code>YYYY-MM-DD-post-title.markdown</code> 형식의 이름으로 저장되어야 한다. 이를 편하게 해주는 rake 명령은 다음과 같다.</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">$ rake new_post[&quot;title&quot;]
+</code></pre></div>
+<p><em>Title은 영문으로 주는 것이 좋다.</em> 해당 <code>.markdown</code> 화일을 에디터로 열어보면 다음과 같은 YAML 헤더를 볼 수 있다.</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">---
+layout: post
+title: &quot;Zombie Ninjas Attack: A survivor&#39;s retrospective&quot;
+date: 2011-07-03 5:59
+comments: true
+external-url:
+categories:
+---
+</code></pre></div>
+<p>비공개로 할 경우에는 <code>published: false</code>를 추가한다. linklog 스타일로 포스팅할 때는 <code>external-url</code>에 링크를 추가하면 된다.</p>
+
+<p>카테고리는 다음과 같은 방식으로 지정한다.</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text"># 한 개 추가
+categories: Sass
+
+# 여러 개 추가하기 1
+categories: [CSS3, Sass, Media Queries]
+
+# 여러 개 추가하기 2
+categories:
+- CSS3
+- Sass
+- Media Queries
+</code></pre></div>
+<p>블로그의 인덱스 페이지에서 글의 일부만 보여주려면 `` 주석을 넣어주면 “Continue →” 버튼으로 전체 글로 링크된다.</p>
+
+<h2>제너레이트와 미리보기</h2>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">rake generate   # public 디렉토리에 포스트와 페이지를 제너레이트한다.
+rake preview    # http://localhost:4000 에 웹서버를 마운트하고 볼 수 있게 한다.
+</code></pre></div>
+<p>이제 웹 브라우저에서 <code>http://localhost:4000</code> 주소를 입력하여 미리볼 수 있다.</p>
+
+<h2>출판하기</h2>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">$ rake deploy
+</code></pre></div>
+<h2>블로깅 워크플로우</h2>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">1. $ rake new_post[&quot;title&quot;] //title은 영문으로 간단하게
+2. 에디터로 .markdown 화일 편집하고
+3. title: 에 멋진 한글 제목을 달고 categories: [CSS3, Sass, Media Queries] 지정
+4. $ rake generate &amp;&amp; rake preview //localhost:4000에서 미리보기와 수정
+5. 소스 백업(*아래 참조*)
+6. $ rake deploy
+</code></pre></div>
+<p>깃허브에 반영되는 것은 시간이 좀 걸리니 바로 안 나타난다고 조급해하지 말자.</p>
+
+<p><strong>5번 출판하기 전에 <code>source</code> 브랜치에 소스를 직접 푸시하는 것을 잊지마라.</strong></p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">git add .
+git commit -m &#39;your message&#39;
+git push origin source
+</code></pre></div>
+<h2>맺는말</h2>
+
+<p>마크다운을 이용할 수 있을 정도의 사용자라면 쉽게 써보려고 했지만 많이 부족한 것 같다. 옥토프레스가 내가 원하는 블로깅 워크플로우에 가장 근접하게 사용할 수 있을 것 같다. 이제 워드프레스닷컴에서 홀대받았던 나머지 글들을 계속 올리고 추가적인 포스팅도 꾸준히 할 것이다.</p>
+
+<h2>추가 참조 링크</h2>
+
+<ul>
+<li><a href="https://github.com/imathis/octopress/wiki/3rd-party-plugins">3rd party plugins</a></li>
+<li><a href="http://www.tomordonez.com/blog/2012/06/04/creating-a-github-blog-using-octopress/">Creating a Github Blog Using Octopress</a></li>
+<li><a href="http://webdesign.tutsplus.com/tutorials/applications/getting-started-with-octopress/">Getting Started with Octopress</a></li>
+<li><a href="http://paulsturgess.co.uk/blog/2013/04/24/hello-octopress-and-github-pages/">Hello Octopress &amp; Github Pages</a></li>
+</ul>
+
+  </div>
+</article>
+
+<section class="post-footer">
+  <a href="/feed.xml" class="pull-right">
+    <img src="/images/rss.jpg" alt="RSS" />
+  </a>
+</section>
+
+<div class="separator"></div>
+
+<section class="comments">
+  <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'nolboo'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+      <div class="separator"></div>
+    </div>
+  </div>
+
+  <div class="clear"></div>
+
+  <footer>
+    <p>
+      Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a>,
+      hosted on <a href="http://pages.github.com/">Github Pages</a>
+      | Template inspired by <a href="http://sebastien.saunier.me/">sebastien.saunier.me</a>
+    </p>
+    <ul class="links">
+      <!-- <li><a href="https://github.com/nolboo" title="Show me the code"><i class="icon-github"></i></a></li> -->
+      <li><a href="https://twitter.com/n0lb00" title="follow me"><i class="icon-twitter"></i></a></li>
+      <li><a href="mailto:nolboo.kim@gmail.com" title="AMA"><i class="icon-sparrow"></i></a></li>
+    </ul>
+  </footer>
+
+  <script type="text/javascript">
+    // var _gaq = _gaq || [];
+    // _gaq.push(['_setAccount', 'GOOGLE-ANALYTICS-TRACK-ID']);
+    // _gaq.push(['_trackPageview']);
+
+    // (function() {
+    //   var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    //   ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    //   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    // })();
+
+    // /*!
+    //  * http://github.com/ssaunier/track-outbound-links
+    //  * Copyright 2013 Sébastien Saunier
+    //  * @license MIT
+    //  */
+    // !function(e,t){function n(){for(var n=t.getElementsByTagName("a"),a=[],r=0;r<n.length;++r){var o=n[r];o.host!=e.location.host&&a.push(o)}return a}function a(n){for(var a=n.srcElement||n.target;a&&("undefined"==typeof a.tagName||"a"!=a.tagName.toLowerCase()||!a.href);)a=a.parentNode;a&&a.href&&(e._gaq&&_gaq.push(["_trackEvent","Outbound link","Click",a.href]),(!a.target||a.target.match(/^_(self|parent|top)$/i))&&(setTimeout(function(){t.location.href=a.href},150),n.preventDefault?n.preventDefault():n.returnValue=!1))}e.addEventListener("load",function(){var e=n();for(var t in e)e[t].addEventListener("click",a)})}(window,document);
+  </script>
+
+  
+</body>
+</html>

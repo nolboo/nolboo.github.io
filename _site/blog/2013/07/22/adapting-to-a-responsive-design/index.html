@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--   <meta name="google-site-verification" content="aexITLS38FdIRzwj25OVWxm87rpa9l-UV0URTyC9cTs" /> -->
+  <title>
+    반응형 디자인 적용하기(케이스 스터디)
+    
+    - Nolboo's Blog
+    
+  </title>
+  <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:700,400|Titillium+Web:700,400">
+  <link rel="stylesheet" href="/css/site.css">
+  <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+  <meta name="description" content="사이버덕 회사의 홈페이지를 반응형 디자인으로 변경한 경험을 자세하게 소개한 스매싱 기사의 번역" />
+  <link rel="alternate" type="application/atom+xml" title="RSS Feed for Nolboo's blog" href="/feed.xml" />
+
+<!--    -->
+
+  
+</head>
+<body>
+  <div class="top-bar"></div>
+
+  <div class="container">
+    <div class="site">
+      <header>
+        <nav>
+          <a class="" href="/">Home</a>
+          <a class=" selected " href="/archive/">Archive</a>
+          <a class="" href="/trans/">번역글 모음</a>
+        </nav>
+        <div class="pull-right right logo">
+          <div class="name">
+            <a href="/">Nolboo's Blog</a><br />
+            <small>
+              <em>
+                  <a href="/">호모스터디쿠스를 꿈꾸는 놀부</a>
+              </em>
+            </small>
+          </div>
+          <!-- <img class="avatar" src="/images/sebastien_saunier.jpg" alt="My profile picture" /> -->
+        </div>
+        <div class="clear"></div>
+      </header>
+      <div class="separator"></div>
+      <article>
+  <h1>
+    반응형 디자인 적용하기(케이스 스터디)
+  </h1>
+  <div class="center">
+    <p class="meta">22 Jul 2013</p>
+  </div>
+
+<!--    -->
+
+  <div class="post">
+  <p>원본: <a href="http://mobile.smashingmagazine.com/2013/06/18/adapting-to-a-responsive-design-case-study/">Adapting To A Responsive Design (Case Study)</a></p>
+
+<h2>Why Adapt To A Responsive Design?</h2>
+
+<h3>CHANGING OUR APPROACH</h3>
+
+<p>새로운 폼팩터가 엄청나게 유입되면서 좀 더 future-friendly한, 동시에 관리하기 쉬운 웹사이트를 만들게 되었다.</p>
+
+<h3>SETTING GOALS FOR THE RESPONSIVE DESIGN</h3>
+
+<p><strong>반응형 디자인의 목표</strong></p>
+
+<ol>
+<li>속도</li>
+<li>스타일, 백그라운드 혹은 자바스크립트와 상관없는 접근성</li>
+<li>하나의 컨텐츠</li>
+<li>플랫폼 독립성</li>
+<li><a href="http://futurefriend.ly/">미래지향</a> - 계속 유지보수하기 싫다.  먼저 신뢰할만한 고객에게 의견을 구했고, <a href="http://www.google.co.uk/analytics/">구글 애널리틱스</a>, <a href="http://www.leadforensics.com/">리드포렌식</a>, <a href="http://www.crazyegg.com/">크레이지에그</a> 등을 이용해 기존 웹사이트를 분석했다.</li>
+</ol>
+
+<p><em>링크를 허락하지 않으며 문맥에 큰 상관이 없으니 원본 그림 참조 바랍니다.</em></p>
+
+<p>디자인 팀이 기존 컨텐츠를 재구성하기 위해 카드 소팅을 사용하고 있다.</p>
+
+<h2>Making Performance A Priority</h2>
+
+<p>특정 스크린 너비에서 보이지않게만 하는 방법은 성능이 문제가 된다. 모바일 breadpoint에서 40 HTTP 요청과 500KB 데이타를 넘지않길 원했다.</p>
+
+<h3>THIRD-PARTY SCRIPTS</h3>
+
+<p><a href="http://zurb.com/article/883/small-painful-buttons-why-social-media-bu">Zurb에 의하면</a>, 총 19개의 요청으로 페이스북, 트위터, 구글 소셜 미디어 버튼을 로드하는 것이 대역폭에서 246.7 KB를 잡아먹는다고 한다. 그래서 무거운 소셜미디어 플러그인을 가벼운 소셜미디어 링크로 대치하였다.</p>
+
+<p><em>링크를 허락하지 않으며 문맥에 큰 상관이 없으니 원본 그림 참조 바랍니다.</em></p>
+
+<p>몇개의 필수적인 트래킹 스크립트는 남겨야 했는데, HTML의 <code>body</code> 엘리먼트의 바닥과 외부 스크립트 화일에 집어넣어서 컨텐츠 이후에 로딩되도록 하였다.</p>
+
+<h3>DID WE REALLY NEED A CMS?</h3>
+
+<p>토의 초기에 CMS가 필요한가에 검토하였는데 우리 대부분은 HTML, CSS, Git에 익숙하기 때문에 CMS 없이 컨텐츠를 관리하기로 했다.</p>
+
+<p><a href="http://newrelic.com/">New Relic</a>과 같은 서버사이드 성능 모니터링 툴을 사용해서, 이전에 사용하던 CMS가 페이지 로딩 타임을 느리게하는 주요 요인이라는 것을 알 수 있었다. 그래서 웹사이트에서 CMS를 완전히 제거해버렸다. 블로그는 제외했는데, 올리는 컨텐츠의 양과 주기때문에 효과적으로 관리하기 위해서는 아직 CMS가 필요했다.</p>
+
+<p><em>링크를 허락하지 않으며 문맥에 큰 상관이 없으니 원본 그림 참조 바랍니다.</em></p>
+
+<p>이전 홈페이지 2.34초의 총 실행시간 동안 1,459번의 데이타베이스 서버를 쿼리했다.</p>
+
+<p>이전 웹사이트는 워드프레스 CMS와 연결된 MVC 아키텍트로 구축되었었다. 예로 들었듯이 하나의 일반적인 페이지가 로드하되기위해 600 ~ 1,500 쿼리를 사용했다. 단순히 CMS를 제거함으로써 수백번의 데이타베이스 쿼리가 한방에 0으로 줄었다.</p>
+
+<p><em>링크를 허락하지 않으며 문맥에 큰 상관이 없으니 원본 그림 참조 바랍니다.</em></p>
+
+<p>초기 프로토타입을 개발하고 있다.</p>
+
+<p>정적 페이지를 위한 CMS를 제거하여 데이타베이스와 동적인 템플릿에 대한 니즈를 생략했다. 인기 있는 PHP 프레임워크인 Laravel을 사용해 커스텀 동적 루트와 정적 템플릿 시스템을 적용했다. 이것은 템플릿 이름과 URL을 매칭시켜 웹사이트에서 URL이 호출될 때마다 Laravel 라우터가 로드될 템플릿을 정확하게 안다는 것을 의미한다. 또한, 그 템플릿은 HTML에서 정적으로 레이아웃된 컨텐츠를 이미 가지고 있다는 것을 의미한다.</p>
+
+<p>이것만으로, 웹사이트 처리 속도를 3,900% 넘게 개선할 수 있었다. 평균 2.2초에서 56 밀리초로 서버 처리속도가 개선되었다.</p>
+
+<p><em>링크를 허락하지 않으며 문맥에 큰 상관이 없으니 원본 그림 참조 바랍니다.</em></p>
+
+<p>서버 처리 속도가 이제 단지 56밀리초이며, 데이타베이스 쿼리는 0이다. - 전보다 대략 40배 더 빨라졌다.</p>
+
+<p>자연히 우리는 매 프로젝트의 시작에서 어떤 CMS가 가장 적합하고 필요한지 자문해야한다. 물론 다른 옵션도 있다. <a href="http://getkirby.com/">Kirby</a>와 <a href="http://statamic.com/">Statamic</a>와 같은 화일 베이스 CMS, <a href="http://grabaperch.com/">Perch</a>와 같은 경량 CMS를 구축하거나 커스터마이징, <a href="https://www.varnish-cache.org/">Varnish</a>와 같은 것을 이용해 더 나은 서버사이드 캐싱만을 적용하는 것 등이다.</p>
+
+<p>결국, 가장 경량이더라도, 영리한 캐싱과 함께 CMS를 최적화 시키는 것조차도 오버헤드이고 성능과 정적화일의 서버 족적에 맞출 수 없어서 CMS를 제거하기로 결정했다.</p>
+
+<h3>AVOIDING OFF-THE-SHELF CSS FRAMEWORKS</h3>
+
+<p><a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap</a>과 <a href="http://foundation.zurb.com/">Foundation</a>과 같은 CSS 프레임워크는 인터렉티브한 프로토타입을 재빠르게 구축하는 데에 훌륭하지만 대부분의 프로젝트에 필요한 것보단 종종 훨씬 더 복잡하다. 이들 프레임워크가 민감하고 광범위한 유즈 케이스에 맞추어져 있고 프로젝트의 특별한 요구에 맞추어져 있지 않기 때문이다.</p>
+
+<p>우리는 단순하고 빠르고 우리 요구에 극도로 유연한 커스텀 반응형 그리드를 만들어 스타일 시트의 크기를 줄였다.</p>
+
+<p>컨텐츠를 정의하는 레이아웃에 반해 컨텐츠가 레이아웃과 그리드를 모양짓는 것을 디자인하였다.</p>
+
+<p><em>링크를 허락하지 않으며 문맥에 큰 상관이 없으니 원본 그림 참조 바랍니다.</em></p>
+
+<p>위에서 부터 시계방향(놀부주: 시계반대방향인 듯)으로: 데스크탑에서 레이아웃은 3개의 행이고 모바일에선 하나의 행으로된 스택(쌓아놓은 더미)로 된다. 태블릿에선 컨텐츠 왼쪽에 이미지를 띄워 추가 공간의 이점을 살렸다.</p>
+<div class="highlight"><pre><code class="css language-css" data-lang="css"><span class="k">@media</span> <span class="nt">only</span> <span class="nt">screen</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">min-width</span><span class="o">:</span> <span class="nt">120px</span><span class="o">)</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">min-device-width</span><span class="o">:</span> <span class="nt">120px</span><span class="o">)</span> <span class="p">{</span>
+
+   <span class="o">//</span> <span class="nt">Uses</span> <span class="nt">mobile</span> <span class="nt">grid</span>
+   <span class="nc">.container</span> <span class="p">{</span>
+      <span class="k">width</span><span class="o">:</span> <span class="m">100</span><span class="o">%</span><span class="p">;</span>
+   <span class="p">}</span>
+   <span class="nc">.col12</span><span class="o">,</span> <span class="nc">.col11</span><span class="o">,</span> <span class="nc">.col10</span><span class="o">,</span> <span class="nc">.col9</span><span class="o">,</span> <span class="nc">.col8</span><span class="o">,</span> <span class="nc">.col7</span><span class="o">,</span> <span class="nc">.col6</span><span class="o">,</span> <span class="nc">.col5</span><span class="o">,</span> <span class="nc">.col4</span><span class="o">,</span> <span class="nc">.col3</span> <span class="p">{</span>
+      <span class="k">width</span><span class="o">:</span> <span class="m">92</span><span class="o">%</span><span class="p">;</span>
+      <span class="k">margin</span><span class="o">:</span> <span class="m">0</span> <span class="m">4</span><span class="o">%</span> <span class="m">20px</span> <span class="m">4</span><span class="o">%</span><span class="p">;</span>
+   <span class="p">}</span>
+   <span class="nc">.col2</span> <span class="p">{</span>
+      <span class="k">width</span><span class="o">:</span> <span class="m">46</span><span class="o">%</span><span class="p">;</span>
+      <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span>
+      <span class="k">margin</span><span class="o">:</span> <span class="m">0</span> <span class="m">4</span><span class="o">%</span> <span class="m">20px</span> <span class="m">4</span><span class="o">%</span><span class="p">;</span>
+   <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">@media</span> <span class="nt">only</span> <span class="nt">screen</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">min-width</span><span class="o">:</span> <span class="nt">600px</span><span class="o">)</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">min-device-width</span><span class="o">:</span> <span class="nt">600px</span><span class="o">)</span> <span class="p">{</span>
+
+   <span class="o">//</span> <span class="nt">Uses</span> <span class="nt">custom</span> <span class="nt">grid</span> <span class="nt">to</span> <span class="nt">accomodate</span> <span class="nt">content</span>
+   <span class="nc">.home-content</span> <span class="p">{</span>
+      <span class="n">article</span> <span class="err">{</span>
+         <span class="k">width</span><span class="o">:</span> <span class="m">92</span><span class="o">%</span><span class="p">;</span>
+         <span class="k">clear</span><span class="o">:</span> <span class="k">both</span><span class="p">;</span>
+         <span class="k">margin</span><span class="o">:</span> <span class="m">0</span> <span class="m">4</span><span class="o">%</span> <span class="m">20px</span> <span class="m">4</span><span class="o">%</span><span class="p">;</span>
+      <span class="p">}</span>
+      <span class="nc">.image</span> <span class="p">{</span>
+         <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span>
+         <span class="k">width</span><span class="o">:</span> <span class="m">40</span><span class="o">%</span><span class="p">;</span>
+      <span class="p">}</span>
+      <span class="nc">.text</span> <span class="p">{</span>
+         <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span>
+         <span class="k">width</span><span class="o">:</span> <span class="m">50</span><span class="o">%</span><span class="p">;</span>
+         <span class="k">margin-left</span><span class="o">:</span> <span class="m">5</span><span class="o">%</span><span class="p">;</span>
+         <span class="o">.</span><span class="n">btn</span> <span class="err">{</span>
+            <span class="o">@</span><span class="n">include</span> <span class="n">box</span><span class="o">-</span><span class="n">sizing</span><span class="p">(</span><span class="k">content</span><span class="o">-</span><span class="n">box</span><span class="p">);</span>
+            <span class="k">width</span><span class="o">:</span> <span class="m">100</span><span class="o">%</span><span class="p">;</span>
+         <span class="p">}</span>
+      <span class="p">}</span>
+   <span class="err">}</span>
+<span class="err">}</span>
+
+<span class="k">@media</span> <span class="nt">only</span> <span class="nt">screen</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">min-width</span><span class="o">:</span> <span class="nt">1024px</span><span class="o">)</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">min-device-width</span><span class="o">:</span> <span class="nt">1024px</span><span class="o">)</span> <span class="p">{</span>
+
+   <span class="o">//</span> <span class="nt">Uses</span> <span class="nt">regular</span> <span class="nt">desktop</span> <span class="nt">grid</span> <span class="nt">system</span>
+   <span class="nc">.container</span> <span class="p">{</span>
+      <span class="k">width</span><span class="o">:</span><span class="m">960px</span><span class="p">;</span>
+      <span class="k">margin</span><span class="o">:</span><span class="m">0</span> <span class="k">auto</span><span class="p">;</span>
+   <span class="p">}</span>
+   <span class="nc">.col4</span> <span class="p">{</span>
+      <span class="k">width</span><span class="o">:</span> <span class="m">300px</span><span class="p">;</span>
+      <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span>
+      <span class="k">margin</span><span class="o">:</span> <span class="m">0</span> <span class="m">10px</span><span class="p">;</span>
+   <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>코드 중복을 피하려고 <a href="http://sass-lang.com/">Sass</a>를 사용했고, 모든 CSS 코드가 실제로 사용되도록 했다. Sass에선 CSS를 가능한한 작게하기 위해 minify할 수도 있다.</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">$sass --watch --style compressed scss:css
+</code></pre></div>
+<p>커스텀 그리드를 만들기 위해 Sass 안의 함수를 사용하기도 했다. 아래는 테스크탑 그리드를 위한 코드이다.</p>
+<div class="highlight"><pre><code class="css language-css" data-lang="css"><span class="k">@import</span> <span class="s2">&quot;vars&quot;</span><span class="p">;</span>
+
+<span class="o">//</span> <span class="nt">Grid</span> <span class="nt">system</span>
+<span class="err">$</span><span class="nt">wrap</span><span class="o">:</span> <span class="err">$</span><span class="nt">col</span> <span class="o">*</span> <span class="nt">12</span> <span class="o">%</span><span class="nt">2B</span> <span class="err">$</span><span class="nt">gutter</span> <span class="o">*</span> <span class="nt">11</span><span class="o">;</span>
+<span class="k">@for</span> <span class="err">$</span><span class="nt">i</span> <span class="nt">from</span> <span class="nt">2</span> <span class="nt">through</span> <span class="nt">12</span> <span class="p">{</span>
+   <span class="nc">.col</span><span class="err">#</span><span class="p">{</span><span class="err">$</span><span class="n">i</span><span class="p">}</span> <span class="p">{</span>
+      <span class="k">width</span><span class="o">:</span> <span class="err">$</span><span class="n">col</span> <span class="o">*</span> <span class="err">$</span><span class="n">i</span> <span class="o">%</span><span class="m">2</span><span class="n">B</span> <span class="err">$</span><span class="n">gutter</span> <span class="o">*</span> <span class="err">$</span><span class="n">i</span> <span class="o">-</span> <span class="err">$</span><span class="n">gutter</span><span class="p">;</span>
+      <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span>
+      <span class="k">margin</span><span class="o">:</span> <span class="m">0</span> <span class="err">$</span><span class="n">gutter</span><span class="o">/</span><span class="m">2</span> <span class="err">$</span><span class="n">vgrid</span> <span class="err">$</span><span class="n">gutter</span><span class="o">/</span><span class="m">2</span><span class="p">;</span>
+   <span class="p">}</span>
+<span class="p">}</span>
+<span class="k">@for</span> <span class="err">$</span><span class="nt">i</span> <span class="nt">from</span> <span class="nt">1</span> <span class="nt">through</span> <span class="nt">11</span> <span class="p">{</span>
+   <span class="nc">.pre</span><span class="err">#</span><span class="p">{</span><span class="err">$</span><span class="n">i</span><span class="p">}</span> <span class="p">{</span>
+      <span class="k">padding-left</span><span class="o">:</span> <span class="err">$</span><span class="n">col</span> <span class="o">*</span> <span class="err">$</span><span class="n">i</span> <span class="o">%</span><span class="m">2</span><span class="n">B</span> <span class="err">$</span><span class="n">gutter</span> <span class="o">*</span> <span class="err">$</span><span class="n">i</span><span class="p">;</span>
+   <span class="p">}</span>
+<span class="p">}</span>
+<span class="k">@for</span> <span class="err">$</span><span class="nt">i</span> <span class="nt">from</span> <span class="nt">1</span> <span class="nt">through</span> <span class="nt">11</span> <span class="p">{</span>
+   <span class="nc">.suf</span><span class="err">#</span><span class="p">{</span><span class="err">$</span><span class="n">i</span><span class="p">}</span> <span class="p">{</span>
+      <span class="k">padding-right</span><span class="o">:</span> <span class="err">$</span><span class="n">col</span> <span class="o">*</span> <span class="err">$</span><span class="n">i</span> <span class="o">%</span><span class="m">2</span><span class="n">B</span> <span class="err">$</span><span class="n">gutter</span> <span class="o">*</span> <span class="err">$</span><span class="n">i</span><span class="p">;</span>
+   <span class="p">}</span>
+<span class="p">}</span>
+<span class="nc">.container</span> <span class="p">{</span>
+   <span class="k">width</span><span class="o">:</span> <span class="err">$</span><span class="n">wrap</span> <span class="o">%</span><span class="m">2</span><span class="n">B</span> <span class="err">$</span><span class="n">gutter</span><span class="p">;</span>
+   <span class="k">margin</span><span class="o">:</span> <span class="m">0</span> <span class="k">auto</span><span class="p">;</span>
+   <span class="k">padding-top</span><span class="o">:</span> <span class="m">1px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.colr</span> <span class="p">{</span>
+   <span class="k">float</span><span class="o">:</span> <span class="k">right</span><span class="p">;</span>
+   <span class="k">margin</span><span class="o">:</span> <span class="m">0</span> <span class="err">$</span><span class="n">gutter</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.alpha</span> <span class="p">{</span>
+   <span class="k">margin-left</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.omega</span> <span class="p">{</span>
+   <span class="k">margin-right</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>여기서, 단순히 <code>vars</code> 화일을 편집함으로써 그리드의 <code>column</code>과 <code>gutter</code>의 너비를 커스터마이징할 수 있다.</p>
+<div class="highlight"><pre><code class="sass language-sass" data-lang="sass"><span class="c1">// Grid</span>
+<span class="nv">$vgrid</span><span class="o">:</span>      <span class="mi">20</span><span class="kt">px</span><span class="err">;</span>
+<span class="nv">$col</span><span class="o">:</span>        <span class="mi">60</span><span class="kt">px</span><span class="err">;</span>
+<span class="nv">$gutter</span><span class="o">:</span>     <span class="mi">20</span><span class="kt">px</span><span class="err">;</span>
+</code></pre></div>
+<p><a href="https://github.com/Cyber-Duck/hoisin.scss">깃허브</a>에 오픈소스화 하였으니, 포크하여 당신의 프로젝트에 적용해 보고 어떤지 알려달라!</p>
+
+<h3>CONDITIONALLY LOADING JAVASCRIPT</h3>
+
+<p>속도 향상을 필요로 하고 지원될 때만 자바스크립트가 로드되길 원했고, <a href="http://requirejs.org/">RequireJS</a>를 이용했다. 자바스크립트 화일을 줄여주는 <a href="https://github.com/mishoo/UglifyJS">UglifyJS</a>도 포함되어있다.</p>
+
+<p><em>링크를 허락하지 않으며 문맥에 큰 상관이 없으니 원본 그림 참조 바랍니다.</em></p>
+
+<p>최적화로 자바스크립트 크기가 411 KB에서 106 KB로 줄었다.</p>
+
+<h3>OPTIMIZING IMAGE ASSETS</h3>
+
+<p>우리 웹사이트는 작업을 전시하기 위해 꽤 이미지가 무거운 실례이기 때문에 대부분의 웹사이트에서 가장 무거운 자산인 이미지 다운로드를 개선하길 원했다.</p>
+
+<p>Adobe Firework의 <a href="http://help.adobe.com/en_US/fireworks/cs/using/WS3f28b00cc50711d9-73dfa65f133a490f3b9-8000.html">selective quality options</a>을 사용해 웹사이트의 전체 이미지를 수작업으로 최적화했다. 압축, blur, desaturation 등의 더 세세한 조정을 통해 이미지 화일 크기를 줄이기도 했다.</p>
+
+<p><em>링크를 허락하지 않으며 문맥에 큰 상관이 없으니 원본 그림 참조 바랍니다.</em></p>
+
+<p>이미지의 부분들을 desaturation하고 blur하는 것은 꼭 필요한 것은 아니지만 이미지 크기를 상당히 줄였다.</p>
+
+<p><a href="http://imageoptim.com/">ImageOptim</a>와 <a href="http://tinypng.org/">TinyPNG</a>를 사용해 이미지와 스프라이트를 압축하기도 했다. 이 툴들은 이미지 질 저하없이 모든 불필요한 데이타를 제거한다. 예로 메인 이미지 스프라이트의 무게를 111 KB를 40 KB까지 줄였다.</p>
+
+<p>홈페이지의 슬라이드쇼 배너에서는 미디어 쿼리를 이용해 적합한 크기의 이미지만 로드하여 다양한 스크린 크기에 최적화했다.</p>
+
+<p><em>링크를 허락하지 않으며 문맥에 큰 상관이 없으니 원본 그림 참조 바랍니다.</em></p>
+
+<p>위의 이미지는 모바일에서 볼 수 있고, 슬라이드쇼는 훨씬 더 가벼워졌다.</p>
+
+<p>CSS는:</p>
+<div class="highlight"><pre><code class="css language-css" data-lang="css">    <span class="k">@media</span> <span class="nt">only</span> <span class="nt">screen</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">min-width</span><span class="o">:</span> <span class="nt">120px</span><span class="o">)</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">min-device-width</span><span class="o">:</span> <span class="nt">120px</span><span class="o">)</span> <span class="p">{</span>
+       <span class="nc">.item-1</span> <span class="p">{</span>
+          <span class="k">background</span><span class="o">:</span> <span class="err">$</span><span class="nb">white</span> <span class="sx">url(&#39;carousel/dmd/background-optima-m.jpg&#39;)</span> <span class="m">50</span><span class="o">%</span> <span class="m">0</span> <span class="k">no-repeat</span><span class="p">;</span>
+          <span class="o">.</span><span class="n">computer</span><span class="o">,</span> <span class="o">.</span><span class="n">tablet</span><span class="o">,</span> <span class="o">.</span><span class="n">phone</span><span class="o">,</span> <span class="o">.</span><span class="n">eiffel</span><span class="o">,</span> <span class="o">.</span><span class="n">bigben</span><span class="o">,</span> <span class="o">.</span><span class="n">train</span> <span class="err">{</span>
+             <span class="k">display</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span>
+          <span class="p">}</span>
+       <span class="p">}</span>
+       <span class="c">/* Total loaded: 27 KB */</span>
+    <span class="err">}</span>
+</code></pre></div>
+<p><em>링크를 허락하지 않으며 문맥에 큰 상관이 없으니 원본 그림 참조 바랍니다.</em></p>
+
+<p>데스크탑에선 더 많은 자산을 로드한다.</p>
+
+<p>데스크탑에서는 더 큰 스크린 크기의 대부분을 사용하도록 더 많은 자산을 로드한다.</p>
+
+<p>CSS는:</p>
+<div class="highlight"><pre><code class="css language-css" data-lang="css">    <span class="k">@media</span> <span class="nt">only</span> <span class="nt">screen</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">min-width</span><span class="o">:</span> <span class="nt">1024px</span><span class="o">)</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">min-device-width</span><span class="o">:</span> <span class="nt">1024px</span><span class="o">)</span> <span class="p">{</span>
+       <span class="nc">.item-1</span> <span class="p">{</span>
+          <span class="k">background</span><span class="o">:</span> <span class="err">$</span><span class="nb">white</span> <span class="sx">url(&#39;carousel/dmd/background.jpg&#39;)</span> <span class="k">center</span> <span class="m">-30px</span> <span class="k">no-repeat</span><span class="p">;</span>
+          <span class="o">.</span><span class="n">computer</span> <span class="err">{</span>
+             <span class="k">background</span><span class="o">:</span> <span class="sx">url(&#39;carousel/dmd/computer.png&#39;)</span> <span class="k">center</span> <span class="k">top</span> <span class="k">no-repeat</span><span class="p">;</span>
+             <span class="n">div</span> <span class="err">{</span>
+                <span class="k">background</span><span class="o">:</span> <span class="sx">url(&#39;carousel/dmd/sc-computer.jpg&#39;)</span> <span class="k">center</span> <span class="k">top</span> <span class="k">no-repeat</span><span class="p">;</span>
+             <span class="p">}</span>
+          <span class="p">}</span>
+          <span class="nc">.tablet</span> <span class="p">{</span>
+             <span class="k">background</span><span class="o">:</span> <span class="sx">url(&#39;carousel/dmd/tablet.png&#39;)</span> <span class="k">center</span> <span class="k">top</span> <span class="k">no-repeat</span><span class="p">;</span>
+             <span class="n">div</span>   <span class="err">{</span>
+                <span class="k">background</span><span class="o">:</span>  <span class="sx">url(&#39;carousel/dmd/sc-tablet.jpg&#39;)</span> <span class="k">center</span> <span class="k">top</span> <span class="k">no-repeat</span><span class="p">;</span>
+             <span class="p">}</span>
+          <span class="err">}</span>
+          <span class="nc">.phone</span> <span class="p">{</span>
+             <span class="k">background</span><span class="o">:</span> <span class="sx">url(&#39;carousel/dmd/phone.png&#39;)</span> <span class="k">center</span> <span class="k">top</span> <span class="k">no-repeat</span><span class="p">;</span>
+             <span class="n">div</span> <span class="err">{</span>
+                <span class="k">background</span><span class="o">:</span> <span class="sx">url(&#39;carousel/dmd/sc-mobile.jpg&#39;)</span> <span class="k">center</span> <span class="k">top</span> <span class="k">no-repeat</span><span class="p">;</span>
+             <span class="p">}</span>
+          <span class="err">}</span>
+          <span class="nc">.eiffel</span> <span class="p">{</span>
+             <span class="k">background</span><span class="o">:</span> <span class="sx">url(&#39;#{$img}carousel/dmd/eiffel.png&#39;)</span> <span class="k">center</span> <span class="k">top</span> <span class="k">no-repeat</span><span class="p">;</span>
+          <span class="p">}</span>
+          <span class="nc">.bigben</span> <span class="p">{</span>
+             <span class="k">background</span><span class="o">:</span> <span class="sx">url(&#39;#{$img}carousel/dmd/bigben.png&#39;)</span> <span class="k">center</span> <span class="k">top</span> <span class="k">no-repeat</span><span class="p">;</span>
+          <span class="p">}</span>
+          <span class="nc">.train</span> <span class="p">{</span>
+             <span class="k">background</span><span class="o">:</span> <span class="sx">url(&#39;#{$img}carousel/dmd/train.png&#39;)</span> <span class="k">center</span> <span class="k">top</span> <span class="k">no-repeat</span><span class="p">;</span>
+          <span class="p">}</span>
+       <span class="err">}</span>
+       <span class="c">/* Total loaded: 266 KB */</span>
+    <span class="err">}</span>
+</code></pre></div>
+<h3>DELIVERING CONTENT FASTER</h3>
+
+<p><a href="http://developer.yahoo.com/performance/rules.html">야후의 성능 황금률</a>에서는 엔드유저 반응 시간의 80-90%는 페이지의 모든 구성요소(이미지, 스타일 시트, 스크립트, 플래쉬 등)를 다운로드하는 것에 소비된다고 한다. 간략히, 각 요청은 처리하는 시간이 걸린다; 그러므로 서버에서 화일을 제공되는 것과 같은 각 요청은 로딩 시간을 불가피하게 증가시킬 것이다.</p>
+
+<p><a href="http://www.cloudflare.com/features-cdn">CloudFlare의 CDN</a>을 이용하여 웹사이트 처리에서 웹 서버의 화일 제공 작업을 분리하였다. 이것은 우리 웹 서버를 정적 화일을 제공하기 보단 애플리케이션에 집중하도록 하는 것을 의미한다. 모든 정적인 자산을 분리된 서브도메인(우리 경우 <code>static.cyber-duck.co.uk</code>)으로 옮겼다. 각 자산에 요구되는 대역폭을 차례로 줄여 하나의 자산을 요청하는 각 요청과 함께 보내지는 쿠키를 최소로 줄이기 위한 것이다.</p>
+
+<p>CDN은 캐싱하고, 유저 위치에 가장 가까운 서버에서 화일이 제공되도록 하게하고, 데이타가 더 짧은 거리에서 제공되기 때문에 네트워크 지연을 최소화하여 로딩 시간을 줄여준다.</p>
+
+<p>CDN에 더해, Gzip 룰을 사용했고 <a href="https://github.com/h5bp/html5-boilerplate/blob/master/.htaccess">HTML5 Boilerplate의 <code>.htaccess</code> 화일</a>에서 헤더를 죽였다.(expire) This uses Apache’s mod_deflate module to compress the output of files to the browser and also sets an expiration on headers far into the future, to ensure better caching of the website for returning visitors.</p>
+
+<h2>Creating A Truly Responsive Design</h2>
+
+<p>진정한 반응형 디자인을 전달하기 위해, 모든 스타일링과 디스플레이 작업을 - 자바스크립트를 직접 사용해 엘리먼트를 숨기거나 보여주지 않고, CSS 클래스를 추가하거나 제거하여 엘리먼트의 상태만을 변경하기 위해 자바스크립트를 사용하고 - CSS 에만 위임했다.</p>
+
+<h3>THE RIGHT CODE FOR THE TASK</h3>
+
+<p>이 방법을 사용해 모바일 방문자가 전화하거나 사무실을 빠르게 찾을 수 있도록 전화와 지도 버튼을 갖도록 모바일의 탑 메뉴를 변형하는 등의 모바일에 특정한 최적화를 할 수 있었다.</p>
+
+<p>이 접근법으로 웹사이트 전체에서 엘리먼트를 다이내믹하게 활성화하거나 비활성화하여 자바스크립트가 가능하지 않을 때에 페이지에 이 엘리먼트가 존재하도록 하였다.</p>
+
+<p><em>링크를 허락하지 않으며 문맥에 큰 상관이 없으니 원본 그림 참조 바랍니다.</em></p>
+
+<p>상단 GUI의 오른쪽에서 지도와 전화 버튼을 볼 수 있으며, 페이지의 나머지 부분을 접근할 수 있는 표준 컨트롤을 둘 수 있다.</p>
+
+<p>자바스크립트 코드:</p>
+<div class="highlight"><pre><code class="js language-js" data-lang="js"><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#menu&#39;</span><span class="p">).</span><span class="nx">addClass</span><span class="p">(</span><span class="s1">&#39;closed&#39;</span><span class="p">);</span>
+<span class="nx">$</span><span class="p">(</span><span class="s1">&#39;.btn-menu&#39;</span><span class="p">).</span><span class="nx">click</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">){</span>
+   <span class="nx">e</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">();</span>
+   <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#menu&#39;</span><span class="p">).</span><span class="nx">toggleClass</span><span class="p">(</span><span class="s1">&#39;closed&#39;</span><span class="p">);</span>
+<span class="p">});</span>
+</code></pre></div>
+<p>테스크탑 CSS:</p>
+<div class="highlight"><pre><code class="css language-css" data-lang="css"><span class="nc">.nav</span> <span class="p">{</span>
+   <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span>
+   <span class="k">float</span><span class="o">:</span> <span class="k">right</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.btn-menu</span><span class="o">,</span> <span class="nc">.btn-call</span><span class="o">,</span> <span class="nc">.btn-map</span> <span class="p">{</span>
+   <span class="k">display</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>모바일 CSS:</p>
+<div class="highlight"><pre><code class="css language-css" data-lang="css"><span class="nc">.menu</span> <span class="p">{</span>
+   <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span>
+   <span class="k">height</span><span class="o">:</span> <span class="k">auto</span><span class="p">;</span>
+   <span class="k">overflow</span><span class="o">:</span> <span class="k">hidden</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.menu.closed</span> <span class="p">{</span>
+   <span class="k">height</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.btn-menu</span><span class="o">,</span> <span class="nc">.btn-call</span><span class="o">,</span> <span class="nc">.btn-map</span> <span class="p">{</span>
+   <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3>ANIMATIONS AS AN ENHANCEMENT</h3>
+
+<p>애니메이션 슬라이드쇼를 위해 HTML과 CSS만을 사용하는 슬라이드쇼를 만들기 위해 <a href="http://www.sequencejs.com/">SequenceJS</a>를 사용했다. 자바스크립트를 이용할 수 없거나 스크린 크기가 너무 작을 경우엔 애니메이션에 필요한 모든 자산을 다운로드할 필요가 없다.</p>
+
+<p>다른 경우에도, <strong>애니메이션에는 CSS3만을 사용하기로 했다.</strong></p>
+
+<p>이것은 CPU 작업을 GPU로 옮기는 하드웨어 가속을 사용해 애니메션 성능을 향상시켰다. 스마트폰이나 태블릿 사용자에게는 제한된 CPU 자원의 소비를 줄여 성능에 막대한 차이를 만들 수 있다.</p>
+
+<p>CSS에 애니메이션을 위임하여 최고의 하드웨어 가속을 만들 수 있었따.</p>
+<div class="highlight"><pre><code class="css language-css" data-lang="css"><span class="nc">.menu</span> <span class="p">{</span>
+   <span class="k">height</span><span class="o">:</span> <span class="k">auto</span><span class="p">;</span>
+   <span class="n">transition</span><span class="o">:</span> <span class="k">height</span> <span class="m">200</span><span class="n">ms</span> <span class="n">linear</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.menu.closed</span> <span class="p">{</span>
+   <span class="k">height</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+   <span class="n">transition</span><span class="o">:</span> <span class="k">height</span> <span class="m">200</span><span class="n">ms</span> <span class="n">linear</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3>BREAKPOINTS BASED ON CONTENT AND DESIGN, NOT DEVICE</h3>
+
+<p>구분점(breakpoint)들에서 크고 작은 스크린에 최적화된 컨텐츠 표현을 반응적으로 전달하기 위해 다양한 CSS 미디어 쿼리를 사용했다.</p>
+
+<p>이 기기 종속적이지 않은 접근법으로 다른 기기가 시장에 나올 때마다 코드를 최적화할 필요가 없게 되었다. 우리는 120, 240, 600, 760, 980, 1360에 구분점을 잡았다.</p>
+
+<p><em>링크를 허락하지 않으며 문맥에 큰 상관이 없으니 원본 그림 참조 바랍니다.</em></p>
+
+<p>웹사이트는 각 구분점 사이에서 유동적으로 반응한다.</p>
+
+<p>미래 친화성을 더 확실히 하기위해 특정 기기에 기반한 구분점을 디자인하지 않고, 우리가 손에 넣을 수 있는 데스크탑 브라우저와 다양한 폰과 태블릿에서, Lynx, 플레이스테이션 3, 킨들 페이퍼 화이트, PSP Vita 등등의 많은 기기와 브라우저에서 테스트하였다. 오래된 노키아 기기에서도 테스트하였고 웹사이트는 잘 동작하였다.</p>
+
+<p><em>링크를 허락하지 않으며 문맥에 큰 상관이 없으니 원본 그림 참조 바랍니다.</em></p>
+
+<p>우리 디자이너와 프론트엔드 팀이 노키아 X2와 같은 오래된 모델을 포함한 매우 다양한 기기에서 테스트하였다.</p>
+
+<h2>Being More Accessible</h2>
+
+<p>웹 디자이너와 개발자로서 반응성은 웹 사이트를 더 접근하기 쉽게 만드는 것이 아니라 우리 고객과 동료가 왜 배려받아야 하는지에 관해 교육하는 것이다.</p>
+
+<p>우리 웹사이트에 적용한 접근성에 대해 얻은 것 몇가지가 아래에 있다.</p>
+
+<h3>TEXT</h3>
+
+<ul>
+<li>텍스트는 배경에 대해 읽기쉬워야 한다. 헤딩에는 3:1, <code>body</code> 텍스트엔 4.5:1의 대조비를 준다.</li>
+<li>텍스트는 적절한 헤딩과 의미있는 순서로 구조되어야 하고 컨텐츠의 주제나 목적을 설명한다.</li>
+<li>텍스트는 컨텐츠나 기능성을 잃지 않고 크기를 변경할 수 있어야 한다.</li>
+</ul>
+
+<h3>LINKS</h3>
+
+<ul>
+<li>모든 링크의 목적은 설명하는 텍스트와 함께 명료해야하고 할 수 없는 경우에는 대안 텍스트를 제공해야 한다.</li>
+<li>모든 페이지의 첫번째 링크는 컨텐츠로 직접 이동할 수 있는 내비게이션을 제공해야 한다.</li>
+<li>페이지 주소(즉, URL)은 사람이 읽기쉬워야 하고, 가능한 경우에는 영구적이어야 한다.</li>
+<li>중요한 페이지와 기능에 빠른 내비게이션을 위해 접근 관문을 제공했다.</li>
+</ul>
+
+<p>네비게이션 링크를 스킵하는 HTML:</p>
+<div class="highlight"><pre><code class="html language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#content&quot;</span> <span class="na">title=</span><span class="s">&quot;Skip to content&quot;</span> <span class="na">accesskey=</span><span class="s">&quot;s&quot;</span> <span class="na">class=</span><span class="s">&quot;btn-skip&quot;</span><span class="nt">&gt;</span>Skip navigation<span class="nt">&lt;/a&gt;</span>
+</code></pre></div>
+<p>그리고 CSS:</p>
+<div class="highlight"><pre><code class="css language-css" data-lang="css"><span class="nc">.btn-skip</span> <span class="p">{</span>
+   <span class="k">position</span><span class="o">:</span> <span class="k">absolute</span><span class="p">;</span>
+   <span class="k">left</span><span class="o">:</span> <span class="m">-9999px</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3>IMAGES</h3>
+
+<ul>
+<li>모든 컨텐츠 이미지는 이미지가 불가하거나 지원되지 않을 때 보여주는 (<code>alt</code> 속성과 함께하는) 대안 텍스트를 가져야한다.</li>
+<li>컨텐츠는 이미지가 불가하거나 지원되지 않을 때에도 접근할 수 있거나 이해될 수 있어야 한다.</li>
+</ul>
+
+<h3>VIDEO</h3>
+
+<ul>
+<li>모든 비디오는 말하는 부분이 있으면 캔셥이나 자막을 갖고, YouTube에 호스팅한다.</li>
+</ul>
+
+<h3>FORMS</h3>
+
+<ul>
+<li>모든 폼 컨트롤과 필드는 적절하고 명료하게 레이블한다.</li>
+<li>폼 입력은 터치 스크린에서 정확한 키보드가 로드되도록 형식과 속성을 할당한다.</li>
+<li>모든 중요한 폼 필드는 폼이 제출 될 때 에러를 체크하도록 한다.</li>
+<li>발견된 에러는 정정하는 방법에 대한 제안과 함께 유저에게 텍스트로 설명되어야 한다.</li>
+<li>모든 폼은 키보드에서 <code>tab</code>키로 내비게이션할 수 있도록 적절한 포커스 순서를 가져야 한다.</li>
+<li>모든 폼은 <code>Return</code>이나 <code>Enter</code>키로 제출할 수 있어야 한다.</li>
+</ul>
+
+<p><code>required</code>나 <code>placeholder</code>와 같은 적절한 input 타입과 속성을 사용하면 폼을 더 접근하기 쉽게 만들 수 있다.</p>
+<div class="highlight"><pre><code class="html language-html" data-lang="html"><span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;email&quot;</span> <span class="na">id=</span><span class="s">&quot;email&quot;</span> <span class="na">name=</span><span class="s">&quot;email&quot;</span> <span class="na">value=</span><span class="s">&quot;&quot;</span> <span class="na">required=</span><span class="s">&quot;&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;Pop your email address in here&quot;</span><span class="nt">&gt;</span>
+</code></pre></div>
+<h2>Just Getting Started</h2>
+
+<p>몇 주전 새 웹사이트를 띄운 결과가 인상적이었다. 모바일 트래픽이 200% 넘게 증가하였고(모든 트래픽 평균에선 82%가 증가), 평균 방문 시간이 18% 증가혔다. 모바일 사용자의 exit 비율이 4,000% 감소하였다.</p>
+
+<p><em>링크를 허락하지 않으며 문맥에 큰 상관이 없으니 원본 그림 참조 바랍니다.</em></p>
+
+<p>구글 애널리틱스에 의하면 서버 반응 속도가 평균 1.21 초에서 170 밀리초로 감소하였다. 비슷하게 페이지 로딩 시간도 평균 9.19 초에서 1.82 초로 감소하였다.</p>
+
+<p>여기서 중요한 것은 단지 시작이라는 것이다. 성능 최적화, 화일 크기 줄이기, 터치 제스처, <a href="http://adaptive-images.com/">adaptive images</a>과 같은 서버 사이드 솔루션 등을 더 사용할 수 있다.</p>
+
+<p><em>링크를 허락하지 않으며 문맥에 큰 상관이 없으니 원본 그림 참조 바랍니다.</em></p>
+
+<p>반응형으로 가는 것은 우리 웹사이트의 첫번째 단계일 뿐이다.</p>
+
+<p>벤자민 플랭클린이 가로되, 당신이 변화를 끝낼 때 당신은 끝난 것이다.</p>
+
+  </div>
+</article>
+
+<section class="post-footer">
+  <a href="/feed.xml" class="pull-right">
+    <img src="/images/rss.jpg" alt="RSS" />
+  </a>
+</section>
+
+<div class="separator"></div>
+
+<section class="comments">
+  <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'nolboo'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+      <div class="separator"></div>
+    </div>
+  </div>
+
+  <div class="clear"></div>
+
+  <footer>
+    <p>
+      Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a>,
+      hosted on <a href="http://pages.github.com/">Github Pages</a>
+      | Template inspired by <a href="http://sebastien.saunier.me/">sebastien.saunier.me</a>
+    </p>
+    <ul class="links">
+      <!-- <li><a href="https://github.com/nolboo" title="Show me the code"><i class="icon-github"></i></a></li> -->
+      <li><a href="https://twitter.com/n0lb00" title="follow me"><i class="icon-twitter"></i></a></li>
+      <li><a href="mailto:nolboo.kim@gmail.com" title="AMA"><i class="icon-sparrow"></i></a></li>
+    </ul>
+  </footer>
+
+  <script type="text/javascript">
+    // var _gaq = _gaq || [];
+    // _gaq.push(['_setAccount', 'GOOGLE-ANALYTICS-TRACK-ID']);
+    // _gaq.push(['_trackPageview']);
+
+    // (function() {
+    //   var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    //   ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    //   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    // })();
+
+    // /*!
+    //  * http://github.com/ssaunier/track-outbound-links
+    //  * Copyright 2013 Sébastien Saunier
+    //  * @license MIT
+    //  */
+    // !function(e,t){function n(){for(var n=t.getElementsByTagName("a"),a=[],r=0;r<n.length;++r){var o=n[r];o.host!=e.location.host&&a.push(o)}return a}function a(n){for(var a=n.srcElement||n.target;a&&("undefined"==typeof a.tagName||"a"!=a.tagName.toLowerCase()||!a.href);)a=a.parentNode;a&&a.href&&(e._gaq&&_gaq.push(["_trackEvent","Outbound link","Click",a.href]),(!a.target||a.target.match(/^_(self|parent|top)$/i))&&(setTimeout(function(){t.location.href=a.href},150),n.preventDefault?n.preventDefault():n.returnValue=!1))}e.addEventListener("load",function(){var e=n();for(var t in e)e[t].addEventListener("click",a)})}(window,document);
+  </script>
+
+  
+</body>
+</html>

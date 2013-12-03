@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--   <meta name="google-site-verification" content="aexITLS38FdIRzwj25OVWxm87rpa9l-UV0URTyC9cTs" /> -->
+  <title>
+    HTML & CSS 중급자 가이드 - 4강 : 반응형 웹 디자인
+    
+    - Nolboo's Blog
+    
+  </title>
+  <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:700,400|Titillium+Web:700,400">
+  <link rel="stylesheet" href="/css/site.css">
+  <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+  <meta name="description" content="모바일 인터넷 사용이 데스크탑 인터넷 사용을 올해 추월하는 트랜드가 이어지고 있다. 모바일 인터넷 사용이 계속 성장하면서 어떻게 모든 유저에게 적합한 웹사이트를 만들 것인가 하는 질문이 제기되고있다." />
+  <link rel="alternate" type="application/atom+xml" title="RSS Feed for Nolboo's blog" href="/feed.xml" />
+
+<!--    -->
+
+  
+</head>
+<body>
+  <div class="top-bar"></div>
+
+  <div class="container">
+    <div class="site">
+      <header>
+        <nav>
+          <a class="" href="/">Home</a>
+          <a class=" selected " href="/archive/">Archive</a>
+          <a class="" href="/trans/">번역글 모음</a>
+        </nav>
+        <div class="pull-right right logo">
+          <div class="name">
+            <a href="/">Nolboo's Blog</a><br />
+            <small>
+              <em>
+                  <a href="/">호모스터디쿠스를 꿈꾸는 놀부</a>
+              </em>
+            </small>
+          </div>
+          <!-- <img class="avatar" src="/images/sebastien_saunier.jpg" alt="My profile picture" /> -->
+        </div>
+        <div class="clear"></div>
+      </header>
+      <div class="separator"></div>
+      <article>
+  <h1>
+    HTML & CSS 중급자 가이드 - 4강 : 반응형 웹 디자인
+  </h1>
+  <div class="center">
+    <p class="meta">22 Jul 2013</p>
+  </div>
+
+<!--    -->
+
+  <div class="post">
+  <p>원본 : <a href="http://learn.shayhowe.com/advanced-html-css/responsive-web-design">An Advanced Guide to HTML &amp; CSS - LESSON 4 : Responsive Web Design</a></p>
+
+<p>인터넷은 누구도 예측할 수 없을 정도로 빠르게, 미친듯이 성장했다. 최근 수 년간 모바일 성장이 현장에서 폭발하고 있다. 모바일 인터넷 사용의 성장도 일반 인터넷 사용의 성장을 훨씬 뛰어넘고 있다.</p>
+
+<p>요즘 인터넷에 연결되는 모바일 기기를 하나 이상 갖고 있지 않은 사람을 찾는 것은 힘들다. 영국에선 인구보다 <a href="http://www.gpmd.co.uk/blog/2012-mobile-internet-statistics/">모바일 폰</a>이 더 많고, 모바일 인터넷 사용이 데스크탑 인터넷 사용을 올해 추월하는 <a href="http://www.digitalbuzzblog.com/2011-mobile-statistics-stats-facts-marketing-infographic/">트랜드가 이어지고 있다</a>.</p>
+
+<p>모바일 인터넷 사용이 계속 성장하면서 어떻게 모든 유저에게 적합한 웹사이트를 만들 것인가 하는 질문이 제기되고있다. 업계는 이 질문에 반응형 웹 디자인(responsive web design : RWD)으로 응답하고 있다.</p>
+
+<h2>Responsive Overview</h2>
+
+<p>반응형 웹 디자인은 모바일 혹은 데스트탑의 모든 기기와 크고 작은 모든 스크린 사이즈에서 적절하게 작동하는 웹사이트를 만드는 것이다.</p>
+
+<p>반응형 웹 디자인은 모든 사람에게 직관적이고 만족스런 경험을 제공하는 것에 초점을 두며, 데스크탑 유저와 폰 유저 모두에게 같은 이익을 제공한다.</p>
+
+<p>반응형 웹 디자인<a href="http://www.alistapart.com/articles/responsive-web-design/">responsive web design</a> 용어는 Ethan Marcotte가 만들어냈고 주로 키웠다. 이 강의에서 다루는 많은 것은 Ethan 온라인과 그의 책 <a href="http://www.abookapart.com/products/responsive-web-design/">Responsive Web Design</a>에서 먼저 이야기된 것이다.</p>
+
+<p><img src="http://learn.shayhowe.com/assets/courses/advanced-html-css-guide/responsive-web-design/food-sense.png" alt="Food Sense Responsive Layout"></p>
+
+<p><strong>Fig. 4.01</strong></p>
+
+<p><a href="http://foodsense.is/">Food Sense</a>는 아름다운 웹사이트이며, 모든 다른 뷰포트 사이즈에 반응한다. 크건 작건 뷰포트에 웹사이트가 조절되어 자연스런 사용자 경험을 만든다.</p>
+
+<p>역자 참조 링크</p>
+
+<ul>
+<li><a href="http://www.w3.org/TR/CSS2/visuren.html#viewport">Viewport</a> : 화면의 창 또는 보이는 영역</li>
+</ul>
+
+<h3>Responsive vs. Adaptive vs. Mobile</h3>
+
+<p><em>Responsive</em>(반응형) 와 <em>adaptive</em>(적응형) 웹 디자인은 밀접하게 연관되며, 종종 같은 의미로 사용된다. 반응형은 일반적으로 어떤 변화에도 빠르고 적극적으로 반응하는 것을 의미하는 반면 적응형은 (_변화_와 같은) 새로운 목적이나 상황에 쉽게 변경되는 것을 의미한다. 반응형 디자인에서는 웹사이트가 뷰포트 너비와 같은 요인에 지속적으고 유동적으로 변하지만, 적응형 웹사이트는 미리 정해진 요인들에 맞추어 만들어진다. 두 가지의 결합이 이상적이며, 기능적 웹사이트를 위한 완벽한 공식을 제공한다. 어떤 용어가 사용되는가가 특별히 커다란 차이를 만들지는 않는다.</p>
+
+<p>_Mobile_은 일반적으로 모바일 유저만을 위한 새 도메인에 별도의 웹사이트를 만드는 것을 의미한다. 모바일 웹사이트는 극도로 가벼울 수 있지만 새 코드 베이스와 브라우저 스니핑에 의존한다. 이는 개발자와 유저 모두에게 장애물이 될 수 있다.</p>
+
+<p>역자 주 - <a href="http://en.wikipedia.org/wiki/Browser_sniffing">Browser sniffing</a> : 유저의 브라우저가 어떤 것인지 판별하는 것</p>
+
+<p>현재 가장 인기있는 기술은 다른 브라우저와 기기 뷰포트에 따라 레이아웃과 컨텐츠가 변하면서 생동적으로 적응하는 디자인을 선호하는 반응형 웹 디자인에 있다. 이러 해법은 반응형, 적응형과 모바일 모두의 이점을 가지고 있다.</p>
+
+<h2>Flexible Layouts</h2>
+
+<p>반응형 웹 디자인은 가변(flexible) 레이아웃, 미디어 쿼리, 가변(flexible) 미디어의 세 가지 주요 부분으로 나뉜다. 첫번째 부분인 가변 레이아웃은 어떠한 너비에도 생동적으로 재조정할 수 있는 가변 그리드로 웹 사이트의 레이아웃을 만드는 것이다. 가변 그리드는 대부분 퍼센트나 <code>em</code> 등의 상대적인 길이 단위를 사용한다. 이 상대적인 길이들은 <code>width</code>, <code>margin</code>, <code>padding</code>과 같은 일반적인 그리드 속성값으로 사용된다.</p>
+
+<h4>Relative Viewport Lengths</h4>
+
+<p>CSS3에서는 몇 개의 새로운 상대 길이 단위가 <a href="http://dev.w3.org/csswg/css3-values/#viewport-relative-lengths">도입되었다</a>. 이는 브라우저나 디바이스의 뷰포트 크기와 특히 관련된 것이며, <code>vw</code>, <code>vh</code>, <code>vmin</code>, <code>vmax</code> 등을 포함한다. 이러한 새로운 단위들에 대한 전체적인 지원은 훌륭하진 않으나 확대되고 있고, 조만간 반응형 웹사이트를 만드는 데에 커다란 역할을 하는 것이다.</p>
+
+<ul>
+<li><code>vw</code> : Viewports width</li>
+<li><code>vh</code> : Viewports height</li>
+<li><code>vmin</code> : Minimum of the viewport’s height and width</li>
+<li><code>vmax</code> : Maximum of the viewport’s height and width</li>
+</ul>
+
+<p>가변 레이아웃은 픽셀이나 인치와 같은 고정 측정 단위를 지원하지 않는다. 기기마다 뷰포트 높이와 너비가 지속적으로 변하기 때문이다. 웹사이트 레이아웃은 이런 변화에 적응할 필요가 있으며 고정 값은 너무 많은 제약이 있다. 다행히 Ethan이 상대값을 사용한 가변 레이아웃의 비율을 선언하는 것을 도와주는 쉬운 공식을 밝혀냈다.</p>
+
+<p>그 공식은 엘리먼트의 목표(target) 너비를 부모 엘리먼트의 너비로 나누어 목표 엘리먼트의 상대적인 너비를 구하는 것이다.</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">반응형 디자인 공식 : target ÷ context = result
+</code></pre></div>
+<h3>Flexible Grid</h3>
+
+<p>이 공식이 두 열(column) 레이아웃 안에서 어떻게 동작하는지 보자. 아래에서 <code>container</code> 클래스의 부모 <code>div</code>가 <code>section</code>과 <code>aside</code> 엘리먼트를 감싸고 있다. <code>section</code>을 왼쪽으로 <code>aside</code>를 오른쪽으로 위치하면서 둘 사이에 같은 마진을 갖게하는 것이 목표다. 보통 이러한 레이아웃의 마크업과 스타일은 다음과 유사할 것이다.</p>
+
+<h6>HTML</h6>
+<div class="highlight"><pre><code class="html language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;container&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;section&gt;</span>...<span class="nt">&lt;/section&gt;</span>
+  <span class="nt">&lt;aside&gt;</span>...<span class="nt">&lt;/aside&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div>
+<h6>CSS</h6>
+<div class="highlight"><pre><code class="css language-css" data-lang="css">    <span class="nc">.container</span> <span class="p">{</span>
+      <span class="k">width</span><span class="o">:</span> <span class="m">660px</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="nt">section</span> <span class="p">{</span>
+      <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span>
+      <span class="k">margin</span><span class="o">:</span> <span class="m">10px</span><span class="p">;</span>
+      <span class="k">width</span><span class="o">:</span> <span class="m">420px</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="nt">aside</span> <span class="p">{</span>
+      <span class="k">float</span><span class="o">:</span> <span class="k">right</span><span class="p">;</span>
+      <span class="k">margin</span><span class="o">:</span> <span class="m">10px</span><span class="p">;</span>
+      <span class="k">width</span><span class="o">:</span> <span class="m">200px</span><span class="p">;</span>
+    <span class="p">}</span>
+</code></pre></div>
+<h4><a href="http://learn.shayhowe.com/advanced-html-css/responsive-web-design#fixed-grid-demo">Fixed Grid Demo</a></h4>
+
+<p>가변 그리드 공식을 사용하여 길이의 고정 단위를 상대 단위로 변경할 수 있다. 이 예제에선 퍼센트를 사용하겠지만 <code>em</code> 단위도 동일하게 작동할 것이다. 부모 <code>container</code>의 너비에 상관없이 <code>section</code>과 <code>aside</code>의 마진과 너비는 비율적으로 크기가 변동될 것이다.</p>
+<div class="highlight"><pre><code class="css language-css" data-lang="css">    <span class="nc">.container</span> <span class="p">{</span>
+      <span class="k">max-width</span><span class="o">:</span> <span class="m">660px</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="nt">section</span> <span class="p">{</span>
+      <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span>
+      <span class="k">margin</span><span class="o">:</span> <span class="m">1</span><span class="o">.</span><span class="m">51515151</span><span class="o">%</span><span class="p">;</span>   <span class="c">/*  10px ÷ 660px = .01515151 */</span>
+      <span class="k">width</span><span class="o">:</span> <span class="m">63</span><span class="o">.</span><span class="m">63636363</span><span class="o">%</span><span class="p">;</span>   <span class="c">/* 420px ÷ 660px = .63636363 */</span>
+    <span class="p">}</span>
+    <span class="nt">aside</span> <span class="p">{</span>
+      <span class="k">float</span><span class="o">:</span> <span class="k">right</span><span class="p">;</span>
+      <span class="k">margin</span><span class="o">:</span> <span class="m">1</span><span class="o">.</span><span class="m">51515151</span><span class="o">%</span><span class="p">;</span>   <span class="c">/*  10px ÷ 660px = .01515151 */</span>
+      <span class="k">width</span><span class="o">:</span> <span class="m">30</span><span class="o">.</span><span class="m">30303030</span><span class="o">%</span><span class="p">;</span>   <span class="c">/* 200px ÷ 660px = .30303030 */</span>
+    <span class="p">}</span>
+</code></pre></div>
+<h4><a href="http://learn.shayhowe.com/advanced-html-css/responsive-web-design#flexible-grid-demo">Flexible Grid Demo</a></h4>
+
+<p>가변 레이아웃 개념과 공식을 갖고 그리드의 모든 부분에 재적용하면 완벽하게 동적인 웹사이트를 만들 수 있다. 위의 부모 <code>container</code>에서 했듯이 <code>min-width</code>, <code>max-width</code>, <code>min-height</code>, <code>max-height</code> 속성을 수단으로 가변 레이아웃에서 훨씬 더 많은 컨트롤을 할 수 있다.</p>
+
+<p>가변 레이아웃 접근법만으론 충분치 않다. 브라우저 뷰포트의 너비가 너무 작을 때는 레이아웃의 크기를 비율적으로 조절하더라도 열의 크기가 너무 작아 컨텐츠를 효과적으로 표시할 수 없다. 레이아웃이 너무 작거나 크면 텍스트는 읽기 어렵게 되고, 레이아웃이 깨지기 시작할 것이다. 이런 경우엔 미디어 쿼리가 더 나은 경험을 만드는데 도움이 될 수 있다.</p>
+
+<h2>Media Queries</h2>
+
+<p>미디어 쿼리는 개별 브라우저와 디바이스 환경(예를 들면 뷰포트 너비 혹은 기기 오리엔테이션 등)에 각기 다른 스타일을 제공할 수 있는 확장 기능이다. <a href="http://css-tricks.com/css-media-queries/">타겟 스타일</a>을 독자적으로 제공할 수 있다는 것은 반응형 웹 디자인에 기회과 수단의 세계를 활짝 열어준다.</p>
+
+<h3>Initializing Media Queries</h3>
+
+<p>미디어 쿼리를 사용하는 방법은 두 가지가 있다. 기존의 스타일 시트에 <code>@media</code> 룰을 사용하고 <code>@import</code> 룰을 사용하여 새로운 스타일 시트를 들여오거나(import), HTML 문서 안에서 별도의 스타일을 링크하는 것이다. 일반적으로 추가적인 HTTP 요청을 피하기 위해 기존 스타일 시트안에 <code>@media</code> 룰을 사용하는 것이 추천된다.</p>
+
+<h6>HTML</h6>
+<div class="highlight"><pre><code class="html language-html" data-lang="html"><span class="c">&lt;!-- Separate CSS File --&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">&quot;styles.css&quot;</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> 
+<span class="na">media=</span><span class="s">&quot;all and (max-width: 1024px)&quot;</span><span class="nt">&gt;</span>
+</code></pre></div>
+<h6>CSS</h6>
+<div class="highlight"><pre><code class="css language-css" data-lang="css"><span class="c">/* @media Rule */</span>
+<span class="k">@media</span> <span class="nt">all</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">max-width</span><span class="o">:</span> <span class="nt">1024px</span><span class="o">)</span> <span class="p">{</span><span class="o">...</span><span class="p">}</span>
+
+<span class="c">/* @import Rule */</span>
+<span class="k">@import</span> <span class="nt">url</span><span class="o">(</span><span class="nt">styles</span><span class="nc">.css</span><span class="o">)</span> <span class="nt">all</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">max-width</span><span class="o">:</span> <span class="nt">1024px</span><span class="o">)</span> <span class="p">{</span><span class="o">...</span><span class="p">}</span>
+</code></pre></div>
+<p>각 미디어 쿼리는 하나 또는 그 이상의 표현이 뒤따르는 미디어 타입을 포함할 수 있다. 일반적인 미디어 타입은 <code>all</code>, <code>screen</code>, <code>print</code>, <code>tv</code>, <code>braille</code>을 포함한다. HTML5 사양(specifition)은 <code>3d-glasses</code>도 포함하는 새로운 미디어 타입을 포함한다. 미디어 타입을 명시하지 않으면 미디어 쿼리는 미디어 타입을 <code>screen</code>으로 기본으로할 것이다.</p>
+
+<p>미디어 쿼리 표현식은 다른 미디어 특성과 값을 포함할 수 있으며 그리고나서 참(true) 혹은 거짓(false)를 할당한다. 미디어 특성과 값이 참으로 할당될 때 해당 스타일이 적용되며, 거짓이면 해당 스타일은 무시된다.</p>
+
+<h3>Logical Operators in Media Queries</h3>
+
+<p>미디어 쿼리에서 논리적 연산자(logical operator)는 강력한 표현식을 만들 수 있게 해준다. <code>and</code>, <code>not</code>, <code>only</code>의 세 개의 연산자를 사용할 수 있다.</p>
+
+<p><code>and</code> 논리 연산자를 사용하여 브라우저나 기기가 a,b,c 등으로 지정하여 추가적인 조건을 추가할 수 있다. 여러 개의 개별 미디어 쿼리는 콤마로 분리될 수 있으며 암묵적인 <code>or</code> 연산자처럼 동작한다. 아래 예는 <code>800</code>과 <code>1024</code> 픽셀 너비의 모든 미디어 타입을 선택한다.</p>
+<div class="highlight"><pre><code class="css language-css" data-lang="css"><span class="k">@media</span> <span class="nt">all</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">min-width</span><span class="o">:</span> <span class="nt">800px</span><span class="o">)</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">max-width</span><span class="o">:</span> <span class="nt">1024px</span><span class="o">)</span> <span class="p">{</span><span class="o">...</span><span class="p">}</span>
+</code></pre></div>
+<p><code>not</code> 논리 연산자는 명시된 것을 제외한 모든 쿼리를 특정하여 선언된 쿼리를 부정한다. 아래 예에서는 표현식은 컬러 스크린을 갖지 않는 모든 디바이스에 적용된다. 즉, 흑백이나 모노 스크린에 적용된다.</p>
+<div class="highlight"><pre><code class="css language-css" data-lang="css"><span class="k">@media</span> <span class="nt">not</span> <span class="nt">screen</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">color</span><span class="o">)</span> <span class="p">{</span><span class="o">...</span><span class="p">}</span>
+</code></pre></div>
+<p><code>only</code> 논리 연산자는 새로운 연산자이며 HTML4 알고리즘을 사용하는 유저 에이전트로는 인식되지 않으므로, 미디어 쿼리를 지원하는 않는 기기나 브라우저에선 스타일이 나타나지 않는다. 아래에서 표현식은 세로 편향(portrait orientation)인 스크린만을 선택한다.</p>
+<div class="highlight"><pre><code class="css language-css" data-lang="css"><span class="k">@media</span> <span class="nt">only</span> <span class="nt">screen</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">orientation</span><span class="o">:</span> <span class="nt">portrait</span><span class="o">)</span> <span class="p">{</span><span class="o">...</span><span class="p">}</span>
+</code></pre></div>
+<blockquote>
+<h4>Omitting a Media Type</h4>
+
+<p><code>not</code>과 <code>only</code> 논리 연산자를 사용할 땐 미디어 타입을 쓰지 않을 수 있다. 이 경우 미디어 타입은 <code>all</code>로 전제된다.</p>
+</blockquote>
+
+<h3>Media Features in Media Queries</h3>
+
+<p>미디어 쿼리 문법과 논리 연산자의 작동법을 아는 것은 미디어 쿼리에 대한 훌륭한 입문이나, 실제 작업은 미디어 특성과 함께 한다. 미디어 쿼리 표현식 내에서 어떤 속성이 목표될지를 미디어 특성이 지정한다.</p>
+
+<h4>Height &amp; Width Media Features</h4>
+
+<p>가장 많이 사용되는 미디어 특성 중 하나는 하나의 디바이스나 브라우저 뷰포트에 하나의 높이나 너비를 결정하는 것에 관련된다. <code>height</code>, <code>width</code>, <code>device-height</code>, <code>device-width</code>의 미디어 특성을 사용해서 높이와 너비는 찾을 수 있다. 각 미디어 특성은 <code>min</code> 혹은 <code>max</code> 수식어로 접두될 수 있어 <code>min-width</code> 혹은 <code>max-device-width</code>과 같은 특성을 만들 수 있다.</p>
+
+<p><code>height</code>와 <code>width</code> 특성은 (브라우저 창과 같은) 뷰포트 렌더링 영역의 높이와 너비에 기반하며, 한편 <code>device-height</code>와 <code>device-width</code> 특성은 (실제 렌더링 영역보다 더 클 수 있는) 출력 기기의 높이와 너비에 기반한다. 이 높이와 너비 미디어 특성 값은 (상대적이거나 절대적인) 어떠한 길이 값도 될 수 있다.</p>
+<div class="highlight"><pre><code class="css language-css" data-lang="css">    <span class="k">@media</span> <span class="nt">all</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">min-width</span><span class="o">:</span> <span class="nt">320px</span><span class="o">)</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">max-width</span><span class="o">:</span> <span class="nt">780px</span><span class="o">)</span> <span class="p">{</span><span class="o">...</span><span class="p">}</span>
+</code></pre></div>
+<p>반응형 디자인에서는 <code>min-width</code>과 <code>max-width</code>를 포함하는 특성이 가장 많이 사용된다. 이것들은 기기 특성에 혼동을 피해 데스크탑과 모바일 기기에 동일하게 반응형 웹사이트를 만드도록 해준다.</p>
+
+<blockquote>
+<h4>Using Minimum &amp; Maximum Prefixes</h4>
+
+<p><code>min</code>과 <code>max</code> 접두어는 꽤 많은 미디어 특성에서 사용될 수 있다. <code>min</code> 접두어는 보다 크거나 같은 값을 가리키며, <code>max</code> 접두어는 더 적거나 같은 값을 가리킨다. <code>min</code>과 <code>max</code> 접두어는 일반적인 HTML 문법과 충돌되지 않아 특별히 꺽쇠 심볼을 사용하지 않는다.</p>
+</blockquote>
+
+<h4>Orientation Media Feature</h4>
+
+<p><code>orientation</code> 미디어 특성은 기기가 <code>landscape</code>나 <code>portrait</code> 편향(orientation)인지를 결정한다. <code>landscape</code> 모드는 화면이 가로 모드일 때, <code>portrait</code> 모드는 화면이 세로 모드일 때이며, 모바일 기기에서 널리 사용된다.</p>
+<div class="highlight"><pre><code class="css language-css" data-lang="css"><span class="k">@media</span> <span class="nt">all</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">orientation</span><span class="o">:</span> <span class="nt">landscape</span><span class="o">)</span> <span class="p">{</span><span class="o">...</span><span class="p">}</span>
+</code></pre></div>
+<h4>Aspect Ratio Media Features</h4>
+
+<p><code>aspect-ratio</code>와 <code>device-aspect-ratio</code> 특성은 목표 렌더링 영역 혹은 출력 기기의 <code>width/height</code> 픽셀 비율을 지정한다. <code>min</code>와 <code>max</code> 접두어가 사용될 수 있다.</p>
+
+<p>종횡비(aspect ratio) 값은 /로 분리되는 두 개의 양의 정수로 구성된다. 첫 정수는 픽셀 너비를, 두번째 정수는 픽셀 높이이다.</p>
+<div class="highlight"><pre><code class="css language-css" data-lang="css">    <span class="k">@media</span> <span class="nt">all</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">min-device-aspect-ratio</span><span class="o">:</span> <span class="nt">16</span><span class="o">/</span><span class="nt">9</span><span class="o">)</span> <span class="p">{</span><span class="o">...</span><span class="p">}</span>
+</code></pre></div>
+<blockquote>
+<h4>Pixel Ratio Media Features</h4>
+
+<p>종횡비 특성에 더해 <code>pixel-ratio</code> 미디어 특성도 있다. 이 특성은 <code>device-pixel-ratio</code> 특성을 포함하며, <code>min</code>과 <code>max</code> 접두어도 가진다. 특히 픽셀비 특성은 레티나 디스플레이와 같은 고해상도 기기를 지정할 때 훌륭하며, 다음처럼 보여질 것이다.</p>
+
+<p>@media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min-device-pixel-ratio: 1.3) {…}</p>
+</blockquote>
+
+<h4>Resolution Media Feature</h4>
+
+<p><code>resolution</code> 미디어 특성은 DPI(dots per inch)로 알려진 픽셀 밀도로 출력 기기의 해상도를 지정한다. <code>min</code>과 <code>max</code>를 접두할 수 있다. 게다가 <code>resolution</code> 미디어 속성은 dots per pixel (<code>1.3dppx</code>), dots per centimeter (<code>118dpcm</code>)와 같은 길이 기반 해상도 값을 가질 수도 있다.</p>
+<div class="highlight"><pre><code class="css language-css" data-lang="css"><span class="k">@media</span> <span class="nt">print</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">min-resolution</span><span class="o">:</span> <span class="nt">300dpi</span><span class="o">)</span> <span class="p">{</span><span class="o">...</span><span class="p">}</span>
+</code></pre></div>
+<h4>Other Media Features</h4>
+
+<p><code>color</code>, <code>color-index</code>, <code>monochrome</code> 특성은 출력 색상을, <code>grid</code> 특성은 비트맵 기기를, <code>scan</code> 특성은 텔레비전의 스캐닝 처리를 지정하며, 자주 사용하지는 않지만 필요할 땐 도움이 된다.</p>
+
+<blockquote>
+<h4>Media Query Browser Support</h4>
+
+<p>불행하게도 미디어 쿼리는 인터넷 익스플로러 8 이하와 고전적인 브라우저에서는 작동하지 않는다. 그러나, 자바스크립트로 쓰여진 두 개의 알맞는 땜빵(polyfill)이 있다.</p>
+
+<p><a href="https://github.com/scottjehl/Respond/">Respond.js</a>는 min/max-witdh 타입만을 위한 가벼운 땜빵이며, 미디어 쿼리 타입만 사용된다면 완벽하다. <a href="http://code.google.com/p/css3-mediaqueries-js/">CSS3-MediaQueries.js</a>는 더 많이 개발되고 더 무겁지만 더 복잡한 미디어 쿼리의 더 큰 배열을 지원하는 땜빵이다. 추가적으로 어떠한 땜빵이라도 성능 문제를 가져올 수 있으며, 잠재적으로 웹사이트를 느리게 할 수 있다는 것을 명심해야한다. 주어진 땜빵이 성능과 맞바꿀만한지 확인해야한다.</p>
+</blockquote>
+
+<h3>Media Queries Demo</h3>
+
+<p>이제 미디어 쿼리를 사용하여 전에 만들었던 가변 레이아웃을 다시 코딩하자. 데모의 현재 문제점 중 하나는 <code>aside</code>가 아주 작은 뷰포트에서 사용할 수 없을 정도로 작아진다는 것이다. <code>420</code> 픽셀 너비 아래의 뷰포트를 위해 미디어 쿼리를 추가하여 <code>float</code>를 꺼버리고 <code>section</code>과 <code>aside</code>의 너비를 변화시키는 레이아웃으로 변경할 수 있다.</p>
+<div class="highlight"><pre><code class="css language-css" data-lang="css">    <span class="k">@media</span> <span class="nt">all</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">max-width</span><span class="o">:</span> <span class="nt">420px</span><span class="o">)</span> <span class="p">{</span>
+      <span class="nt">section</span><span class="o">,</span> <span class="nt">aside</span> <span class="p">{</span>
+        <span class="k">float</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span>
+        <span class="k">width</span><span class="o">:</span> <span class="k">auto</span><span class="p">;</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+</code></pre></div>
+<p><strong>Fig. 4.02</strong>  미디어 쿼리 없이는 <code>section</code>과 <code>aside</code> 너무 작아 진다. 너무 작아서 어떤 실제 컨텐츠도 담을 수 없다. </p>
+
+<p><img src="http://learn.shayhowe.com/assets/courses/advanced-html-css-guide/responsive-web-design/without-media-queries.png" alt="Demo without Media Queries"></p>
+
+<p><strong>Fig. 4.03</strong>  미디어 쿼리를 사용하여 <code>float</code>를 제거하고 너비를 변경하면, <code>section</code>과 <code>aside</code>가 뷰포트 전체 너비를 차지하고 기존의 컨텐츠에 충분한 공간이 생겼다. </p>
+
+<p><img src="http://learn.shayhowe.com/assets/courses/advanced-html-css-guide/responsive-web-design/with-media-queries.png" alt="Demo with Media Queries"></p>
+
+<blockquote>
+<h4>Identifying Breakpoints</h4>
+
+<p>당신의 직관이 각기 다른 기기 해상도로 결정되는 공통적인 뷰포트 사이즈의 미디어 쿼리 분기점(<code>320px</code>, <code>480px</code>, <code>768px</code>, <code>1024px</code>, <code>1224px</code> 등)을 쓸지도 모르겠다. 그러나 이건 <strong>나쁜</strong> 아이디어이다.</p>
+
+<p>반응형 웹사이트를 만들 때는 기기만아니라 다른 뷰포트 사이즈의 배열에 맞추어 조정되어야 한다. 웹사이트가 깨지거나 이상하게 보이기 시작할 때 혹은 경험이 방해받을 때에만 분기점(breakpoint)이 도입되어야 한다.</p>
+
+<p>게다가 새로운 기기와 해상도는 항상 출시된다. 이러한 변화를 따라가려는 것은 끝없는 과정일 수 있다.</p>
+</blockquote>
+
+<h2>Mobile First</h2>
+
+<p>미디어 쿼리와 함께 가장 인기있는 기술은 _mobile first_로 불리우는 것이다. <a href="http://www.lukew.com/presos/preso.asp?26">mobile first</a> 접근법은 작은 뷰포트의 스타일을 기본 웹사이트 스타일로 한 다음 뷰포트가 커짐에 따른 스타일을 추가하기위해 미디어 쿼리를 사용한다.</p>
+
+<p>모바일 퍼스트 디자인의 배경에서 작동되는 믿음은 일반적으로 더 작은 뷰포트를 사용하는 모바일 기기 유저는 모바일 스타일을 덮어쓰기만을 위해 테스크탑 스타일을 로드할 필요가 없다는 것이다. 그렇게 하는 것은 대역폭(bandwidth)의 낭비이다. 쾌적한 웹사이트를 기대하는 어떤 유저에게도 귀중한 대역폭 말이다.</p>
+
+<p>모바일 퍼스트 접근법은 모바일 유저의 제한을 염두에 두고 디자인하는 것을 지원하기도 한다. 오래 전에 인터넷 소비의 태반이 모바일 기기로 이루어질 것으로 예상되었다. 적절하게 그것을 계획하고 본질적인 모바일 경험을 개발하라.</p>
+
+<p>모바일 퍼스트 미디어 쿼리는 다음과 같을 것이다.</p>
+<div class="highlight"><pre><code class="css language-css" data-lang="css"><span class="c">/* Default styles first then media queries */</span>
+<span class="k">@media</span> <span class="nt">screen</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">min-width</span><span class="o">:</span> <span class="nt">400px</span><span class="o">)</span>  <span class="p">{</span><span class="o">...</span><span class="p">}</span>
+<span class="k">@media</span> <span class="nt">screen</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">min-width</span><span class="o">:</span> <span class="nt">600px</span><span class="o">)</span>  <span class="p">{</span><span class="o">...</span><span class="p">}</span>
+<span class="k">@media</span> <span class="nt">screen</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">min-width</span><span class="o">:</span> <span class="nt">1000px</span><span class="o">)</span> <span class="p">{</span><span class="o">...</span><span class="p">}</span>
+<span class="k">@media</span> <span class="nt">screen</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">min-width</span><span class="o">:</span> <span class="nt">1400px</span><span class="o">)</span> <span class="p">{</span><span class="o">...</span><span class="p">}</span>
+</code></pre></div>
+<p>불필요한 미디어를 다운로드하는 것은 미디어 쿼리를 사용하여 중지시킬 수 있다. 일반적으로 모바일 스타일에서 CSS3 그림자, 그라디언트, 변형(transform), 애니메이션 등을 피하는 것은 나쁜 아이디어가 아니다. 지나치게 사용되면 로딩이 무겁게되고, 기기의 배터리를 빨리 닳게할 수도 있다.</p>
+<div class="highlight"><pre><code class="css language-css" data-lang="css"><span class="c">/* Default media */</span>
+<span class="nt">body</span> <span class="p">{</span>
+  <span class="k">background</span><span class="o">:</span> <span class="m">#ddd</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="c">/* Media for larger devices */</span>
+<span class="k">@media</span> <span class="nt">screen</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">min-width</span><span class="o">:</span> <span class="nt">800px</span><span class="o">)</span> <span class="p">{</span>
+  <span class="nt">body</span> <span class="p">{</span>
+    <span class="k">background-image</span><span class="o">:</span> <span class="sx">url(&quot;bg.png&quot;)</span> <span class="m">50</span><span class="o">%</span> <span class="m">50</span><span class="o">%</span> <span class="k">no-repeat</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3>Mobile First Demo</h3>
+
+<p>이전 예제에 미디어 쿼리를 추가하면 <code>420</code> 픽셀 너비 미만에서 더 나은 레이아웃을 얻기위해 약간의 스타일을 겹쳐쓰자. 모바일 스타일 퍼스트를 기본으로 사용하기 위해 코드를 다시 쓰고 <code>420</code> 픽셀 이상의 뷰포트에 맞추기 위해 미디어 쿼리를 추가하면 다음과 같다.</p>
+
+<p><a href="http://learn.shayhowe.com/courses/advanced-html-css/responsive-web-design/responsive-web-design-demo.html">View this code in action.</a></p>
+<div class="highlight"><pre><code class="css language-css" data-lang="css"><span class="nt">section</span><span class="o">,</span> <span class="nt">aside</span> <span class="p">{</span>
+  <span class="k">margin</span><span class="o">:</span> <span class="m">1</span><span class="o">.</span><span class="m">51515151</span><span class="o">%</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="k">@media</span> <span class="nt">all</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">min-width</span><span class="o">:</span> <span class="nt">420px</span><span class="o">)</span> <span class="p">{</span>
+  <span class="nc">.container</span> <span class="p">{</span>
+    <span class="k">max-width</span><span class="o">:</span> <span class="m">660px</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="nt">section</span> <span class="p">{</span>
+    <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">63</span><span class="o">.</span><span class="m">63636363</span><span class="o">%</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="nt">aside</span> <span class="p">{</span>
+    <span class="k">float</span><span class="o">:</span> <span class="k">right</span><span class="p">;</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">30</span><span class="o">.</span><span class="m">30303030</span><span class="o">%</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>코드 양이 전과 같음을 주목하라. 여기서 유일한 예외는 모바일 기기는 <strong>하나의</strong> CSS 선언만 렌더링해야만 한다는 것이다. 뒤따르는 나머지 스타일은 더 큰 뷰포트에서만 로드되고 어떤 선행 스타일을 겹쳐쓰지 않는다.</p>
+
+<h2>Viewport</h2>
+
+<p>요사이 모비일 기기는 일반적으로 웹사이트를 꽤 잘 보여주고 있다. 때때로 <a href="http://dev.opera.com/articles/view/an-introduction-to-meta-viewport-and-viewport/">뷰포트</a> 사이즈, 스케일, 웹사이트 해상도 등을 별도로 지정해주어 약간의 지원을 해줄 수 있다. 이것을 개선하기 위해 애플이 <code>viewport</code> 메타 태그를 만들었다.</p>
+
+<p><strong>Fig. 4.04</strong> 이 데모는 미디어 쿼리를 사용했음에도 많은 모바일 기기들이 아직 웹사이트의 최초 너비나 크기를 알 수 없어서 미디어 쿼리가 적용되지 않을지도 모른다. </p>
+
+<p><img src="http://learn.shayhowe.com/assets/courses/advanced-html-css-guide/responsive-web-design/without-viewport.png" alt="Website without Viewport Meta Tag"></p>
+
+<h4>Viewport Height &amp; Width</h4>
+
+<p><code>viewport</code> 메타 태그를 <code>height</code>나 <code>width</code> 값과 함께 사용하면 뷰포트의 높이나 너비를 각각 정의할 것이다. 각각의 값은 양의 정수나 키워드로 받아들인다. <code>height</code> 속성은 키워드 <code>device-height</code> 값을 받아들이고, <code>width</code> 속성은 키워드 <code>device-width</code>를 받아들인다. 이 키워드들을 이용해 기기의 기본 높이와 너비 값을 상속한다.</p>
+
+<p>웹사이트가 가장 최적으로 보이는 결과를 위해 <code>device-height</code>와 <code>device-width</code> 값을 적용하여 기기 디폴트를 사용하는 것을 추천한다.</p>
+<div class="highlight"><pre><code class="html language-html" data-lang="html"><span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">&quot;viewport&quot;</span> <span class="na">content=</span><span class="s">&quot;width=device-width&quot;</span><span class="nt">&gt;</span>
+</code></pre></div>
+<p><strong>Fig. 4.05</strong> 기기가 웹사이트의 의도된 너비(여기서는 <code>device-width</code>)를 알게하여 웹사이트를 적절한 크기로 나타내고 알맞는 미디어 쿼리를 선태할 수 있다. </p>
+
+<p><img src="http://learn.shayhowe.com/assets/courses/advanced-html-css-guide/responsive-web-design/with-viewport.png" alt="Website with Viewport Meta Tag"></p>
+
+<h4>Viewport Scale</h4>
+
+<p>모바일 기기에서 웹사이트의 크기를 조절하고 유저가 웹사이트의 크기를 지속적으로 조절할 수 있게 통제하러면 <code>minimum-scale</code>, <code>maximum-scale</code>, <code>initial-scale</code>, <code>user-scalable</code> 속성을 사용하라.</p>
+
+<p>웹사이트의 <code>initial-scale</code>은 <code>1</code>로 설정해야하고, 이것은 세로 편향일 때의 기기 높이와 뷰포트 크기 간의 비율을 정의한다. 가로 편향에선 기기 너비와 뷰포트 크기간의 비율이 된다. <code>initial-scale</code> 값은 항상 <code>0</code>과 <code>10</code> 사이의 양의 정수이어야 한다.</p>
+<div class="highlight"><pre><code class="html language-html" data-lang="html"><span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">&quot;viewport&quot;</span> <span class="na">content=</span><span class="s">&quot;initial-scale=2&quot;</span><span class="nt">&gt;</span>
+</code></pre></div>
+<p><strong>Fig. 4.06</strong> <code>1</code>을 넘는 정수를 사용하면 웹사이트는 기본 크기보다 더 크게 확대될 것이다. 이 값을 <code>1</code>로 설정하는 것이 대부분의 공통사항이다. </p>
+
+<p><img src="http://learn.shayhowe.com/assets/courses/advanced-html-css-guide/responsive-web-design/viewport-scale.png" alt="Viewport Scale Meta Tag"></p>
+
+<p><code>minimum-scale</code>과 <code>maximum-scale</code> 값은 뷰포트가 얼마나 작고 커질지를 결정한다. <code>minimum-scale</code>을 사용할 경우 그 값은 <code>initial-scale</code>과 같거나 더 작은 양의 정수여야 한다. 같은 이유로 <code>maximum-scale</code> 값은 <code>initial-scale</code>과 같거나 더 큰 양의 정수여야 한다. 이 두 값도 역시 <code>0</code>과 <code>10</code> 사이여야 한다.</p>
+<div class="highlight"><pre><code class="html language-html" data-lang="html"><span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">&quot;viewport&quot;</span> <span class="na">content=</span><span class="s">&quot;minimum-scale=0&quot;</span><span class="nt">&gt;</span>
+</code></pre></div>
+<p>일반적으로 이 값들은 <code>initial-scale</code>과 같은 값을 설정하지 말아야 한다. 이것은 확대를 못하게 하고 <code>user-scalable</code> 값으로 수행되는 확대 기능을 불가능하게 한다. <code>user-scalable</code> 값을 <code>no</code>로 설정하면 확대하지 못하게 될 것이고, <code>user-scalable</code> 값을 <code>yes</code>로 설정하면 확대 기능(zooming)이 켜진다.</p>
+
+<p>웹사이트의 크기 조절을 가능하게 하는 것은 <strong>나쁜 아이디어</strong>다. 웹사이트를 바라던 대로 보지 못하게 방해하여 접근성과 사용성을 해친다.</p>
+<div class="highlight"><pre><code class="html language-html" data-lang="html"><span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">&quot;viewport&quot;</span> <span class="na">content=</span><span class="s">&quot;user-scalable=yes&quot;</span><span class="nt">&gt;</span>
+</code></pre></div>
+<h4>Viewport Resolution</h4>
+
+<p>브라우저가 모든 뷰포트 크기에 맞추어 웹사이트를 크기 조절하는 방법을 결정하게 하려면 일반적으로 트릭을 사용한다. 더 많은 제어가 요구될 때(특히, 기기 해상도 같은)는 <code>target-densitydpi</code>값이 사용될 수 있다. <code>target-densitydpi</code> 뷰포트는 <code>device-dpi</code>, <code>high-dpi</code>, <code>medium-dpi</code>, <code>low-dpi</code> 혹은 실제 DPI 수와 같은 값이 사용된다.</p>
+
+<p><code>target-densitydpi</code> 뷰포트 값은 드물게 사용되지만 픽셀 단위 제어가 필요할 땐 매우 도움이 된다.</p>
+<div class="highlight"><pre><code class="html language-html" data-lang="html"><span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">&quot;viewport&quot;</span> <span class="na">content=</span><span class="s">&quot;target-densitydpi=device-dpi&quot;</span><span class="nt">&gt;</span>
+</code></pre></div>
+<h4>Combining Viewport Values</h4>
+
+<p><code>viewport</code> 메타 태그는 개별 값만이 아니라 멀티 뷰포트 속성을 한번에 설정할 수 있는 멀티 값도 받아들인다. 멀티 값을 설정할 때는 <code>content</code> 속성 값 안에서 <code>,</code>로 분리해야 한다. 추천되는 뷰포트 값은 아래와 같이 <code>width</code>와 <code>initial-scale</code> 속성을 같이 사용하는 것이다.</p>
+<div class="highlight"><pre><code class="html language-html" data-lang="html"><span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">&quot;viewport&quot;</span> <span class="na">content=</span><span class="s">&quot;width=device-width, initial-scale=1&quot;</span><span class="nt">&gt;</span>
+</code></pre></div>
+<p><strong>Fig. 4.07</strong> <code>width=device-width</code>와 <code>initial-scale=1</code>의 조합은 일반적으로 요구되는 최초 크기와 줌(zoom)을 제공한다. </p>
+
+<p><img src="http://learn.shayhowe.com/assets/courses/advanced-html-css-guide/responsive-web-design/with-viewport.png" alt="Website with Viewport Meta Tag"></p>
+
+<h4>CSS Viewport Rule</h4>
+
+<p><code>viewport</code> 메타 태그는 웹사이트가 렌더링되어야 하는 스타일에 강하게 연관되어 있기 때문에 HTML 안의 메타태그보다는 CSS 안에서 <code>@</code> 룰로 옮길 것을 추천한다. 이렇게 하는 것은 컨텐츠에서 스타일을 분리하여 보다 시맨택적으로 접근하는 것을 도와준다.</p>
+
+<p>현재 몇몇 브라우저는 이미 <code>@viewport</code> 룰을 적용했으나 전반적인 지원은 훌륭하지 않다. 위에서 추천된 <code>viewport</code> 메타 태그는 다음 CSS에서의 <code>@viewport</code> 룰과 같이 보여질 것이다.</p>
+<div class="highlight"><pre><code class="css language-css" data-lang="css"><span class="k">@viewport</span> <span class="p">{</span>
+  <span class="nt">width</span><span class="o">:</span> <span class="nt">device-width</span><span class="o">;</span>
+  <span class="nt">zoom</span><span class="o">:</span> <span class="nt">1</span><span class="o">;</span>
+<span class="p">}</span>
+</code></pre></div>
+<h2>Flexible Media</h2>
+
+<p>마지막 반응형 웹 디자인의 중요한 측면은 가변 미디어와 관련된 것이다. 뷰포트 크기가 변하기 시작하면 미디어가 항상 알맞게 따라오는 것은 아니다. 이미지, 비디오와 같은 미디어 타입은 뷰포트 변화에 맞추어 크기를 변화시킬 필요가 있다.</p>
+
+<p>미디어 크기를 조절할 수 있게 하는 빠른 방법은 <code>max-width</code> 속성을 <code>100%</code> 값으로 주는 것이다. 그렇게 하면 뷰포트가 작아질 때 미디어의 크기가 컨테이너 너비에 맞추어 작아질 것이다.</p>
+<div class="highlight"><pre><code class="css language-css" data-lang="css"><span class="nt">img</span><span class="o">,</span> <span class="nt">video</span><span class="o">,</span> <span class="nt">canvas</span> <span class="p">{</span>
+  <span class="k">max-width</span><span class="o">:</span> <span class="m">100</span><span class="o">%</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+<h4><a href="http://learn.shayhowe.com/advanced-html-css/responsive-web-design#flexible-media">Flexible Media Demo</a></h4>
+
+<h3>Flexible Embedded Media</h3>
+
+<p>불행히도 <code>max-width</code> 속성이 모든 미디어 실례에서 잘 작동하진 않는다. <code>iframes</code>과 같이 임베딩된 미디어에서 특히 그렇다. 유투브와 같은 서드파티 웹사이트와 함께 할 때 아이프레임을 사용하여 미디어를 임베딩하면 엄청나게 실망하게 된다. 다행히 <a href="http://alistapart.com/article/creating-intrinsic-ratios-for-video">우회 방법</a>이 있다.</p>
+
+<p>반응형을 완벽히 지원하는 임베딩된 미디어를 얻으려면 임베딩된 엘리먼트는 부모 엘리먼트 안에서 절대적으로 배치될(be absolutely positioned) 필요가 있다. 뷰포트의 너비에 기반하여 크기 조절될 수 있도록 부모 엘리먼트의 <code>width</code>가 <code>100%</code>로 요구된다. 또한, 인터넷 익스플로러에서는 <code>hasLayout</code> 매커니즘을 작동시키기 위해서 부모 엘리먼트의 <code>height</code>가 <code>0</code>로 요구된다.</p>
+
+<p>그런 후 부모 엘리먼트의 <code>padding-bottom</code>을 주고, 그 값을 비디오의 종횡비와 같게 설정한다. 이렇게 하면 부모 엘리먼트의 높이가 너비에 비례하게 된다. 이전의 반응형 디자인 공식을 기억하는가? 비디오의 종횡비가 16:9라면 <code>9</code>를 <code>16</code>으로 나누면 <code>.5625</code>가 되며, <code>padding-bottom</code>은 <code>56.25%</code>가 요구된다. <code>padding-bottom</code>이 사용되고 부모 엘리먼트는 절대적으로 배치된 엘리먼트로 다룬다. <code>padding-top</code>은 인터넷 익스플로어 5.5에서 깨지는 방지하기 위해 특별히 사용된다.</p>
+
+<p><em>원문 : Padding on the bottom and not the top is specifically used to prevent Internet Explorer 5.5 from breaking, and treating the parent element as an absolutely positioned element. - 이 부분은 무척 쉬운 듯하면서 몇번을 읽어봐도 정확하게 번역하기 힘들어 내맘대로 말그대로 막번역해버렸다. 마지막 문장이라 노력했지만 역부족이다. 고수님들이 도와주시면 좋겠는데.. ㅠㅠ</em></p>
+
+<h6>HTML</h6>
+<div class="highlight"><pre><code class="html language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&#39;bogus-wrapper&#39;</span><span class="nt">&gt;&lt;notextile&gt;&lt;figure&gt;</span>
+  <span class="nt">&lt;iframe</span> <span class="na">src=</span><span class="s">&quot;https://www.youtube.com/embed/4Fqg43ozz7A&quot;</span><span class="nt">&gt;&lt;/iframe&gt;</span>
+<span class="nt">&lt;/figure&gt;&lt;/notextile&gt;&lt;/div&gt;</span>
+</code></pre></div>
+<h6>CSS</h6>
+<div class="highlight"><pre><code class="css language-css" data-lang="css"><span class="nt">figure</span> <span class="p">{</span>
+  <span class="k">height</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="k">padding-bottom</span><span class="o">:</span> <span class="m">56</span><span class="o">.</span><span class="m">25</span><span class="o">%</span><span class="p">;</span> <span class="c">/* 16:9 */</span>
+  <span class="k">position</span><span class="o">:</span> <span class="k">relative</span><span class="p">;</span>
+  <span class="k">width</span><span class="o">:</span> <span class="m">100</span><span class="o">%</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">iframe</span> <span class="p">{</span>
+  <span class="k">height</span><span class="o">:</span> <span class="m">100</span><span class="o">%</span><span class="p">;</span>
+  <span class="k">left</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="k">position</span><span class="o">:</span> <span class="k">absolute</span><span class="p">;</span>
+  <span class="k">top</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="k">width</span><span class="o">:</span> <span class="m">100</span><span class="o">%</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+<h4><a href="http://learn.shayhowe.com/advanced-html-css/responsive-web-design#flexible-embed">Flexible Embedded Media Demo</a></h4>
+
+<h2>Resources &amp; Links</h2>
+
+<ul>
+<li><a href="http://www.alistapart.com/articles/responsive-web-design/">Responsive Web Design</a> via A List Apart</li>
+<li><a href="http://dev.w3.org/csswg/css3-values/#viewport-relative-lengths">Viewport Percentage Lengths</a> via W3C</li>
+<li><a href="http://css-tricks.com/css-media-queries/">CSS Media Queries</a> via CSS-Tricks</li>
+<li><a href="http://www.lukew.com/presos/preso.asp?26">Mobile First Presentation</a> via Luke Wroblewski</li>
+<li><a href="http://dev.opera.com/articles/view/an-introduction-to-meta-viewport-and-viewport/">An Introduction to Meta Viewport and @viewport</a> via Dev.Opera</li>
+</ul>
+
+  </div>
+</article>
+
+<section class="post-footer">
+  <a href="/feed.xml" class="pull-right">
+    <img src="/images/rss.jpg" alt="RSS" />
+  </a>
+</section>
+
+<div class="separator"></div>
+
+<section class="comments">
+  <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'nolboo'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+      <div class="separator"></div>
+    </div>
+  </div>
+
+  <div class="clear"></div>
+
+  <footer>
+    <p>
+      Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a>,
+      hosted on <a href="http://pages.github.com/">Github Pages</a>
+      | Template inspired by <a href="http://sebastien.saunier.me/">sebastien.saunier.me</a>
+    </p>
+    <ul class="links">
+      <!-- <li><a href="https://github.com/nolboo" title="Show me the code"><i class="icon-github"></i></a></li> -->
+      <li><a href="https://twitter.com/n0lb00" title="follow me"><i class="icon-twitter"></i></a></li>
+      <li><a href="mailto:nolboo.kim@gmail.com" title="AMA"><i class="icon-sparrow"></i></a></li>
+    </ul>
+  </footer>
+
+  <script type="text/javascript">
+    // var _gaq = _gaq || [];
+    // _gaq.push(['_setAccount', 'GOOGLE-ANALYTICS-TRACK-ID']);
+    // _gaq.push(['_trackPageview']);
+
+    // (function() {
+    //   var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    //   ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    //   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    // })();
+
+    // /*!
+    //  * http://github.com/ssaunier/track-outbound-links
+    //  * Copyright 2013 Sébastien Saunier
+    //  * @license MIT
+    //  */
+    // !function(e,t){function n(){for(var n=t.getElementsByTagName("a"),a=[],r=0;r<n.length;++r){var o=n[r];o.host!=e.location.host&&a.push(o)}return a}function a(n){for(var a=n.srcElement||n.target;a&&("undefined"==typeof a.tagName||"a"!=a.tagName.toLowerCase()||!a.href);)a=a.parentNode;a&&a.href&&(e._gaq&&_gaq.push(["_trackEvent","Outbound link","Click",a.href]),(!a.target||a.target.match(/^_(self|parent|top)$/i))&&(setTimeout(function(){t.location.href=a.href},150),n.preventDefault?n.preventDefault():n.returnValue=!1))}e.addEventListener("load",function(){var e=n();for(var t in e)e[t].addEventListener("click",a)})}(window,document);
+  </script>
+
+  
+</body>
+</html>

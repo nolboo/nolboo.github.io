@@ -1,0 +1,31 @@
+title: Nolboo's Blog
+
+# Oveerriden by GitHub Pages: https://help.github.com/articles/using-jekyll-with-pages#configuring-jekyll
+safe: true
+pygments: true
+lsi: false
+
+permalink: /blog/:year/:month/:day/:title/
+
+markdown:     redcarpet
+
+redcarpet:
+    extensions: ["no_intra_emphasis", "fenced_code_blocks", "tables", "strikethrough", "superscript"]
+
+# redcarpet:
+#    extensions: ["autolink", "smart"]
+
+rdiscount:
+  extensions:
+    - autolink      # greedily urlify links
+    - footnotes     # footnotes
+    - smart         # typographic substitutions with SmartyPants
+    # - generate_toc
+
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  use_coderay: false
+  parse_block_html: true
