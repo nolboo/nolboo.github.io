@@ -354,6 +354,12 @@ blockquote {
   font-style: italic;
 }
 
+.post-footer .post-tag {
+  display: inline-block;
+  list-style: none;
+  float:left;
+}
+
 img.inline.pull-right {
   margin-left: 1em;
 }

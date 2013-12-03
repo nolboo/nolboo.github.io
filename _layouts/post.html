@@ -24,6 +24,11 @@ layout: default
 </article>
 
 <section class="post-footer">
+  <ul class="post-tag">
+    {% for tag in page.tags %}
+      <li>{{ tag }}</li>
+    {% endfor %}
+  </ul>
   <a href="/feed.xml" class="pull-right">
     <img src="/images/rss.jpg" alt="RSS" />
   </a>

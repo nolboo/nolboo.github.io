@@ -160,7 +160,7 @@ https://github.com/vmg/redcarpet/blob/v2.2.2/README.markdown#and-its-like-really
 ## redcarpet 확장 테스트
 
 * 지킬은 [2.2.x 버전](https://github.com/vmg/redcarpet/blob/v2.2.2/README.markdown#and-its-like-really-simple-to-use)을 지원하기 때문에 주석, 하일라이트 등을 지원하지 않는다.
-* 인기있다고 하는 오토링크 옵션을 주면 지킬에선 제너레이트 에러가 난다.
+* 인기있다고 하는 오토링크 옵션을 주면 지킬에선 제너레이트 에러가 난다. - feed.xml 의 보여지는 포스트 수를 25에서 10으로 줄여서 해결함.
 * [지킬문서](http://jekyllrb.com/docs/configuration/) 내용과는 달리 pygments를 켜야 하일라이트가 된다. 깃허브에선 하일라이트가 되는 것 같다.(제너레이트 딜레이 때문에 즉시 확인이 안되는 불편함;;)
 
 #### 울타리 코드 블럭
