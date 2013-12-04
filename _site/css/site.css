@@ -317,6 +317,11 @@ article h1 {
   margin-left: 1.35em;
 }
 
+.post code {
+  background-color: #EAEAEA;
+  padding: 0 .2em;
+}
+
 /* terminal */
 .post pre.terminal {
   border: 1px solid #000;
