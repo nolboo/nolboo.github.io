@@ -9,6 +9,7 @@
   /*box-shadow: 1px 1px rgba(0,0,0,0.1);*/
   margin: 20px 0 20px 0;
   /*overflow: hidden;*/
+  word-wrap: break-word;
   line-height: 140%;
 }
  
