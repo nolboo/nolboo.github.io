@@ -11,10 +11,11 @@
   /*overflow: hidden;*/
   word-wrap: break-word;
   line-height: 140%;
+  font-size: 80%;
 }
  
 code {
-  font-family:'Bitstream Vera Sans Mono','Courier', monospace;
+  font-family: 'Bitstream Vera Sans Mono','Courier', monospace;
 }
  
 .highlight .c { color: #586E75 } /* Comment */

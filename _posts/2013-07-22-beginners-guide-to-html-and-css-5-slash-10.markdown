@@ -26,10 +26,10 @@ div {
 백그라운드 속성을 선언할 때 16진값, RGB, RGBa, HSL, HSLa의 키워드를 사용한다. 보통 16진수를 사용하며, 알파 채널을 통한 불투명도를 주는 경우는 RGBa와 HSLa를 사용한다. 만약 30% 불투명한 검정을 기대한다면 `rgba(0, 0, 0, 0.3)`를 사용하면 된다. RGBa와 HSLa는 모든 브라우저에서 지원되는 것은 아니기 때문에 다음과 같이 불투명값을 사용하는 선언 바로 위에 대체 CSS를 선언해야 한다.
 
 ```css
-    div {
-        background: #b2b2b2;
-        background: rgba(0,0,0,0.3);
-    }
+div {
+    background: #b2b2b2;
+    background: rgba(0,0,0,0.3);
+}
 ```
 
 ## Adding a Background Image

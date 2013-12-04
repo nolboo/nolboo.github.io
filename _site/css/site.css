@@ -25,6 +25,7 @@ body {
   text-align: center;
   font-family: Helvetica, Arial, sans-serif;
   text-rendering: optimizeLegibility;
+  font-size: 120%;
 }
 
 .top-bar {
