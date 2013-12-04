@@ -359,23 +359,9 @@ img {
   max-width: 100%;
 }
 
-h2 .french-flag {
-  vertical-align: -10%;
-  margin-left: 0.2em;
-}
-
-.suggest-translate {
-  font-style: italic;
-}
-
 .gist {
   font-size: 0.8em !important;
   line-height: 140% !important;
-}
-
-.book-me {
-  float: right;
-  margin-top: -3px;
 }
 
 @media (max-width: 420px) {
