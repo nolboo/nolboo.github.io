@@ -309,11 +309,11 @@ article h1 {
 /*****************************************************************************/
 
 /* standard */
-.post pre {
+/*.post pre {
   border: 1px solid #eee;
   background-color: whitesmoke;
   padding: 0 .4em;
-}
+}*/
 
 .post ul, .post ol {
   margin-left: 1.35em;
