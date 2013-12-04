@@ -206,6 +206,10 @@ nav a.selected:hover {
   padding: 0.2em 0;
 }
 
+.social-icon {
+ padding: 0.2em 0; 
+}
+
 .about-me h1 {
   margin-top: 0;
 }
@@ -308,25 +312,8 @@ article h1 {
 /*
 /*****************************************************************************/
 
-/* standard */
-/*.post pre {
-  border: 1px solid #eee;
-  background-color: whitesmoke;
-  padding: 0 .4em;
-}*/
-
 .post ul, .post ol {
   margin-left: 1.35em;
-}
-
-.post code {
-  border: 1px solid #eee;
-  background-color: whitesmoke;
-  padding: 0 .2em;
-}
-
-.post pre code {
-  border: none;
 }
 
 /* terminal */

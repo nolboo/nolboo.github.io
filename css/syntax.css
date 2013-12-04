@@ -1,12 +1,15 @@
+/*from https://gist.github.com/edwardhotchkiss/2005058 */
+
 .highlight { 
   background-color: #efefef;
   padding: 1px 1px 1px 2px;
   border: 1px solid #ddd;
   -moz-box-shadow: 1px 1px rgba(0,0,0,0.1);
   -webkit-box-shadow: 1px 1px rgba(0,0,0,0.1);
-  box-shadow: 1px 1px rgba(0,0,0,0.1);
+  /*box-shadow: 1px 1px rgba(0,0,0,0.1);*/
   margin: 20px 0 20px 0;
   overflow: hidden;
+  line-height: 140%;
 }
  
 code {
