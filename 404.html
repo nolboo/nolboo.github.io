@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+<h1>놀부가 링크를 못찾겠어요!ㅠㅠ</h1>
+<p class="center">
+	아래의 전체 포스트 목록에서 선택할 수 있습니다.	원하시는 포스트를 찾아보세요~
+</p>
+
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+      <div><small>{{ post.date | date_to_string }}</small></div>
+    </li>
+  {% endfor %}
+</ul>

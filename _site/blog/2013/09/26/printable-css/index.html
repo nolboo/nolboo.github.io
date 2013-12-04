@@ -40,7 +40,6 @@
               </em>
             </small>
           </div>
-          <!-- <img class="avatar" src="/images/sebastien_saunier.jpg" alt="My profile picture" /> -->
         </div>
         <div class="clear"></div>
       </header>
@@ -70,7 +69,8 @@
 
 <p>웹페이지는 무한대로 스크롤할 수 있지만, 인쇄된 페이지는 종이 크기에 제한된다. 웹페이지가 비디오, 오디오, 접촉을 통한 피드백도 가능한 접근성을 갖는 반면, 인쇄된 페이지는 철저히 보는 매체이다. 웹페이지는 비트맵 데이타(사진, 그래픽)와 벡터 데이타(서체, SVG)를 표현할 수 있지만, 일단 인쇄되면 종이 위에 비트맵 데이타일 뿐이다. 웹페이지는 인터랙티브하고 스크린 상의 엘리먼트를 변경할 수 있지만, 인쇄된 페이지는 그렇지 않다. 이러한 것들이 인쇄된 페이지의 컨텐츠에 대한 결정을 하는 요인이 되기 때문에 모두 기억해두는 것이 유용할 것이다.</p>
 
-<p><img src="http://media.creativebloq.futurecdn.net/sites/creativebloq.com/files/images/2013/05/Hannah/01(67).jpg" alt=""> &gt; <strong>파이어폭스 테스크탑 브라우저에 본 예제 페이지. 오래 되었지만 아직 인쇄할만한다.</strong></p>
+<p><img src="http://media.creativebloq.futurecdn.net/sites/creativebloq.com/files/images/2013/05/Hannah/01(67).jpg" alt=""><br>
+<strong>파이어폭스 테스크탑 브라우저에 본 예제 페이지. 오래 되었지만 아직 인쇄할만한다.</strong></p>
 
 <p>페이지를 볼 때 사용자가 보길 원하는 것은 단 하나: 컨텐츠. 내 사이트이므로, 사용자가 인쇄할 때 유지해야할 페이지 상의 엘리먼트를 확실하게 하고 싶다:</p>
 
@@ -103,9 +103,9 @@
 <h2>Step 02. Make a home for print styles</h2>
 
 <p>프린트 스타일이 호출되기 위한 CSS를 설정하는 것이 첫번째 할일이다. RWD 코딩에 해봤다면, 다음은 친숙할 것이다:</p>
-<div class="highlight"><pre><code class="css language-css" data-lang="css">    <span class="k">@media</span> <span class="nt">print</span> <span class="p">{</span>
-      <span class="c">/* insert your style declarations here */</span>
-    <span class="p">}</span>
+<div class="highlight"><pre><code class="css language-css" data-lang="css"><span class="k">@media</span> <span class="nt">print</span> <span class="p">{</span>
+  <span class="c">/* insert your style declarations here */</span>
+<span class="p">}</span>
 </code></pre></div>
 <p>이런 접근으로만 한정되진 않는다. <code>&lt;head&gt;</code> 안에 <code>&lt;link&gt;</code>로 프린트 스타일을 호출할 수도 있다.</p>
 
@@ -113,62 +113,64 @@
 
 <p>이 방법은 추가적인 HTTP 요청과 관련이 있다. 브라우저는 페이지를 렌더링할 때 프린트 스타일이 필요하지 않으나, 대부분 모든 CSS 화일을 내려받기 전 까지는 페이지를 렌더링하지 않을 것이다; 오페라는 예외이다. 게다가, 최신 브라우저는 모든 화일이 다운로드되기 전까지는 어떤 온로드 이벤트를 작동하지 않는다. 프린트 스타일은 매우 적은 선언만을 포함할 수 있기 때문에 화일을 분리한다고 해서 추가적인 HTTP 오버헤드와 렌더링 지연이나 이벤트 작동을 고려할 필요가 그리 잦은 것은 아니다.</p>
 
-<p><img src="http://media.creativebloq.futurecdn.net/sites/creativebloq.com/files/images/2013/05/Hannah/02(63).jpg" alt=""> &gt; <strong>파이어폭스에서 PDF로 인쇄한 동일한 페이지. 몇 개가 사라지고 레이아웃이 단순해진 것을 볼 수 있다.</strong></p>
+<p><img src="http://media.creativebloq.futurecdn.net/sites/creativebloq.com/files/images/2013/05/Hannah/02(63).jpg" alt=""><br>
+<strong>파이어폭스에서 PDF로 인쇄한 동일한 페이지. 몇 개가 사라지고 레이아웃이 단순해진 것을 볼 수 있다.</strong></p>
 
 <h2>Step 03. Applying the styles</h2>
 
 <p>내 로고는 텍스트이며, 컬러 프린터 사용자들이 빨간색으로 인쇄할 필요없도록 검정으로 변경할 것이다.</p>
-<div class="highlight"><pre><code class="css language-css" data-lang="css">    <span class="nf">#Banner</span> <span class="nt">p</span><span class="nf">#Title</span> <span class="p">{</span>
-      <span class="k">font-size</span><span class="o">:</span> <span class="m">24pt</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="nf">#Banner</span> <span class="nt">p</span><span class="nf">#Title</span> <span class="nt">a</span><span class="o">,</span> <span class="nf">#Banner</span> <span class="nt">p</span><span class="nf">#Title</span> <span class="nt">a</span><span class="nd">:link</span><span class="o">,</span> <span class="nf">#Banner</span> <span class="nt">p</span><span class="nf">#Title</span> <span class="nt">a</span><span class="nd">:visited</span> <span class="p">{</span>
-      <span class="k">color</span><span class="o">:</span> <span class="m">#000</span><span class="p">;</span> <span class="c">/* change link to black text */</span>
-    <span class="p">}</span>
+<div class="highlight"><pre><code class="css language-css" data-lang="css"><span class="nf">#Banner</span> <span class="nt">p</span><span class="nf">#Title</span> <span class="p">{</span>
+  <span class="k">font-size</span><span class="o">:</span> <span class="m">24pt</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nf">#Banner</span> <span class="nt">p</span><span class="nf">#Title</span> <span class="nt">a</span><span class="o">,</span> <span class="nf">#Banner</span> <span class="nt">p</span><span class="nf">#Title</span> <span class="nt">a</span><span class="nd">:link</span><span class="o">,</span> <span class="nf">#Banner</span> <span class="nt">p</span><span class="nf">#Title</span> <span class="nt">a</span><span class="nd">:visited</span> <span class="p">{</span>
+  <span class="k">color</span><span class="o">:</span> <span class="m">#000</span><span class="p">;</span> <span class="c">/* change link to black text */</span>
+<span class="p">}</span>
 </code></pre></div>
 <p>브라우저가 인쇄된 페이지에 페이지 주소를 포함할 수 있다는 것을 알지만, 몇몇 사용자는 그것을 무시하고 몇몇 페이지 주소는 너무 길다. 페이지에 이동경로 탐색이 있기 때문에 남기기로 선택한다. 사용자가 푸터에 인쇄될 주소를 읽을 수 없더라도, 적어도 내 사이트의 해당 페이지의 경로를 볼 수는 있다. 독자가 내 사이트에서 해당 페이지를 찾을 수 있도록 하는 두번째 목표를 달성한다.</p>
-<div class="highlight"><pre><code class="css language-css" data-lang="css">    <span class="nf">#Bread</span> <span class="nt">a</span><span class="nd">:link</span><span class="o">,</span> <span class="nf">#Bread</span> <span class="nt">a</span><span class="nd">:visited</span> <span class="p">{</span>
-      <span class="k">text-decoration</span><span class="o">:</span> <span class="k">underline</span><span class="p">;</span> <span class="c">/* leave a clue that it’s a link */</span>
-      <span class="k">color</span><span class="o">:</span> <span class="m">#000</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="nf">#Bread</span> <span class="p">{</span>
-      <span class="k">color</span><span class="o">:</span> <span class="m">#000</span><span class="p">;</span>
-      <span class="k">font-size</span><span class="o">:</span> <span class="m">6pt</span><span class="p">;</span> <span class="c">/* make the text small */</span>
-    <span class="p">}</span>
-    <span class="nf">#Bread</span> <span class="o">&amp;</span><span class="nt">gt</span><span class="o">;</span> <span class="nt">a</span><span class="nd">:after</span> <span class="p">{</span>
-      <span class="k">content</span><span class="o">:</span> <span class="s2">&quot;&quot;</span><span class="p">;</span> <span class="c">/* disable URL display if in #Content */</span>
-    <span class="p">}</span>
+<div class="highlight"><pre><code class="css language-css" data-lang="css"><span class="nf">#Bread</span> <span class="nt">a</span><span class="nd">:link</span><span class="o">,</span> <span class="nf">#Bread</span> <span class="nt">a</span><span class="nd">:visited</span> <span class="p">{</span>
+  <span class="k">text-decoration</span><span class="o">:</span> <span class="k">underline</span><span class="p">;</span> <span class="c">/* leave a clue that it’s a link */</span>
+  <span class="k">color</span><span class="o">:</span> <span class="m">#000</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nf">#Bread</span> <span class="p">{</span>
+  <span class="k">color</span><span class="o">:</span> <span class="m">#000</span><span class="p">;</span>
+  <span class="k">font-size</span><span class="o">:</span> <span class="m">6pt</span><span class="p">;</span> <span class="c">/* make the text small */</span>
+<span class="p">}</span>
+<span class="nf">#Bread</span> <span class="o">&amp;</span><span class="nt">gt</span><span class="o">;</span> <span class="nt">a</span><span class="nd">:after</span> <span class="p">{</span>
+  <span class="k">content</span><span class="o">:</span> <span class="s2">&quot;&quot;</span><span class="p">;</span> <span class="c">/* disable URL display if in #Content */</span>
+<span class="p">}</span>
 </code></pre></div>
 <p>푸터에 있는 모든 것을 인쇄하길 원하지 않는다. 예를 들면 검색 박스를 인쇄하지 않도록 한다.</p>
-<div class="highlight"><pre><code class="css language-css" data-lang="css">    <span class="nf">#Footer</span> <span class="p">{</span>
-      <span class="k">font-size</span><span class="o">:</span> <span class="m">6pt</span><span class="p">;</span> <span class="c">/* make the text small */</span>
-      <span class="k">color</span><span class="o">:</span> <span class="m">#000</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="nf">#SearchForm</span> <span class="p">{</span>
-      <span class="k">display</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span>
-    <span class="p">}</span>
+<div class="highlight"><pre><code class="css language-css" data-lang="css"><span class="nf">#Footer</span> <span class="p">{</span>
+  <span class="k">font-size</span><span class="o">:</span> <span class="m">6pt</span><span class="p">;</span> <span class="c">/* make the text small */</span>
+  <span class="k">color</span><span class="o">:</span> <span class="m">#000</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nf">#SearchForm</span> <span class="p">{</span>
+  <span class="k">display</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span>
+<span class="p">}</span>
 </code></pre></div>
 <p>푸터에 CMS 로고를 남긴다. (아마 독자가 신경쓰지 않을) URL을 보여줄 필요가 없으나, 브랜드는 남긴다. 크로스 브랜딩에 대한 네번째 목표이다.</p>
-<div class="highlight"><pre><code class="css language-css" data-lang="css">    <span class="nf">#Footer</span> <span class="nt">img</span> <span class="p">{</span>
-      <span class="k">float</span><span class="o">:</span> <span class="k">right</span><span class="p">;</span> <span class="c">/* defined elsewhere, included for completeness */</span>
-    <span class="p">}</span>
+<div class="highlight"><pre><code class="css language-css" data-lang="css"><span class="nf">#Footer</span> <span class="nt">img</span> <span class="p">{</span>
+  <span class="k">float</span><span class="o">:</span> <span class="k">right</span><span class="p">;</span> <span class="c">/* defined elsewhere, included for completeness */</span>
+<span class="p">}</span>
 </code></pre></div>
 <p>다섯번째 목표는 문맥에 따른 링크의 전체 주소를 보여주는 것이다. 모든 링크 뒤에 주소를 포함하곤한다: 그러나, 몇몇 링크 주소를 믿을 수 없이 긴 - 사용자가 다시 타이핑할 수 없을 정도로 - 문제가 있을 수 있다.</p>
 
-<p><img src="http://media.creativebloq.futurecdn.net/sites/creativebloq.com/files/images/2013/05/Hannah/03(58).jpg" alt=""> &gt; <strong>크롬에서 인쇄 미리보기 대화 상자. 모든 인쇄 미리보기에서와 같이, 예상한 것에 대한 빠른 아이디어를 제공한다.</strong></p>
+<p><img src="http://media.creativebloq.futurecdn.net/sites/creativebloq.com/files/images/2013/05/Hannah/03(58).jpg" alt=""><br>
+<strong>크롬에서 인쇄 미리보기 대화 상자. 모든 인쇄 미리보기에서와 같이, 예상한 것에 대한 빠른 아이디어를 제공한다.</strong></p>
 
 <p>하이퍼링크를 보여주기로 하였다면, 컨텐츠에 따라 제한하고 - 이동경로와 푸터에선 URL을 보여주지 않는다 - 가능하면 이미지에서 제외한 것 등을 기억하는 것이 중요하다.</p>
-<div class="highlight"><pre><code class="css language-css" data-lang="css">    <span class="nf">#Content</span> <span class="nt">a</span><span class="nd">:after</span> <span class="p">{</span> <span class="c">/* select links in the content area only */</span>
-      <span class="k">content</span><span class="o">:</span> <span class="s2">&quot; [&quot;</span> <span class="n">attr</span><span class="p">(</span><span class="n">href</span><span class="p">)</span> <span class="s2">&quot;] &quot;</span><span class="p">;</span>
-      <span class="k">text-decoration</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span>
-      <span class="k">display</span><span class="o">:</span> <span class="k">inline</span><span class="p">;</span>
-    <span class="p">}</span>
+<div class="highlight"><pre><code class="css language-css" data-lang="css"><span class="nf">#Content</span> <span class="nt">a</span><span class="nd">:after</span> <span class="p">{</span> <span class="c">/* select links in the content area only */</span>
+  <span class="k">content</span><span class="o">:</span> <span class="s2">&quot; [&quot;</span> <span class="n">attr</span><span class="p">(</span><span class="n">href</span><span class="p">)</span> <span class="s2">&quot;] &quot;</span><span class="p">;</span>
+  <span class="k">text-decoration</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span>
+  <span class="k">display</span><span class="o">:</span> <span class="k">inline</span><span class="p">;</span>
+<span class="p">}</span>
 </code></pre></div>
 <p>이제 인쇄되길 원치않는 엘리먼트를 가려보자. 작은 화면에서 엘리먼트를 가리는 것 - RWD에선 좋은 아이디어가 아니지만 - 과 달리, 페이지는 이미 전부 다운로드되었고, 가려야 하는 엘리먼트는 인쇄 페이지에서 어떤 가치도 없어야 한다.</p>
 
 <p>예제에서 네비게이션, 검색, 소셜 아이콘과 의미를 갖지 않는 다른 것들을 제거할 것이다.</p>
-<div class="highlight"><pre><code class="css language-css" data-lang="css">    <span class="nf">#Nav</span><span class="o">,</span> <span class="nf">#FlyOutNav</span><span class="o">,</span> <span class="nf">#SubNav</span><span class="o">,</span> <span class="nc">.NoPrint</span><span class="o">,</span> <span class="nt">p</span><span class="nc">.CodeAlert</span><span class="o">,</span> <span class="nf">#SMLinks</span><span class="o">,</span> <span class="nf">#SearchForm</span> <span class="p">{</span>
-      <span class="k">display</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span>
-    <span class="p">}</span>
+<div class="highlight"><pre><code class="css language-css" data-lang="css"><span class="nf">#Nav</span><span class="o">,</span> <span class="nf">#FlyOutNav</span><span class="o">,</span> <span class="nf">#SubNav</span><span class="o">,</span> <span class="nc">.NoPrint</span><span class="o">,</span> <span class="nt">p</span><span class="nc">.CodeAlert</span><span class="o">,</span> <span class="nf">#SMLinks</span><span class="o">,</span> <span class="nf">#SearchForm</span> <span class="p">{</span>
+  <span class="k">display</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span>
+<span class="p">}</span>
 </code></pre></div>
 <p>아직 필요한 것을 전부한 것은 아니다.중요한 것을 까먹기지 않기 위해 거의 모든 인쇄 스타일시트를 적용할 수 있는 디폴트 스타일 세트를 가지고 있다. 사이트마다 정기적으로 조정하지만, 필요에 따른 좋은 시작점이 된다:</p>
 <div class="highlight"><pre><code class="css language-css" data-lang="css"><span class="nt">body</span> <span class="p">{</span>
@@ -225,7 +227,8 @@
 <li>페이지의 <code>&lt;abbr&gt;</code>과 <code>&lt;acronym&gt;</code> 타이틀 속성 값을 입력한다.(이미지의 <code>alt text</code>와 같은 엘리먼트에도 사용할 수 있지만, 적당한 것은 아니다.)</li>
 </ul>
 
-<p><img src="http://media.creativebloq.futurecdn.net/sites/creativebloq.com/files/images/2013/05/Hannah/04(61).jpg" alt=""> &gt; <strong>다른 종이 크기에서 테스트해야 한다. 랜드스케이프는 보기도 쉽고, 크기 조절 문제를 빠르게 테스트할 수 있게 한다.</strong></p>
+<p><img src="http://media.creativebloq.futurecdn.net/sites/creativebloq.com/files/images/2013/05/Hannah/04(61).jpg" alt=""><br>
+<strong>다른 종이 크기에서 테스트해야 한다. 랜드스케이프는 보기도 쉽고, 크기 조절 문제를 빠르게 테스트할 수 있게 한다.</strong></p>
 
 <h2>Step 04. Further tweaks</h2>
 
@@ -239,13 +242,21 @@
 
 <p>인쇄 페이지에서 그것들을 같이 제거하는 것을 원할 것이다. 그렇지 않으면, 임베딩된 유투브 디비오는 많은 공간을 차지하거나 여백으로 나타날 것이다.</p>
 
-<p><img src="http://media.creativebloq.futurecdn.net/sites/creativebloq.com/files/images/2013/05/Hannah/05(59).jpg" alt=""> &gt; <strong>어떤 유저는 페이지를 쉽게 읽게 하기위해 텍스트 크기를 키울 수 있다. 스타일을 조정할 필요가 있는지 이런 것을 테스트해라.</strong></p>
+<p><img src="http://media.creativebloq.futurecdn.net/sites/creativebloq.com/files/images/2013/05/Hannah/05(59).jpg" alt=""><br>
+<strong>어떤 유저는 페이지를 쉽게 읽게 하기위해 텍스트 크기를 키울 수 있다. 스타일을 조정할 필요가 있는지 이런 것을 테스트해라.</strong></p>
 
 <h2>Step 05. Testing</h2>
 
 <p>모든 스타일이 준비되면, 테스트해라. 페이지를 프린트하지 않고 사용하는 두 가지 테크닉이 있다. 첫번째는 브라우저 인쇄 미리보기이다. - 스타일이 어떻게 해석되는지 알아보기 위한 빠른 방법이다. 두번째는 PDF로 인쇄해서 얻는 페이지를 보는 것이다.</p>
 
   </div>
+<!--     <ul class="post-tag">
+    
+      <li>css</li>
+    
+      <li>print</li>
+    
+    </ul> -->
 </article>
 
 <section class="post-footer">
@@ -280,15 +291,14 @@
 
   <footer>
     <p>
-      Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a>,
-      hosted on <a href="http://pages.github.com/">Github Pages</a>
-      | Template inspired by <a href="http://sebastien.saunier.me/">sebastien.saunier.me</a>
-    </p>
-    <ul class="links">
-      <!-- <li><a href="https://github.com/nolboo" title="Show me the code"><i class="icon-github"></i></a></li> -->
-      <li><a href="https://twitter.com/n0lb00" title="follow me"><i class="icon-twitter"></i></a></li>
-      <li><a href="mailto:nolboo.kim@gmail.com" title="AMA"><i class="icon-sparrow"></i></a></li>
-    </ul>
+  Powered by <a href="http://jekyllrb.com/">Jekyll</a>,
+  hosted on <a href="http://pages.github.com/">Github Pages</a>
+  | Template inspired by <a href="http://sebastien.saunier.me/">sebastien.saunier.me</a>
+</p>
+<ul class="links">
+  <li><a href="https://twitter.com/n0lb00" title="follow me"><i class="icon-twitter"></i></a></li>
+  <li><a href="mailto:nolboo.kim@gmail.com" title="AMA"><i class="icon-sparrow"></i></a></li>
+</ul>
   </footer>
 
   <!-- Google Analytics -->
@@ -300,28 +310,6 @@
 
     ga('create', 'UA-42615434-1', 'nolboo.github.io');
     ga('send', 'pageview');
-
   </script>
-
-  <script type="text/javascript">
-    // var _gaq = _gaq || [];
-    // _gaq.push(['_setAccount', 'UA-42615434-1']);
-    // _gaq.push(['_trackPageview']);
-
-    // (function() {
-    //   var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    //   ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    //   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    // })();
-
-    // /*!
-    //  * http://github.com/ssaunier/track-outbound-links
-    //  * Copyright 2013 Sébastien Saunier
-    //  * @license MIT
-    //  */
-    // !function(e,t){function n(){for(var n=t.getElementsByTagName("a"),a=[],r=0;r<n.length;++r){var o=n[r];o.host!=e.location.host&&a.push(o)}return a}function a(n){for(var a=n.srcElement||n.target;a&&("undefined"==typeof a.tagName||"a"!=a.tagName.toLowerCase()||!a.href);)a=a.parentNode;a&&a.href&&(e._gaq&&_gaq.push(["_trackEvent","Outbound link","Click",a.href]),(!a.target||a.target.match(/^_(self|parent|top)$/i))&&(setTimeout(function(){t.location.href=a.href},150),n.preventDefault?n.preventDefault():n.returnValue=!1))}e.addEventListener("load",function(){var e=n();for(var t in e)e[t].addEventListener("click",a)})}(window,document);
-  </script>
-
-  
 </body>
 </html>
