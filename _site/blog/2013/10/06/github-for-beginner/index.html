@@ -253,8 +253,10 @@
 <p>[중략] 이 정도면 회사에서 사장이 깃을 사용할 것을 요구하면 당장 디자인 화일을 깃허브에 올릴 정도는 될 것이라고 이야기하면서 디자인 화일 명 하나를 중심으로 여태 해온 것을 반복함.</p>
 
 <h2>역자 요약</h2>
-<div class="highlight"><pre><code class="text language-text" data-lang="text">git config --global user.name &quot;이름&quot;
-git config --global user.email &quot;깃허브 메일주소&quot; // 매번 물어보는 귀찮음을 피하기 위해 설정.
+
+<pre class="terminal">
+git config --global user.name "이름"
+git config --global user.email "깃허브 메일주소" // 매번 물어보는 귀찮음을 피하기 위해 설정.
 
 mkdir ~/MyProject   // 로컬 디렉토리 만들고
 cd ~/myproject      // 디렉토리로 들어가서
@@ -267,7 +269,8 @@ git commit -m “현재형으로 설명” // 커밋해서 스냅샷을 찍는�
 git remote add origin https://github.com/username/myproject.git // 로컬과 원격 저장소를 연결한다.
 git remote -v // 연결상태를 확인한다.
 git push origin master // 깃허브로 푸시한다.
-</code></pre></div>
+</pre>
+
 <h2>Git Resources</h2>
 
 <ul>

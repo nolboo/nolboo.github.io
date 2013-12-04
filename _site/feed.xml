@@ -686,8 +686,10 @@ title: Blogging Like a Hacker
 &lt;p&gt;[중략] 이 정도면 회사에서 사장이 깃을 사용할 것을 요구하면 당장 디자인 화일을 깃허브에 올릴 정도는 될 것이라고 이야기하면서 디자인 화일 명 하나를 중심으로 여태 해온 것을 반복함.&lt;/p&gt;
 
 &lt;h2&gt;역자 요약&lt;/h2&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;git config --global user.name &amp;quot;이름&amp;quot;
-git config --global user.email &amp;quot;깃허브 메일주소&amp;quot; // 매번 물어보는 귀찮음을 피하기 위해 설정.
+
+&lt;pre class=&quot;terminal&quot;&gt;
+git config --global user.name &quot;이름&quot;
+git config --global user.email &quot;깃허브 메일주소&quot; // 매번 물어보는 귀찮음을 피하기 위해 설정.
 
 mkdir ~/MyProject   // 로컬 디렉토리 만들고
 cd ~/myproject      // 디렉토리로 들어가서
@@ -700,7 +702,8 @@ git commit -m “현재형으로 설명” // 커밋해서 스냅샷을 찍는�
 git remote add origin https://github.com/username/myproject.git // 로컬과 원격 저장소를 연결한다.
 git remote -v // 연결상태를 확인한다.
 git push origin master // 깃허브로 푸시한다.
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/pre&gt;
+
 &lt;h2&gt;Git Resources&lt;/h2&gt;
 
 &lt;ul&gt;
