@@ -317,14 +317,20 @@ article h1 {
   margin-left: 1.35em;
 }
 
+.post code {
+  background-color: #EAEAEA;
+  padding: 0 .2em;
+}
+
 /* terminal */
-.post pre.terminal {
+pre.terminal {
+  padding: 1px 1px 1px 8px;
   border: 1px solid #000;
   background-color: #333;
   color: #FFF;
 }
 
-.post pre.terminal code {
+pre.terminal code {
   background-color: #333;
 }
 
