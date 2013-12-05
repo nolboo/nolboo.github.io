@@ -259,6 +259,8 @@ date: 2013-11-29 14:40:45
 
 ## iOS, OS X
 
+**_NEW_** [Xcode 와 함께하는 Git 소스관리 - iOS7 용](http://j.mp/192q3ML "12/5") - 원문 : [How To Use Git Source Control with Xcode in iOS 7](http://www.raywenderlich.com/51351/how-to-use-git-source-control-with-xcode-in-ios-7)
+
 [iOS 프로젝트에서 리소스 번들만들어 여러개 사용하기](http://www.iosappdev.co.kr/?p=1854)
  - 원문 : [How to build and use multiple resource bundles in an iOS project](http://www.weston-fl.com/blog/?=1927)
 

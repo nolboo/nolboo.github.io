@@ -10,7 +10,14 @@ permalink: pretty
 markdown:     redcarpet
 
 redcarpet:
-    extensions: ["no_intra_emphasis", "fenced_code_blocks", "tables", "strikethrough", "superscript", "autolink"]
+    extensions: 
+      - no_intra_emphasis
+      - fenced_code_blocks
+      - tables
+      - strikethrough
+      - superscript
+      - autolink
+      - hard_wrap
 
 # redcarpet:
 #    extensions: ["smart"]
