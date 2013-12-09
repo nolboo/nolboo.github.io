@@ -7,6 +7,11 @@ published: false
 
 지킬은 기본 마크다운 엔진이 [Maruku](http://maruku.rubyforge.org/)로 현재 설정되어 있으나 개발이 중단될 것으로 보여 [지킬에서도 대안을 찾고 있다](https://twitter.com/jekyllrb/status/404701427253399552). 그래서 제외하였다.
 
+Maruku 0.7.0 업데이트하여 지킬 1.4.0에 포함됨.
+http://rdoc.info/github/bhollis/maruku/master/file/CHANGELOG.md
+  fenced_code_blocks 옵션으로 백틱과 틸데 코드 블록 지원
+  [Maruku 공식 페이지](http://maruku.rubyforge.org/)에선 아직 0.6.1을 소개
+
 #### 리퀴드 코드 블럭
 
 {% highlight ruby linenos %}

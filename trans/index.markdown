@@ -16,6 +16,8 @@ date: 2013-11-29 14:40:45
 
 ## HTML & CSS
 
+***NEW*** [큰 스크린 살펴보기](http://j.mp/1fd4RVu "12/9") - 원문 : [Surveying the Big Screen](http://alistapart.com/article/surveying-the-big-screen)
+
 ***NEW*** [부트스트랩 3 한글 번역](http://j.mp/1cWUjMB) - 원문 : [Bootstrap](http://getbootstrap.com/)
 
 ***NEW*** [불필요한 페인트 회피하기](http://html5rocksko.blogspot.kr/2013/10/avoiding-unnecessary-paints.html) - 원문 : [Avoiding Unnecessary Paints](http://www.html5rocks.com/en/tutorials/speed/unnecessary-paints/)
@@ -207,6 +209,10 @@ date: 2013-11-29 14:40:45
 
 **_NEW_** [Ember.js Docs 한국어 번역](http://j.mp/1cpc43g "10/15") - 원문 : 제보 주세요! by [@haruair](https://twitter.com/haruair)
 
+## Go
+
+**_NEW_** [Go 프로그래밍 입문](http://j.mp/IXP5TB "12/7") - 원문 [An Introduction to Programming in Go](http://www.golang-book.com/)
+
 ## Ruby on Rails
 
 [Ruby on Rails Tutorial (Rails3.2) 번역 - 1장 (총11장)](http://bzwear.blog.me/70138914244)
@@ -224,6 +230,8 @@ date: 2013-11-29 14:40:45
  - 원문 : [PHP: a fractal of bad design](http://me.veekun.com/blog/2012/04/09/php-a-fractal-of-bad-design/)
 
 [Laravel 한글 매뉴얼](http://laravel-korea.org/docs/introduction) - 원문 : [Laravel Documentation](http://laravel.com/docs)
+
+
 
 ## Perl
 
