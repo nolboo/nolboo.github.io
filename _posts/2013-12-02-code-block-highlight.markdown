@@ -58,7 +58,6 @@ smart 를 제외한 다른 모든 렌더링 옵션들은 사용할 수 없다.
 | ~~strikethrough~~  | ✓            | -        | ✓         |
 | superscript        | ✓            | -        | ✓         |
 | autolink           | ✓            | -        | ✓         |
-| highlight          | -            | -        | -         |
 | footnote           | -            | ✓        | ✓         |
 | highlight          | ✓            | ✓        | -         |
 | TOC                | -            | -        | -         |
@@ -216,3 +215,35 @@ https://github.com/vmg/redcarpet/blob/v2.2.2/README.markdown#and-its-like-really
 
 [^1]: 
 주석이 안먹는다.
+
+최종적으로 선택한 옵션은 다음과 같다.
+
+- no_intra_emphasis
+- fenced_code_blocks
+- tables
+- strikethrough
+- superscript
+- autolink
+- hard_wrap
+
+## 코드블럭 하일라이트
+
+https://github.com/vmg/redcarpet
+    하일라이트 등의 설정이 안먹는군. 
+    Liquid Exception: invalid byte sequence in UTF-8 in feed.xml 에러로 제너레이팅 실패.
+
+http://bloerg.net/2013/03/07/using-kramdown-instead-of-maruku.html 마크다운 엔진 비교표 있음.
+
+|Feature |Maruku  |Redcarpet   |Kramdown    |Pandoc|
+---------|--------|------------|------------|------|
+| Fenced code blocks | – | ✓ | ✓ | ✓ |
+|Footnotes | ✓ | – | ✓ | ✓ |
+|Jekyll integration | ✓ | ✓ | ✓ | – |
+|Header IDs | ✓ | – | ✓ | ✓ |
+|Inline math | – | – | ✓ | ✓ |
+|Abbreviations | ✓ | – | ✓ | ✓ |
+|Pygments  | ✓ | – | – | ✓ |
+
+kramdown은 pygment 대신 [CodeRay](http://coderay.rubychan.de/)를 사용.
+
+라인 넘버는 이쁘지 않아서 사용하지 않음.
