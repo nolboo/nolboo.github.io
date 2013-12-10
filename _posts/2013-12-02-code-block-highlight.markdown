@@ -234,15 +234,15 @@ https://github.com/vmg/redcarpet
 
 http://bloerg.net/2013/03/07/using-kramdown-instead-of-maruku.html 마크다운 엔진 비교표 있음.
 
-|Feature |Maruku  |Redcarpet   |Kramdown    |Pandoc|
----------|--------|------------|------------|------|
-| Fenced code blocks | – | ✓ | ✓ | ✓ |
-|Footnotes | ✓ | – | ✓ | ✓ |
-|Jekyll integration | ✓ | ✓ | ✓ | – |
-|Header IDs | ✓ | – | ✓ | ✓ |
-|Inline math | – | – | ✓ | ✓ |
-|Abbreviations | ✓ | – | ✓ | ✓ |
-|Pygments  | ✓ | – | – | ✓ |
+|      Feature       | Maruku | Redcarpet | Kramdown | Pandoc |
+|--------------------|--------|-----------|----------|--------|
+| Fenced code blocks | –      | ✓         | ✓        | ✓      |
+| Footnotes          | ✓      | –         | ✓        | ✓      |
+| Jekyll integration | ✓      | ✓         | ✓        | –      |
+| Header IDs         | ✓      | –         | ✓        | ✓      |
+| Inline math        | –      | –         | ✓        | ✓      |
+| Abbreviations      | ✓      | –         | ✓        | ✓      |
+| Pygments           | ✓      | –         | –        | ✓      |
 
 kramdown은 pygment 대신 [CodeRay](http://coderay.rubychan.de/)를 사용.
 

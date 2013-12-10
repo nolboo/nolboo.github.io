@@ -1,22 +1,47 @@
 ---
-layout: none
+layout: nil
 ---
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Nolboo's Blog</title>
-    <description>호모스터디쿠스를 꿈꾸는 놀부</description>
-    <link>http://nolboo.github.io</link>
+<rss version="2.0"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+    xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:atom="http://www.w3.org/2005/Atom"
+    xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+    xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+>
+
+<channel>
+    <title><![CDATA[{{ site.title }}]]></title>
     <atom:link href="{{ site.url }}/feed.xml" rel="self" type="application/rss+xml" />
-    {% for post in site.posts limit:10 %}
-    <item>
-      <title>{{ post.title }}</title>
-      <description>{{ post.description | xml_escape }}</description>
-      <content>{{ post.content | xml_escape }}</content>
-      <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
-      <link>{{ site.url }}{{ post.url }}</link>
-      <guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
-    </item>
+    <link href="{{ site.url }}/" />
+    <description><![CDATA[{{ site.subtitle }}]]></description>
+    <lastBuildDate>{{ site.time | date: "%a, %d %b %Y %H:%M:%S %z" }}</lastBuildDate>
+    <language>en-US</language>
+    <generator uri="http://octopress.org/">Octopress</generator>
+
+    {% for post in site.posts limit: 15 %}
+        <item>
+            <title><![CDATA[{{ post.title | cdata_escape }}]]></title>
+            <link>{{ site.url }}{{ post.url }}</link>
+            <pubDate>{{ post.date | date: "%a, %d %b %Y %T %z" }}</pubDate>
+            <dc:creator><![CDATA[{{ site.author | strip_html }}]]></dc:creator>
+        {% for category in post.categories %}
+            <category><![CDATA[{{ category | cdata_escape }}]]></category>
+        {% endfor %}
+        {% for category in post.tags %}
+            <category><![CDATA[{{ category | cdata_escape }}]]></category>
+        {% endfor %}
+            <guid>{{ site.url }}{{ post.url }}</guid>
+            <description>
+                <![CDATA[{{ post.content | strip_html | truncatewords: 50 | expand_urls: site.url | cdata_escape }}]]>
+            </description>
+            <content:encoded>
+                <![CDATA[{{ post.content | expand_urls: site.url | cdata_escape }}]]>
+            </content:encoded>
+        </item>
     {% endfor %}
-  </channel>
+
+</channel>
+
 </rss>
