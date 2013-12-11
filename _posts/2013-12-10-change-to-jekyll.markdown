@@ -170,7 +170,7 @@ category: blog
 
 ### RSS
 
-기존 테마의 `feed.xml`에서 `description`부분에 블로그 글의 내용이 모두 들어가도록 되어 있어, 내 경우에 맞게 수정하였다. 추가적으로 [이상한 모임 팀블로그](http://we.weirdmeetup.com/)에 맞도록 재수정하였다.
+기존 테마의 `feed.xml`에서 `description`부분에 블로그 글의 내용이 모두 들어가도록 되어 있어, 내 경우에 맞게 [수정](https://github.com/nolboo/nolboo.github.io/blob/master/feed.xml.old)하였다. 추가적으로 [이상한 모임 팀블로그](http://we.weirdmeetup.com/)에서 발췌 목록이 나오도록 하기 위해 옥토프레스 [atom.xml](https://github.com/imathis/octopress/blob/master/.themes/classic/source/atom.xml)을 파보려는데 [@armv9](https://twitter.com/armv9)님이 추천하신 [gist](https://gist.github.com/aahan/5228376)로 대체하였더니 팀블로그 플랫폼인 워드프레스와 궁합이 잘 맞게 설정되었다.
 
 ### CSS
 
@@ -183,3 +183,6 @@ category: blog
 - 포스트를 한 글자만 변경하여도 매번 제너레이트시켜야 하는 불편함이 사라졌고, CSS나 테마 등을 변경한 후 로컬 테스트를 위해 제너레이트하더라도 그 속도가 체감상 10배 정도 향상되었다. 지킬이 왜 가장 인기가 있는지 알 수 있는 대목이다.
 - 마크다운 형태의 블로그 글이 그대로 올라가기 때문에 소스를 별도로 백업할 필요가 없어졌으며, 포스트의 변경사항을 깃허브 에디터나 [prose.io](http://prose.io/) 등을 이용해 온라인에서 직접 변경할 수 있다.
 
+### 참조 링크
+
+* [지킬 공식 사이트 한글 번역](http://svperstarz.github.io/jekyll-docs-ko/)
