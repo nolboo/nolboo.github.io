@@ -4,9 +4,8 @@ title: "한글 번역글 모음 페이지"
 date: 2013-11-29 14:40:45
 ---
 
-* _공유된 번역 글과 사이트를 **카테고리별**로 모으려고 합니다. 널리 알리고 싶은 번역 글과 사이트을 댓글로 제보해주시면 추가하도록 하겠습니다._
-* 원문을 항상 참조하는 습관을 가지는 것이 좋습니다. 여기 선정된 글은 대부분 원문이 좋은 경우가 많고, 댓글을 읽는 재미도 쏠쏠!
-* 9월부터 추가된 글에는 일정 기간 동안 ***NEW*** 라고 헤드를 붙여 페이지에 최근 글을 구별합니다.
+* _공유된 번역 글과 사이트를 **기술과 경영 카테고리별**로 개인적으로 모은 페이지입니다. 직접 링크를 추가하고 싶으신 분이나 다른 카테고리의 글을 위해서 [별도 위키](https://github.com/nolboo/nolboo.github.io/wiki)를 이용하세요~_
+* 추가된 글에는 일정 기간 동안 ***NEW*** 라고 헤드를 붙여서 최근 글을 표시하고 있습니다.
 
 ## 블로그
 
@@ -431,6 +430,8 @@ Personal Summary](http://samizdat.mines.edu/howto/HowToBeAProgrammer.pdf)
 
 ## 경영
 
+**_NEW_** ['더 똑똑하게’ 투자받는 방법](http://j.mp/1crAdUt "12/13") - 원문 : [How to Raise Money](http://paulgraham.com/fr.html)
+
 **_NEW_** [’10억 달러’ 스타트업들의 성공에는 공통점이 있다?](http://j.mp/Ivi40K "11/29") - 원문 : [Welcome To The Unicorn Club: Learning From Billion-Dollar Startups](http://techcrunch.com/2013/11/02/welcome-to-the-unicorn-club/)
 
 **_NEW_** [OS/2의 흥망성쇠 이야기](http://http://j.mp/1a3eEbr "11/27") - 원문 : [Half an operating system: The triumph and tragedy of OS/2](http://arstechnica.com/business/2013/11/half-an-operating-system-the-triumph-and-tragedy-of-os2/)
@@ -538,4 +539,5 @@ Personal Summary](http://samizdat.mines.edu/howto/HowToBeAProgrammer.pdf)
 [Jeff Bezos 의 10가지 리더쉽 레슨](http://allaboutetp.wordpress.com/2012/04/05/jeffbezos/)
  - 원문 : [Jeff Bezos’s Top 10 Leadership Lessons](http://www.forbes.com/sites/georgeanders/2012/04/04/bezos-tips/)
 
+---
 오탈자나 잘못된 링크도 댓글로 제보해 주세요!
