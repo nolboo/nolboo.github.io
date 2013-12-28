@@ -254,7 +254,6 @@ ul.posts {
 
 ul.posts li {
   line-height: 1.4em;
-  margin-bottom: 3em;
 }
 
 ul.posts .date {
@@ -348,15 +347,44 @@ blockquote {
   font-style: italic;
 }
 
-/*.post-tag {
-  display: inline-block;
-  list-style: none;
-  float:left;
+/*Tag from https://alexpearce.me*/
+.tags {
+  padding: 0;
+  list-style-type: none;
+  font-size: 0.8em;
 }
 
-.post-tag:after {
-  clear: both;
-}*/
+.tags li {
+  float: left;
+  margin: 0 7px;
+}
+
+.tags li a {
+  padding: 1px 12px 2px 12px;
+  color: #bcc5c8;
+}
+
+.tags li a:hover {
+  color: #5e6d74;
+}
+
+.post-tags {
+  margin: 20px 0 0 0;
+}
+
+/* normalize.css Clearfix */
+.cf {
+  *zoom: 1
+}
+
+.cf:before, .cf:after {
+  content: "";
+  display: table;
+}
+
+.cf:after {
+  clear: both
+}
 
 img.inline.pull-right {
   margin-left: 1em;

@@ -21,11 +21,11 @@ layout: default
   <div class="post">
   {{ content }}
   </div>
-<!--     <ul class="post-tag">
+  <ul class="tags post-tags cf">
     {% for tag in page.tags %}
-      <li>{{ tag }}</li>
+    <li><a href="/search/?tags={{ tag }}">{{ tag | downcase }}</a></li>
     {% endfor %}
-    </ul> -->
+  </ul>
 </article>
 
 <section class="post-footer">
@@ -33,6 +33,10 @@ layout: default
     <img src="/images/rss.jpg" alt="RSS" />
   </a>
 </section>
+
+<script defer src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<!-- tag, category search -->
+<script defer src="/js/alexpearce.js"></script>
 
 <div class="separator"></div>
 
