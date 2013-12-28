@@ -3,7 +3,7 @@ layout: post
 title: "HTML & CSS 중급자 가이드 - 4강 : 반응형 웹 디자인"
 description: "모바일 인터넷 사용이 데스크탑 인터넷 사용을 올해 추월하는 트랜드가 이어지고 있다. 모바일 인터넷 사용이 계속 성장하면서 어떻게 모든 유저에게 적합한 웹사이트를 만들 것인가 하는 질문이 제기되고있다."
 category: blog
-tags: [Advanced, CSS, HTML, reponsive web design]
+tags: [Advanced, CSS, HTML, reponsive, web, design]
 ---
 
 원본 : [An Advanced Guide to HTML & CSS - LESSON 4 : Responsive Web Design][1]

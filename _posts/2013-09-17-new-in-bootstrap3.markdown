@@ -3,7 +3,7 @@ layout: post
 title: "부트스트랩 3에서 새롭게 바뀐 것"
 description: "모바일 퍼스트를 주장하고 나온 트위터 부트스트랩 3에서 새로워진 부분을 모아서 잘 설명한 글의 번역"
 category: blog
-tags: [bootstrap, css, css3, first, framework, mobile, responsive web design, twitter]
+tags: [bootstrap, css, css3, first, framework, mobile, responsive, web, design, twitter]
 ---
 
 원문 : [What’s new in Twitter Bootstrap 3?][1]

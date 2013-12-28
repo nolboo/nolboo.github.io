@@ -3,7 +3,7 @@ layout: post
 title: "반응형 디자인 적용하기(케이스 스터디)"
 description: "사이버덕 회사의 홈페이지를 반응형 디자인으로 변경한 경험을 자세하게 소개한 스매싱 기사의 번역"
 category: blog
-tags: [case, responsive web design]
+tags: [case, responsive, web, design]
 ---
 
 원본: [Adapting To A Responsive Design (Case Study)][1]
