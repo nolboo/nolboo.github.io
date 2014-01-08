@@ -446,3 +446,22 @@ img {
   line-height: 1.471;
   border-radius: 6px;
 }
+
+
+.pagination {
+  list-style-type: none;
+  font-size: 0.9em;
+  padding-left: 0;
+}
+
+.pagination li {
+  position: relative;
+  float: left;
+  padding: 6px 12px;
+}
+
+.clearfix:after { content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0; }
+.clearfix { display: inline-block; }
+
+html[xmlns] .clearfix { display: block; }
+* html .clearfix { height: 1%; }

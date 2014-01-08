@@ -3,7 +3,7 @@ layout: post
 title: "존 그루버 마크다운 페이지 번역"
 description: "마크다운 최초 제안자 존 그루버의 마크다운 문법 공식 페이지 번역"
 category: blog
-tags: [markdown, syntax, John, Gruber]
+tags: [markdown, syntax, John-Gruber]
 ---
 
 원문 : [Daring Fireball: Markdown][1]

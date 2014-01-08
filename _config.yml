@@ -22,17 +22,4 @@ redcarpet:
 # redcarpet:
 #    extensions: ["smart"]
 
-rdiscount:
-  extensions:
-    - autolink      # greedily urlify links
-    - footnotes     # footnotes
-    - smart         # typographic substitutions with SmartyPants
-    # - generate_toc
-
-kramdown:
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  use_coderay: false
-  parse_block_html: true
+paginate: 10
