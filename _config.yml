@@ -23,3 +23,7 @@ redcarpet:
 #    extensions: ["smart"]
 
 paginate: 10
+
+author:
+    twitter: n0lb00
+    github: nolboo
