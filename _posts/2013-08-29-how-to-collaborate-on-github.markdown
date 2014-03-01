@@ -112,10 +112,10 @@ pull 요청만이 공헌할 수 있는 유일한 방법이라고 생각하지 �
 
    [1]: http://net.tutsplus.com/tutorials/tools-and-tips/how-to-collaborate-on-github/
    [2]: https://github.com/jquery/jquery/blob/master/CONTRIBUTING.md
-   [3]: http://cdn.tutsplus.com/net.tutsplus.com/uploads/2013/08/github_header.png
-   [4]: http://cdn.tutsplus.com/net.tutsplus.com/uploads/2013/08/forking.png
-   [5]: http://cdn.tutsplus.com/net.tutsplus.com/uploads/2013/08/clone_url.png
-   [6]: http://cdn.tutsplus.com/net.tutsplus.com/uploads/2013/08/compare_pull_request.png
-   [7]: http://cdn.tutsplus.com/net.tutsplus.com/uploads/2013/08/switch_branches.png
+   [3]: http://cdn.tutsplus.com/net/uploads/2013/08/github_header.png
+   [4]: http://cdn.tutsplus.com/net/uploads/2013/08/forking.png
+   [5]: http://cdn.tutsplus.com/net/uploads/2013/08/clone_url.png
+   [6]: http://cdn.tutsplus.com/net/uploads/2013/08/compare_pull_request.png
+   [7]: http://cdn.tutsplus.com/net/uploads/2013/08/switch_branches.png
    [8]: http://zachholman.com/talk/how-github-uses-github-to-build-github/
   
