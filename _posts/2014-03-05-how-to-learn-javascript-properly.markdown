@@ -2,6 +2,7 @@
 layout: post
 title: "자바스크립트 제대로 배우기"
 description: ""
+published: false
 category: blog
 tags: [javascript, beginner, guide]
 ---
@@ -10,7 +11,7 @@ tags: [javascript, beginner, guide]
 
 [>>>New Study Group Starting January 2014!<<< : learn_js_in_seattle](http://www.reddit.com/r/learn_js_in_seattle/comments/1tziaa/new_study_group_starting_january_2014/)
 
-이 코스 개요는 자바스크립트를 제대로 철저하게 배우는 방법에 대한 구조적이고 
+이 코스 개요는 자바스크립트를 제대로 철저하게 배우는 방법에 대한 구조적이고
 
 Resource
     Professional JavaScript for Web Developers (3rd Edition, 2012) by Nicholas Zakas
