@@ -57,7 +57,7 @@ Github Flavored Markdown(GFM)을 위해 다음을 설치한다.
 
 이제 웹브라우저 주소창에 `http://localhost:4567`을 입력하면 `Home.md`의 내용을 볼 수 있다.
 
-![골룸 홈 화면](/images/posts/gollum-Home.jpg) {.aligncenter}
+![골룸 홈 화면](/images/posts/gollum-Home.jpg)
 
 물론, 아직 아무런 내용이 없다. 여기서 우측 위의 `Edit` 버튼을 눌러 내용을 편집할 수도 있다. **골룸 안에서 편집하거나 생성한 화일은 커밋과 함께 저장된다. 즉, 터미널에서 별도의 커밋 명령을 할 필요가 없다.**
 
@@ -71,7 +71,7 @@ Github Flavored Markdown(GFM)을 위해 다음을 설치한다.
 
 [bitbucket](https://bitbucket.org)은 깃허브와 유사한 분산버전관리 서비스이며, GUI 사용법도 깃허브와 거의 유사하다. 일단 비트버킷에 위키를 위한 저장소를 만들어 보자. 
 
-![비트버킷 저장소 만들기](/images/posts/create-Bitbucket-wiki-repository.jpg) {.aligncenter}
+![비트버킷 저장소 만들기](/images/posts/create-Bitbucket-wiki-repository.jpg)
 
 `Project management`의 `Wiki` 항목을 체크한 후 `Create repository`를 눌러 저장소와 위키를 만든다. `Wiki` 탭을 클릭하여 주소를 얻는다.
 
