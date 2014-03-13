@@ -75,9 +75,9 @@ Codecademy의 트랙같이 시간을 허무하게 보내지 않고(적어도 나
 
 5. *JavaScript: The Definitive Guide*의 3장과 4장을 읽는다.
 
-    - 혹은 *프론트엔드 개발자를 위한 자바스크립트 프로그래밍* 서문, 3장과 4장을 읽는다. “비트 연산자(Bitwise Operators)”는 건너뛸 수 있다; 여러분의 자바스크립트 커리어에서 그것들을 사용하는 경우가 거의 없을 것이다.
-
-    - 그리고 다시, 멈추고 브라우저 콘솔(혹은 JSFiddle)에 예제 코드를 쓰고 실험한다. - 일부 변수와 코스를 약간 조정해본다.
+> - 혹은 *프론트엔드 개발자를 위한 자바스크립트 프로그래밍* 서문, 3장과 4장을 읽는다. “비트 연산자(Bitwise Operators)”는 건너뛸 수 있다; 여러분의 자바스크립트 커리어에서 그것들을 사용하는 경우가 거의 없을 것이다.
+>
+> - 그리고 다시, 멈추고 브라우저 콘솔(혹은 JSFiddle)에 예제 코드를 쓰고 실험한다. - 일부 변수와 코스를 약간 조정해본다.
 
 6. *JavaScript: The Definitive Guide*의 5장을 읽는다. *프론트엔드 개발자를 위한 자바스크립트 프로그래밍*은 읽지 않는다, 이전 장에서 이미 배웠다.
 
@@ -87,26 +87,26 @@ Codecademy의 트랙같이 시간을 허무하게 보내지 않고(적어도 나
 
 1. 내 글 [JavaScript Objects in Detail](http://javascriptissexy.com/javascript-objects-in-detail/)을 읽는다.
 
-    - 혹은 *JavaScript: The Definitive Guide*의 6장을 읽는다.
-    
-    - 혹은 *프론트엔드 개발자를 위한 자바스크립트 프로그래밍*의 6장을 읽는다. 주: "객체에 대한 이해(Understanding Objects)" 섹션만 읽는다.
-    
-    - 3가지 중 어떤 것도 좋다, 두 책이 더 자세하지만: 내 글을 읽고 완전히 이해한다면 자신 있게 추가 세부사항은 건너뛸 수 있다.
+> - 혹은 *JavaScript: The Definitive Guide*의 6장을 읽는다.
+>
+> - 혹은 *프론트엔드 개발자를 위한 자바스크립트 프로그래밍*의 6장을 읽는다. 주: "객체에 대한 이해(Understanding Objects)" 섹션만 읽는다.
+>
+> - 3가지 중 어떤 것도 좋다, 두 책이 더 자세하지만: 내 글을 읽고 완전히 이해한다면 자신 있게 추가 세부사항은 건너뛸 수 있다.
 
 2. *JavaScript: The Definitive Guide*의 7장과 8장을 읽는다.
 
-    - 혹은 *프론트엔드 개발자를 위한 자바스크립트 프로그래밍*의 5장과 7장을 읽는다.
+> - 혹은 *프론트엔드 개발자를 위한 자바스크립트 프로그래밍*의 5장과 7장을 읽는다.
 
 3. 이 시점에서, 여러분은 브라우저 콘솔에 코드를 쓰고 if-else 선언, for loops, Arrays, Functions, Objects 등을 테스트하는 것에 많은 시간을 소비해야만 한다. 여러분이 브라우저에서 (Codecademy의 도움 없이) 독립적으로 코딩하는 법을 아는(계속 연습하는) 것이 매우 중요하다. Codecademy로 되돌아갈 즈음엔 어떤 도움이나 힌트가 필요하지 않아야 한다. 모든 숙제도 쉬워야 한다.
 
-    - Codecademy가 아직 어렵다면, 브라우저도 돌아가서 계속 해킹한다. 이것이 가장 잘 배울 수 있는 곳이다. [레브론 제임스](http://en.wikipedia.org/wiki/LeBron_James)가 "거리"(이웃 농구 코트)에서 젊은 시절 기술을 연마하거나, 빌 게이츠가 지하에서 홀로 해킹하는 것과 유사하다.
-    - 여러분 스스로 조금씩 외로이 해킹하고 배우는 것은 엄청난 가치가 있다. 여러분은 이 전략 속에 있는 가치를 알아야 하고, 기꺼이 받아들여야 하고, 작동될 것이라고 믿어야 한다.
+> - Codecademy가 아직 어렵다면, 브라우저도 돌아가서 계속 해킹한다. 이것이 가장 잘 배울 수 있는 곳이다. [레브론 제임스](http://en.wikipedia.org/wiki/LeBron_James)가 "거리"(이웃 농구 코트)에서 젊은 시절 기술을 연마하거나, 빌 게이츠가 지하에서 홀로 해킹하는 것과 유사하다.
+> - 여러분 스스로 조금씩 외로이 해킹하고 배우는 것은 엄청난 가치가 있다. 여러분은 이 전략 속에 있는 가치를 알아야 하고, 기꺼이 받아들여야 하고, 작동될 것이라고 믿어야 한다.
 
-    **Codecademy를 사용했을 때 성취에 대한 잘못된 인식**
+> **Codecademy를 사용했을 때 성취에 대한 잘못된 인식**
 
-    - Codecademy의 가장 큰 문제점은 힌트와 작은 코드들이 여러분에게 매우 도움이 되어서 쉽게 연습을 진행하는 경우, 여러분이 성취에 잘못된 인식을 하도록 하는 것이다. 그 경우 여러분은 알지 못할 것이며, 여러분이 행한 많은 것이 여러분 것이 아니다.
-    
-    - 자, Codecademy는 아직도 여러분이 코딩하는 법을 배우는 것에 훌륭하다, 특히 if 선언, for loops, functions, and variables 같은 매우 기본적인 코드로 작은 프로젝트나 작은 앱을 개발하는 프로세스를 통해 여러분을 안내하는 방식으론.
+> - Codecademy의 가장 큰 문제점은 힌트와 작은 코드들이 여러분에게 매우 도움이 되어서 쉽게 연습을 진행하는 경우, 여러분이 성취에 잘못된 인식을 하도록 하는 것이다. 그 경우 여러분은 알지 못할 것이며, 여러분이 행한 많은 것이 여러분 것이 아니다.
+
+> - 자, Codecademy는 아직도 여러분이 코딩하는 법을 배우는 것에 훌륭하다, 특히 if 선언, for loops, functions, and variables 같은 매우 기본적인 코드로 작은 프로젝트나 작은 앱을 개발하는 프로세스를 통해 여러분을 안내하는 방식으론.
 
 4. Codecademy로 돌아가서 자바스크립트 트랙의 6, 7, 8 섹션(Data Structures에서 Object 2까지)을 공부한다.
 
@@ -114,9 +114,9 @@ Codecademy의 트랙같이 시간을 허무하게 보내지 않고(적어도 나
 
 6. *JavaScript: The Definitive Guide*의 13장, 15장, 16장과 19장을 읽는다.
 
-    - 혹은 *프론트엔드 개발자를 위한 자바스크립트 프로그래밍*의 8장, 9장, 10장, 11장, 13장과 14장을 읽는다. 이 책은 jQuery를 다루지 않고 있고, Codecademy의 jQuery도 충분하지 않다. 이 jQuery 과정을 따른다 - 무료다: [Code School - Try jQuery](http://try.jquery.com/)
-    
-    - 그리고, 책을 가지고 있다면 jQuery에 대해 더 많이 알기위해, *JavaScript: The Definitive Guide*의 19장을 읽을 수도 있다.
+> - 혹은 *프론트엔드 개발자를 위한 자바스크립트 프로그래밍*의 8장, 9장, 10장, 11장, 13장과 14장을 읽는다. 이 책은 jQuery를 다루지 않고 있고, Codecademy의 jQuery도 충분하지 않다. 이 jQuery 과정을 따른다 - 무료다: [Code School - Try jQuery](http://try.jquery.com/)
+>
+> - 그리고, 책을 가지고 있다면 jQuery에 대해 더 많이 알기위해, *JavaScript: The Definitive Guide*의 19장을 읽을 수도 있다.
 
 7. [Code School - Try jQuery](http://try.jquery.com/)에 있는 전체 jQuery 과정을 따라서 공부한다.
 
@@ -124,7 +124,7 @@ Codecademy의 트랙같이 시간을 허무하게 보내지 않고(적어도 나
 
 * 첫게 번째 프로젝트를 만들기 전에, 여러분이 자바스크립트 개발자가 되거나 자바스크립트를 자주 사용하려고 한다면, 여기서 잠시 쉬고, [웹스톰 : WebStorm](http://www.jetbrains.com/webstorm/)의 평가판을 내려받는다. 웹스톰을 시작하는 법을 [여기에서](http://2oahu.com/blog/webstorm-javascript/)(이 과정을 위해 별도로 쓰였다) 배운다.
 
-    웹스톰은 의심할 여지 없이 자바스크립트 프로그래밍에 절대적으로 최고의 에디터(IDE)이다. 30일 평가 기간이 끝나면 $49의 비용이 들지만, 여러분이 자바스크립트 개발자로서 할 수 있는 최고의 투자가 될 것이다.
+> 웹스톰은 의심할 여지 없이 자바스크립트 프로그래밍에 절대적으로 최고의 에디터(IDE)이다. 30일 평가 기간이 끝나면 $49의 비용이 들지만, 여러분이 자바스크립트 개발자로서 할 수 있는 최고의 투자가 될 것이다.
 
 * 웹스톰에서 **JSHint**를 사용하도록 설정한다. JSHint는 "자바스크립트 코드에서 에러와 잠재적인 문제점들을 감지하고, 여러분 팀의 코딩 규칙을 적용해주는 툴"이다. 웹스톰을 사용할 때 멋진 점은 JSHint가 여러분 코드의 에러 밑에 - 워드프로세서 앱에서 철자법 검사기와 같이 - 빨간 줄을 자동으로 추가하는 것이다. 그래서 JSHint는 여러분 코드에서 (HTML 에러를 포함하여) 보여주고, 여러분을 더 나은 자바스크립트 프로그래머로 만들어 줄 것이다, 배울 때조차도. **이것은 매우 중요하다**. 웹스톰과 JSHint가 여러분을 더 나은 프로그래머로 되는 것을 도와준다는 것을 인식하게 될 때 나한테 고마워할 것이다.
 
@@ -159,7 +159,7 @@ var allQuestions = [{question: "Who is Prime Minister of the United Kingdom?", c
 
 1. *JavaScript: The Definitive Guide*의 10장, 14장, 17장과 20장을 읽는다.
 
-    - 혹은 *프론트엔드 개발자를 위한 자바스크립트 프로그래밍*의 20장과 23장을 읽는다.
+> - 혹은 *프론트엔드 개발자를 위한 자바스크립트 프로그래밍*의 20장과 23장을 읽는다.
 
 2. 파이어폭스 콘솔에 모든 예제 코드를 계속 타자하고, 그것이 어떻게 동작하고 무엇인지를 진짜 이해하기 위해 실험하면서 코드의 각 부분을 계속 조정해야 하는 것을 기억하라.
 
@@ -167,33 +167,35 @@ var allQuestions = [{question: "Who is Prime Minister of the United Kingdom?", c
 
 4. 이전의 퀴즈 앱을 개선한다:
 
-    - 클라이언트 측의 데이터 유효성 검사를 추가한다: 다음 질문으로 진행하기 전에 사용자가 각각의 질문에 대답해야 한다.
-
-    - 사용자가 되돌아가서 대답을 수정할 수 있도록 "Back" 버튼을 추가한다. 사용자는 최초의 질문으로 되돌아갈 수 있다. 사용자가 이미 대답한 질문에선 다시 질문에 답하지 않도록, 선택한 라디오 버튼을 보여주어야 한다.
-
-    - 애니메이션을 추가하기 위해 jQuery를 사용한다(현재의 질문을 페이드아웃하고 다음 질문을 페이드인한다.)
-
-    - 퀴즈를 IE 8과 9에서 테스트하고, 버그를 고친다. 여러분에게 좋은 연습을 줄 것이다 :)
-
-    - 하나의 외부 JSON 파일에 퀴즈 질문을 저장한다.
-
-    - 사용자 인증을 추가한다: 사용자가 로그인하고 로그인 인증을 로컬 저장소(HTML5 브라우저 저장소)에 저장하도록 한다.
-
-    - 사용자를 기억하기 위해 쿠키를 사용하고, 사용자가 퀴즈로 되돌아왔을 때 "Welcome, First Name" 메시지를 보여준다.
+> - 클라이언트 측의 데이터 유효성 검사를 추가한다: 다음 질문으로 진행하기 전에 사용자가 각각의 질문에 대답해야 한다.
+>
+> - 사용자가 되돌아가서 대답을 수정할 수 있도록 "Back" 버튼을 추가한다. 사용자는 최초의 질문으로 되돌아갈 수 있다. 사용자가 이미 대답한 질문에선 다시 질문에 답하지 않도록, 선택한 라디오 버튼을 보여주어야 한다.
+>
+> - 애니메이션을 추가하기 위해 jQuery를 사용한다(현재의 질문을 페이드아웃하고 다음 질문을 페이드인한다.)
+>
+> - 퀴즈를 IE 8과 9에서 테스트하고, 버그를 고친다. 여러분에게 좋은 연습을 줄 것이다 :)
+>
+> - 하나의 외부 JSON 파일에 퀴즈 질문을 저장한다.
+>
+> - 사용자 인증을 추가한다: 사용자가 로그인하고 로그인 인증을 로컬 저장소(HTML5 브라우저 저장소)에 저장하도록 한다.
+>
+> - 사용자를 기억하기 위해 쿠키를 사용하고, 사용자가 퀴즈로 되돌아왔을 때 "Welcome, First Name" 메시지를 보여준다.
 
 ## Weeks 7 and, if necessary 8 (Classes, Inheritance, more HTML5)
 
 1. *JavaScript: The Definitive Guide*의 9장, 18장, 21장과 22장을 읽는다.
 
-    - 혹은 내 블로그 글 [OOP In JavaScript: What You NEED to Know](http://javascriptissexy.com/oop-in-javascript-what-you-need-to-know/)를 읽는다.
-    
-    - 혹은 *프론트엔드 개발자를 위한 자바스크립트 프로그래밍*의 6장(이번에는 "객체 생성 : Object Creation"과 "상속 : Inheritance"만), 16장, 22장과 24장을 읽는다. 주: 이 섹션을 읽는 것이 전체 로드맵에서 마주치는 가장 기술적인 독서이다. 모두 읽기를 원한다면 여러분한테 달려있다. 적어도 Prototype Pattern, Factory Pattern과 Prototypal Inheritance은 읽어야 한다. 모든 패턴을 알 필요는 없다.
+> - 혹은 내 블로그 글 [OOP In JavaScript: What You NEED to Know](http://javascriptissexy.com/oop-in-javascript-what-you-need-to-know/)를 읽는다.
+>
+> - 혹은 *프론트엔드 개발자를 위한 자바스크립트 프로그래밍*의 6장(이번에는 "객체 생성 : Object Creation"과 "상속 : Inheritance"만), 16장, 22장과 24장을 읽는다. 주: 이 섹션을 읽는 것이 전체 로드맵에서 마주치는 가장 기술적인 독서이다. 모두 읽기를 원한다면 여러분한테 달려있다. 적어도 Prototype Pattern, Factory Pattern과 Prototypal Inheritance은 읽어야 한다. 모든 패턴을 알 필요는 없다.
 
 2. **퀴즈 앱을 한층 더 개선한다:**
 
-    - 좀 더 전문적으로 보이도록, 퀴즈 엘리먼트를 포함한 전체 페이지 레이아웃을 위해 [트위터 부트스트랩](http://twitter.github.com/bootstrap/)을 사용한다. 추가 보너스로서, 트위터 부트스트랩의 [탭](http://twitter.github.com/bootstrap/javascript.html#tabs) 유저 인터페이스 컴포넌트를 사용하고 각각의 탭에 4개의 퀴즈 중 하나씩 보여준다.
-    - [Handlebars.js를 배우고](http://javascriptissexy.com/handlebars-js-tutorial-learn-everything-about-handlebars-js-javascript-templating/), Handlebar.js 템플릿을 퀴즈에 추가한다. 더는 자바스크립트 코드 안에 어떠한 HTML도 있어선 안 된다. 여러분의 퀴즈는 조금씩 진보하고 있다.
-    - 퀴즈를 수행하는 모든 사용자를 계속 기록하고, 각 사용자에게 다른 퀴즈 수행자의 점수 중 자신의 점수 순위를 보여준다.
+> - 좀 더 전문적으로 보이도록, 퀴즈 엘리먼트를 포함한 전체 페이지 레이아웃을 위해 [트위터 부트스트랩](http://twitter.github.com/bootstrap/)을 사용한다. 추가 보너스로서, 트위터 부트스트랩의 [탭](http://twitter.github.com/bootstrap/javascript.html#tabs) 유저 인터페이스 컴포넌트를 사용하고 각각의 탭에 4개의 퀴즈 중 하나씩 보여준다.
+>
+> - [Handlebars.js를 배우고](http://javascriptissexy.com/handlebars-js-tutorial-learn-everything-about-handlebars-js-javascript-templating/), Handlebar.js 템플릿을 퀴즈에 추가한다. 더는 자바스크립트 코드 안에 어떠한 HTML도 있어선 안 된다. 여러분의 퀴즈는 조금씩 진보하고 있다.
+>
+> - 퀴즈를 수행하는 모든 사용자를 계속 기록하고, 각 사용자에게 다른 퀴즈 수행자의 점수 중 자신의 점수 순위를 보여준다.
 
 3. 나중에(Backbone.js와 Node.js를 배운 후), 여러분은 퀴즈 앱을 리팩터링하고 최신 자바스크립트 프레임워크를 사용하여 만들어진 - 복잡한 모던한 싱글페이지 웹앱으로 만들기 위해 이 두 기술을 사용할 것이다. 사용자 인증 증명과 점수를 MongoDB 데이터베이스에 저장할 것이다.
 
