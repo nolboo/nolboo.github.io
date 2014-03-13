@@ -65,8 +65,8 @@ Codecademy의 트랙같이 시간을 허무하게 보내지 않고(적어도 나
 1. HTML과 CSS를 잘 알지 못하면 먼저 Codecademy의 [Web Fundamentals](http://www.codecademy.com/tracks/web) 트랙을 끝낸다.
 
 2. *JavaScript: The Definitive Guide*의 서문, 1장과 2장을 읽는다.
-    
-    - 혹은 *프론트엔드 개발자를 위한 자바스크립트 프로그래밍*의 도입, 1장과 2장을 읽는다.  
+
+> - 혹은 *프론트엔드 개발자를 위한 자바스크립트 프로그래밍*의 도입, 1장과 2장을 읽는다.  
 
 3. **매우 중요:** 책에서 마주치는 모든 예제 코드를 타자하고, 파이어폭스나 크롬의 브라우저 콘솔에서 테스트하고 조정해본다(실험한다). 혹은 [JSFiddle](http://jsfiddle.net/)을 이용한다. 사파리는 이용하지 마라. 나는 파이어폭스를 추천한다. - [Firebug Add on](https://addons.mozilla.org/en-us/firefox/addon/firebug/)을 파이어폭스에 추가하고, 코드를 테스트하고 디버깅해본다. 브라우저 *콘솔*은 여러분이 자바스크립트 코드를 쓰고 실행할 수 있는 브라우저의 영역이다.
 그리고 [JSFiddle](http://jsfiddle.net/)은 브라우저를 사용해서 온라인에서 코드를 쓰고 테스트할 수 있는 웹앱이다. HTML, CSS 그리고 자바스크립트(그리고 jQuery)의 조합을 포함하여, 모든 종류의 코드를 테스트할 수 있다.
@@ -74,7 +74,7 @@ Codecademy의 트랙같이 시간을 허무하게 보내지 않고(적어도 나
 4. Codecademy의 [자바스크립트 트랙](http://www.codecademy.com/tracks/javascript) 중 *Introduction to JavaScript* 섹션을 공부한다.
 
 5. *JavaScript: The Definitive Guide*의 3장과 4장을 읽는다.
-    
+
     - 혹은 *프론트엔드 개발자를 위한 자바스크립트 프로그래밍* 서문, 3장과 4장을 읽는다. “비트 연산자(Bitwise Operators)”는 건너뛸 수 있다; 여러분의 자바스크립트 커리어에서 그것들을 사용하는 경우가 거의 없을 것이다.
 
     - 그리고 다시, 멈추고 브라우저 콘솔(혹은 JSFiddle)에 예제 코드를 쓰고 실험한다. - 일부 변수와 코스를 약간 조정해본다.
