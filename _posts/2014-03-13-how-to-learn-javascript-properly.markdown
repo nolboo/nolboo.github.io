@@ -122,7 +122,7 @@ Codecademy의 트랙같이 시간을 허무하게 보내지 않고(적어도 나
 
 ## Get The Ultimate JavaScript Editor: WebStorm
 
-* 첫게 번째 프로젝트를 만들기 전에, 여러분이 자바스크립트 개발자가 되거나 자바스크립트를 자주 사용하려고 한다면, 여기서 잠시 쉬고, [웹스톰 : WebStorm](http://www.jetbrains.com/webstorm/)의 평가판을 내려받는다. 웹스톰을 시작하는 법을 [여기에서](http://2oahu.com/blog/webstorm-javascript/)(이 과정을 위해 별도로 쓰였다) 배운다.
+* 첫번째 프로젝트를 만들기 전에, 여러분이 자바스크립트 개발자가 되거나 자바스크립트를 자주 사용하려고 한다면, 여기서 잠시 쉬고, [웹스톰 : WebStorm](http://www.jetbrains.com/webstorm/)의 평가판을 내려받는다. 웹스톰을 시작하는 법을 [여기에서](http://2oahu.com/blog/webstorm-javascript/)(이 과정을 위해 별도로 쓰였다) 배운다.
 
 > 웹스톰은 의심할 여지 없이 자바스크립트 프로그래밍에 절대적으로 최고의 에디터(IDE)이다. 30일 평가 기간이 끝나면 $49의 비용이 들지만, 여러분이 자바스크립트 개발자로서 할 수 있는 최고의 투자가 될 것이다.
 
