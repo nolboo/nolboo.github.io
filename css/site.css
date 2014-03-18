@@ -49,6 +49,23 @@ p { margin: 1em 0; }
 table {
   font-size: inherit;
   font: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+table th {
+    font-weight: bold;
+}
+table th, table td {
+    border: 1px solid #CCCCCC;
+    padding: 6px 13px;
+}
+table tr {
+    background-color: #FFFFFF;
+    border-top: 1px solid #CCCCCC;
+}
+table tr:nth-child(2n) {
+    background-color: #F8F8F8;
 }
 
 /* Common */
