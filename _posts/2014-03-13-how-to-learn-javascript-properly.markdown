@@ -3,12 +3,12 @@ layout: post
 title: "자바스크립트 제대로 배우기"
 description: "자바스크립트를 처음 배우는 사람에게 모범이 될만한 가이드의 번역. 레딧 등에서 이 가이드를 기준으로 많은 사람들이 자바스크립트를 배우고 있다."
 category: blog
-tags: [javascript, jquery, beginner, guide]
+tags: [javascript, jquery, beginner, guide, studyjs]
 ---
 
 올해는 본격적으로 프로그래밍을 배워보려고 했는데 역시 생각같이 진행되지 않았다.(블로그도 거의 두 달 간 방치ㅠㅠ) 자바스크립트부터 출발하려고 작년 후반 부에 Codecademy [자바스크립트 트랙](http://www.codecademy.com/tracks/javascript)을 며칠간에 걸쳐 완료했는데, 끝낸 후 느낌은 '이제 뭘 하지?'였다. 그런 약간의 멘붕을 겪은 후 이래저래 시간만 보냈다. 자바스크립트라고 마냥 쉬울 리는 없을 터이고, 최고 유명인도 자바스크립트를 [Javascript: 세상에서 제일 잘못 이해되고 있는 언어](http://vandbt.tistory.com/36)라고 이야기하는 것을 보니 아무래도 혼자서 온라인으로만 배우는 것은 한계가 있어 싸부를 모실 생각을 했고, 현역 프로그래머 한 분한테 제자 허락을 받았다^^ 씬난다~
 
-Codecademy의 트랙같이 시간을 허무하게 보내지 않고(적어도 나한테는 그랬다ㅠㅠ) 기본이 될 튜토리얼을 찾는데 [굉장한 자바스크립트 강좌(영문) 소개](http://blog.wystan.net/2011/08/02/great-javascript-articles), [The Best Way to Learn JavaScript](http://code.tutsplus.com/tutorials/the-best-way-to-learn-javascript--net-21954)와 [자바스크립트 제대로 배우기](http://javascriptissexy.com/how-to-learn-javascript-properly/) 등의 글이 눈에 들어왔으나, 첫 번째는 조금 오래되었고 두 번째와 세 번째 중에서 선택하려고 훑어보았는데 - 세 번째 가이드를 기반으로 진행하기로 마음먹었다.
+Codecademy의 트랙같이 시간을 허무하게 보내지 않고(적어도 나한테는 그랬다ㅠㅠ) 기본이 될 튜토리얼을 찾는데 [굉장한 자바스크립트 강좌(영문) 소개](http://blog.wystan.net/2011/08/02/great-javascript-articles), [The Best Way to Learn JavaScript](http://code.tutsplus.com/tutorials/the-best-way-to-learn-javascript--net-21954)([한글 요약](http://blog.nundefined.com/38))와 [자바스크립트 제대로 배우기](http://javascriptissexy.com/how-to-learn-javascript-properly/) 등의 글이 눈에 들어왔으나, 첫 번째는 조금 오래되었고 두 번째와 세 번째 중에서 선택하려고 훑어보았는데 - 세 번째 가이드를 기반으로 진행하기로 마음먹었다.
 
 [자바스크립트 제대로 배우기](http://javascriptissexy.com/how-to-learn-javascript-properly/)는 처음 글이 올라왔을 때 소셜에 [소개한 적](https://twitter.com/n0lb00/status/300800128535633921)이 있는데, 자신의 13살 딸한테 적용했다는 말도 빠지고 글이 **엄청나게** 버전업되었다. 번역 글 내용에는 포함하지 않았지만, 레딧같은 유명 커뮤니티 서비스에서 [>>>New Study Group Starting January 2014!<<< : learn_js_in_seattle](http://www.reddit.com/r/learn_js_in_seattle/comments/1tziaa/new_study_group_starting_january_2014/)와 같이 계속해서 이 가이드 기준으로 온라인 협업 스터디가 여러 번 진행되는 것 같다. 그래서 기본 가이드로 잡고 번역을 블로그에 올리기로 했다.(예전에 요약한 적이 있는데 그 요약을 다시 쓸 수 없을 정도로 개편돼서 처음부터 다시 번역ㅠㅠ) 
 
@@ -209,6 +209,8 @@ var allQuestions = [{question: "Who is Prime Minister of the United Kingdom?", c
 **역자 요약**: 처음에 어렵더라도 절대 포기하지 마라. 나중에 성취감이 보상해줄 것이다. 아무리 작은 프로젝트라도 만들면 링크를 공유해다오!
 
 ### 역자 참조 링크
+
+관심 있으신 분들은 [자바스크립트 제대로 배우기 스터디 그룹](https://www.facebook.com/groups/learnjsproperly/)에 가입신청을 하시면 가입 시기에 상관없이 승인해드리고 있습니다.
 
 * [JS: The Right Way](http://bit.ly/1hzQN9S)
 * [Best of JavaScript, HTML & CSS – 2013](http://flippinawesome.org/2014/01/06/best-of-javascript-html-css-2013/)
