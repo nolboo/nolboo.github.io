@@ -1,8 +1,18 @@
-# Markdown extensions
+---
+layout: post
+title: "깃허브 냄새나는 마크다운 번역"
+description: "깃허브가 유명해지면서 깃허브에서 만든 마크다운 확장인 Github Flavored Markdown(GFM) 확장이 많이 사용되고 있다. 예전 페이지 번역"
+category: blog
+tags: [github, markdown, extra, gfm, syntax]
+---
 
-[Writing on GitHub · GitHub Help](https://help.github.com/articles/writing-on-github)
-[GitHub Flavored Markdown · GitHub Help](https://help.github.com/articles/github-flavored-markdown)
-[Mastering Markdown · GitHub Guides](http://guides.github.com/overviews/mastering-markdown/)
+이것을 예전에 번역해 놓은 것이다. 그 때에는 깃허브의 마크다운에 대한 설명이 형편없었고, 딱 한 페이지만 있었는데 지금은 아래와 같이 가이드와 여러 페이지로 나누어 놓았다.
+
+- [Writing on GitHub · GitHub Help](https://help.github.com/articles/writing-on-github)
+- [GitHub Flavored Markdown · GitHub Help](https://help.github.com/articles/github-flavored-markdown)
+- [Mastering Markdown · GitHub Guides](http://guides.github.com/overviews/mastering-markdown/)
+
+누군가 부탁하여 올려놓긴 하는데 시간이 되면 위의 페이지를 전체적으로 정리할 필요가 있을 것 같다.
 
 ## [GitHub Flavored Markdown](https://help.github.com/articles/github-flavored-markdown)
 
