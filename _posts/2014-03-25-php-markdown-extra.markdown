@@ -3,6 +3,7 @@ layout: post
 title: "PHP 마크다운 확장 번역"
 description: "가장 많이 사용되는 마크다운 확장 PHP Markdown Extra 번역"
 category: blog
+published: false
 tags: [php, markdown, extra, syntax]
 ---
 
