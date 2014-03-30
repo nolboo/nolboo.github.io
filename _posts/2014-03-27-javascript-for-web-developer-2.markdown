@@ -1,12 +1,12 @@
 ---
 layout: post
 title: "HTML 속의 자바스크립트"
-description: "프론트엔드 개발자를 위한 자바스크립트 프로그래밍 2장 자바스크립트란 무엇인가 요약"
+description: "프론트엔드 개발자를 위한 자바스크립트 프로그래밍 2장 HTML 속의 자바스크립트 요약"
 category: blog
 tags: [javascript, jquery, beginner, guide, study, studyjs, facebook, group]
 ---
 
-이 포스팅은 "프론트엔드 개발자를 위한 자바스크립트(2013 인사이트, 한선용 옮김)"에서 발췌 요약한 것이며, 인사이트와 저작권에 대한 부분을 의논한 내용입니다.하여 사전 허락을 받은 것입니다. 자세한 내용은 페이스북 [자바스크립트 제대로 하기 스터디 그룹](https://www.facebook.com/groups/learnjsproperly/)의 [해당 포스트](https://www.facebook.com/groups/learnjsproperly/permalink/364077967076150/?stream_ref=2)를 참조하시기 바랍니다.
+이 포스팅은 "프론트엔드 개발자를 위한 자바스크립트(2013 인사이트, 한선용 옮김)"에서 발췌 요약한 것이며, 인사이트와 저작권에 대한 부분을 의논하여 사전 허락을 받은 것입니다. 자세한 내용은 페이스북 [자바스크립트 제대로 하기 스터디 그룹](https://www.facebook.com/groups/learnjsproperly/)의 [해당 포스트](https://www.facebook.com/groups/learnjsproperly/permalink/364077967076150/?stream_ref=2)를 참조하시기 바랍니다.
 
 # 2장. HTML 속의 자바스크립트
 
@@ -61,3 +61,9 @@ IE 5.5는 쿽스와 표준의 두 가지 문서모드 개념을 처음 도입했
 ### 2.4 `<noscript>` 요소
 
 `<noscript>`는 브라우저가 자바스크립트를 지원하지 않거나 지원이 꺼져 있을 때 대체 콘텐츠를 제공하며, `<script>` 요소를 제외한 모든 HTML 요소를 사용할 수 있다. 브라우저에서 스크립트를 사용할 수 있을 때는 `<noscript>` 요소의 콘텐츠는 결코 표시되지 않습니다.
+
+## 관련 글들
+
+* [자바스크립트란 무엇인가](http://nolboo.github.io/blog/2014/03/20/javascript-for-web-developer-1/)
+* [자바스크립트 제대로 배우기](http://nolboo.github.io/blog/2014/03/13/how-to-learn-javascript-properly/)
+* [자바스크립트 제대로 배우기 스터디 그룹](http://nolboo.github.io/blog/2014/03/18/how-to-learn-javascript-properly-study/)

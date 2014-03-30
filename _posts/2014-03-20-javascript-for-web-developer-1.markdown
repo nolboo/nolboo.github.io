@@ -75,3 +75,8 @@ DOM은 XML을 HTML에서 사용할 수 있도록 확장한 API이며, 전체 페
     - [1장 자바스크립트란 무엇인가 - 99 perspiration](http://bit.ly/1oy7S75)
     - [small talk — 1장 자바스크립트란 무엇인가](http://bit.ly/OzvzPN)
 
+## 관련 글들
+
+* [자바스크립트란 무엇인가](http://nolboo.github.io/blog/2014/03/20/javascript-for-web-developer-1/)
+* [자바스크립트 제대로 배우기](http://nolboo.github.io/blog/2014/03/13/how-to-learn-javascript-properly/)
+* [자바스크립트 제대로 배우기 스터디 그룹](http://nolboo.github.io/blog/2014/03/18/how-to-learn-javascript-properly-study/)

@@ -136,4 +136,8 @@ SM에는 없는 취소선 텍스트 문법을 추가한다.
 
 ### Code
 
+## 관련 글들
+
+* [PHP 마크다운 확장 번역](http://nolboo.github.io/blog/2014/03/25/php-markdown-extra/)
+* [존 그루버 마크다운 페이지 번역](http://nolboo.github.io/blog/2013/09/07/john-gruber-markdown/)
 

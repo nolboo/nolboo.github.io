@@ -699,6 +699,11 @@ or <a href="http://search.msn.com/" title="MSN Search">MSN</a>.</p>
 
 그러나, 마땅히 표준 문서에 가까운 글이 몇년 간 제대로 번역되지 않는(?) 것이 안타까워 번역해보았다.(거의 노가다:;)
 
+## 관련 글들
+
+* [PHP 마크다운 확장 번역](http://nolboo.github.io/blog/2014/03/25/php-markdown-extra/)
+* [깃허브 냄새나는 마크다운 번역](http://nolboo.github.io/blog/2014/03/25/github-flavored-markdown/)
+
    [1]: http://daringfireball.net/projects/markdown/ (Permalink to Daring Fireball: Markdown)
    [2]: http://www.aaronsw.com/2002/html2text/
    [3]: http://docutils.sourceforge.net/mirror/setext.html

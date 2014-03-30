@@ -411,3 +411,8 @@ PHP Markdown Extra는 단어의 중간에 밑줄이 있기 때문에 강조하�
 PHP Markdown Extra는 콜론(`:`)과 파이프(`|`)를 백슬래쉬 예외처리에 추가한다. 정의 목록과 표로 변환되는 것을 예방한다.
 
 ### Thanks
+
+## 관련 글들
+
+* [깃허브 냄새나는 마크다운 번역](http://nolboo.github.io/blog/2014/03/25/github-flavored-markdown/)
+* [존 그루버 마크다운 페이지 번역](http://nolboo.github.io/blog/2013/09/07/john-gruber-markdown/)
