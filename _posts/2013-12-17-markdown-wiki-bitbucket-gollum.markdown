@@ -153,11 +153,13 @@ Creole, Markdown, reStructuredText, Textile 등의 문법을 지원한다. 주�
 
 * 표는 아래와 같이 나타나며, 더 자세한 것은 [표 문법](https://bitbucket.org/tutorials/markdowndemo/overview#markdown-header-tables)을 참조한다.
 
+
 | Right      | Left   | Center  |
 | ---------: | :----- | :-----: |
 | Computer   | $1600  | one     |
 | Phone      | $12    | three   |
 | Pipe       | $1     | eleven  |
+
 
 * 주석과 페이지 목차인 `[TOC]` [문법](http://pythonhosted.org/Markdown/extensions/toc.html)를 지원한다. 단, 골룸에선 지원되지 않는다.
 
