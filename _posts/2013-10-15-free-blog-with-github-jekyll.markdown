@@ -231,6 +231,7 @@ Pygments는 파이썬 기반 구문 하일라이터이며, 코드를 이쁘게 �
   1. [옥토프레스](http://octopress.org/) : 이 블로그는 여러 편의 때문에 옥토프레스로 먼저 만들어졌다. 설치방법은 [옥토프레스로 블로깅하기](http://j.mp/1b4M9AD) 참조.
   2. [지킬 부트스트랩](http://jekyllbootstrap.com/)
 * 지킬을 깃허브에 적용할 때 아쉬운 점은 보안상의 문제로 플러그인을 사용할 수 없다는 것이다. 그러나 사이트를 아예 제너레이트한 다음 깃허브로 푸시하면 대부분 문제없이 사용할 수 있다. 다양한 플러그인은 [지킬 사이트](http://jekyllrb.com/docs/plugins/)와 [이곳](http://www.jekyll-plugins.com/)에서 볼 수 있다.
+* [놀부의 마크다운 사용법 - 무료 툴을 중심으로 한 워크플로우](http://nolboo.github.io/blog/2014/04/15/how-to-use-markdown/)
 
    [1]: http://jekyllrb.com/
    [2]: http://farm8.staticflickr.com/7413/10289345933_7fefe3a053.jpg

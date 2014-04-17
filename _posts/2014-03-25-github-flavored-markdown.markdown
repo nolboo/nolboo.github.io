@@ -140,4 +140,4 @@ SM에는 없는 취소선 텍스트 문법을 추가한다.
 
 * [PHP 마크다운 확장 번역](http://nolboo.github.io/blog/2014/03/25/php-markdown-extra/)
 * [존 그루버 마크다운 페이지 번역](http://nolboo.github.io/blog/2013/09/07/john-gruber-markdown/)
-
+* [놀부의 마크다운 사용법 - 무료 툴을 중심으로 한 워크플로우](http://nolboo.github.io/blog/2014/04/15/how-to-use-markdown/)

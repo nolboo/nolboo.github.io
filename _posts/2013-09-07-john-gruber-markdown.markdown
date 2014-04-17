@@ -701,6 +701,7 @@ or <a href="http://search.msn.com/" title="MSN Search">MSN</a>.</p>
 
 ## 관련 글들
 
+* [놀부의 마크다운 사용법 - 무료 툴을 중심으로 한 워크플로우](http://nolboo.github.io/blog/2014/04/15/how-to-use-markdown/)
 * [PHP 마크다운 확장 번역](http://nolboo.github.io/blog/2014/03/25/php-markdown-extra/)
 * [깃허브 냄새나는 마크다운 번역](http://nolboo.github.io/blog/2014/03/25/github-flavored-markdown/)
 

@@ -187,3 +187,4 @@ category: blog
 
 * [지킬 공식 사이트 한글 번역](http://svperstarz.github.io/jekyll-docs-ko/)
 * [지킬로 깃허브에 무료 블로그 만들기](http://nolboo.github.io/blog/2013/10/15/free-blog-with-github-jekyll/)
+* [놀부의 마크다운 사용법 - 무료 툴을 중심으로 한 워크플로우](http://nolboo.github.io/blog/2014/04/15/how-to-use-markdown/)
