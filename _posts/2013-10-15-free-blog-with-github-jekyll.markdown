@@ -10,7 +10,7 @@ tags: [jekyll, github]
 
 ## 설치
 
-*맥 OS X에서 터미널을 원활히 사용하기 위해서는 Xcode와 커맨드 라인 툴은 기본으로 [설치](https://developer.apple.com/kr/support/xcode/)되어 있어야 한다.*
+***맥 OS X에서 터미널을 원활히 사용하기 위해서는 Xcode와 커맨드 라인 툴은 기본으로 [설치](https://developer.apple.com/kr/support/xcode/)되어 있어야 한다.***
 
 맥 OS X에는 루비가 이미 설치되어 있으므로 터미널에서 `ruby -v`를 입력하여 루비 버전을 체크한 후 다음 명령으로 지킬을 설치한다.
 
