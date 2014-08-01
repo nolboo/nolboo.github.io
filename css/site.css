@@ -352,7 +352,7 @@ pre.terminal code {
 
 /* Quotes */
 blockquote {
-  margin: 1em 3em;
+  margin: 1em .5em;
   color: #666;
   border-left: 4px solid #3073b3;
   padding-left: 1em;
