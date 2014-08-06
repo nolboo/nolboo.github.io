@@ -6,6 +6,8 @@ category: blog
 tags: [php, markdown, extra, syntax]
 ---
 
+<div id="toc"><p class="toc_title">목차</p></div>
+
 예전에 [존 그루버 마크다운 페이지 번역](http://nolboo.github.io/blog/2013/09/07/john-gruber-markdown/) 포스트에 이어 마크다운에 관한 글은 참 오래간만에 올린다. 존 그루버가 마크다운 페이지가 워낙 오랫동안 업데이트되지 않아 여러 가지 확장 버전이 나왔는데 그 중 깃허브를 빼놓고는 가장 많이 사용되는 PHP Markdown Extra 페이지를 번역해보았다. 문맥이 이상하지 않는 선에서 발췌했으니 정확하게 알고 싶은 사람은 반드시 원본을 참조하기 바란다.
 
 원본: [PHP Markdown Extra](http://michelf.ca/projects/php-markdown/extra/)

@@ -6,6 +6,8 @@ category: blog
 tags: [markdown, workflow, blog, wiki, email]
 ---
 
+<div id="toc"><p class="toc_title">목차</p></div>
+
 마크다운으로 문서 작업할 때 가장 큰 장점은 **빠르고 쉽다**는 것이다.(마크다운 툴을 고를 때에도 빠른 속도에 중점을 둔다.) 마크다운을 지원하는 앱이나 서비스는 많다. 최근에는 쏟아져 나온다는 표현이 적당할 정도이다. 블로그 플랫폼만 보더라도 유명서비스인 텀블러, 워드프레스 등이 마크다운을 지원하게 되었고, [Scriptogr.am](http://scriptogr.am/), [Calepin](http://calepin.co/), [Svbtle](https://svbtle.com/), [Ghost](https://ghost.org/) 등의 마크다운 전용 블로그 플랫폼이 앞다퉈 선보이고 있다. 이러한 마크다운의 최근 인기는 아는 사람은 알고 모르는 사람만 모른다.(응?) 그래서, 이 글에선 마크다운이 왜 그렇게 인기가 있는지 간략하게나마 살펴보고, 현재 내가 마크다운을 활용하고 있는 워크플로우를 설명한다.
 
 마크다운에 대한 글을 이미 [여러 번 블로그에 올렸기](http://nolboo.github.io/search/?tags=markdown) 때문에 이 글에서는 마크다운을 실제 활용할 때 느낀 장단점부터 살펴보자.

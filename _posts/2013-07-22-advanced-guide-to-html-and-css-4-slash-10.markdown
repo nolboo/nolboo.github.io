@@ -6,6 +6,8 @@ category: blog
 tags: [Advanced, CSS, HTML, reponsive, web, design]
 ---
 
+<div id="toc"><p class="toc_title">목차</p></div>
+
 원본 : [An Advanced Guide to HTML & CSS - LESSON 4 : Responsive Web Design][1]
 
 인터넷은 누구도 예측할 수 없을 정도로 빠르게, 미친듯이 성장했다. 최근 수 년간 모바일 성장이 현장에서 폭발하고 있다. 모바일 인터넷 사용의 성장도 일반 인터넷 사용의 성장을 훨씬 뛰어넘고 있다.

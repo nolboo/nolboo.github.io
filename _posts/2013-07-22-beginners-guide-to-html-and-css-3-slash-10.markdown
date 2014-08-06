@@ -6,6 +6,8 @@ category: blog
 tags: [Beginner, CSS, HTML, box, positioning]
 ---
 
+<div id="toc"><p class="toc_title">목차</p></div>
+
 원본 : [A Beginner’s Guide to HTML & CSS - LESSON 3 : Box Model & Positioning][1]
 
 HTML과 CSS를 완전히 이해하는데 필요한 하나의 원칙은 박스모델이다.

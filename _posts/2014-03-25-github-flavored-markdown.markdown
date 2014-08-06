@@ -6,6 +6,8 @@ category: blog
 tags: [github, markdown, extra, gfm, syntax]
 ---
 
+<div id="toc"><p class="toc_title">목차</p></div>
+
 번역할 당시에는 딱 한 페이지만 있었는데 지금은 아래와 같이 가이드와 여러 페이지로 나누어서 설명해 놓았다. 이 글은 예전 페이지의 번역이다.
 
 - [Writing on GitHub · GitHub Help](https://help.github.com/articles/writing-on-github)
@@ -100,7 +102,7 @@ SM에는 없는 취소선 텍스트 문법을 추가한다.
 
 ### Emoji autocomplete
 
-`:`를 타이핑하면 이모티콘 추천 목록을 불러온다.
+`:`를 타이핑하면 이모티콘 추천 목록을 불러온다. :+1:
 
 ### Issue autocompletion
 

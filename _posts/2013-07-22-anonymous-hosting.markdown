@@ -6,6 +6,8 @@ category: blog
 tags: [anonymous, hosting, bitcoin]
 ---
 
+<div id="toc"><p class="toc_title">목차</p></div>
+
 원본: [How To Get 100% Anonymous Web Hosting][1]
 
 익명 목적으로 사용하는 별도의 컴퓨터가 없다면 인터넷 접속하기 전과 후에 쿠키를 지워야 한다. Piriform의 [CCleaner][2]가 널리 사용되는 무료 선택사항이다.

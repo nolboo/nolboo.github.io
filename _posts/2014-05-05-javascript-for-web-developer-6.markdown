@@ -6,6 +6,8 @@ category: blog
 tags: [javascript, jquery, beginner, guide, study, studyjs, facebook, group]
 ---
 
+<div id="toc"><p class="toc_title">목차</p></div>
+
 이 포스팅은 "프론트엔드 개발자를 위한 자바스크립트(2013 인사이트, 한선용 옮김)"에서 발췌 요약한 것이며, 인사이트와 저작권에 대한 부분을 의논하여 사전 허락을 받은 것입니다. 자세한 내용은 페이스북 [자바스크립트 제대로 하기 스터디 그룹](https://www.facebook.com/groups/learnjsproperly/)의 [해당 포스트](https://www.facebook.com/groups/learnjsproperly/permalink/364077967076150/?stream_ref=2)를 참조하시기 바랍니다.
 
 ## 5장. 참조 타입

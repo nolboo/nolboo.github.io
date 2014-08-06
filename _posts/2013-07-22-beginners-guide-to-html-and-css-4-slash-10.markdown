@@ -6,6 +6,8 @@ category: blog
 tags: [Beginner, CSS, HTML, typography]
 ---
 
+<div id="toc"><p class="toc_title">목차</p></div>
+
 원본 : [A Beginner’s Guide to HTML &amp; CSS - LESSON 4 : Typography”][1]
 
 웹 타이포그래피는 최근 몇년 동안 지속적으로 성장해왔다. 이러한 대중적 성장은 몇 가지 이유가 있지만, 웹 사이트에 자신의 웹 폰트를 (얼마나 쉽게) 적용(emded)할 수 있는가가 가장 큰 이유이다.

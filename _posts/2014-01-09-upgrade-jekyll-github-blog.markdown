@@ -6,6 +6,8 @@ category: blog
 tags: [jekyll, blog, liquid, pagination, tag, category]
 ---
 
+<div id="toc"><p class="toc_title">목차</p></div>
+
 [블로그를 지킬로 변경](http://nolboo.github.io/blog/2013/12/10/change-to-jekyll/)하고 꼭 필요한 기능을 중심으로 서서히 진화시켜 나가고 있다. 그런데 어찌된 일인지 이 블로그 저장소를 스타하신 분이 88분, 포크하신 분이 9분, 와치하시는 분이 33분이나 된다. 덜덜;; 블로그 때문인지 번역글 위키 때문인지는 모르겠지만 둘다 열심히 해야한다는 생각은 마구마구 들었지만, 연말과 새해에 걸쳐 거의 한달간 심한 담걸림증과 감기로 글 하나도 제대로 쓰기 힘들었다 - 고 변명해본다. :-)
 
 며칠 전 깃허브는 [CDN 호스팅 속도를 더욱 높이고](https://github.com/blog/1715-faster-more-awesome-github-pages), [트래픽 분석](https://github.com/blog/1672-introducing-github-traffic-analytics)을 선보이고, 부트스트랩 비주얼 툴 [Easel을 인수](http://blog.easel.io/blog/2014/01/06/easel-acquired-by-github/)하는 등 놀라운 발전을 거듭하고 있는 것 같다.

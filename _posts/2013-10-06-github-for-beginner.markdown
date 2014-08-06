@@ -6,6 +6,8 @@ category: blog
 tags: [beginner, git, github]
 ---
 
+<div id="toc"><p class="toc_title">목차</p></div>
+
 원문 :
 
   1. [GitHub For Beginners: Don’t Get Scared, Get Started][1]

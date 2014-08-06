@@ -6,6 +6,8 @@ category: blog
 tags: [jekyll, github]
 ---
 
+<div id="toc"><p class="toc_title">목차</p></div>
+
 [Jekyll][1]은 여러(특히 마크다운) 형태의 텍스트와 테마를 소스로 하여 정적 HTML 웹사이트를 제너레이트하는 툴이다. Ruby 스크립트로 만들어져 있으나, 블로그를 만드는 데에는 루비를 전혀 몰라도 된다. 워드프레스를 사용하여 블로그를 만드는 노력이면 워드프레스보다 훨씬 더 빠르고 보안에도 뛰어난 블로그를 깃허브에 무료로 만들 수 있고, 별도의 페이지를 만들기도 쉽다. 또한, HTML과 CSS에 대한 약간의 지식만 있으면 페이지는 물론 각 포스트마다 다른 레이아웃을 줄 수도 있다.
 
 ## 설치
@@ -147,7 +149,7 @@ tags: [jekyll, github]
 
 ## 필수 엔진 설치
 
-### 마크다운 프로세싱 엔진 설치 : rdiscount, kramdown, redcarpet
+### 마크다운 프로세싱 엔진 설치
 
 RDiscount는 C로된 마크다운 프로세싱 엔진이다. `[sudo] gem install rdiscount`로 설치한다. kramdown과 redcarpet 등도 동일한 방법으로 설치할 수 있다. 기본 마크다운을 사용한다면 차후에 좀 더 필요성을 느낄 때 설치하여도 된다.
 

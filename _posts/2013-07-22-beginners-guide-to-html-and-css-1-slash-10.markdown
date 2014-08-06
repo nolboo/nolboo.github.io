@@ -6,6 +6,8 @@ category: blog
 tags: [Beginner, CSS, HTML, terminology, syntax, introduction]
 ---
 
+<div id="toc"><p class="toc_title">목차</p></div>
+
 원본 : [A Beginner’s Guide to HTML &amp; CSS - LESSON 1 : Terminology, Syntax, & Introduction][1]
 
 HTML은 콘텐츠에 구조와 의미를 주기 위한 하이퍼 텍스트 마크업 언어이고, CSS(**C**ascading **S**tyle **S**heets)는 콘텐츠에 스타일과 모양을 주기위한 프리젠테이션 언어이다. 두 언어는 서로에 독립적이며, CSS가 HTML 문서 안에 있을 필요는 없고, 그 반대도 마찬가지다.

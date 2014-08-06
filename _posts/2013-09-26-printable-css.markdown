@@ -6,6 +6,8 @@ category: blog
 tags: [css, print]
 ---
 
+<div id="toc"><p class="toc_title">목차</p></div>
+
 _원문의 영어 단어는 쉬운데 해석하기가 어렵고 필요없는(?) 말이 많아서 필요한 부분만 발췌하였습니다._
 
 원문 : [Make your website printable with CSS][1]

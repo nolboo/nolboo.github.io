@@ -6,6 +6,8 @@ category: blog
 tags: [Beginner, CSS, HTML, background, gradient]
 ---
 
+<div id="toc"><p class="toc_title">목차</p></div>
+
 원본 : [A Beginner’s Guide to HTML & CSS - LESSON 5 : Backgrounds & Gradients][1]
 
 백그라운드(배경)은 작게 쓰이거나 크게 쓰이거나 웹사이트 전체 디자인에 중요한 시각적 효과를 준다.

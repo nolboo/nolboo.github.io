@@ -6,6 +6,8 @@ category: blog
 tags: [Advanced, CSS, HTML, jQuery]
 ---
 
+<div id="toc"><p class="toc_title">목차</p></div>
+
 원본 : [An Advanced Guide to HTML &amp; CSS - LESSON 6 : jQuery][1]
 
 웹 디자이너나 프론트 엔드 개발자가 되려면 일반적으로 어느 정도는 (종종 JS라고 불리우는) 자바스크립트와 jQuery에 부딪칠 것이다. 상위 10,000 웹사이트에서 자바스크립트는 [92%가 넘게][2] 사용되고, jQuery는 [63%를 넘게][3] 사용되고 있다. 말할 필요도 없이 매우 인기가 있다. 미래의 어떤 시기에 자신의 행동을 구축하기위해 자바스크립트나 jQuery를 [코딩하길][4] 열망할 수도 있다.

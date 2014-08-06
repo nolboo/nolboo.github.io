@@ -6,6 +6,8 @@ category: blog
 tags: [bootstrap, css, css3, first, framework, mobile, responsive, web, design, twitter]
 ---
 
+<div id="toc"><p class="toc_title">목차</p></div>
+
 원문 : [What’s new in Twitter Bootstrap 3?][1]
 
 ## Scaffolding

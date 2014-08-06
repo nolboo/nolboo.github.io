@@ -6,6 +6,8 @@ category: blog
 tags: [markdown, wiki, bitbucket, gollum, git, github]
 ---
 
+<div id="toc"><p class="toc_title">목차</p></div>
+
 위키 쪽은 오래 전부터 기웃거렸지만 막상 사용하려면 맘에 드는 제품이나 서비스가 없어서, 해오던 대로 가볍고 쓸만한 메모 앱 여러 개를 용도에 따라 나누어 사용하는 것으로 대신하고 있었다. 그러나, 이젠 왠만한 메모앱으로 커버할 수 없을 정도로 저장된 정보가 많아져서 성능조차 느려졌고, 좀 더 체계적으로 정리할 필요성을 강하게 느끼고 있었다.
 
 [위키](http://en.wikipedia.org/wiki/Wiki_software)는 1994년에 워드 커닝엄의 위키위키웹이 최초이며, 현재는 [많은 위키 소프트웨어가 나와있다](http://en.wikipedia.org/wiki/List_of_wiki_software). [위키 소프트웨어의 비교](http://en.wikipedia.org/wiki/Comparison_of_wiki_software)와 [마법사](http://www.wikimatrix.org/wizard.php) 등을 이용해 여러가지를 비교하면서 내가 생각하는 기존 위키 앱의 단점을 열거해보았다.

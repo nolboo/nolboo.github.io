@@ -6,6 +6,8 @@ category: blog
 tags: [collaboration, git, github, project]
 ---
 
+<div id="toc"><p class="toc_title">목차</p></div>
+
 원문 : [How to Collaborate On GitHub][1]
 
 필요한 부분만 완전 요약하여 번역하였으니 원문을 반드시 참조하세요!

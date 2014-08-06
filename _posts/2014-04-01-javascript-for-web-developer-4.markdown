@@ -6,15 +6,17 @@ category: blog
 tags: [javascript, jquery, beginner, guide, study, studyjs, facebook, group]
 ---
 
+<div id="toc"><p class="toc_title">목차</p></div>
+
 이 포스팅은 "프론트엔드 개발자를 위한 자바스크립트(2013 인사이트, 한선용 옮김)"에서 발췌 요약한 것이며, 인사이트와 저작권에 대한 부분을 의논하여 사전 허락을 받은 것입니다. 자세한 내용은 페이스북 [자바스크립트 제대로 하기 스터디 그룹](https://www.facebook.com/groups/learnjsproperly/)의 [해당 포스트](https://www.facebook.com/groups/learnjsproperly/permalink/364077967076150/?stream_ref=2)를 참조하시기 바랍니다.
 
 ## 4장. 변수와 스코프, 메모리
 
 자바스크립트 변수는 느슨한 타입을 취하여, 변수의 이름만 그대로이고, 값과 데이타 타입은 스크립트 실행 중에도 바뀔 수 있다.
 
-### 4.1 원시 값과 참조 값(PRIMITIVE AND REFERENCE VALUES)
+### 4.1 원시 값과 참조 값
 
-ECMAScript의 변수는 원시 값과 참조 값 두가지 타입의 데이터를 저장할 수 있다.
+ECMAScript의 변수는 원시 값과 참조 값(Primitive And Reference Values) 두가지 타입의 데이터를 저장할 수 있다.
 
 원시 값은 단순한 데이터이며, Undefined, Null, 불리언, 숫자, 문자열이다. 변수에 저장된 실제 값을 조작하기 때문에 '값으로' 접근한다고 한다. 원시 값은 고정된 크기를 가지며 스택 메모리에 저장된다.
 
@@ -53,14 +55,16 @@ instanceof 연산자는 변수가 주어진 참조 타입의 인스턴트일 때
 
 내부 컨텍스트는 스코프 체인을 통해 외부 컨텍스트 전체에 접근할 수 있지만 외부 컨텍스트는 내부 컨텍스트에 대해 전혀 알 수 없다.
 
-#### 스코프 체인 확장(Scope Chain Augmentation)
+#### 스코프 체인 확장
 
+**Scope Chain Augmentation**
 실행 컨텍스트에는 전역 컨텍스트와 함수 컨텍스트 두 가지 타입만 있지만(eval()은 세 번째 타입이 있다) 스코프 체인을 확장할 수 있는 방법도 있다.
 
 try-catch 문의 catch 블록과 with 문은 모두 스코프 체인 앞 부분에 임시로 변수 객체를 만들며 코드 실행이 끝나면 사라진다. with 문에서는 해당 객체가 스코프 체인에 추가되며 catch 문에서는 에러 객체를 선언하는 변수 객체가 생성된다.
 
-#### 자바스크립트에는 블록 레벨 스코프가 없다(No Block-Level Scopes)
+#### 자바스크립트에는 블록 레벨 스코프가 없다
 
+**No Block-Level Scopes**
 블록 레벨 스코프를 지원하는 언어에서는 for문의 초기화 부분에서 선언한 변수가 오직 for문의 컨텍스트 안에서만 존재한다. 그러나 자바스크립트에서는 for문에서 선언한 i변수가 루프 실행이 끝난 후에도 존재한다.
 
 ##### 변수 선언

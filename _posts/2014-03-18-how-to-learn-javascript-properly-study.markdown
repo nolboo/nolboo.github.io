@@ -6,6 +6,8 @@ category: blog
 tags: [javascript, jquery, beginner, guide, study, studyjs, facebook, group]
 ---
 
+<div id="toc"><p class="toc_title">목차</p></div>
+
 저번 목요일에 [자바스크립트 제대로 배우기](http://nolboo.github.io/blog/2014/03/13/how-to-learn-javascript-properly/)를 블로그에 올리고, 트위터와 페이스북, 생활코딩에 올리면서 같이 스터디할 분을 [요청](https://twitter.com/n0lb00/status/444047533950926848)했다. 30분 뒤에 트위터에서 [@minieetea 강미경](https://twitter.com/minieetea)님이 첫 반응을 보이셨고, 페이스북과 [페이스북 페이지](https://www.facebook.com/NolbooNews)는 반응이 거의 없었다.(원래 페이스북은 트위터보다 반응성은 훨씬 느리다) 1시간 반 뒤에 [생활코딩](https://www.facebook.com/groups/codingeverybody/permalink/733097320064140/?stream_ref=21)에도 다음과 같이 포스팅하였다.
 
 > 자바스크립트를 처음 배우는 스터디 그룹의 초기 멤버에 참여하지 않으실래요?

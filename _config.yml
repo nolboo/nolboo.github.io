@@ -2,7 +2,7 @@ title: Nolboo's Blog
 
 # Oveerriden by GitHub Pages: https://help.github.com/articles/using-jekyll-with-pages#configuring-jekyll
 safe: true
-pygments: true
+highlighter: pygments
 lsi: false
 
 permalink: pretty
@@ -21,6 +21,9 @@ redcarpet:
 
 # redcarpet:
 #    extensions: ["smart"]
+
+gems:
+  - jemoji
 
 paginate: 10
 

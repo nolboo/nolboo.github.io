@@ -6,6 +6,8 @@ category: blog
 tags: [javascript, jquery, beginner, guide, study, studyjs, facebook, group]
 ---
 
+<div id="toc"><p class="toc_title">목차</p></div>
+
 같이 공부하려고 [페이스북 스터디 그룹](https://www.facebook.com/groups/learnjsproperly/)을 3월 13일에 만들었는데, 일주일도 안되서 멤버수가 200분을 훨씬 넘겼다. 그룹과 관련된 이것저것을 챙기다보다 정작 중요한 공부가 일주일이나 늦춰졌다. 가이드북으로 "프론트엔드 개발자를 위한 자바스크립트(2013 인사이트, 한선용 옮김)"를 정했고 첫 1장을 간단하게 요약한다.
 
 ## 1장. 자바스크립트란 무엇인가

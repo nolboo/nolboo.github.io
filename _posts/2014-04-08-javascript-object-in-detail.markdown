@@ -6,6 +6,8 @@ category: blog
 tags: [javascript, jquery, beginner, guide, study, studyjs, facebook, group]
 ---
 
+<div id="toc"><p class="toc_title">목차</p></div>
+
 페이스북 [자바스크립트 제대로 하기 스터디 그룹](https://www.facebook.com/groups/learnjsproperly/)에서 기본 가이드인 [자바스크립트 제대로 배우기](http://nolboo.github.io/blog/2014/03/13/how-to-learn-javascript-properly/) 중 자바스크립트 객체에 대한 [JavaScript is Sexy: JavaScript Objects in Detail](http://javascriptissexy.com/javascript-objects-in-detail/)를 번역하였습니다.
 
 ## 자바스크립트 객체 상세
