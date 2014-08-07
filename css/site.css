@@ -519,36 +519,36 @@ img.aligncenter{
 /*****************************************************************************/
 
 div#toc {
-  background:none repeat scroll 0 0 #f9f9f9;
-  border:1px solid #aaa;
-  display:table;
-  margin-left:1em;
-  margin-bottom:1em;
-  width:auto;
-  padding:10px 20px;
+  background: none repeat scroll 0 0 #f9f9f9;
+  border: 1px solid #aaa;
+  display: table;
+  margin-left: 1em;
+  margin-bottom: 1em;
+  width: auto;
+  padding: 10px 20px;
   float: right;
 }
 div#toc ul {
-  list-style:none;
-  margin-left:0;
-  padding-left:.5em;
-  font-size:80%;
-  line-height:1.5;
+  list-style: none;
+  margin-left: 0;
+  padding-left: .5em;
+  font-size: 80%;
+  line-height: 1.5;
 }
 .toc_title {
-  font-size:95%;
-  font-weight:400;
-  color:#1C1C1C;
-  line-height:1.2em;
-  margin:.5em 0;
+  font-size: 95%;
+  font-weight: 400;
+  color: #1C1C1C;
+  line-height: 1.2em;
+  margin: .5em 0;
 }
 div#toc ul li ul,div#toc1 ul li ul,.mobile div#toc1 ul li ul {
-  margin-bottom:.75em;
+  margin-bottom: .75em;
 }
 div#toc ul li ul li ul,div#toc1 ul li ul li ul,.mobile div#toc1 ul li ul li ul {
-  margin-bottom:.25em;
+  margin-bottom: .25em;
 }
 div#toc1 ul,.mobile div#toc1 ul {
-  list-style:none;
-  margin:.25em 0 1.5em 1em;
+  list-style: none;
+  margin: .25em 0 1.5em 1em;
 }
