@@ -6,7 +6,7 @@ category: blog
 tags: [python, beginner, guide]
 ---
 
-원문 : [The Best Way to Learn Python - Tuts+ Code Article](https://code.tutsplus.com/articles/the-best-way-to-learn-python--net-26288)
+원문 : [The Best Way to Learn Python - Tuts+ Code Article](https://code.tutsplus.com/articles/the-best-way-to-learn-python--net-26288)(참조를 위해 최소한으로 요약 번역하였으니 원문을 꼭 참조하세요!)
 
 <!-- <div id="toc"><p class="toc_title">목차</p></div> -->
 
