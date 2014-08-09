@@ -6,7 +6,7 @@ category: blog
 tags: [blog, github, octopress]
 ---
 
-<div id="toc"><p class="toc_title">목차</p></div>
+<!-- <div id="toc"><p class="toc_title">목차</p></div> -->
 
 ## 이전 동기와 간단한 과정 소개
 

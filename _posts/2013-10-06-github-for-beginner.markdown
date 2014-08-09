@@ -6,9 +6,9 @@ category: blog
 tags: [beginner, git, github]
 ---
 
-<div id="toc"><p class="toc_title">목차</p></div>
-
 원문 :  1. [GitHub For Beginners: Don’t Get Scared, Get Started][1] 2. [GitHub For Beginners: Commit, Push And Go][2]
+
+<div id="toc"><p class="toc_title">목차</p></div>
 
 [중략] 깃의 필요성 등에 대해 역설함.
 

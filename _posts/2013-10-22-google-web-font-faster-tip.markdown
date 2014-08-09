@@ -6,9 +6,9 @@ category: blog
 tags: [css, font, google, html, webfont]
 ---
 
-<div id="toc"><p class="toc_title">목차</p></div>
-
 원문 : [7 Tips to Load Google Web Fonts Faster][1]
+
+<div id="toc"><p class="toc_title">목차</p></div>
 
 어떻게 사이트에서 [구글 폰트][2]를 빠르게 로드할 수 있을까? 스타일되지 않거나 다른 기본 폰트가 로드된 다음에 번쩍거리며 구글 웹 폰트로 대치되는 경우를 보는 것은 그리 드문 현상이 아니다. 이것은 방문자에게 초기 몇 초 동안이라도 당신의 웹사이트 디자인 경험을 망치고 방문자들을 괴롭힌다. 그러므로 웹폰트를 더 빠르고 정확한 방법으로 보여줄 필요가 있다.
 

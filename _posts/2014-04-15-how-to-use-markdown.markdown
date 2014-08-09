@@ -64,15 +64,15 @@ tags: [markdown, workflow, blog, wiki, email]
 
 ### 서브라임 텍스트 3와 플러그인들
 
-#### [Sublime Text](http://www.sublimetext.com/)
+#### Sublime Text
 
-서브라임 텍스트 3(ST3)는 빠른 속도와 수많은 플러그인 등의 장점으로 프로그래밍 에디터로 많이 사용하지만, 마크다운 에디터로서도 손색이 없어서 내가 글을 쓸 때 가장 애용하는 도구이다. 커다란 마크다운 파일을 다룰 때에도 거의 느려지지 않고 ST3가 가진 강력한 속도를 그대로 누릴 수 있다. 또한, 문서 검색이나 디렉터리(서브 디렉터리를 포함) 내에서의 검색 기능(<kbd>⌘</kbd>+<kbd>⇧</kbd>+<kbd>F</kbd>)도 강력해서 많은 양의 마크다운 문서 중에서 내가 원하는 것을 빠르게 찾을 수 있다.
+[서브라임 텍스트 3(ST3)](http://www.sublimetext.com/)는 빠른 속도와 수많은 플러그인 등의 장점으로 프로그래밍 에디터로 많이 사용하지만, 마크다운 에디터로서도 손색이 없어서 내가 글을 쓸 때 가장 애용하는 도구이다. 커다란 마크다운 파일을 다룰 때에도 거의 느려지지 않고 ST3가 가진 강력한 속도를 그대로 누릴 수 있다. 또한, 문서 검색이나 디렉터리(서브 디렉터리를 포함) 내에서의 검색 기능(<kbd>⌘</kbd>+<kbd>⇧</kbd>+<kbd>F</kbd>)도 강력해서 많은 양의 마크다운 문서 중에서 내가 원하는 것을 빠르게 찾을 수 있다.
 
 ST3 자체의 속도와 검색 외에도 플러그인으로 여러 가지 기능을 추가할 수 있다. 주요 플러그인을 살펴보자.
 
-#### [MarkdownEditing](https://github.com/SublimeText-Markdown/MarkdownEditing): 편집
+#### MarkdownEditing: 편집
 
-마크다운 문법 하이라이트와 그 외 편리한 기능을 추가해주기 때문에 필수 플러그인이다. 문법 하이라이트는 밋밋한 마크다운에 강약을 주어 구조적으로 볼 수 있게 해준다. 마치 실시간 프리뷰와 편집 모드의 중간 정도로 보는 느낌이 든다. 플러그인 설치 후에 확장자가 .md, .markdown인 파일을 열어보면 한눈에 알 수 있다. 아래 그림은 light 테마를 적용한 문법 하이라이트 예:
+[MarkdownEditing](https://github.com/SublimeText-Markdown/MarkdownEditing)은 마크다운 문법 하이라이트와 그 외 편리한 기능을 추가해주기 때문에 필수 플러그인이다. 문법 하이라이트는 밋밋한 마크다운에 강약을 주어 구조적으로 볼 수 있게 해준다. 마치 실시간 프리뷰와 편집 모드의 중간 정도로 보는 느낌이 든다. 플러그인 설치 후에 확장자가 .md, .markdown인 파일을 열어보면 한눈에 알 수 있다. 아래 그림은 light 테마를 적용한 문법 하이라이트 예:
 
 ![마크다운에디팅 라이트 테마](https://raw.github.com/SublimeText-Markdown/MarkdownEditing/master/screenshots/light.png)
 
@@ -80,20 +80,20 @@ ST3 자체의 속도와 검색 외에도 플러그인으로 여러 가지 기능
 - 괄호 및 백틱 페어링, 문자열을 선택하고 `*` 또는 `**`로 글자 강조, 자동 목록 등의 편리 기능을 제공한다.
 - 문자열을 선택한 후 클립보드의 링크를 <kbd>⌘</kbd>+<kbd>⌥</kbd>+<kbd>V</kbd> 단축키로 붙여 넣으면 마크다운 링크가 한 번에 완성되는 등의 편리한 단축키들이 준비되어 있다.
 
-#### [OmniMarkupPreviewer](https://github.com/timonwong/OmniMarkupPreviewer): 실시간 미리보기
+#### OmniMarkupPreviewer: 실시간 미리보기
 
-실시간 미리보기를 제공하는 툴도 많지만 대부분 파일 크기가 커지면 매우 느려지는 단점이 있다. 이 플러그인은 느려지는 현상이 가장 적고 저장을 하지 않아도 실시간으로 웹 브라우저에서 보여주며, 한글이 조합되는 도중에도 자소 단위로 보여준다. 웬만한 유료 뷰어보다 낫다!
+실시간 미리보기를 제공하는 툴도 많지만 대부분 파일 크기가 커지면 매우 느려지는 단점이 있다. [OmniMarkupPreviewer](https://github.com/timonwong/OmniMarkupPreviewer) 플러그인은 느려지는 현상이 가장 적고 저장을 하지 않아도 실시간으로 웹 브라우저에서 보여주며, 한글이 조합되는 도중에도 자소 단위로 보여준다. 웬만한 유료 뷰어보다 낫다!
 
 - 웹 브라우저에서 실시간 미리보기 단축키는 <kbd>⌘</kbd>+<kbd>⌥</kbd>+<kbd>O</kbd>이다.
 - Markdown 뿐만아니라 reStructuredText, WikiCreole 등의 마크업 언어를 지원한다.
 
-#### [Open URL](https://github.com/noahcoad/open-url): 웹브라우저에서 링크 열기
+#### Open URL: 웹브라우저에서 링크 열기
 
-ST3를 마크다운 에디터로 사용할 때 불편한 점 중 하나가 오트링크(url를 자동으로 인식하여 클릭할 수 있게 해주는 기능)가 지원되지 않는다는 것이다. 이 플러그인은 url을 <kbd>⌥</kbd>+`더블클릭`하거나 우클릭하여 선택하면 웹 브라우저에서 url을 열어준다. url 이외에도, 폴더라면 파인더에서 해당 폴더를 열어주고, 파일이라면 편집하거나 실행할 수 있고, 일반 텍스트라면 구글 검색을 수행한다.
+ST3를 마크다운 에디터로 사용할 때 불편한 점 중 하나가 오트링크(url를 자동으로 인식하여 클릭할 수 있게 해주는 기능)가 지원되지 않는다는 것이다. [Open URL](https://github.com/noahcoad/open-url) 플러그인은 url을 <kbd>⌥</kbd>+`더블클릭`하거나 우클릭하여 선택하면 웹 브라우저에서 url을 열어준다. url 이외에도, 폴더라면 파인더에서 해당 폴더를 열어주고, 파일이라면 편집하거나 실행할 수 있고, 일반 텍스트라면 구글 검색을 수행한다.
 
-#### [Table Editor](https://github.com/vkocubinsky/SublimeTableEditor): 표 만들기
+#### Table Editor: 표 만들기
 
-마크다운에서 표를 그리기는 쉽지만 예쁘게 그리기가 쉽지 않다. 물론 문법만 바르면 미리보기나 변환된 HTML/PDF에선 예쁘게 나온다. 이 플러그인은 에디터 모드에서 표를 자동으로 정렬해주고 `tab`키를 누르면 다음 셀에 정확히 위치시켜주어 편리하게 표를 작성할 수 있게 해준다. 단, 아직은 한글 지원이 알파 버전 상태라 나눔고딕코딩과 같은 고정폭 글꼴을 사용해야(폰트 크기를 짝수로 설정) 예쁘게 사용할 수 있다.
+마크다운에서 표를 그리기는 쉽지만 예쁘게 그리기가 쉽지 않다. 물론 문법만 바르면 미리보기나 변환된 HTML/PDF에선 예쁘게 나온다. [Table Editor](https://github.com/vkocubinsky/SublimeTableEditor) 플러그인은 에디터 모드에서 표를 자동으로 정렬해주고 `tab`키를 누르면 다음 셀에 정확히 위치시켜주어 편리하게 표를 작성할 수 있게 해준다. 단, 아직은 한글 지원이 알파 버전 상태라 나눔고딕코딩과 같은 고정폭 글꼴을 사용해야(폰트 크기를 짝수로 설정) 예쁘게 사용할 수 있다.
 
     | Name | Phone |
     |-
@@ -102,7 +102,9 @@ ST3를 마크다운 에디터로 사용할 때 불편한 점 중 하나가 오�
 
 csv를 표로 바꾸는 것도 가능하다고 하나 어찌 된 일인지 잘 안된다. 그래서 (특히 큰 테이블의 경우에는) 구글 스프레드시트에서 작성하여 .csv로 내보내고 [Markdown Tables generator](http://www.tablesgenerator.com/markdown_tables)에서 임포트하는 것을 선호한다. 그렇게 작성한 중 하나가 [자바스크립트 제대로 배우기 스터디 그룹 포스트](http://nolboo.github.io/blog/2014/03/18/how-to-learn-javascript-properly-study/)의 마지막 커리큘럼 표이다. 170 셀을 가진 표를 뚝딱! 만들 수 있었다.
 
-#### [A Markdown Link Bookmarklet](http://walterhiggins.net/blog/A-Markdown-Link-Bookmarklet.html): 링크 북마클릿
+#### 링크 북마클릿
+
+링크 : [A Markdown Link Bookmarklet](http://walterhiggins.net/blog/A-Markdown-Link-Bookmarklet.html)
 
 오토링크 기능이 있는 에디터는 웹 브라우저의 링크를 복사해서 그대로 붙여 넣으면 되지만, 아무래도 누드 링크 주소를 그대로 보여주는 것은 보기에도 좋지 않고 나중에 포스트 등을 작성할 때 마크다운 링크로 변환해야 하는 것도 귀찮다. 이럴 때는 MarkdownEditing의 링크 붙여넣기 단축키도 좋지만, 웹페이지에서 제목과 링크를 한 번에 복사하는 것이 더 편하다. 웹 브라우저의 북마크바에 원하는 이름의 북마크를 하나 만들고 주소란에 다음의 코드를 복사하여 북마클릿을 만들면 된다.
 
@@ -116,11 +118,11 @@ javascript:void(prompt("","["+document.title+"]("+location.href+")"));
 >
 > 위와 같은 환경을 구축하면 용량이 큰 마크다운 파일도 빠르고 직관적으로 다룰 수 있게 된다. 한 가지 단점은 서브라임 텍스트 3에서 한글 오토마타를 완벽하게 지원하지 않기 때문에 가끔 입력 중인 글자를 먹어버리고 다른 곳에서 입력을 시작하면 그곳에다 먹어버린 글자를 풀어놓는다. 이 점을 보완하기 위해서는 입력한 글자가 문장의 마지막이라면 마침표를 찍고, 그렇지 않을 때에는 화살표 키로 움직여서 입력완료를 ST3에 알려줘야 한다. 현재로선 주의해서 사용하는 수밖에;;
 
-### [nvALT 2](http://brettterpstra.com/projects/nvalt/)와 [Simplenote](http://simplenote.com/)
+### nvALT 2 와 심플노트
 
-nvALT는 가볍고 빨라서 노트 앱 중에서 가장 자주 사용하는 맥앱이며, 여러 가지 정보를 저장해두거나 글을 쓰기 시작하는 출발점이다. 파일이 수천 라인을 넘어가면 버벅대기 시작하지만 그럴 때는 외부 에디터로 설정한 서브라임 텍스트 3를 불러(<kbd>⌘</kbd><kbd>⇧</kbd><kbd>E</kbd>) 글쓰기를 이어간다. 심플노트로 동기화하도록 설정하면 백업이나 버전 관리도 같이 활용할 수 있다.
+[nvALT 2](http://brettterpstra.com/projects/nvalt/)는 가볍고 빨라서 노트 앱 중에서 가장 자주 사용하는 맥앱이며, 여러 가지 정보를 저장해두거나 글을 쓰기 시작하는 출발점이다. 파일이 수천 라인을 넘어가면 버벅대기 시작하지만 그럴 때는 외부 에디터로 설정한 서브라임 텍스트 3를 불러(<kbd>⌘</kbd><kbd>⇧</kbd><kbd>E</kbd>) 글쓰기를 이어간다. 심플노트로 동기화하도록 설정하면 백업이나 버전 관리도 같이 활용할 수 있다.
 
-심플노트는 [작년에 워드프레스에 인수된](http://techcrunch.com/2013/01/24/wordpress-simperium-simplenote/) 서비스이며, [Simperium](http://simperium.com/)이라는 독자적인 데이터 레이어를 기반으로 하고 있다. 필자는 느려터진 에버노트 - 많이 개선되었지만, 아직도 느리다고 생각해서 웹페이지 저장용으로만 사용한다 -  대신 심플노트를 윈도 시절부터 사용해 왔고, 맥으로 넘어와서도 심플노트를 사용하기 위해 제일 먼저 찾은 것이 nvALT이다.
+[Simplenote](http://simplenote.com/)는 [작년에 워드프레스에 인수된](http://techcrunch.com/2013/01/24/wordpress-simperium-simplenote/) 서비스이며, [Simperium](http://simperium.com/)이라는 독자적인 데이터 레이어를 기반으로 하고 있다. 필자는 느려터진 에버노트 - 많이 개선되었지만, 아직도 느리다고 생각해서 웹페이지 저장용으로만 사용한다 -  대신 심플노트를 윈도 시절부터 사용해 왔고, 맥으로 넘어와서도 심플노트를 사용하기 위해 제일 먼저 찾은 것이 nvALT이다.
 
 ![nvALT 2](http://brettterpstra.com/uploads/2011/01/nvALT2.0Screenshot.jpg)
 
@@ -169,7 +171,9 @@ ST3와 [Bitbucket](https://bitbucket.org)을 이용하여 *마크다운 문법�
 
 ## 기타 마크다운 앱
 
-### [Markdown Here](http://markdown-here.com/): 특히 이메일
+### Markdown Here: 특히 이메일
+
+링크 : [Markdown Here](http://markdown-here.com/)
 
 웹 페이지의 리치 텍스트 에디터에서 마크다운으로 작성한 글을 리치 텍스트로 즉석에서 변환해주는 웹 브라우저 확장이다. 마크다운으로 글을 작성한 다음 변환할 부분을 선택한 후 마크다운 히어의 아이콘을 클릭하면(또는 우클릭으로 Markdown toggle 선택) 원클릭으로 변환된다.
 

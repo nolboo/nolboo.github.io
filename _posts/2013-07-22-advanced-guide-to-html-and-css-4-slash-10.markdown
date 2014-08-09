@@ -194,7 +194,7 @@ media="all and (max-width: 1024px)">
 
 반응형 디자인에서는 `min-width`과 `max-width`를 포함하는 특성이 가장 많이 사용된다. 이것들은 기기 특성에 혼동을 피해 데스크탑과 모바일 기기에 동일하게 반응형 웹사이트를 만드도록 해준다.
 
-> #### Using Minimum & Maximum Prefixes
+> **Using Minimum & Maximum Prefixes**
 >
 > `min`과 `max` 접두어는 꽤 많은 미디어 특성에서 사용될 수 있다. `min` 접두어는 보다 크거나 같은 값을 가리키며, `max` 접두어는 더 적거나 같은 값을 가리킨다. `min`과 `max` 접두어는 일반적인 HTML 문법과 충돌되지 않아 특별히 꺽쇠 심볼을 사용하지 않는다.
 
@@ -216,7 +216,7 @@ media="all and (max-width: 1024px)">
     @media all and (min-device-aspect-ratio: 16/9) {...}
 ```
 
-> #### Pixel Ratio Media Features
+> **Pixel Ratio Media Features**
 >
 > 종횡비 특성에 더해 `pixel-ratio` 미디어 특성도 있다. 이 특성은 `device-pixel-ratio` 특성을 포함하며, `min`과 `max` 접두어도 가진다. 특히 픽셀비 특성은 레티나 디스플레이와 같은 고해상도 기기를 지정할 때 훌륭하며, 다음처럼 보여질 것이다.
 >
@@ -234,7 +234,7 @@ media="all and (max-width: 1024px)">
 
 `color`, `color-index`, `monochrome` 특성은 출력 색상을, `grid` 특성은 비트맵 기기를, `scan` 특성은 텔레비전의 스캐닝 처리를 지정하며, 자주 사용하지는 않지만 필요할 땐 도움이 된다.
 
-> #### Media Query Browser Support
+> **Media Query Browser Support**
 >
 > 불행하게도 미디어 쿼리는 인터넷 익스플로러 8 이하와 고전적인 브라우저에서는 작동하지 않는다. 그러나, 자바스크립트로 쓰여진 두 개의 알맞는 땜빵(polyfill)이 있다.
 >
@@ -426,7 +426,7 @@ img, video, canvas {
 }
 ```
 
-#### [Flexible Media Demo][24]
+[Flexible Media Demo][24]
 
 ### Flexible Embedded Media
 
@@ -464,7 +464,7 @@ iframe {
 }
 ```
 
-#### [Flexible Embedded Media Demo][26]
+**[Flexible Embedded Media Demo][26]**
 
 ## Resources & Links
 

@@ -396,7 +396,7 @@ $('.alert-close').on('click', function(event){
 });
 ```
 
-#### [Demo][16]
+**[Demo][16]**
 
 ### Event Methods
 
@@ -533,7 +533,7 @@ $('.alert-close').on('click', function(event){
 });
 ```
 
-#### [Demo][20]
+**[Demo][20]**
 
 #### Basic Effects
 
@@ -591,7 +591,7 @@ $('.panel-tab').on('click', function(event){
 });
 ```
 
-#### [Demo][21]
+**[Demo][21]**
 
 ### Tabs Demo
 
@@ -625,7 +625,7 @@ $('.tabs-nav a').on('click', function(event){
 });
 ```
 
-#### [Demo][22]
+**[Demo][22]**
 
 ## Resources & Links
 

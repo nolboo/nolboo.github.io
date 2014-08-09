@@ -12,9 +12,9 @@ tags: [php, markdown, extra, syntax]
 
 원본: [PHP Markdown Extra](http://michelf.ca/projects/php-markdown/extra/)
 
-## [PHP Markdown Extra](http://michelf.ca/projects/php-markdown/extra/)
+## PHP Markdown Extra
 
-Markdown Extra는 순수 마크다운 문법에서 제공하지 않는 몇 가지 기능을 제공하는 PHP 마크다운 확장이다. 이 문서를 읽기 전에 [마크다운 문법](http://nolboo.github.io/blog/2013/09/07/john-gruber-markdown/)에 이미 친숙해야 한다.
+[Markdown Extra](http://michelf.ca/projects/php-markdown/extra/)는 순수 마크다운 문법에서 제공하지 않는 몇 가지 기능을 제공하는 PHP 마크다운 확장이다. 이 문서를 읽기 전에 [마크다운 문법](http://nolboo.github.io/blog/2013/09/07/john-gruber-markdown/)에 이미 친숙해야 한다.
 
 ### Inline HTML
 

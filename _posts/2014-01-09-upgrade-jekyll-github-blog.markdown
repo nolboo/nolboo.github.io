@@ -14,11 +14,11 @@ tags: [jekyll, blog, liquid, pagination, tag, category]
 
 블로그 기능 중 오늘까지 추가한 부분은 초기 화면의 페이지네이션, 태그 검색, 소셜 전역 변수 등이다. 거의 다른 분들의 글이나 공식문서 등을 참고하여 내 블로그에 맞도록 고쳤기 때문에 여기선 과정을 중심으로 간략히 설명한다.
 
-### [Liquid Template System](https://github.com/Shopify/liquid)
+### Liquid Template System
 
 지킬은 다른 정적사이트 제러레이터와 마찬가지로 두 개의 중괄호로 변수를 표현하는 템플릿 시스템을 사용한다. 예를 들어 `site.name`을 두 개의 중괄호로 감싸면 웹사이트 이름을 출력한다는 식이다.
 
-지킬은 Shopify가 만든 Liquid 템플릿 시스템을 사용하고 있으며, (역사가 오래되어서) 많이 쓰이고 있는 [Mustache.js](http://mustache.github.io/)나 이를 확장하여 최근 각광받고 있는 [Handlebars.js](http://handlebarsjs.com/)와 같은 템플릿 라이브러리와 유사하다.
+지킬은 Shopify가 만든 [Liquid 템플릿 시스템](https://github.com/Shopify/liquid)을 사용하고 있으며, (역사가 오래되어서) 많이 쓰이고 있는 [Mustache.js](http://mustache.github.io/)나 이를 확장하여 최근 각광받고 있는 [Handlebars.js](http://handlebarsjs.com/)와 같은 템플릿 라이브러리와 유사하다.
 
 지킬은 세 개의 주요 글로벌 변수를 가진다 : `site`, `page`, `content`.
 
@@ -26,9 +26,9 @@ tags: [jekyll, blog, liquid, pagination, tag, category]
 
 자세한 설명은 [Liquid for Designers](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers)를 읽어보면 된다. 리퀴드가 작동하는 방법을 이해해야 지킬을 마스터할 수 있다고하니 계속 배울 예정이다.
 
-## 초기 화면 [페이지네이션](http://jekyllrb.com/docs/pagination/) - [한글](http://svperstarz.github.io/jekyll-docs-ko/docs/pagination/)
+## 초기 화면 페이지네이션
 
-페이지네이션을 활성화하기 위해 `_config.yml`에 다음을 추가한다.
+[페이지네이션](http://jekyllrb.com/docs/pagination/) - [한글](http://svperstarz.github.io/jekyll-docs-ko/docs/pagination/)을 활성화하기 위해 `_config.yml`에 다음을 추가한다.
 
     paginate: 10
 

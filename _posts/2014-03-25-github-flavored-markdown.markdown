@@ -16,9 +16,9 @@ tags: [github, markdown, extra, gfm, syntax]
 
 누군가 부탁하여 올려놓긴 하는데 시간이 되면 위의 페이지를 전체적으로 정리할 필요가 있을 것 같다.
 
-## [GitHub Flavored Markdown](https://help.github.com/articles/github-flavored-markdown)
+## GitHub Flavored Markdown
 
-깃허브는 파일, 이슈, 코멘트에 "GitHub Flavored Markdown"(GFM)를 사용한다. standard Markdown(SM)와는 몇 가지 중요한 방법에서 차이가 있으며, 몇 가지 추가 기능이 있다.
+깃허브는 파일, 이슈, 코멘트에 [GitHub Flavored Markdown(GFM)](https://help.github.com/articles/github-flavored-markdown)를 사용한다. standard Markdown(SM)와는 몇 가지 중요한 방법에서 차이가 있으며, 몇 가지 추가 기능이 있다.
 
 예제로 배우는 것을 좋아하면 다음 소스와 결과를 봐라:
 

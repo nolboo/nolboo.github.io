@@ -6,11 +6,11 @@ category: blog
 tags: [blog, harp, static]
 ---
 
-<div id="toc"><p class="toc_title">목차</p></div>
-
 원문 : [Start a blog with Harp](http://kennethormandy.com/journal/start-a-blog-with-harp)
 
 참조 :  [Intoducing Harp](http://sintaxi.com/introducing-harp)
+
+<div id="toc"><p class="toc_title">목차</p></div>
 
 ## Install Harp
 
