@@ -4,6 +4,8 @@ title: "한글 번역글 모음 페이지"
 date: 2014-08-01 21:00:00
 ---
 
+<div id="toc"><p class="toc_title">목차</p></div>
+
 * _공유된 번역 글과 사이트를 **기술과 경영 카테고리별**로 개인적으로 모은 페이지입니다. 직접 링크를 추가하고 싶으신 분이나 다른 카테고리의 글을 위해서 [별도 위키](https://github.com/nolboo/nolboo.github.io/wiki)를 이용하세요~_
 * 위의 공지에도 아직도 많은 분들이 이 페이지로 찾아오셔니 한달에 한번 정도는 위키의 데이타를 여기에도 업데이트합니다.
 
@@ -356,7 +358,7 @@ date: 2014-08-01 21:00:00
 
 [Cliff Bleszinski 가 쓴 게임개발자의 플래시카드](http://breadceo.wordpress.com/2012/08/10/cliff-bleszinskis-game-developer-flashcards/) - 원문 : [Cliff Bleszinski’s Game Developer Flashcards](http://www.gamasutra.com/view/feature/175586/cliff_bleszinskis_game_developer_.php)
 
-## 기타(아직 분류하기 애매한 것들)
+## 기타
 
 [역대급 50가지 프로그래밍 명언](http://blog.fupfin.com/?p=11) - 원문 : [Top 50 Programming Quotes of All Time](http://www.junauza.com/2010/12/top-50-programming-quotes-of-all-time.html)
 
