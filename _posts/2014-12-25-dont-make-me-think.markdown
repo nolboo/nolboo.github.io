@@ -120,5 +120,7 @@ UX와 사용성과 관련하여 최근에 소셜 포스팅한 링크를 위주�
 - [Learn User Experience (UX) Design online](http://bit.ly/1nIcXYu): Tripit의 시니어 UX 디자이너가 인터넷에서 제공된 무료 강의를 큐레이션해서 112여 시간의 강의 허브를 만듬.
 - [UX 커리어 시작하기: 사용자 경험 디자인(User Experience Design) 직업을 시작하고자 하는 사람들을 위한 완벽한 가이드](http://bit.ly/U4YFZJ)
 - [사용성 평가, 이렇게 하라 - 상세 후기](http://bit.ly/13GCuOr)
+- [Top 50 UX Book List](http://www.uxjobsboard.com/ux-book-list/?utm_content=bufferfe480&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer)
+ 
 
 (본 리뷰는 도서출판 ‘인사이트’의 도서 지원을 받아 작성한 서평입니다)
