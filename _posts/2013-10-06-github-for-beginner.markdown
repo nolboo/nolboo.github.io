@@ -96,7 +96,7 @@ tags: [beginner, git, github]
 
 이것이 로컬 컴퓨터에서 깃을 사용할 때 필요한 모든 것이다. 원한다면, 깃과 소통할 때마다 GitHub.com 계정에 로드인하는 것을 요청하지 않도록 깃을 설정할 수 있다. 이것과 관련된 풀 튜토리얼은 [깃허브에 있다][6].
 
-![][7]
+![](http://a5.files.readwrite.com/image/upload/c_fit,w_620/MTIyMzA0MjIxNTQ5OTgwOTUz.png)
 
 ## 온라인 저장소 만들기
 
@@ -104,7 +104,7 @@ tags: [beginner, git, github]
 
 GitHub.com으로 돌아가서 사용자명 다음에 있는 작은 책 아이콘을 클릭한다. 혹은, 모든 아이콘이 다 똑같아 보인다면 [new repository page][8]로 간다. 저장소에 짧고 기억할만한 이름을 준다. 재미삼아 public으로 해본다.
 
-![][9]
+![](http://a3.files.readwrite.com/image/upload/c_fit,w_620/MTIyMzA0MjI0MjM0MDc4ODIy.png)
 
 “Initialize this repository with a README.” 앞의 체크박스는 신경쓰지 않는다. Readme 화일은 보통 프로젝트에 관해 설명하는 텍스트 화일이다. 여기선 연습삼아 로컬에서 자신의 Readme 화일을 만들 것이다.
 
@@ -140,13 +140,13 @@ GitHub.com으로 돌아가서 사용자명 다음에 있는 작은 책 아이콘
 
 `init`은 “initialize(초기화)”를 뜻한다. 이 코드를 입력하면 이 디렉토리를 로컬 깃 저장소라고 컴퓨터에게 말해주는 것이다. 폴더를 열면 - 이 새로운 깃 디렉토리는 전용 저장소 안에 숨겨진 화일 하나이기 때문에 - 어떤 차이를 보지 못할 것이다.
 
-![][10]
+![](http://a4.files.readwrite.com/image/upload/c_fit,w_620/MTIyMzA0MjI2MTEzMTI3MDE0.png)
 
 그러나, 컴퓨터는 이제 이 디렉토리를 Git-ready로 인식하고, 깃 명령어를 입력할 수 있다. 이제 프로젝트가 거주할 온라인과 로컬 저장소를 모두 가졌다.
 
 이제는 깃허브에 첫번째 커밋을 만들어서 프로젝트의 첫 부분을 추가하자. 다음 화면과 같은 MyProject라는 저장소를 만들었었다.
 
-![][11]
+![](http://a4.files.readwrite.com/image/upload/c_fit,w_620/MTIyMzA0MjEwODEyMzAwNTY5.png)
 
 다음을 입력한다:
 
@@ -172,7 +172,7 @@ GitHub.com으로 돌아가서 사용자명 다음에 있는 작은 책 아이콘
     #         Readme.txt
 
 
-![][12]
+![](http://a3.files.readwrite.com/image/upload/c_fit,w_620/MTIyMzA0MjE1Mzc1Nzc0MzEw.png)
 
 뭐지? 먼저, 당신은 프로젝트의 master 브랜치 상에 있다. “branched off”하지 않았기 때문에 당연하다. 두번째론, Readme.txt이 “untracked” 화일로 리스트되었다. 현재는 깃이 무시한다는 것을 뜻한다. 깃이 주목하게 하기 위해, 다음을 입력한다:
 
@@ -186,7 +186,7 @@ GitHub.com으로 돌아가서 사용자명 다음에 있는 작은 책 아이콘
     git commit -m “Add Readme.txt”
 
 
-![][13]
+![](http://a1.files.readwrite.com/image/upload/c_fit,w_620/MTIyMzA0MjE3NzkxNjI3ODc4.png)
 
 -m 플래그는 이미 말했듯이, 뒤따르는 텍스트는 메시지로 읽어야 한다. 커밋 메시지가 현재형인 것을 주목한다. 버전관리는 시간에 대해 유연성을 가지므로 현재형으로 작성해야 한다. 더 이전 버전으로 되돌아갈 수 있으므로 _커밋을 했던_ 것을 적는 것이 아니라, _커밋한_ 것을 적어야 한다.
 
@@ -214,7 +214,7 @@ GitHub.com으로 돌아가서 사용자명 다음에 있는 작은 책 아이콘
     git remote -v
 
 
-![][14]
+![](http://a4.files.readwrite.com/image/upload/c_fit,w_620/MTIyMzA0MjIwMjA3Njc4MDU0.png)
 
 이 명령어는 로컬 저장소가 알고있는 원격 `origin`에 대한 모든 항목을 보여준다. 지금까지 함께 하였다면, 단 하나이어야 한다. 두 개가 리스트된 것은 정보를 _push_하고 _fetch_할 수 있는 것을 뜻한다.
 
@@ -226,7 +226,7 @@ GitHub.com으로 돌아가서 사용자명 다음에 있는 작은 책 아이콘
 
 커맨드 라인에서 여러 줄에 걸쳐 연달아 내놓을 것이고, 마지막으로 “everything up-to-date.”과 같은 것을 밷아낼 것이다.
 
-![][15]
+![](http://a5.files.readwrite.com/image/upload/c_fit,w_620/MTIyMzA0MjIyNjIzNDY2MDg2.png)
 
 단순 명령어만 입력했기 때문에 주의(warning) 메시지가 나온다. 내 저장소의 master 브랜치를 지정하도록 하려면 `git push origin master`로 입력할 수 있다. 지금은 하나의 브랜치만 있기 때문에 그렇게 하지 않았다.
 
@@ -292,4 +292,4 @@ git push origin master // 깃허브로 푸시한다.
    [20]: http://gitref.org/
    [21]: http://rogerdudler.github.io/git-guide
    [22]: https://help.github.com/articles/github-glossary
-  
+
