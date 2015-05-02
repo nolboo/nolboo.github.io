@@ -552,3 +552,9 @@ div#toc1 ul,.mobile div#toc1 ul {
   list-style: none;
   margin: .25em 0 1.5em 1em;
 }
+
+.bookmarklet-btn {
+  color: #26519E;
+  border: 1px solid #E5E5E5;
+  padding: 1px 3px;
+}
