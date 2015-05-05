@@ -6,7 +6,7 @@ category: blog
 tags: [Coursera, ruby, basic]
 ---
 
-뉴멕시코 대학의 Greg Heileman 교수의 코세라 강좌 [Web Application Architectures](https://class.coursera.org/webapplications-003) 중에서 루비 언어 기초에 대한 부분이 많아 별도로 정리하였다.
+뉴멕시코 대학의 Greg Heileman 교수의 코세라 강좌 [Web Application Architectures](https://class.coursera.org/webapplications-003) 중에서 루비 언어 기초만 별도로 정리하였다. 나머지는 [루비 온 레일즈로 블로그 만들기](http://nolboo.github.io/blog/2015/05/05/web-application-architecture/)에서 볼 수 있다.
 
 ## Ruby Programming Language
 
