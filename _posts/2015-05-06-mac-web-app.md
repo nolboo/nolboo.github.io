@@ -126,7 +126,9 @@ bitly, Todoist, Dash, Pocket 확장 등을 설치하고, 단디 한글 맞춤법
 ## 웹앱
 
 - [inoreader](https://www.inoreader.com/): 하루 한 두번은 사용하는 RSS 리더. 안드/iOS 앱도 있다.
+- [Pocket](https://getpocket.com/)
 - [Workflowy](http://bit.ly/UDCz17): 최고의 아웃라이너 앱!
+- [Trello](https://trello.com/)
 
 ## 검토용 앱
 

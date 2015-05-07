@@ -17,6 +17,21 @@ tags: [browser, extension, bookmarklet]
 * [Wikiwand](http://www.wikiwand.com/) : 못생긴 위키피디아 페이지를 이쁘게 보여준다.
 * [RightToClick](https://addons.mozilla.org/ko/firefox/addon/righttoclick/) : 우클릭을 막은 사이트에서 유용한다.
 * [Stylish](https://addons.mozilla.org/ko/firefox/addon/stylish/) : 특정 웹사이트의 CSS를 내맘대로 바꾼다. 저장되어 방문 시 마다 내 CSS로 웹사이트를 볼 수 있다. Medium 사이트의 기본 한글 글꼴이 맘에 들지 않아서 사용하게 되었다.
+
+```css
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("medium.com") {
+
+}
+
+div.section-content {
+font-family: 나눔바른고딕;
+letter-spacing: 0;
+line-height: 1.5em;
+}
+```
+
 * [uBlock](https://chrismatic.io/ublock/) : 최소의 광고차단 확장이다.
 
 ## 북마클릿
