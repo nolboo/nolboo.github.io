@@ -67,8 +67,10 @@ functions that depend only on their input, not the program state.
 
 - 클래스는 `class` 키워드와 이름으로 정의된다. 이름은 대문자로 시작하고, 캐멀케이스(CamelCase)를 사용한다.
 - `def` 키워드로 매서드를 정의한다. 매서드 이름은 대문자 없이 단어를 `_`로 연결한다.
-- 클래스와 매서드는 `end` 키워드로 끝낸다.
+- 클래스와 매서드는 `end` 키워드로 끝낸다.  
+
 Ex. 
+
 ```ruby
 class MyClass
     @boo            # an instance variable
@@ -86,9 +88,10 @@ in IRB:
 
 #### Methods
 
-- 인스턴스 변수는 매서드 정의 안에서만 접근하거나 변경할 수 있다. 아래에서는 setter 매서드로 값을 지정한 후 getter 매서드로 값을 얻을 수 있다.
+- 인스턴스 변수는 매서드 정의 안에서만 접근하거나 변경할 수 있다. 아래에서는 setter 매서드로 값을 지정한 후 getter 매서드로 값을 얻을 수 있다.  
 
 Ex. 
+
 ```ruby
 class MyClass 
     def boo     # a getter method 
@@ -107,6 +110,7 @@ end
 루비 매서드는 implicit 리턴 값을 갖는다 - 매서드 안에서 마지막 표현식의 값이 리턴값이다. `return` 선언이 있지만 사용할 필요는 없다.
 
 Ex. 두 개의 수를 비교하여 작은 것을 리턴해주는 min 매서드.
+
 ```ruby
 def min(x,y) 
     if x < y then x else y end 
@@ -120,6 +124,7 @@ end
 클래스 매서드는 `self` 키워드를 앞에 놓으며, 나머지는 일반 매서드와 같다.
 
 Ex. 
+
 ```ruby
 class MyClass 
     def self.cls_method 
@@ -139,6 +144,7 @@ end
 루비에선 하나의 상속만 지원된다. 멀티 상속을 위해서는 `mixin`이 기본적으로 제공된다. 클래스는 절대 닫히지 않아서 기존 클래스에 매서드를 추가할 수 있다.(작성한 클래스에도 표준 내장 클래스같이 적용된다) 
 
 Ex. 
+
 ```ruby
 class Fixnum 
     def previous 
@@ -204,23 +210,26 @@ getter 매서드만을 원하면 `attr_reader`를 사용하고, setter 매서드
 
 루비는 변수 선언을 사용하지 않는다. 적절한 변수명에 값을 주면 변수가 만들어진다.(duck-typing)
 
-Ex. 
+Ex.
+
     > a = 2 # => 2 
     > a     # => 2
 
 `a.class`로 type을 보면 Fixnum 즉, 루비의 정수 데이타이다. 나머지 하나의 정수 타입은 Bignum(임의 크기의 수)이다.
 
 Ex. 
+
     > a = "2" # => "2" 
     > a # => "2"
 
 이제 a는 문자열(String) 변수이다.
 
-*중요*: 루비에서 모든 할당은 참조로 이루어진다.(C나 C++에서는 기본적으로 할당은 값으로 이루어진다.) 즉, 변수는 객체의 참조를 갖고 있을 뿐이고, 객체의 타입은 상관하지 않는다. 
+**중요**: 루비에서 모든 할당은 참조로 이루어진다.(C나 C++에서는 기본적으로 할당은 값으로 이루어진다.) 즉, 변수는 객체의 참조를 갖고 있을 뿐이고, 객체의 타입은 상관하지 않는다. 
 
 루비는 병렬 할당을 지원한다.
 
-Ex. 두 변수의 값을 쉽게 스왑할 수 있다.: 
+Ex. 두 변수의 값을 쉽게 스왑할 수 있다: 
+
     > a = 2     # => 2 
     > b = 1     # => 1 
     > puts a, b # 2 
@@ -229,6 +238,7 @@ Ex. 두 변수의 값을 쉽게 스왑할 수 있다.:
     > a, b = b, a # => [1, 2]
 
 루비는 변수의 스코프와 타입를 나타내기 위한 간단한 네이밍 규약을 사용한다:
+
     - name      : 지역 변수
     - @name     : 인스턴스 변수
     - @@name    : 클래스 변수
@@ -295,10 +305,12 @@ Ex. "Homer" =~ /er/ # => 3
 | ( )        | 그룹핑                      |
 
 정규식은 문자열을 처리할 때 종종 사용된다. 다음 루비 정규식은 전화번호에서 숫자가 아닌 모든 문자를 ""로 바꾼다. 즉, 전화번호에서 숫자를 제외한 모든 문자를 제거한다:
+
     phone = phone.gsub!(/D/, "") 
 
 정규식은 일반적으로 이메일, 전화번호 같은 사용자 입력을 검증하기 위해 사용한다.
 Ex. 다음 정규식은 이메일 주소를 검증하기 위해 사용할 수 있다: 
+
     /A[w._%–]+@[w.-]+.[a-zA-Z]{2,4}z/ 
 
 ### Symbols 
@@ -333,12 +345,15 @@ Ex. 조건적인 실행이나 루핑 구조가 다른 언어에서는 명령문�
 ### Control Structures – Conditional Execution
 
 루비는 조건을 표현하기 위한 풍부한 문법을 가지고 있다. 가장 기본적인 것은:
+
     if *expression* 
         *code* 
     end 
+
 조건식이 `false` 나 `nil`이 아닌 값이면 code가 실행된다.
 
 else 절은 if 조건식이 참이 아닐 경우 실행되어야 하는 코드를 추가할 수 있다:
+
     if *expression1* 
         *code* 
     elsif *expression2* 
@@ -350,20 +365,24 @@ else 절은 if 조건식이 참이 아닐 경우 실행되어야 하는 코드�
 * elsif는 오타가 아니다.
 
 There’s a shorthand way of expressing the if conditional that treats it as an expression modiﬁer: 
+
     *code* if *expression* 
 
 루비는 C/C++ 처럼 `?:` 연산자도 있다.
 
 비교 연산자: 
+
     ==, !=, =∼, !∼, === 
 
 There is a case structure in Ruby, === is the case-equality operator.
 
 표준적인 조건식에 더하여, 루비는 코드의 가독성과 이해를 증가하기 위해 몇 가지를 추가한다.
 예로, 다음은 if 문의 반대이다:
+
     until *expression* 
         *code* 
     end
+
 조건식이 `false` 나 `nil`아닐 때까지 code가 수행된다.
 
 until 조건식에 else 절을 붙일 수 없다.
@@ -371,16 +390,19 @@ until 조건식에 else 절을 붙일 수 없다.
 ### Control Structures – Iteration
 
 `for`/`in` 루프는 가산 누적되면서 반복한다: 
+
     for *var* in *collection* do 
         *body* 
     end 
 
 Exit condition loop: 
+
     while *condition* do 
         *body* 
     end 
 
 Exit condition loop, while과 반대: 
+
     until *condition* do 
         *body* 
     end 
@@ -398,13 +420,14 @@ In Ruby, it’s more common to use iterators (next lecture).
 `Enumerable` 모듈은 `iterator` 매서드를 제공하는데 한 컬렉션의 모든 요소들에 걸쳐 반복 실행할 수 있다.
 
 배열은 레일즈 컨트롤러에서 널리 사용된다:
+
 ```ruby
 def index 
     @posts = Post.all 
 end
 ```
 
-/app/controllers/post_controller.rb의 도입 부분에 있는 위의 index 매서드에서 인스턴트 변수인 @post는 배열이다.
+`/app/controllers/post_controller.rb`의 도입 부분에 있는 위의 index 매서드에서 인스턴트 변수인 `@post`는 배열이다.
 
 ### Array
 
@@ -426,8 +449,11 @@ Ex.
 
 해시는 결합(associative) 배열이며, 키와 값이 `=>` 심볼로 분리된 객체이다. 키를 사용하여 값을 인덱스한다. 배열에서 키는 정수이고, 해시의 키는 객체이다. 배열은 `[]`을 사용하지만 해시는 `{}`를 사용한다.
 Ex. 
+
     phone = {’home’=> 1, ’mobile’=> 2, ’work’=> 3}
+
 혹은 심볼을 사용하여 더 낫게: 
+
     phone = {:home => 1, :mobile => 2, :work => 3} 
     > phone[:home]      # => 1 
     > phone.key(1)      # => :home 
@@ -438,6 +464,7 @@ Ex.
 
 다차원의 컬렉션을 만들려면 컬렉션들을 들여쓰기한다.
 Ex. 
+
     > ary = [["red", "green", "blue"], [1,2,3], ["Alpha", "Beta", "Gamma"]] 
     > ary[2][1]      # => "Beta" 
     > hsh = {"Chicago"=>{"nickname"=>"The Windy City", "state"=>"IL"}, "New York City"=>{"nickname"=>" The Big Apple", "state"=>"NY"}} 
@@ -453,6 +480,7 @@ Using this feature it is easy to build code libraries which can delegate varying
 
 A block is invoked using the `yield` statement. 
 Ex. 
+
 ```ruby
 def three_times 
     yield 
@@ -460,6 +488,7 @@ def three_times
     yield 
 end 
 ```
+
     > `three_times {puts "Hello"}` 는 "Hello"를 세번 출력한다.
 
 #### Iterators 
@@ -471,6 +500,7 @@ A collection class that includes the Enumerable module is required to supply an 
 Iterators work because you can pass parameters into blocks. 
 
 Ex. The each method in the Enumerable module works something like: 
+
 ```ruby
 def each 
     for each item in the collection # this is psuedocode 
@@ -486,6 +516,7 @@ end
     => [33.3, "hi", 2]
 
 레일즈 뷰에서 사용한 반복문이다:
+
 ```html
 <tbody> 
     <% @posts.each do |post| %> 
@@ -499,4 +530,5 @@ end
     <% end %> 
 </tbody>
 ```
+
 /views/posts/index.html.erb 안에 있는 소스이다. `<%`와 `%>`로 둘러싸인 부분은 뷰에서 실행되는 루비 코드(embedded Ruby)이며, `<%=`로 시작되는 것은 실행 결과를 HTML 코드로 삽입한다.
