@@ -25,7 +25,6 @@ gem install rails
 
 ruby -e ’puts "Hello World!"’
 Hello World!
-
 </pre>
 
 * `-e` 프롬프트로 인터프리터가 `''`안의 루비 코드를 실행한다.
