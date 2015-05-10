@@ -121,6 +121,6 @@ UX와 사용성과 관련하여 최근에 소셜 포스팅한 링크를 위주�
 - [UX 커리어 시작하기: 사용자 경험 디자인(User Experience Design) 직업을 시작하고자 하는 사람들을 위한 완벽한 가이드](http://bit.ly/U4YFZJ)
 - [사용성 평가, 이렇게 하라 - 상세 후기](http://bit.ly/13GCuOr)
 - [Top 50 UX Book List](http://www.uxjobsboard.com/ux-book-list/?utm_content=bufferfe480&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer)
- 
+- [인터랙션디자인과 시각디자인을 함께 진행하는 수렴적 방법 l A unified approach to visual and interaction design](http://story.pxd.co.kr/1071)
 
 (본 리뷰는 도서출판 ‘인사이트’의 도서 지원을 받아 작성한 서평입니다)

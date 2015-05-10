@@ -427,7 +427,7 @@ HTTP/1.1 request 메시지는 세 부분으로 구성된디:
 2. Header 
 3. Message body
 
----
+<br />
 
 #### Request Line
 
@@ -485,7 +485,7 @@ HTTP/1.1 응답 메시지는 요청 메시지와 비슷하고, 다음 세 부분
 
 After delivering the response, the server closes the connection (the default behavior with HTTP 0.9 and 1.0). With HTTP 1.1, a persistent connection is assumed by default.
 
----
+<br />
 
 #### Response Line
 
