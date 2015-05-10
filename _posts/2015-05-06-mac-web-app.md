@@ -8,6 +8,8 @@ tags: [macapp, webapp]
 
 현재 주로 사용하고 있는 맥앱과 웹앱을 한 곳에 정리한다. 관심은 있으나 아직 많이 사용하지 않은 앱도 포함하였으며, 지속적으로 업데이트하면서 관리할 예정이다.
 
+여러 앱과 환경설정을 자동화하는 방법은 이 [포스트](http://nolboo.github.io/blog/2015/05/07/mac-setup/)에 별도로 정리하였다.
+
 ## [Sublime Text 3](http://www.sublimetext.com/3)
 
 - [패키지 컨트롤 설치](https://sublime.wbond.net/installation)

@@ -8,7 +8,7 @@ tags: [Coursera, ruby, rails, ror, blog]
 
 뉴멕시코 대학의 Greg Heileman 교수의 코세라 강좌인 [Web Application Architectures](https://class.coursera.org/webapplications-003)를 수강한 내용을 정리해 보았다. 루비도 잘 모르고, 레일즈도 잘 모르는 상황에서 기록을 위해 정리했고, 번역에 시간을 들일 상황이 없어서 그냥 영문으로 남겨버린 경우도 많아서 읽는 분들한테는 좋은 포스팅이 되지는 않는 것 같다. 지송ㅎㅎ 간략하게 살펴보고 위 강좌의 링크에서 직접 강연을 듣는 것이 좋을 것 같다. 대체적으로 강의 내용이 쉽고 친절하게 진행되기 때문에 루비와 레일즈 초보자에게는 괜찮은 강좌라고 생각된다.
 
-루비 언어에 대한 부분은 글이 너무 길어져 며칠 전 [루비 언어 기초](http://nolboo.github.io/blog/2015/05/03/ruby-basic/)으로 별도 정리하였다.
+루비 언어에 대한 부분은 글이 너무 길어져 며칠 전 [루비 언어 기초](http://nolboo.github.io/blog/2015/05/03/ruby-basic/)로 별도 정리하였다.
 
 ## Design Pattern
 
