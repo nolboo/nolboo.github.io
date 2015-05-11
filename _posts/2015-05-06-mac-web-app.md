@@ -19,6 +19,8 @@ tags: [macapp, webapp]
 ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl
 </pre>
 
+mackup으로 환경설정을 복원했다면 이 때 아래 패키지들이 한꺼번에 설치되는 것을 경험할 수 있다. Mackup에 관해서는 [맥 설치와 환경 설정을 최대한 자동화하기](http://nolboo.github.io/blog/2015/05/07/mac-setup/)에서 설명하였다.
+
 ### Markdown 패키지
 
 서브라임에서의 자세한 방법을 알고 싶은 분은 [놀부의 마크다운 사용법 - 무료 툴을 중심으로 한 워크플로우](http://nolboo.github.io/blog/2014/04/15/how-to-use-markdown/)를 참조하기 바란다.
