@@ -1036,4 +1036,4 @@ executed in the web page. (`create.js.erb`)
 
 코드캐더미 강좌는 여기에 포스팅하였다.
 
-    * [코드캐더미로 배우는 레일즈 기초 1부](http://nolboo.github.io/blog/2015/05/13/rails-codecademy/)
+* [코드캐더미로 배우는 레일즈 기초 1부](http://nolboo.github.io/blog/2015/05/13/rails-codecademy/)
