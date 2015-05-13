@@ -37,6 +37,7 @@ tags: [codecademy, course, rails, ruby]
 6. 컨트롤러가 사용자가 보고 있는 브라우저에 HTML을 다시 보낸다.
 
 request/response cycle을 보려면 레일즈앱을 만드는 세 부분이 필요하다: 컨트롤러, 루트, 뷰
+
 먼저 컨트롤러를 만들자.
 
 ### Controller
@@ -96,6 +97,8 @@ get 'welcome' => 'pages#home'
 
 정적`static` 페이지를 가진 레일즈앱을 만들었으며, 컨트롤러, 루트, 뷰를 사용하였다. 정적 페이지를 가진 레이즈 앱은 모든 사용자가 같은 화면을 보게 된다. 
 
+* 전체 소스를 [깃허브 저장소](https://github.com/nolboo/rails-codecademy-static)에 올려놓았다.
+
 ## 메신저 앱
 
 이제 데이타베이스와 함께 정보를 저장하는 앱을 만들어 보자. 데이타베이스에 맞는 Request-Response Cycle은 다음과 같다. 다이어그램은 [Request-Response Cycle II](http://www.codecademy.com/articles/request-response-cycle-dynamic)을 참조한다.
@@ -118,11 +121,11 @@ get 'welcome' => 'pages#home'
 
 MessengerApp이라는 레일즈 앱을 만들었다. 
 
-[Request-Response Cycle II](http://www.codecademy.com/articles/request-response-cycle-dynamic)를 참조하여 레일즈을 만드는 네 부분이 필요하다 - 모델, 루트, 컨트롤러, 뷰
+[Request-Response Cycle II](http://www.codecademy.com/articles/request-response-cycle-dynamic)를 보라. 레일즈을 만드는 네 부분이 필요하다 - 모델, 루트, 컨트롤러, 뷰
 
 ### Model
 
-모델을 만들어보자. 터미널에서 다음 명령어로 `Message`라는 새로운 모델을 제너레이트한다.
+모델을 만들자. 터미널에서 다음 명령어로 `Message`라는 새로운 모델을 제너레이트한다.
 
 <pre class="terminal">
     rails generate model Message
@@ -132,10 +135,11 @@ MessengerApp이라는 레일즈 앱을 만들었다.
 
 1. `app/models/message.rb`라는 모델 파일. 데이터베이스의 테이블을 기술한다.
 2. `db/migrate/`안의 마이그레이션 파일. 마이그레이션은 데이터베이스를 업데이트하는 방법이다.
+<br />
 
 #### 마이그레이션
 
-메시지 테이블을 위해 `db/migrate/` 안의 마이그레이션 파일을 연다. 마이그레이션 파일명은 만들어진 timestamp로 시작된다. `change` 매서드 안의 line4에 다음을 추가한다:
+메시지 테이블을 위해 `db/migrate/` 안의 마이그레이션 파일을 연다. 마이그레이션 파일명은 생성일시  timestamp로 시작된다. `change` 매서드 안의 line4에 다음을 추가한다:
 
 ```ruby
     t.text :content
@@ -345,6 +349,8 @@ end
 - 레일즈는 데이터를 보여주거나 만드는 등의 그런 일반적인 일을 하기위해 [7가지 표준 컨트롤러 액션](http://www.codecademy.com/articles/standard-controller-actions)을 제공한다.
 - 데이터는 ERB 웹 템플레이팅을 사용하여 뷰에서 보여질 수 있다.
 - 데이터는 웹 폼을 이용하여 데이터베이스 안에 저장될 수 있다.
+
+* MessageApp 전체 소스는 [깃허브 저장소](https://github.com/nolboo/rails-codecademy-MessengerApp)에 올려놓았다.
 
 ## 맺음말
 
