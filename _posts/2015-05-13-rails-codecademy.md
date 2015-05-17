@@ -10,6 +10,8 @@ tags: [codecademy, course, rails, ruby]
 
 루비를 모른다면 [Ruby | Codecademy](http://www.codecademy.com/tracks/ruby)를 먼저 하길 권한다.
 
+코드캐더미에서는 모든 것이 웹브라우저에서 인터렉티브하게 진행되기 때문에 레일즈의 설치와 기본 디렉토리 구조는 [루비 온 레일즈로 블로그 만들기](http://nolboo.github.io/blog/2015/05/05/web-application-architecture/)의 "루비온 레일즈 설치" 부분을 참조하는 것으로 대치한다.
+
 ## MySite
 
 <pre class="terminal">
@@ -36,7 +38,7 @@ tags: [codecademy, course, rails, ruby]
 5. 뷰는 HTML 페이지를 렌더링한다.
 6. 컨트롤러가 사용자가 보고 있는 브라우저에 HTML을 다시 보낸다.
 
-request/response cycle을 보려면 레일즈앱을 만드는 세 부분이 필요하다: 컨트롤러, 루트, 뷰
+request/response cycle을 보려면 레일즈앱을 만드는 세 부분이 필요하다: 컨트롤러, 라우트, 뷰
 
 먼저 컨트롤러를 만들자.
 
@@ -59,18 +61,18 @@ end
 
 ### Route
 
-이제 컨트롤러를 가졌으니, request/response cycle의 두 번째 부분으로 넘어가서 루트를 만들자.
+이제 컨트롤러를 가졌으니, request/response cycle의 두 번째 부분으로 넘어가서 라우트를 만들자.
 `config/routes.rb` 파일을 열고 다음을 추가한다:
 
 ```ruby
 get 'welcome' => 'pages#home'
 ```
 
-이제 `http://localhost:3000/welcome` 방문했을 때 위의 루트가 레일즈에게 `Pages` 컨트롤러의 `home` 액션으로 이 요청을 보내라고 말한다.
+이제 `http://localhost:3000/welcome` 방문했을 때 위의 라우트가 레일즈에게 `Pages` 컨트롤러의 `home` 액션으로 이 요청을 보내라고 말한다.
 
 ### View
 
-컨트롤러와 루트를 가졌으니, request/response cycle의 세 번째 부분으로 넘어가서 뷰를 만들자. `app/views/pages/home.html.erb`을 만들고 다음 HTML을 입력한다. 자신의 이름으로 채워라.
+컨트롤러와 라우트를 가졌으니, request/response cycle의 세 번째 부분으로 넘어가서 뷰를 만들자. `app/views/pages/home.html.erb`을 만들고 다음 HTML을 입력한다. 자신의 이름으로 채워라.
 
 ```html
 <div class="main">
@@ -91,11 +93,11 @@ get 'welcome' => 'pages#home'
 
 1. 새 레일즈 앱을 제너레이트한다.
 2. 컨트롤러를 제너레이트하고 액션을 추가한다.
-3. 루트를 만들고 컨트롤러 액션에 URL을 매핑한다.
+3. 라우트를 만들고 컨트롤러 액션에 URL을 매핑한다.
 4. HTML, CSS로 뷰를 만든다.
 5. 로컬 웹서버를 실행하고 브라우저에서 앱을 미리보기한다.
 
-정적`static` 페이지를 가진 레일즈앱을 만들었으며, 컨트롤러, 루트, 뷰를 사용하였다. 정적 페이지를 가진 레이즈 앱은 모든 사용자가 같은 화면을 보게 된다. 
+정적`static` 페이지를 가진 레일즈앱을 만들었으며, 컨트롤러, 라우트, 뷰를 사용하였다. 정적 페이지를 가진 레이즈 앱은 모든 사용자가 같은 화면을 보게 된다. 
 
 * 전체 소스를 [깃허브 저장소](https://github.com/nolboo/rails-codecademy-static)에 올려놓았다.
 
@@ -121,7 +123,7 @@ get 'welcome' => 'pages#home'
 
 MessengerApp이라는 레일즈 앱을 만들었다. 
 
-[Request-Response Cycle II](http://www.codecademy.com/articles/request-response-cycle-dynamic)를 보라. 레일즈을 만드는 네 부분이 필요하다 - 모델, 루트, 컨트롤러, 뷰
+[Request-Response Cycle II](http://www.codecademy.com/articles/request-response-cycle-dynamic)를 보라. 레일즈을 만드는 네 부분이 필요하다 - 모델, 라우트, 컨트롤러, 뷰
 
 ### Model
 
@@ -175,13 +177,13 @@ m2 = Message.create(content: "Let's meet there!")
 
 ### Controller
 
-이제 모델을 가졌으니 request/response cycle의 두번째와 세번째 부분으로 넘어가서 컨트롤러와 루트를 만들자.
+이제 모델을 가졌으니 request/response cycle의 두번째와 세번째 부분으로 넘어가서 컨트롤러와 라우트를 만들자.
 
 <pre class="terminal">
     rails generate controller Messages
 </pre>
 
-`config/routes.rb` 파일을 열고 다음을 추가하여 `/messages` URL을 Messages 컨트롤러의 `index` 액션에 매핑하는 루트를 만든다:
+`config/routes.rb` 파일을 열고 다음을 추가하여 `/messages` URL을 Messages 컨트롤러의 `index` 액션에 매핑하는 라우트를 만든다:
 
 ```ruby
 get '/messages' => 'messages#index'
@@ -197,7 +199,7 @@ end
 
 Messages 컨트롤러의 액션명을 `index`로 한 이유는? [Standard Controller Actions](http://www.codecademy.com/articles/standard-controller-actions)를 참조하라. 레일즈는 데이터를 일반적으로 조작하기 위한 7가지의 표준 컨트롤러 액션을 제공한다.(`index`, `show`, `new`, `create`, `edit`, `update`, `destroy`) 여기서는 모든 메시지의 목록을 보여주길 원해서 `index` 액션을 사용했다.
 
-이제 사용자가 `http://localhost:3000/messages`를 방문하면 루트 파일은 이 요청을 Messages 컨트롤러의 `index` 액션으로 매핑한다. `index` 액션은 데이터베이스의 모든 메시지를 가져와 `@messages` 변수에 저장한다.
+이제 사용자가 `http://localhost:3000/messages`를 방문하면 라우트 파일은 이 요청을 Messages 컨트롤러의 `index` 액션으로 매핑한다. `index` 액션은 데이터베이스의 모든 메시지를 가져와 `@messages` 변수에 저장한다.
 
 ### View
 
@@ -242,7 +244,7 @@ Messages 컨트롤러의 액션명을 `index`로 한 이유는? [Standard Contro
 
 지금까지 메시지를 데이터베이스에서 로드하고 뷰에서 보여주었다. 그럼 어떻게 새로운 메시지를 만들고 그것을 데이터베이스에 저장할까? [Standard Controller Actions](http://www.codecademy.com/articles/standard-controller-actions)를 참조하면, `new`와 `create` 액션을 사용할 필요가 있다.
 
-루트 파일 `config/routes.rb`에 `message/new` 요청을 Message 컨트롤러의 `new` 액션과 매핑하는 루트를 만들어 준다:
+라우트 파일 `config/routes.rb`에 `message/new` 요청을 Message 컨트롤러의 `new` 액션과 매핑하는 라우트를 만들어 준다:
 
 ```ruby
 get '/messages/new' => 'messages#new'
@@ -256,7 +258,7 @@ def new
 end
 ```
 
-루트 파일 `config/routes.rb`에 다음 루트를 추가하여 Messages 컨트롤러의 `create` 액션에 요청을 매핑한다.
+라우트 파일 `config/routes.rb`에 다음 라우트를 추가하여 Messages 컨트롤러의 `create` 액션에 요청을 매핑한다.
 
 ```ruby
 post 'messages' => 'messages#create'
