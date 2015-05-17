@@ -33,13 +33,13 @@ Tag와 Destination이라는 두 개의 모델을 만든다:
 `app/models/tag.rb`에:
 
 ```ruby
-    has_many :destination
+has_many :destination
 ```
 
 `app/models/destination.rb`에
 
 ```ruby
-    belongs_to :tag
+belongs_to :tag
 ```
 
 `has_many`/`belongs_to` 쌍은 일대다 관계를 정의하기 위해 자주 쓰인다. 몇 가지를 예로 들면:
@@ -51,18 +51,18 @@ Tag와 Destination이라는 두 개의 모델을 만든다:
 `db/migrate` 안의 tags 테이블에 `title`과 `image`란 string 컬럼들을 추가한다:
 
 ```ruby
-    t.string :title
-    t.string :image
+t.string :title
+t.string :image
 ```
 
 destinations 테이블에 `name`, `image`, `descripton`이란 string 컬럼을 추가하고, 
 tags 테이블에 foreign key pointing을 추가하기위해 `t.references :tag`를 추가한다:
 
 ```ruby
-    t.string :name
-    t.string :image
-    t.string :description
-    t.references :tag
+t.string :name
+t.string :image
+t.string :description
+t.references :tag
 ```
 
 <pre class="terminal">
@@ -86,15 +86,15 @@ tags 테이블에 foreign key pointing을 추가하기위해 `t.references :tag`
 `config/routes.rb`에 `/tags` 요청을 `Tags` 컨트롤러의 `index` 액션에 매핑하는 새로운 라우트를 추가한다:
 
 ```ruby
-    get '/tags' => 'tags#index'
+get '/tags' => 'tags#index'
 ```
 
 `app/controllers/messages_controller.rb`에 모든 태그 목록을 보여주는 `index` 액션을 추가한다:
 
 ```ruby
-    def index
-        @tags = Tag.all
-    end
+def index
+    @tags = Tag.all
+end
 ```
 
 뷰를 만들기 위해서 `app/views/tags/index.html.erb`를 만들고, 다음을 입력한다:
@@ -185,9 +185,9 @@ get '/destinations/:id' => 'destinations#show', as: :destination
 Destinations 컨트롤러 파일에 `show` 액션을 추가한다:
 
 ```ruby
-    def show 
-      @destination = Destination.find(params[:id])
-    end
+def show 
+  @destination = Destination.find(params[:id])
+end
 ```
 
 뷰 파일 `app/views/destinations/show.html.erb`을 만들고, 목적지의 사진, 이름, 소개를 보여주도록 한다:
@@ -227,16 +227,16 @@ Destinations 컨트롤러 파일에 `show` 액션을 추가한다:
 라우트 파일에 다음 라우트를 추가한다:
 
 ```ruby
-    get '/destinations/:id/edit' => 'destinations#edit', as: :edit_destination 
-    patch '/destinations/:id' => 'destinations#update'
+get '/destinations/:id/edit' => 'destinations#edit', as: :edit_destination 
+patch '/destinations/:id' => 'destinations#update'
 ```
 
 Destinations 컨트롤러의 `show` 액션 밑에 `edit` 액션을 추가한다:
 
 ```ruby
-    def edit 
-      @destination = Destination.find(params[:id]) 
-    end
+def edit 
+  @destination = Destination.find(params[:id]) 
+end
 ```
 
 `edit` 액션 밑에 `destination_params`라는 private 매서드를 추가한다:
