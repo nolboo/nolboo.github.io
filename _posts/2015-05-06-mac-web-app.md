@@ -58,7 +58,8 @@ mackup으로 환경설정을 복원했다면 이 때 아래 패키지들이 한�
 - [Dash - API Docs & Snippets](https://itunes.apple.com/us/app/dash/id458034879?ls=1&mt=12)
 - [WebStorm :: The smartest JavaScript IDE](http://www.jetbrains.com/webstorm/)
 - [Download Python](https://www.python.org/download)
-
+- [SourceTree](https://www.sourcetreeapp.com/)
+    - [GitHub for Mac](https://mac.github.com/)
 - [Anvil for Mac - Run your sites locally](http://anvilformac.com/) 
 - [Pow: Zero-configuration Rack server for Mac OS X](http://pow.cx/)를 GUI로 간단하게 사용할 수 있도록 루트디렉토리.dev 
     - locally 설치 : `npm install -g locally`
@@ -77,12 +78,14 @@ mackup으로 환경설정을 복원했다면 이 때 아래 패키지들이 한�
 - [nosleep](https://code.google.com/p/macosx-nosleep-extension/)
 - [Day-O](http://www.shauninman.com/archive/2011/10/20/day_o_mac_menu_bar_clock) : 기본 날자 아이콘을 숨기고 날짜 형식을 `h:mm`으로 설정하여 보여준다.
 - [HyperSwitch](http://bahoom.com/hyperswitch/): [OS X 앱 전환 방식의 불편함을 완벽히 보완해주는 HyperSwitch](http://macnews.tistory.com/1022)
+- [OptOpt](https://itunes.apple.com/app/optopt/id989799277?mt=12): [프로그램마다 단축키를 지정할 수 있는 응용 프로그램 전환기](http://macnews.tistory.com/3330)
 - [Anki](http://ankisrs.net/): 플래시 카드
 - [Noizio](https://itunes.apple.com/kr/app/noizio/id928871589?mt=12): [[추천 무료앱] 이제 소음도 섞어서 듣자? 상황에 따른 8가지 소리를 자유롭게 조합할 수 있는 집중력 향상 앱 'Noizio'](http://macnews.tistory.com/2703)
 
 - [GIMP](http://www.gimp.org/downloads/)
 - [리디북스](http://ridibooks.com/support/app/download): 전자책 뷰어
 - [VLC media player](http://www.videolan.org/vlc/download-macosx.html)
+- [곰플레이어](http://gom2.gomtv.com/release/gom_player_mac.htm)
 - [Scrivener](https://www.literatureandlatte.com/download_mac.php): [Scrivener 튜토리얼 가이드 한글번역본](http://macnews.tistory.com/2494)
 
 ### 앱스토어
