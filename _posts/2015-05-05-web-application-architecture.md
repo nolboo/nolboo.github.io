@@ -67,6 +67,8 @@ RVM을 설치한다.
 \curl -L https://get.rvm.io | bash -s stable --ruby
 </pre>
 
+- RVM 설치 관련 한글 추천글: [멘붕없이 RVM과 루비 설치하기](http://bit.ly/1Fc8SDT) 
+
 RVM을 최신판으로 업데이트하고 Ruby를 설치한다.
 
 <pre class="terminal">

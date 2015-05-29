@@ -64,6 +64,9 @@ mackup으로 환경설정을 복원했다면 이 때 아래 패키지들이 한�
 - [Pow: Zero-configuration Rack server for Mac OS X](http://pow.cx/)를 GUI로 간단하게 사용할 수 있도록 루트디렉토리.dev 
     - locally 설치 : `npm install -g locally`
     - [xip.io: wildcard DNS for everyone](http://xip.io/)를 http://amoeba.192.168.0.6.xip.io/
+    - 터미널에서 간단히 웹서버 띄우는 방법 2가지
+        python -m SimpleHTTPServer 8000
+        ruby -run -e httpd . -p 8000
 
 - [Sip](http://macnews.tistory.com/2018) : 화면에서 색상 코드를 추출할 수 있는 인기 맥용 컬러피커 프로그램. 
     - 기본적인 컬러피커 패널에 [Developer Color Picker](http://download.panic.com/picker/)도 추가해놓는다. 다운로드한 후에 `~/Library/ColorPickers`로 앱을 이동한다. 디렉토리가 없으면 만든다.
@@ -139,4 +142,4 @@ bitly, Todoist, Dash, Pocket 확장 등을 설치하고, 단디 한글 맞춤법
 
 ## 검토용 앱
 
-아직은 없다. 위의 앱을 전부 쓰고 있는 줄은 몰랐다.
+- [Zoommy](http://zoommyapp.com/): ALL FREE STOCK PHOTOS IN ONE PLACE
