@@ -164,15 +164,19 @@ end
 
 객체의 속성에 접근하는 방법 중 getter, setter를 이용하는 방법이 있지만, 이건 고통이다. `attr_accessor`를 이용한 빠른 방법이 있다.
 
-    class MyClass
-        attr_accessor :boo
-    end
+```ruby
+class MyClass
+    attr_accessor :boo
+end
+```
 
 boo라고 불리는 인스턴스 변수를 만들고, getter, setter 매서드를 만든다.
 
-    class Person
-        attr_accessor :first_name, :last_name
-    end
+```ruby
+class Person
+    attr_accessor :first_name, :last_name
+end
+```
 
 first_name, last_name 인스턴스 변수를 만들고, 각각의 getter, setter 매서드를 만든다.
 
@@ -180,9 +184,11 @@ getter 매서드만을 원하면 `attr_reader`를 사용하고, setter 매서드
 
 상속의 문법은 다음과 같다:
 
-    class NewClass < SuperClass 
-        ... 
-    end
+```ruby
+class NewClass < SuperClass 
+    ... 
+end
+```
 
 `initialize` 매서드는 `a = Array.new`와 같이 클래스 이름과 `new`를 호출하여 사용한다. 항상 private이다.
 
@@ -345,42 +351,52 @@ Ex. 조건적인 실행이나 루핑 구조가 다른 언어에서는 명령문�
 
 루비는 조건을 표현하기 위한 풍부한 문법을 가지고 있다. 가장 기본적인 것은:
 
-    if *expression* 
-        *code* 
-    end 
+```ruby
+if expression
+    code
+end 
+```
 
 조건식이 `false` 나 `nil`이 아닌 값이면 code가 실행된다.
 
 else 절은 if 조건식이 참이 아닐 경우 실행되어야 하는 코드를 추가할 수 있다:
 
-    if *expression1* 
-        *code* 
-    elsif *expression2* 
-        *code* 
-    else 
-        *code* 
-    end
+```ruby
+if expression1
+    code
+elsif expression2
+    code
+else 
+    code
+end
+```
 
 * elsif는 오타가 아니다.
 
 There’s a shorthand way of expressing the if conditional that treats it as an expression modiﬁer: 
 
-    *code* if *expression* 
+```ruby
+code if expression
+```
 
 루비는 C/C++ 처럼 `?:` 연산자도 있다.
 
 비교 연산자: 
 
-    ==, !=, =∼, !∼, === 
+```ruby
+==, !=, =∼, !∼, === 
+```
 
 There is a case structure in Ruby, === is the case-equality operator.
 
 표준적인 조건식에 더하여, 루비는 코드의 가독성과 이해를 증가하기 위해 몇 가지를 추가한다.
 예로, 다음은 if 문의 반대이다:
 
-    until *expression* 
-        *code* 
-    end
+```ruby
+until expression
+    code
+end
+```
 
 조건식이 `false` 나 `nil`아닐 때까지 code가 수행된다.
 
@@ -390,21 +406,27 @@ until 조건식에 else 절을 붙일 수 없다.
 
 `for`/`in` 루프는 가산 누적되면서 반복한다: 
 
-    for *var* in *collection* do 
-        *body* 
-    end 
+```ruby
+for var in collection do 
+    body
+end 
+```
 
 Exit condition loop: 
 
-    while *condition* do 
-        *body* 
-    end 
+```ruby
+while condition do 
+    body
+end 
+```
 
 Exit condition loop, while과 반대: 
 
-    until *condition* do 
-        *body* 
-    end 
+```ruby
+until condition do 
+    body
+end 
+```
 
 In Ruby, it’s more common to use iterators (next lecture).
 
@@ -488,7 +510,7 @@ def three_times
 end 
 ```
 
-    > `three_times {puts "Hello"}` 는 "Hello"를 세번 출력한다.
+* `three_times {puts "Hello"}` 는 "Hello"를 세번 출력한다.
 
 #### Iterators 
 
@@ -531,3 +553,7 @@ end
 ```
 
 /views/posts/index.html.erb 안에 있는 소스이다. `<%`와 `%>`로 둘러싸인 부분은 뷰에서 실행되는 루비 코드(embedded Ruby)이며, `<%=`로 시작되는 것은 실행 결과를 HTML 코드로 삽입한다.
+
+## 참고링크
+
+- [Python & Ruby](https://opentutorials.org/module/1569): Ruby와 Python을 동시에 배우는 병렬학습

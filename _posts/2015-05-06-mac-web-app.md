@@ -65,8 +65,8 @@ mackup으로 환경설정을 복원했다면 이 때 아래 패키지들이 한�
     - locally 설치 : `npm install -g locally`
     - [xip.io: wildcard DNS for everyone](http://xip.io/)를 http://amoeba.192.168.0.6.xip.io/
     - 터미널에서 간단히 웹서버 띄우는 방법 2가지
-        python -m SimpleHTTPServer 8000
-        ruby -run -e httpd . -p 8000
+        - python -m SimpleHTTPServer 8000
+        - ruby -run -e httpd . -p 8000
 
 - [Sip](http://macnews.tistory.com/2018) : 화면에서 색상 코드를 추출할 수 있는 인기 맥용 컬러피커 프로그램. 
     - 기본적인 컬러피커 패널에 [Developer Color Picker](http://download.panic.com/picker/)도 추가해놓는다. 다운로드한 후에 `~/Library/ColorPickers`로 앱을 이동한다. 디렉토리가 없으면 만든다.
@@ -80,6 +80,7 @@ mackup으로 환경설정을 복원했다면 이 때 아래 패키지들이 한�
 - [Alfred](http://www.alfredapp.com/)
 - [nosleep](https://code.google.com/p/macosx-nosleep-extension/)
 - [Day-O](http://www.shauninman.com/archive/2011/10/20/day_o_mac_menu_bar_clock) : 기본 날자 아이콘을 숨기고 날짜 형식을 `h:mm`으로 설정하여 보여준다.
+- [Bartender](http://www.macbartender.com/) : 메뉴바 정리 앱
 - [HyperSwitch](http://bahoom.com/hyperswitch/): [OS X 앱 전환 방식의 불편함을 완벽히 보완해주는 HyperSwitch](http://macnews.tistory.com/1022)
 - [OptOpt](https://itunes.apple.com/app/optopt/id989799277?mt=12): [프로그램마다 단축키를 지정할 수 있는 응용 프로그램 전환기](http://macnews.tistory.com/3330)
 - [Anki](http://ankisrs.net/): 플래시 카드

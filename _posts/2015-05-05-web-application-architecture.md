@@ -151,6 +151,7 @@ rails server
 
 - [루비 설치하기](https://www.ruby-lang.org/ko/documentation/installation/)
 - [멘붕없이 RVM과 루비 설치하기 | Bigmatch](http://bigmatch.i-um.net/2013/12/%EB%A9%98%EB%B6%95%EC%97%86%EC%9D%B4-rvm%EA%B3%BC-%EB%A3%A8%EB%B9%84-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/)
+- [Install Rails On Mac OS](https://www.youtube.com/watch?v=lBnO2xvwO0k): 국내 RoRLab 동영상
 
 ## 블로그 만들기
 
