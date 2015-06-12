@@ -302,4 +302,10 @@ end
 
 코드캐더미의 레일즈 강좌는 레일즈의 MVC 속성을 쉬운 앱부터 시작하여 여러 형태의 앱을 반복해서 만들어 볼 수 있다. 비슷한 코드를 계속해서 입력하게 하기 때문에 나름대로 처음 접한 MVC의 이해도를 높을 수 있었다. 그런데 3개의 글을 그냥 읽기만하는 블로그 독자에게는 매우 지루한 일일수도 있을 것 같다는 생각이 든다. 직접 강좌를 하면서 참고용으로 삼기 바란다=3=3=3
 
+## 추천 링크
+
+- [Ruby/Rails 4.0 - Lecture 1/29 - Intro to Rails - YouTube](https://www.youtube.com/watch?v=MrGYKo50Dqg&list=PLSXDqiI4sC5PsASjJy7dBncALnhjud2fx): 
+여기저기 기웃거리다가 괜찮은 동영상을 만났다. 설명도 자세한 편이고 무엇보다 실수를 많이 하면서(때론 유도하면서) 그걸 해결하는 것을 직접 보여주는 것이 익살스럽다. 총 29개의 비디오로 구성되어 있으며 23번째를 보기 시작하면서 추천하는 것이다.
+- [레일스와 함께 하는 애자일 웹 개발 개정판 | 도서출판 인사이트](http://www.insightbook.co.kr/books/programming-insight/%EB%A0%88%EC%9D%BC%EC%8A%A4%EC%99%80-%ED%95%A8%EA%BB%98-%ED%95%98%EB%8A%94-%EC%95%A0%EC%9E%90%EC%9D%BC-%EC%9B%B9-%EA%B0%9C%EB%B0%9C-%EA%B0%9C%EC%A0%95%ED%8C%90) - 원본 : [Agile Web Development with Rails 4 (Facets of Ruby): Sam Ruby, Dave Thomas, David Heinemeier Hansson](http://www.amazon.com/Agile-Development-Rails-Facets-Ruby/dp/1937785564/ref=sr_1_1?ie=UTF8&qid=1434097925&sr=8-1&keywords=agile-web-development-with-rails-4)
+- [Ruby on Rails Tutorial (3rd Ed.)](https://www.railstutorial.org/book)
 
