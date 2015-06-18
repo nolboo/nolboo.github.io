@@ -56,7 +56,8 @@ mackup으로 환경설정을 복원했다면 이 때 아래 패키지들이 한�
 ## 개발관련 맥앱
 
 - [Dash - API Docs & Snippets](https://itunes.apple.com/us/app/dash/id458034879?ls=1&mt=12)
-- [WebStorm :: The smartest JavaScript IDE](http://www.jetbrains.com/webstorm/)
+- [RubyMine](https://www.jetbrains.com/ruby/)
+- [WebStorm](http://www.jetbrains.com/webstorm/)
 - [Download Python](https://www.python.org/download)
 - [SourceTree](https://www.sourcetreeapp.com/)
     - [GitHub for Mac](https://mac.github.com/)
@@ -96,11 +97,13 @@ mackup으로 환경설정을 복원했다면 이 때 아래 패키지들이 한�
 
 #### 유료
 
-- [Airmail](https://itunes.apple.com/app/airmail/id573171375?mt=12)
+- [Boom](https://itunes.apple.com/us/app/boom-experience-best-audio/id415312377?mt=12): 맥프레를 홈시어터로 바꿔주는 사운드 향상 앱
 - [Kuvva wallpapers](https://itunes.apple.com/app/id451557061?mt=12)
-- [Mac App Store - Window Tidy](https://itunes.apple.com/kr/app/window-tidy/id456609775?mt=12)
+- [Window Tidy](https://itunes.apple.com/kr/app/window-tidy/id456609775?mt=12)
+- [Bartender](http://www.macbartender.com/)
 - [PomodoroApp](https://itunes.apple.com/kr/app/pomodoroapp-simple-pomodoro/id705103149?mt=12)
 - [Copy'em Paste](https://itunes.apple.com/us/app/fun-math-games/id876540291?mt=12)
+- [TextExpander 4](http://smilesoftware.com/TextExpander)
 - [AutoKeyboard](https://itunes.apple.com/kr/app/autokeyboard/id908553210?mt=12): [응용 프로그램을 전환할 때 입력기를 자동으로 전환해주는 편리한 유틸리티](http://macnews.tistory.com/2606)
 - [Total Manager](https://itunes.apple.com/app/id796275163?mt=12)
 - [Scapple](https://itunes.apple.com/kr/app/scapple/id568020055?mt=12) 
@@ -113,11 +116,11 @@ mackup으로 환경설정을 복원했다면 이 때 아래 패키지들이 한�
 
 bitly, Todoist, Dash, Pocket 확장 등을 설치하고, 단디 한글 맞춤법 검사기 확장은 [숩님이 제작하신 것](http://soooprmx.com/wp/archives/3863)을 자주 사용했지만, 최근엔 [미남이님이 제작하신 것](https://twitter.com/seoulrain/statuses/541397266066440193)을 주로 사용한다.(두 분 모두 고맙습니다!)
 
-- [Boom](https://itunes.apple.com/us/app/boom-experience-best-audio/id415312377?mt=12): 맥프레를 홈시어터로 바꿔주는 사운드 향상 앱
 - [무비스트](https://itunes.apple.com/kr/app/mubiseuteu/id461788075?mt=12)
 - [DaisyDisk](https://itunes.apple.com/app/daisydisk/id411643860?mt=12&ign-mpt=uo%3D4): 하드디스크 분석과 삭제, 뛰어난 그래픽으로 한눈에 디스크를 정리할 수 있다.
 - [Day One](https://itunes.apple.com/kr/app/day-one-ilgi-daieoli/id422304217?mt=12): 일기 다이어리 작성
 - [Ulysses](https://itunes.apple.com/kr/app/id623795237?mt=12): 마크다운 에디터앱
+- [Airmail](https://itunes.apple.com/app/airmail/id573171375?mt=12)
 
 #### 무료
 
