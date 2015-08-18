@@ -194,6 +194,7 @@ ST3와 [Bitbucket](https://bitbucket.org)을 이용하여 *마크다운 문법�
 - [MultiMarkdown Quick Look with Style](https://github.com/ttscoff/MMD-QuickLook): 파인더의 훑어보기(Quick Look)에서 마크다운 파일을 바로 볼 수 있다.
 - [reveal.js](http://lab.hakim.se/reveal-js), [Swipe](http://swipe.to/): 마크다운으로 멀티미디어 프리젠테이션을 쉽게 만들 수 있다. 한번 사용법을 익히면 다시는 파워포인트로 돌아가고 싶지 않을 것이다.
 - [Markdown Slides](https://github.com/asanzdiego/markdownslides): 하나의 마크다운 파일에서 Reveal.js, Deck.js, PDF 슬라이드를 제너레이트하고, HTML, ODT, DOCX 문서 파일도 제너레이트하는 오픈소스이다.
+- [Brett's PopClip Extensions](http://brettterpstra.com/projects/bretts-popclip-extensions/): 팝클립을 사용한다면 고려해볼만한 마크다운 확장이다.
 
 ## 맺음말과 링크
 

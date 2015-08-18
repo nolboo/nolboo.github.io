@@ -83,6 +83,7 @@ mackup으로 환경설정을 복원했다면 이 때 아래 패키지들이 한�
 - [Day-O](http://www.shauninman.com/archive/2011/10/20/day_o_mac_menu_bar_clock) : 기본 날자 아이콘을 숨기고 날짜 형식을 `h:mm`으로 설정하여 보여준다.
 - [Bartender](http://www.macbartender.com/) : 메뉴바 정리 앱
 - [HyperSwitch](http://bahoom.com/hyperswitch/): [OS X 앱 전환 방식의 불편함을 완벽히 보완해주는 HyperSwitch](http://macnews.tistory.com/1022)
+- [Turbo Boost Switcher](http://www.rugarciap.com/turbo-boost-switcher-for-os-x/): [CPU 터보 부스트를 강제로 비활성화 시켜 맥북 배터리 더 오래 사용하기](http://macnews.tistory.com/3393) 
 - [OptOpt](https://itunes.apple.com/app/optopt/id989799277?mt=12): [프로그램마다 단축키를 지정할 수 있는 응용 프로그램 전환기](http://macnews.tistory.com/3330)
 - [Anki](http://ankisrs.net/): 플래시 카드
 - [Noizio](https://itunes.apple.com/kr/app/noizio/id928871589?mt=12): [[추천 무료앱] 이제 소음도 섞어서 듣자? 상황에 따른 8가지 소리를 자유롭게 조합할 수 있는 집중력 향상 앱 'Noizio'](http://macnews.tistory.com/2703)
