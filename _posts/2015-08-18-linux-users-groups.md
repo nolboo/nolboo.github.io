@@ -381,3 +381,7 @@ You may wish to consult the following resources for additional information on th
 * [Online Chmod Calculator](http://www.onlineconversion.com/html_chmod_calculator.htm)
 
 This guide is published under a [CC BY-ND 3.0](http://creativecommons.org/licenses/by-nd/3.0/us/) license.
+
+## 역자 참고 링크
+
+* [리눅스포커스 : 파일접근권한](http://www.linuxfocus.org/Korean/January1999/article77.html)
