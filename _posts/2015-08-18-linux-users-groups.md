@@ -384,4 +384,6 @@ This guide is published under a [CC BY-ND 3.0](http://creativecommons.org/licens
 
 ## 역자 참고 링크
 
+* [리눅스 파일 퍼미션 | Linux System Engineer's Blog](http://root.so/archives/51)
 * [리눅스포커스 : 파일접근권한](http://www.linuxfocus.org/Korean/January1999/article77.html)
+* [리눅스 - 소유권과 허가권 알아보기](http://bit.ly/1Kvjtga) : SetUID(4),SetGID(2),sticky bit(1)에 대한 설명이 명확함.
