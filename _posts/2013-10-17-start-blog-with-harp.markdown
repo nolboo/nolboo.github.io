@@ -35,7 +35,7 @@ tags: [blog, harp, static]
 
 [localhost:9000](localhost:9000)에서 로컬에서 실행된 `my-harp-blog`를 볼 수 있다.
 
-![](http://kennethormandy.com/images/start-a-blog-with-harp/1.png)
+![](http://kennethormandy.com/journal/images/start-a-blog-with-harp/1.png)
 
 ## Start with Markdown
 
@@ -49,7 +49,7 @@ tags: [blog, harp, static]
 
 `about.md` 화일을 변경하고 저장하고 브라우저를 새로고침하면, 변경된 것이 이미 반영된다.
 
-![](http://kennethormandy.com/images/start-a-blog-with-harp/2.png)
+![](http://kennethormandy.com/journal/images/start-a-blog-with-harp/2.png)
 
 정적 사이트 제너레이터를 경험해 본 적이 있다면 화일 watcher를 시작하고 정지시키는 작업을 했을 것이다. 하프에선 그럴 필요가 없다; 서버가 작동하고 있는 한, 변경사항이 바로 브라우저로 전달된다. 이 프로세스는 매우 빠르다: 화일이 제대로 준비된다면, 하나의 화일이 변경되었을 때 전체 앱을 다시 빌드할 필요가 없다.
 
@@ -88,7 +88,7 @@ Jade에서, 감탄부호(`!`)는 `yield`가 예외처리되지 않게 한다. `E
 
 어느 쪽이든, `main.css`가 참조된 것을 주의한다. 폴더에 실제로 그 화일이 없더라도;`main.less`가 있다. 하프는 프리프로세싱이 내장되어 있다. `LESS` 화일을 업데이트하고 저장하면 변경사항이 브라우저에 바로 변경된다. 디폴트 스타일시트에 조금 추가한 것이 있다. 같은 것을 사용하고 싶다면, [여기](https://github.com/kennethormandy/my-harp-blog/blob/master/main.less)에 있다.
 
-![](http://kennethormandy.com/images/start-a-blog-with-harp/3.png)
+![](http://kennethormandy.com/journal/images/start-a-blog-with-harp/3.png)
 
 ## Adding Articles
 
@@ -141,7 +141,7 @@ ul
 
 기대한대로, 홈페이지에 이제 글 목록이 있다.
 
-![](http://kennethormandy.com/images/start-a-blog-with-harp/4.png)
+![](http://kennethormandy.com/journal/images/start-a-blog-with-harp/4.png)
 
 이 블로그는 아직 내비게이션할 방법이 빠져있다. 레이아웃에 헤더뿐만 아니라 푸터에 내비를 넣는 것이 좋을 것이다. 하프의 `partial` 함수로 같은 마크업을 여러 번 반복하지 않을 수 있다.
 
@@ -173,7 +173,7 @@ html
 
 이제, 중복된 마크업을 사용하지 않고 내비가 블로그 포스트의 위와 아래에 나타난다. 이건 단순한 예제이다. 그러나, 유용한 partial들이 블로그의 부분들로 얼마나 유용하게 어디서나 재사용될 수 있는지 상상할 수 있을 것이다.
 
-![](http://kennethormandy.com/images/start-a-blog-with-harp/5.png)
+![](http://kennethormandy.com/journal/images/start-a-blog-with-harp/5.png)
 
 ## Getting it out there
 

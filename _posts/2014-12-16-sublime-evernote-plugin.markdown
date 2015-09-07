@@ -45,3 +45,7 @@ tags: [sublime, evernote, markdown]
 전반적으로 마크다운 사용자가 에버노트를 **빠르게** 검색하고 열고 간단한 편집을 하기에는 최고의 플러그인 같다. 공유된 에버노트는 다음과 같다.
 
 - [서브라임 텍스트 3에서 에버노트 사용하기](http://bit.ly/1yXgcW0)
+
+## 참고링크
+
+* [Geeknote - Evernote console client for Linux, FreeBSD, OS X](http://www.geeknote.me/)
