@@ -87,6 +87,7 @@ mackup으로 환경설정을 복원했다면 이 때 아래 패키지들이 한�
 - [OptOpt](https://itunes.apple.com/app/optopt/id989799277?mt=12): [프로그램마다 단축키를 지정할 수 있는 응용 프로그램 전환기](http://macnews.tistory.com/3330)
 - [Anki](http://ankisrs.net/): 플래시 카드
 - [Noizio](https://itunes.apple.com/kr/app/noizio/id928871589?mt=12): [[추천 무료앱] 이제 소음도 섞어서 듣자? 상황에 따른 8가지 소리를 자유롭게 조합할 수 있는 집중력 향상 앱 'Noizio'](http://macnews.tistory.com/2703)
+- [Commander One - free dual-pane file manager](https://itunes.apple.com/kr/app/commander-one-free-dual-pane/id1035236694?mt=12)
 
 - [GIMP](http://www.gimp.org/downloads/)
 - [리디북스](http://ridibooks.com/support/app/download): 전자책 뷰어
@@ -109,6 +110,7 @@ mackup으로 환경설정을 복원했다면 이 때 아래 패키지들이 한�
 - [Total Manager](https://itunes.apple.com/app/id796275163?mt=12)
 - [Scapple](https://itunes.apple.com/kr/app/scapple/id568020055?mt=12) 
     - [Scapple 사용기(1) - Scapple의 특징, 구매, 설치까지](http://reinia.net/916)
+- [iThoughtsX | toketaWare](http://toketaware.com/)
 - [Fantastical](https://flexibits.com/fantastical)
     - [[추천 무료앱] OS X 메뉴 막대에 깔끔한 달력을 달아 드립니다 'Itsycal'](http://macnews.tistory.com/3023)
     - [1년치 일정을 한눈에 살펴보고 관리할 수 있는 'popCalendar'](http://macnews.tistory.com/2480)
