@@ -48,4 +48,6 @@ React, Ember와 같은 것을 이해하는 것은 더 어렵지만 노력할 가
 
 이 글에 대한 토론은 [How to Become a Great JavaScript Developer | Hacker News](https://news.ycombinator.com/item?id=9731230)에서 볼 수 있다.
 
+## 추가 링크
 
+- [훌륭한 JavaScript 개발자가 되는 법](https://item4.github.io/2015-10-12/How-to-Become-a-Great-JavaScript-Developer.html) : 저는 요약 번역을 했는데 풀 번역을 하신 분들이 생겼네요.
