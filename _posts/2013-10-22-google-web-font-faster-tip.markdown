@@ -73,6 +73,11 @@ tags: [css, font, google, html, webfont]
 
 이런 구글 폰트 트릭을 사용하여 더 훌륭한 인상을 주는 웹사이트로 바꾸자.
 
+## 추가링크
+
+* [Using Web Fonts The Best Way (in 2015). – Anselm Hannemann, Freelance HTML & CSS Contractor](https://helloanselm.com/2015/using-webfonts-in-2015/?ref=webdesignernews.com)
+* [Coderifleman – 한글 웹 폰트 경량화해 사용하기](http://blog.coderifleman.com/post/111825720099/%ED%95%9C%EA%B8%80-%EC%9B%B9-%ED%8F%B0%ED%8A%B8-%EA%B2%BD%EB%9F%89%ED%99%94%ED%95%B4-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0)
+
    [1]: http://www.quickonlinetips.com/archives/2013/10/load-google-web-fonts-faster/
    [2]: http://www.google.com/fonts
    [3]: http://www.quickonlinetips.com/archives/wp-content/uploads/single-font.png

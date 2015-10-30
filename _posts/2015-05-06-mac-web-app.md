@@ -138,7 +138,8 @@ bitly, Todoist, Dash, Pocket 확장 등을 설치하고, 단디 한글 맞춤법
 
 ### 참고할만한 글
 
-[The Best Mac Apps and Utilities for Mac OS x](http://www.labnol.org/software/essential-mac-utilities/9479/)
+- [The Best Mac Apps and Utilities for Mac OS x](http://www.labnol.org/software/essential-mac-utilities/9479/)
+- [Awesome OS X](https://github.com/iCHAIT/awesome-osx)
 
 ## 웹앱
 
