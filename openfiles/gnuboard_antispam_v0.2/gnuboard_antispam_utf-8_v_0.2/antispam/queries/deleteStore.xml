@@ -1,0 +1,11 @@
+<query id="deleteStore" action="delete">
+    <tables>
+        <table name="antispam_store" />
+    </tables>
+    <conditions>
+		<condition operation="equal" column="board" var="board"/>
+		<group pipe="and">
+        <condition operation="equal" column="wr_id" var="wr_id" />
+		</group>
+    </conditions>
+</query>

@@ -1,0 +1,8 @@
+<query id="deleteLog" action="delete">
+    <tables>
+        <table name="antispam_log" />
+    </tables>
+    <conditions>
+        <condition operation="equal" column="wr_id" var="wr_id" />
+    </conditions>
+</query>

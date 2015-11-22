@@ -1,0 +1,12 @@
+<table name="antispam_adm_config">
+	<column name="use_antispam" type="varchar" size="1" default="Y" />
+	<column name="score_antispam" type="number" size="3" default="60" />
+	<column name="use_block_member" type="varchar" size="1" default="N" />	
+	<column name="use_block_ip" type="varchar" size="1" default="N" />
+	<column name="score_block_member" type="number" size="3" default="10" />
+	<column name="score_block_ip" type="number" size="3" default="10" />
+	<column name="date_block_member" type="number" size="3" default="1" />
+	<column name="date_block_ip" type="number" size="3" default="1" />
+    <column name="exception_word_list" type="text" />
+    <column name="regdate" type="date" />
+</table>

@@ -1,0 +1,48 @@
+<query id="insertLog" action="insert">
+	<tables>
+		<table name="antispam_log" />
+	</tables>
+	<columns>
+		<column name="wr_id" var="wr_id" />
+		<column name="wr_num" var="wr_num" />
+		<column name="wr_reply" var="wr_reply" />
+		<column name="wr_parent" var="wr_parent" />
+		<column name="wr_is_comment" var="wr_is_comment" />
+		<column name="wr_comment" var="wr_comment" />
+		<column name="wr_comment_reply" var="wr_comment_reply" />
+		<column name="ca_name" var="ca_name" />
+		<column name="wr_option" var="wr_option" />
+		<column name="wr_subject" var="wr_subject" />
+		<column name="wr_content" var="wr_content" />
+		<column name="wr_link1" var="wr_link1" />
+		<column name="wr_link2" var="wr_link2" />
+		<column name="wr_link1_hit" var="wr_link1_hit" />
+		<column name="wr_link2_hit" var="wr_link2_hit" />
+		<column name="wr_trackback" var="wr_trackback" />
+		<column name="wr_hit" var="wr_hit" />
+		<column name="wr_good" var="wr_good" />
+		<column name="wr_nogood" var="wr_nogood" />
+		<column name="mb_id" var="mb_id" />
+		<column name="wr_password" var="wr_password" />
+		<column name="wr_name" var="wr_name" />
+		<column name="wr_email" var="wr_email" />
+		<column name="wr_homepage" var="wr_homepage" />
+		<column name="wr_datetime" var="wr_datetime" />
+		<column name="wr_last" var="wr_last" />
+		<column name="wr_ip" var="wr_ip" />
+		<column name="wr_1" var="wr_1" />
+		<column name="wr_2" var="wr_2" />
+		<column name="wr_3" var="wr_3" />
+		<column name="wr_4" var="wr_4" />
+		<column name="wr_5" var="wr_5" />
+		<column name="wr_6" var="wr_6" />
+		<column name="wr_7" var="wr_7" />
+		<column name="wr_8" var="wr_8" />
+		<column name="wr_9" var="wr_9" />
+		<column name="wr_10" var="wr_10" />
+		<column name="spam_score" var="spam_score" />
+		<column name="spam_type" var="spam_type" />
+		<column name="spam_config_exception_word" var="spam_config_exception_word" />
+		<column name="board" var="board" />
+	</columns>
+</query>

@@ -1,0 +1,17 @@
+<query id="updateBlackListIp" action="update">
+    <tables>
+        <table name="antispam_spammer_ip" />
+    </tables>
+    <columns>
+		<column name="user_id" var="user_id" />
+		<column name="subject" var="subject" />
+		<column name="content" var="content" />
+		<column name="spam_type" var="spam_type" />
+		<column name="spam_score" var="spam_score" />
+		<column name="datetime" var="datetime" />
+		<column name="try_write_spam" var="try_write_spam" />
+    </columns>
+    <conditions>
+        <condition operation="equal" column="user_ip" var="user_ip" />
+    </conditions>
+</query>
