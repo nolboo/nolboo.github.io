@@ -1,8 +1,0 @@
-<query id="getAdmConfig" action="select">
-    <tables>
-        <table name="antispam_adm_config" />
-    </tables>
-    <columns>
-        <column name="*" />
-    </columns>
-</query>

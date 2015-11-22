@@ -1,8 +1,0 @@
-<query id="deleteAdmConfig" action="delete">
-    <tables>
-        <table name="antispam_adm_config" />
-    </tables>
-</query>
-
-
-

@@ -1,8 +1,0 @@
-<query id="getDocumentList" action="select">
-    <tables>
-        <table name="board" />
-    </tables>
-    <columns>
-        <column name="*" />
-    </columns>
-</query>

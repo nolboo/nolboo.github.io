@@ -1,5 +1,0 @@
-<query id="deleteBlackListId" action="delete">
-	<tables>
-		<table name="antispam_spammer_ip" />
-	</tables>
-</query>

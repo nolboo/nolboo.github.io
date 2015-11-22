@@ -1,8 +1,0 @@
-<query id="deleteBlackListId" action="delete">
-	<tables>
-		<table name="antispam_spammer_id" />
-	</tables>
-	<conditions>
-		<condition operation="equal" column="user_id" var="user_id" />
-	</conditions>
-</query>
