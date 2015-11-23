@@ -6,6 +6,8 @@ category: blog
 tags: [javascript, learning, resource]
 ---
 
+<div id="toc"><p class="toc_title">목차</p></div>
+
 원문 : [How to Become a Great JavaScript Developer](http://blog.ustunozgur.com/javascript/programming/books/videos/2015/06/17/how_to_be_a_great_javascript_software_developer.html)
 
 몇가지 참고할 것이 있어서 메모하다보니 조금 길어져서 포스팅합니다. 전체 내용은 아니니 흥미가 가시는 분은 원문을 보시길 바랍니다.
