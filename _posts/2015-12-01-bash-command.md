@@ -31,15 +31,22 @@ tags: [linux, bash, command]
 >cd ..
 
 6. 홈 디렉토리로 가기   
->cd ~
+
+    cd ~
+
 7. 홈 디렉토리로 가기   
->cd $HOME
+
+    cd $HOME
+
 8. 홈 디렉토리로 가기   
->cd
+    
+    cd
+
 9. 755 권한 설정. (owner-group-other) 순으로 (-rwx-r-x-r-x) 권한을 준다.   
->chmod 755 `filename`
+    chmod 755 `filename`
 10. 모든 유저에게 실행권한 추가하기   
->chmod a+x `filename`
+    chmod a+x `filename`
+    
 11. 파일이나 . 디렉토리의 소유권 변경   
 >chown `username`
 12. file.backup으로 백업 복사본 만들기   
