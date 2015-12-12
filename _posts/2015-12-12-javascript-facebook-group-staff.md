@@ -26,6 +26,6 @@ tags: [javascript, study, studyjs, facebook, group, staff]
 - 자바스크립트와 기타 프로그래밍에 대한 지식 공유
 - 그 외 자바스크립트와 관련된 모든 것
 
-많은 참여 부탁합니다!
+운영진의 수를 되도록 많이 늘릴 생각입니다. 많은 참여 부탁합니다!
 
 * [스터디 그룹에 올린 최초 글](https://www.facebook.com/groups/learnjsproperly/permalink/589041514579793/)
