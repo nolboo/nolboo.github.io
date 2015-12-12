@@ -411,3 +411,7 @@ tags: [linux, bash, command]
 101. Display a tree of processes  
 
     pstree
+
+## 참고링크
+
+* [Bash Shell Script - GitBook](https://www.gitbook.com/book/mug896/shell-script/details)

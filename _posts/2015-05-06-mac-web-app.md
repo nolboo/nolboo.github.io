@@ -124,6 +124,7 @@ bitly, Todoist, Dash, Pocket 확장 등을 설치하고, 단디 한글 맞춤법
 - [Day One](https://itunes.apple.com/kr/app/day-one-ilgi-daieoli/id422304217?mt=12): 일기 다이어리 작성
 - [Ulysses](https://itunes.apple.com/kr/app/id623795237?mt=12): 마크다운 에디터앱
 - [Airmail](https://itunes.apple.com/app/airmail/id573171375?mt=12)
+- [에버노트](http://bit.ly/1letr0E): 최고의 웹스크랩 및 노트 앱
 
 #### 무료
 
