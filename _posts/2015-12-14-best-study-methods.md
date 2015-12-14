@@ -10,7 +10,7 @@ tags: [best, study, method, learning]
 
 ---
 
-이 글은 2년 이상의 공부하는 법에 대한  Ahmad Ali의 연구이다. 많은 대학의 8천 명 학생들에게서 성공적으로 뽑아냈다. [Quora](http://www.quora.com/What-are-the-best-study-methods-1)에 공유하였고 11K가 넘게 upvote를 받았다.
+이 글은 2년 이상의 공부하는 법에 대한  Ahmad Ali의 연구이다. 나는 여러 대학의 8천명 학생들 중에서 두각을 나타내는 데에 성공했다. [Quora](http://www.quora.com/What-are-the-best-study-methods-1)에 공유하였고 11K가 넘게 upvote를 받았다.
 
 He writes:
 
