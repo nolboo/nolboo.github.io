@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "가장 좋은 학습법"
-description: "팔천명의 대학생과 2년간의 연구 결과에서 도출해낸 가장 좋은 학습법"
+description: "2년 이상 연구하여 팔천명의 대학생 중에서 두각을 나타낸 가장 좋은 학습법"
 category: blog
 tags: [best, study, method, learning]
 ---
