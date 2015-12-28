@@ -60,8 +60,11 @@ When you want to be confident about some topic or field of study first read abou
 3. 영어는 어려운 단어를 노트북에 쓴다. 그것들을 먼저 학습한다.
 4. 이론 주제는 여러 다른 소스로부터 같은 주제를 많이 읽는다. 책에서 주제를 읽고 그대로 둔다. 이제 위키피디아에서 읽고 그대로 둔다. 몇몇 다른 책에서 배운다. 쉽고 매우 유용한 방법이다. 당신이 가진 책에서만 배우려고 하지 마라. 지겹고 잘 기억되지 않는다.
 
+## 관련 링크
 
-
+- [공부와 열정 후기](http://nolboo.github.io/blog/2015/12/28/self-education-and-the-pursuit-of-passion/)
+- [배우는 법 배우기 - 좋은/나쁜 학습의 10가지 원칙](http://nolboo.github.io/blog/2014/08/16/rules-of-good-bad-studying/)
+- [How can I study more effectively? - Quora](https://www.quora.com/How-can-I-study-more-effectively-2)
 
 
 

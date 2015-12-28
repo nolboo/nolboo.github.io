@@ -101,5 +101,8 @@ tags: [learn, rule, coursera]
 
 ## 참고링크
 
-* [“전교 1등은 알고 있는 공부에 대한 공부”](http://tvpot.daum.net/v/ve8d8F7Sv8lYZ7KAZ88yYlU) : 자발적 회상이 반복보다 뛰어나다.
-
+- [“전교 1등은 알고 있는 공부에 대한 공부”](http://tvpot.daum.net/v/ve8d8F7Sv8lYZ7KAZ88yYlU) : 자발적 회상이 반복보다 뛰어나다.
+- [공부와 열정 후기](http://nolboo.github.io/blog/2015/12/28/self-education-and-the-pursuit-of-passion/)
+- [배우는 법 배우기 - 좋은/나쁜 학습의 10가지 원칙](http://nolboo.github.io/blog/2014/08/16/rules-of-good-bad-studying/)
+- [가장 좋은 학습법](http://nolboo.github.io/blog/2015/12/14/best-study-methods/)
+- [How can I study more effectively? - Quora](https://www.quora.com/How-can-I-study-more-effectively-2)

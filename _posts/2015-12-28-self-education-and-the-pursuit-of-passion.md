@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "공부와 열정 후기"
-description: ""
+description: "고등학교를 중퇴한 애플 소프트웨어 테스트 담당자가 버커니아 학자같이 자유롭게 자기 학습하는 방법을 소개한 책 공부와 열정을 읽고서"
 category: blog
 tags: [learning, skill, book, review]
 ---
