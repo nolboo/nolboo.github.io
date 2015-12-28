@@ -112,6 +112,10 @@ tags: [collaboration, git, github, project]
 
 pull 요청만이 공헌할 수 있는 유일한 방법이라고 생각하지 마라. 포럼이나 IRC 대화에서도 가능하다.
 
+## 볼만한 링크
+
+* [Git flow, GitHub flow, GitLab flow](http://ujuc.github.io/2015/12/16/git-flow-github-flow-gitlab-flow/)
+
    [1]: http://net.tutsplus.com/tutorials/tools-and-tips/how-to-collaborate-on-github/
    [2]: https://github.com/jquery/jquery/blob/master/CONTRIBUTING.md
    [3]: http://cdn.tutsplus.com/net/uploads/2013/08/github_header.png

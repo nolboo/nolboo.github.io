@@ -74,3 +74,6 @@ tags: [bath, health, hemorrhoid]
 - [올바른좌욕법](http://cuspis.net/%EC%98%AC%EB%B0%94%EB%A5%B8%EC%A2%8C%EC%9A%95%EB%B2%95/)
 - [지나친 좌욕은 치질을 악화시킨다](http://health.chosun.com/healthyLife/column_view.jsp?idx=8145)
 
+## TODO
+
+[대변을 잔변 없이 다 쌀 수 있는 방법](http://blog.naver.com/PostView.nhn?blogId=eejsung&logNo=220518505736&redirect=Dlog&widgetTypeCall=true): 쪼그려 앉는 자세가 제대로 된 자세이다.
