@@ -110,7 +110,7 @@ mackup으로 환경설정을 복원했다면 이 때 아래 패키지들이 한�
 - [Total Manager](https://itunes.apple.com/app/id796275163?mt=12)
 - [Scapple](https://itunes.apple.com/kr/app/scapple/id568020055?mt=12) 
     - [Scapple 사용기(1) - Scapple의 특징, 구매, 설치까지](http://reinia.net/916)
-- [iThoughtsX | toketaWare](http://toketaware.com/)
+- [iThoughtsX](http://toketaware.com/): 마크다운으로 변환할 수 있는 마인드맵앱
 - [Fantastical](https://flexibits.com/fantastical)
     - [[추천 무료앱] OS X 메뉴 막대에 깔끔한 달력을 달아 드립니다 'Itsycal'](http://macnews.tistory.com/3023)
     - [1년치 일정을 한눈에 살펴보고 관리할 수 있는 'popCalendar'](http://macnews.tistory.com/2480)
@@ -128,7 +128,7 @@ bitly, Todoist, Dash, Pocket 확장 등을 설치하고, 단디 한글 맞춤법
 
 #### 무료
 
-- [f.lux](https://justgetflux.com/): 자동 화면 밝기 조절
+- [f.lux](https://justgetflux.com/): [잠이 잘 안 오거든 f.lux를 쓰라고 전해라](http://ohyecloudy.com/pnotes/archives/flux/)
 - [Todoist](https://todoist.com/macApp): 최고의 무료 맥 할일 목록 및 작업 목록 관리 앱
 - [Telegram Desktop](https://desktop.telegram.org/): 최고의 메시징 앱
 - [mysms](https://itunes.apple.com/en/app/id545578261): SMS 문자 보내기와 동기화

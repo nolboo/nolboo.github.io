@@ -6,7 +6,9 @@ category: blog
 tags: [learning, skill, book, review]
 ---
 
-배우는 것을 좋아하지만, 기억력은 떨어지는 편이기에 어릴 때부터 학습법에 대한 관심이 많았다. 코세라에 [배우는 법 배우기(Learn How to Learn)](https://class.coursera.org/learning-001)가 처음 올라왔을 때 바로 신청하고 열강하기도 하였고 그 내용 중일 일부를 번역해서 [배우는 법 배우기 - 좋은/나쁜 학습의 10가지 원칙](http://nolboo.github.io/blog/2014/08/16/rules-of-good-bad-studying/)을 올려놓기도 하였다.(실제 강의는 대부분 알고 있던 내용을 최근 뇌과학이 증명한 부분 위주로 쉽게 설명하려고 하였는지 나한테는 지루했다) 며칠 전에는 [Quora에 올라온 대답을 인용한 기사](http://alltopstartups.com/2015/02/04/study-methods/)를 보고 번역해서 [가장 좋은 학습법](http://nolboo.github.io/blog/2015/12/14/best-study-methods/)을 올렸더니 반응이 좋았다. 그래서 읽은 지는 한참 되었지만 [공부와 열정](http://www.aladin.co.kr/shop/wproduct.aspx?ItemId=26638320)이라는 책을 소개해보려 한다.
+<!-- <div id="toc"><p class="toc_title">목차</p></div> -->
+
+배우는 것을 좋아하지만, 기억력은 떨어지는 편이기에 어릴 때부터 학습법에 대한 관심이 많았다. 코세라에 [배우는 법 배우기(Learn How to Learn)](https://class.coursera.org/learning-001)가 처음 올라왔을 때 바로 신청하고 열강하기도 하였고 그 내용 중일 일부를 번역해서 [배우는 법 배우기 - 좋은/나쁜 학습의 10가지 원칙](http://nolboo.github.io/blog/2014/08/16/rules-of-good-bad-studying/)을 올려놓기도 하였다.(실제 강의는 대부분 알고 있던 내용을 최근 뇌과학이 증명한 부분 위주로 쉽게 설명하려고 하였는지 나한테는 약간 지루했지만 [2015년 코세라에서 주목받은 인기 강의 10개](http://www.bloter.net/archives/246658)에 첫번째로 나왔다) 며칠 전에는 [Quora에 올라온 대답을 인용한 기사](http://alltopstartups.com/2015/02/04/study-methods/)를 보고 번역해서 [가장 좋은 학습법](http://nolboo.github.io/blog/2015/12/14/best-study-methods/)을 올렸더니 반응이 좋았다. 그래서 읽은 지는 한참 되었지만 [공부와 열정](http://www.aladin.co.kr/shop/wproduct.aspx?ItemId=26638320)이라는 책을 소개해보려 한다.
 
 원저의 제목은 [Secrets of a Buccaneer-Scholar: Self-Education and the Pursuit of Passion](http://amzn.to/1ManqXP)이다. 이걸 공부와 열정으로 번역한 것은 심각한 에러라고 생각한다. 이 책은 빨리 접하면 접할수록 좋은 내용이라고 생각하는데 대부분의 한국 학생들은 책 제목을 보고 내용은 들여보지도 않을 것 같다. 
 
