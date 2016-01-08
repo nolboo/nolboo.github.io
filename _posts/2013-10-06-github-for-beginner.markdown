@@ -259,15 +259,16 @@ git push origin master // 깃허브로 푸시한다.
 
 ## Git Resources
 
-  * [Pro Git][16]. 깃을 배우고 사용하는 법에 대한 오픈소스 북. 분량이 많지만, 기본을 배우기 위해서는 3장까지만 읽으면 된다.
-  * [Try Git][17]. 코드스쿨과 깃허브가 팀을 짜서 이 속성 튜토리얼을 만들었다. 기본에 대해 좀 더 연습하길 원하면 도움이 될 것이다.
-  * [GitHub Guides][18]. 비주얼 학습자라면 깃허브의 공식 유투브 채널에서 시간을 보낼만하다. 특히 [Git Basics][19] 네개의 시리즈에서 많은 것을 얻을 수 있다.
-  * [Git Reference][20]. 명령어를 잊어버렸을 때는 용어 참조하기 좋은 사이트다.
-  * [Git - the simple guide][21]. 이 튜토리얼은 짧고 달콤하다. 깃의 기초에 대해 되살리고 싶다면 필요할 것이다.
-  * [GitHub Glossary][22]. 역자가 추가한 깃허브 공식 용어 사전
-  * [코드로 디자인하기](http://spoqa.github.io/2015/01/16/design-with-code.html) : 스포카(Spoqa) 사례
-  * [Git flow, GitHub flow, GitLab flow](http://ujuc.github.io/2015/12/16/git-flow-github-flow-gitlab-flow/)
-  * 버전관리를 들어본적 없는 사람들을 위한 DVCS - Git : 잘 정리된 슬라이드(역자 추가)
+* [어떻게 깃을 사용하는지 빠르게 알아봅시다](https://github.com/KennethanCeyer/tutorial-git)
+* [Pro Git][16]. 깃을 배우고 사용하는 법에 대한 오픈소스 북. 분량이 많지만, 기본을 배우기 위해서는 3장까지만 읽으면 된다.
+* [Try Git][17]. 코드스쿨과 깃허브가 팀을 짜서 이 속성 튜토리얼을 만들었다. 기본에 대해 좀 더 연습하길 원하면 도움이 될 것이다.
+* [GitHub Guides][18]. 비주얼 학습자라면 깃허브의 공식 유투브 채널에서 시간을 보낼만하다. 특히 [Git Basics][19] 네개의 시리즈에서 많은 것을 얻을 수 있다.
+* [Git Reference][20]. 명령어를 잊어버렸을 때는 용어 참조하기 좋은 사이트다.
+* [Git - the simple guide][21]. 이 튜토리얼은 짧고 달콤하다. 깃의 기초에 대해 되살리고 싶다면 필요할 것이다.
+* [GitHub Glossary][22]. 역자가 추가한 깃허브 공식 용어 사전
+* [코드로 디자인하기](http://spoqa.github.io/2015/01/16/design-with-code.html) : 스포카(Spoqa) 사례
+* [Git flow, GitHub flow, GitLab flow](http://ujuc.github.io/2015/12/16/git-flow-github-flow-gitlab-flow/)
+* 버전관리를 들어본적 없는 사람들을 위한 DVCS - Git : 잘 정리된 슬라이드(역자 추가)
 
 <iframe src="//www.slideshare.net/slideshow/embed_code/37077214" width="427" height="356" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/ibare/dvcs-git" title="버전관리를 들어본적 없는 사람들을 위한 DVCS - Git" target="_blank">버전관리를 들어본적 없는 사람들을 위한 DVCS - Git</a> </strong> from <strong><a href="http://www.slideshare.net/ibare" target="_blank">민태 김</a></strong> </div>
 
