@@ -59,6 +59,7 @@ tags: [facebook, studyjs, javascript, study, group, hashtag]
 - `#js_promise` : 자바스크립트 promise 관련 글로 다른 세부 프레임워크/라이브러리도 이와 같이 붙이면 된다.
 
 >`#js_proper` 의 경우 지금까지 그룹 운영에 관련된 글을 최대한 태그하였습니다. 멤버님의 예전 글에도 태그를 달아보시면 어떨까요?^^
+> 해시태그에 대한 더 자세한 내용을 원하시면 http://bit.ly/1POOy3y
 
 ## 해시태그 유래
 
