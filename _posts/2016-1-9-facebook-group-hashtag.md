@@ -47,7 +47,7 @@ tags: [facebook, studyjs, javascript, study, group, hashtag]
 
 * 모든 글을 올릴 때 해시태그를 달아야 하는 강제사항은 아닙니다.
 
-### 주요 해시태그
+### 주요 해시태그 예제
 
 - [`#js_proper`](https://www.facebook.com/hashtag/js_proper) <-- 이걸 누르면 페이스북 자바스크립트 제대로 배우기 스터디 그룹의 운영과 관련된 해시태그 스트림을 볼 수 있다.
 - `#js_library` : 라이브러리와 프레임워크 전반에 관련된 글(질답)
