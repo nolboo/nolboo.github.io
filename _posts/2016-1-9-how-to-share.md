@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "정보 습득 플로우와 소셜 공유"
+title: "정보 습득과 소셜 공유 워크플로우"
 description: "페이스북 그룹에서 해시태그를 사용하기 위해 유래와 사용예, 가이드를 작성"
 category: blog
 tags: [information, news, workflow, share]
