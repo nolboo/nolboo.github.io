@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "정보 습득과 소셜 공유 워크플로우"
-description: "놀부가 정보를 습득하고 소화하고 그 중에 괜찮은 글을 소셜 미디어에 공유하는 워크 플로우를 정리"
+description: "놀부가 정보를 습득하고 소화하고 그 중에 괜찮은 글을 소셜 미디어에 공유하는 워크플로우를 정리"
 category: blog
 tags: [information, news, workflow, share]
 ---

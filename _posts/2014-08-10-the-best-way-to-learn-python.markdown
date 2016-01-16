@@ -131,6 +131,7 @@ Python Imaging Library (PIL)는 이미지를 다루는 모든 일에 훌륭하�
 
 ## 참고 링크
 
+* [프로그래밍 재미있게 공부하기](https://brunch.co.kr/@insuk/7)
 * [Full Stack Python의 'Best Python Resources'를 공부하면서 나름대로 정리한 자료](http://www.sangkon.com/2015/09/16/best_python_resources_kor/)
 * [20 Best Free Tutorials to Learn Python: PDFs, eBooks, Online](http://noeticforce.com/best-free-tutorials-to-learn-python-pdfs-ebooks-online-interactive)
 
