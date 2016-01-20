@@ -1212,6 +1212,7 @@ _[Code Source][45]_
 
 #### 역자 추가 링크
 
+* [22 Essential CSS Recipes](http://ipestov.com/22-essential-css-recipes/)
 * [Web Design Issues That You Can Solve With CSS Snippets](http://www.designresourcebox.com/web-design-issues-that-you-can-solve-with-css-snippets/)
 * [Master your CSS3! Ultimate CSS code snippets](http://www.djavupixel.com/development/css-development/master-css3-ultimate-css-code-snippets/)
 * [31 CSS Code Snippets To Make You A Better Coder](http://www.designyourway.net/blog/resources/31-css-code-snippets-to-make-you-a-better-coder/)
