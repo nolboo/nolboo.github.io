@@ -20,7 +20,7 @@ permalink: pretty
 #       - hard_wrap
 
 gems:
-  - jemoji
+  - jekyll-paginate
 
 paginate: 10
 
