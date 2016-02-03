@@ -2,25 +2,22 @@ title: Nolboo's Blog
 
 # Oveerriden by GitHub Pages: https://help.github.com/articles/using-jekyll-with-pages#configuring-jekyll
 safe: true
-highlighter: pygments
+# highlighter: pygments
 lsi: false
 
 permalink: pretty
 
-markdown:     redcarpet
-
-redcarpet:
-    extensions: 
-      - no_intra_emphasis
-      - fenced_code_blocks
-      - tables
-      - strikethrough
-      - superscript
-      - autolink
-      - hard_wrap
+# markdown:     redcarpet
 
 # redcarpet:
-#    extensions: ["smart"]
+#     extensions: 
+#       - no_intra_emphasis
+#       - fenced_code_blocks
+#       - tables
+#       - strikethrough
+#       - superscript
+#       - autolink
+#       - hard_wrap
 
 gems:
   - jemoji
