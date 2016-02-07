@@ -6,7 +6,7 @@ category: blog
 tags: [todo, todoist, interview, productivity, workflow]
 ---
 
-현재 중점적으로 사용하고 있는 할일관리 앱은 Todoist이다. 한때 내가 기획했던 할일관리앱에 가장 가깝게 기능을 갖추고 있으며, 가장 넓은 플랫폼을 지원하고 있다. 2014년 Todoist [이벤트](http://bit.ly/1RZUfzk)를 통해 6개월 정도 프리미엄으로 사용한 적이 있었고 2015년 10월 [이벤트](http://bit.ly/1mcG5N7)로 6개월 프리미엄을 사용하고 있었는데 갑자기 [@TodoistKR](https://twitter.com/todoistkr)에서 인터뷰를 제안해와서 간단하게 내가 사용하고 있는 내용을 이메일 인터뷰했다. 1월에 [Todoist Korea 블로그](https://blog.todoist.com/ko/)에 등록되었고, 며칠 전 Todoist CEO가 올린 워크플로우가 나와 매우 유사한 방법을 쓰고 있다는 반가움에 블로그에 기록도 할 겸 관련 내용을 겸해서 올린다.
+현재 중점적으로 사용하고 있는 할일관리 앱은 Todoist이다. 한때 내가 기획했던 할일관리앱에 가장 가깝게 기능을 갖추고 있으며, 가장 넓은 플랫폼을 지원하고 있다. 2014년 Todoist [이벤트](http://bit.ly/1RZUfzk)를 통해 6개월 정도 프리미엄으로 사용한 적이 있었고 2015년 10월 [이벤트](http://bit.ly/1mcG5N7)로 6개월 프리미엄을 사용하고 있었는데 갑자기 [@TodoistKR](https://twitter.com/todoistkr)에서 인터뷰를 제안해와서 간단하게 내가 사용하고 있는 내용을 이메일 인터뷰했다. 1월에 [Todoist Korea 블로그](https://blog.todoist.com/ko/)에 등록되었고, 오늘 마침 Todoist CEO가 올린 워크플로우가 나와 매우 유사한 방법을 쓰고 있다는 반가움에 블로그에 기록도 할 겸 관련 내용을 겸해서 올린다.
 
 여기부터는 인터뷰 내용이다.
 
@@ -114,7 +114,7 @@ Todoist는 기록을 보니 2014년 4월에 접해서 본격적으로 사용한 
 
 ---
 
-투두이스트 CEO의 글 [Systemist: A modern productivity workflow](https://blog.todoist.com/user-stories/systemist-personal-workflow/)보다 내가 인터뷰한 것이 거의 한 달이상 전에 보낸 것이지만 원래 이런 걸 기획하는 사람들은 비슷한 생각을 하고 있는 것 같다. 물론 이 양반은 대형 서비스를 만들어서 서비스하고 있으니 완패다;;
+오늘 읽고 소셜미디어에 포스팅한 투두이스트 CEO의 글 [Systemist: A modern productivity workflow](https://blog.todoist.com/user-stories/systemist-personal-workflow/)을 보니 내가 인터뷰에서 밝힌 방법과 유사하다. 내가 올린 포스팅이 거의 두달 전에 쓴 것이지만 원래 이런 걸 기획하는 사람들은 비슷한 생각을 하고 있는 것 같다. 물론 이 양반은 대형 서비스를 만들어서 서비스하고 있으니 완패다;;
 
 내용을 간단하게 살펴보면 자신의 체계적인 방법을 Systemist라 부르고 그것의 6가지 요소에 대해 아래와 같이 설명하고 있다:
 
