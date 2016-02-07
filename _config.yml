@@ -1,7 +1,7 @@
 title: Nolboo's Blog
 
 # Oveerriden by GitHub Pages: https://help.github.com/articles/using-jekyll-with-pages#configuring-jekyll
-safe: true
+# safe: true
 highlighter: rouge
 lsi: false
 
@@ -11,6 +11,7 @@ permalink: pretty
 # markdown: kramdown
 # kramdown:
 #   input: GFM
+
   # syntax_highlighter: rouge
 
 markdown:     redcarpet
