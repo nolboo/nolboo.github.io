@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "다양한 생산성 방법론과 자신만의 생산성 철학을 녹여낸 Todoist 사용기란 인터뷰와 추가 내용"
-description: "놀부가 Todoist를 사용하는 방법을 인터뷰했다."
+title: "Todoist 인터뷰와 추가 내용 - 놀부의 할일관리 워크플로우"
+description: "놀부가 Todoist를 사용하여 할일 관리하는 방법을 인터뷰했다."
 category: blog
 tags: [todo, todoist, interview, productivity, workflow]
 ---

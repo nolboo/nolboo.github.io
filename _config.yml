@@ -2,10 +2,17 @@ title: Nolboo's Blog
 
 # Oveerriden by GitHub Pages: https://help.github.com/articles/using-jekyll-with-pages#configuring-jekyll
 safe: true
+# highlighter: rb-pygments
 highlighter: rouge
 lsi: false
 
 permalink: pretty
+# /blog/:year/:month/:day/:title/
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  # syntax_highlighter: rouge
 
 # markdown:     redcarpet
 
@@ -19,8 +26,7 @@ permalink: pretty
 #       - autolink
 #       - hard_wrap
 
-gems:
-  - jekyll-paginate
+gems: [jekyll-paginate, jekyll-gist]
 
 paginate: 10
 

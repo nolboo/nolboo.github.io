@@ -7,7 +7,8 @@ description: Learn to do, Learn  by doing
 <section>
   <ul class="posts">
     <!-- This loops through the paginated posts -->
-    {% for post in paginator.posts %}
+    <!-- paginator.posts가 안 먹어서 site.posts로 일단 막아놓았다ㅠㅠ-->
+    {% for post in site.posts %}
       <li>
         <h2>
           <a href="{{ post.url }}">{{ post.title }}</a>
