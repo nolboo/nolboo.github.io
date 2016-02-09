@@ -11,8 +11,7 @@ permalink: pretty
 # markdown: kramdown
 # kramdown:
 #   input: GFM
-
-  # syntax_highlighter: rouge
+#   syntax_highlighter: rouge
 
 markdown:     redcarpet
 
@@ -26,7 +25,10 @@ redcarpet:
       - autolink
       - hard_wrap
 
-gems: [jekyll-paginate, jekyll-gist, redcarpet]
+# gems: 
+#       - jekyll-paginate
+#       - jekyll-gist
+#       - redcarpet
 
 paginate: 10
 
