@@ -25,12 +25,11 @@ redcarpet:
       - autolink
       - hard_wrap
 
-# gems: 
-#       - jekyll-paginate
-#       - jekyll-gist
-#       - redcarpet
+gems: 
+      - jekyll-paginate
+      - jekyll-gist
 
-paginate: 10
+# paginate: 10
 
 author:
     twitter: n0lb00
