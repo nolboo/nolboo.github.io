@@ -28,8 +28,9 @@ redcarpet:
 gems: 
       - jekyll-paginate
       - jekyll-gist
+      - redcarpet
 
-# paginate: 10
+paginate: 10
 
 author:
     twitter: n0lb00
