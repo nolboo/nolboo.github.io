@@ -27,7 +27,7 @@ redcarpet:
 
 gems: 
       - jekyll-paginate
-      # - jekyll-gist
+      - jekyll-gist
       - redcarpet
 
 paginate: 10
