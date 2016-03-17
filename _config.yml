@@ -4,7 +4,7 @@ title: Nolboo's Blog
 safe: false
 highlighter: rouge
 lsi: false
-future: true
+# future: true
 
 permalink: pretty
 # /blog/:year/:month/:day/:title/
