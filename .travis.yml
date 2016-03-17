@@ -1,2 +1,4 @@
 language: ruby
+rvm: 
+  - 2.1.7
 script: "bundle exec jekyll build"
