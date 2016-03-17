@@ -4,4 +4,5 @@ gem 'github-pages'
 # , github: 'irfanfadilah/pages-gem'
 # gem 'jekyll-gist'
 
-exclude: [vendor]
+exclude: 
+  - "vendor"
