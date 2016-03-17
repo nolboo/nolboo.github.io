@@ -2,7 +2,6 @@
 layout: post
 title: "Todoist 인터뷰와 추가 내용 - 놀부의 할일관리 워크플로우"
 description: "놀부가 Todoist를 사용하여 할일 관리하는 방법을 인터뷰했다."
-date: 2016-02-25
 category: blog
 tags: [todo, todoist, interview, productivity, workflow]
 ---
