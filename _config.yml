@@ -9,6 +9,8 @@ lsi: false
 permalink: pretty
 # /blog/:year/:month/:day/:title/
 
+exclude: ["vendor"]
+
 # markdown: kramdown
 # kramdown:
 #   input: GFM
