@@ -7,7 +7,7 @@ description: Learn to do, Learn  by doing
 <section>
   <ul class="posts">
     <!-- This loops through the paginated posts -->
-    {% for post in paginator.posts %}
+    {% for post in layout.posts %}
       <li>
         <h2>
           <a href="{{ post.url }}">{{ post.title }}</a>
@@ -27,29 +27,29 @@ description: Learn to do, Learn  by doing
 
   <!-- Pagination links -->
   <ul class="pagination clearfix">
-    {% if paginator.previous_page %}
-      {% if paginator.previous_page == 1 %}
+    {% if layout.previous_page %}
+      {% if layout.previous_page == 1 %}
       <li><a href="/">Prev</a></li>
       {% else %}
-      <li><a href="/page{{ paginator.previous_page }}">Prev</a></li>
+      <li><a href="/page{{ layout.previous_page }}">Prev</a></li>
       {% endif %}
     {% else %}
     <li><span class="disabled">Prev</span></li>
     {% endif %}
-    {% if paginator.page == 1 %}
+    {% if layout.page == 1 %}
     <li><span class="active">1</span></li>
     {% else %}
     <li><a href="/">1</a></li>
     {% endif %}
-    {% for count in (2..paginator.total_pages) %}
-      {% if count == paginator.page %}
+    {% for count in (2..layout.total_pages) %}
+      {% if count == layout.page %}
       <li><span class="active">{{ count }}</span></li>
       {% else %}
       <li><a href="/page{{ count }}">{{ count }}</a></li>
       {% endif %}
     {% endfor %}
-    {% if paginator.next_page %}
-    <li><a href="/page{{ paginator.next_page }}">Next</a></li>
+    {% if layout.next_page %}
+    <li><a href="/page{{ layout.next_page }}">Next</a></li>
     {% else %}
     <li><span class="disabled">Next</span></li>
     {% endif %}
