@@ -19,23 +19,16 @@ exclude: [vendor]
 markdown:     redcarpet
 
 redcarpet:
-    extensions: 
-      - no_intra_emphasis
-      - fenced_code_blocks
-      - tables
-      - strikethrough
-      - superscript
-      - autolink
-      - hard_wrap
+  extensions: ["no_intra_emphasis", "tables", "autolink", "fenced_code_blocks", "strikethrough"]
 
 gems: 
-      - jekyll-paginate
-      - jekyll-gist
-      - redcarpet
+  - jekyll-paginate
+  - jekyll-gist
+  - redcarpet
 
 paginate: 10
 paginate_path: /pages/:num
 
 author:
-    twitter: n0lb00
-    github: nolboo
+  twitter: n0lb00
+  github: nolboo
