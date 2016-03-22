@@ -280,7 +280,7 @@ sudo nano /etc/apache2/sites-available/myapp.conf
 
 `myapp`은 자신의 것으로 바꾼다. 아래 설정 내용에서도 자신의 것으로 바꾼다.
 
-```apache
+```conf
 <VirtualHost *:80>
    ServerName yourserver.com
 
