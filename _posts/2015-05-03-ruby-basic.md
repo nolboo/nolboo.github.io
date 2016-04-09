@@ -15,8 +15,10 @@ Yukihiro Matsumoto(“Matz”)는 90년 중반에 루비를 만들었다. "펄�
 Matz’s guiding philosophy for Ruby:
 “Ruby is designed to make programmers happy.”
 
-- [Yukihiro "Matz" Matsumoto | Ruby Design Principles](http://web.archive.org/web/20130729205129id_/http://itc.conversationsnetwork.org/shows/detail1638.html)
+- [Yukihiro "Matz" Matsumoto : Ruby Design Principles](http://web.archive.org/web/20130729205129id_/http://itc.conversationsnetwork.org/shows/detail1638.html)
 - [Ruby의 철학에 관한 마츠모토 유키히로의 인터뷰](http://we.weirdmeetup.com/ruby%EC%9D%98-%EC%B2%A0%ED%95%99%EC%97%90-%EA%B4%80%ED%95%9C-%EB%A7%88%EC%B8%A0%EB%AA%A8%ED%86%A0-%EC%9C%A0%ED%82%A4%ED%9E%88%EB%A1%9C%EC%9D%98-%EC%9D%B8%ED%84%B0%EB%B7%B0-part-1/)
+
+루비를 시작해보자.
 
 <pre class="terminal">
 ruby --version
@@ -27,8 +29,9 @@ ruby -e ’puts "Hello World!"’
 Hello World!
 </pre>
 
-* `-e` 프롬프트로 인터프리터가 `''`안의 루비 코드를 실행한다.
-* `''`안의 루비 코드를 hello.rb 파일 안에 넣고 실행하면 같은 결과가 나온다.
+`-e` 프롬프트로 인터프리터가 `''`안의 루비 코드를 실행한다.
+
+`''`안의 루비 코드를 hello.rb 파일 안에 넣고 실행하면 같은 결과가 나온다.
 
 <pre class="terminal">
 ruby hello.rb
@@ -42,7 +45,7 @@ irb
 2.0.0p195 :001 >
 </pre>
 
-* 루비 앱 디렉토리의 루트에서 다음 명령으로 IRB를 실행하여, 콘솔 커맨트 라인에서 루비 앱을 직접 조작할 수 있다.
+루비 앱 디렉토리의 루트에서 다음 명령으로 IRB를 실행하여, 콘솔 커맨트 라인에서 루비 앱을 직접 조작할 수 있다.
 
 <pre class="terminal">
 rails console

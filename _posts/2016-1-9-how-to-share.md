@@ -32,11 +32,11 @@ tags: [information, news, workflow, share]
 ## 주간/정기 발행 이메일
 
 - [JavaScript Weekly: A Free, Weekly Email Newsletter](http://javascriptweekly.com/)
-- [Web Tools Weekly | A weekly newsletter for front-end developers](http://webtoolsweekly.com/)
+- [Web Tools Weekly: A weekly newsletter for front-end developers](http://webtoolsweekly.com/)
 - [Ruby Weekly: A Free, Weekly Email Newsletter](http://rubyweekly.com/)
 - [Python Weekly: A Free, Weekly Python E-mail Newsletter](http://www.pythonweekly.com/)
-- [Changelog Weekly - Weekly email covering everthing that hits our open source radar](https://changelog.com/weekly/)
-- [WDRL – Web Development Reading List | Web Development Reading List](https://wdrl.info/)
+- [Changelog Weekly: Weekly email covering everthing that hits our open source radar](https://changelog.com/weekly/)
+- [WDRL: Web Development Reading List](https://wdrl.info/)
 - [THE SUBLIME TEXT TIPS NEWSLETTER](http://sublimetexttips.com/newsletter/)
 
 관심 분야의 주간 뉴스를 검색해보면 많이 있다.

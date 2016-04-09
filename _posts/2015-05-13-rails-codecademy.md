@@ -6,19 +6,19 @@ category: blog
 tags: [codecademy, course, rails, ruby]
 ---
 
-코드캐더미 강좌는 볼 때마다 친절하게 잘 짜여져 있다는 생각이 든다. 레일즈 기초 강좌도 앞서 포스팅한 코세라 강좌인 [루비 온 레일즈로 블로그 만들기](http://nolboo.github.io/blog/2015/05/05/web-application-architecture/)를 들을 때 이해하지 못한(들을 때는 이해한 듯 했지만;;) 부분까지 잘 설명해준다. 이에 필받아서 [Learn Ruby on Rails | Codecademy](http://www.codecademy.com/learn/learn-rails) 강좌를 오프라인에서도 따라할 수 있게 좀 더 자세하게 풀어서 설명한다.
+코드캐더미 강좌는 볼 때마다 친절하게 잘 짜여져 있다는 생각이 든다. 레일즈 기초 강좌도 앞서 포스팅한 코세라 강좌인 [루비 온 레일즈로 블로그 만들기](http://nolboo.github.io/blog/2015/05/05/web-application-architecture/)를 들을 때 이해하지 못한(들을 때는 이해한 듯 했지만;;) 부분까지 잘 설명해준다. 이에 필받아서 [Learn Ruby on Rails : Codecademy](http://www.codecademy.com/learn/learn-rails) 강좌를 오프라인에서도 따라할 수 있게 좀 더 자세하게 풀어서 설명한다.
 
-루비를 모른다면 [Ruby | Codecademy](http://www.codecademy.com/tracks/ruby)를 먼저 하길 권한다.
+루비를 모른다면 [Ruby : Codecademy](http://www.codecademy.com/tracks/ruby)를 먼저 하길 권한다.
 
 코드캐더미에서는 모든 것이 웹브라우저에서 인터렉티브하게 진행되기 때문에 레일즈의 설치와 기본 디렉토리 구조는 [루비 온 레일즈로 블로그 만들기](http://nolboo.github.io/blog/2015/05/05/web-application-architecture/)의 "루비온 레일즈 설치" 부분을 참조하는 것으로 대치한다.
 
 ## MySite
 
 <pre class="terminal">
-    rails new MySite
-    cd MySite
-    bundle install
-    rails server
+rails new MySite
+cd MySite
+bundle install
+rails server
 </pre>
 
 웹브라우저 주소창에 `http://localhost:3000`을 입력하면 레일즈 앱을 볼 수 있다.
@@ -45,7 +45,7 @@ request/response cycle을 보려면 레일즈앱을 만드는 세 부분이 필�
 ### Controller
 
 <pre class="terminal">
-    rails generate controller Pages
+rails generate controller Pages
 </pre>
 
 위의 명령은 `Pages`라는 새로운 컨트롤러를 제너레이트하며, `app/controllers/pages_controller.rb` 파일을 만들어 준다.
@@ -115,10 +115,10 @@ get 'welcome' => 'pages#home'
 8. 컨트롤러서 HTML을 브라우저에게 보낸다.
 
 <pre class="terminal">
-    rails new MessengerApp
-    cd MessengerApp
-    bundle install
-    rails server
+rails new MessengerApp
+cd MessengerApp
+bundle install
+rails server
 </pre>
 
 MessengerApp이라는 레일즈 앱을 만들었다. 
@@ -130,7 +130,7 @@ MessengerApp이라는 레일즈 앱을 만들었다.
 모델을 만들자. 터미널에서 다음 명령어로 `Message`라는 새로운 모델을 제너레이트한다.
 
 <pre class="terminal">
-    rails generate model Message
+rails generate model Message
 </pre>
 
 이러면 레일즈는 두 개의 파일을 만든다.
@@ -154,7 +154,7 @@ MessengerApp이라는 레일즈 앱을 만들었다.
 마지막 줄 `t.timestamps`는 메시지 테이블에 `create_at`과 `update_at`이라는 두개의 컬럼을 만드는 레일즈 명령어이다. 이 컬럼들은 메시지가 만들어지고 업데이트될 때 자동으로 설정된다.
 
 <pre class="terminal">
-    rake db:migrate
+rake db:migrate
 </pre>
 
 `rake db:migrate` 명령어는 새로운 메시지 데이터 모델을 데이터베이스에 업데이트한다.
@@ -172,7 +172,7 @@ m2 = Message.create(content: "Let's meet there!")
 다음 명령어로 샘플 데이터를 seed한다:
 
 <pre class="terminal">
-    rake db:seed
+rake db:seed
 </pre>
 
 ### Controller
@@ -180,7 +180,7 @@ m2 = Message.create(content: "Let's meet there!")
 이제 모델을 가졌으니 request/response cycle의 두번째와 세번째 부분으로 넘어가서 컨트롤러와 라우트를 만들자.
 
 <pre class="terminal">
-    rails generate controller Messages
+rails generate controller Messages
 </pre>
 
 `config/routes.rb` 파일을 열고 다음을 추가하여 `/messages` URL을 Messages 컨트롤러의 `index` 액션에 매핑하는 라우트를 만든다:

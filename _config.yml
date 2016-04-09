@@ -11,15 +11,15 @@ path: "_posts/blog"
 
 exclude: [vendor]
 
-# markdown: kramdown
-# kramdown:
-#   input: GFM
-#   syntax_highlighter: rouge
+markdown: kramdown
+kramdown:
+  input: GFM
+  # syntax_highlighter: rouge
 
-markdown:     redcarpet
+# markdown:     redcarpet
 
-redcarpet:
-  extensions: ["no_intra_emphasis", "tables", "autolink", "fenced_code_blocks", "strikethrough"]
+# redcarpet:
+#   extensions: ["no_intra_emphasis", "tables", "autolink", "fenced_code_blocks", "strikethrough"]
 
 gems: 
   - jekyll-paginate

@@ -129,7 +129,7 @@ userdel -r [name]
 루트`root`는 슈퍼 사용자이며, 한 시스템에 대한 어떤 일이든 할 수 있는 능력을 갖췄다. 그러므로 잠재적 손상을 보호하기 위해 sudo는 루트에서 사용되어야 한다. sudo는 사용자와 그룹에게 그들이 일반적으로 사용할 수 없는 명령어에 접근할 수 있게 한다. sudo는 사용자가 root로 로그인하지 않고도 관리자 특권을 가질 수 있게 한다. sudo 명령어의 예제는 다음과 같다:
 
 <pre class="terminal">
-sudo apt-get install <package>
+sudo apt-get install [package]
 </pre>
 
 sudo를 사용하기 전에 자신의 배포판에 없다면 설치하여야 한다. Debian에서의 명령어는 다음과 같다:
@@ -220,13 +220,13 @@ drwxr-xr-x 4 user user 4096 Jan  7 14:55 public
 
 열 개의 문자와 대시로 된 첫 컬럼은 파일/디렉토리의 권한을 보여준다. (하나의 숫자로 된) 두번째 컬럼은 디렉토리에 포함된 파일/디렉토리의 수를 말한다. 그다음 컬럼은 소유자를 말하고, 그다음은 그룹명, 크기, 최종 접근 날짜와 시간, 마지막은 파일의 이름이다. 예를 들면, 위의 출력에서 첫번째 줄을 상세하게 설명하면 다음과 같다:
 
-    ``drwxr-xr-x`` 은 권한이다.
-    ``2`` 는 파일/디렉토리의 수이다.
-    ``user`` 은 소유자
-    ``user`` 은 그룹
-    ``4096`` 은 크기
-    ``Jan  9 10:11`` 은 최종 접근 날짜/시간
-    ``documents`` 은 디렉토리
+    drwxr-xr-x   은 권한이다.
+    2            는 파일/디렉토리의 수이다.
+    user         은 소유자
+    user         은 그룹
+    4096         은 크기
+    Jan  9 10:11 은 최종 접근 날짜/시간
+    documents    은 디렉토리
 
 >#### Note
 
@@ -384,6 +384,6 @@ This guide is published under a [CC BY-ND 3.0](http://creativecommons.org/licens
 
 ## 역자 참고 링크
 
-* [리눅스 파일 퍼미션 | Linux System Engineer's Blog](http://root.so/archives/51)
+* [리눅스 파일 퍼미션 : Linux System Engineer's Blog](http://root.so/archives/51)
 * [리눅스포커스 : 파일접근권한](http://www.linuxfocus.org/Korean/January1999/article77.html)
 * [리눅스 - 소유권과 허가권 알아보기](http://bit.ly/1Kvjtga) : SetUID(4),SetGID(2),sticky bit(1)에 대한 설명이 명확함.

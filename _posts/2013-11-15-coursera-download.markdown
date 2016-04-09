@@ -49,4 +49,7 @@ tags: [coursera, download, python, script]
    [1]: https://github.com/dgorissen/coursera-dl
    [2]: http://www.pip-installer.org/en/latest/installing.html
    [3]: http://stackoverflow.com/questions/11704379/python-pip-broken-after-os-x-10-8-upgrade
-  
+
+## 관련 링크
+
+* [youtube-dl](https://rg3.github.io/youtube-dl/): 유투브 다운로더

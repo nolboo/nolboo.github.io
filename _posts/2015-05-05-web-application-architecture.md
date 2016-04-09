@@ -1035,8 +1035,10 @@ executed in the web page. (`create.js.erb`)
 
 ## 첨언
 
-실제 소스 부분을 보면 알겠지만 실제 블로그를 만들기 위해 직접 작성해야 하는 소스의 량은 몇 십줄도 안된다. 웹앱을 만들때 레일즈를 선호하는 이유를 어렴풋이 알겠다. 그러나, 전체적인 것을 정확히 이해하려면 좀 더 많은 시간을 들여야할 것 같다. 마침 좋아하는 codecademy에 레일즈 강의가 올라와 있어 [Learn Ruby on Rails | Codecademy](http://www.codecademy.com/learn/learn-rails)를 통해 좀 더 기본적인 것을 배우려 한다.
+실제 소스 부분을 보면 알겠지만 실제 블로그를 만들기 위해 직접 작성해야 하는 소스의 량은 몇 십줄도 안된다. 웹앱을 만들때 레일즈를 선호하는 이유를 어렴풋이 알겠다. 그러나, 전체적인 것을 정확히 이해하려면 좀 더 많은 시간을 들여야할 것 같다. 마침 좋아하는 codecademy에 레일즈 강의가 올라와 있어 [Learn Ruby on Rails : Codecademy](http://www.codecademy.com/learn/learn-rails)를 통해 좀 더 기본적인 것을 배우려 한다.
 
 코드캐더미 강좌는 여기에 포스팅하였다.
 
 * [코드캐더미로 배우는 레일즈 기초 1부](http://nolboo.github.io/blog/2015/05/13/rails-codecademy/)
+* [코드캐더미로 배우는 레일즈 기초 2부](http://nolboo.github.io/blog/2015/05/17/rails-codecademy-2/)
+* [코드캐더미로 배우는 레일즈 기초 3부](http://nolboo.github.io/blog/2015/05/23/rails-codecademy-3/)

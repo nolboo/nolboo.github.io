@@ -48,7 +48,7 @@ React, Ember와 같은 것을 이해하는 것은 더 어렵지만 노력할 가
 
 또 다른 중요한 웹 리소스는 컨퍼런스 동영상과 교육 동영상이다. 컨퍼런스는 JSConf 시리즈가 고퀄이다. 교육 동영상은 Pluralsight를 강력히 추천한다.(그 사이트와 관련없다.)
 
-이 글에 대한 토론은 [How to Become a Great JavaScript Developer | Hacker News](https://news.ycombinator.com/item?id=9731230)에서 볼 수 있다.
+이 글에 대한 토론은 [How to Become a Great JavaScript Developer : Hacker News](https://news.ycombinator.com/item?id=9731230)에서 볼 수 있다.
 
 ## 추가 링크
 

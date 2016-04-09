@@ -49,7 +49,7 @@ Codecademy의 트랙같이 시간을 허무하게 보내지 않고(적어도 나
 혹은:
 프로그래밍 경험이 없다면 이 책을 사라:
 
-- 페이퍼백 버전: [JavaScript: The Definitive Guide: 아마존](http://www.amazon.com/gp/product/0596805527/ref=as_li_tf_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0596805527&linkCode=as2&tag=interhaptic-20) - 번역본: [자바스크립트 완벽 가이드 | 도서출판 인사이트](http://www.insightbook.co.kr/books/programming-insight/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%99%84%EB%B2%BD-%EA%B0%80%EC%9D%B4%EB%93%9C)(역자주: 댓글을 보면 알겠지만 6판은 5판에 비해 번역이 좋지 않아 욕을 많이 먹고 있다)
+- 페이퍼백 버전: [JavaScript: The Definitive Guide: 아마존](http://www.amazon.com/gp/product/0596805527/ref=as_li_tf_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0596805527&linkCode=as2&tag=interhaptic-20) - 번역본: [자바스크립트 완벽 가이드](http://www.insightbook.co.kr/books/programming-insight/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%99%84%EB%B2%BD-%EA%B0%80%EC%9D%B4%EB%93%9C)(역자주: ~~댓글을 보면 알겠지만 6판은 5판에 비해 번역이 좋지 않아 욕을 많이 먹고 있다~~ 출판사가 과감히 절판하고 2년간 재번역해서 재출간하였다!)
 - 킨들 버전: [JavaScript: The Definitive Guide](http://www.amazon.com/gp/product/B004XQX4K0/ref=as_li_tf_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B004XQX4K0&linkCode=as2&tag=interhaptic-20)
 
 * [스택오버플로우](http://stackoverflow.com/)(무료 서비스)에 계정을 만든다. 프로그래밍 관련 질문을 하고 대답하는 일종의 포럼이다. 이 웹사이트는 여러분의 프로그래밍 질문에 대한 대답을 듣기 위해 - 아주 기초적인 멍청해 보이는(**멍청한 질문은 결코 없다는 것을 기억하라**) 질문에 대해서도 - Codecademy 보다 훨씬 더 쓸모가 있을 것이다.
@@ -73,6 +73,7 @@ Codecademy의 트랙같이 시간을 허무하게 보내지 않고(적어도 나
 4. Codecademy의 [자바스크립트 트랙](http://www.codecademy.com/tracks/javascript) 중 *Introduction to JavaScript* 섹션을 공부한다.
 
 5. *JavaScript: The Definitive Guide*의 3장과 4장을 읽는다.
+
 > - 혹은 *프론트엔드 개발자를 위한 자바스크립트 프로그래밍* 서문, 3장과 4장을 읽는다. “비트 연산자(Bitwise Operators)”는 건너뛸 수 있다; 여러분의 자바스크립트 커리어에서 그것들을 사용하는 경우가 거의 없을 것이다.
 >
 > - 그리고 다시, 멈추고 브라우저 콘솔(혹은 JSFiddle)에 예제 코드를 쓰고 실험한다. - 일부 변수와 코스를 약간 조정해본다.
@@ -84,6 +85,7 @@ Codecademy의 트랙같이 시간을 허무하게 보내지 않고(적어도 나
 ## Weeks 3 and 4 (Objects, Arrays, Functions, DOM, jQuery)
 
 1. 내 글 [JavaScript Objects in Detail](http://javascriptissexy.com/javascript-objects-in-detail/)을 읽는다.
+
 > - 혹은 *JavaScript: The Definitive Guide*의 6장을 읽는다.
 >
 > - 혹은 *프론트엔드 개발자를 위한 자바스크립트 프로그래밍*의 6장을 읽는다. 주: "객체에 대한 이해(Understanding Objects)" 섹션만 읽는다.
@@ -91,9 +93,11 @@ Codecademy의 트랙같이 시간을 허무하게 보내지 않고(적어도 나
 > - 3가지 중 어떤 것도 좋다, 두 책이 더 자세하지만: 내 글을 읽고 완전히 이해한다면 자신 있게 추가 세부사항은 건너뛸 수 있다.
 
 2. *JavaScript: The Definitive Guide*의 7장과 8장을 읽는다.
+
 > - 혹은 *프론트엔드 개발자를 위한 자바스크립트 프로그래밍*의 5장과 7장을 읽는다.
 
 3. 이 시점에서, 여러분은 브라우저 콘솔에 코드를 쓰고 if-else 선언, for loops, Arrays, Functions, Objects 등을 테스트하는 것에 많은 시간을 소비해야만 한다. 여러분이 브라우저에서 (Codecademy의 도움 없이) 독립적으로 코딩하는 법을 아는(계속 연습하는) 것이 매우 중요하다. Codecademy로 되돌아갈 즈음엔 어떤 도움이나 힌트가 필요하지 않아야 한다. 모든 숙제도 쉬워야 한다.
+
 > - Codecademy가 아직 어렵다면, 브라우저도 돌아가서 계속 해킹한다. 이것이 가장 잘 배울 수 있는 곳이다. [레브론 제임스](http://en.wikipedia.org/wiki/LeBron_James)가 "거리"(이웃 농구 코트)에서 젊은 시절에 기술을 연마하거나, 빌 게이츠가 지하에서 홀로 해킹하는 것과 유사하다.
 >
 > - 여러분 스스로 조금씩 외로이 해킹하고 배우는 것은 엄청난 가치가 있다. 여러분은 이 전략 속에 있는 가치를 알아야 하고, 기꺼이 받아들여야 하고, 작동될 것이라고 믿어야 한다.  
@@ -109,6 +113,7 @@ Codecademy의 트랙같이 시간을 허무하게 보내지 않고(적어도 나
 5. Codecademy를 하는 동안, [프로젝트](http://www.codecademy.com/tracks/projects) 트랙으로 가서, 다섯 개의 작은 Basic Projects를 만든다. 이러면, Codecademy는 다 끝냈다. 여러분 스스로 더 많이 공부할수록, 더욱 빨리 배우고, 스스로 프로그래밍하는 것을 더욱 잘 준비할 수 있기 때문에, 이건 좋은 것이다.
 
 6. *JavaScript: The Definitive Guide*의 13장, 15장, 16장과 19장을 읽는다.
+
 > - 혹은 *프론트엔드 개발자를 위한 자바스크립트 프로그래밍*의 8장, 9장, 10장, 11장, 13장과 14장을 읽는다. 이 책은 jQuery를 다루지 않고 있고, Codecademy의 jQuery도 충분하지 않다. 이 jQuery 과정을 따른다 - 무료다: [Code School - Try jQuery](http://try.jquery.com/)
 >
 > - 그리고, 책을 가지고 있다면 jQuery에 대해 더 많이 알기위해, *JavaScript: The Definitive Guide*의 19장을 읽을 수도 있다.
@@ -153,6 +158,7 @@ var allQuestions = [{question: "Who is Prime Minister of the United Kingdom?", c
 ## Weeks 5 and 6 (Regular Expressions, Window Object, Events, jQuery)
 
 1. *JavaScript: The Definitive Guide*의 10장, 14장, 17장과 20장을 읽는다.
+
 > - 혹은 *프론트엔드 개발자를 위한 자바스크립트 프로그래밍*의 20장과 23장을 읽는다.
 
 2. 파이어폭스 콘솔에 모든 예제 코드를 계속 타자하고, 그것이 어떻게 동작하고 무엇인지를 진짜 이해하기 위해 실험하면서 코드의 각 부분을 계속 조정해야 하는 것을 기억하라.
@@ -160,6 +166,7 @@ var allQuestions = [{question: "Who is Prime Minister of the United Kingdom?", c
 3. 이즈음에, 여러분은 자바스크립트가 - 아마 [제다이 : Jedi](http://en.wikipedia.org/wiki/Jedi)와 같이 - 매우 편안해져야 한다. 여러분은 아직 제다이가 아니다, 계속 배우고 개선하기 위해 새로 습득한 지식과 기술을 할 수 있는 한 자주 사용하여야 한다.
 
 4. 이전의 퀴즈 앱을 개선한다:
+
 > - 클라이언트 측의 데이터 유효성 검사를 추가한다: 다음 질문으로 진행하기 전에 사용자가 각각의 질문에 대답해야 한다.
 >
 > - 사용자가 되돌아가서 대답을 수정할 수 있도록 "Back" 버튼을 추가한다. 사용자는 최초의 질문으로 되돌아갈 수 있다. 사용자가 이미 대답한 질문에선 다시 질문에 답하지 않도록, 선택한 라디오 버튼을 보여주어야 한다.
@@ -177,11 +184,13 @@ var allQuestions = [{question: "Who is Prime Minister of the United Kingdom?", c
 ## Weeks 7 and, if necessary 8 (Classes, Inheritance, more HTML5)
 
 1. *JavaScript: The Definitive Guide*의 9장, 18장, 21장과 22장을 읽는다.
+
 > - 혹은 내 블로그 글 [OOP In JavaScript: What You NEED to Know](http://javascriptissexy.com/oop-in-javascript-what-you-need-to-know/)를 읽는다.
 >
 > - 혹은 *프론트엔드 개발자를 위한 자바스크립트 프로그래밍*의 6장(이번에는 "객체 생성 : Object Creation"과 "상속 : Inheritance"만), 16장, 22장과 24장을 읽는다. 주: 이 섹션을 읽는 것이 전체 로드맵에서 마주치는 가장 기술적인 독서이다. 모두 읽기를 원한다면 여러분한테 달려있다. 적어도 Prototype Pattern, Factory Pattern과 Prototypal Inheritance은 읽어야 한다. 모든 패턴을 알 필요는 없다.
 
 2. **퀴즈 앱을 한층 더 개선한다:**
+
 > - 좀 더 전문적으로 보이도록, 퀴즈 엘리먼트를 포함한 전체 페이지 레이아웃을 위해 [트위터 부트스트랩](http://twitter.github.com/bootstrap/)을 사용한다. 추가 보너스로서, 트위터 부트스트랩의 [탭](http://twitter.github.com/bootstrap/javascript.html#tabs) 유저 인터페이스 컴포넌트를 사용하고 각각의 탭에 4개의 퀴즈 중 하나씩 보여준다.
 >
 > - [Handlebars.js를 배우고](http://javascriptissexy.com/handlebars-js-tutorial-learn-everything-about-handlebars-js-javascript-templating/), Handlebar.js 템플릿을 퀴즈에 추가한다. 더는 자바스크립트 코드 안에 어떠한 HTML도 있어선 안 된다. 여러분의 퀴즈는 조금씩 진보하고 있다.

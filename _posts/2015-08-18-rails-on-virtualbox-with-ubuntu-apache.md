@@ -8,7 +8,7 @@ tags: [virtualbox, ubuntu, linux, apache, passenger, rails, mysql, production]
 
 오라클에서 만든 버추얼박스[VirtualBox](https://www.virtualbox.org/wiki/Downloads)를 다운로드하여 설치한다. 가상머신를 만들어서 우분투 서버를 설치하는 것을 사진과 함께 단계마다 자세하게 설명한 가이드가 있으니 보고 그대로 따라 하면 된다. 시간도 우분투 서버를 다운받는 시간보다 적게 걸린다.
 
-* [우분투 14.04 서버 세팅하기 (Virtual Box) | 초보자를 위한 레일스 가이드북](http://rorlab.gitbooks.io/railsguidebook/content/appendices/ubuntu14server.html) : 우분투를 설치하기위해 가상머신을 시작하기 전에 브리지 어댑터로 설정하는 것을 빼먹으면 처음부터 다시 설치해야하는 불상사가 일어날 수 있다. "서버 웹운영 환경 설정"은 책의 예제에 맞추어져 있기 때문에 자신의 웹앱에 필요한 것을 설치해야한다.
+* [우분투 14.04 서버 세팅하기 (Virtual Box) - 초보자를 위한 레일스 가이드북](http://rorlab.gitbooks.io/railsguidebook/content/appendices/ubuntu14server.html) : 우분투를 설치하기위해 가상머신을 시작하기 전에 브리지 어댑터로 설정하는 것을 빼먹으면 처음부터 다시 설치해야하는 불상사가 일어날 수 있다. "서버 웹운영 환경 설정"은 책의 예제에 맞추어져 있기 때문에 자신의 웹앱에 필요한 것을 설치해야한다.
 * [우분투 서버 가이드](https://help.ubuntu.com/lts/serverguide/)는 참고용.
 
 ## 프로그램 설치
