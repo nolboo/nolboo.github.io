@@ -368,7 +368,7 @@ localhost 즉, 리눅스 서버 인스턴스에서만 접근할 수 있도록 �
 워드프레스가 사용할 데이터베이스를 만든다. 데이터베이스 이름을 둘러싼 기호는 백틱`backtick`(`)이다. 표준 키보드에서 Tab 키 위에 틸더(~)와 함께 있다. 백틱으로 감싸면 데이터베이스 이름에 하이픈(-) 등 허용되지 않는 문자를 사용할 수 있다.
 
 <pre class="terminal">
-mysql> CREATE DATABASE `nlancer-db`; 
+mysql> CREATE DATABASE `wordpress-db`; 
 Query OK, 1 row affected (0.01 sec)
 </pre>
 
