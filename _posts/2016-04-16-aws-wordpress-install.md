@@ -22,13 +22,18 @@ AWS 계정을 만들고 인스턴스를 생성하는 것은 이제 많은 가이
 
 ### 리전 선택
 
-Launch Instance 버튼을 눌러 인스턴스 생성하기 전에 먼저 우측 위에서 Seoul 리전을 선택한다. 한국은 국내 인터넷 속도는 세계최고이나 해외 인터넷 속도는 그리 높지 않기 때문에 서버를 한국에 있는 것이 빠른 경우가 많다. 
+[EC2 Management Console](https://console.aws.amazon.com/ec2/)에서 Launch Instance 버튼을 눌러 인스턴스 생성하기 전에 먼저 우측 위에서 Seoul 리전을 선택한다. 리전에 대한 자세한 설명은 [지역 및 가용 영역](http://docs.aws.amazon.com/ko_kr/AWSEC2/latest/UserGuide/using-regions-availability-zones.html)을 참고한다.
+
+![지역 선택기](http://docs.aws.amazon.com/ko_kr/AWSEC2/latest/UserGuide/images/EC2_select_region.png)
+*아마존 자습서에 있는 이미지는 Oregon을 선택하고 있다. 밑에서 두번째 Seoul을 선택한다.*
+
+한국은 국내 인터넷 속도는 세계최고이나 해외 인터넷 속도는 그리 높지 않기 때문에 서버를 한국에 있는 것이 빠른 경우가 많다.
 
 * [AWS Network latency check](http://cloudping.mobilfactory.co.kr/)
 
 ### Amazon Machine Image (AMI) 선택
 
-아마존 머신 이미지(AMI)는 미리 리눅스와 같은 OS를 설치한 컴퓨터의 루트 드라이브 템플릿 같은 것이다. 당연히 OS와 데이터베이스 서버, 미들웨어, 웹서버 등과 같은 소프트웨어와 래이어를 포함하고 있다. 가상 서버를 만들 때마다 요구되는 지루한 작업을 피할 수 있다. AWS에서 리눅스를 사용할 때는 다른 익숙한 OS가 없다면 Amazon Linux AMI 2016.03.0 (HVM), SSD Volume Type을 선택한다. [Amazon Linux AMI](https://aws.amazon.com/ko/amazon-linux-ami/)는 기본적으로 AWS와 통합되어 있고, 가볍고 보안이 강화되어 있다고 한다.
+아마존 머신 이미지([AMI](http://docs.aws.amazon.com/ko_kr/AWSEC2/latest/UserGuide/ComponentsAMIs.html))는 미리 리눅스와 같은 OS를 설치한 컴퓨터의 루트 드라이브 템플릿 같은 것이다. 당연히 OS와 데이터베이스 서버, 미들웨어, 웹서버 등과 같은 소프트웨어와 래이어를 포함하고 있다. 가상 서버를 만들 때마다 요구되는 지루한 작업을 피할 수 있다. AWS에서 리눅스를 사용할 때는 다른 익숙한 OS가 없다면 Amazon Linux AMI 2016.03.0 (HVM), SSD Volume Type을 선택한다. [Amazon Linux AMI](https://aws.amazon.com/ko/amazon-linux-ami/)는 기본적으로 AWS와 통합되어 있고, 가볍고 보안이 강화되어 있다고 한다.
 
 ### Choose an Instance Type
 
@@ -448,6 +453,14 @@ Welcome to WordPress
 
 [Install WordPress]를 클릭해서 설치를 완료한다.
 
+## 자신만의 워드프레스 AMI 만들기(유료)
+
+[Amazon EBS 지원 Linux AMI 생성](http://docs.aws.amazon.com/ko_kr/AWSEC2/latest/UserGuide/creating-an-ami-ebs.html)을 참조하여 자신만의 워드프레스 설정이 완료된 머신 이미지를 만들 수 있다.
+
+[EC2 콘솔](https://console.aws.amazon.com/ec2/) 탐색 창에서 [Instances]를 선택하고 인스턴스를 선택합니다. [Actions] > [Image] > [Create Image]을 차례로 선택한 이후 이름과 설명을 입력하면 워드프레스 AMI가 만들어진다.
+
+시간이 조금 지난 후 만들어진 AMI는 탐색창에서 [Images] > [AMI] > [Launch] 를 차례로 선택하고 이후 원하는 용량 타입의 인스턴스를 선택하면 새로운 서버 유형에 지금까지 만들어진 설치내용을 그대로 실은 새로운 서버를 만들 수 있다. 단, 매우 편리한 기능이나 AMI가 저장된 용량만큼 과금된다.
+
 ## 기타
 
 - [Website speed test](http://tools.pingdom.com/fpt/)나 [YSlow - Official Open Source Project Website](http://yslow.org/?)을 이용하여 기본 속도를 체크하고 성능을 참고한다.
@@ -456,6 +469,6 @@ Welcome to WordPress
 
 ## 참고 링크
 
-* [아마존 웹서비스 1 - 서버 구축 - 대두족장 놀이터](http://www.creativeworksofknowledge.com/2014/08/12/aws-ec2-01/)
 * [자습서: Amazon LinuxLAMP 웹 서버 설치 - Amazon Elastic Compute Cloud](http://docs.aws.amazon.com/ko_kr/AWSEC2/latest/UserGuide/install-LAMP.html)
+* [아마존 웹서비스 1 - 서버 구축 - 대두족장 놀이터](http://www.creativeworksofknowledge.com/2014/08/12/aws-ec2-01/)
 
