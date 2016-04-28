@@ -49,3 +49,4 @@ tags: [sublime, evernote, markdown]
 ## 참고링크
 
 * [Geeknote - Evernote console client for Linux, FreeBSD, OS X](http://www.geeknote.me/)
+* [Marxico - Markdown Editor for Evernote](http://marxi.co/): 에버노트 싱크는 유료

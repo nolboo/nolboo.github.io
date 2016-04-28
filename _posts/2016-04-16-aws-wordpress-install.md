@@ -451,6 +451,8 @@ Welcome to WordPress
 - 강력한 비밀번호를 입력한다.
 - 알림에 사용할 이메일 주소를 입력합니다.
 
+> 위의 정보를 입력하는 페이지의 가장 마지막에 있는 Privacy 항목에서 검색엔진이 검색목록에 포함하지 않도록 한다. 사이트가 모두 완성된 후 완성된 정보가 검색목록에 포함되도록 한다.
+
 [Install WordPress]를 클릭해서 설치를 완료한다.
 
 ## 자신만의 워드프레스 AMI 만들기(유료)
@@ -465,10 +467,16 @@ Welcome to WordPress
 
 - [Website speed test](http://tools.pingdom.com/fpt/)나 [YSlow - Official Open Source Project Website](http://yslow.org/?)을 이용하여 기본 속도를 체크하고 성능을 참고한다.
 - 만일을 대비하여 [AWS 프리티어 사용 시 요금발생(폭탄)을 막기위한 팁](http://gun0912.tistory.com/45)
-- 마침 어제 업그레이드가 있었다. [What's New in WordPress 4.5](http://www.sitepoint.com/whats-new-wordpress-4-5/)와 [WordPress 4.5 “Coleman”](https://wordpress.org/news/2016/04/coleman/)을 참고한다.
+- 마침 어제 업그레이드가 있었다. [What's New in WordPress 4.5](http://www.sitepoint.com/whats-new-wordpress-4-5/)와 [워드프레스 4.5 콜맨(Coleman) 정식 버전 발표](https://ko.wordpress.org/2016/04/11/%EC%9B%8C%EB%93%9C%ED%94%84%EB%A0%88%EC%8A%A4-4-5-%EC%BD%9C%EB%A7%A8coleman-%EC%A0%95%EC%8B%9D-%EB%B2%84%EC%A0%84-%EB%B0%9C%ED%91%9C/)을 참고한다.
 
 ## 참고 링크
 
 * [자습서: Amazon LinuxLAMP 웹 서버 설치 - Amazon Elastic Compute Cloud](http://docs.aws.amazon.com/ko_kr/AWSEC2/latest/UserGuide/install-LAMP.html)
 * [아마존 웹서비스 1 - 서버 구축 - 대두족장 놀이터](http://www.creativeworksofknowledge.com/2014/08/12/aws-ec2-01/)
+
+## TODO
+
+- [ ] : [디지털오션 서버에 워드프레스 블로그 두 개 설치하기 (왕초보) | SEOULRAIN](http://seoulrain.net/2016/04/18/digitaloceanwordpress/): 멀티 호스트를 비롯한 자세한 설명
+- [ ] : [CDN을 이용해 워드프레스 블로그에 쉽게 HTTPS 적용하기](https://blog.iamseapy.com/archives/488): SSL을 적용하자
+
 

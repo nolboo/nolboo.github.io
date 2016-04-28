@@ -95,9 +95,11 @@ tags: [jekyll, github]
 
 
     name: Your New Jekyll Site // 자신이 원하는 멋진 블로그 이름으로 변경한다.
-    markdown: redcarpet
-    pygments: true
-
+    highlighter: rouge
+    markdown: kramdown
+    kramdown:
+      input: GFM
+    
     baseurl: "/blog" // 이 부분을 반드시 추가하여야 한다.
 
 
@@ -153,9 +155,13 @@ tags: [jekyll, github]
 
 RDiscount는 C로된 마크다운 프로세싱 엔진이다. `[sudo] gem install rdiscount`로 설치한다. kramdown과 redcarpet 등도 동일한 방법으로 설치할 수 있다. 기본 마크다운을 사용한다면 차후에 좀 더 필요성을 느낄 때 설치하여도 된다.
 
+> GitHub에서는 2016년 5월 1일부터 kramdown 하나만 지원한다. 자세한 것은 [A look behind our decision to standardize on a single Markdown engine for GitHub Pages](https://github.com/blog/2136-a-look-behind-our-decision-to-standardize-on-a-single-markdown-engine-for-github-pages)를 참조한다. 
+
 ### [Pygments][9]
 
-Pygments는 파이썬 기반 구문 하일라이터이며, 코드를 이쁘게 보여준다. `[sudo] easy_install Pygments`로 설치한다.
+Pygments는 파이썬 기반 문법 하일라이터이며, 코드를 이쁘게 보여준다. `[sudo] easy_install Pygments`로 설치한다.
+
+>문법 하일라이터로 [Rouge](http://rouge.jneen.net/)로 통합되었다. 
 
 ## 지킬 기본 디렉토리 구조
 

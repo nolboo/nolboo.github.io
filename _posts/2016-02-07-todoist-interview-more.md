@@ -134,6 +134,7 @@ Todoist는 기록을 보니 2014년 4월에 접해서 본격적으로 사용한 
 ## 생산성 관련 링크
 
 * [당신을 위한 생산성 방법론 최종 가이드](https://blog.todoist.com/ko/2015/12/06/the-ultimate-guide-to-personal-productivity-methods/): 거의 모든 방법론을 설명
+* [체계주의(Systemist): 현대의 생산성 작업 흐름](https://blog.todoist.com/ko/2016/02/08/systemist-a-modern-productivity-workflow/): 투두이스트의 CEO의 방법론. 공통점이 많네요.
 * [A GTD Approach to Organizing and Reading Your Feeds](https://danielmiessler.com/blog/a-gtd-approach-to-organizing-and-reading-your-feeds/): RSS 피드를 GTD하는 법이다. 한발 더 나아가 내가 사용하는 [정보 습득과 소셜 공유 워크플로우](http://nolboo.github.io/blog/2016/01/09/how-to-share/)를 별도의 글로 적어놓았다.
 * [나에게 꼭 필요한 Todo앱의 조건](http://www.dev-diary.com/archives/2711)
 * [Redesigning My Productivity: The 1–2–3 To-Do List](https://medium.com/@arriane/the-simple-technique-to-make-you-more-productive-with-a-shorter-to-do-list-the-1-2-3-method-9c0e2919cee2#.lmhvbd32r)

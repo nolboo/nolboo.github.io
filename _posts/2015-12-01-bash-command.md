@@ -415,3 +415,4 @@ tags: [linux, bash, command]
 ## 참고링크
 
 * [Bash Shell Script - GitBook](https://www.gitbook.com/book/mug896/shell-script/details)
+* [Terminal Cheatsheet for Mac ( basics )](https://github.com/0nn0/terminal-mac-cheatsheet/wiki/Terminal-Cheatsheet-for-Mac-(-basics-))
