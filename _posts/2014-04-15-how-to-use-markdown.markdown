@@ -193,7 +193,7 @@ ST3와 [Bitbucket](https://bitbucket.org)을 이용하여 *마크다운 문법�
 - [LightPaper](http://clockworkengine.com/): 속도나 디자인도 예쁜 맥용 마크다운 앱이며, 폴더 내비게이션 바가 있어 폴더에 있는 여러 마크다운 파일을 보면서 정리할 때 유용하다.
 - [Haroopad](http://pad.haroopress.com/): 국내 개발자가 만든 앱으로 맥, 윈도, 리눅스를 지원한다. 비교적 용량이 큰 파일도 무리 없이 다루며, 미리보기 또한 부드럽고 빠르다. 앞으로 블로그 플랫폼인 하루프레스와 유기적으로 연동되는 것이 많이 기대된다.
 - [StackEdit](https://stackedit.io/): 크롬 앱이며 속도와 UI가 좋은 편이며, 드랍박스/구글 드라이브 싱크를 지원하고, 깃허브/블로거/워드프레스/텀블러 등에 바로 포스팅할 수 있다.
-- [Heck Yes Markdown](http://heckyesmarkdown.com/): url만 입력하면 웹페이지의 콘텐츠를 마크다운 문법으로 변환해준다. 번역할 때 주로 이용한다.
+- [Heck Yes Markdown](http://heckyesmarkdown.com/): url만 입력하면 웹페이지의 콘텐츠를 마크다운 문법으로 변환해준다. 번역할 때 주로 이용하며, 북마클릿도 있다.
 - [Mark It Down](http://markitdown.medusis.com/): 웹페이지나 에디터의 Rich 컨텐츠를 마크다운으로 변환해준다.
 - [GitBook](http://www.gitbook.io/): 마크다운으로 e북을 만들고 인터렉티브한 교육 과정을 만들 수 있다.
 - [MultiMarkdown Quick Look with Style](https://github.com/ttscoff/MMD-QuickLook): 파인더의 훑어보기(Quick Look)에서 마크다운 파일을 바로 볼 수 있다.

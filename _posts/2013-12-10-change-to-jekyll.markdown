@@ -22,8 +22,8 @@ tags: [jekyll, blog, redcarpet, markdown, octopress]
 
 깃허브 블로그에 남아있는 예전 블로그글은 html 로만 남았기 때문에 마크다운으로 변환해야 했다. 물론, 지킬은 html 파일도 처리할 수 있지만 옥토프레스 테마와 플러그인이 적용된 상태라 html 파일을 수정하는 시간과 알고 있는 툴로 마크다운으로 변환하는 것이 비슷할 것 같아서 마크다운으로 변환하기 결했다. 사용한 툴은 다음과 같다:
 
-1. [Heck Yes Markdown](http://heckyesmarkdown.com/): url을 입력하면 마크다운으로 변환한다.
-2. [Html2MarkDown](http://html2markdown.com/): html 코드를 복사하여 넣으면 마크다운으로 변환한다.
+1. [Heck Yes Markdown](http://heckyesmarkdown.com/): url을 입력하면 마크다운으로 변환한다. 북마클릿도 있다.
+~~2. [Html2MarkDown](http://html2markdown.com/): html 코드를 복사하여 넣으면 마크다운으로 변환한다.~~ 서비스가 죽었다.
 
 1번을 주로 사용하고 제대로 변경되지 않는 부분을 군데군데 2번으로 변환하였다. 시간은 예상보다 많이 걸렸다.(아.. 노가다.. 내 시간;;)
 
