@@ -26,14 +26,14 @@ MAMP/WAMP/XAMP를 버리고 가상 개발 환경을 사용하는 것을 제안�
 
 이제까지 가상환경에 정신이 팔려있었다. 다음 사용할 것은 무엇인가?
 
-난 [VVV](https://github.com/Varying-Vagrant-Vagrants/VVV)를 사용하고 있다. 준비하고 돌리기에 지극히 간단하고, 지원 시스템이 좋으며 내가 일한 [XWP](https://xwp.co/)를 포함한 많은 대형 워드프레스 개발 에이전시가 사용하고 있다.
+난 [VVV](https://github.com/Varying-Vagrant-Vagrants/VVV)를 사용하고 있다. 준비하고 돌리기에 지극히 간단하고, 지원 시스템이 좋다. 내가 일한 [XWP](https://xwp.co/)를 포함한 많은 대형 워드프레스 개발 에이전시가 사용하고 있다.
 
 다른 가상 워드프레스 개발 환경은 다음과 같은 것이 있다: [HGV](https://github.com/wpengine/hgv), [Wocker](http://wckr.github.io/), [VIP Quickstart](https://github.com/Automattic/vip-quickstart)
 
 VVV로 가기로 했다면, 다음 플러그인과 툴을 강력하게 권한다.
 
 * [vagrant-hostsupdater](https://github.com/cogitatio/vagrant-hostsupdater) - 이 플러그인은 vagrant 설치가 도메인과 IP 주소의 매핑을 추가하기 위해 컴퓨터의 호스트 파일을 업데이트할 수 있다. 호스트 파일을 직접 추가할 필요가 없다.
-* [Variable VVV](https://github.com/bradp/vv) - VVV를 위한 가장 유용한 툴이다. 커맨드 라인에서 새 VVV 워드프레스를 빠르고 쉽게 만들 수 있다.
+* [Variable VVV(VV)](https://github.com/bradp/vv) - VVV를 위한 가장 유용한 툴이다. 커맨드 라인에서 새 VVV 워드프레스를 빠르고 쉽게 만들 수 있다.
 
 알렉산더 코코가 [VVV에 대해서 일전에 글을 썼었고](http://www.sitepoint.com/wordpress-meets-vagrant-vvv/), 나도 [컴퓨터에 VVV 셋업하는 법](https://mattgeri.com/article/wordpress-vvv/)에 대한 비디오를 녹화했다.
 
@@ -43,12 +43,12 @@ VVV로 가기로 했다면, 다음 플러그인과 툴을 강력하게 권한다
 
 ![WordPress WP-CLI](http://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2016/04/1461864990wp-cli-wordpress-1024x275.gif)
 
-WP-CLI로 커맨드 라인에서 워드프레스 설치를 관리할 수 있다(VVV에도 있다).
+WP-CLI로 커맨드 라인에서 워드프레스 설치를 관리할 수 있다(VVV에도 포함되어있다).
 
 로컬 개발 환경에서 WP-CLI를 사용하는 실용적인 예를 보자.
 
 * 워드프레스 설치. 서버에 SSH로 접속하고 워드프레스를 빠르게 설치할 필요가 있는가?
-* 워드프레스 업데이트. 엄청난 수의 워드프레스 웹사이트에 각각 방문하고, 로그인하고, 클릭하고, 업데이트할 필요가 없다. 커맨드 라인에서 하나의 명령어도 할 수 있다.
+* 워드프레스 업데이트. 엄청난 수의 워드프레스 웹사이트에 각각 방문하고, 로그인하고, 클릭하고, 업데이트할 필요가 없다. 커맨드 라인에서 하나의 명령어로 할 수 있다.
 * 플러그인 설치. 여러 사이트에 플러그인을 동시에 설치할 수 있다.
 * 워드프레스 데이터베이스 재설정.
 * 컨텐츠 임포트.

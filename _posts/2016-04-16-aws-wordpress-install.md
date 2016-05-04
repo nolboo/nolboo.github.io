@@ -10,6 +10,8 @@ AWS(아마존 웹 서비스:Amazon Web Services)는 웹 서비스에 관련된 �
 
 현재 제공되는 클라우드 서비스의 종류는 이제 따로 공부해야만 따라갈 수 있을 정도로 많다. 그 중에서 가장 기본이 되는 가상 서버 서비스인 Amazon EC2(Amazon Elastic Compute Cloud)에서는 무료 사용량을 [AWS 프리 티어:Free Tier](https://aws.amazon.com/ko/free/)란 이름으로 제공하고 있다. 여기에 워드프레스를 올려보자. 참고로 후발자인 애저도 [무료 계정](https://azure.microsoft.com/ko-kr/free/))을 제공하고 용량도 더 많이 제공한다. 그러나 아직 써보지 않았다.
 
+<div id="toc"><p class="toc_title">목차</p></div>
+
 ## Amazon EC2 Linux 인스턴스 생성
 
 AWS 계정을 만들고 인스턴스를 생성하는 것은 이제 많은 가이드가 나와있으니 여기서는 생략한다. 다음 링크를 참조하여 생성한다.
