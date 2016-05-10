@@ -116,7 +116,11 @@ git clone https://github.com/topdown/VVV-Dashboard.git dashboard
 cp dashboard/dashboard-custom.php .
 ```
 
-웹브라우저에서 `vvv.dev`를 액세스하면 보다 이쁜 대시보드가 반길 것이다. 약간 심플한 [leogopal/VVV-Dashboard](https://github.com/leogopal/VVV-Dashboard)도 있다.
+웹브라우저에서 `vvv.dev`를 액세스하면 보다 이쁜 대시보드가 반길 것이다. 
+
+![](https://farm8.staticflickr.com/7674/26325803623_06a86d8e31.jpg)
+
+약간 심플한 [leogopal/VVV-Dashboard](https://github.com/leogopal/VVV-Dashboard)도 있다.
 
 ## [Variable VVV - a VVV Site Creation Wizard](https://github.com/bradp/vv)
 
