@@ -1,12 +1,14 @@
 ---
 layout: post
-title: "궁극의 워드프레스 개발 환경 - 발췌역"
+title: "궁극의 워드프레스 개발 환경"
 description: "The Ultimate WordPress Development Environment을 발췌해서 번역"
 category: blog
 tags: [wordpress, development, environment]
 ---
 
 원문 : [The Ultimate WordPress Development Environment](http://www.sitepoint.com/ultimate-wordpress-development-environment/?utm_content=buffer4fe5c&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer)
+
+* 원문에서 필요한 부분만 발췌하여 번역하였으니 원문을 꼭 참조하시기 바랍니다.
 
 ## It Starts with the Server
 
