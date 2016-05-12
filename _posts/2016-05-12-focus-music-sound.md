@@ -40,7 +40,7 @@ tags: [focus, productivity, classic, music, wihtenoise]
 
 ## Whitenoise
 
-- [Coffitivity | The Sounds of Productivity](https://coffitivity.com/): 커피숍 노이즈를 최초로 서비스해서 유명해진 곳. 소음 종류도 다양해졌다. 음악을 소음보다 약간 크게 해서 들으면 좋다고 한다.
+- [Coffitivity - The Sounds of Productivity](https://coffitivity.com/): 커피숍 노이즈를 최초로 서비스해서 유명해진 곳. 소음 종류도 다양해졌다. 음악을 소음보다 약간 크게 해서 들으면 좋다고 한다.
 - [Noisli - Improve Focus and Boost Productivity with Background Noise](http://www.noisli.com/): 몇 가지 소음을 섞을 수 있다.
 - [Noizio](https://itunes.apple.com/us/app/noizio/id928871589): 5$의 맥앱. 
 - [White Noise Market](http://whitenoisemarket.com/): 화이트노이즈 마켓플레이스. [White Noise Free](https://itunes.apple.com/us/app/white-noise-free/id431364704?mt=12&ign-mpt=uo%3D4) 무료 앱은 종류 제한이 있다.
