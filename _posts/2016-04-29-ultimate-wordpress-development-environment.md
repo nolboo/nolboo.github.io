@@ -11,7 +11,7 @@ tags: [wordpress, development, environment]
 * 원문에서 필요한 부분만 발췌하여 번역하였으니 원문을 꼭 참조하시기 바랍니다.
 * 실제로 이 글에서 설명된 개발환경을 구현하는 방법을 별도의 포스트로 진행하고 있습니다.
     * [궁극의 워드프레스 개발 환경 실전편 - VV](http://nolboo.github.io/blog/2016/05/10/ultimate-wordpress-development-environment-vv/) 
-    * 궁극의 워드프레스 개발 환경 실전편 - VV Blueprints
+    * [궁극의 워드프레스 개발 환경 실전편 - VV Blueprints](http://nolboo.github.io/blog/2016/05/14/ultimate-wordpress-development-environment-vv-blueprints/)
     * 궁극의 워드프레스 개발 환경 실전편 - WP CLI
 
 ## It Starts with the Server
