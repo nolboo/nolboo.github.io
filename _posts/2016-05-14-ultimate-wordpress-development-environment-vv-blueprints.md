@@ -10,6 +10,10 @@ tags: [wordpress, development, environment, vagrant, vvv, vv, blueprints]
 
 [궁극의 워드프레스 개발 환경](http://nolboo.github.io/blog/2016/04/29/ultimate-wordpress-development-environment/)을 실제로 구현해보기 위해 [궁극의 워드프레스 개발 환경 실전편 - VV](http://nolboo.github.io/blog/2016/05/10/ultimate-wordpress-development-environment-vv/)에 이어서 VV의 기능을 살펴본다.
 
+* [궁극의 워드프레스 개발 환경 실전편 - VV](http://nolboo.github.io/blog/2016/05/10/ultimate-wordpress-development-environment-vv/) 
+* [궁극의 워드프레스 개발 환경 실전편 - VV Blueprints](http://nolboo.github.io/blog/2016/05/14/ultimate-wordpress-development-environment-vv-blueprints/)
+* 궁극의 워드프레스 개발 환경 실전편 - WP CLI
+
 ### Blueprints
 
 VV의 블루프린트에서 새로 만들 워드프레스 가상머신의 플러그인, 테마, 옵션, 위젯, 메뉴, 상수를 설정할 수 있다. VVV 디렉토리에 `vv-blueprints.json`을 처음 만들려면 `vv --blueprint-init` 명령을 사용한다. 이 파일을 편집하여 여러 개의 블루프린트를 설정한 후 필요할 때마다 불러서 워드프레스 가상머신을 만들 수 있다.
