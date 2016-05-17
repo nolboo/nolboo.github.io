@@ -38,6 +38,17 @@ tags: [focus, productivity, classic, music, wihtenoise]
 - [Google Play Music Desktop Player](http://www.googleplaymusicdesktopplayer.com/)
 - [Radiant Player for Google Play Music - Beautifully integrate Google Play Music with your Mac](http://radiant-player.github.io/radiant-player-mac/)
 
+## 드론 뮤직
+
+댓글로 microamp님이 추천해 주신 전혀 알지 못했던 장르의 음악이다. 왠만한 검색으론 어떤 것인지도 잘 나오지도 않는데, 나무위키에서 [앰비언트 뮤직](https://namu.wiki/w/%EC%95%B0%EB%B9%84%EC%96%B8%ED%8A%B8%20%EB%AE%A4%EC%A7%81#s-2.4) 항목 중에서 한줄 설명을 찾았다.
+
+>미니멀리즘과 결합된 앰비언트. 벌이 나는 소리 혹은 무언가 사각거리는 소리 등이 귀를 간지럽히는 음악.
+
+어느 시간 정도 들어보니 도움이 될만한 사이트여서 추가한다. 추천해주신 두 개의 사이트는 다음과 같다:
+
+- [SomaFM: Drone Zone](http://somafm.com/dronezone/)
+- [musicForProgramming](http://musicforprogramming.net/): 도메인도 무려 "프로그래밍을 위한 음악"이다!
+
 ## Whitenoise
 
 - [Coffitivity - The Sounds of Productivity](https://coffitivity.com/): 커피숍 노이즈를 최초로 서비스해서 유명해진 곳. 소음 종류도 다양해졌다. 음악을 소음보다 약간 크게 해서 들으면 좋다고 한다.
