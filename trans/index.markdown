@@ -1,22 +1,68 @@
----
-layout: post
-title: "한국어 번역글 모음 페이지"
-date: 2014-08-01 21:00:00
----
+# 한국어 번역글 위키
 
-<div id="toc"><p class="toc_title">목차</p></div>
-
-* _공유된 번역 글과 사이트를 **기술과 경영 카테고리별**로 개인적으로 모은 페이지입니다. 직접 링크를 추가하고 싶으신 분이나 다른 카테고리의 글을 위해서 [별도 위키](https://github.com/nolboo/nolboo.github.io/wiki)를 이용하세요~_
-* 위의 공지에도 아직도 많은 분들이 이 페이지로 찾아오셔니 한달에 한번 정도는 위키의 데이타를 여기에도 업데이트합니다.
+* _공유할만한 번역 글과 사이트를 크라우드 소싱 방식으로 이 위키에 모으려고 합니다. 널리 알리고 싶은 번역 글과 사이트를 마음대로 추가해주십시요._
+* 위키 본문의 형식은 마크다운입니다. 마크다운은 배우기 쉬우니 처음 접하신 분은 [존 그루버 마크다운 페이지 번역](http://j.mp/157wQmp)을 참조하실 수 있습니다. 이 위키에서 쓰인 문법은 `## 제목`과 링크를 위한 `[]()` 두가지 입니다. Edit 모드에서 간단한 도움말도 제공됩니다.
+* 카테고리는 먼저 마크다운 형식의 헤더로 구분하고 숫자가 많아지면 별도의 페이지로 독립시킨 후 위키 홈에서는 링크를 거는 방식을 취합니다.
+* 현재 카테고리가 프로그래밍과 스타트업 경영에 치우쳐 있으나, 그 외의 부분은 올리시는 분이 직접 카테고리를 만들어도 됩니다. 올리시고 [멘션](https://twitter.com/n0lb00)을 주시거나 Sidebar에 직접 카테고리를 추가하는 것도 가능합니다.
+* [어서와! 변역은 처음이지?](http://www.slideshare.net/wegra/ss-52826286)
 
 ---
+
+[이 글 그만 읽고 아무거나 배우세요.](https://dayone.me/15GczgT) - 원문 : [Stop reading this blog and learn something | Virtuous Code](http://devblog.avdi.org/2011/12/29/stop-reading-this-blog-and-learn-something/)
+
+[어려운 것을 쉽게 배우는 방법 : 슈퍼 파워를 장착하기 위한 3단계 학습법](http://www.moreagile.net/2016/02/learning-new-stuff.html) - 원문 : [The Easy Way To Learn Hard Stuff — Learning New Stuff — Medium](https://medium.com/learning-new-stuff/a-simple-technique-to-learn-hard-stuff-ffaa7879bf7c#.5xa46rdoe)
+
 ## 블로그
 
-[jekyll 공식사이트 한글 번역](http://j.mp/1aAjkcX "11/22") - 원문 : [Jekyll • Simple, blog-aware, static sites](http://jekyllrb.com/)
+[Jekyll • 심플하고 블로그 지향적인 정적 사이트](http://jekyllrb-ko.github.io/) - 원문 : [Jekyll • Simple, blog-aware, static sites](http://jekyllrb.com/)
 
 [Harp로 블로그 만들기](http://j.mp/174gpKP) - 원문 : [Start a blog with Harp](http://kennethormandy.com/journal/start-a-blog-with-harp)
 
 ## HTML & CSS
+
+[당신은 모를 수도 있는 CSS의 7가지 단위](https://webdesign.tutsplus.com/ko/articles/7-css-units-you-might-not-know-about--cms-22573) - 원문 : [7 CSS Units You Might Not Know About](https://webdesign.tutsplus.com/articles/7-css-units-you-might-not-know-about--cms-22573?ec_unit=translation-info-language)
+
+[[번역] BEM으로 사고하기 - BEM 문법 익히기 | 웹으로 말하기](http://mytory.net/html-css-js/2015/05/07/mindbemding-getting-your-head-round-bem-syntax.html) - 원문 : [MindBEMding – getting your head ’round BEM syntax – CSS Wizardry – CSS, OOCSS, front-end architecture, performance and more, by Harry Roberts](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/)
+
+[Sketch 3 사용자 매뉴얼 (비공식) 한국어 번역문](https://sketch3doko.wordpress.com/) - 원문 : [Bohemian Coding - Documentation](http://www.sketchapp.com/support/documentation/)
+
+[Apache Cordova - 가이드](http://cordova.apache.org/docs/ko/edge/) - 원문 : [Apache Cordova - Guides](http://cordova.apache.org/docs/en/edge/index.html)
+
+[Image Compression for Web Developers - HTML5 Rocks](http://www.html5rocks.com/ko/tutorials/speed/img-compression/) - 원문 : [Image Compression for Web Developers - HTML5 Rocks](http://www.html5rocks.com/en/tutorials/speed/img-compression/)
+
+[HTTPS 보안 — Web Fundamentals](https://developers.google.com/web/fundamentals/discovery-and-distribution/security-with-https/?hl=ko) - 원문 : [Security with HTTPS — Web Fundamentals](https://developers.google.com/web/fundamentals/discovery-and-distribution/security-with-https/?hl=en)
+
+[미디어 쿼리](http://techhtml.github.io/css3-mediaqueries/) - 원문 : [CSS Style Attributes](http://www.w3.org/TR/css-style-attr/)
+
+[CSS 스타일 속성](http://techhtml.github.io/css-style-attr/) - 원문 : [CSS Style Attributes](http://www.w3.org/TR/css-style-attr/)
+
+[CSS 컬러 모듈 Level 3](http://techhtml.github.io/css3-color/) - 원문 : [CSS Color Module Level 3](http://www.w3.org/TR/2011/REC-css3-color-20110607/)
+
+[셀렉터 레벨 3](http://techhtml.github.io/selectors/) - 원문 : [Selectors Level 3](http://www.w3.org/TR/2011/REC-css3-selectors-20110929/)
+
+[CSS 네임스페이스 모듈 레벨 3](http://techhtml.github.io/css3-namespace/) - 원문 : [CSS Namespaces Module Level 3](http://www.w3.org/TR/css3-namespace/)
+
+[종합 안내: Rem 그리고 Em, 언제 써야 할까](http://webdesign.tutsplus.com/ko/tutorials/comprehensive-guide-when-to-use-em-vs-rem--cms-23984) - 원문 : [Comprehensive Guide: When to Use Em vs. Rem - Tuts+ Web Design Tutorial](http://webdesign.tutsplus.com/tutorials/comprehensive-guide-when-to-use-em-vs-rem--cms-23984)
+
+[당신은 모를 수도 있는 CSS의 7가지 단위](http://webdesign.tutsplus.com/ko/articles/7-css-units-you-might-not-know-about--cms-22573) - 원문 : [7 CSS Units You Might Not Know About - Tuts+ Web Design Article](http://webdesign.tutsplus.com/articles/7-css-units-you-might-not-know-about--cms-22573)
+
+[웹 개발자의 10가지 흔한 실수](http://code.tutsplus.com/ko/articles/10-common-web-developer-mistakes--cms-24791) - 원문 : [10 Common Web Developer Mistakes - Tuts+ Code Article](http://code.tutsplus.com/articles/10-common-web-developer-mistakes--cms-24791)
+
+[기본 이전의 기초지식 - Back to Basics CSS 2015-08-30](http://techhtml.github.io/TR/#/) - 원문 : [基本の前の基礎知識 - Back to Basics CSS 2015-08-30](http://unformedbuilding.com/slide/back-to-basics-2015-08-30/#/)
+
+[반응형 웹사이트를 위한 검색엔진 최적화](http://bit.ly/1Io8Tf3) - 원문 : [SEO For Responsive Websites – Smashing Magazine](http://www.smashingmagazine.com/2013/11/15/seo-for-responsive-websites/)
+
+[Code Guide by @mdo / 한국어 번역](http://code-guide.aliencube.org/) - 원문 : [Code Guide by @mdo](http://codeguide.co/)
+
+[최고의 CSS 중앙정렬 기법](https://webdesign.tutsplus.com/ko/tutorials/the-holy-grail-of-css-centering--cms-22114) - 원문 : [The Holy Grail of CSS Centering](https://webdesign.tutsplus.com/tutorials/the-holy-grail-of-css-centering--cms-22114)
+
+[반응형 웹 디자인에서 글줄의 길이와 글자 크기 균형 잡기](http://bit.ly/1GSM7qC) - 원문 : [Size Matters: Balancing Line Length And Font Size In Responsive Web Design – Smashing Magazine](http://www.smashingmagazine.com/2014/09/balancing-line-length-font-size-responsive-web-design/)
+
+[반응형 웹 디자인의 현재](http://bit.ly/1oWfZIa) - 원문 : [The State Of Responsive Web Design | Smashing Magazine](http://www.smashingmagazine.com/2013/05/29/the-state-of-responsive-web-design/)
+
+[반응형 웹사이트의 속도를 빠르게 하는 7가지 팁](http://bit.ly/1yTPvwX) - 원문 : [7 Tips to Speed Up Responsive Websites - SpyreStudios | SpyreStudios](http://spyrestudios.com/7-tips-to-speed-up-responsive-websites/)
+
+[Sass 프로젝트를 위한 아키텍처](http://www.webactually.co.kr/archives/13106/) - 원문 : [Architecture for a Sass Project](http://www.sitepoint.com/architecture-sass-project/)
 
 [Sass의 @extend로 부트스트랩을 시맨틱하게 확장하기](http://www.webactually.co.kr/archives/12127) - 원문 : [Using Sass To Semantically @extend Bootstrap](http://www.sitepoint.com/sass-semantically-extend-bootstrap/)
 
@@ -24,13 +70,11 @@ date: 2014-08-01 21:00:00
 
 [큰 스크린 살펴보기](http://j.mp/1fd4RVu "12/9") - 원문 : [Surveying the Big Screen](http://alistapart.com/article/surveying-the-big-screen)
 
-[부트스트랩 3 한글 번역](http://j.mp/1cWUjMB) - 원문 : [Bootstrap](http://getbootstrap.com/)
+[부트스트랩 3 한글 번역](http://bootstrapk.com/) - 원문 : [Bootstrap](http://getbootstrap.com/)
 
 [불필요한 페인트 회피하기](http://html5rocksko.blogspot.kr/2013/10/avoiding-unnecessary-paints.html) - 원문 : [Avoiding Unnecessary Paints](http://www.html5rocks.com/en/tutorials/speed/unnecessary-paints/)
 
 [불필요한 페인트 회피하기: Animated GIF 에디션](http://www.html5rocks.com/ko/tutorials/speed/animated-gifs/) - 원문 : [Avoiding Unnecessary Paints: Animated GIF Edition](http://www.html5rocks.com/en/tutorials/speed/animated-gifs/)
-
-[구글 웹폰트를 빠르게 로드하는 팁 7가지](http://j.mp/18FVmMD) - 원문 : [7 Tips to Load Google Web Fonts Faster](http://www.quickonlinetips.com/archives/2013/10/load-google-web-fonts-faster/)
 
 [HTML, CSS, JavaScript 의 의존성 줄이기](http://j.mp/16FrHhA) - 원문 : [Decoupling Your HTML, CSS, and JavaScript](http://philipwalton.com/articles/decoupling-html-css-and-javascript/)
 
@@ -64,8 +108,6 @@ date: 2014-08-01 21:00:00
 
 [HTML & CSS 초보자 가이드 - 3강 : Box Model & Positioning](http://nolboo.github.io/blog/2013/07/22/beginners-guide-to-html-and-css-3-slash-10/) - 원문 : [A Beginner’s Guide to HTML & CSS – LESSON 3 : Box Model & Positioning](http://learn.shayhowe.com/html-css/box-model)
 
-[HTML & CSS 초보자 가이드 - 4강 : Typography](http://nolboo.github.io/blog/2013/07/22/beginners-guide-to-html-and-css-4-slash-10/) - 원문 : [A Beginner’s Guide to HTML & CSS – LESSON 4 : Typography](http://learn.shayhowe.com/html-css/typography)
-
 [HTML & CSS 초보자 가이드 - 5강 : 백그라운드와 그라디언트](http://nolboo.github.io/blog/2013/07/22/beginners-guide-to-html-and-css-5-slash-10/) - 원문 : [A Beginner’s Guide to HTML & CSS – LESSON 5 : Backgrounds & Gradients](http://learn.shayhowe.com/html-css/backgrounds-gradients)
 
 [정말 읽기 쉬운 코드를 작성하는 최우선 15가지+ 최고의 방법](http://mytory.net/archives/1098) - 원문 : [Top 15+ Best Practices for Writing Super Readable Code](http://net.tutsplus.com/tutorials/html-css-techniques/top-15-best-practices-for-writing-super-readable-code/)
@@ -94,8 +136,6 @@ date: 2014-08-01 21:00:00
 
 [CSS 수직 가운데 정렬 (테이블 없이!)](http://mytory.net/archives/9727) - 원문 : [Vertical Centering with CSS](http://blog.themef는orest.net/tutorials/vertical-centering-with-css/)
 
-[타이포그래피의 주요 규칙에 대한 정리](http://www.looah.com/article/view/1947) - 원문 : [Summary of key rules](http://practicaltypography.com/summary-of-key-rules.html)
-
 [최고의 워드프레스 개발자가 되는 방법](http://www.webactually.co.kr/archives/10805) - 원문 : [How To Become A Top WordPress Developer](http://wp.smashingmagazine.com/2012/08/23/how-to-become-a-top-wordpress-developer/)
 
 [브라우저는 어떻게 동작하는가?](http://helloworld.naver.com/helloworld/59361) - 원문 : [How Browsers Work: Behind the scenes of modern web browsers](http://www.html5rocks.com/en/tutorials/internals/howbrowserswork/)
@@ -106,9 +146,23 @@ date: 2014-08-01 21:00:00
 
 [CSSLint 규칙](https://github.com/hyunchulkwak/csslint/wiki/%EA%B7%9C%EC%B9%99) - 원문 : [CSSLint Rules](https://github.com/stubbornella/csslint/wiki/Rules)
 
-## Mobile
+### Typography
+
+[애플의 신 글꼴, 샌프란시스코의 비밀](http://www.albireo.net/threads/45301/) - 원문 : [The Secret of the Apple’s New San Francisco Fonts — Medium](https://medium.com/@mach/the-secret-of-san-francisco-fonts-4b5295d9a745)
+
+[HTML & CSS 초보자 가이드 - 4강 : Typography](http://nolboo.github.io/blog/2013/07/22/beginners-guide-to-html-and-css-4-slash-10/) - 원문 : [A Beginner’s Guide to HTML & CSS – LESSON 4 : Typography](http://learn.shayhowe.com/html-css/typography)
+
+[타이포그래피의 주요 규칙에 대한 정리](http://www.looah.com/article/view/1947) - 원문 : [Summary of key rules](http://practicaltypography.com/summary-of-key-rules.html)
+
+[구글 웹폰트를 빠르게 로드하는 팁 7가지](http://j.mp/18FVmMD) - 원문 : [7 Tips to Load Google Web Fonts Faster](http://www.quickonlinetips.com/archives/2013/10/load-google-web-fonts-faster/)
+
+### Mobile
+
+[Android Application Architecture](https://medium.com/@jason_kim/android-application-architecture-%EB%B2%88%EC%97%AD-4134d20b2781) - 원문 : [Android Application Architecture — ribot labs — Medium](https://medium.com/ribot-labs/android-application-architecture-8b6e34acda65)
 
 [당신의 HTML5 사이트를 “모바일화”하기](http://gc8134.tistory.com/40) - 원문 : [“Mobifying” Your HTML5 Site](http://www.html5rocks.com/en/mobile/mobifying/)
+
+[안드로이드 개발자를 위한 코드 스타일 가이드라인](https://github.com/leehankyeol/android-code-style-guidelines-in-Korean) - 원문 : [Code Style Guidelines for Contributors | Android Developers](https://source.android.com/source/code-style.html)
 
 [안드로이드 디자인](http://klutzy.github.io/android-design-ko/) - 원문 : [Android Design](http://developer.android.com/design/index.html)
 
@@ -120,17 +174,45 @@ date: 2014-08-01 21:00:00
 
 [두개의 viewport 에 관하여 (part 2)](http://codeflow.co.kr/question/760/%EB%91%90%EA%B0%9C%EC%9D%98-viewport-%EC%97%90-%EA%B4%80%ED%95%98%EC%97%AC-part-2/) 원문 : [A tale of two viewports — part two](http://www.quirksmode.org/mobile/viewports2.html)
 
-## Preprocessor
+### Preprocessor
 
 [Jade 매뉴얼](http://blog.doortts.com/223) - 원문 : []()
 
-## Accessibility
+### Accessibility
 
 [WCAG 2.0](http://naradesign.net/wcag/) - 원문 : [http://www.w3.org/TR/WCAG20/#guidelines](http://www.w3.org/TR/WCAG20/#guidelines)
 
 [WebAIM – 스크린리더 사용자 조사 #5 리포트](http://yamoo9.net/webaim-screen-reader-survey-5/)  - 원문 : [Screen Reader User Survey #5 Results](http://webaim.org/projects/screenreadersurvey5/)
 
 ## Javascript
+
+[[번역] jQuery 3.0: The Next Generations](http://mytory.net/html-css-js/2016/02/14/jquery-3-0.html) - 원문 : [jQuery 3.0: The Next Generations | Official jQuery Blog](https://blog.jquery.com/2014/10/29/jquery-3-0-the-next-generations/)
+
+[[번역] 자바스크립트 클래스를 정의하는 3가지 방법 (3 ways to define a JavaScript class) | steadypost.net](http://steadypost.net/post/lecture/id/13/) - 원문 : [3 ways to define a JavaScript class / Stoyan's phpied.com](http://www.phpied.com/3-ways-to-define-a-javascript-class/)
+
+[ES6 In Depth: Using ES6 today with Babel and Broccoli (번역) — Medium](https://medium.com/@dduskim/es6-in-depth-using-es6-today-with-babel-and-broccoli-%EB%B2%88%EC%97%AD-57b97dbf2e19#.g2sm9qibu) - 원문 : [ES6 In Depth: Using ES6 today with Babel and Broccoli ★ Mozilla Hacks – the Web developer blog](https://hacks.mozilla.org/2015/06/es6-in-depth-babel-and-broccoli/)
+
+[JS: The Right Way](http://www.jstherightway.org/ko-kr/) - 원문 : [JS: The Right Way](http://www.jstherightway.org/)
+
+[훌륭한 자바스크립트 개발자 되는 법](http://nolboo.github.io/blog/2015/06/18/great-js-developer/) - 원문 : [How to Become a Great JavaScript Developer](http://blog.ustunozgur.com/javascript/programming/books/videos/2015/06/17/how_to_be_a_great_javascript_software_developer.html)
+
+[Redux](http://dobbit.github.io/redux/) - 원문 : [Redux](http://rackt.github.io/redux/)
+
+[Static Memory Javascript with Object Pools - HTML5 Rocks](http://www.html5rocks.com/ko/tutorials/speed/static-mem-pools/) - 원문 : [Static Memory Javascript with Object Pools - HTML5 Rocks](http://www.html5rocks.com/en/tutorials/speed/static-mem-pools/)
+
+[ECMA-262-3 in detail. Chapter 6. Closures.](http://wit.nts-corp.com/2014/02/19/1014) - 원문 : [ECMA-262 » ECMA-262-3 in detail. Chapter 6. Closures.](http://dmitrysoshnikov.com/ecmascript/chapter-6-closures/)
+
+[The State of JavaScript in 2015 | WIT - We are UIT](http://wit.nts-corp.com/2014/12/15/2822) - 원문 : [The State of JavaScript in 2015](http://www.breck-mckye.com/blog/2014/12/the-state-of-javascript-in-2015/)
+
+[자바스크립트 상속에 관한 일반적인 오해들](http://bit.ly/1KdLatN) - 원문 : [Common Misconceptions About Inheritance in JavaScript](https://medium.com/javascript-scene/common-misconceptions-about-inheritance-in-javascript-d5d9bab29b0a)
+
+[Webpack 공식문서](http://wiki.devcken.com/display/WP/Webpack) - 원문 : [webpack](http://webpack.github.io/docs/)
+
+[초보자용 Webpack 튜토리얼 파트1 - Webpack 입문](http://firejune.com/#article-1798) - 원문 : [Beginner Webpack Tutorial Part 1 - Introduction To Webpack](https://github.com/AriaFallah/WebpackTutorial/tree/master/part1)
+
+[[번역] 7 Patterns to Refactor JavaScript Applications | WIT - We are UIT](http://wit.nts-corp.com/2015/02/10/3118#form) - 원문 : [Crush & Lovely - An Independent Creative Studio](http://journal.crushlovely.com/post/88286828068/7-patterns-to-refactor-javascript-applications)
+
+[자바스크립트와 비동기 오류 처리](http://blog.coderifleman.com/post/102749244059) - 원문 : [JavaScriptと非同期のエラー処理 - Yahoo! JAPAN Tech Blog](http://techblog.yahoo.co.jp/programming/javascript_error/)
 
 [보다 좋은 자바스크립트 코드를 작성하기 위한 7단계](http://bit.ly/1okqEmf) - 원문 : [7 steps to better JavaScript](http://www.creativebloq.com/netmag/7-steps-better-javascript-51411781)
 
@@ -141,8 +223,6 @@ date: 2014-08-01 21:00:00
 [JavaScript Promises](http://www.mimul.com/pebble/default/2014/04/10/1397096687204.html) - 원문 : [JavaScript Promises ... In Wicked Detail - Matt Greer](http://mattgreer.org/articles/promises-in-wicked-detail/)
 
 [자바스크립트 제대로 배우기](http://nolboo.github.io/blog/2014/03/13/how-to-learn-javascript-properly/) - 원문 : [How to Learn JavaScript Properly](http://javascriptissexy.com/how-to-learn-javascript-properly/)
-
-[backbone-fundamentals](https://github.com/ssdosso/backbone) - 원문 [Developing Backbone.js Applications](http://addyosmani.github.io/backbone-fundamentals/)
 
 [Private Members in JavaScript - Douglas Crockford](http://mulriver.egloos.com/4666528) - 원문 : [Private Members in JavaScript](http://javascript.crockford.com/private.html)
 
@@ -166,7 +246,7 @@ date: 2014-08-01 21:00:00
 
 [Grunt:Getting Started](http://j.mp/19VYhmm) - 원문 : [Getting started](http://gruntjs.com/getting-started)
 
-[자바스크립트 다시 배우기](http://j.mp/1eZkf8k) - 원문 : [A re-introduction to JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript)
+[JavaScript 재입문 | MDN](https://developer.mozilla.org/ko/docs/A_re-introduction_to_JavaScript) - 원문 : [A re-introduction to JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript)
 
 [javascript 의 this 란 무엇인가](http://j.mp/1erdOgN) - 원문 : [What is “this”?](http://howtonode.org/what-is-this)
 
@@ -206,13 +286,36 @@ date: 2014-08-01 21:00:00
 
 [D3.js API Doc Translated to korean](https://github.com/zziuni/d3) - 원문 : [D3.js](http://d3js.org/)
 
+[셀렉션 작동 원리](http://hanmomhanda.github.io/Docs/d3/How-Selections-Work.html) - 원문 : [How Selections Work](https://bost.ocks.org/mike/selection/)
+
 [자바스크립트의 변수범위와 호이스팅](http://chanlee.github.io/post/javascript-variable-scope-and-hoisting/) - 원문 : [JavaScript Variable Scope and Hoisting Explained](http://javascriptissexy.com/javascript-variable-scope-and-hoisting-explained/)
 
 [자바스크립트 클로저 쉽게 이해하기](http://chanlee.github.io/post/understand-javascript-closure/) - 원문 : [Understand JavaScript Closures With Ease](http://javascriptissexy.com/understand-javascript-closures-with-ease/) 
 
 ### Framework
 
+#### React.js
+
+[Redux](http://dobbit.github.io/redux/index.html) - 원문 : [Redux](http://redux.js.org/)
+
+[Flux 패턴을 이용한 간단한 React 어플리케이션 만들어보기](https://jiyeonseo.github.io/dev/Building-A-Simple-React-Application-Using-The-Flux-Pattern/) - 원문 : [Building A Simple React Application Using The Flux Pattern: A Step-By-Step Guide | Tony Spiro](http://tonyspiro.com/building-a-simple-react-application-using-the-flux-pattern/)
+
+[React.js를 이해하다](http://bit.ly/1JwB2ju) - 원문 : [一人React.js Advent Calendar 2014 - Qiita](http://qiita.com/advent-calendar/2014/reactjs)
+
+[시작해보기 | React](http://reactkr.github.io/react/docs/getting-started-ko-KR.html) - 원문 : [React Native | A framework for building native apps using React](https://facebook.github.io/react-native/docs/getting-started.html)
+
 #### Node.js
+
+[NodeSchool](http://nodeschool.io/ko/) - 원문 : [NodeSchool](http://nodeschool.io/)
+
+[[NodeJS] 모두 알지만 모두 모르는 package.json](http://programmingsummaries.tistory.com/385) - 원문 : [package.json | npm Documentation](https://docs.npmjs.com/files/package.json)
+
+[electron 공식 문서](https://github.com/atom/electron/tree/master/docs-translations/ko-KR)  
+[Electron 한국어 참조 문서](http://electron.prevl.org/) - 원문 : [electron docs](https://github.com/atom/electron/tree/master/docs)
+
+[스프링 데이터 엘라스틱서치](http://arahansa.github.io/docs_spring/elastic.html#1) - 원문 : [Spring Data Elasticsearch](http://docs.spring.io/spring-data/elasticsearch/docs/current/reference/html/)
+
+[[번역] node.js를 활용한 실시간 채팅 프로그램](http://bit.ly/1RY68B1) - 원문 : [node.js and socket.io chat tutorial - ps: it's mike](http://psitsmike.com/2011/09/node-js-and-socket-io-chat-tutorial/), [node.js and socket.io multiroom chat tutorial - ps: it's mike](http://psitsmike.com/2011/10/node-js-and-socket-io-multiroom-chat-tutorial/)
 
 [Express - node.js 웹 애플리케이션 프레임워크](http://expressjs.kr/) - 원문 : [Express - node.js web application framework](http://expressjs.com/)
 
@@ -250,11 +353,15 @@ date: 2014-08-01 21:00:00
 
 #### Meteor.js
 
+[어떻게 Meteor 를 Scale 하는가?](http://bit.ly/1vUGes6) - 원문 : [How to Scale Meteor? | Pro Meteor](https://meteorhacks.com/how-to-scale-meteor.html)
+
 [Discover Meteor](http://kr.discovermeteor.com/) - 원문 : [Discover Meteor](https://www.discovermeteor.com/)
 
 [Meteor 0.5.0 문서](http://docs-ko.meteor.com/) - 원문 : [Meteor Document](http://docs.meteor.com/)
 
 #### Angular.js
+
+[AngularJS 스타일 가이드 소개](http://hyunseob.github.io/2016/04/10/introduction-to-angularjs-style-guide/index.html) - 원문 : [An Introduction to AngularJS Style Guides](http://www.sitepoint.com/introduction-angularjs-style-guides/)
 
 [하루만에 끝내는 AngularJS](http://bit.ly/1dZsbpw) - 원문 : [Ultimate guide to learning AngularJS in one day](http://toddmotto.com/ultimate-guide-to-learning-angular-js-in-one-day/)
 
@@ -268,33 +375,71 @@ date: 2014-08-01 21:00:00
 
 #### Backbone.js
 
+[backbone-fundamentals](https://github.com/ssdosso/backbone) - 원문 [Developing Backbone.js Applications](http://addyosmani.github.io/backbone-fundamentals/)
+
 [Backbone.js 0.9.2 문서 한글 번역](http://iwidgets.kr/document/backbonejs.html)  
+
 [주석 번역 Groc 적용 버전](http://zziuni.github.io/backbone.js-kr/backbone.html) - 원문 : [Backbone.js](http://backbonejs.org/)
 
 [Backbone.js by example - Part 1](http://dogfeet.github.io/articles/2012/backbonejs-by-example.html) - 원문 : [Backbone.js by example - Part 1](http://www.sinbadsoft.com/blog/backbone-js-by-example-part-1/)
 
+#### Flux
+
+[Flux으로의 카툰 안내서](http://bestalign.github.io/2015/10/06/cartoon-guide-to-flux/) - 원문 : [A cartoon guide to Flux — Code Cartoons — Medium](https://medium.com/code-cartoons/a-cartoon-guide-to-flux-6157355ab207)
+
+[Flux | 사용자 인터페이스를 만들기 위한 어플리케이션 아키텍쳐](http://haruair.github.io/flux/) - 원문 : [Flux | Application Architecture for Building User Interfaces](https://facebook.github.io/flux/)
+
+#### Gulp.js
+
+[Gulp.js로 빌드 작업 관리하기](https://code.tutsplus.com/ko/tutorials/managing-your-build-tasks-with-gulpjs--net-36910) - 원문 : [Managing Your Build Tasks With Gulp.js](https://code.tutsplus.com/tutorials/managing-your-build-tasks-with-gulpjs--net-36910?ec_unit=translation-info-language)
+
+[Gulp 입문 ① - Gulp에 대한 소개](http://programmingsummaries.tistory.com/356) - 원문 : [Introduction to Gulp](http://jilles.me/introduction-to-gulp/)
+
+[Gulp.js 한국어 참조 문서](https://github.com/preco21/gulp-docs-ko) - 원문 : [Gulp Documentation](https://github.com/gulpjs/gulp/tree/master/docs) 
 
 ## Go
 
+[EffectiveGo - golang-korea - Go언어 잘 사용하는 방법](https://code.google.com/p/golang-korea/wiki/EffectiveGo) - 원문 : [Effective Go - The Go Programming Language](https://golang.org/doc/effective_go.html)
+
 [Go 프로그래밍 입문](http://j.mp/IXP5TB "12/7") - 원문 [An Introduction to Programming in Go](http://www.golang-book.com/)
 
+[Go 프로그래밍 언어 투어](http://bit.ly/1FWJkv6) - 원문 [A Tour of Go](https://tour.golang.org/)
+
 ## Ruby
+
+[레일스 엔진 만들기](http://rorlab.org/rblogs/243) - 원문 : [How to Build a Ruby on Rails Engine](http://jakeyesbeck.com/2016/03/20/how-to-build-a-ruby-on-rails-engine/)
+
+[Guides - 레일스 걸스](http://wagurano.github.io/railsgirls/) - 원문 : [Guides - Rails Girls](http://guides.railsgirls.com/)
+
+[루비로 시작하는 프로그래밍](https://opentutorials.org/module/11) - 원문 : [Learn to Program, by Chris Pine](https://pine.fm/LearnToProgram/)
+
+[Bundler](http://ruby-korea.github.io/bundler-site/) - 원문 : [Bundler: The best way to manage a Ruby application's gems](http://bundler.io/)
+
+[루비 프로그래밍 언어 한글 문서](http://ruby-korea.github.io/) : 루비에 관한 한글 (번역 포함) 문서 모음
+
+[Ruby 스타일 가이드](https://github.com/dalzony/ruby-style-guide/blob/master/README-koKR.md) - 원문 : [A community-driven Ruby coding style guide](https://github.com/bbatsov/ruby-style-guide)
 
 [알아두면 도움이 되는 55가지 루비 기법](https://gist.github.com/nacyot/7624036) - 원문 : [知って得する！５５のRubyのトリビアな記法](http://melborne.github.io/2013/03/04/ruby-trivias-you-should-know-4/)
 
 [Sinatra 문서](http://www.sinatrarb.com/intro-ko.html) - 원문 : [Sinatra Documentation](http://www.sinatrarb.com/intro.html)
 
+[루비에 블럭이 있는 이유](https://dayone.me/1g50zn8) - 원문 : [Why does Ruby have blocks?](http://devblog.avdi.org/2015/01/16/why-does-ruby-have-blocks/)
+
 ## PHP
 
-[PHP: The Right Way](http://wafe.github.io/php-the-right-way/) - 원문 : [PHP: The Right Way](http://www.phptherightway.com/)
+[PHP: The Right Way](http://modernpug.github.io/php-the-right-way/) - 원문 : [PHP: The Right Way](http://www.phptherightway.com/)
 
 [PHP 코드를 최적화하는 40가지 팁](http://j.mp/12Dr8tw) - 원문 : [40 Tips for optimizing your php Code](http://reinholdweber.com/?p=3)
 
 [PHP: 잘못된 디자인의 프랙탈](http://ko.blog.influx.kr/2012/04/php.html) - 원문 : [PHP: a fractal of bad design](http://me.veekun.com/blog/2012/04/09/php-a-fractal-of-bad-design/)
 
+[컴포저 한국어 매뉴얼](https://xpressengine.github.io/Composer-korean-docs/) - 원문 : [Composer](https://getcomposer.org/)
+
 [Laravel 한글 매뉴얼](http://laravel-korea.org/docs/introduction) - 원문 : [Laravel Documentation](http://laravel.com/docs)
 
+[라라벨 한국어 매뉴얼](http://xpressengine.github.io/laravel-korean-docs/) - 원문 : [Laravel - The PHP Framework For Web Artisans](http://laravel.com/docs/5.0)
 
+[Phalcon Korea | 세상에서 가장 빠른 PHP 프레임워크](http://phalconphp.kr/) - 원사이트 : [Phalcon - High Performance PHP Framework](http://phalconphp.com/ko/)
 
 ## Perl
 
@@ -312,19 +457,55 @@ date: 2014-08-01 21:00:00
 
 ## Python
 
+[파이썬을 배우는 최고의 방법](http://nolboo.github.io/blog/2014/08/10/the-best-way-to-learn-python/) - 원문 : [The Best Way to Learn Python - Tuts+ Code Article](http://code.tutsplus.com/articles/the-best-way-to-learn-python--net-26288)
+
+[Full Stack Python의 'Best Python Resources'를 공부하면서 나름대로 정리한 자료](http://www.sangkon.com/2015/09/16/best_python_resources_kor/) - 원문 : [Best Python Resources - Full Stack Python](https://www.fullstackpython.com/best-python-resources.html)
+
+[A Byte of Python](http://byteofpython-korean.sourceforge.net/byte_of_python.html) - 원문 : [A Byte of Python](http://www.swaroopch.com/notes/python/)
+
+[파이썬은 왜 느릴까요? 내부 원리를 살펴 봅시다](http://bit.ly/1pVIyXh) - 원문 : [Why Python is Slow: Looking Under the Hood](http://jakevdp.github.io/blog/2014/05/09/why-python-is-slow/)
+
 [파이썬 10 분만에 배우기](http://j.mp/15LFDNo "9/9") - 원문 : [Tutorial - Learn Python in 10 minutes](http://www.stavros.io/tutorials/python/)
 
 [Python Ecosystem - An Introduction](http://songhun.blogspot.kr/2011/12/python-ecosystem-introduction.html) - 원문 : [Python Ecosystem - An Introduction](http://mirnazim.org/writings/python-ecosystem-introduction/)
 
-[Flask 0.9 documentation](http://kswa.codingstar.net:14705/html/) - 원문 : [Flask documentation](http://flask.pocoo.org/docs/)
-
 [뷰티플수프 4.0.0 문서](http://coreapython.hosting.paran.com/etc/beautifulsoup4.html "11/29") - 원문 : [Beautiful Soup 4.2.0 documentation](http://www.crummy.com/software/BeautifulSoup/bs4/doc/index.html)
+
+[개발에 파이썬 2를 사용해야 할까 아니면 파이썬 3를 사용해야 할까?](http://bit.ly/1oS0ZLh) - 원문 : [Python2orPython3 - Python Wiki](https://wiki.python.org/moin/Python2orPython3)
+
+### Django
+
+[들어가며 | Django Girls Tutorial](http://tutorial.djangogirls.org/ko/index.html) - 원문 : [Introduction | Django Girls Tutorial](http://tutorial.djangogirls.org/en/index.html)
+
+[Django Rest Framework 3 훑어보기](http://raccoonyy.github.io/django-rest-framework-3-quickstart/) - 원문 : [Quickstart - Django REST framework](http://www.django-rest-framework.org/tutorial/quickstart/)
+
+[2014년에 Django로 개발하면서 실수한 부분](http://www.looah.com/article/view/2025) - 원문 : [2014 — Django Development Mistakes in 2014 — Computer Science, Math, and Statistics — Medium](https://medium.com/cs-math/2014-django-development-mistakes-in-2014-f48623f58b21)
+
+### Flask
+
+[파이썬 플라스크 프레임워크 소개 - Tuts+ Code Tutorial](http://code.tutsplus.com/ko/tutorials/an-introduction-to-pythons-flask-framework--net-28822) - 원문 : [An Introduction to Python’s Flask Framework - Tuts+ Code Tutorial](http://code.tutsplus.com/tutorials/an-introduction-to-pythons-flask-framework--net-28822?ec_unit=translation-info-language)
+
+[Flask documentation](http://flask-docs-kr.readthedocs.org/) - 원문 : [Flask documentation](http://flask.pocoo.org/docs/)
 
 ## R
 
 [R 매뉴얼](http://ihelp.r-forge.r-project.org/lang_doc.html "11/8") - 원문 : [R Manuals](http://cran.r-project.org/manuals.html)
 
+## Rust
+
+[Rust Doc Korean · Penflip](https://www.penflip.com/sarojaba/rust-doc-korean) - 원문 : [The Rust Programming Language](https://doc.rust-lang.org/stable/book/)
+
+## C++
+
+[소프트웨어 설계란 무엇인가?](http://www.mimul.com/pebble/default/2015/05/08/1431074818182.html) - 원문 : [What is software engineering](http://www.bleading-edge.com/Publications/C++Journal/Cpjour2.htm)
+
 ## iOS, OS X
+
+[iOS 아키텍쳐 패턴들](http://canapio.tistory.com/43) - 원문 : [iOS Architecture Patterns — iOS App Development — Medium](https://medium.com/ios-os-x-development/ios-architecture-patterns-ecba4c38de52#.dz7h4xrgw)
+
+[iOS 9 Day By Day 번역](https://github.com/krazyeom/iOS_9_Day_By_Day) - 원문 : [iOS 9 Day by Day eBook | shinobicontrols](https://www.shinobicontrols.com/ios9)
+
+[Swift 프로토콜지향 프로그래밍](http://minsone.github.io/programming/protocol-oriented-programming/) - 원문 : [Protocol-Oriented Programming in Swift - WWDC 2015 - Videos - Apple Developer](https://developer.apple.com/videos/play/wwdc2015-408/)
 
 [Swift 언어 개발문서](http://swift.leantra.kr/) - 원문 : [Swift Programming Language - Apple Developer](https://developer.apple.com/swift/)
 
@@ -344,6 +525,10 @@ date: 2014-08-01 21:00:00
 
 ## MongoDB
 
+[Cassandra Data Modeling Best Practices, Part 1 | Data First!](http://hochul.net/blog/cassandra-data-modeling-best-practices-part-1/) - 원문 : [Cassandra Data Modeling Best Practices, Part 1 — eBay Tech Blog](http://www.ebaytechblog.com/2012/07/16/cassandra-data-modeling-best-practices-part-1/#.VGxYPKaeF24)
+
+[Cassandra Data Modeling Best Practices, Part 2 | Data First!](http://hochul.net/blog/cassandra-data-modeling-best-practices-part-2/) - 원문 : [Cassandra Data Modeling Best Practices, Part 2 — eBay Tech Blog](http://www.ebaytechblog.com/2012/08/14/cassandra-data-modeling-best-practices-part-2/#.VGxYE6aeF24)
+
 [MongoDB With RAID 10 on Ubuntu 11.04](http://charsyam.wordpress.com/2012/01/15/%EB%B0%9C-%EB%B2%88%EC%97%AD-mongodb-with-raid-10-on-ubuntu-11-04/) - 원문 : [MongoDB with RAID 10 on Ubuntu 11.04](http://blog.troygrosfield.com/2011/11/08/mongodb-with-raid-10-on-ubuntu-11-04/)
 
 [MongoDB Best Practices](http://charsyam.wordpress.com/2011/12/25/%EB%B0%9C-%EB%B2%88%EC%97%AD-mongodb-best-practices/) - 원문 : [MongoDB Best Practices](http://blog.engineyard.com/2011/mongodb-best-practices)
@@ -358,11 +543,75 @@ date: 2014-08-01 21:00:00
 
 [Cliff Bleszinski 가 쓴 게임개발자의 플래시카드](http://breadceo.wordpress.com/2012/08/10/cliff-bleszinskis-game-developer-flashcards/) - 원문 : [Cliff Bleszinski’s Game Developer Flashcards](http://www.gamasutra.com/view/feature/175586/cliff_bleszinskis_game_developer_.php)
 
-## 기타
+[게임 개발 성과 측정 프로젝트 파트1~5](http://masterfarseer.blogspot.kr/2015/01/1.html) - 원문 : [The Game Outcomes Project](http://gamasutra.com/blogs/PaulTozour/20141216/232023/The_Game_Outcomes_Project_Part_1_The_Best_and_the_Rest.php)
+
+## 기타(아직 분류하기 애매한 것들)
+
+[[번역] 더 나은 개발자가 되는 8 가지 방법](https://medium.com/@mnpk/%EB%B2%88%EC%97%AD-%EB%8D%94-%EB%82%98%EC%9D%80-%EA%B0%9C%EB%B0%9C%EC%9E%90%EA%B0%80-%EB%90%98%EB%8A%94-8-%EA%B0%80%EC%A7%80-%EB%B0%A9%EB%B2%95-45ea6cd70114#.1z15r7whu) - 원문 : [8 Ways to Become a Better Coder](https://blog.newrelic.com/2016/02/22/8-ways-become-a-better-coder/)
+
+[[번역] 탁월한 프론트엔드 엔지니어가 되는 법](http://hyunseob.github.io/2016/02/21/how-to-become-a-great-frontend-engineer/) - 원문 : [How to Become a Great Front-End Engineer — Philip Walton](http://philipwalton.com/articles/how-to-become-a-great-front-end-engineer/)
+
+[introduction of shell script](http://coffeenix.net/doc/shell/introbashscript.htm) - 원문 : 유실;;
+
+[고급 Bash 스크립팅 가이드](https://wiki.kldp.org/HOWTO/html/Adv-Bash-Scr-HOWTO/) - 원문 : [Advanced Bash-Scripting Guide](http://www.tldp.org/LDP/abs/html/) 번역본이 조금 오래됨.
+
+[왜 함수형 프로그래밍이 중요한가 — John Hughes 1989](http://bit.ly/1VFZi6n) - 원문 : [Why Functional Programming Matters](http://worrydream.com/refs/Hughes-WhyFunctionalProgrammingMatters.pdf)
+
+[데이터 시각화에 맞는 색상 팔레트 찾기 (번역)](https://brunch.co.kr/@suyoung/10) - 원문 : [Finding the Right Color Palettes for Data Visualizations — Graphiq Engineering — Medium](https://medium.com/graphiq-engineering/finding-the-right-color-palettes-for-data-visualizations-fcd4e707a283#.vy2p9nhzq)
+
+[클로저 디자인 패턴](http://clojure.or.kr/docs/clojure-and-gof-design-patterns.html) - 원문 : [Clojure Design Patterns](http://mishadoff.com/blog/clojure-design-patterns/)
+
+[elixir-lang.github.com/getting_started at translate-into-korean](https://github.com/changminjeon/elixir-lang.github.com/tree/translate-into-korean/getting_started) - 원문 : [Introduction - Elixir](http://elixir-lang.org/getting-started/introduction.html)
+
+[프로그래머가 되는 방법: 짧고 폭넓고 개인적인 요약](https://wiki.kldp.org/wiki.php/HowToBeAProgrammer) - 원문 : [How to be a Programmer: A Short, Comprehensive, and Personal Summary](https://github.com/braydie/HowToBeAProgrammer)
+
+[잘 가요 스크럼, 반가워요 칸반](http://pitzcarraldo.github.io/articles/2014/05/08/goodbye-scrum-hello-kanban/) -  원문 : [So Long Scrum, Hello Kanban - Stormpath User Identity API](https://stormpath.com/blog/so-long-scrum-hello-kanban/)
+
+[왜 "애자일", 특히 스크럼이 끔찍한가.](http://bit.ly/1UjTkqE) - 원문 : [Why “Agile” and especially Scrum are terrible | Michael O. Church](https://michaelochurch.wordpress.com/2015/06/06/why-agile-and-especially-scrum-are-terrible/)
+
+[짝 프로그래밍(Pair Programming)에 관한 효과적인 지침서](https://dobest.io/effective-navigation-in-pair-programming/) - 원본 : [Effective Navigation in Pair Programming | ThoughtWorks](https://www.thoughtworks.com/insights/blog/effective-navigation-in-pair-programming)
+
+[수학을 포기한 직업 프로그래머가 머신러닝 학습을 시작하기위한 학습법 소개](http://www.moreagile.net/2015/05/how-to-start-machine-learning-study.html) - 원문 : [数学を避けてきた社会人プログラマが機械学習の勉強を始める際の最短経路 - Qiita](http://qiita.com/daxanya1/items/218f2e3b922142550ef9)
+
+[아마존 리눅스 AMI에 FTP 서버 설정하기](http://nolboo.github.io/blog/2015/11/23/ftp-server-on-amazon-linux-ami/) - 원문 : [Setting up an FTP server on your Amazon Linux AMI](http://cafeandrew.com/archives/2339)
+
+[어떻게 학술 논문을 읽어야 하는가](http://haruair.com/blog/3138) - 원문 : [How to Read an Academic Article | Organizations and Markets](http://organizationsandmarkets.com/2010/08/31/how-to-read-an-academic-article/)
+
+[좀더 나은 질문을 하기 위한 방법](https://wiki.kldp.org/wiki.php/DocbookSgml/Ask-TRANS) - 원문 : [How To Ask Questions The Smart Way](http://catb.org/~esr/faqs/smart-questions.html)
+
+[코드 리뷰 가이드](http://haruair.com/blog/3116) - 원문 : [Code Review](https://github.com/thoughtbot/guides/blob/master/code-review/README.md)
+
+[Android 개발을 수주해서 Kotlin을 제대로 써봤더니 최고였다.](http://realignist.me/kotlin-realuse/) - 원문 : [Android開発を受注したからKotlinをガッツリ使ってみたら最高だった - Qiita](http://qiita.com/omochimetaru/items/98e015b0b694dd97f323)
+
+[객체지향 사고를 가르치는 실험실](http://xenbio.net/mdwiki/#!lab_for_oo.md) - 원문 : [A Laboratory For Teaching Object-Oriented Thinking](http://c2.com/doc/oopsla89/paper.html)
+
+[마이크로서비스 트레이드오프](http://haruair.com/blog/3066) - 원문 : [Microservice Trade-Offs](http://martinfowler.com/articles/microservice-trade-offs.html)
+
+[프로그래밍은 왜 어려울까요?](https://medium.com/@cookatrice/why-programming-is-difficult-7a98524fa5c2) - 원문 : [Why Programming is Difficult](http://joearms.github.io/2014/02/07/why-programming-is-difficult.html)
+
+[Vim에 대해 점진적으로 학습하기](http://www.mimul.com/pebble/default/2014/07/15/1405420918073.html) - 원문 : [YBlog - Learn Vim Progressively](http://yannesposito.com/Scratch/en/blog/Learn-Vim-Progressively/)
+
+[Vim의 탭은 그렇게 쓰는 게 아니다. 버퍼와 탭의 사용법](http://bakyeono.net/post/2015-08-13-vim-tab-madness-translate.html) - 원문 : [Vim Tab Madness. Buffers vs Tabs](http://joshldavis.com/2014/04/05/vim-tab-madness-buffers-vs-tabs/)
+
+[The Art of Command Line](bit.ly/1Gc5au4) - 원문 : [The Art of Command Line](https://github.com/jlevy/the-art-of-command-line)
+
+[철자 교정기 작성하기](http://theyearlyprophet.com/spell-correct.html) - 원문 : [How to Write a Spelling Corrector](http://norvig.com/spell-correct.html)
+
+[이미지와 텍스트를 조화롭게 배치하는 3가지 방법 | Webactually Korea](http://www.webactually.co.kr/archives/13785/) - 원문 : [3 Ways to Combine Text and Images](http://www.sitepoint.com/3-ways-combine-text-images/?utm_content=buffer30dcb&utm_medium=social&utm_source=facebook.com&utm_campaign=buffer)
+
+[DevOps은 개발자를 힘들게 하지 않는다. - Jim Bird](http://www.okjsp.net/seq/260508) - 원문 : [DevOps Isn't Killing Developers – But it is Killing Development and Developer Productivity](http://java.dzone.com/articles/devops-isnt-killing-developers)
+
+[프로그래머가 알아야할 97가지 중 최고 9개와 아키텍트가 알아야할 97가지 중 최고 7개](http://kwon37xi.egloos.com/4632235) - 원문 : [Zen in the art of IT: Top 9 of 97 Things every programmer should know](http://www.briandupreez.net/2010/10/top-9-of-97-things-every-programmer.html), [Zen in the art of IT: Top 7 of 97 Things Every Software Architect Should Know](http://www.briandupreez.net/2010/10/top-7-of-97-things-every-software.html)
+
+[칸반의 작동 원리는 무엇일까?](http://selfothercontext.com/2014/08/01/how-kanban-works/) - 원문 : [How Kanban Works](http://www.infoq.com/articles/how-kanban-works)
+
+[칸반은 프레임워크인가?](http://selfothercontext.com/2014/08/18/is-kanban-a-framework/) - 원문 : [Is Kanban a Framework? | DJAA](http://djaa.com/kanban-framework)
+
+[The Twelve-Factor App (한국어 번역)](http://the-twelve-factor-app.herokuapp.com/) - 원문 : [The Twelve-Factor App](http://12factor.net/)
 
 [역대급 50가지 프로그래밍 명언](http://blog.fupfin.com/?p=11) - 원문 : [Top 50 Programming Quotes of All Time](http://www.junauza.com/2010/12/top-50-programming-quotes-of-all-time.html)
 
-[해커가 되는 방법](http://kwonnam.pe.kr/howtobecomeahacker.html) - 원문 : 소실;;
+[해커가 되는 방법](http://kwonnam.pe.kr/howtobecomeahacker.html) - 원문 : [How To Become A Hacker](http://www.catb.org/esr/faqs/hacker-howto.html)
 
 [코딩보다는 생각하는법을 배워라](http://bit.ly/1pKH0Fe) - 원문 : [Don't learn to code. Learn to think.](http://brikis98.blogspot.kr/2014/05/dont-learn-to-code-learn-to-think.html)
 
@@ -372,11 +621,9 @@ date: 2014-08-01 21:00:00
 
 [The Twelve-Factor App](http://the-twelve-factor-app.herokuapp.com/) - 원문 : [The Twelve-Factor App](http://12factor.net/)
 
-[스칼라 학교](http://bit.ly/Rx0BsT) - 원문 : [Scala School](http://twitter.github.io/scala_school/index.html)
-
 [大 스마트폰 전쟁](bit.ly/1j6rRnP) - 원문 : [The Great Smartphone War: Apple vs. Samsung](http://www.vanityfair.com/business/2014/06/apple-samsung-smartphone-patent-war)
 
-[시맨틱 버저닝](https://github.com/hatemogi/semver#readme) - 원문 : [Semantic Versioning 2.0.0](http://semver.org/)
+[유의적 버전 2.0.0](http://semver.org/lang/ko/) - 원문 : [Semantic Versioning 2.0.0](http://semver.org/)
 
 [Snapchat을 지지하는 기술](http://jacking.tistory.com/1212) - 원문 : [googlecomputeengine - Snapchatを支える技術：768台のRedisをGoogleクラウドで構築 #gcpja - Qiita](http://qiita.com/kazunori279/items/e86636bb5908295c8c0f)
 
@@ -384,11 +631,15 @@ date: 2014-08-01 21:00:00
 
 [C Programming FAQs](http://bit.ly/1g2VrdK) - 원문 : [comp.lang.c Frequently Asked Questions](http://c-faq.com/)
 
+[Emacs는 죽었다](http://bit.ly/1wQWxoY) - 원문 : [Emacsは死んだ](http://cx4a.org/pub/emacs-is-dead.ja.html)
+
 [Emacs is sexy](http://bit.ly/1fLMbhN) - 원문 : [Emacs is sexy](http://emacs.sexy)
 
 [레딧, 매 달 페이지뷰를 48억까지 올리면서 배운 레슨](http://besuccess.com/2014/01/reddit/) - 원문 : [High Scalability - High Scalability - Reddit: Lessons Learned from Mistakes Made Scaling to 1 Billion Pageviews a Month](http://highscalability.com/blog/2013/8/26/reddit-lessons-learned-from-mistakes-made-scaling-to-1-billi.html)
 
 [카드는 웹의 미래다](http://bit.ly/14EsQLS) - 원문 : [WHY CARDS ARE THE FUTURE OF THE WEB](http://insideintercom.io/why-cards-are-the-future-of-the-web/)
+
+[“본격적으로” 쓰는 Docker](https://dayone.me/1agvzvw) - 원문 : [本気で使う Docker - Qiita](http://qiita.com/rosylilly/items/08f4c0771e2ca92a72aa)
 
 [Docker 치트 시트](https://gist.github.com/nacyot/8366310) - 원문 : [Docker Cheat Sheet](https://gist.github.com/wsargent/7049221)
 
@@ -451,7 +702,17 @@ Personal Summary](http://samizdat.mines.edu/howto/HowToBeAProgrammer.pdf)
 
 [Cask - 이맥스(Emacs) 패키지 개발을 위한 의존성 관리 도구](http://cask.emacs.kr/) - 원문 : [Cask - Project management for Emacs package development](http://cask.github.io/)
 
+[모노는 어떻게 시작되었는가(Mono-early-history)](https://github.com/nolboo/nolboo.github.io/wiki/모노는-어떻게-시작되었는가%3F-(Mono-early-history)) - 원문: [Mono early history](http://lists.ximian.com/pipermail/mono-list/2003-October/016345.html)
+
+[왜 좋은 Front-End 개발자를 찾는게 힘든가?](http://dstyleitsme.tistory.com/entry/%EB%B0%9C%EB%B2%88%EC%97%AD-%EC%99%9C-%EC%A2%8B%EC%9D%80-FrontEnd-%EA%B0%9C%EB%B0%9C%EC%9E%90%EB%A5%BC-%EC%B0%BE%EB%8A%94%EA%B2%8C-%ED%9E%98%EB%93%A0%EA%B0%80) -  원문 : [Ilias Ismanalijev - Why is it so hard to find a good front end developer?](https://medium.com/creative-business/why-is-it-so-hard-to-find-a-front-end-developer-cb92848a7c6f)
+
 ## Git
+
+[Git Magic](http://www-cs-students.stanford.edu/~blynn/gitmagic/intl/ko/book.html) - 원문 : [Git Magic - Preface](http://www-cs-students.stanford.edu/~blynn/gitmagic/)
+
+[Tig Manual](http://ujuc.github.io/2016/02/10/tig-manual/) - 원문 : [The Tig Manual](http://jonas.nitro.dk/tig/manual.html)
+
+[커밋 메시지에 대해](http://haruair.com/blog/2683) - 원문 : [Who-T: On commit messages](http://who-t.blogspot.com.au/2009/12/on-commit-messages.html)
 
 [git-flow cheatsheet](http://danielkummer.github.io/git-flow-cheatsheet/index.ko_KR.html) - 원문 : [git-flow cheatsheet](http://danielkummer.github.io/git-flow-cheatsheet/index.html)
 
@@ -472,7 +733,7 @@ Personal Summary](http://samizdat.mines.edu/howto/HowToBeAProgrammer.pdf)
 
 [Git 은 어떻게 동작하는가? - Git from the bottom up](http://j.mp/18xm9qy) - 원문 : [Git from the bottom up](http://ftp.newartisans.com/pub/git.from.bottom.up.pdf)
 
-[Pro Git book](http://git-scm.com/book/ko) - 원문 : [Pro Git book](http://git-scm.com/book)
+[Pro Git book v2](http://git-scm.com/book/ko/v2) - 원문 : [Pro Git book v2](http://git-scm.com/book/en/v2)
 
 [git - 간편 안내서](http://rogerdudler.github.io/git-guide/index.ko.html) - 원문 : [git - the simple guide](http://rogerdudler.github.io/git-guide/)
 
@@ -500,11 +761,39 @@ Personal Summary](http://samizdat.mines.edu/howto/HowToBeAProgrammer.pdf)
 
 ## Java
 
+[Android 개발 모범 사례](https://github.com/minsoopark/android-best-practices-kor) - 원문 : [Best practices in Android development](https://github.com/futurice/android-best-practices)
+
+[Ext JS 5 가이드](https://wikidocs.net/book/280) - 원문 : [Sencha Guides | Home](http://docs.sencha.com/)
+
 [Java™ Platform, Standard Edition 7 API 사양](http://www.changki.com/APIs/J2SE_1.7_API_Korean/index.html) - 원문 : 
 
 [The Grails Framework - Reference Documentation 1.0](http://dogfeet.github.io/grails-doc/guide/) - 원문 : [The Grails Framework - Reference Documentation](http://grails.org/doc/latest/)
 
+## Scala
+
+[Databricks Scala Guide](https://github.com/databricks/scala-style-guide/blob/master/README-KO.md) - 원문 : [Databricks Scala Guide](https://github.com/databricks/scala-style-guide)
+
+[스칼라 학교](http://bit.ly/Rx0BsT) - 원문 : [Scala School](http://twitter.github.io/scala_school/index.html)
+
+[스칼라로 전환](http://blog.seoh.xyz/2015/01/18/transitioning-to-scala/) - 원문 : [Transitioning to Scala — Medium](https://medium.com/@kvnwbbr/transitioning-to-scala-d1818f25b2b7#.hoxduze0h)
+
 ## UI &amp; UX
+
+[메터리얼 디자인 팁](https://code.tutsplus.com/ko/tutorials/design-tips-for-material-design--cms-22515) - 원문 : [Design Tips for Material Design](https://code.tutsplus.com/tutorials/design-tips-for-material-design--cms-22515?ec_unit=translation-info-language)
+
+[절대 지켜져야만 하는 UI 디자인의 7가지 법칙](https://brunch.co.kr/@five0203/2) - 원문 : [7 unbreakable laws of user interface design](https://99designs.com/designer-blog/2014/01/15/7-unbreakable-laws-of-user-interface-design/)
+
+[조엘 마쉬의 UX 특강 31편 (번역) | OO 디자인 공부합니다](https://imseongkang.wordpress.com/2014/04/28/uxcrash31korean/) - 원문 : [UX Crash Course: 31 Fundamentals | The Hipper Element](http://thehipperelement.com/post/75476711614/ux-crash-course-31-fundamentals)
+
+[데이터 시각화에 맞는 색상 팔레트 찾기](https://brunch.co.kr/@suyoung/10) - 원문 : [Finding the Right Color Palettes for Data Visualizations — Graphiq Engineering — Medium](https://medium.com/graphiq-engineering/finding-the-right-color-palettes-for-data-visualizations-fcd4e707a283#.cuscwcj7g)
+
+[UI 디자인에서 타이포그래피를 위한 4가지 팁](http://bit.ly/1N85kY4) - 원문 : [4 tips on typography in UI design](https://medium.com/understanding-ui-ux/4-tips-on-typography-in-ui-design-64cc9e61d60#.iya7ubvp4)
+
+[디자이너는 직감과 데이터 중 무엇을 믿어야 할까](https://brunch.co.kr/@five0203/7) - 원문 : [Should designers trust their instincts — or the data? | Google Ventures](http://www.gv.com/lib/design-instinct-vs-data)
+
+[UX 연출의 원칙](http://story.pxd.co.kr/1097) - 원문 : [The Principles of UX Choreography — Experiência do Usuário — Medium](https://medium.com/@becca_u/the-principles-of-ux-choreography-69c91c2cbc2a)
+
+[조엘 마쉬의 UX 특강 31편](http://imseongkang.wordpress.com/2014/04/28/uxcrash31korean/) - 원문 : [UX Crash Course: 31 Fundamentals | The Hipper Element](http://thehipperelement.com/post/75476711614/ux-crash-course-31-fundamentals)
 
 [사용자 경험 디자인(User Experience Design) 직업을 시작하고자 하는 사람들을 위한 완벽한 가이드](http://story.pxd.co.kr/933) - 원문 : [Get Started in UX: The Complete Guide to Launching a Career in User Experience Design](http://www.uxmatters.com/mt/archives/2014/04/get-started-in-ux-the-complete-guide-to-launching-a-career-in-user-experience-design.php)
 
@@ -525,6 +814,34 @@ Personal Summary](http://samizdat.mines.edu/howto/HowToBeAProgrammer.pdf)
 [조엘 마쉬의 UX 특강 31편](http://imseongkang.wordpress.com/2014/04/28/uxcrash31korean/) - 원문 : [UX Crash Course: 31 Fundamentals](http://thehipperelement.com/post/75476711614/ux-crash-course-31-fundamentals)
 
 ## 경영
+
+[[Forbes 번역]스타트업이 실수를 피하는 12가지 방법](http://bit.ly/1Wy3qp1) - 원문 : [12 Ways To Avoid Startup Mistakes - Forbes](http://www.forbes.com/sites/neilpatel/2016/02/11/12-ways-to-avoid-stupid-startup-mistakes/)
+
+[어떻게 QuizUp은 역사상 가장 빠르게 성장한 모바일 게임인 동시에 성공적인 소셜 플랫폼으로 거듭날 수 있었는가?](http://bit.ly/1Zfl1o9) - 원문 : [Mixpanel Blog | Why QuizUp turned the fastest-growing game in history into a social platform](https://mixpanel.com/blog/2015/12/15/why-quizup-turned-the-fastest-growing-game-in-history-into-a-social-platform)
+
+[계획은 의미없다. 기획만 필요할뿐.](https://brunch.co.kr/@yongjinjinipln/7) - 원문 : [Plans are nothing, but planning is indispensable | cdixon blog](http://cdixon.org/2012/12/18/plans-are-nothing-but-planning-is-indispensable/)
+
+[16가지 스타트업 지표](https://brunch.co.kr/@wjchee/6) - 원문 : [16 Startup Metrics | Andreessen Horowitz](http://a16z.com/2015/08/21/16-metrics/)
+
+[마이크로소프트는 죽었다](https://appledelhi.wordpress.com/2008/10/05/%eb%a7%88%ec%9d%b4%ed%81%ac%eb%a1%9c%ec%86%8c%ed%94%84%ed%8a%b8%eb%8a%94-%ec%a3%bd%ec%97%88%eb%8b%a4/) - 원문 : [Microsoft is Dead: The Cliffs Notes](http://www.paulgraham.com/cliffsnotes.html)
+
+[Paul Graham - 불황일때 창업해야 되는 이유 (Why to Start a Startup in a Bad Economy)](http://nextransblog.blogspot.kr/2014/06/paul-graham-why-to-start-startup-in-bad.html) - 원문 : [Why to Start a Startup in a Bad Economy](http://paulgraham.com/badeconomy.html)
+
+[Trello로 효율적으로 협업하기](http://bit.ly/1KJqOv0) - 원문 : [How We Use Trello & Google Docs to Make UserVoice Better Every Day | UserVoice Blog](http://community.uservoice.com/blog/trello-google-docs-product-management/)
+
+[재난을 멈추기위해 주 40시간 근무를 준수해야 하는 이유](http://masterfarseer.blogspot.kr/2015/06/40.html) - 원문 : [Why We Have to Go Back to a 40-Hour Work Week to Keep Our Sanity | Alternet](http://www.alternet.org/story/154518/why_we_have_to_go_back_to_a_40-hour_work_week_to_keep_our_sanity)
+
+[일처럼 느껴지지 않는 것들](http://bit.ly/1HxY58s) - 원문 : [What Doesn't Seem Like Work?](http://paulgraham.com/work.html)
+
+[바이럴 마케팅 대박의 레시피](http://bit.ly/1wePTqy) - 원문 : [Brand Challenge: Is There a ‘Recipe’ for Going Viral? -- K@W](http://knowledge.wharton.upenn.edu/article/is-there-a-recipe-for-going-viral/)
+
+[직장은 가족이 아니라 이웃같아야 한다](http://blog.naver.com/xellosgm/220169251980) - 원문 : [Coworkers Should Be Like Neighbors, Not Like Family - Art Markman - Harvard Business Review](http://blogs.hbr.org/2014/10/coworkers-should-be-like-neighbors-not-like-family/)
+
+[구글은 어떻게 일하는가](http://www.slideshare.net/alleciel/how-google-works-korean) - 원문 : [How Google Works](http://www.slideshare.net/ericschmidt76/how-google-works-final-1)
+
+[자신이 사랑하는 일을 하면서 사는 방법 1](http://www.letssarm.com/doingwhatyoulove/)[2](http://www.letssarm.com/doingwhatyoulove2/)[3](http://www.letssarm.com/doingwhatyoulove3/) - 원문 : [How to Do What You Love](http://paulgraham.com/love.html)
+
+[창업 아이디어를 얻는 법](http://nextransblog.blogspot.kr/2014/06/paul-graham-how-to-get-startup-ideas.html) - 원문 : [How to Get Startup Ideas](http://www.paulgraham.com/startupideas.html)
 
 [규모가 작은 팀이 큰 팀보다 훨씬 더 효율적이다.](http://jaehyun.kr/post/89820127120) - 원문 : [Small teams beat large teams in software development](http://spin.atomicobject.com/2012/01/11/small-teams-are-dramatically-more-efficient-than-large-teams/)
 
@@ -628,7 +945,7 @@ Personal Summary](http://samizdat.mines.edu/howto/HowToBeAProgrammer.pdf)
 
 [Dropbox 의 초기 사업계획서 (YC funding제출)](http://v.daum.net/link/11726078) - 원문 : 드랍박스 링크 유실:;
 
-[왜 당신의 스타트업은 개발자에게 인기가 없나](http://techit.kr/12460) - 원문 : [Why Developers Aren’t Interested In Your Startup](http://numeratechoir.com/why-developers-arent-interested-in-your-startup/)
+[왜 당신의 스타트업은 개발자에게 인기가 없나](http://bit.ly/RMeFfc) - 원문 : [Why Developers Aren’t Interested In Your Startup](http://numeratechoir.com/why-developers-arent-interested-in-your-startup/)
 
 [Startup에서 채용오류를 줄이는 5가지 방법](http://subokim.wordpress.com/2012/01/30/startup-employ-error/) - 원문 : [How To Avoid Hiring The Wrong Person For Your Startup](http://mashable.com/2012/01/29/avoid-hiring-the-wrong-person/)
 
@@ -647,4 +964,3 @@ Personal Summary](http://samizdat.mines.edu/howto/HowToBeAProgrammer.pdf)
 [Jeff Bezos 의 10가지 리더쉽 레슨](http://allaboutetp.wordpress.com/2012/04/05/jeffbezos/) - 원문 : [Jeff Bezos’s Top 10 Leadership Lessons](http://www.forbes.com/sites/georgeanders/2012/04/04/bezos-tips/)
 
 ---
-오탈자나 잘못된 링크도 댓글로 제보해 주세요!
