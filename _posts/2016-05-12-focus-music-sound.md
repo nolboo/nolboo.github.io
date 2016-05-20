@@ -14,6 +14,8 @@ tags: [focus, productivity, classic, music, wihtenoise]
 
 온라인 클래식 라디오들은 국내외 모두 중간에 가끔 아나운서의 목소리가 나온다. 국내 아나운서들의 목소리는 매우 좋지만 집중하는 데에는 분명 방해가 된다. 그래서 국내 클래식 라디오는 피하게 된다. 외국 아나운서들은 영어만 아니면 하나도 못 알아들으니 상관없을 것 같지만 그래도 방해가 된다. 이 서비스는 아나운서는 물론 아무런 방해가 없다.
 
+![Focus@Will main image](https://www.focusatwill.com/wp-content/uploads/2015/12/imac3.png)
+
 음악도 [연구](https://www.focusatwill.com/the-science-behind-music-for-concentration-and-focus/)를 바탕으로 되도록 집중에 도움이 되는 음악을 선곡해서 들려주려고 한다. 나는 클래식을 주로 듣지만, ADHD에 좋은 장르도 있고 화이트 노이즈도 랩 기능으로 있다. 플레이 시간을 미리 지정하여 쉬는 시간을 가질 수 있으며, 시간마다 생산성 향상이 얼마나 되는지 입력하여 그래프로 보여주는 기능도 있다.
 
 월 만원 정도의 비용이 들어가는 유료 서비스지만 가장 맘에 드는 서비스와 앱이다. 이메일 당 15일의 무료 체험 기간을 주며, 소개하는 메일을 보내기만 하면 이메일 하나마다 무료 체험 기간을 하루씩 연장해준다. [Gain more free time with our Referral Program!](https://focusatwill.zendesk.com/hc/en-us/articles/207859976-Gain-more-free-time-with-our-Referral-Program-Update-)
