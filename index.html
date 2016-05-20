@@ -26,7 +26,7 @@ description: Learn to do, Learn  by doing
   </ul>
 
   <!-- Pagination links -->
-<!--   <ul class="pagination clearfix">
+  <ul class="pagination clearfix">
     {% if paginator.previous_page %}
       {% if paginator.previous_page == 1 %}
       <li><a href="/">Prev</a></li>
@@ -53,5 +53,19 @@ description: Learn to do, Learn  by doing
     {% else %}
     <li><span class="disabled">Next</span></li>
     {% endif %}
-  </ul> -->
+  </ul>
+
+<!--   <div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
+  {% else %}
+    <span class="previous">Previous</span>
+  {% endif %}
+  <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+  {% else %}
+    <span class="next ">Next</span>
+  {% endif %}
+  </div> -->
 </section>

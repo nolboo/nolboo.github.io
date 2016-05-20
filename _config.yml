@@ -6,22 +6,25 @@ highlighter: rouge
 lsi: false
 future: true
 
-permalink: pretty   # /blog/:year/:month/:day/:title/
+# permalink: pretty   # /blog/:year/:month/:day/:title/
 path: "_posts/blog"
 
-exclude: [vendor]
+# exclude: [vendor]
 
 markdown: kramdown
 kramdown:
   input: GFM
 
 gems: 
+  - jekyll-mentions
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
   - jekyll-paginate
   - jekyll-gist
-  - redcarpet
 
 paginate: 10
-paginate_path: /pages/:num
+paginate_path: "/blog/page:num/"
 
 author:
   twitter: n0lb00

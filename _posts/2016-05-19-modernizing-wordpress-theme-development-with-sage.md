@@ -372,29 +372,11 @@ var enabled = {
 };
 ```
 
-위의 코드에서 소스맵과 디폴트로 된 파일 최소화를 껐다. **이 작업을 사용하려면 옵션으로 지정하여 사용하면 된다** 역자 - 여기서부터 에러가 난다. 아무리 검색해도 답을 얻을 수가 없어서 전부 테스트하기 전에 번역 내용을 온라인 올린다ㅠㅠ 아래를 실행하면:
+위의 코드에서 소스맵과 디폴트로 된 파일 최소화를 껐다. 이 작업을 사용하려면 옵션으로 지정하여 사용하면 된다:
 
 ```shell
 gulp watch --minify --maps
-~/Sites/example.com/site/web/app/themes/sage/gulpfile.js:66
-  minify: argv.minify
-  ^^^^^^
-
-SyntaxError: Unexpected identifier
-    at exports.runInThisContext (vm.js:53:16)
-    at Module._compile (module.js:387:25)
-    at Object.Module._extensions..js (module.js:422:10)
-    at Module.load (module.js:357:32)
-    at Function.Module._load (module.js:314:12)
-    at Module.require (module.js:367:17)
-    at require (internal/module.js:16:19)
-    at Liftoff.handleArguments (/usr/local/lib/node_modules/gulp/bin/gulp.js:116:3)
-    at Liftoff.<anonymous> (/usr/local/lib/node_modules/gulp/node_modules/liftoff/index.js:181:16)
-    at module.exports (/usr/local/lib/node_modules/gulp/node_modules/liftoff/node_modules/flagged-respawn/index.js:17:3)
 ```
-
-> **위와 같은 에러가 난다. 걸프 도사님들 도와주세요!!!!!!**
-
 
 이제 `cssTasks`와 `jsTasks`를 변경해야 하는데, 우리가 만든 `enabled` 변수를 이용한다. 첫번째는 소스맵인데, `gulpif`를 사용해서 소스맵이 켜져있는지 체크하고 켜져있을 때만 함수를 부른다.
 
@@ -408,12 +390,14 @@ SyntaxError: Unexpected identifier
 
 ```javascript
 .pipe(function(){
-  return gulpif(enabled.minify, minifyCss({
+  return gulpif(enabled.minify, cssNano({
     advanced: false,
     rebase: false
   }));
 })
 ```
+
+>역자주 [gulp-minify-css가 gulp-cssnano로 대치되어](https://github.com/roots/sage/issues/1610) 원문의 `minifyCss`을 `cssNano`로 바꾸어야 한다.
 
 `cssTasks`가 다음과 같아야 한다:
 
@@ -449,7 +433,7 @@ var cssTasks = function(filename) {
       ]
     })
     .pipe(function(){
-      return gulpif(enabled.minify, minifyCss({
+      return gulpif(enabled.minify, cssNano({
         advanced: false,
         rebase: false
       }));
