@@ -1,3 +1,10 @@
+---
+layout: post
+title: "모던 워드프레스 서버 스택"
+description: "워드프레스 서버로서 LAMP가 대표 서버 스택인 시대를 뛰어넘어 이제는 다양한 현대적인 서버 스택이 필요해졌다. 스매싱에 좋은 글이 올라와서 발번역했다"
+category: blog
+tags: [wordpress, server, stack, development, environment]
+---
 
 원문 : [A Look At The Modern WordPress Server Stack – Smashing Magazine](https://www.smashingmagazine.com/2016/05/modern-wordpress-server-stack/)
 
