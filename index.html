@@ -7,7 +7,7 @@ description: Learn to do, Learn  by doing
 <section>
   <ul class="posts">
     <!-- This loops through the paginated posts -->
-    {% for post in site.posts limit:10 %}
+    {% for post in site.posts %}
       <li>
         <h2>
           <a href="{{ post.url }}">{{ post.title }}</a>
