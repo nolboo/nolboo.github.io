@@ -6,20 +6,20 @@ category: blog
 tags: [phpstorm, php, wordpress, development, environment, jetbrains, hotkey]
 ---
 
-[JetBrains: Development Tools for Professionals and Teams](https://www.jetbrains.com/)즈는 많은 고수 개발자들이 추천하고 있다. 언어와 관계없이 공토적으로 쓰이는 단축키를 소개한다. 
+[JetBrains: Development Tools for Professionals and Teams](https://www.jetbrains.com/)의 각종 IDE는 많은 고수 개발자들이 강력 추천하고 있다. 언어와 관계없이 거의 공통적으로 쓰이는 단축키이니 익혀두는 것이 좋을 것 같다.
 
 ## 주요 단축키 10선
 
-1. <kbd>Shift</kbd><kbd>Shift</kbd>: 모든 것을 검색한다.
-2. <kbd>Cmd</kbd><kbd>Shift</kbd><kbd>a</kbd>: 액션과 옵션을 검색하여 실행한다.
-3. <kbd>Cmd</kbd><kbd>Shift</kbd><kbd>o</kbd>: 파일을 검색한다.
-4. <kbd>Cmd</kbd><kbd>Shift</kbd><kbd>f</kbd>: 프로젝트또는 지정 디렉토리에서 파일을 검색한다.
-5. <kbd>Opt</kbd><kbd>up</kbd>/<kbd>Opt</kbd><kbd>down</kbd>: 커서가 위치한 함수명, 함수전체 등으로 단계적으로 선택을 확장하거나 축소한다.
-6. <kbd>Cmd</kbd><kbd>d</kbd>: 커서가 위치한 줄을 복사한다.
-7. <kbd>Opt</kbd><kbd>Shift</kbd><kbd>up</kbd>: 커서가 위치한 줄을 하나 위로 옮긴다. <kbd>down</kbd>은 내린다.
-8. <kbd>Cmd</kbd><kbd>Shift</kbd><kbd>up</kbd>: 커서가 위치한 함수 전체를 위로 옮긴다. <kbd>down</kbd>은 내린다.
-9. <kbd>Cmd</kbd><kbd>backspace</kbd>: 커서가 위치한 줄 전체를 지운다.
-10. <kbd>Cmd</kbd><kbd>Shift</kbd><kbd>backspace</kbd>: 최근에 코딩한 위치로 돌아간다.
+1. <kbd>Shift</kbd>+<kbd>Shift</kbd>: 모든 것을 검색한다.
+2. <kbd>Cmd</kbd>+<kbd>Shift</kbd>+<kbd>a</kbd>: 액션과 옵션을 검색하여 실행한다.
+3. <kbd>Cmd</kbd>+<kbd>Shift</kbd>+<kbd>o</kbd>: 파일을 검색한다.
+4. <kbd>Cmd</kbd>+<kbd>Shift</kbd>+<kbd>f</kbd>: 프로젝트또는 지정 디렉토리에서 파일을 검색한다.
+5. <kbd>Opt</kbd>+<kbd>up</kbd>/<kbd>Opt</kbd>+<kbd>down</kbd>: 커서가 위치한 함수명, 함수전체 등으로 단계적으로 선택을 확장하거나 축소한다.
+6. <kbd>Cmd</kbd>+<kbd>d</kbd>: 커서가 위치한 줄을 복사한다.
+7. <kbd>Opt</kbd>+<kbd>Shift</kbd>+<kbd>up</kbd>: 커서가 위치한 줄을 하나 위로 옮긴다. <kbd>down</kbd>은 내린다.
+8. <kbd>Cmd</kbd>+<kbd>Shift</kbd>+<kbd>up</kbd>: 커서가 위치한 함수 전체를 위로 옮긴다. <kbd>down</kbd>은 내린다.
+9. <kbd>Cmd</kbd>+<kbd>backspace</kbd>: 커서가 위치한 줄 전체를 지운다.
+10. <kbd>Cmd</kbd>+<kbd>Shift</kbd>+<kbd>backspace</kbd>: 최근에 코딩한 위치로 돌아간다.
 
 ## 추가 링크
 
