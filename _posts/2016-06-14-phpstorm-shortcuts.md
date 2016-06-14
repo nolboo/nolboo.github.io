@@ -23,7 +23,7 @@ tags: [phpstorm, php, wordpress, development, environment, jetbrains, hotkey]
 
 ## 추가 링크
 
-[Key promoter](https://plugins.jetbrains.com/plugin/1003): 사용자의 액션에 해당하는 단축키를 보여줌.
+* [Key promoter](https://plugins.jetbrains.com/plugin/1003): 사용자의 액션에 해당하는 단축키를 보여줌.
 * [10 must know PHPStorm shortcuts](https://www.youtube.com/watch?v=11CjrhFUWGY)
 * [10 WebStorm Shortcuts You Need to Know](http://blog.jetbrains.com/webstorm/2015/06/10-webstorm-shortcuts-you-need-to-know/)
 * [PhpStorm - Top Productivity Hacks and Shortcuts](http://www.sitepoint.com/phpstorm-top-productivity-hacks-shortcuts/)
