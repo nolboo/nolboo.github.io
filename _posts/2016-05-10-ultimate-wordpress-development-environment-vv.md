@@ -7,9 +7,10 @@ tags: [wordpress, development, environment, vagrant, vvv, vv]
 ---
 
 [궁극의 워드프레스 개발 환경](http://nolboo.github.io/blog/2016/04/29/ultimate-wordpress-development-environment/)에서 언급한 VVV와 VV를 실제로 설치하고 워드프레스 개발 가상머신 환경을 구축해본다.
-    * [궁극의 워드프레스 개발 환경 실전편 - VV](http://nolboo.github.io/blog/2016/05/10/ultimate-wordpress-development-environment-vv/) 
-    * [궁극의 워드프레스 개발 환경 실전편 - VV Blueprints](http://nolboo.github.io/blog/2016/05/14/ultimate-wordpress-development-environment-vv-blueprints/)
-    * 궁극의 워드프레스 개발 환경 실전편 - WP CLI
+
+* [궁극의 워드프레스 개발 환경 실전편 - VV](http://nolboo.github.io/blog/2016/05/10/ultimate-wordpress-development-environment-vv/) 
+* [궁극의 워드프레스 개발 환경 실전편 - VV Blueprints](http://nolboo.github.io/blog/2016/05/14/ultimate-wordpress-development-environment-vv-blueprints/)
+* [궁극의 워드프레스 개발 환경 실전편 - WP-CLI](http://nolboo.kim/blog/2016/05/16/ultimate-wordpress-development-environment-wp-cli/)
 
 처음 설치하면 시간이 오래 걸리니 인터넷 속도가 좋은 곳에서 설치한다. 속도가 좋지 않은 카페에서 처음 시도했다가 3시간 넘게 걸렸다.
 

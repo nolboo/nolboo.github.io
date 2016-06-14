@@ -279,7 +279,7 @@ media="all and (max-width: 1024px)">
 
 모바일 퍼스트 미디어 쿼리는 다음과 같을 것이다.
 
-```css
+```
 /* Default styles first then media queries */
 @media screen and (min-width: 400px)  {...}
 @media screen and (min-width: 600px)  {...}
@@ -469,6 +469,7 @@ iframe {
 ## Resources & Links
 
 * [Responsive Web Design](http://www.alistapart.com/articles/responsive-web-design/) via A List Apart
+* [A Crash Course in Technical Responsive Web Design - Treehouse Blog](http://blog.teamtreehouse.com/a-crash-course-in-technical-responsive-web-design-2)
 * [Viewport Percentage Lengths](http://dev.w3.org/csswg/css3-values/#viewport-relative-lengths) via W3C
 * [CSS Media Queries](http://css-tricks.com/css-media-queries/) via CSS-Tricks
 * [Mobile First Presentation](http://www.lukew.com/presos/preso.asp?26) via Luke Wroblewski

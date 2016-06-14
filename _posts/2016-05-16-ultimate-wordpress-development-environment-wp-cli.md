@@ -6,7 +6,11 @@ category: blog
 tags: [wordpress, development, environment, vagrant, wp-cli]
 ---
 
-## [Command line interface for WordPress | WP-CLI](http://wp-cli.org/)
+* [궁극의 워드프레스 개발 환경 실전편 - VV](http://nolboo.github.io/blog/2016/05/10/ultimate-wordpress-development-environment-vv/) 
+* [궁극의 워드프레스 개발 환경 실전편 - VV Blueprints](http://nolboo.github.io/blog/2016/05/14/ultimate-wordpress-development-environment-vv-blueprints/)
+* [궁극의 워드프레스 개발 환경 실전편 - WP-CLI](http://nolboo.kim/blog/2016/05/16/ultimate-wordpress-development-environment-wp-cli/)
+
+## [WP-CLI](http://wp-cli.org/)
 
 VVV가 설치되었다면 이미 설치되어있으니 설치과정은 참조만 한다.
 

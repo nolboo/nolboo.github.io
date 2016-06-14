@@ -12,7 +12,7 @@ tags: [wordpress, development, environment, vagrant, vvv, vv, blueprints]
 
 * [궁극의 워드프레스 개발 환경 실전편 - VV](http://nolboo.github.io/blog/2016/05/10/ultimate-wordpress-development-environment-vv/) 
 * [궁극의 워드프레스 개발 환경 실전편 - VV Blueprints](http://nolboo.github.io/blog/2016/05/14/ultimate-wordpress-development-environment-vv-blueprints/)
-* 궁극의 워드프레스 개발 환경 실전편 - WP CLI
+* [궁극의 워드프레스 개발 환경 실전편 - WP-CLI](http://nolboo.kim/blog/2016/05/16/ultimate-wordpress-development-environment-wp-cli/)
 
 ### Blueprints
 
