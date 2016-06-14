@@ -16,7 +16,7 @@ tags: [wordpress, development, environment, vagrant, wp-cli]
 
 ## [WP-CLI](http://wp-cli.org/)
 
-VVV가 설치되었다면 이미 설치되어있으니 설치과정은 참조만 한다.
+VVV가 설치되었다면 이미 설치되어있으니 설치과정은 참조만 한다. 맥을 사용하고 Homebrew가 설치되어 있다면 `brew install wp-cli` 명령으로 간단하게 설치할 수도 있다.
 
 ```shell
 curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
