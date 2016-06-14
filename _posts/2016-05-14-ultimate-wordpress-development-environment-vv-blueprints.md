@@ -6,6 +6,8 @@ category: blog
 tags: [wordpress, development, environment, vagrant, vvv, vv, blueprints]
 ---
 
+<div id="toc"><p class="toc_title">목차</p></div>
+
 ## VV
 
 [궁극의 워드프레스 개발 환경](http://nolboo.github.io/blog/2016/04/29/ultimate-wordpress-development-environment/)을 실제로 구현해보기 위해 [궁극의 워드프레스 개발 환경 실전편 - VV](http://nolboo.github.io/blog/2016/05/10/ultimate-wordpress-development-environment-vv/)에 이어서 VV의 기능을 살펴본다.
@@ -118,10 +120,10 @@ VV의 블루프린트에서 새로 만들 워드프레스 가상머신의 플러
 
 테마와 플러그인, [mu-plugins](http://www.sitepoint.com/wordpress-mu-plugins/)을 지정하려면 다음 형식을 사용할 수 있다:
 
-Github username/repo
-Full git url
-Url to zip file
-WordPress.org slug
+* Github username/repo
+* Full git url
+* Url to zip file
+* WordPress.org slug
 
 플러그인, 테마, 위젯, 메뉴의 옵션은 [WP-CLI](http://wp-cli.org/) 옵션과 같다.
 

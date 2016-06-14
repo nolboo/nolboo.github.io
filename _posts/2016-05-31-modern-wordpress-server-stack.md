@@ -6,6 +6,8 @@ category: blog
 tags: [wordpress, server, stack, development, environment]
 ---
 
+<div id="toc"><p class="toc_title">목차</p></div>
+
 원문 : [A Look At The Modern WordPress Server Stack – Smashing Magazine](https://www.smashingmagazine.com/2016/05/modern-wordpress-server-stack/)
 
 아파치 서버와 PHP만으로 "빠른" 워드프레스 웹사이트를 돌릴 수 있을 때를 기억하는가? 그런 시절이 있었다!

@@ -6,6 +6,8 @@ category: blog
 tags: [wordpress, development, environment, vagrant, vvv, vv]
 ---
 
+<div id="toc"><p class="toc_title">목차</p></div>
+
 [궁극의 워드프레스 개발 환경](http://nolboo.github.io/blog/2016/04/29/ultimate-wordpress-development-environment/)에서 언급한 VVV와 VV를 실제로 설치하고 워드프레스 개발 가상머신 환경을 구축해본다.
 
 * [궁극의 워드프레스 개발 환경 실전편 - VV](http://nolboo.github.io/blog/2016/05/10/ultimate-wordpress-development-environment-vv/) 
@@ -61,8 +63,8 @@ vagrant@vvv:/vagrant/www$ ls -la
 
 ### 기본 설치 사이트들
 
-`www` 아래에 다음 사이트가 설치된다.
-The below sites are installed by default and are located in your browser as:
+`www` 아래에 다음 사이트가 설치된다:
+
 * 워드프레스 안정화 버전인 `http://local.wordpress.dev/`
 * 워드프레스 SVN 트렁크 버전인 `http://local.wordpress-trunk.dev/`
 * 워드프레스 코어 개발을 위한 `http://build.wordpress-develop.dev/`

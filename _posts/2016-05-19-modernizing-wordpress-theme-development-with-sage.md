@@ -6,6 +6,8 @@ category: blog
 tags: [wordpress, stater, theme, sage, development, environment]
 ---
 
+<div id="toc"><p class="toc_title">목차</p></div>
+
 원문 : [Modernizing WordPress Theme Development with Sage](https://www.sitepoint.com/modernizing-wordpress-theme-development-with-sage/)
 
 몇 년 전, [Roots, A HTML5 WordPress Theme Framework](https://www.sitepoint.com/roots-a-html5-wordpress-theme-framework/)란 기사를 발행했었다. 이제 Roots는 하나의 회사로 바뀌었고, Roots Theme framework을 [Sage](https://roots.io/sage/)와 [Bedrock](https://roots.io/bedrock/)이라 불리는 두 세트의 툴로 바꿨다.

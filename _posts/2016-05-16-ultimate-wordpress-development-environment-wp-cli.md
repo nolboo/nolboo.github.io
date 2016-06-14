@@ -6,6 +6,10 @@ category: blog
 tags: [wordpress, development, environment, vagrant, wp-cli]
 ---
 
+<div id="toc"><p class="toc_title">목차</p></div>
+
+이 글은 [궁극의 워드프레스 개발 환경](http://nolboo.github.io/blog/2016/04/29/ultimate-wordpress-development-environment/)을 실전에서 사용해보는 시리즈 글 중의 하나입니다.
+
 * [궁극의 워드프레스 개발 환경 실전편 - VV](http://nolboo.github.io/blog/2016/05/10/ultimate-wordpress-development-environment-vv/) 
 * [궁극의 워드프레스 개발 환경 실전편 - VV Blueprints](http://nolboo.github.io/blog/2016/05/14/ultimate-wordpress-development-environment-vv-blueprints/)
 * [궁극의 워드프레스 개발 환경 실전편 - WP-CLI](http://nolboo.kim/blog/2016/05/16/ultimate-wordpress-development-environment-wp-cli/)
