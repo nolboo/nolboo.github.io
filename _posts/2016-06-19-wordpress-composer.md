@@ -19,7 +19,7 @@ tags: [wordpress, composer, stater, development, environment]
 컴포저 설치는 [Introduction - Composer](https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx)나 [소개하기](http://xpressengine.github.io/Composer-korean-docs/doc/00-intro.md/)를 참조하여 설치할 수 있으며, 맥에서는 간단한 명령으로 글로벌하게 설치할 수 있다:
 
 ```shell
-brew install composer
+$ brew install composer
 ```
 
 * [Composer - 생활코딩](https://opentutorials.org/course/62/5221)
@@ -67,7 +67,7 @@ wp-config.php
 이제 워드프레스를 설치하기 위해 `composer install`을 하면 다음과 같은 내용이 만들어진다.
 
 ```shell
-ls
+$ ls
 composer.json composer.lock vendor        wp
 ```
 
@@ -201,8 +201,8 @@ Generating autoload files
 앞서 말한 프로젝트 구조를 만들기 위해서는 추가적인 작업이 필요하다. 먼저 `wp/`의 `index.php`, `.htaccess` 와 `wp-config.php` 파일을 프로젝트 루트로 복사한다.
 
 ```shell
-cp wp/wp-config-sample.php wp-config.php
-cp wp/index.php .
+$ cp wp/wp-config-sample.php wp-config.php
+$ cp wp/index.php .
 ```
 
 [WordPress Codex 문서](http://codex.wordpress.org/Giving_WordPress_Its_Own_Directory)를 참조하여 `index.php`, `.htaccess`와 `wp-config.php`을 프로젝트에 맞게 설정하면 된다.
@@ -216,13 +216,13 @@ cp wp/index.php .
 `composer.json`을 직접 편집하지 않고도 플러그인이나 테마를 명령어에서 제거하고 추가할 수 있다. storefront 테마를 제거하려면:
 
 ```shell
-composer remove wpackagist-theme/storefront
+$ composer remove wpackagist-theme/storefront
 ```
 
 다시 설치하려면:
 
 ```shell
-composer require wpackagist-theme/storefront
+$ composer require wpackagist-theme/storefront
 ```
 
 `composer.json`의 설정도 컴포저가 변경한다.
@@ -240,7 +240,7 @@ composer require wpackagist-theme/storefront
 `create-project` 옵션은 강력하다. 기존 패키지에서 새로운 프로젝트를 만들 수 있다. 버전을 지정하지 않으면 최신 버전으로 설치된다.
 
 ```shell
-composer create-project roots/bedrock <path>
+$ composer create-project roots/bedrock <path>
 ```
 
 해당 프로젝트(여기서는 Roots의 Bedrock)를 `git clone`하고 `composer install`하는 것을 하나의 명령어로 실행할 수 있다.
