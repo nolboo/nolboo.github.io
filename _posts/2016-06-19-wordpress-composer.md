@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Composer와 워드프레스 개발 관리"
-description: "가장 유명한 Composer로 워드프레스를 설치하고 개발환경을 설정하는 방법"
+description: "가장 유명한 PHP 의존성 관리자 Composer로 워드프레스를 설치하고 개발환경을 설정하는 방법"
 category: blog
 tags: [wordpress, composer, stater, development, environment]
 ---
