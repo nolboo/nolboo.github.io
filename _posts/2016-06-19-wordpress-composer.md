@@ -249,4 +249,5 @@ $ composer create-project roots/bedrock <path>
 
 * [Using Composer with WordPress](https://roots.io/using-composer-with-wordpress/)
 * [WordPress Plugins with Composer](https://roots.io/wordpress-plugins-with-composer/) : 자신의 만든 커스텀 플러그인이나 3rd 파티 플러그인을 컴포저로 설치하는 방법
+* [Install and manage WordPress with Composer](https://davidwinter.me/install-and-manage-wordpress-with-composer/)
 * [Bedrock 1.1.1 Updates](https://roots.io/bedrock-1-1-1-updates/)
