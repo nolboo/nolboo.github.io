@@ -130,7 +130,7 @@ cp dashboard/dashboard-custom.php .
 
 ## [Variable VVV - a VVV Site Creation Wizard](https://github.com/bradp/vv)
 
-vv는 [Varying-Vagrant-Vagrants(VVV)](https://github.com/Varying-Vagrant-Vagrants/VVV)를 이용하여 새로운 워드프레스 사이트를 더욱 쉽게 만들 수 있고, 플러그인, 테마, 메뉴 등의 설정을 미리 지정한 템플릿으로 다양하게 워드프레스 개발 및 설치 환경을 만들 수 있다.
+[bradp/vv](https://github.com/bradp/vv)는 [Varying-Vagrant-Vagrants(VVV)](https://github.com/Varying-Vagrant-Vagrants/VVV)를 이용하여 새로운 워드프레스 사이트를 더욱 쉽게 만들 수 있고, 플러그인, 테마, 메뉴 등의 설정을 미리 지정한 템플릿으로 다양하게 워드프레스 개발 및 설치 환경을 만들 수 있다.
 
 ```shell
 brew install bradp/vv/vv

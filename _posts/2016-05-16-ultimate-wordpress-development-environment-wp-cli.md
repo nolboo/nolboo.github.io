@@ -353,6 +353,20 @@ wp ssh plugin status --host=production
 alias wp="wp ssh --host=production"
 ```
 
+## 기타 명령어
+
+인터렉티브 PHP 콘솔:
+
+```shell
+wp shell
+```
+
+우커머스 프로덕트 목록 보기:
+
+```shell
+wp wc product list
+```
+
 ## 참고링크
 
 - [Configuration - WP-CLI](http://wp-cli.org/config/)
