@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "워드프레스 DevOps를 위한 Roots Suite의 Trellis, Bedrock, Sage 설치"
-description: "Roots Suite인 Trellis, Bedrock, Sage를 설치한다."
+description: "워드프레스 DevOps를 위한 Roots Suite인 Trellis, Bedrock, Sage를 설치한다."
 category: blog
 tags: [wordpress, devops, development, environment, roots, trellis, bedrock, sage]
 ---
