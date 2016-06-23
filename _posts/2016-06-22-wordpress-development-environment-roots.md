@@ -3,7 +3,7 @@ layout: post
 title: "워드프레스 개발 환경 Roots.io의 Trellis, Bedrock, Sage를 만나기까지"
 description: "Roots의 Trellis, Bedrock, Sage를 만나기까지의 여정을 간략하게 설명하고, 살펴본 개발 환경들을 정리했다."
 category: blog
-tags: [wordpress, development, environment]
+tags: [wordpress, development, environment, roots, trellis, bedrock, sage]
 ---
 
 워드프레스 개발 환경을 `/wp-admin` url로 접근하는 관리자 모드에서 플러그인이나 테마를 설치하고 커스터마이징하는 방법이 익숙지 않아(솔직히 말하면 - 맘에 들지 않아) 커맨드라인과 텍스트 에디터나 IDE에서 하는 방법을 몇 가지 훑어보았다. 제일 먼저 살펴본 것이 [궁극의 워드프레스 개발 환경](http://nolboo.kim/blog/2016/04/29/ultimate-wordpress-development-environment/)인데 VVV를 위주로 여러 가지 팁을 얻을 수 있었다. 그래서 실제로 VVV 개발환경을 사용하려면 실제로는 어떻게 해야 할까를 정리해서 실전편 시리즈 글을 아래와 같이 정리하였다.
