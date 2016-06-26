@@ -126,7 +126,7 @@ $ cd roots-example-project.com/trellis
 $ vagrant up
 ```
 
-브라우저에서 `roots-example-project.dev`를 입력하여 설치가 제대로 되었는지 확인한다.
+브라우저에서 `roots-example-project.dev`를 입력하여 설치가 제대로 되었는지 확인한다. `example.dev`로 설치했다면 같은 주소로 확인하면 된다.
 
 ![Roots 샘플 프로젝트 화면](https://c3.staticflickr.com/8/7342/27820470106_8062a9de00_c.jpg)
 
@@ -141,7 +141,7 @@ $ gulp watch
 
 이 경우에도 관리자 모드는 `roots-example-project.dev`에서 사용해야 한다.
 
-> 가상머신을 실행해 놓으면 1기가에 가까운 메모리가 할당되니 사용하지 않을 때는 `vagrant halt`으로 가상머신을 끄길 권한다.
+> 가상머신을 실행해 놓으면 1기가에 가까운 메모리가 할당되니 사용하지 않을 때는 `vagrant halt`로 가상머신을 끄길 권한다.
 
 ## 맺음말
 
