@@ -114,6 +114,7 @@ pull 요청만이 공헌할 수 있는 유일한 방법이라고 생각하지 �
 
 ## 볼만한 링크
 
+* [Git을 이용한 협업 워크플로우 배우기](http://blog.appkr.kr/learn-n-think/comparing-workflows/)
 * [Git flow, GitHub flow, GitLab flow](http://ujuc.github.io/2015/12/16/git-flow-github-flow-gitlab-flow/)
 * [카카오스토리 웹팀의 코드리뷰 경험 공유](http://www.slideshare.net/OhgyunAhn/ss-61189141)
 * [HubFlow - GitHub and the GitFlow Model Together | DataSift Developers](http://dev.datasift.com/blog/hubflow-github-and-gitflow-model-together)

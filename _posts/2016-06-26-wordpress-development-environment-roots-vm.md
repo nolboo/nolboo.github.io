@@ -142,7 +142,7 @@ BrowserSync를 사용하려면 `assets/manifest.json`의 `devUrl`의 값을 편�
 
 웹스톰이나 서브라임과 같은 앱을 이용하여 편집한 후 실제로 반영되는지를 테스트한다.
 
-`sage/.gitignore`를 참고하여 자신의 `.gitignore` 파일을 작성한 후 깃 저장소로 첫번째 푸시를 한다. 깃에 대한 지식이 전혀 없다면 [완전 초보를 위한 깃허브](http://nolboo.kim/blog/2013/10/06/github-for-beginner/)를 참조한다.
+`sage/.gitignore`를 참고하거나 [gitignore.io](https://github.com/joeblau/gitignore.io)를 이용하여 자신의 `.gitignore` 파일을 작성한 후 깃 저장소로 첫번째 푸시를 한다. 깃에 대한 지식이 전혀 없다면 [완전 초보를 위한 깃허브](http://nolboo.kim/blog/2013/10/06/github-for-beginner/)를 참조한다.
 
 ## TODO
 
