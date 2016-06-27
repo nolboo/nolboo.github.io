@@ -6,9 +6,9 @@ category: blog
 tags: [google, free, android, video, lecture]
 ---
 
-참고 : [Introducing new Android training programs with Udacity | Android Developers Blog](http://android-developers.blogspot.kr/2015/06/introducing-new-android-training.html)
+참고 : [Introducing new Android training programs with Udacity - Android Developers Blog](http://android-developers.blogspot.kr/2015/06/introducing-new-android-training.html)
 
-나노 학위를 제공하는 구글의 안드로이드 [강좌](https://www.udacity.com/course/android-basics-nanodegree-by-google--nd803))가 있다. 각각의 강좌는 무료로 제공되지만 저렴한 비용을 치르면 나노 학위(?)를 제공하는 수익 모델을 취하고 있다. 
+나노 학위를 제공하는 구글의 안드로이드 [강좌](https://www.udacity.com/course/android-basics-nanodegree-by-google--nd803)가 있다. 각각의 강좌는 무료로 제공되지만 저렴한 비용을 치르면 나노 학위(?)를 제공하는 수익 모델을 취하고 있다. 
 
 * [Android App Development for Beginners](https://www.udacity.com/course/android-development-for-beginners--ud837): How to Make an Android App, with Katherine Kuan
 * [Developing Android Apps](https://www.udacity.com/course/developing-android-apps--ud853): Android Fundamentals, with Reto Meier, Katherine Kuan, Dan Galpin and Alex Lucas
