@@ -1,10 +1,9 @@
 ---
-layout: post
-title: "Sage를 사용하여 워드프레스 테마 개발을 현대화하기"
-description: "Roots의 워드프레스 스타터 테마 Sage를 이용하여 HTML5, gulp, Bower, BootStrap을 이용하여 테마를 개발하는 현대적인 워크플로우를 배워본다."
-category: blog
+
+layout: post title: "Sage를 사용하여 워드프레스 테마 개발을 현대화하기" description: "Roots의 워드프레스 스타터 테마 Sage를 이용하여 HTML5, gulp, Bower, BootStrap을 이용하여 테마를 개발하는 현대적인 워크플로우를 배워본다." category: blog
+
 tags: [wordpress, stater, theme, sage, development, environment]
----
+----------------------------------------------------------------
 
 <div id="toc"><p class="toc_title">목차</p></div>
 
@@ -16,17 +15,19 @@ tags: [wordpress, stater, theme, sage, development, environment]
 
 ![Sage Homepage](https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2016/03/1458234267Sage-1024x548.png)
 
-## Tools
+Tools
+-----
 
-* **HTML5 Boilerplate** – 프론트엔드 템플릿
-* **Gulp** – 프론트엔드 asset 최소화와 병합, 이미지 최적화, 테스트 돌리기와 같은 작업을 자동화하는 빌드 시스템 
-* **Bower** – 프론트엔트 asset 패키지 관리자. jQuery나 Lodash 같은 라이브러리를 프로젝트로 당겨온다.
-* **Browsersync** – 여러 디바이스에서 파일 변경과 인터랙션을 동기화
-* **asset-builder** – 테마의 asset를 모아주고 같이 넣어준다.
-* **wiredep** – 메인 테마 스타일시트에 Sass와 Less 의존성을 주입한다.
-* **Bootstrap** – 반응형 웹사이트를 쉽게 만들 수 있는 프론트엔드 프레임워크
+-	**HTML5 Boilerplate** – 프론트엔드 템플릿
+-	**Gulp** – 프론트엔드 asset 최소화와 병합, 이미지 최적화, 테스트 돌리기와 같은 작업을 자동화하는 빌드 시스템
+-	**Bower** – 프론트엔트 asset 패키지 관리자. jQuery나 Lodash 같은 라이브러리를 프로젝트로 당겨온다.
+-	**Browsersync** – 여러 디바이스에서 파일 변경과 인터랙션을 동기화
+-	**asset-builder** – 테마의 asset를 모아주고 같이 넣어준다.
+-	**wiredep** – 메인 테마 스타일시트에 Sass와 Less 의존성을 주입한다.
+-	**Bootstrap** – 반응형 웹사이트를 쉽게 만들 수 있는 프론트엔드 프레임워크
 
-## Installation
+Installation
+------------
 
 워드프레스 테마 디렉토리로 가서 다음 명령을 준다. `theme-name`을 자신의 테마 이름으로 바꾸는 것을 잊지마라.
 
@@ -44,16 +45,17 @@ define('WP_ENV', 'development');
 
 워드프레스를 개발 환경으로 설정한다.
 
-## Directory Structure
+Directory Structure
+-------------------
 
 디렉토리 구조는 다른 워드프레스 테마와 꽤 많이 비슷하다. 테마의 루트에는 친숙하게 보이는 파일들이 있을 것이다:
 
-* index.php
-* functions.php
-* 404.php
-* search.php
-* single.php
-* page.php
+-	index.php
+-	functions.php
+-	404.php
+-	search.php
+-	single.php
+-	page.php
 
 유일한 차이점은 테마 설정과 유틸리티가 저장되는 `lib` 디렉토리를 가진 것이다. 프론트엔드 asset을 포함하는 것이 `functions.php`가 아닌 `assets.php`라는 것을 주목한다. 위젯, 메뉴의 등록, 테마 지원 추가는 `setup.php`에서 한다. 페이지 제목을 지정하는 것은 `titles.php`에서 한다.
 
@@ -61,7 +63,8 @@ define('WP_ENV', 'development');
 
 마지막으로, 워드프레스 테마에서 보통 가지고 있는 모든 템플릿이 있는 `templates` 디렉토리가 있다. 유일한 차이점은 테마의 접근성을 향상하는 몇 가지 기본적인 ARIA 역할을 가지는 HTML5 Boilerplate에 기반을 두는 템플릿이라는 것이다.
 
-## Customization
+Customization
+-------------
 
 이제 자신의 필요에 맞게 Sage를 커스터마이징하자. `lib/setup.php` 파일을 열고 몇 가지를 커스터마이징할 수 있다:
 
@@ -142,7 +145,8 @@ function widgets_init() {
 add_action('widgets_init', __NAMESPACE__ . '\\widgets_init');
 ```
 
-## Workflow
+Workflow
+--------
 
 이제 워크플로우로 넘어가자. 이 섹션에서는 Sage로 워드프레스를 개발할 때 앞서 언급한 툴을 사용하는 법을 배울 것이다.
 
@@ -399,7 +403,7 @@ gulp watch --minify --maps
 })
 ```
 
->역자주 [gulp-minify-css가 gulp-cssnano로 대치되어](https://github.com/roots/sage/issues/1610) 원문의 `minifyCss`을 `cssNano`로 바꾸어야 한다.
+> 역자주 [gulp-minify-css가 gulp-cssnano로 대치되어](https://github.com/roots/sage/issues/1610) 원문의 `minifyCss`을 `cssNano`로 바꾸어야 한다.
 
 `cssTasks`가 다음과 같아야 한다:
 
@@ -478,6 +482,12 @@ var jsTasks = function(filename) {
 };
 ```
 
-## Conclusion
+Conclusion
+----------
 
 이 튜토리얼에서 워드프레스 테마를 개발하는 프로세스를 현대화하기 위해 Sage와 작업하는 법을 배웠다. Bower, gulp, Browsersync와 같은 툴을 사용해서 개발 속도를 올리는 법을 배웠다.
+
+참고링크
+--------
+
+-	[WordPress Theme Automation With Gulp](https://www.sitepoint.com/wordpress-theme-automation-with-gulp/)
