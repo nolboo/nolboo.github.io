@@ -1,9 +1,10 @@
 ---
-
-layout: post title: "파이썬을 배우는 최고의 방법" description: "파이썬을 배우는 최고의 방법을 설명한 Tuts+의 글의 요약 번역" category: blog
-
+layout: post 
+title: "파이썬을 배우는 최고의 방법" 
+description: "파이썬을 배우는 최고의 방법을 설명한 Tuts+의 글의 요약 번역" 
+category: blog
 tags: [python, beginner, guide]
--------------------------------
+---
 
 ![](https://farm2.staticflickr.com/1631/23882085799_97b39edf15_m.jpg)
 
