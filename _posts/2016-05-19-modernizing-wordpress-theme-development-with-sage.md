@@ -4,7 +4,7 @@ title: "Sage를 사용하여 워드프레스 테마 개발을 현대화하기"
 description: "Roots의 워드프레스 스타터 테마 Sage를 이용하여 HTML5, gulp, Bower, BootStrap을 이용하여 테마를 개발하는 현대적인 워크플로우를 배워본다." 
 category: blog
 tags: [wordpress, stater, theme, sage, development, environment]
-----------------------------------------------------------------
+---
 
 <div id="toc"><p class="toc_title">목차</p></div>
 
