@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/nolboo/nolboo.github.io.png?label=ready)](https://waffle.io/nolboo/nolboo.github.io)  
 Jekyll website serving [Nolboo's blog](http://nolboo.github.io/).
 
 [![Stories in Ready](https://badge.waffle.io/nolboo/nolboo.github.io.png?label=ready)](http://waffle.io/nolboo/nolboo.github.io)
