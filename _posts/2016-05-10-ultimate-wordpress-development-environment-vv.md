@@ -203,3 +203,7 @@ vv로 편리하게 워드프레스 개발환경을 만들고 지울 수 있지�
 * [Setting up VVV Varying Vagrant Vagrants on OSX](https://coolestguidesontheplanet.com/using-vvv-varying-vagrant-vagrants-wordpress-local-development-environment/)
 * [Varying-Vagrant-Vagrants/VVV - The First Vagrant up](https://github.com/Varying-Vagrant-Vagrants/VVV#the-first-vagrant-up)
 * [When WordPress Meets Vagrant: VVV](http://www.sitepoint.com/wordpress-meets-vagrant-vvv/)
+
+## 추가링크
+
+* [Please: Automated CMS and Framework Installs in Vagrant](https://www.sitepoint.com/please-automated-cms-and-framework-installs-in-vagrant/)
