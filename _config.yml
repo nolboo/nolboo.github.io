@@ -7,7 +7,7 @@ lsi: false
 future: true
 
 permalink: pretty   # /blog/:year/:month/:day/:title/
-path: "_posts/blog"
+# path: "_posts/blog"
 
 exclude: [vendor]
 

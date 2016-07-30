@@ -41,6 +41,7 @@ Roots.io에서는 세개의 툴을 소개하고 있다.
 워드프레스 생태계가 워낙 커서 정말 많은 개발 환경을 만들어서 나름대로 활용하고 있는 것을 알 수 있었다. 다음은 잠깐이라도 살펴본 개발 환경들이다.
 
 * [bradp/vv: Variable VVV - a VVV Site Creation Wizard](https://github.com/bradp/vv)
+* [Chassis/Chassis: Chassis is a virtual server for your WordPress site, built using Vagrant.](https://github.com/Chassis/Chassis)
 * [Your Debian-based data center in a box](http://debops.org/)
 * [carlalexander/debops-wordpress: Your superpowered WordPress server in two commands.](https://github.com/carlalexander/debops-wordpress)
 * [EasyEngine - WordPress On Nginx Made Easy!](https://easyengine.io/)

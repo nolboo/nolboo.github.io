@@ -10,11 +10,11 @@ tags: [wordpress, devops, development, environment, roots, trellis, bedrock, sag
 
 [워드프레스 DevOps를 위한 Roots Suite의 Trellis, Bedrock, Sage 설치](http://nolboo.kim/blog/2016/06/23/wordpress-development-environment-roots-install/)에서 소개한 방법 중 `example.com`으로 설치한 방법을 채택하여 `roots.nolboo.kim`란 도메인을 기준으로 상세한 설정과 설치를 진행한다.
 
-Trellis는 "sites"를 중심으로 만들어졌다. 트렐리스가 관리하는 서버(로컬 개발 머신이나 원격 서버)은 하나 또는 그 이상의 워드프레스 사이트를 지원할 수 있다. 트렐리스는 워드프레스 사이트를 호스트할 때 필요한 모든 것(데이타베이스, Nginx vhost, 폴더 디렉터리 등)을 자동으로 설정한다.
+Trellis는 "sites"를 중심으로 만들어졌다. 트렐리스가 관리하는 서버(로컬 개발 머신이나 원격 서버)는 하나 또는 그 이상의 워드프레스 사이트를 지원할 수 있다. 트렐리스는 워드프레스 사이트를 호스트할 때 필요한 모든 것(데이타베이스, Nginx vhost, 폴더 디렉터리 등)을 자동으로 설정한다.
 
 일반적인 설정은 `group_vars/development/wordpress_sites.yml`에서 패스워드/보안 설정은 `group_vars/development/vault.yml`에서 할 수 있다.
 
-첫 key인 사이트 이름을 여러 변수의 기본 값으로 사용하기 때문에 도메인명을 사용을 권한다. 여기서는 `example.com` 대신 `roots.nolboo.kim`을 사용한다.
+첫 key인 사이트 이름을 여러 변수의 기본 값으로 사용하기 때문에 도메인명을 사용하는 것이 좋다. 여기서는 `example.com` 대신 `roots.nolboo.kim`을 사용한다.
 
 ```yaml
 # group_vars/development/wordpress_sites.yml
