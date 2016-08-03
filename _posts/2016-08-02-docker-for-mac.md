@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Docker for mac 훑어보고 워드프레스와 마리아 컨테이너 만들어보기"
+title: "Docker for mac 훑어보기"
 description: "안정 버전이 나온 맥용 도커를 설치하고 빠르게 사용법을 익힌 후 워드프레스와 마리아디비 컨테이너를 만들어 본다."
 category: blog
 tags: [docker, mac, docker-compose, wordpress, devops, development, environment]
