@@ -558,3 +558,30 @@ div#toc1 ul,.mobile div#toc1 ul {
   border: 1px solid #E5E5E5;
   padding: 1px 3px;
 }
+
+/* Share Bar from https://blog.webjeda.com/share-buttons-jekyll/*/
+
+.share-button {
+    margin: 0px;
+    border: 1px solid #D3D6D2;
+    padding: 5px 10px 5px 10px;
+    opacity: 0.9;
+}
+.share-button:hover {
+    opacity: 1;
+}
+.fa-facebook-official {
+    color: #3b5998;
+}
+.fa-google-plus {
+    color: #d34836;
+}
+.fa-linkedin {
+    color: #0077b5;
+}
+.fa-envelop {
+    color: #444444;
+}
+.fa-twitter {
+    color: #4099FF;
+}

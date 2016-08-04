@@ -93,6 +93,8 @@ docker ps -a
 
 도커를 훑어보니 공식문서가 잘 되어있다. 나머지는 [Get Started with Docker](https://docs.docker.com/engine/getstarted/)에서부터 편하게 읽어가면 된다.
 
+> 이쯤에서 Oh-My-Zsh의 docker와 docker-compose 플러그인을 추가한다. 자세한 사용법은 [터미널 초보의 필수품인 Oh My ZSH!를 사용하자](http://nolboo.kim/blog/2015/08/21/oh-my-zsh/)를 참조한다.
+
 ## Docker Compose
 
 위와 같이 Docker CLI로 Docker 데몬과 통신하면서 작업하는 것보다 Docker-Compose로 작업하는 것이 편리하다. [공식 워드프레스 이미지](https://hub.docker.com/_/wordpress/)를 이용하여 컨테이너를 만들어 보고 실행을 확인해본다.

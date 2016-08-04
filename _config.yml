@@ -6,6 +6,8 @@ highlighter: rouge
 lsi: false
 future: true
 
+url: http://nolboo.kim
+
 permalink: pretty   # /blog/:year/:month/:day/:title/
 # path: "_posts/blog"
 
