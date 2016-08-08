@@ -1,5 +1,6 @@
 ---
 layout: default
+comments: yes
 ---
 
 <article>
@@ -39,6 +40,8 @@ layout: default
 <div class="separator"></div>
 
 <section class="comments">
+  <div class="fb-comments" data-href="{{ site.url }}{{ page.url }}" data-numposts="5"></div>
+
   <div id="disqus_thread"></div>
     <script type="text/javascript">
         /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
@@ -54,3 +57,15 @@ layout: default
     <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 </section>
+
+<!-- Facebook Comments API -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ko_KR/sdk.js#xfbml=1&version=v2.7&appId=1096939647018482";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
