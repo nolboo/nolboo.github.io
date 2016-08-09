@@ -270,7 +270,7 @@ Host roots.nolboo.kim
 
 이 포스트를 완성하려고 마지막 프로비전 테스트를 하는데 [Let's Encrypt](https://letsencrypt.org/) 동의서 URL이 맞지 않는다는 에러가 났다. Trellis에서 채택하고 있는 오픈소스 스크립트인 [acme-tiny: A tiny script to issue and renew TLS certs from Let's Encrypt](https://github.com/diafygi/acme-tiny)에서는 2016년 8월 1일 pdf URL로 업데이트된 걸 확인하였으나 이 포스트에서 사용하고 있는 [샘플 프로젝트 저장소](https://github.com/roots/roots-example-project.com.git)에는 반영이 되어 있지 않았다. [Trellis 저장소의 yml 파일](https://github.com/roots/trellis/blob/master/roles/letsencrypt/defaults/main.yml)에는 반영이 되어 있어서 `acme_tiny_commit` 값을 직접 고쳐주어서 acme-tiny 스크립트 최신판이 적용되도록 하였다.
 
-* PR했더니 머지 해줬다. [Update acme-tiny for new Let's Encrypt agreement URL by nolboo · Pull Request #50 · roots/roots-example-project.com](https://github.com/roots/roots-example-project.com/pull/50) 거저 먹는 풀리퀘~
+PR했더니 머지 해줬다. [Update acme-tiny for new Let's Encrypt agreement URL by nolboo · Pull Request #50 · roots/roots-example-project.com](https://github.com/roots/roots-example-project.com/pull/50) 거저 먹는 풀리퀘~
 
 #### Let’s Encrypt: Could not access the challenge file for the hosts/domain 에러
 
