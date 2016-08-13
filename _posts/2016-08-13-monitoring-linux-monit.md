@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "리눅스 모니터링 오픈소스 Monit 사용법"
+title: "오픈소스 리눅스 모니터링 Monit 사용법"
 description: "리눅스 서버를 모니터링하기 위한 오픈소스인 Monit의 사용하는 방법을 살펴본다"
 category: blog
 tags: [linux, monitoring, monit]
