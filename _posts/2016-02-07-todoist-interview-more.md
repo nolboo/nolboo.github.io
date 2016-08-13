@@ -136,6 +136,7 @@ Todoist는 기록을 보니 2014년 4월에 접해서 본격적으로 사용한 
 * [당신을 위한 생산성 방법론 최종 가이드](https://blog.todoist.com/ko/2015/12/06/the-ultimate-guide-to-personal-productivity-methods/): 거의 모든 방법론을 설명
 * [체계주의(Systemist): 현대의 생산성 작업 흐름](https://blog.todoist.com/ko/2016/02/08/systemist-a-modern-productivity-workflow/): 투두이스트의 CEO의 방법론. 공통점이 많네요.
 * [A GTD Approach to Organizing and Reading Your Feeds](https://danielmiessler.com/blog/a-gtd-approach-to-organizing-and-reading-your-feeds/): RSS 피드를 GTD하는 법이다. 한발 더 나아가 내가 사용하는 [정보 습득과 소셜 공유 워크플로우](http://nolboo.github.io/blog/2016/01/09/how-to-share/)를 별도의 글로 적어놓았다.
+* [GTD Life ?!: 미실행 혹은 지연 대상의 조치](http://gtd4us.blogspot.kr/2016/08/review-gtd.html): 게으름은 사람의 문제가 아니라 일의 문제이다. 현명한(?) 이들은 충분히 지연할만한 일을 미루게 된다... 문제는 이러한 미실행 혹은 지연 대상의 일들이 GTD 시스템에서 평가 후 삭제되고 나서도 비슷한 내용으로 다시 수집되고 시스템 내에서 관리되는 일이 반복된다는 점이다.
 * [나에게 꼭 필요한 Todo앱의 조건](http://www.dev-diary.com/archives/2711)
 * [Redesigning My Productivity: The 1–2–3 To-Do List](https://medium.com/@arriane/the-simple-technique-to-make-you-more-productive-with-a-shorter-to-do-list-the-1-2-3-method-9c0e2919cee2#.lmhvbd32r)
 * [GTD에 엉망이었던 내가 '그럭저럭'으로 진화한 방법](https://blog.todoist.com/ko/2015/10/23/how-i-learned-to-suck-less-at-gtd/)

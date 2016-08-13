@@ -263,7 +263,8 @@ git push origin master // 깃허브로 푸시한다.
 * [어떻게 깃을 사용하는지 빠르게 알아봅시다](https://github.com/KennethanCeyer/tutorial-git)
 * [Git, 가장 쉽게 사용하기 - (1) 심플함이 답이다](http://blog.naver.com/PostView.nhn?blogId=tmondev&logNo=220759303637&redirect=Dlog), [Git, 가장 쉽게 사용하기 - (2) commit, branch 전략 잘 짜는 법](http://blog.naver.com/PostView.nhn?blogId=tmondev&logNo=220763012361&redirect=Dlog)
 * [Git을 이용한 협업 워크플로우 배우기](http://blog.appkr.kr/learn-n-think/comparing-workflows/)
-* [Pro Git][16]. 깃을 배우고 사용하는 법에 대한 오픈소스 북. 분량이 많지만, 기본을 배우기 위해서는 3장까지만 읽으면 된다.
+* [Pro Git 2][16]. 깃을 배우고 사용하는 법에 대한 오픈소스 북. 분량이 많지만, 기본을 배우기 위해서는 3장까지만 읽으면 된다.
+* [Git Magic](http://www-cs-students.stanford.edu/~blynn/gitmagic/intl/ko/)
 * [Try Git][17]. 코드스쿨과 깃허브가 팀을 짜서 이 속성 튜토리얼을 만들었다. 기본에 대해 좀 더 연습하길 원하면 도움이 될 것이다.
 * [GitHub Guides][18]. 비주얼 학습자라면 깃허브의 공식 유투브 채널에서 시간을 보낼만하다. 특히 [Git Basics][19] 네개의 시리즈에서 많은 것을 얻을 수 있다.
 * [Git Reference][20]. 명령어를 잊어버렸을 때는 용어 참조하기 좋은 사이트다.
@@ -291,7 +292,7 @@ git push origin master // 깃허브로 푸시한다.
    [13]: http://readwrite.com/files/Screen%20Shot%202013-09-25%20at%205.28.11%20PM.png
    [14]: http://readwrite.com/files/Screen%20Shot%202013-09-25%20at%205.36.22%20PM.png
    [15]: http://readwrite.com/files/Screen%20Shot%202013-09-25%20at%205.52.53%20PM.png
-   [16]: http://git-scm.com/book
+   [16]: https://git-scm.com/book/ko/v2
    [17]: http://www.codeschool.com/courses/try-git
    [18]: http://www.youtube.com/GitHubGuides
    [19]: http://www.youtube.com/watch?v=8oRjP8yj2Wo&amp;list=PLg7s6cbtAD165JTRsXh8ofwRw0PqUnkVH
