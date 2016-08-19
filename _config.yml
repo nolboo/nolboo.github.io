@@ -31,3 +31,14 @@ paginate_path: "/blog/page:num/"
 author:
   twitter: n0lb00
   github: nolboo
+
+# staticman:
+#   allowedFields: ['name', 'email', 'comment']
+#   branch: 'master'
+#   filename: ask{@timestamp}
+#   format: 'yaml'
+#   moderation: true
+#   path: _data/ask/{options.post-slug}
+#   requiredFields: ['name', 'comment']
+#   transforms:
+#     email: 'md5'
