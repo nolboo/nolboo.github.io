@@ -241,14 +241,15 @@ title: Blogging Like a Hacker
 기타 참고 사항
 --------------
 
--	<mark>[지킬 공식 사이트 한글 번역](http://svperstarz.github.io/jekyll-docs-ko/)</mark>
--	[지킬 테마 모음](http://jekyllthemes.org/)
--	Sass기반 지킬 블로그 테마: [머핀](http://www.richbray.me/muffin/)
--	지킬 기반 블로그 플랫폼
-	1.	[옥토프레스](http://octopress.org/) : 이 블로그는 여러 편의 때문에 옥토프레스로 먼저 만들어졌다. 설치방법은 [옥토프레스로 블로깅하기](http://j.mp/1b4M9AD) 참조.
-	2.	[지킬 부트스트랩](http://jekyllbootstrap.com/)
--	지킬을 깃허브에 적용할 때 아쉬운 점은 보안상의 문제로 플러그인을 사용할 수 없다는 것이다. 그러나 사이트를 아예 제너레이트한 다음 깃허브로 푸시하면 대부분 문제없이 사용할 수 있다. 다양한 플러그인은 [지킬 사이트](http://jekyllrb.com/docs/plugins/)와 [이곳](http://www.jekyll-plugins.com/)에서 볼 수 있다.
--	[놀부의 마크다운 사용법 - 무료 툴을 중심으로 한 워크플로우](http://nolboo.github.io/blog/2014/04/15/how-to-use-markdown/)
--	[완전 초보를 위한 깃허브](http://nolboo.github.io/blog/2013/10/06/github-for-beginner/)
--	[kakao 기술 블로그가 GitHub Pages로 간 까닭은](http://tech.kakao.com/2016/07/07/tech-blog-story/)
--    [HubPress | A web application to build your Blog on GitHub](http://hubpress.io/): AsciiDoc을 기반으로 쉽게 깃허브 블로그를 관리할 수 있다.
+- <mark>[지킬 공식 사이트 한글 번역](http://svperstarz.github.io/jekyll-docs-ko/)</mark>
+- [지킬 테마 모음](http://jekyllthemes.org/)
+- [Notepad: Notepad is a Jekyll theme which is very simple, clean and beautiful](https://github.com/hmfaysal/Notepad)   
+- Sass기반 지킬 블로그 테마: [머핀](http://www.richbray.me/muffin/)
+- 지킬 기반 블로그 플랫폼
+    1.	[옥토프레스](http://octopress.org/) : 이 블로그는 여러 편의 때문에 옥토프레스로 먼저 만들어졌다. 설치방법은 [옥토프레스로 블로깅하기](http://j.mp/1b4M9AD) 참조.
+    2.  [지킬 부트스트랩](http://jekyllbootstrap.com/)
+- 지킬을 깃허브에 적용할 때 아쉬운 점은 보안상의 문제로 플러그인을 사용할 수 없다는 것이다. 그러나 사이트를 아예 제너레이트한 다음 깃허브로 푸시하면 대부분 문제없이 사용할 수 있다. 다양한 플러그인은 [지킬 사이트](http://jekyllrb.com/docs/plugins/)와 [이곳](http://www.jekyll-plugins.com/)에서 볼 수 있다.
+- [놀부의 마크다운 사용법 - 무료 툴을 중심으로 한 워크플로우](http://nolboo.github.io/blog/2014/04/15/how-to-use-markdown/)
+- [완전 초보를 위한 깃허브](http://nolboo.github.io/blog/2013/10/06/github-for-beginner/)
+- [kakao 기술 블로그가 GitHub Pages로 간 까닭은](http://tech.kakao.com/2016/07/07/tech-blog-story/)
+- [HubPress | A web application to build your Blog on GitHub](http://hubpress.io/): AsciiDoc을 기반으로 쉽게 깃허브 블로그를 관리할 수 있다.
