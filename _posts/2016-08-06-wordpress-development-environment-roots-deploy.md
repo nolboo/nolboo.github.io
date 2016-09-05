@@ -330,7 +330,7 @@ ansible-playbook deploy.yml -e "site=roots.nolboo.kim env=production"
 - 원격 저장소에 푸시
 - Deploy
 
-위의 절차를 반복하면서 DevOps를 진행하면 된다. 후아~!:sweat:
+위의 절차를 반복하면서 DevOps를 진행하면 된다. 후아~! :sweat:
 
 ## 추가 링크
 
