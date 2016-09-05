@@ -8,7 +8,8 @@ tags: [markdown, wiki]
 
 <div id="toc"><p class="toc_title">목차</p></div>
 
-* [Markdoc 공식 사이트](http://markdoc.org/)
+* [Markdoc 사이트](http://markdoc.org/)
+* [Markdoc 저장소](https://github.com/zacharyvoase/markdoc) - 현재 상황: 포기.
 
 터미널에서
 

@@ -141,6 +141,10 @@ mas upgrade
 
 - [Mac CLI Simplifies Your Command Line So You Can Work Faster](http://www.makeuseof.com/tag/mac-cli-simplifies-command-line-can-work-faster/)
 
+## 관련 글 
+
+- [맥 설치와 환경 설정을 최대한 자동화하기](https://nolboo.kim/blog/2015/05/07/mac-setup/)
+
 ## 추가 링크
 
 - [Command Line Cheat Sheet](https://www.git-tower.com/blog/command-line-cheat-sheet/)
