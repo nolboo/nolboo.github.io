@@ -22,11 +22,11 @@ tags: [youtube, rss, feed, subscribe]
 * 우클릭하여 페이지 소스 보기를 선택한다.
 * `data-channel-external-id`을 검색하여 바로 다음에 오는 값을 찾아서 복사한다.(인용부호는 제외한다.)
 
-![채널 소스 보기](TED-YouTube-channel-src-view.jpg)
+![채널 소스 보기](image/TED-YouTube-channel-src-view.jpg)
 
 또는 채널 URL의 마지막 값을 복사한다.
 
-![](TED-YouTube-channel.jpg)
+![채널 URL](image/TED-YouTube-channel.jpg)
 
 * `https://www.youtube.com/feeds/videos.xml?channel_id=UCAuUUnT6oDeKwE6v1NGQxug`을 RSS 리더의 구독 url로 등록한다.
 
