@@ -372,6 +372,7 @@ wp wc product list
 - [Configuration - WP-CLI](http://wp-cli.org/config/)
 - [Built-in Commands - WP-CLI](http://wp-cli.org/commands/)
 - [Advanced WordPress Management With WP-CLI – Smashing Magazine](https://www.smashingmagazine.com/2015/09/wordpress-management-with-wp-cli/)****
+- [Command-Line WordPress](http://code.tutsplus.com/tutorials/command-line-wordpress--cms-25203): 백업, 멀티사이트
 - [Automated WordPress Installation With Bash & WP CLI](https://www.ltconsulting.co.uk/automated-wordpress-installation-with-bash-wp-cli/)
     + [joshsmith01/wp-install-script: Install WordPress and a customized version of FoundationPress for developing locally.](https://github.com/joshsmith01/wp-install-script)
     + [elimc/jumpstart-install-script: Simple bash script to automate installation of WordPress with jumpstart and some of my favorite settings.](https://github.com/elimc/jumpstart-install-script)
