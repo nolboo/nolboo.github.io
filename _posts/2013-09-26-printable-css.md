@@ -1,9 +1,10 @@
 ---
-
-layout: post title: "CSS로 웹사이트를 인쇄가능하게 만들기" description: "" category: blog
-
+layout: post
+title: "CSS로 웹사이트를 인쇄가능하게 만들기" 
+description: "웹페이지를 이쁘게 인쇄할 수 있도록 CSS를 코딩하는 방법을 번역"
+category: blog
 tags: [css, print]
-------------------
+---
 
 <div id="toc"><p class="toc_title">목차</p></div>
 

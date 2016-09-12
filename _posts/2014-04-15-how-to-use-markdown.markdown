@@ -130,7 +130,7 @@ javascript:void(prompt("","["+document.title+"]("+location.href+")"));
 
 ![nvALT 2](http://brettterpstra.com/uploads/2011/01/nvALT2.0Screenshot.jpg)
 
-nvALT 앱의 최상단에 있는 "search or create" 란(<kbd>⌘</kbd><kbd>L</kbd> 단축키로 이동)에서 빠른 검색이 가능하다. 노트 제목과 노트 내용에서 검색어를 찾을 수 없으면 검색어를 제목으로 하는 새로운 노트나 마크다운 문서를 만들 수 있다.(매우 편하고 강력한 UI이며, 가장 좋아하는 부분이다.) 노트 안에서의 검색은 <kbd>⌘</kbd><kbd>F</kbd>로 추가로 검색할 수 있고, <kbd>esc</kbd>키로 단계적으로 윗 단계로 벗어날 수 있다.
+nvALT 앱의 최상단에 있는 "search or create" 란(<kbd>⌘</kbd><kbd>L</kbd> 단축키로 이동)에서 빠른 검색이 가능하다. 노트 제목과 노트 내용에서 검색어를 찾을 수 없으면 검색어를 제목으로 하는 새로운 노트나 마크다운 문서를 만들 수 있다.(매우 편하고 강력한 UI이며, 가장 좋아하는 부분이다.) 노트 안에서의 검색은 같은 키워드라면 <kbd>⌘</kbd><kbd>G</kbd>로 이어서 검색할 수 있고, <kbd>⌘</kbd><kbd>F</kbd>로도 검색할 수 있다. <kbd>esc</kbd>키로 한 단계씩 윗 단계로 벗어날 수 있다.
 
 url을 복사한 후 <kbd>⌘</kbd><kbd>⇧</kbd><kbd>V</kbd> 단축키로 "search or create" 란에 붙여넣으면 해당 url의 웹페이지 내용을 자동으로 가져오는 기능도 있다. 같은 기능을 웹 브라우저에서 원클릭으로 할 수 있는 [북마클릿](http://jots.mypopescu.com/post/8529405944/nvalt-bookmarklet)도 준비되어 있다.
 
