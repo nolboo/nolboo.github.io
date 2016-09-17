@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "유용한 bash 명령어 101"
-description: "HaydenJames.io의 리눅스 명령어 101개"
+title: "유용한 bash 명령어 101+"
+description: "HaydenJames.io의 리눅스 명령어 101여개"
 category: blog
 tags: [linux, bash, command]
 ---
@@ -411,6 +411,12 @@ tags: [linux, bash, command]
 101. Display a tree of processes  
 
     `pstree`
+
+## 추가 명령어
+
+102. 현재 디렉토리 파일 개
+
+    `ls -1 | wc -l`
 
 ## 참고링크
 

@@ -72,7 +72,11 @@ mv /usr/local/bin/vimtutor /usr/local/bin/vimtutor8
 ln -s /usr/local/bin/vim8 /usr/local/bin/vi8
 </pre>
 
-이제 `vi8`, `vim8`, `vimdiff8`, `vimtutor8`로 버전 8을 실행할 수 있다. 복구 모드로 들어가는 방법과 이 방법 중 어느 것이 좋을지는 아직 모르겠다. 짧게나마 정리하는 목적이기도 하다. :smile:
+이제 `vi8`, `vim8`, `vimdiff8`, `vimtutor8`로 버전 8을 실행할 수 있다. 복구 모드로 들어가는 방법과 이 방법 중 어느 것이 좋을지는 아직 모르겠다. 짧게나마 정리하는 목적이기도 하다.
+
+### 패스 변경
+
+$PATH 경로 값에서 `/usr/bin/local`을 `/usr/bin`보다 앞에 위치하도록 변경하는 방법도 좋을 것 같다. 어찌보면 제일 간단한 방법인데 처음 이 포스트를 올렸을 때는 왠지 꺼림칙하였는데 트친인 [기계인간 (@John_Grib)](https://twitter.com/John_Grib)님이 자신은 그렇게 사용하고 있다고 하여 생각해보니 그게 애플의 루트리스 보안체계에도 적합한 것 같다. 사용자 추가/변경 내용이 시스템에 override되니 합리적인 것 같아서 최종적으로 경로값을 변경하였다. 혹시 나중에 문제가 생기면 그 때 업데이트하겠다. ::smile:: 
 
 ## 참고링크
 
