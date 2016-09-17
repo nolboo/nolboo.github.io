@@ -35,7 +35,7 @@ tags: [markdown, workflow, blog, wiki, email]
 ### 단점
 
 1. **표준의 부재:**
-존 그루버가 10년 전 [기본 문법](http://daringfireball.net/projects/markdown/)([번역](http://nolboo.github.io/blog/2013/09/07/john-gruber-markdown/))을 제안한 이후로 손 놓고 있다. [스택오버 플로우의 공동 창업자 제프 앳우드가 존 그루버의 관심을 호소](http://blog.codinghorror.com/responsible-open-source-code-parenting/)하기도 하였지만 별무소식인 것 같다. 이러한 것을 보완하려고 [Markdown Extra](http://michelf.ca/projects/php-markdown/extra/))([번역](http://nolboo.github.io/blog/2014/03/25/php-markdown-extra/)), [GitHub Flavored Markdown(GFM)](https://help.github.com/articles/github-flavored-markdown)([번역](http://nolboo.github.io/blog/2014/03/25/github-flavored-markdown/)), [MultiMarkdown](http://fletcherpenney.net/multimarkdown/) 등이 나왔으나 문법이 서로 다른 부분이 조금 있다. 때로는 구현하는 서비스나 앱에서 조차도 보완 부분에 대해서는 제각각인 경우가 많다. 그러나 기본 문법과 많이 쓰이는 확장 문법은 대부분 동일하게 구현하니 일반적인 사용에는 그리 큰 문제가 없다.
+존 그루버가 10년 전 [기본 문법](http://daringfireball.net/projects/markdown/)([번역](http://nolboo.github.io/blog/2013/09/07/john-gruber-markdown/))을 제안한 이후로 손 놓고 있다. [스택오버 플로우의 공동 창업자 제프 앳우드가 존 그루버의 관심을 호소](http://blog.codinghorror.com/responsible-open-source-code-parenting/)하기도 하였지만 별무소식인 것 같다. 이러한 것을 보완하려고 [Markdown Extra](http://michelf.ca/projects/php-markdown/extra/)([번역](http://nolboo.github.io/blog/2014/03/25/php-markdown-extra/)), [GitHub Flavored Markdown(GFM)](https://help.github.com/articles/github-flavored-markdown)([번역](http://nolboo.github.io/blog/2014/03/25/github-flavored-markdown/)), [MultiMarkdown](http://fletcherpenney.net/multimarkdown/) 등이 나왔으나 문법이 서로 다른 부분이 조금 있다. 때로는 구현하는 서비스나 앱에서 조차도 보완 부분에 대해서는 제각각인 경우가 많다. 그러나 기본 문법과 많이 쓰이는 확장 문법은 대부분 동일하게 구현하니 일반적인 사용에는 그리 큰 문제가 없다.
 
 2. **실시간 뷰어가 대체로 느리다:** 
 마크다운이 익숙하지 않는 초기에는 뷰어에서 실시간 확인하면서 작업하고 싶은 경우가 많다. 그러나 어느 정도 익숙해지면 실시간 뷰어가 그리 필요치 않다.
@@ -60,13 +60,13 @@ tags: [markdown, workflow, blog, wiki, email]
 
 ## 데스크탑 환경
 
-맥북에어에서 주로 글을 쓰기 때문에 맥용 앱을 고르는 것에 신경을 많이 썼고, 지금도 지속적으로 모니터링을 하고 있다. 여기서는 주로 사용하는 서브라임 텍스트 3와 플러그인들, 심플노트와 NVAlt 2, 그 외 때때로 사용하는 에디터와 유틸리티를 설명한다.
+맥에서 주로 글을 쓰기 때문에 맥용 앱을 고르는 것에 신경을 많이 썼고, 지금도 지속적으로 모니터링을 하고 있다. 여기서는 주로 사용하는 서브라임 텍스트 3와 플러그인들, 심플노트와 NVAlt 2, 그 외 때때로 사용하는 에디터와 유틸리티를 설명한다.
 
 ### 서브라임 텍스트 3와 플러그인들
 
 #### Sublime Text
 
-[서브라임 텍스트 3(ST3)](http://www.sublimetext.com/)는 빠른 속도와 수많은 플러그인 등의 장점으로 프로그래밍 에디터로 많이 사용하지만, 마크다운 에디터로서도 손색이 없어서 내가 글을 쓸 때 가장 애용하는 도구이다. 커다란 마크다운 파일을 다룰 때에도 거의 느려지지 않고 ST3가 가진 강력한 속도를 그대로 누릴 수 있다. 또한, 문서 검색이나 디렉터리(서브 디렉터리를 포함) 내에서의 검색 기능(<kbd>⌘</kbd>+<kbd>⇧</kbd>+<kbd>F</kbd>)도 강력해서 많은 양의 마크다운 문서 중에서 내가 원하는 것을 빠르게 찾을 수 있다.
+[서브라임 텍스트 3(ST3)](http://www.sublimetext.com/)는 빠른 속도와 수많은 플러그인 등의 장점으로 프로그래밍 에디터로 많이 사용하지만, 마크다운 에디터로서도 손색이 없어서 글을 쓸 때 가장 애용하는 도구이다. 커다란 마크다운 파일을 다룰 때에도 거의 느려지지 않고 ST3가 가진 강력한 속도를 그대로 누릴 수 있다. 또한, 문서 검색이나 디렉터리(서브 디렉터리를 포함) 내에서의 검색 기능(<kbd>⌘</kbd>+<kbd>⇧</kbd>+<kbd>F</kbd>)도 강력해서 많은 양의 마크다운 문서 중에서 내가 원하는 것을 빠르게 찾을 수 있다.
 
 ST3 자체의 속도와 검색 외에도 플러그인으로 여러 가지 기능을 추가할 수 있다. 주요 플러그인을 살펴보자.
 
@@ -122,9 +122,9 @@ javascript:void(prompt("","["+document.title+"]("+location.href+")"));
 >
 > 위와 같은 환경을 구축하면 용량이 큰 마크다운 파일도 빠르고 직관적으로 다룰 수 있게 된다. 한 가지 단점은 서브라임 텍스트 3에서 한글 오토마타를 완벽하게 지원하지 않기 때문에 가끔 입력 중인 글자를 먹어버리고 다른 곳에서 입력을 시작하면 그곳에다 먹어버린 글자를 풀어놓는다. 이 점을 보완하기 위해서는 입력한 글자가 문장의 마지막이라면 마침표를 찍고, 그렇지 않을 때에는 화살표 키로 움직여서 입력완료를 ST3에 알려줘야 한다. 현재로선 주의해서 사용하는 수밖에;;
 
-### nvALT 2 와 심플노트
+### nvALT 2 ~~와 심플노트~~
 
-[nvALT 2](http://brettterpstra.com/projects/nvalt/)는 가볍고 빨라서 노트 앱 중에서 가장 자주 사용하는 맥앱이며, 여러 가지 정보를 저장해두거나 글을 쓰기 시작하는 출발점이다. 파일이 수천 라인을 넘어가면 버벅대기 시작하지만 그럴 때는 외부 에디터로 설정한 서브라임 텍스트 3를 불러(<kbd>⌘</kbd><kbd>⇧</kbd><kbd>E</kbd>) 글쓰기를 이어간다. ~~심플노트로 동기화하도록 설정하면 백업이나 버전 관리도 같이 활용할 수 있다.~~ 심플노트와 드랍박스는 충돌이 많다. 때로 동기화가 무한으로 돌기도 하고 심지어 파일을 삭제하기도 한다. 드랍박스로 동기화하고 심플노트와의 동기화는 꺼놓는 것이 좋을 것 같다.
+[nvALT 2](http://brettterpstra.com/projects/nvalt/)는 가볍고 빨라서 노트 앱 중에서 가장 자주 사용하는 맥앱이며, 여러 가지 정보를 저장해두거나 글을 쓰기 시작하는 출발점이다. 파일이 수천 라인을 넘어가면 버벅대기 시작하지만 그럴 때는 외부 에디터로 설정한 서브라임 텍스트 3를 불러(<kbd>⌘</kbd><kbd>⇧</kbd><kbd>E</kbd>) 글쓰기를 이어간다. ~~심플노트로 동기화하도록 설정하면 백업이나 버전 관리도 같이 활용할 수 있다.~~ <mark>심플노트와 드랍박스는 충돌이 많다. 때로 동기화가 무한으로 돌기도 하고 심지어 파일을 삭제하기도 한다. 그래서 한참 동안 사용하지 않다가 2016년 9월에 심플노트가 오픈소스가 된 후 다시 한번 동기화를 며칠 동안 했더니 500개의 파일에서 180개만 남는 참사가 벌어졌다. 워낙 많은 파일이라 드랍박스에서 일일이 복원하기도 힘들다. 만약 git 저장소에 백업하지 않았다면 정말 큰 참사가 될 뻔했다. 이제는 드랍박스로만 동기화하고 git으로만 백업한다. 심플노트와는 완전히 결별하였다!</mark>
 
 [Simplenote](http://simplenote.com/)는 [작년에 워드프레스에 인수된](http://techcrunch.com/2013/01/24/wordpress-simperium-simplenote/) 서비스이며, [Simperium](http://simperium.com/)이라는 독자적인 데이터 레이어를 기반으로 하고 있다. 필자는 느려터진 에버노트 - 많이 개선되었지만, 아직도 느리다고 생각해서 웹페이지 저장용으로만 사용한다 *[2015년 9월에는 곧 망하는 유니콘이라는 글도 올라온다](https://syrah.co/joshdickson40/55e1beac15970d6c01395d9d)* -  대신 심플노트를 윈도 시절부터 사용해 왔고, 맥으로 넘어와서도 심플노트를 사용하기 위해 제일 먼저 찾은 것이 nvALT이다.
 
@@ -167,9 +167,9 @@ ST3와 [Bitbucket](https://bitbucket.org)을 이용하여 *마크다운 문법�
 
 ## 모바일
 
-마크다운은 키보드만으로도 구조적인 문서를 작성할 수 있어서 모바일 친화적이고 각종 유무료앱이 많이 나와있다. 그 중 필자가 이용하는 앱은 [Nocs](https://itunes.apple.com/app/nocs-text-editor-dropbox-markdown/id396073482?mt=8)이다. 마크다운 프리뷰도 되고 드랍박스를 지원하기 때문에 현재로선 마크다운 문서를 다루기에 부족함이 없다. 
+마크다운은 키보드만으로도 구조적인 문서를 작성할 수 있어서 모바일 친화적이고 각종 유무료앱이 많이 나와있다. 그 중 필자가 이용하는 앱은 [Nocs](https://itunes.apple.com/app/nocs-text-editor-dropbox-markdown/id396073482?mt=8)이다. 마크다운 프리뷰도 되고 드랍박스를 지원하기 때문에 현재로선 마크다운 문서를 다루기에 부족함이 없다. 유료앱으론 [Nebulous Notes](https://itunes.apple.com/app/nebulous-notes/id375006422?mt=8)를 사용하고 있다. 2016년9월 현재 1불로 할인 중인데 만족스럽다.
 
-마크다운을 지원하지 않지만 [심플노트](http://simplenote.com/)도 가끔 사용한다. 심플노트는 안드로이드와 킨들도 지원한다.
+~~마크다운을 지원하지 않지만 [심플노트](http://simplenote.com/)도 가끔 사용한다. 심플노트는 안드로이드와 킨들도 지원한다.~~
 
 *필자는 안드로이드 기기는 충분히 써보지 못했기 때문에 plain text와 드랍박스를 지원하는 유무료 앱을 독자가 직접 선택해보는 것도 좋을 것 같다.*
 
