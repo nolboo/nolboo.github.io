@@ -10,7 +10,7 @@ tags: [editor, vim, visual, text, block, export, import]
 
 ## Visual Mode(선택 모드)
 
-Vim에는 일반 모드(normal mode), 입력 모드(Insert Mode), 명령 모드(command-line mode)가 있다. 입력 모드에는 블록 모드라고도 불리는 비주얼 모드가 있다. 일반 모드에서 <kdb>v</kdb>(characterwise-visual), <kdb>V</kdb>(linewise-visual), <kdb>Ctrl-v</kdb>(blockwise-visual) 키로 각각 진입할 수 있다.
+Vim에는 일반 모드(normal mode), 입력 모드(Insert Mode), 명령 모드(command-line mode)가 있다. 입력 모드에는 블록 모드라고도 불리는 비주얼 모드가 있다. 일반 모드에서 <kbd>v</kbd>(characterwise-visual), <kbd>V</kbd>(linewise-visual), <kbd>Ctrl-v</kbd>(blockwise-visual) 키로 각각 진입할 수 있다.
 
 ## 텍스트 블록을 복사하여 파일로 저장
 
@@ -51,14 +51,14 @@ Vim에는 일반 모드(normal mode), 입력 모드(Insert Mode), 명령 모드(
 
 ## 리스트 만들기
 
-비주얼 모드 중 <kdb>Ctrl-v</kdb>로 진입하는 blockwise-visual 모드는 여러 행에 걸쳐서 같은 문자를 입력할 때 유용하다. 
+비주얼 모드 중 <kbd>Ctrl-v</kbd>로 진입하는 blockwise-visual 모드는 여러 행에 걸쳐서 같은 문자를 입력할 때 유용하다. 
 
 - 마크다운 리스트로 만들기 원하는 여러 줄을 줄의 처음에 커서를 위치한다.
-- <kdb>Ctrl-V</kdb>로 진입한다.
+- <kbd>Ctrl-V</kbd>로 진입한다.
 - 블록을 컬럼으로 선택한다. 줄의 한두글자만 선택해도 되고, 아래로 원하는 행까지 선택한다.
-- <kdb>I</kdb>를 누른다. 선택한 칼럼 블록의 첫 번째 위치에 커서가 위치하며, 커서 모양이 바뀐다.
-- 선택된 <kdb>*</kdb>와 <kdb>space</kdb>를 눌러 마크다운 리스트 문법을 첫째 줄에 적용한다.
-- <kdb>esc</kdb>를 눌러서 일반모드로 변경하면 선택한 줄 모두에 적용되는 것을 볼 수 있다.
+- <kbd>I</kbd>를 누른다. 선택한 칼럼 블록의 첫 번째 위치에 커서가 위치하며, 커서 모양이 바뀐다.
+- 선택된 <kbd>*</kbd>와 <kbd>space</kbd>를 눌러 마크다운 리스트 문법을 첫째 줄에 적용한다.
+- <kbd>esc</kbd>를 눌러서 일반모드로 변경하면 선택한 줄 모두에 적용되는 것을 볼 수 있다.
 
 > [참고 링크](http://stackoverflow.com/a/14925973)
 
