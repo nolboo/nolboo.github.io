@@ -137,6 +137,19 @@ mas upgrade
 
 만약 계정을 변경해야 한다면 `signout`과 `signin` 옵션으로 계정을 변경한 후에 `upgrade` 옵션으로 실행하면 된다. `mas list`로 앱스토어에서 맥에 설치한 목록을 볼 수 있으며, 이 순서대로 업데이트되므로 계정을 몇 번 변경해야 할 수도 있다. 그러나 앱스토어에서 변경하는 것보단 아주 편리하다.
 
+### 시에라 설치
+
+MacOS Sierra를 설치하는 것은 처음 설치하는 것이므로 upgrade 명령으론 설치할 수 없다. 이럴 때에는 먼저 검색을 한다음 앱 아이디를 얻음 다음 설치하면 된다.
+
+```shell
+mas search sierra
+1127487414 macOS Sierra
+
+mas install 1127487414
+==> Downloading macOS Sierra
+##---------------------------------------------------------- 3.0% Downloading
+```
+
 ## 참고 링크
 
 - [Mac CLI Simplifies Your Command Line So You Can Work Faster](http://www.makeuseof.com/tag/mac-cli-simplifies-command-line-can-work-faster/)
@@ -153,3 +166,4 @@ mas upgrade
 - [API Reference: Mac OS X Manual Pages](https://developer.apple.com/legacy/library/documentation/Darwin/Reference/ManPages/index.html)
 - [explainshell.com - match command-line arguments to their help text](http://explainshell.com/)
 - [How to Quickly Resize Multiple Photos in Mac OS X Using a Terminal Command](http://petapixel.com/2012/11/21/how-to-quickly-resize-multiple-photos-on-a-mac-using-a-terminal-command/)
+
