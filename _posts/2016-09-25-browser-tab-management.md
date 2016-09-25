@@ -25,7 +25,7 @@ tags: [browser, extension, bookmarklet]
 ## 클라우드 서비스 
 
 - [Pocket - Chrome 웹 스토어](https://chrome.google.com/webstore/detail/save-to-pocket/niloccemoadcdkdjlinkgdfekeahmflj?hl=ko) : 유튜브와 비메오 등의 동영상 저장용, 모바일 앱은 많은 용량을 차지하기 때문에 URL을 홈 화면에 저장하여 사용한다.
-- [Evernote Web Clipper | Evernote](https://evernote.com/intl/ko/webclipper/): 웹페이지와 pdf 저장
+- [Evernote Web Clippe](https://evernote.com/intl/ko/webclipper/): 웹페이지와 pdf 저장
 - [Todoist](https://chrome.google.com/webstore/detail/todoist-to-do-list-and-ta/jldhpllghnbhlbpcmnajkpdmadaolakh): [Todoist for Gmail](https://chrome.google.com/webstore/detail/todoist-for-gmail/clgenfnodoocmhnlnpknojdbjjnmecff)과 함께 할일에 포함할 URL 저장
 
 ## 크롬 브라우저 보강
