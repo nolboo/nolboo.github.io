@@ -68,7 +68,7 @@ tags: [browser, extension, bookmarklet]
 
 ![포맷](https://c4.staticflickr.com/9/8176/29912628675_182a00ab89_z.jpg)
 
-마크다운이 아닌 텍스트 형식으로 간단히 복사하고 여러 창을 한 번에 여는 것이 맞는 분은 [Tab Copy/Paste](https://chrome.google.com/webstore/detail/tab-copypaste/nbfccmdfpollpgjnbghmnkmgimliookh)를 추천한다.
+> 마크다운이 아닌 텍스트 형식으로 간단히 복사하고 여러 창을 한 번에 여는 것이 맞는 분은 [Tab Copy/Paste](https://chrome.google.com/webstore/detail/tab-copypaste/nbfccmdfpollpgjnbghmnkmgimliookh)를 추천한다.
 
 ### Open URL 단축키
 
