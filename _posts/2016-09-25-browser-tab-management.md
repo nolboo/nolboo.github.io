@@ -6,13 +6,13 @@ category: blog
 tags: [browser, extension, bookmarklet]
 ---
 
-웹에서 리서치하거나 무엇인가를 읽을 때 웹의 특성상 브라우저 탭을 여러 개 열게 마련이다. 예전에 책상에 여러 개의 책을 펼쳐 놓고 서로 참조해가면서 작업을 하던 것이 생각나는 장면인데, 링크가 많고 제한이 별로 없는 웹브라우저의 특성상 더 많은 탭을 열게 된다. 30, 40개 이상 열어놓는 경우가 많은데 시스템이 버벅대기 시작하고 너무 많은 탭을 정리해야겠다는 생각이 든다.
+웹에서 리서치하거나 무엇인가를 읽을 때 웹의 특성상 브라우저 탭을 여러 개 열게 마련이다. 예전에 책상에 여러 개의 책을 펼쳐 놓고 서로 참조해가면서 작업을 하던 것이 생각나는 장면인데, 링크가 많고 제한이 별로 없는 웹브라우저의 특성상 더 많은 탭을 열게 된다. 30, 40개 이상 열어놓는 경우가 많은데 시스템이 버벅대기 시작하고 탭을 정리해야겠다는 생각이 든다.
 
 여러 브라우저를 동시에 지원하는 확장도 많으나 동작이나 메모리 관리가 다른 때도 있다. 또한, [애용하는 웹브라우저 확장과 북마클릿](https://nolboo.kim/blog/2015/05/02/browser-extension-bookmarklet/)에서 파이어폭스 위주로 정리한 적이 있는데 지금은 크롬을 주로 사용하고 있으므로 이 글에서는 크롬 브라우저 확장을 중심으로 소개한다.
 
 ## Onetab
 
-[OneTab](https://chrome.google.com/webstore/detail/onetab/chphlpgkkbolifaimnlloiipkdnihall?hl=ko)은 현재 열려있는 탭을 하나의 목록으로 만들어 준다. 필요할 때 그 목록에서 전체를 복원하거나 하나씩 선택적으로 복원할 수 있어 일종의 로컬 북마크 기능을 대신 할 수 있다. 많은 탭을 하나의 페이지로 관리할 수 있어 크롬 메모리의 최대 95%를 절감한다고 주장하는데, 페이지의 전체 목록이 삼사천 개를 넘으면 크롬의 속도에 영향을 미쳐 목록을 정리해야만 한다.(응? 게으른 놀부=3=3=3) 아! 2,3년간 써왔는데 딱 한 번 오천 개 정도가 지워진 경우가 있어 속도에 영향을 미칠 정도로 쌓이면 이제는 꼭 정리한다.(게으름 방지 기능?)
+[OneTab](https://chrome.google.com/webstore/detail/onetab/chphlpgkkbolifaimnlloiipkdnihall?hl=ko)은 현재 열려있는 탭을 하나의 목록으로 만들어 준다. 필요할 때 그 목록에서 전체를 복원하거나 하나씩 선택적으로 복원할 수 있어 로컬 북마크 기능을 대신 할 수 있다. 많은 탭을 하나의 페이지로 관리할 수 있어 크롬 메모리의 최대 95%를 절감한다고 주장하는데, 페이지의 전체 목록이 삼사천 개를 넘으면 크롬의 속도에 영향을 미쳐 목록을 정리해야만 한다.(응? 게으른 놀부=3=3=3) 아! 2,3년간 써왔는데 딱 한 번 오천 개 정도가 지워진 경우가 있어 속도에 영향을 미칠 정도로 쌓이면 이제는 꼭 정리한다.(게으름 방지 기능?)
 
 목록에 이름도 지정할 수 있어 나중에 필요한 탭을 특정 목록에 바로 넣을 수 있다. 그런데 서브 메뉴의 서브 메뉴로 있어 조금 귀찮다.
 
@@ -24,8 +24,8 @@ tags: [browser, extension, bookmarklet]
 
 ## 클라우드 서비스 
 
-- [Pocket - Chrome 웹 스토어](https://chrome.google.com/webstore/detail/save-to-pocket/niloccemoadcdkdjlinkgdfekeahmflj?hl=ko) : 유튜브와 비메오 등의 동영상 저장용, 모바일 앱은 많은 용량을 차지하기 때문에 URL을 홈 화면에 저장하여 사용한다.
-- [Evernote Web Clippe](https://evernote.com/intl/ko/webclipper/): 웹페이지와 pdf 저장
+- [Pocket](https://chrome.google.com/webstore/detail/save-to-pocket/niloccemoadcdkdjlinkgdfekeahmflj?hl=ko) : 유튜브와 비메오 등의 동영상 저장용, 모바일 앱은 많은 용량을 차지하기 때문에 URL을 홈 화면에 저장하여 사용한다.
+- [Evernote Web Clipper](https://evernote.com/intl/ko/webclipper/): 웹페이지와 pdf 저장
 - [Todoist](https://chrome.google.com/webstore/detail/todoist-to-do-list-and-ta/jldhpllghnbhlbpcmnajkpdmadaolakh): [Todoist for Gmail](https://chrome.google.com/webstore/detail/todoist-for-gmail/clgenfnodoocmhnlnpknojdbjjnmecff)과 함께 할일에 포함할 URL 저장
 
 ## 크롬 브라우저 보강
@@ -76,9 +76,9 @@ tags: [browser, extension, bookmarklet]
 
 ![서비스 단축키 지정](https://c4.staticflickr.com/9/8558/29828478051_1e0f687ce7_c.jpg)
 
-위와 같이 <kbd>Ctrl</kbd><kbd>Opt</kbd><kbd>Cmd</kbd><kbd>o</kbd>로 지정하면(취향에 따라 선택할 수 있다) 여러 마크다운 링크를 선택한 후 하나의 단축키로 여러 url을 기본 웹브라우저로 열 수 있다. 
+위와 같이 <kbd>Ctrl</kbd>+<kbd>Opt</kbd>+<kbd>Cmd</kbd>+<kbd>o</kbd>로 지정하면(취향에 따라 선택할 수 있다) 여러 마크다운 링크를 선택한 후 하나의 단축키로 여러 url을 기본 웹브라우저로 열 수 있다. 
 
-OneTab으로 탭 관리를 할 때 부족한 것 중 하나가 계층적인 탭 관리인데 마크다운으로 관리하면 그냥 들여쓰기만 하면 된다는 것이 추가적인 장점이다.
+OneTab으로 탭 관리를 할 때 부족한 것 중 하나가 계층적인 탭 관리와 여러 링크 복원인데 마크다운으로 관리하면 그냥 들여쓰기만 하면 된다는 것과 블록을 마음대로 선택할 수 있는 것이 추가적인 장점이다.
 
 > Open URL 서비스를 사용할 수 없는 상황이 있는데 터미널 기반으로 Vim을 사용할 때이다. MacVim GUI 모드에서는 잘 동작한다. 
 
