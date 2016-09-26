@@ -80,6 +80,11 @@ tags: [browser, extension, bookmarklet]
 
 OneTab으로 탭 관리를 할 때 부족한 것 중 하나가 계층적인 탭 관리와 여러 링크 복원인데 마크다운으로 관리하면 그냥 들여쓰기만 하면 된다는 것과 블록을 마음대로 선택할 수 있는 것이 추가적인 장점이다.
 
-> Open URL 서비스를 사용할 수 없는 상황이 있는데 터미널 기반으로 Vim을 사용할 때이다. MacVim GUI 모드에서는 잘 동작한다. 
+> Open URL 서비스를 사용할 수 없는 상황이 있는데 터미널 기반으로 Vim을 사용할 때이다. MacVim GUI 모드에서는 잘 동작한다.
 
+#### MacVim
 
+Vim 버전 7.4 이상이면 일반모드에서 gx키로 커서 위치의 줄에서 링크를 웹브라우저로 열 수 있다. 관련 플러그인도 있다.
+
+- [clickable.vim: Make things clickable](https://github.com/Rykka/clickable.vim)
+- [henrik/vim-open-url: Opens URLs on the current line in your OS X default browser.](https://github.com/henrik/vim-open-url): gx보다 줄의 링크가 아무데나 있어도, 한 줄의 여러 링크를 열 수 있다.
