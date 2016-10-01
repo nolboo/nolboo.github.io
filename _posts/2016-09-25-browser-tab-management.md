@@ -86,5 +86,5 @@ OneTab으로 탭 관리를 할 때 부족한 것 중 하나가 계층적인 탭 
 
 Vim 버전 7.4 이상이면 일반모드에서 gx키로 커서 위치의 줄에서 링크를 웹브라우저로 열 수 있다. 관련 플러그인도 있다.
 
-- [clickable.vim: Make things clickable](https://github.com/Rykka/clickable.vim)
+- [clickable.vim: Make things clickable](https://github.com/Rykka/clickable.vim): 이게 짱이다. 더블클릭이나 엔터로 링크, 파일 모두 열 수 있다.
 - [henrik/vim-open-url: Opens URLs on the current line in your OS X default browser.](https://github.com/henrik/vim-open-url): gx보다 줄의 링크가 아무데나 있어도, 한 줄의 여러 링크를 열 수 있다.
