@@ -94,6 +94,8 @@ tags: [information, news, workflow, share]
 
 이메일과 트위터 follow 리스트를 가장 먼저 본 다음에 그냥 흐름만 파악하면서 오늘 꼭 읽어야 할 것을 [Todoist](https://chrome.google.com/webstore/detail/todoist-to-do-list-and-ta/jldhpllghnbhlbpcmnajkpdmadaolakh?hl=ko) 할일로 만들고, 나머진 [Pocket](https://chrome.google.com/webstore/detail/save-to-pocket/niloccemoadcdkdjlinkgdfekeahmflj)이나 [OneTab](https://chrome.google.com/webstore/detail/onetab/chphlpgkkbolifaimnlloiipkdnihall) 확장으로 때려 넣는다. Pocket은 반응이 느려서 주로 비디오만 넣는다.
 
+> [북마크를 대신하는 브라우저 탭 관리 확장과 워크플로우](https://nolboo.kim/blog/2016/09/25/browser-tab-management/)과 같이 원탭보다는 마크다운 문서로 북마크를 관리하는 방법으로 변경하였다.
+
 나중에 시간이 나면 때려 넣은 것을 보던지 나머지 리스트와 이메일, RSS 리더, 애그리게이션 순으로 살펴본다. 가끔 이 리딩 워크플로우을 어기면 하루를 망칠 수도 있기 때문에 최근엔 소셜 리딩과 공유를 줄이고 시간이 남을 때만 훑어본다. 
 
 공유할 때는 [Hootsuite](https://hootsuite.com/)을 이용하여 한번에 트위터, 페이스북, 페이스북 페이지로 공유한다. 도배가 되지 않도록 예약 시간을 지정해서 여러 개를 예약한다. 그리곤 신경 끈다.

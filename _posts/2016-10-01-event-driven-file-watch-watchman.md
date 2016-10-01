@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "cron 보다 이벤트 드리븐 파일 와치 Watchman"
+title: "cron 보단 이벤트 드리븐 파일 와치 Watchman"
 description: "타임 드리븐 방식의 cron보다 이벤트 드리븐 파일 와치인 페이스북의 Watchman을 사용하는 방법"
 category: blog
-tags: [cron, event-driven, file-watch, watchman]
+tags: [cron, event-driven, file-watch, watchman, wiki]
 ---
 
 [마크다운 파일로 위키를 관리](https://nolboo.kim/blog/2013/12/17/markdown-wiki-bitbucket-gollum/)하다 보니 깃푸시를 자주해야 하는데 그렇지 못했다. 얼마 전에 심플노트가 오픈소스로 공개하여 다시 심플노트 동기화를 켰더니 크기가 큰 파일 위주로 300여 개의 파일을 삭제하는 [참사](https://nolboo.kim/blog/2014/04/15/how-to-use-markdown/#nvalt-2--)를 당했다. 다행히 동기화를 하기 며칠 전 기존 위키 서비스를 검토하는 과정에서 저장소로 푸시한 것이 있어 거의 복구했다. 다시 되풀이하지 않기 위해서 푸시를 자동화하는 것을 고려했다.

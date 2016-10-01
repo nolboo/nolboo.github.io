@@ -12,6 +12,7 @@ tags: [browser, extension, bookmarklet]
 
 ## 브라우저 확장(일단 파이어폭스 한정)
 
+* [TabCopy](https://chrome.google.com/webstore/detail/tabcopy/micdllihgoppmejpecmkilggmaagfdmb) : 여러 탭을 마크다운 링크로 변환. 여러 형식을 지원하며 커스텀 형식도 지정할 수 있다.
 * [OneTab](https://addons.mozilla.org/ko/firefox/addon/onetab/) : 여러 탭을 하나의 탭 안에 북마크시켜준다. 물론 원클릭으로 100여개의 탭을 죽여버린 적도 많은데 시간이 좀 걸린다. 크롬에도 [OneTab](https://chrome.google.com/webstore/detail/onetab/chphlpgkkbolifaimnlloiipkdnihall)이 있다. 예전에는 [Tab Grenade](https://github.com/sergi/tabgrenade)를 주로 사용하였다.
 * [Todoist: To-Do list and Task Manager](https://addons.mozilla.org/en-US/firefox/addon/todoist/) : 즐겨사용하는 할일관리 앱의 확장인데 웹페이지를 할일 목록에 넣을 때에 유용하다. [지메일용 Todoist](https://todoist.com/gmail)도 같이 설치하여 메일을 할일 목록에 넣을 때 사용한다.
 * [Wikiwand](http://www.wikiwand.com/) : 못생긴 위키피디아 페이지를 이쁘게 보여준다.
@@ -33,6 +34,8 @@ line-height: 1.5em;
 ```
 
 * [uBlock](https://chrismatic.io/ublock/) : 최소의 광고차단 확장이다.
+* [Bookmark Manager](https://chrome.google.com/webstore/detail/bookmark-manager/gmlllbghnfkpflemihljekbapjopfjik) : 북마크 관리자 향상
+* [Better History](https://chrome.google.com/webstore/detail/better-history/obciceimmggglbmelaidpjlmodcebijb) : 히스토리 향상
 
 ## 북마클릿
 
