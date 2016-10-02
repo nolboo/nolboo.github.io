@@ -105,10 +105,9 @@ watchman -- trigger ~/Dropbox/synapse sync *.md -- ~/Dropbox/synapse/sync.sh
 }
 ```
 
-트리거 와치를 재시작한다.
+트리거를 replace한다.
 
 ```shell
-watchman trigger-del ~/Dropbox/synapse sync
 watchman -- trigger ~/Dropbox/synapse sync -- ~/Dropbox/synapse/sync.sh
 ```
 
