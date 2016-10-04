@@ -114,6 +114,7 @@ pull 요청만이 공헌할 수 있는 유일한 방법이라고 생각하지 �
 
 ## 볼만한 링크
 
+* [오픈소스 git 프로젝트에 Pull Request 보내기 | Popit](http://www.popit.kr/%ec%98%a4%ed%94%88%ec%86%8c%ec%8a%a4-git-%ed%94%84%eb%a1%9c%ec%a0%9d%ed%8a%b8-pull-request-%eb%b3%b4%eb%82%b4%ea%b8%b0/)
 * [GitHub로 남의 프로젝트에 감놓고 배놓기](http://dogfeet.github.io/articles/2012/how-to-github.html)
 * [Git을 이용한 협업 워크플로우 배우기](http://blog.appkr.kr/learn-n-think/comparing-workflows/)
 * [Git flow, GitHub flow, GitLab flow](http://ujuc.github.io/2015/12/16/git-flow-github-flow-gitlab-flow/)
