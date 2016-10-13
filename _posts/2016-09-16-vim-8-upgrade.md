@@ -55,7 +55,7 @@ VIM - Vi IMproved 7.3 (2010 Aug 15, compiled Jun 14 2016 16:06:49)
 mercurial을 먼저 설치하지 않으면 Vim 패키지를 찾지도 못한다. 그러나, 이 방법으로 설치해도 버전 8이 설치되지 않았다.
 
 >   아래의 절차를 거치지 않고도 `-v` 옵션을 이용하면 MacVim을 터미널 모드로 실행할 수 있다.
->   참고: [MacVim은 터미널에서도 돌아간다.](http://seorenn.blogspot.kr/2011/06/vim-macvim.html)
+>   참고: [MacVim은 터미널에서도 돌아간다.](http://seorenn.blogspot.kr/2011/06/vim-macvim.html) + [osx - How to run mvim (MacVim) from Terminal? - Stack Overflow](http://stackoverflow.com/questions/2056137/how-to-run-mvim-macvim-from-terminal)
 >   다음과 같이 alias를 설정하면 아래의 경로 설정을 거치지 않아도 된다.
 >   
 >   ```shell
