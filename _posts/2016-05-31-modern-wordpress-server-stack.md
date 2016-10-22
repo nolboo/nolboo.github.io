@@ -370,3 +370,7 @@ Roots 팀은 Trellis가 Bedrock 구조의 워드프레스 웹사이트를 사용
 
 <script async class="speakerdeck-embed" data-id="44491a8c80014ecba9581e1442bc13ce" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
+##  추가 링크
+
+* [Taking PHP Seriously](https://slack.engineering/taking-php-seriously-cf7a60065329#.epvpa5imv)
+* [PHP7 vs. HHVM — What are the differences](https://medium.com/@deckersilyas/php7-vs-hhvm-what-are-the-differences-43d4c25497d8#.77o0shjlt)

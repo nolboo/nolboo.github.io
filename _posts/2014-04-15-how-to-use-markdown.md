@@ -207,5 +207,6 @@ ST3와 [Bitbucket](https://bitbucket.org)을 이용하여 *마크다운 문법�
 
 * [마크다운(Markdown)으로 글을 써보자](http://blog.kalkin7.com/2014/02/10/lets-write-using-markdown/)
 * [ONE™의 노트작성 레시피](http://macnews.tistory.com/2008)
+* [How I use nvALT - 한량넷](http://halryang.net/How-I-Use-nvALT/)
 
 

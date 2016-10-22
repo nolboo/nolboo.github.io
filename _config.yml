@@ -24,6 +24,7 @@ gems:
   - jekyll-seo-tag
   - jekyll-paginate
   - jekyll-gist
+  - jekyll-admin
 
 paginate: 10
 paginate_path: "/blog/page:num/"
