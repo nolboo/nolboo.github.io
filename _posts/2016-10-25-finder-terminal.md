@@ -29,6 +29,21 @@ Finder->서비스->폴더에서 새로운 터미널 탭 열기
 
 파인더에서 폴더를 선택한 상태에서 단축키를 누르면 작동한다.  Commander One PRO 등 파인더와 유사한 앱에서도 동일하게 설정하여 실행할 수 있다.
 
+## 쉘 스크립트 function
+
+이 글을 올린 후 얼마 되지 않아 트위터의 [@miname님이 좋은 팁](https://twitter.com/miname/status/790927908382478338)을 알려주셨다.(감사합니다^^) 쉘 스크립트의 함수 정의를 이용하는 방법이며, 터미널에서 `cdf`를 입력하여  현재 파인더의 폴더로 이동할 수 있다.
+
+자신의 `.bash_profile`이나 `.zshrc`에 다음 함수를 추가한다.
+
+```shell
+# cd into whatever is the forefront Finder window.
+cdf() {  # short for cdfinder
+  cd "`osascript -e 'tell app "Finder" to POSIX path of (insertion location as alias)'`"
+}
+```
+
+그런 후에 쉘을 다시 시작하면 `cdf` 명령을 사용할 수 있다.
+
 ## 써드파티  앱
 
 위의 방법을 사용하기 전에는 써드파티 앱을 사용하였다. 필요한 분도 있을 것 같아 기록의 의미로 남긴다.
