@@ -32,7 +32,7 @@ Vim에는 일반 모드(normal mode), 입력 모드(Insert Mode), 명령 모드(
 
 ### 잘라내면서 파일로 저장
 
-- 위의 과정에서 원래 파일에서 지정한 텍스트 블록을 지우려면 파일을 저장한 후 `gvd`를 입력한다. [+](http://vi.stackexchange.com/a/4562)
+- 위의 과정에서 원래 파일에서 지정한 텍스트 블록을 지우려면 파일을 저장한 후 `gvd`를 입력한다. [+](http://vi.stackexchange.com/a/4562): `g` 명령에 대해서는 [Vim의 g 명령](https://nolboo.kim/blog/2016/10/27/vim-g-command/)으로 별도로 정리하였다.
 
 - 더 줄이면 `:!> 파일명` [+](http://stackoverflow.com/a/12236121)이나, [링크](https://coderwall.com/p/4u03pg/vim-copy-paste-selection-in-new-file)와 같이 아무런 결과를 제공하지 않는 외부명령으로 블록을 삭제하면서 저장할 수 있다.
 
