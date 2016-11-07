@@ -217,8 +217,10 @@ docker rmi {이미지 ID}
 
 마지막으로 도커 데몬 프로그램을 끄면 다 내려간다. 편리하다^^
 
-## 참고링크
+## 참고 링크
 
 - [Understanding Docker, Containers and Safer Software Delivery](https://www.sitepoint.com/docker-containers-software-delivery/)
 
+## 추가 링크
 
+- [도커를 이용한 웹서비스 무중단 배포하기](http://subicura.com/2016/06/07/zero-downtime-docker-deployment.html)

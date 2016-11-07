@@ -56,7 +56,7 @@ tags: [focus, productivity, classic, music, wihtenoise]
 - [Coffitivity - The Sounds of Productivity](https://coffitivity.com/): 커피숍 노이즈를 최초로 서비스해서 유명해진 곳. 소음 종류도 다양해졌다. 음악을 소음보다 약간 크게 해서 들으면 좋다고 한다.
 - [Noisli - Improve Focus and Boost Productivity with Background Noise](http://www.noisli.com/): 몇 가지 소음을 섞을 수 있다.
 - - [A Soft Murmur](http://asoftmurmur.com/): 머머?를 섞을 수 있다.
-- [Noizio](https://itunes.apple.com/us/app/noizio/id928871589): 5$의 맥앱. 
+- [Noizio](https://itunes.apple.com/us/app/noizio/id928871589): 5$의 맥앱.
 - [White Noise Market](http://whitenoisemarket.com/): 화이트노이즈 마켓플레이스. [White Noise Free](https://itunes.apple.com/us/app/white-noise-free/id431364704?mt=12&ign-mpt=uo%3D4) 무료 앱은 종류 제한이 있다.
 - [WhereSound.com](http://wheresound.com/): 한국에서 만든 서비스이다.
 - [Rainy Cafe](http://rainycafe.com/): 빗소리와 카페 소리를 함께
@@ -80,4 +80,5 @@ tags: [focus, productivity, classic, music, wihtenoise]
 * [저작권과 저작인접권이 모두 만료된 클래식 mp3 음원 모음](http://www.kkacl.com/md)
 * [공부할 때 듣기 좋은 잔잔한 클래식 음악 모음](http://blog.naver.com/beeman11/220331507676)
 * [Brain.fm: Music to improve focus, meditation & sleep.](https://www.brain.fm/)
-
+* [The Most Relaxing Songs of All Time, According to Science](http://www.makeuseof.com/tag/most-relaxing-songs-all-time-science/): 여기서 소개된 곡을 바탕으로 리스트를 만듬 [The Most Relaxing Songs of All Time, According to Science - YouTube](https://www.youtube.com/playlist?list=PLJo4bCJLQXO7TTGpwZ4y0WgQR-98mQS64)
+* [ClassicManager](https://classicmanager.com/#/)
