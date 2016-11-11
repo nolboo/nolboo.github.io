@@ -25,7 +25,7 @@ Plugin 'VundleVim/Vundle.vim'
 " Plugin 'git://git.wincent.com/command-t.git'
 " Plugin 'file:///home/gmarik/path/to/plugin'
 ...
-call vundle#end() 
+call vundle#end()
 ```
 
 샘플의 Plugin 두 줄은 위와 같이 `" `로 주석처리 한다. 설명하기 위해 넣은 것이라 에러가 난다.
@@ -39,7 +39,7 @@ call vundle#end()
 vim 명령 모드에서 `:PluginInstall`을 실행하거나 터미널에서 `vim +PluginInstall +qall`로 플러그인을 설치한다.
 
 Helptags 까지 끝나고 Done! 이라고 메시지가 나오면 완료된 것이다. Helptags는 도움말을 만드는 것이다. 새로 설치된 플러그인 앞에는 + 표시가 보인다.
- 
+
 ![Vundle](https://c1.staticflickr.com/9/8265/29696429672_29555c3282_c.jpg)
 
 `q` 로 Vundle 창을 닫는다.
@@ -76,4 +76,6 @@ Vim 명령모드에서 `:NERDTree`로 실행한다. 왼쪽으로 내비게이션
 
 마크다운 플러그인은 사용법이 조금 복잡한 것이 많다. 더 테스트한 후에 별도의 포스트로 작성하려고 한다. 작성하면 이곳에 링크를^^
 
+## 추가 링크
 
+* [junegunn/vim-plug: Minimalist Vim Plugin Manager](https://github.com/junegunn/vim-plug) Vundle을 뛰어넘는 병령처리 플러그인 관리 플러그인. 엄청나게 빠름.

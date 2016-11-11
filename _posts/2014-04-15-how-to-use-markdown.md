@@ -37,7 +37,7 @@ tags: [markdown, workflow, blog, wiki, email]
 1. **표준의 부재:**
 존 그루버가 10년 전 [기본 문법](http://daringfireball.net/projects/markdown/)([번역](http://nolboo.github.io/blog/2013/09/07/john-gruber-markdown/))을 제안한 이후로 손 놓고 있다. [스택오버 플로우의 공동 창업자 제프 앳우드가 존 그루버의 관심을 호소](http://blog.codinghorror.com/responsible-open-source-code-parenting/)하기도 하였지만 별무소식인 것 같다. 이러한 것을 보완하려고 [Markdown Extra](http://michelf.ca/projects/php-markdown/extra/)([번역](http://nolboo.github.io/blog/2014/03/25/php-markdown-extra/)), [GitHub Flavored Markdown(GFM)](https://help.github.com/articles/github-flavored-markdown)([번역](http://nolboo.github.io/blog/2014/03/25/github-flavored-markdown/)), [MultiMarkdown](http://fletcherpenney.net/multimarkdown/) 등이 나왔으나 문법이 서로 다른 부분이 조금 있다. 때로는 구현하는 서비스나 앱에서 조차도 보완 부분에 대해서는 제각각인 경우가 많다. 그러나 기본 문법과 많이 쓰이는 확장 문법은 대부분 동일하게 구현하니 일반적인 사용에는 그리 큰 문제가 없다.
 
-2. **실시간 뷰어가 대체로 느리다:** 
+2. **실시간 뷰어가 대체로 느리다:**
 마크다운이 익숙하지 않는 초기에는 뷰어에서 실시간 확인하면서 작업하고 싶은 경우가 많다. 그러나 어느 정도 익숙해지면 실시간 뷰어가 그리 필요치 않다.
 
 ## 간단한 마크다운 문법
@@ -159,7 +159,7 @@ nvALT는 자체 마크다운 뷰어(<kbd>⌘</kbd><kbd>^</kbd><kbd>P</kbd>)도 �
 
 #### 위키
 
-ST3와 [Bitbucket](https://bitbucket.org)을 이용하여 *마크다운 문법만으로* 위키를 활용하는 법을 ["빠르고 가벼운 개인용 마크다운 위키 - 비트버킷과 골룸을 활용"](http://nolboo.github.io/blog/2013/12/17/markdown-wiki-bitbucket-gollum/)에서 설명한 적이 있다. nvALT와 ST3를 연동하여 사용하니 꼭 마크다운 링크를 고집할 필요가 없어졌다. 
+ST3와 [Bitbucket](https://bitbucket.org)을 이용하여 *마크다운 문법만으로* 위키를 활용하는 법을 ["빠르고 가벼운 개인용 마크다운 위키 - 비트버킷과 골룸을 활용"](http://nolboo.github.io/blog/2013/12/17/markdown-wiki-bitbucket-gollum/)에서 설명한 적이 있다. nvALT와 ST3를 연동하여 사용하니 꼭 마크다운 링크를 고집할 필요가 없어졌다.
 
 **nvALT에서 지원되는 `[[문서 제목]]` 형식의 위키링크는 비트버킷은 물론이고 깃허브에서도 지원된다**. nvALT에선 기존의 문서 제목을 추천까지 해준다.(한글 문서 제목도 잘된다) 다만, 위키링크를 사용하면 서브디렉터리의 파일은 링크할 수 없다. 그래서 하나의 디렉터리에 모든 위키 문서를 때려 넣었다.(서브 디렉터리를 아직 많이 만들지 않아서 다행이었다)
 
@@ -208,5 +208,5 @@ ST3와 [Bitbucket](https://bitbucket.org)을 이용하여 *마크다운 문법�
 * [마크다운(Markdown)으로 글을 써보자](http://blog.kalkin7.com/2014/02/10/lets-write-using-markdown/)
 * [ONE™의 노트작성 레시피](http://macnews.tistory.com/2008)
 * [How I use nvALT - 한량넷](http://halryang.net/How-I-Use-nvALT/)
-
+* [Vim에서 한글 입출력 - @n0lb00's Blog](http://localhost:4000/blog/2016/11/07/vim-korean/)
 
