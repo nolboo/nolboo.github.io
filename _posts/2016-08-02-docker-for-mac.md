@@ -191,7 +191,7 @@ docker pull ubuntu:14.04
 
 `14.04`와 같이 태그가 주어지지 않으면 `lastest`로 지정되어 최신판을 가져온다.
 
-도커를 연습하면서 쓸모없는 이미지와 컨테이너가 많아졌다. `docker ps -a`로 컨테이너명을 확인하여 삭제한다: 
+도커를 연습하면서 쓸모없는 이미지와 컨테이너가 많아졌다. `docker ps -a`로 컨테이너명을 확인하여 삭제한다:
 
 ```shell
 docker rm {컨테이너명}
@@ -224,3 +224,4 @@ docker rmi {이미지 ID}
 ## 추가 링크
 
 - [도커를 이용한 웹서비스 무중단 배포하기](http://subicura.com/2016/06/07/zero-downtime-docker-deployment.html)
+- [Introduction to Docker – Medium](https://medium.com/@BuddyWorks/introduction-to-docker-a7d9e1f6c0b3#.814ssi7sj): from Buddy.works
