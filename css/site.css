@@ -225,7 +225,7 @@ nav a.selected:hover {
 }
 
 .social-icon {
- padding: 0.2em 0; 
+ padding: 0.2em 0;
 }
 
 .about-me h1 {
@@ -477,22 +477,22 @@ img {
   padding: 6px 12px;
 }
 
-.clearfix:after { 
-  content: "."; 
-  display: block; 
-  clear: both; 
-  visibility: hidden; 
-  line-height: 0; 
-  height: 0; 
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
 }
-.clearfix { 
-  display: inline-block; 
+.clearfix {
+  display: inline-block;
 }
-html[xmlns] .clearfix { 
-  display: block; 
+html[xmlns] .clearfix {
+  display: block;
 }
-* html .clearfix { 
-  height: 1%; 
+* html .clearfix {
+  height: 1%;
 }
 
 /*****************************************************************************/
@@ -551,6 +551,32 @@ div#toc ul li ul li ul,div#toc1 ul li ul li ul,.mobile div#toc1 ul li ul li ul {
 div#toc1 ul,.mobile div#toc1 ul {
   list-style: none;
   margin: .25em 0 1.5em 1em;
+}
+
+/*****************************************************************************/
+/*
+/* Kramdown markdown-toc
+/*
+/*****************************************************************************/
+ol#markdown-toc {
+  background: none repeat scroll 0 0 #f9f9f9;
+  border: 1px solid #aaa;
+  display: table;
+  margin-left: .5em;
+  margin-bottom: 0;
+  width: auto;
+  padding: 10px 10px;
+  float: right;
+}
+ol#markdown-toc li {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+  font-size: 80%;
+  line-height: 1.5;
+}
+
+ol#markdown-toc li{
 }
 
 .bookmarklet-btn {
