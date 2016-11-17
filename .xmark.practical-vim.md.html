@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>practical-vim.md / xmark</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  <style>
+  
+  /*
+  The MIT License (MIT)
+  
+  Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
+  
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to deal
+  in the Software without restriction, including without limitation the rights
+  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+  
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+  
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+  THE SOFTWARE.
+  */
+  
+  header {
+    display: none;
+  }
+  
+  @font-face {
+    font-family: octicons-anchor;
+    src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+  }
+  
+  body {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    color: #333;
+    font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    word-wrap: break-word;
+    padding: 2em;
+  }
+  
+  a {
+    background: transparent;
+  }
+  
+  a:active,
+  a:hover {
+    outline: 0;
+  }
+  
+  strong {
+    font-weight: bold;
+  }
+  
+  h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+  }
+  
+  img {
+    border: 0;
+  }
+  
+  hr {
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0;
+  }
+  
+  pre {
+    overflow: auto;
+  }
+  
+  code,
+  kbd,
+  pre {
+    font-family: monospace, monospace;
+    font-size: 1em;
+  }
+  
+  input {
+    color: inherit;
+    font: inherit;
+    margin: 0;
+  }
+  
+  html input[disabled] {
+    cursor: default;
+  }
+  
+  input {
+    line-height: normal;
+  }
+  
+  input[type="checkbox"] {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+  }
+  
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  
+  td,
+  th {
+    padding: 0;
+  }
+  
+  * {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  input {
+    font: 13px/1.4 Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  }
+  
+  a {
+    color: #4183c4;
+    text-decoration: none;
+  }
+  
+  a:hover,
+  a:focus,
+  a:active {
+    text-decoration: underline;
+  }
+  
+  hr {
+    height: 0;
+    margin: 15px 0;
+    overflow: hidden;
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  hr:before {
+    display: table;
+    content: "";
+  }
+  
+  hr:after {
+    display: table;
+    clear: both;
+    content: "";
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    line-height: 1.1;
+  }
+  
+  h1 {
+    font-size: 30px;
+  }
+  
+  h2 {
+    font-size: 21px;
+  }
+  
+  h3 {
+    font-size: 16px;
+  }
+  
+  h4 {
+    font-size: 14px;
+  }
+  
+  h5 {
+    font-size: 12px;
+  }
+  
+  h6 {
+    font-size: 11px;
+  }
+  
+  blockquote {
+    margin: 0;
+  }
+  
+  ul,
+  ol {
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  ol ol,
+  ul ol {
+    list-style-type: lower-roman;
+  }
+  
+  ul ul ol,
+  ul ol ol,
+  ol ul ol,
+  ol ol ol {
+    list-style-type: lower-alpha;
+  }
+  
+  dd {
+    margin-left: 0;
+  }
+  
+  code {
+    font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  }
+  
+  pre {
+    margin-top: 0;
+    margin-bottom: 0;
+    font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  }
+  
+  .octicon {
+    font: normal normal 16px octicons-anchor;
+    line-height: 1;
+    display: inline-block;
+    text-decoration: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  .octicon-link:before {
+    content: '\f05c';
+  }
+  
+  .markdown-body>*:first-child {
+    margin-top: 0 !important;
+  }
+  
+  .markdown-body>*:last-child {
+    margin-bottom: 0 !important;
+  }
+  
+  .anchor {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    padding-right: 6px;
+    padding-left: 30px;
+    margin-left: -30px;
+  }
+  
+  .anchor:focus {
+    outline: none;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    position: relative;
+    margin-top: 1em;
+    margin-bottom: 16px;
+    font-weight: bold;
+    line-height: 1.4;
+  }
+  
+  h1 .octicon-link,
+  h2 .octicon-link,
+  h3 .octicon-link,
+  h4 .octicon-link,
+  h5 .octicon-link,
+  h6 .octicon-link {
+    display: none;
+    color: #000;
+    vertical-align: middle;
+  }
+  
+  h1:hover .anchor,
+  h2:hover .anchor,
+  h3:hover .anchor,
+  h4:hover .anchor,
+  h5:hover .anchor,
+  h6:hover .anchor {
+    padding-left: 8px;
+    margin-left: -30px;
+    line-height: 1;
+    text-decoration: none;
+  }
+  
+  h1:hover .anchor .octicon-link,
+  h2:hover .anchor .octicon-link,
+  h3:hover .anchor .octicon-link,
+  h4:hover .anchor .octicon-link,
+  h5:hover .anchor .octicon-link,
+  h6:hover .anchor .octicon-link {
+    display: inline-block;
+  }
+  
+  h1 {
+    padding-bottom: 0.3em;
+    font-size: 2.25em;
+    line-height: 1.2;
+    border-bottom: 1px solid #eee;
+  }
+  
+  h2 {
+    padding-bottom: 0.3em;
+    font-size: 1.75em;
+    line-height: 1.225;
+    border-bottom: 1px solid #eee;
+  }
+  
+  h3 {
+    font-size: 1.5em;
+    line-height: 1.43;
+  }
+  
+  h4 {
+    font-size: 1.25em;
+  }
+  
+  h5 {
+    font-size: 1em;
+  }
+  
+  h6 {
+    font-size: 1em;
+    color: #777;
+  }
+  
+  p,
+  blockquote,
+  ul,
+  ol,
+  dl,
+  table,
+  pre {
+    margin-top: 0;
+    margin-bottom: 16px;
+  }
+  
+  hr {
+    height: 4px;
+    padding: 0;
+    margin: 16px 0;
+    background-color: #e7e7e7;
+    border: 0 none;
+  }
+  
+  ul,
+  ol {
+    padding-left: 2em;
+  }
+  
+  ul ul,
+  ul ol,
+  ol ol,
+  ol ul {
+    margin-top: 0px;
+    margin-bottom: 0;
+  }
+  
+  li>p {
+    margin-top: 0;
+  }
+  
+  dl {
+    padding: 0;
+  }
+  
+  dl dt {
+    padding: 0;
+    margin-top: 16px;
+    font-size: 1em;
+    font-style: italic;
+    font-weight: bold;
+  }
+  
+  dl dd {
+    padding: 0 16px;
+    margin-bottom: 16px;
+  }
+  
+  blockquote {
+    padding: 0 15px;
+    color: #777;
+    border-left: 4px solid #ddd;
+  }
+  
+  blockquote>:first-child {
+    margin-top: 0;
+  }
+  
+  blockquote>:last-child {
+    margin-bottom: 0;
+  }
+  
+  table {
+    display: block;
+    width: 100%;
+    overflow: auto;
+    word-break: normal;
+    word-break: keep-all;
+  }
+  
+  table th {
+    font-weight: bold;
+  }
+  
+  table th,
+  table td {
+    padding: 6px 13px;
+    border: 1px solid #ddd;
+  }
+  
+  table tr {
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+  }
+  
+  table tr:nth-child(2n) {
+    background-color: #f8f8f8;
+  }
+  
+  img {
+    max-width: 100%;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  code {
+    padding: 0;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    margin: 0;
+    font-size: 85%;
+    background-color: rgba(0,0,0,0.04);
+    border-radius: 3px;
+  }
+  
+  code:before,
+  code:after {
+    letter-spacing: -0.2em;
+    content: "\00a0";
+  }
+  
+  pre>code {
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    word-break: normal;
+    white-space: pre;
+    background: transparent;
+    border: 0;
+  }
+  
+  .highlight {
+    margin-bottom: 16px;
+  }
+  
+  .highlight pre,
+  pre {
+    padding: 16px;
+    overflow: auto;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f7f7f7;
+    border-radius: 3px;
+  }
+  
+  .highlight pre {
+    margin-bottom: 0;
+    word-break: normal;
+  }
+  
+  pre {
+    word-wrap: normal;
+  }
+  
+  pre code {
+    display: inline;
+    max-width: initial;
+    padding: 0;
+    margin: 0;
+    overflow: initial;
+    line-height: inherit;
+    word-wrap: normal;
+    background-color: transparent;
+    border: 0;
+  }
+  
+  pre code:before,
+  pre code:after {
+    content: normal;
+  }
+  
+  .pl-c {
+    color: #969896;
+  }
+  
+  .pl-c1,
+  .pl-mdh,
+  .pl-mm,
+  .pl-mp,
+  .pl-mr,
+  .pl-s1 .pl-v,
+  .pl-s3,
+  .pl-sc,
+  .pl-sv {
+    color: #0086b3;
+  }
+  
+  .pl-e,
+  .pl-en {
+    color: #795da3;
+  }
+  
+  .pl-s1 .pl-s2,
+  .pl-smi,
+  .pl-smp,
+  .pl-stj,
+  .pl-vo,
+  .pl-vpf {
+    color: #333;
+  }
+  
+  .pl-ent {
+    color: #63a35c;
+  }
+  
+  .pl-k,
+  .pl-s,
+  .pl-st {
+    color: #a71d5d;
+  }
+  
+  .pl-pds,
+  .pl-s1,
+  .pl-s1 .pl-pse .pl-s2,
+  .pl-sr,
+  .pl-sr .pl-cce,
+  .pl-sr .pl-sra,
+  .pl-sr .pl-sre,
+  .pl-src,
+  .pl-v {
+    color: #df5000;
+  }
+  
+  .pl-id {
+    color: #b52a1d;
+  }
+  
+  .pl-ii {
+    background-color: #b52a1d;
+    color: #f8f8f8;
+  }
+  
+  .pl-sr .pl-cce {
+    color: #63a35c;
+    font-weight: bold;
+  }
+  
+  .pl-ml {
+    color: #693a17;
+  }
+  
+  .pl-mh,
+  .pl-mh .pl-en,
+  .pl-ms {
+    color: #1d3e81;
+    font-weight: bold;
+  }
+  
+  .pl-mq {
+    color: #008080;
+  }
+  
+  .pl-mi {
+    color: #333;
+    font-style: italic;
+  }
+  
+  .pl-mb {
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .pl-md,
+  .pl-mdhf {
+    background-color: #ffecec;
+    color: #bd2c00;
+  }
+  
+  .pl-mdht,
+  .pl-mi1 {
+    background-color: #eaffea;
+    color: #55a532;
+  }
+  
+  .pl-mdr {
+    color: #795da3;
+    font-weight: bold;
+  }
+  
+  .pl-mo {
+    color: #1d3e81;
+  }
+  
+  kbd {
+    background-color: #e7e7e7;
+    background-image: -webkit-linear-gradient(#fefefe, #e7e7e7);
+    background-image: linear-gradient(#fefefe, #e7e7e7);
+    background-repeat: repeat-x;
+    display: inline-block;
+    padding: 3px 5px;
+    font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    line-height: 10px;
+    color: #000;
+    border: 1px solid #cfcfcf;
+    border-radius: 2px;
+  }
+  
+  .task-list-item {
+    list-style-type: none;
+  }
+  
+  .task-list-item+.task-list-item {
+    margin-top: 3px;
+  }
+  
+  .task-list-item input {
+    float: left;
+    margin: 0.3em 0 0.25em -1.6em;
+    vertical-align: middle;
+  }
+  
+  </style>
+</head>
+<body>
+<header>
+<h1 class="title">practical-vim.md / xmark</h1>
+</header>
+<hr />
+<p>layout: post title: &quot;Practical Vim 2판 정리 페이지&quot; date: 2016-11-16 17:00:00 ---</p>
+<p><a target="_blank"  href="https://www.amazon.com/gp/product/B018T6ZVPK/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B018T6ZVPK&linkCode=as2&tag=nolbookim-20&linkId=45b16dbe20fb6e3a35a594a85f9ba1a6"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=B018T6ZVPK&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=nolbookim-20" ></a><img src="//ir-na.amazon-adsystem.com/e/ir?t=nolbookim-20&l=am2&o=1&a=B018T6ZVPK" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /></p>
+<ol>
+<li>목차 {:toc}</li>
+</ol>
+<ul>
+<li><strong>iBooks로 읽는 프랙티컬 Vim 2판을 정리하는 페이지이며 내편한대로 발췌하고 보충하기 때문에 원본을 반드시 참조하세요</strong>.</li>
+<li>Vim은 다른 텍스트 에디터와 다르게 여러 모드를 가진다. Normal/Insert/Visual Mode의 세 가지가 주요 모드인데, 번역이 일관성이 없다. 대체로 Normal Mode는 <strong>일반</strong>/명령 모드, Insert Mode는 <strong>입력</strong>/편집 모드, Visual Mode는 <strong>비주얼</strong>/선택 모드, 일반 모드에서 <code>:</code>로 진입하는 모드는 <strong>ex</strong>/명령어 모드 등으로 번역되는데, 이 글에서는 앞의 굵은 글씨의 모드로 사용한다.</li>
+</ul>
+<h2 id="use-vims-factory-settings">Use Vim’s Factory Settings</h2>
+<p><code>-u NONE</code>로 환경설정 없이 실행하면 vi 호환 모드로 실행되니, <code>-N</code>로 <code>nocompatible</code> 모드로 실행.</p>
+<pre class="shell"><code>$ vim -u NONE -N</code></pre>
+<p>Vim 빌트인 플러그인을 요구할 때는</p>
+<pre class="vim"><code>set nocompatible
+filetype plugin on</code></pre>
+<p><code>essential.vim</code>에 입력한 후:</p>
+<pre class="shell"><code>$ vim -u essential.vim</code></pre>
+<p>로 실행한다. netrw, 옴니 완성 등을 실행할 수 있다.</p>
+<p><code>:version</code>으로 설치된 Vim의 버전과 컴파일 설정을 볼 수 있다.</p>
+<ul>
+<li>[ ] :version 으로 보니 -hangul_input이 포함되지 않고 컴파일되었네??</li>
+</ul>
+<h2 id="the-vim-way">1. The Vim Way</h2>
+<p>우리 일은 본래 반복적이다. Vim은 반복에 최적화되어있다. <em>Vim의 효율성은 가장 최근 작업을 추적하는 방법에서 유래한다</em>. 작업 단위를 잘 고려하면 하나의 키로 재반복할 수 있다. 이 개념에 숙달하는 것이 Vim으로 효과적이 되는 주요한 점이다.</p>
+<p><code>.</code> 명령은 시작이다.</p>
+<h3 id="tip-1.-dot-command">Tip 1. Dot Command</h3>
+<p><code>.</code> 명령은 가장 최근의 변경을 반복한다.(<a href="http://vimhelp.appspot.com/repeat.txt.html#.">+</a>) Vim에서 가장 강력하고 만능인 명령어이다. Vim의 모달 편집 모드의 핵심을 알 수 있다.</p>
+<blockquote>
+<p><a href="http://www.viemu.com/a-why-vi-vim.html">Why, oh WHY, do those #?@! nutheads use vi?</a></p>
+<p>Vim을 올바르게 쓰려면 모달하게 쓰지 말고, 항상 일반 모드에 있어야 한다. 입력 모드에서는 텍스트만 입력하고, 입력하고 난 후에는 <code>Esc</code>로 일반 모드로 돌아와야한다. 그래서, 모드를 기억해야 하는 문제는 없다: 텍스트를 입력하는 중 전화가 온다면 입력 모드를 나가고 전화를 받아야 한다. 그렇지 않으면 Vim으로 돌아올 때 <code>Esc</code>를 누르도록 한다.</p>
+<p>좋은 장점은 <code>.</code> 명령이 가장 최근의 <em>완료된, 이어진</em> 편집 명령(커서 이동은 제외)을 반복한다는 것이다. 일반 모드에서 <code>iHello&lt;Esc&gt;</code>를 입력한 후 Dot 명령은 커서의 위치에 'Hello'를 입력한다.</p>
+</blockquote>
+<ul>
+<li><code>x</code>를 <code>.</code>으로 반복하고 <code>u</code>로 undo한다.</li>
+<li><code>dd</code>로 현재 줄을 지우고, <code>x</code>로 반복한다.</li>
+<li><code>&gt;G</code>로 현재 줄을 들여쓰고, <code>j</code>로 이동한 후 <code>.j</code>(=<code>&gt;Gj</code>)로 반복한다.</li>
+</ul>
+<p>Dot 명령은 마이크로 매크로이다.</p>
+<h3 id="tip-2.-dont-repeat-yourself">Tip 2. Don’t Repeat Yourself</h3>
+<ul>
+<li>소스 코드는 <a href="https://pragprog.com/titles/dnvim/source_code">여기</a>에서 내려받을 수 있다.</li>
+</ul>
+<p><code>the_vim_way/2_foo_bar.js</code>의 줄 끝에 <code>;</code>를 추가할 때, <code>$</code>로 첫줄의 끝으로 이동한 후 <code>a;</code>로 <code>;</code>을 추가한다. <code>j$</code>로 다음 줄의 끝으로 이동한 후 <code>.</code>(=<code>a;</code>), 다시 <code>j$</code>로 다음 줄로 이동, <code>.</code>을 입력한다.</p>
+<p><code>A</code>는 <code>$a</code>와 같다. Vim에는 여러 복합 명령(둘 또는 그 이상의 명령을 하나로 압축한 명령)이 있다. 아래 표에 몇 개의 보기를 모았다.</p>
+<table>
+<thead>
+<tr class="header">
+<th>복합 명령</th>
+<th>동일 명령</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>C</td>
+<td>c$</td>
+</tr>
+<tr class="even">
+<td>s</td>
+<td>cl</td>
+</tr>
+<tr class="odd">
+<td>S</td>
+<td>^C</td>
+</tr>
+<tr class="even">
+<td>I</td>
+<td>^i</td>
+</tr>
+<tr class="odd">
+<td>A</td>
+<td>$a</td>
+</tr>
+<tr class="even">
+<td>o</td>
+<td>A<CR></td>
+</tr>
+<tr class="odd">
+<td>O</td>
+<td>ko</td>
+</tr>
+</tbody>
+</table>
+<p><code>ko</code>(더 나쁘게는 <code>k$a&lt;CR&gt;</code>)보다는 <code>O</code> 명령을 대신 사용한다.</p>
+<p>위의 명령은 모두 일반 모드에서 입력 모드로 전환한다. dot 명령에 어떻게 영향을 미칠지 생각하라.</p>
+<p>이제 이전 보기를 세련되게 해본다. <code>A;&lt;Esc&gt;</code>로 첫줄 끝에 <code>;</code>를 추가한다. 두번의 <code>j.</code>로 끝낸다.</p>
+<h3 id="tip-3.-take-one-step-back-then-three-forward">Tip 3. Take One Step Back, Then Three Forward</h3>
+<p><code>the_vim_way/3_concat.js</code>의</p>
+<div class="sourceCode"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span class="kw">var</span> foo <span class="op">=</span> <span class="st">&quot;method(&quot;</span><span class="op">+</span>argument1<span class="op">+</span><span class="st">&quot;,&quot;</span><span class="op">+</span>argument2<span class="op">+</span><span class="st">&quot;)&quot;</span><span class="op">;</span></code></pre></div>
+<p>를</p>
+<div class="sourceCode"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span class="kw">var</span> foo <span class="op">=</span> <span class="st">&quot;method(&quot;</span> <span class="op">+</span> argument1 <span class="op">+</span> <span class="st">&quot;,&quot;</span> <span class="op">+</span> argument2 <span class="op">+</span> <span class="st">&quot;)&quot;</span><span class="op">;</span></code></pre></div>
+<p>처럼 만들어 본다. 줄의 처음에서 <code>f+</code>로 이동하여 <code>s</code>로 커서 밑의 글자를 지우고 입력 모드로 들어간다. <code>+</code>를 입력하고 <code>&lt;Esc&gt;</code>로 일반 모드로. 한 보 뒤로 세 보 앞으로. 직관적이진 않지만 <code>.</code> 명령으로 반복할 수 있다. <code>;</code>로 다음 <code>+</code>로 이동하고 <code>.</code>로 계속 반복하여 끝낸다.</p>
+<blockquote>
+<p><code>;</code> Repeat latest f, t, F or T [count] times <code>:browse old</code> 최근 편집한 파일 목록을 보고, 선택하여 연다.</p>
+</blockquote>
+<h4 id="make-the-motion-repeatable">Make the Motion Repeatable</h4>
+<p>다른 트릭이 있다. <code>f{char}</code> 명령은 다음 특정 문자로 커서를 이동한다. <code>f+</code>는 다음 <code>+</code>로 이동한다. <code>;</code> 명령은 <code>f</code> 명령이 수행한 마지막 검색을 반복한다. <code>f+</code>를 네번 반복하지 않고 한번만 실행하고<code>;</code>를 세번 사용했다.</p>
+<p><code>;</code>이 다음 대상으로 이동하고, <code>.</code>로 최근 변경을 반복한다. 세 번의 <code>;.</code>로 완료한다.</p>
+<p>Vim의 모달 입력 모델과 싸우지말고, 같이 작업하면서 일을 더 쉽게 만드는 법을 보라.</p>
+<h3 id="tip-4.-act-repeat-reverse">Tip 4. Act, Repeat, Reverse</h3>
+<p>반복적인 일을 마주하면 이동과 변경을 반복적으로 만들어 최적의 편집 전략을 수행할 수 있다. Vim은 비결을 갖고 있다.</p>
+<p>Table 1. Repeatable Actions and How to Reverse Them</p>
+<table>
+<thead>
+<tr class="header">
+<th>Intent</th>
+<th>Act</th>
+<th>Repeat</th>
+<th>Reverse</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Make a change</td>
+<td>{edit}</td>
+<td>.</td>
+<td>u</td>
+</tr>
+<tr class="even">
+<td>Scan line for next character</td>
+<td>f{char}/t{char}</td>
+<td>;</td>
+<td>,</td>
+</tr>
+<tr class="odd">
+<td>Scan line for previous character</td>
+<td>F{char}/T{char}</td>
+<td>;</td>
+<td>,</td>
+</tr>
+<tr class="even">
+<td>Scan document for next match</td>
+<td>/pattern<CR></td>
+<td>n</td>
+<td>N</td>
+</tr>
+<tr class="odd">
+<td>Scan document for previous match</td>
+<td>?pattern<CR></td>
+<td>n</td>
+<td>N</td>
+</tr>
+<tr class="even">
+<td>Perform substitution</td>
+<td>:s/target/replacement</td>
+<td>&amp;</td>
+<td>u</td>
+</tr>
+<tr class="odd">
+<td>Execute a sequence of changes</td>
+<td>qx{changes}q</td>
+<td>@x</td>
+<td>u</td>
+</tr>
+</tbody>
+</table>
+<p><code>.</code> 명령이 마지막 _변경_을 반복한다는 것을 알았다. 몇 명령은 다른 방법으로 반복할 수 있다. 예로, <code>@:</code>는 Ex 명령을 반복하고, <code>&amp;</code>는 마지막 <code>:substitute</code>를 반복할 수 있다.</p>
+<p>한번 실행하고 반복한다.</p>
+<p><code>.</code> 명령의 경우 <code>u</code> 키로 마지막 변경을 되돌릴 수 있다. <code>F{char}</code> 명령을 사용한 후 <code>;</code> 키를 너무 많이 누른 경우엔 <code>,</code>로 되돌릴 수 있다. <code>,</code>은 반대 방향으로 <code>f{char}</code> 검색을 반복한다.</p>
+<h3 id="tip-5.-find-and-replace-by-hand">Tip 5. Find and Replace by Hand</h3>
+<p><code>the_vim_way/1_copy_content.txt</code>의 내용에 &quot;content&quot;란 단어가 줄마다 있다. &quot;content&quot; 대신 &quot;copy&quot;를 사용하기 원하면 substitut 명령을 사용할 수 있다:</p>
+<pre class="vim"><code>:%s/content/copy/g</code></pre>
+<p>이것은 세 개의 &quot;content&quot;를 &quot;copy&quot;로 모두 변경한다. 그러나 두 번째 &quot;content&quot;는 만족하는 이라는 동철 이음 이의어<code>heteronym</code>이다.</p>
+<p><code>*</code> 명령은 커서 밑의 단어를 찾는다. <code>/content</code>로 &quot;content&quot;를 검색할 수도 있다.</p>
+<p>두 번째 &quot;content&quot; 단어에 커서를 놓고 <code>*</code>로 세 번째 &quot;content&quot;로 이동한 후 <code>cw</code>copy<Esc>를 실행하여 &quot;content&quot;를 &quot;copy&quot;로 변경한다. <code>*</code>로 첫 번째 &quot;content&quot;로 이동한 후에 <code>.</code> 명령을 실행한다.</p>
+<p><code>:set hls</code>로 검색 하일라이트를 해보라.</p>
+<p>&quot;content&quot;를 한번 검색한 후에는 <code>n</code> 키로 다음 검색을 진행할 수 있다. 이 경우에는 <code>*nn</code>으로 모든 경우를 순환한다.</p>
+<p><code>cw</code> 명령은 단어를 지우고 입력 모드로 바꾼다. &quot;copy&quot;를 입력하면 Vim은 입력 모드를 벗어나기 전까지를 기록한다. <code>cw</code>copy<Esc>가 하나의 변경이다. <code>.</code> 명령을 누르면 커서 밑의 단어를 지우고 &quot;copy&quot;를 입력하게 된다.</p>
+<p><code>n.n.n.</code>은 <code>:%s/content/copy/g</code>와 같다. 그래서 원하는 경우에만 <code>.</code>을 사용한다.</p>
+<h3 id="tip-6.-meet-dot-formular">Tip 6. Meet Dot formular</h3>
+<h4 id="-------">이상적 해결책: 한 키로 이동, 한 키로 실행</h4>
+<p>이런 이상적 패턴을 편의상 Dot Fomular라고 말하겠다.</p>
+<h1 id="part-1.-modes">Part 1. Modes</h1>
+<p>Vim은 모달 유저 인터페이스를 제공한다. 키보드의 키를 누른 결과가 현재 어떤 모드인지에 따라 다르다는 것을 뜻한다. 어떤 모드인지와 Vim 모드 사이를 전환하는 방법을 아는 것이 필수다.</p>
+<h2 id="chapter-2.-normal-mode-">Chapter 2. Normal Mode(일반 모드)</h2>
+<p>일반 모드는 Vim의 휴식 상태다. 이 책의 대부분이 일반 모드를 사용하는 법에 대한 것이기 때문에 이 장은 아주 짧고, 핵심 개념과 일반 팁만 다룬다.</p>
+<p>다른 텍스트 에디터는 입력 모드 비슷한 것에서 대부분의 시간을 보낸다. 그래서 Vim 입문자는 일반 모드가 기본인 것이 낯설다. 팁 7에서 화사의 작업 공간과의 유사한지를 설명한다.</p>
+<p>많은 일반 모드 명령은 여러 번 실행하라는 횟수와 함께 사용된다. 팁 10에서 증가/감소 숫자값 명령과 이 명령들이 횟수와 결합할 수 있다는 것을 알게 된다.</p>
+<p>일반 모드의 강력함은 동작 명령이 motion과 결합할 수 있다는 것에서 온다.</p>
+<h3 id="tip-7.-pause-with-your-brush-off-the-page">Tip 7. Pause with Your Brush Off the Page</h3>
+<p>화가가 페인트 붓을 캔버스와 얼마나 많이 접촉하는 생각해 본 적이 있나? 작업에 쓰는 시간의 반을 사용한다.</p>
+<p>화가가 그리기 외에 하는 모든 것을 생각해보라. 주제를 연구하고, 빛을 조절하고, 새로운 색조의 물감을 섞는다. 물감을 캔버스에 적용할 때 붓을 사용해야 한다고 누가 그러는가? 화가는 다른 질감을 위해 팔레트 칼을 바꾸고, 이미 걱용된 물감을 덧붙이기 위해 면 안감을 사용할 수도 있다.</p>
+<p>화가는 캔버스에 대어놓고 붓을 쉬지 않는다.</p>
+<p>Vim에서도 그렇다. 일반 모드는 자연적인 휴식 상태다. 단서는 그 이름에 있다, 정말로.</p>
+<p>화가가 그리기에 시간의 일부를 쓰듯이 프로그래머도 코드 작성에 시간의 일부를 쓴다. 생각하고, 일고, 코드베이스 한 부분에서 다른 부분으로 옮기는 것에 시간을 더 쓴다. 누가 입력 모드로 바꿔야 한다고 하는가? 우리는 기존 코드를 재포맷하고 복사하고 이동하거나 지운다. 일반 모드에서 마음대로 사용할 수 있는 도구가 많이 있다.</p>
+<h3 id="tip-8.-chunk-your-undos">Tip 8. Chunk Your Undos</h3>
+<p>다른 텍스트 에디터에서는 몇 단어를 입력한 후 undo 명령으로 마지막 입력한 단어 혹은 문자를 되돌린다. 그러나, Vim에서는 undo 명령의 덩어리를 조절할 수 있다.</p>
+<p><code>u</code> 키는 가장 최근 변경을 되돌린다. 단일 변경은 문서에 문자를 변경한 것이다. 일반, 비주얼, 명령행 모드에서 실행한 명령을 포함한다. 그러나, 입력 모드에서 입력하거나 지운 텍스트도 포함할 수 있다. <code>i{문자 입력}&lt;Esc&gt;</code>는 단일 변경이 될 수 있다.</p>
+<p>Vim에서는 undo 명령의 덩어리를 조절할 수 있습니다. 입력 모드로 들어가는 순간부터 일반 모드로 돌아갈 때까지 입력 (또는 삭제)한 모든 것이 단일 변경이다. 따라서 <code>&lt;Esc&gt;</code> 키 사용을 조절하여 undo 명령을 단어, 문장 또는 단락에 적용할 수 있다.</p>
+<p>얼마나 자주 입력 모드를 떠나는가? 선호의 문제이지만, 나는 각각의 &quot;되돌릴 덩어리&quot;를 생각과 일치시키려고 한다. 이 텍스트를 쓰면서 (물론 Vim에서!), 나는 문장의 끝에 잠시 멈추고 다음에 쓸 내용을 생각한다. 시간이 아무리 짧아도 각 멈춤은 자연스러운 중단점을 만들고 입력 모드를 떠나는 단서를 준다. 글 쓸 준비가되면, 나는 <code>A</code>를 누르고 내가 중단 한 곳에서 계속한다.</p>
+<p>잘못되었다고 생각되면, 일반 모드로 전환하고 <code>u</code>를 누릅니다. undo할 때마다 원본 텍스트를 쓰면서 생각대로 내 텍스트를 일관된 덩어리로 분해한다. 즉, 한 두 문장을 쉽게 쓰고 두개의 키 입력으로 버릴 수 있다.</p>
+<p>입력 모드에서 커서가 줄 끝 부분에 있는 경우 새 줄을 여는 가장 빠른 방법은 <code>&lt;CR&gt;</code>을 누르는 것이다. 때로는 undo 명령에서 추가 세분화를 원할 것으로 기대하기 때문에 <code>&lt;Esc&gt;o</code>를 누르기를 선호한다. 어려울 수 있지만 Vim에 익숙해지면 모드 전환이 점점 더 가볍게 느껴진다.</p>
+<h4 id="----.">입력 모드에서 이동하면 변경이 재설정된다.</h4>
+<p>undo 명령이 입력 모드로 들어가고 나오는 동안 입력한 (또는 지운) 모든 문자를 되돌릴 수 있다고 말했다. 입력 모드에서 <code>&lt;Up&gt;</code>, <code>&lt;Down&gt;</code>, <code>&lt;Left&gt;</code>, <code>&lt;Right&gt;</code> 커서 키를 사용하면 새로운 undo 덩어리가 만들어 진다. 입력 모드를 벗어나지 않는다는 것을 제외하고는 <code>h</code>, <code>j</code>, <code>k</code>, <code>l</code> 명령으로 이동하려고 일반 모드로 다시 전환한 것과 같다. 이것은 dot 명령에도 영향을 미친다.</p>
+<hr />
+<p>다 읽으려면 한 백일 걸릴라나?^^</p>
+<p style="display: none"><img src="https://c2.staticflickr.com/6/5572/30911777505_03e3ec069f_n.jpg" alt="Practical Vim cover"></p>
+</body>
+</html>
