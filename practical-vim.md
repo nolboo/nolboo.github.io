@@ -163,7 +163,7 @@ Table 1. Repeatable Actions and How to Reverse Them
 
 이런 이상적 패턴을 편의상 Dot Fomular라고 말하겠다.
 
-# Part 1. Modes
+## Part 1. Modes
 
 Vim은 모달 유저 인터페이스를 제공한다. 키보드의 키를 누른 결과가 현재 어떤 모드인지에 따라 다르다는 것을 뜻한다. 어떤 모드인지와 Vim 모드 사이를 전환하는 방법을 아는 것이 필수다.
 
