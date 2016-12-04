@@ -130,7 +130,7 @@ Table 1. Repeatable Actions and How to Reverse Them
 | Perform substitution             | :s/target/replacement | &      | u       |
 | Execute a sequence of changes    | qx{changes}q          | @x     | u       |
 
-`.` 명령이 마지막 _변경_을 반복한다는 것을 알았다. 몇 명령은 다른 방법으로 반복할 수 있다. 예로, `@:`는 Ex 명령을 반복하고, `&`는 마지막 `:substitute`를 반복할 수 있다.
+`.` 명령이 마지막 *변경*을 반복한다는 것을 알았다. 몇 명령은 다른 방법으로 반복할 수 있다. 예로, `@:`는 Ex 명령을 반복하고, `&`는 마지막 `:substitute`를 반복할 수 있다.
 
 한번 실행하고 반복한다.
 
@@ -274,6 +274,7 @@ Vim의 강력함은 오퍼레이터와 모션을 조합하는 방법에서 나�
 | <       | Shift left                                        |
 | =       | Autoindent                                        |
 | !       | Filter {motion} lines through an external program |
+
 Table 2. Vim Operator Commands
 
 `gUaw`는 현재 단어를 대문자로 만든다. `gUap`는 문단을 대문자로 만든다.
