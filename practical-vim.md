@@ -2,6 +2,7 @@
 layout: post
 title: "Practical Vim 2판 정리 페이지"
 date: 2016-11-16 17:00:00
+tags: [practical-vim, book, summary, editor, vim]
 ---
 
 <a target="_blank"  href="https://www.amazon.com/gp/product/B018T6ZVPK/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B018T6ZVPK&linkCode=as2&tag=nolbookim-20&linkId=45b16dbe20fb6e3a35a594a85f9ba1a6"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=B018T6ZVPK&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=nolbookim-20" ></a><img src="//ir-na.amazon-adsystem.com/e/ir?t=nolbookim-20&l=am2&o=1&a=B018T6ZVPK" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
@@ -40,7 +41,7 @@ $ vim -u essential.vim
 
 ## 1. The Vim Way
 
-우리 일은 본래 반복적이다. Vim은 반복에 최적화되어있다. _Vim의 효율성은 가장 최근 작업을 추적하는 방법에서 유래한다_. 작업 단위를 잘 고려하면 하나의 키로 재반복할 수 있다. 이 개념에 숙달하는 것이 Vim으로 효과적이 되는 주요한 점이다.
+우리 일은 본래 반복적이다. Vim은 반복 작업에 최적이다. _Vim의 효율성은 가장 최근 작업을 추적하는 방법에서 유래한다_. 작업 단위를 잘 고려하면 하나의 키로 반복할 수 있다. 이 개념에 숙달하는 것이 Vim을 효과적으로 사용하는 비결이다.
 
 `.` 명령은 시작이다.
 
@@ -206,6 +207,111 @@ Vim에서는 undo 명령의 덩어리를 조절할 수 있습니다. 입력 모�
 #### 입력 모드에서 이동하면 변경이 재설정된다.
 
 undo 명령이 입력 모드로 들어가고 나오는 동안 입력한 (또는 지운) 모든 문자를 되돌릴 수 있다고 말했다. 입력 모드에서 `<Up>`, `<Down>`, `<Left>`, `<Right>` 커서 키를 사용하면 새로운 undo 덩어리가 만들어 진다. 입력 모드를 벗어나지 않는다는 것을 제외하고는 `h`, `j`, `k`, `l` 명령으로 이동하려고 일반 모드로 다시 전환한 것과 같다. 이것은 dot 명령에도 영향을 미친다.
+
+### Tip 9. Compose Repeatable Changes
+
+_Vim은 반복작업에 최적이다. 이것을 이용하려면 변경을 구성하는 방법을 마음에 새겨야 한다._
+
+Vim에서 어떤 것을 하는 방법이 하나 이상 있다. 어떤 방식이 최고인지를 평가할 때 가장 확실한 척도는 효율성이다: 가장 적은 키 작업(VimGolf)이 필요하다.
+
+"nigh"라는 단어의 "h"에 커서가 있다면:
+
+`db`는 단어의 시작까지 지운다. `x`는 커서 밑의 한 글자를 지운다.
+
+`b` 모션은 커서를 단어의 처음으로 움직인다. `dw`는 단어를 지운다.
+
+모션 대신 `aw` 텍스트 개체를 사용할 수 있다. `daw`는 _delete a word_로 쉽게 기억할 수 있다. 단어만 지우는 것이 아닌 여백 문자까지 지운다. dot 명령을 사용하여 (`.` == `daw`) 유용하게 반복할 수 있다. 그래서 이 방법이 승자다.
+
+### Tip 10. Use Counts to Do Simple Arithmetic
+
+_여기서부터는 인사이트에서 Practical Vim 번역본의 리뷰를 부탁받았습니다. 그래서 며칠 동안 독서를 멈추었지만 12일까지 완료해야 하므로, 앞으로의 진행은 더 빨라지게 되었습니다. 원본과 3차 리뷰 번역본을 동시에 읽으면서 요약합니다_
+
+대부분의 일반 모드 명령는 횟수를 앞에 붙일 수 있다. 그 횟수만큼 반복실행한다.
+
+커서 밑에 있는 숫자를 <C-a> 명령으로 증가시키거나 <C-x> 명령으로 감소시킬 수 있다. 숫자를 앞에 붙이면 그 수만큼 증감한다. 5 문자에 커서를 놓고 10<C-a>를 실행하면 15로 증가한다.
+
+커서 밑이 숫자가 아닐 때는 이후에 있는 숫자로 이동해 앞에 입력한 [숫자]만큼 증감한다.
+
+`normal_mode/sprite.css`의 마지막 줄에서 `yyp`로 줄을 복사하고, `180<C-x>`로 숫자로 이동해 -180px로 번경한다.
+
+>
+#### 숫자 포맷
+>
+0이 앞에 있는 숫자는 8진수로 해석하기 때문에 007+001 = 010이다. `:set nrformats=`하면 십진수로 해석한다.
+>
+
+### Tip 11. Don’t Count If You Can Repeat
+
+횟수를 지정하여 키를 최소로 할 수 있지만, 반드시 해야 하는 것은 아니다.
+
+두 단어를 지울 때 `d2w`와 `2dw`가 유용하다. `d2w`는 삭제한 후 모션으로 `2w`를 주었다. "delete two words."로  읽을 수 있다. `2dw`는 삭제 명령에 횟수가 적용되었으며, 모션은 한 단어에서 실행된다. "delete a word two times."로 읽을 수 있다. 의미를 다르지만, 결과는 같다.
+
+`dw.`는 "Delete a word and then repeat."로 읽을 수 있다.
+
+7 단어를 지울 때 `d7w`와 `dw......`(`dw`를 `.`로 6회 반복)은 키 입력 수로 보면 확실한 승자를 알 수 있다. 숫자를 세는 것은 지루하다. 눌러야 하는 키의 숫자를 줄이기 위해 미리 헤아리기보다 `.` 명령을 6번 입력하는 것을 선호한다.
+
+### Tip 12. Combine and Conquer
+
+Vim의 강력함은 오퍼레이터와 모션을 조합하는 방법에서 나온다.
+
+**Operator + Motion = Action**
+
+`d{motion}`에서 지우는 범위는 모션이 정한다. `dl`는 한 문자, `daw`는 한 단어, `dap`는 한 문단을 지운다. `c{motion}`, `y{motion}`도 같다. 이런 명령을 오퍼레이터라 한다. `:h operator`로 전체 목록을 찾아볼 수 있다.
+
+`g~`, `gu`, `gU`는 두 번의 키 입력으로 실행한다. `g`는 다음 키의 행동을 수정하는 접두어로 생각할 수 있다.
+
+오퍼레이터와 모션의 조합은 일종의 문법이다. 첫 규칙은 간단하다: 행동`action`은 오퍼레이터와 뒤따르는 모션의 조합이다.
+
+| Trigger | Effect                                            |
+|---------|---------------------------------------------------|
+| c       | Change                                            |
+| d       | Delete                                            |
+| y       | Yank into register                                |
+| g~      | Swap case                                         |
+| gu      | Make lowercase                                    |
+| gU      | Make uppercase                                    |
+| >       | Shift right                                       |
+| <       | Shift left                                        |
+| =       | Autoindent                                        |
+| !       | Filter {motion} lines through an external program |
+Table 2. Vim Operator Commands
+
+`gUaw`는 현재 단어를 대문자로 만든다. `gUap`는 문단을 대문자로 만든다.
+
+Vim 문법은 하나의 규칙이 더 있다: 오퍼레이터 명령을 반복하면 현재 줄에 동작한다. `dd`는 현재 줄을 지우고, `>>`는 줄을 들여쓴다. `gU`는 `gUgU`, 줄여서 `gUU`로 할 수 있다.
+
+#### Extending Vim’s Combinatorial Powers
+
+자신의 모션과 오퍼레이터로 더 확장할 수 있다.
+
+##### Custom Operators Work with Existing Motions
+
+표준 오퍼레이터를 새롭게 정의할 수 있다. commentary.vim이 좋은 예이다. 모든 언어에서 코드를 주석으로 만들거나 주석을 해제하는 명령을 더한다.
+
+`gc{motion}` 명령으로 주석을 토글한다. 오퍼레이터이므로, 모든 일반 모션과 조합할 수 있다. `gcap`로 현재 문단을 주석을 토글한다. `gcG`는 현재 줄부터 파일 끝까지 주석을 토글한다. `gcc`는 현재 줄을 주석처리한다. 커스텀 오퍼레이터는 `:h :map-operrator`를 참조한다.
+
+##### Custom Motions Work with Existing Operators
+
+Kana Natsuno의 textobj-entire 플러그인이 좋은 예이다. 두 개의 새로운 텍스개체를 더한다: 전체 파일에 동작하는 `ie`와 `ae`
+
+`=` 명령으로 전체 파일을 들여쓰기하려면 `gg=G`(`gg`로 파일 처음으로 이동하고 `=G`로 파일 끝까지를 들여쓴다). 이 플러그인을 설치하면 `=ae`로 간단히 동작한다.
+
+두 플러그인을 모두 설치하면 `gcae`로 파일 전체를 주석처리하거나 토글할 수 있다.
+
+커스텀 모션을 만들고 싶다면 `:h omap-info`를 읽어라.
+
+>
+##### Meet Operator-Pending Mode
+>
+Operator-Pending 모드는 간과하기 쉬운 모드 중 하나이다. 하루에 여러 번 사용하지만, 짧게 지속되기 때문이다. 예로 `dw`에서 `d`와 `w` 키를 누르는 사이의 짧은 순간이다. Operator-Pending 모드는 모션 명령만 받은 상태이다. <Esc>를 눌러 취소할 수 있다.
+>
+`:h g`, `:h z`, `:h ctrl-w`, `:h [`에서 처음 입력은 두 번째 입력의 접두어와 같이 행동한다. 이 명령은 Operator-Pending 모드를 초기화하지 않는다. 여러 명령을 모은 namespace라고 생각할 수 있다. 오퍼레이터 명령만 Operator-Pending 모드를 초기화한다.
+>
+이렇게 짧은 모드를 둔 이유가 궁금할 수 있다. Operator-Pending 모드를 초기화하거나 전환하는 커스텀 매핑을 만들 수 있기 때문이다. 이로써 커스텀 오퍼레이터와 모션을 만들어 Vim의 어휘를 확장할 수 있다.
+>
+
+## Chapter 3. Insert Mode(입력 모드)
+
 
 ---
 

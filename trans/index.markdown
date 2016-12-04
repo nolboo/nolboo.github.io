@@ -2,6 +2,7 @@
 layout: post
 title: "한국어 번역글 모음 페이지"
 date: 2016-05-19 17:00:00
+tags: [trans, translation]
 ---
 
 <div id="toc"><p class="toc_title">목차</p></div>
@@ -266,19 +267,19 @@ date: 2016-05-19 17:00:00
 
 [HTML & CSS 중급자 가이드 - 6강 : jQuery](http://nolboo.github.io/blog/2013/07/22/advanced-guide-to-html-and-css-6-slash-10/) - 원문 : [An Advanced Guide to HTML & CSS – LESSON 6 : jQuery](http://learn.shayhowe.com/advanced-html-css/jquery)
 
-[Javascript의 핵심 - ECMAScript](http://www.internetmap.kr/1412)  
+[Javascript의 핵심 - ECMAScript](http://www.internetmap.kr/1412)
 [JavaScript. The Core](http://frends.kr/post/javascript-the-core/) - 원문 : [JavaScript. The core.](http://dmitrysoshnikov.com/ecmascript/javascript-the-core/)
 
 
-[[번역] ECMA-262-3 in detail. Chapter 1. Execution Contexts.](http://huns.me/%EB%B2%88%EC%97%AD-ecma-262-3-in-detail-chapter-1-execution-contexts/) 
- 
-[[번역] ECMA-262-3 in detail. Chapter 2. Variable object.](http://huns.me/%EB%B2%88%EC%97%AD-ecma-262-3-in-detail-chapter-2-variable-object/)  
+[[번역] ECMA-262-3 in detail. Chapter 1. Execution Contexts.](http://huns.me/%EB%B2%88%EC%97%AD-ecma-262-3-in-detail-chapter-1-execution-contexts/)
 
-[[번역] ECMA-262-3 in detail. Chapter 3. This.](http://huns.me/ecma-262-3-in-detail-chapter-3-this/)  
+[[번역] ECMA-262-3 in detail. Chapter 2. Variable object.](http://huns.me/%EB%B2%88%EC%97%AD-ecma-262-3-in-detail-chapter-2-variable-object/)
 
-[[번역] ECMA-262-3 in detail. Chapter 5. Functions.](http://huns.me/%EB%B2%88%EC%97%AD-ecma-262-3-in-detail-chapter-5-functions/)  
+[[번역] ECMA-262-3 in detail. Chapter 3. This.](http://huns.me/ecma-262-3-in-detail-chapter-3-this/)
 
-[[번역] ECMA-262-3 in detail. Chapter 6. Closures.](http://huns.me/%EB%B2%88%EC%97%AD-ecma-262-3-in-detail-chapter-6-closures/)  
+[[번역] ECMA-262-3 in detail. Chapter 5. Functions.](http://huns.me/%EB%B2%88%EC%97%AD-ecma-262-3-in-detail-chapter-5-functions/)
+
+[[번역] ECMA-262-3 in detail. Chapter 6. Closures.](http://huns.me/%EB%B2%88%EC%97%AD-ecma-262-3-in-detail-chapter-6-closures/)
 
 [JavaScript Scoping and Hoisting](http://nodejs-kr.org/insidejs/archives/161) - 원문 : [JavaScript Scoping and Hoisting](http://www.adequatelygood.com/JavaScript-Scoping-and-Hoisting.html)
 
@@ -296,7 +297,7 @@ date: 2016-05-19 17:00:00
 
 [자바스크립트의 변수범위와 호이스팅](http://chanlee.github.io/post/javascript-variable-scope-and-hoisting/) - 원문 : [JavaScript Variable Scope and Hoisting Explained](http://javascriptissexy.com/javascript-variable-scope-and-hoisting-explained/)
 
-[자바스크립트 클로저 쉽게 이해하기](http://chanlee.github.io/post/understand-javascript-closure/) - 원문 : [Understand JavaScript Closures With Ease](http://javascriptissexy.com/understand-javascript-closures-with-ease/) 
+[자바스크립트 클로저 쉽게 이해하기](http://chanlee.github.io/post/understand-javascript-closure/) - 원문 : [Understand JavaScript Closures With Ease](http://javascriptissexy.com/understand-javascript-closures-with-ease/)
 
 ### Framework
 
@@ -316,7 +317,7 @@ date: 2016-05-19 17:00:00
 
 [[NodeJS] 모두 알지만 모두 모르는 package.json](http://programmingsummaries.tistory.com/385) - 원문 : [package.json - npm Documentation](https://docs.npmjs.com/files/package.json)
 
-[electron 공식 문서](https://github.com/atom/electron/tree/master/docs-translations/ko-KR)  
+[electron 공식 문서](https://github.com/atom/electron/tree/master/docs-translations/ko-KR)
 [Electron 한국어 참조 문서](http://electron.prevl.org/) - 원문 : [electron docs](https://github.com/atom/electron/tree/master/docs)
 
 [스프링 데이터 엘라스틱서치](http://arahansa.github.io/docs_spring/elastic.html#1) - 원문 : [Spring Data Elasticsearch](http://docs.spring.io/spring-data/elasticsearch/docs/current/reference/html/)
@@ -383,7 +384,7 @@ date: 2016-05-19 17:00:00
 
 [backbone-fundamentals](https://github.com/ssdosso/backbone) - 원문 [Developing Backbone.js Applications](http://addyosmani.github.io/backbone-fundamentals/)
 
-[Backbone.js 0.9.2 문서 한글 번역](http://iwidgets.kr/document/backbonejs.html)  
+[Backbone.js 0.9.2 문서 한글 번역](http://iwidgets.kr/document/backbonejs.html)
 
 [주석 번역 Groc 적용 버전](http://zziuni.github.io/backbone.js-kr/backbone.html) - 원문 : [Backbone.js](http://backbonejs.org/)
 
@@ -401,7 +402,7 @@ date: 2016-05-19 17:00:00
 
 [Gulp 입문 ① - Gulp에 대한 소개](http://programmingsummaries.tistory.com/356) - 원문 : [Introduction to Gulp](http://jilles.me/introduction-to-gulp/)
 
-[Gulp.js 한국어 참조 문서](https://github.com/preco21/gulp-docs-ko) - 원문 : [Gulp Documentation](https://github.com/gulpjs/gulp/tree/master/docs) 
+[Gulp.js 한국어 참조 문서](https://github.com/preco21/gulp-docs-ko) - 원문 : [Gulp Documentation](https://github.com/gulpjs/gulp/tree/master/docs)
 
 ## Go
 
@@ -728,7 +729,7 @@ Personal Summary](http://samizdat.mines.edu/howto/HowToBeAProgrammer.pdf)
 
 [Reset 확실히 배우기](http://bit.ly/1bpCrcC) - 원문 : [Reset Demystified](http://git-scm.com/blog/2011/07/11/reset.html)
 
-[깃허브 완전 초보](http://j.mp/18GPAt2) - 원문 : 
+[깃허브 완전 초보](http://j.mp/18GPAt2) - 원문 :
 
 1.  [GitHub For Beginners: Don’t Get Scared, Get Started](http://j.mp/1g3el6I)
 2.  [GitHub For Beginners: Commit, Push And Go](http://j.mp/GzCMeO)
@@ -771,7 +772,7 @@ Personal Summary](http://samizdat.mines.edu/howto/HowToBeAProgrammer.pdf)
 
 [Ext JS 5 가이드](https://wikidocs.net/book/280) - 원문 : [Sencha Guides - Home](http://docs.sencha.com/)
 
-[Java™ Platform, Standard Edition 7 API 사양](http://www.changki.com/APIs/J2SE_1.7_API_Korean/index.html) - 원문 : 
+[Java™ Platform, Standard Edition 7 API 사양](http://www.changki.com/APIs/J2SE_1.7_API_Korean/index.html) - 원문 :
 
 [The Grails Framework - Reference Documentation 1.0](http://dogfeet.github.io/grails-doc/guide/) - 원문 : [The Grails Framework - Reference Documentation](http://grails.org/doc/latest/)
 
