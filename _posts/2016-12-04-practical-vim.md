@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Pratical Vim 팁 요약 시리즈 - Insert Mode"
+title: "Practical Vim 팁 요약 시리즈 - Insert Mode"
 description: "Vim 전문가는 어떻게 생각하는지를 팁 중심으로 설명하는 책 Practical Vim 2판을 요약하는 시리즈"
 category: blog
 tags: [practical, vim, tip, beginner, advance]
