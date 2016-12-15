@@ -10,7 +10,7 @@ tags: [wordpress, development, environment, vagrant, wp-cli]
 
 이 글은 [궁극의 워드프레스 개발 환경](http://nolboo.github.io/blog/2016/04/29/ultimate-wordpress-development-environment/)을 실전에서 사용해보는 시리즈 글 중의 하나입니다.
 
-* [궁극의 워드프레스 개발 환경 실전편 - VV](http://nolboo.github.io/blog/2016/05/10/ultimate-wordpress-development-environment-vv/) 
+* [궁극의 워드프레스 개발 환경 실전편 - VV](http://nolboo.github.io/blog/2016/05/10/ultimate-wordpress-development-environment-vv/)
 * [궁극의 워드프레스 개발 환경 실전편 - VV Blueprints](http://nolboo.github.io/blog/2016/05/14/ultimate-wordpress-development-environment-vv-blueprints/)
 * [궁극의 워드프레스 개발 환경 실전편 - WP-CLI](http://nolboo.kim/blog/2016/05/16/ultimate-wordpress-development-environment-wp-cli/)
 
@@ -224,7 +224,7 @@ wp db optimize
 
 export 명령어는 데이터베이스 백업을 스케줄하기 위해 스크립트나 cron jon에서 사용할 수도 있다.
 
-## Search And Replace 
+## Search And Replace
 
 로컬이나 개발 서버에서 웹사이트를 개발하다 다른 서버로 옮기는 것은 일반적인 일이다. 파일을 복사하고 데이터베이스를 마이그레이션하는 것은 쉽다. 데이터베이스 레코드에서 예전 URL을 새 것으로 바꾸는 일은 쉽지않다. URL이 serialized data로 저장되어 있기 때문이다. 일반적인 search and replace는 작동하지 않는다. WP-CLI는 이를 위해 `search-replace` 명령어가 있다.
 
@@ -270,7 +270,7 @@ done
 for site in $(wp site list --field=url); do wp plugin install wordpress-importer --url=$site --activate; done
 ```
 
-## Using WP-CLI Remotely With SSH 
+## Using WP-CLI Remotely With SSH
 
 ```shell
 wp cli version
@@ -378,3 +378,4 @@ wp wc product list
     + [elimc/jumpstart-install-script: Simple bash script to automate installation of WordPress with jumpstart and some of my favorite settings.](https://github.com/elimc/jumpstart-install-script)
     + [Local WordPress Development With Laravel Valet - YouTube](https://www.youtube.com/watch?v=Ai-HogVDxq4&feature=youtu.be)
 - [How to Fix the Error Establishing a Database Connection in WordPress](http://www.wpbeginner.com/wp-tutorials/how-to-fix-the-error-establishing-a-database-connection-in-wordpress/)
+- [WC CLI  Wiki](https://github.com/woocommerce/woocommerce/wiki/WC-CLI)

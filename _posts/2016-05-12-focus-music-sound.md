@@ -80,5 +80,5 @@ tags: [focus, productivity, classic, music, wihtenoise]
 * [저작권과 저작인접권이 모두 만료된 클래식 mp3 음원 모음](http://www.kkacl.com/md)
 * [공부할 때 듣기 좋은 잔잔한 클래식 음악 모음](http://blog.naver.com/beeman11/220331507676)
 * [Brain.fm: Music to improve focus, meditation & sleep.](https://www.brain.fm/)
-* [The Most Relaxing Songs of All Time, According to Science](http://www.makeuseof.com/tag/most-relaxing-songs-all-time-science/): 여기서 소개된 곡을 바탕으로 리스트를 만듬 [The Most Relaxing Songs of All Time, According to Science - YouTube](https://www.youtube.com/playlist?list=PLJo4bCJLQXO7TTGpwZ4y0WgQR-98mQS64)
+* [The Most Relaxing Songs of All Time, According to Science](http://www.makeuseof.com/tag/most-relaxing-songs-all-time-science/): 여기서 소개된 곡을 바탕으로 리스트를 만듬 [The Most Relaxing Songs of All Time, According to Science - YouTube](https://www.youtube.com/watch?v=UfcAVejslrU&list=PLJo4bCJLQXO7TTGpwZ4y0WgQR-98mQS64)
 * [ClassicManager](https://classicmanager.com/#/)
