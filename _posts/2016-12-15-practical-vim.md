@@ -166,6 +166,7 @@ compiler nodelint
 filetype plugin on
 ```
 
+![Vim 3D](/images/posts/vim.jpg)
 
 ### 시리즈 포스트를 한 장의 페이지로도 정리합니다.
 
