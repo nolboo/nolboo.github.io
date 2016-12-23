@@ -259,6 +259,7 @@ git push origin master // 깃허브로 푸시한다.
 
 ## Git Resources
 
+* [깃(?)똥차게 좋은 GIT 기초](http://slowalk.tistory.com/2470)
 * [GIT - 생활코딩](https://opentutorials.org/course/1492). 이보다 더 잘 설명한 한글 동영상 강좌를 본 적이 없다!
 * [어떻게 깃을 사용하는지 빠르게 알아봅시다](https://github.com/KennethanCeyer/tutorial-git)
 * [Git, 가장 쉽게 사용하기 - (1) 심플함이 답이다](http://blog.naver.com/PostView.nhn?blogId=tmondev&logNo=220759303637&redirect=Dlog), [Git, 가장 쉽게 사용하기 - (2) commit, branch 전략 잘 짜는 법](http://blog.naver.com/PostView.nhn?blogId=tmondev&logNo=220763012361&redirect=Dlog)
