@@ -8,7 +8,7 @@ tags: [vim, bookmarklet, web, browser, extension]
 
 이제 어떤 작업을 하든 데스크톱 웹 브라우저를 많이 사용한다. Vim을 사용한 후에는 마우스에서 점점 멀어진다. 웹 브라우저도 키보드를 중심으로 사용한다. 애용하게 된 키보드 웹 서핑 확장과 북마클릿 단축키 확장을 소개한다.
 
-# 키보드 서핑
+## 키보드 서핑
 
 Vim을 주요 텍스트 에디터로 사용하게 되면서 사용하는 앱에 Vim 플러그인/확장이 있으면 모조리 깔고 있다. 웹 브라우저도 예외가 아니어서, 최근 나온 [Surfingkeys](https://chrome.google.com/webstore/detail/surfingkeys/gfbliohnnapiefjpjlpjnehglfpaknnc) 확장을 몇 달 사용해 봤는데 스크롤이나 검색, 탭 관리, 거추장스럽게 마케팅 추적용 URL 리소스를 단축키로 제거하는 등의 기능이 너무 맘에 드는 확장이다. 지원 단축키는 `?`로 볼 수 있다. 기능이 너무 많아서 조금씩 익혀나갔다.
 
@@ -16,7 +16,7 @@ Vim을 주요 텍스트 에디터로 사용하게 되면서 사용하는 앱에 
 
 파이어폭스에도 비슷한 기능을 하는 [VimFx](https://addons.mozilla.org/ko/firefox/addon/vimfx/) 확장이 있다.
 
-# 북마클릿 단축키
+## 북마클릿 단축키
 
 최근의 웹 브라우저는 너무 무겁기 때문에(메모리를 말도 못하게 차지한다) 북마크릿을 선호한다. 북마클릿의 단점은 북마크바가 화면을 차지한다는 것이고 마우스로 클릭해야 한다는 것이다.
 
@@ -27,7 +27,7 @@ Vim을 주요 텍스트 에디터로 사용하게 되면서 사용하는 앱에 
 - [Launch Chrome Bookmarklets With Keyboard Shortcuts – MacStories](https://www.macstories.net/links/launch-chrome-bookmarklets-with-keyboard-shortcuts/): 애플 스크립트를 사용하는 방법
 - [How To Create Custom Keyboard Shortcuts For Browser Actions and Extensions in Google Chrome](http://www.howtogeek.com/127162/how-to-create-custom-keyboard-shortcuts-for-browser-actions-and-extensions-in-google-chrome/)
 
-# 관련 글
+## 관련 글
 
 - [주로 사용하는 맥앱과 웹앱](https://nolboo.kim/blog/2015/05/06/mac-web-app/)
 - [애용하는 웹브라우저 확장과 북마클릿](https://nolboo.kim/blog/2015/05/02/browser-extension-bookmarklet/)
