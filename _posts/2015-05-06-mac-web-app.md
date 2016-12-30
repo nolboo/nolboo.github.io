@@ -62,15 +62,15 @@ mackup으로 환경설정을 복원했다면 이 때 아래 패키지들이 한�
     - [GitHub for Mac](https://mac.github.com/)
 - [[무료] 현재 작업 중인 폴더를 터미널 새 창으로 열어주는 Finder 확장 프로그램 'TermHere'](http://macnews.tistory.com/4513)
 
-- [Anvil for Mac - Run your sites locally](http://anvilformac.com/) 
-- [Pow: Zero-configuration Rack server for Mac OS X](http://pow.cx/)를 GUI로 간단하게 사용할 수 있도록 루트디렉토리.dev 
+- [Anvil for Mac - Run your sites locally](http://anvilformac.com/)
+- [Pow: Zero-configuration Rack server for Mac OS X](http://pow.cx/)를 GUI로 간단하게 사용할 수 있도록 루트디렉토리.dev
     - locally 설치 : `npm install -g locally`
     - [xip.io: wildcard DNS for everyone](http://xip.io/)를 http://amoeba.192.168.0.6.xip.io/
     - 터미널에서 간단히 웹서버 띄우는 방법 2가지
         - python -m SimpleHTTPServer 8000
         - ruby -run -e httpd . -p 8000
 
-- [Sip](http://macnews.tistory.com/2018) : 화면에서 색상 코드를 추출할 수 있는 인기 맥용 컬러피커 프로그램. 
+- [Sip](http://macnews.tistory.com/2018) : 화면에서 색상 코드를 추출할 수 있는 인기 맥용 컬러피커 프로그램.
     - 기본적인 컬러피커 패널에 [Developer Color Picker](http://download.panic.com/picker/)도 추가해놓는다. 다운로드한 후에 `~/Library/ColorPickers`로 앱을 이동한다. 디렉토리가 없으면 만든다.
 - [ImageOptim — better Save For Web](https://imageoptim.com/)
 - [Pingendo](http://www.pingendo.com/): 부트스트랩 프로토타이핑
@@ -84,7 +84,7 @@ mackup으로 환경설정을 복원했다면 이 때 아래 패키지들이 한�
 - [Day-O](http://www.shauninman.com/archive/2011/10/20/day_o_mac_menu_bar_clock) : 기본 날자 아이콘을 숨기고 날짜 형식을 `h:mm`으로 설정하여 보여준다.
 - [Bartender](http://www.macbartender.com/) : 메뉴바 정리 앱
 - [HyperSwitch](http://bahoom.com/hyperswitch/): [OS X 앱 전환 방식의 불편함을 완벽히 보완해주는 HyperSwitch](http://macnews.tistory.com/1022)
-- [Turbo Boost Switcher](http://www.rugarciap.com/turbo-boost-switcher-for-os-x/): [CPU 터보 부스트를 강제로 비활성화 시켜 맥북 배터리 더 오래 사용하기](http://macnews.tistory.com/3393) 
+- [Turbo Boost Switcher](http://www.rugarciap.com/turbo-boost-switcher-for-os-x/): [CPU 터보 부스트를 강제로 비활성화 시켜 맥북 배터리 더 오래 사용하기](http://macnews.tistory.com/3393)
 - [OptOpt](https://itunes.apple.com/app/optopt/id989799277?mt=12): [프로그램마다 단축키를 지정할 수 있는 응용 프로그램 전환기](http://macnews.tistory.com/3330)
 - [Anki](http://ankisrs.net/): 플래시 카드
 - [Noizio](https://itunes.apple.com/kr/app/noizio/id928871589?mt=12): [[추천 무료앱] 이제 소음도 섞어서 듣자? 상황에 따른 8가지 소리를 자유롭게 조합할 수 있는 집중력 향상 앱 'Noizio'](http://macnews.tistory.com/2703)
@@ -111,7 +111,7 @@ mackup으로 환경설정을 복원했다면 이 때 아래 패키지들이 한�
 - [TextExpander 4](http://smilesoftware.com/TextExpander)
 - [AutoKeyboard](https://itunes.apple.com/kr/app/autokeyboard/id908553210?mt=12): [응용 프로그램을 전환할 때 입력기를 자동으로 전환해주는 편리한 유틸리티](http://macnews.tistory.com/2606)
 - [Total Manager](https://itunes.apple.com/app/id796275163?mt=12)
-- [Scapple](https://itunes.apple.com/kr/app/scapple/id568020055?mt=12) 
+- [Scapple](https://itunes.apple.com/kr/app/scapple/id568020055?mt=12)
     - [Scapple 사용기(1) - Scapple의 특징, 구매, 설치까지](http://reinia.net/916)
 - [iThoughtsX](http://toketaware.com/): 마크다운으로 변환할 수 있는 마인드맵앱
 - [Fantastical](https://flexibits.com/fantastical)
@@ -121,6 +121,7 @@ mackup으로 환경설정을 복원했다면 이 때 아래 패키지들이 한�
 - [PopClip](https://itunes.apple.com/us/app/popclip/id445189367?mt=12)
 
 bitly, Todoist, Dash, Pocket 확장 등을 설치하고, 단디 한글 맞춤법 검사기 확장은 [숩님이 제작하신 것](http://soooprmx.com/wp/archives/3863)을 자주 사용했지만, 최근엔 [미남이님이 제작하신 것](https://twitter.com/seoulrain/statuses/541397266066440193)을 주로 사용한다.(두 분 모두 고맙습니다!)
+    - [나만의 PopClip Extension 만들기](http://gumpcha.github.io/blog/custom-popclip-extension/)
 
 - [무비스트](https://itunes.apple.com/kr/app/mubiseuteu/id461788075?mt=12)
 - [DaisyDisk](https://itunes.apple.com/app/daisydisk/id411643860?mt=12&ign-mpt=uo%3D4): 하드디스크 분석과 삭제, 뛰어난 그래픽으로 한눈에 디스크를 정리할 수 있다.

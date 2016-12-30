@@ -128,7 +128,7 @@ AWS에서 ubuntu 인스턴스를 생성하고 Elastic IP를 연결한다. 자신
 
 >**shared host(공유 서버)에서는 Trellis를 운영할 수 없다.**
 
-2. SSH 연결이 가능해야 하며, SSH key를 이용하는 것을 강력하게 추천한다. 
+2. SSH 연결이 가능해야 하며, SSH key를 이용하는 것을 강력하게 추천한다.
 
 AWS의 경우에는 `ubuntu`라는 사용자 명으로 SSH 로그인하도록 설정해야 한다.
 
@@ -175,7 +175,7 @@ wordpress_sites:
 [Frequently Asked Questions — Ansible Documentation](http://docs.ansible.com/ansible/faq.html#how-do-i-generate-crypted-passwords-for-the-user-module)의 파이썬 명령으로 암호화된 패스워드를 만들어야 한다.(파이썬 3에선 아래 스크립트가 에러가 난다;;)
 
 ```shell
-pyenv local 2.7.9 
+pyenv local 2.7.9
 pip install passlib
 python -c "from passlib.hash import sha512_crypt; import getpass; print sha512_crypt.encrypt(getpass.getpass())"
 Password:
@@ -323,7 +323,7 @@ ansible-playbook deploy.yml -e "site=roots.nolboo.kim env=production"
 
 배포가 정상적으로 되었다면 `roots.nolboo.kim/wp/wp-admin`으로 가서 나머지 워드프레스를 설치하고, 플러그인과 테마를 활성화시킨다.
 
-이제 
+이제
 
 - 로컬에서 (자식) 테마를 개발하면서
 - 로컬 VM인 `roots.nolboo.app`에서 확인하고 난 후
@@ -335,3 +335,4 @@ ansible-playbook deploy.yml -e "site=roots.nolboo.kim env=production"
 ## 추가 링크
 
 - [Develop and maintain WordPress sites with Trellis and Bedrock](https://sprintworks.se/blog/trellis/)
+- [Using Forge To Provision And Manage WordPress Sites](https://torquemag.io/2016/12/using-forge-provision-manage-wordpress-sites/)
