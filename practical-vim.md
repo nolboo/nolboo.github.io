@@ -1048,8 +1048,6 @@ filetype plugin on
 
 ---
 
-다 읽으려면 한 백일 걸릴라나?^^
-
 <p style="display: none"><img src="https://c2.staticflickr.com/6/5572/30911777505_03e3ec069f_n.jpg" alt="Practical Vim cover"></p>
 
 
