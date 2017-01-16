@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: "Practical Vim 팁 요약 시리즈 - grep and vimgrep"
