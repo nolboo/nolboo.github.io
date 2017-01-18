@@ -85,7 +85,7 @@ tags: [focus, productivity, classic, music, wihtenoise]
 * [6 Online Music Streaming Services With NO Restrictions](http://www.makeuseof.com/tag/7-online-music-streaming-services-restrictions/)
 * [GetWorkDoneMusic.com](http://getworkdonemusic.com/)
 * [White Noise - Best Sleeping App for Android and iOS](http://www.tmsoft.com/white-noise/)
-* [www.pixelthoughts.co/?ref=producthunt#](http://www.pixelthoughts.co/)
+* [Pixel Thoughts](http://www.pixelthoughts.co/)
 * [Calm - Meditation Techniques for Sleep and Stress Reduction](https://www.calm.com/)
 * [Hatnote Listen to Wikipedia](http://listen.hatnote.com/)
 * [Project Audio for GitHub](https://github.audio/)
