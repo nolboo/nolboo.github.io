@@ -239,6 +239,15 @@ Ex 명령 두 개로 분리해서 실행하기 때문에 더 일하는 것 같�
 
 `:vimgrep` 명령을 다시 사용하더라도 패턴이 명령 히스토리에 포함되어 있기 때문에 더 유용할 것이다.
 
+## 역자 요약
+
+```vim
+:gr -i {text} *     " 외부 grep 실행
+
+/{pattern}          " 원하는 검색 패턴을 찾은 후
+:vim //g *          " vimgrep으로 검색
+```
+
 ### 시리즈 포스트를 한 장의 페이지로도 정리합니다.
 
 * [Practical Vim 2판 정리 페이지](https://nolboo.kim/practical-vim/)

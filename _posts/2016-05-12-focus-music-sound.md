@@ -60,7 +60,9 @@ tags: [focus, productivity, classic, music, wihtenoise]
 - [White Noise Market](http://whitenoisemarket.com/): 화이트노이즈 마켓플레이스. [White Noise Free](https://itunes.apple.com/us/app/white-noise-free/id431364704?mt=12&ign-mpt=uo%3D4) 무료 앱은 종류 제한이 있다.
 - [WhereSound.com](http://wheresound.com/): 한국에서 만든 서비스이다.
 - [Rainy Cafe](http://rainycafe.com/): 빗소리와 카페 소리를 함께
+- [Rainy Mood - Rain Makes Everything Better. Now available for iOS and Android](https://rainymood.com/): 빗소리만!
 - [myNoise](https://mynoise.net/): 아주 다양한 잡음이 준비되어 있고 이퀄라이저로 커스터마이즈해서 mp3로 다운로드도 가능하다.
+- [Hipstersound - ambient noise generator to create a positive work environment](http://hipstersound.com/)
 - [Binaural Beats](https://itunes.apple.com/us/app/binaural-beats/id597146594?mt=8): 검색하다 발견했는데 아직 사용해보지 못했다. [Android 앱](https://play.google.com/store/apps/details?id=com.ihunda.android.binauralbeat)도 있다.
 
 ## 공공 장소에서의 전화통화 예절 캠페인
@@ -90,4 +92,3 @@ tags: [focus, productivity, classic, music, wihtenoise]
 * [Hatnote Listen to Wikipedia](http://listen.hatnote.com/)
 * [Project Audio for GitHub](https://github.audio/)
 * [focusmusic.fm](https://focusmusic.fm/)
-* [Brain.fm](https://www.brain.fm/)
