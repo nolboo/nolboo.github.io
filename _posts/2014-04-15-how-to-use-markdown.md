@@ -203,10 +203,11 @@ ST3와 [Bitbucket](https://bitbucket.org)을 이용하여 *마크다운 문법�
 
 ## 맺음말과 링크
 
-내가 마크다운 위주로 글을 쓰고, 위키를 관리하는 가장 큰 이유는 [내 글과 정보를 내가 소유할 수 있다](http://yoonjiman.net/2014/03/25/own-your-words/)는 점이다. 또한, 사용하는 기기, OS, 서비스로부터 자유로울 수 있다. 현재 맥과 iOS 기기 위주로 사용하고 있지만, 궁극적인(?) 자유로움을 느낄 수 있다. 또한, 백업을 이중삼중으로 함으로써 게으른 성격에 딱 맞는 안전한 워크플로우를 만들어 보았다. 이 글을 읽는 분들도 각자에게 최적화된 활용 방법을 찾으시길 바라며, 도움될 링크 2개를 남겨본다.
+내가 마크다운 위주로 글을 쓰고, 위키를 관리하는 가장 큰 이유는 [내 글과 정보를 내가 소유할 수 있다](http://yoonjiman.net/2014/03/25/own-your-words/)는 점이다. 또한, 사용하는 기기, OS, 서비스로부터 자유로울 수 있다. 현재 맥과 iOS 기기 위주로 사용하고 있지만, 궁극적인(?) 자유로움을 느낄 수 있다. 또한, 백업을 이중삼중으로 함으로써 게으른 성격에 딱 맞는 안전한 워크플로우를 만들어 보았다. 이 글을 읽는 분들도 각자에게 최적화된 활용 방법을 찾으시길 바라며, 도움될 링크를 남겨본다.
 
 * [마크다운(Markdown)으로 글을 써보자](http://blog.kalkin7.com/2014/02/10/lets-write-using-markdown/)
 * [ONE™의 노트작성 레시피](http://macnews.tistory.com/2008)
 * [How I use nvALT - 한량넷](http://halryang.net/How-I-Use-nvALT/)
 * [Vim에서 한글 입출력 - @n0lb00's Blog](http://localhost:4000/blog/2016/11/07/vim-korean/)
+* [TextBundle.org!](http://textbundle.org/)
 

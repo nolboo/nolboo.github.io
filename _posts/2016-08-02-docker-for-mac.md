@@ -225,3 +225,4 @@ docker rmi {이미지 ID}
 
 - [도커를 이용한 웹서비스 무중단 배포하기](http://subicura.com/2016/06/07/zero-downtime-docker-deployment.html)
 - [Introduction to Docker – Medium](https://medium.com/@BuddyWorks/introduction-to-docker-a7d9e1f6c0b3#.814ssi7sj): from Buddy.works
+- [초보를 위한 도커 안내서 - 도커란 무엇인가?](https://subicura.com/2017/01/19/docker-guide-for-beginners-1.html)
