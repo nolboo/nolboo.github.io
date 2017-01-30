@@ -47,7 +47,7 @@ Vim도 Homebrew로 설치하는 방법이 있었다.
 
 <pre class="terminal">
 brew install mercurial
-brew install vim --with-override-system-vi
+brew install vim --with-override-system-vim
 vi --version
 VIM - Vi IMproved 7.3 (2010 Aug 15, compiled Jun 14 2016 16:06:49)
 </pre>
@@ -57,7 +57,7 @@ mercurial을 먼저 설치하지 않으면 Vim 패키지를 찾지도 못한다.
 >   아래의 절차를 거치지 않고도 `-v` 옵션을 이용하면 MacVim을 터미널 모드로 실행할 수 있다.
 >   참고: [MacVim은 터미널에서도 돌아간다.](http://seorenn.blogspot.kr/2011/06/vim-macvim.html) + [osx - How to run mvim (MacVim) from Terminal? - Stack Overflow](http://stackoverflow.com/questions/2056137/how-to-run-mvim-macvim-from-terminal)
 >   다음과 같이 alias를 설정하면 아래의 경로 설정을 거치지 않아도 된다.
->   
+>
 >   ```shell
 >   alias vi=mvim -v
 >   ```
@@ -84,7 +84,7 @@ ln -s /usr/local/bin/vim8 /usr/local/bin/vi8
 
 ### 패스 변경
 
-$PATH 경로 값에서 `/usr/bin/local`을 `/usr/bin`보다 앞에 위치하도록 변경하는 방법도 좋을 것 같다. 어찌보면 제일 간단한 방법인데 처음 이 포스트를 올렸을 때는 왠지 꺼림칙하였는데 트친인 [기계인간 (@John_Grib)](https://twitter.com/John_Grib)님이 자신은 그렇게 사용하고 있다고 하여 생각해보니 그게 애플의 루트리스 보안체계에도 적합한 것 같다. 사용자 추가/변경 내용이 시스템에 override되니 합리적인 것 같아서 최종적으로 경로값을 변경하였다.(`/etc/paths` 파일로 local이 앞에 있다) 혹시 나중에 문제가 생기면 그 때 업데이트하겠다. :smile: 
+$PATH 경로 값에서 `/usr/bin/local`을 `/usr/bin`보다 앞에 위치하도록 변경하는 방법도 좋을 것 같다. 어찌보면 제일 간단한 방법인데 처음 이 포스트를 올렸을 때는 왠지 꺼림칙하였는데 트친인 [기계인간 (@John_Grib)](https://twitter.com/John_Grib)님이 자신은 그렇게 사용하고 있다고 하여 생각해보니 그게 애플의 루트리스 보안체계에도 적합한 것 같다. 사용자 추가/변경 내용이 시스템에 override되니 합리적인 것 같아서 최종적으로 경로값을 변경하였다.(`/etc/paths` 파일로 local이 앞에 있다) 혹시 나중에 문제가 생기면 그 때 업데이트하겠다. :smile:
 
 ## 참고링크
 
