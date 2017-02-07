@@ -85,6 +85,7 @@ tags: [focus, productivity, classic, music, wihtenoise]
 * [Brain.fm: Music to improve focus, meditation & sleep.](https://www.brain.fm/)
 * [The Most Relaxing Songs of All Time, According to Science](http://www.makeuseof.com/tag/most-relaxing-songs-all-time-science/): 여기서 소개된 곡을 바탕으로 리스트를 만듬 [The Most Relaxing Songs of All Time, According to Science - YouTube](https://www.youtube.com/watch?v=UfcAVejslrU&list=PLJo4bCJLQXO7TTGpwZ4y0WgQR-98mQS64)
 * [6 Online Music Streaming Services With NO Restrictions](http://www.makeuseof.com/tag/7-online-music-streaming-services-restrictions/)
+* [7 Sites To Get Free Music (Legally!)](http://www.makeuseof.com/tag/where-to-get-free-music-legally/)
 * [GetWorkDoneMusic.com](http://getworkdonemusic.com/)
 * [White Noise - Best Sleeping App for Android and iOS](http://www.tmsoft.com/white-noise/)
 * [Pixel Thoughts](http://www.pixelthoughts.co/)

@@ -76,7 +76,7 @@ Dot 명령은 마이크로 매크로이다.
 | S         | ^C        |
 | I         | ^i        |
 | A         | $a        |
-| o         | A<CR>     |
+| o         | A`<CR>`   |
 | O         | ko        |
 
 `ko`(더 나쁘게는 `k$a<CR>`)보다는 `O` 명령을 대신 사용한다.
@@ -123,8 +123,8 @@ Table 1. Repeatable Actions and How to Reverse Them
 | Make a change                    | {edit}                | .      | u       |
 | Scan line for next character     | f{char}/t{char}       | ;      | ,       |
 | Scan line for previous character | F{char}/T{char}       | ;      | ,       |
-| Scan document for next match     | /pattern<CR>          | n      | N       |
-| Scan document for previous match | ?pattern<CR>          | n      | N       |
+| Scan document for next match     | /pattern`<CR>`        | n      | N       |
+| Scan document for previous match | ?pattern`<CR>`        | n      | N       |
 | Perform substitution             | :s/target/replacement | &      | u       |
 | Execute a sequence of changes    | qx{changes}q          | @x     | u       |
 
@@ -146,13 +146,13 @@ Table 1. Repeatable Actions and How to Reverse Them
 
  `*` 명령은 커서 밑의 단어를 찾는다. `/content`로 "content"를 검색할 수도 있다.
 
-두 번째 "content" 단어에 커서를 놓고 `*`로 세 번째 "content"로 이동한 후 `cw`copy<Esc>를 실행하여 "content"를 "copy"로 변경한다. `*`로 첫 번째 "content"로 이동한 후에 `.` 명령을 실행한다.
+두 번째 "content" 단어에 커서를 놓고 `*`로 세 번째 "content"로 이동한 후 `cw`copy`<Esc>`를 실행하여 "content"를 "copy"로 변경한다. `*`로 첫 번째 "content"로 이동한 후에 `.` 명령을 실행한다.
 
 `:set hls`로 검색 하일라이트를 해보라.
 
 "content"를 한번 검색한 후에는 `n` 키로 다음 검색을 진행할 수 있다. 이 경우에는 `*nn`으로 모든 경우를 순환한다.
 
-`cw` 명령은 단어를 지우고 입력 모드로 바꾼다. "copy"를 입력하면 Vim은 입력 모드를 벗어나기 전까지를 기록한다. `cw`copy<Esc>가 하나의 변경이다. `.` 명령을 누르면 커서 밑의 단어를 지우고 "copy"를 입력하게 된다.
+`cw` 명령은 단어를 지우고 입력 모드로 바꾼다. "copy"를 입력하면 Vim은 입력 모드를 벗어나기 전까지를 기록한다. `cw`copy`<Esc>`가 하나의 변경이다. `.` 명령을 누르면 커서 밑의 단어를 지우고 "copy"를 입력하게 된다.
 
 `n.n.n.`은 `:%s/content/copy/g`와 같다. 그래서 원하는 경우에만 `.`을 사용한다.
 
@@ -224,11 +224,11 @@ Vim에서 어떤 것을 하는 방법이 하나 이상 있다. 어떤 방식이 
 
 대부분의 일반 모드 명령는 횟수를 앞에 붙일 수 있다. 그 횟수만큼 반복실행한다.
 
-커서 밑에 있는 숫자를 <C-a> 명령으로 증가시키거나 <C-x> 명령으로 감소시킬 수 있다. 숫자를 앞에 붙이면 그 수만큼 증감한다. 5 문자에 커서를 놓고 10<C-a>를 실행하면 15로 증가한다.
+커서 밑에 있는 숫자를 `<Ctrl-a>` 명령으로 증가시키거나 `<Ctrl-x>` 명령으로 감소시킬 수 있다. 숫자를 앞에 붙이면 그 수만큼 증감한다. 5 문자에 커서를 놓고 10`<Ctrl-a>`를 실행하면 15로 증가한다.
 
 커서 밑이 숫자가 아닐 때는 이후에 있는 숫자로 이동해 앞에 입력한 [숫자]만큼 증감한다.
 
-`normal_mode/sprite.css`의 마지막 줄에서 `yyp`로 줄을 복사하고, `180<C-x>`로 숫자로 이동해 -180px로 번경한다.
+`normal_mode/sprite.css`의 마지막 줄에서 `yyp`로 줄을 복사하고, `180<Ctrl-x>`로 숫자로 이동해 -180px로 번경한다.
 
 >
 #### 숫자 포맷
@@ -300,7 +300,7 @@ Kana Natsuno의 textobj-entire 플러그인이 좋은 예이다. 두 개의 새�
 >
 ##### Meet Operator-Pending Mode
 >
-Operator-Pending 모드는 간과하기 쉬운 모드 중 하나이다. 하루에 여러 번 사용하지만, 짧게 지속되기 때문이다. 예로 `dw`에서 `d`와 `w` 키를 누르는 사이의 짧은 순간이다. Operator-Pending 모드는 모션 명령만 받은 상태이다. <Esc>를 눌러 취소할 수 있다.
+Operator-Pending 모드는 간과하기 쉬운 모드 중 하나이다. 하루에 여러 번 사용하지만, 짧게 지속되기 때문이다. 예로 `dw`에서 `d`와 `w` 키를 누르는 사이의 짧은 순간이다. Operator-Pending 모드는 모션 명령만 받은 상태이다. `<Esc>`를 눌러 취소할 수 있다.
 >
 `:h g`, `:h z`, `:h ctrl-w`, `:h [`에서 처음 입력은 두 번째 입력의 접두어와 같이 행동한다. 이 명령은 Operator-Pending 모드를 초기화하지 않는다. 여러 명령을 모은 namespace라고 생각할 수 있다. 오퍼레이터 명령만 Operator-Pending 모드를 초기화한다.
 >
@@ -317,9 +317,9 @@ Operator-Pending 모드는 간과하기 쉬운 모드 중 하나이다. 하루�
 
 | Keystrokes | Effect                                |
 |------------|---------------------------------------|
-| <C-h>      | Delete back one character (backspace) |
-| <C-w>      | Delete back one word                  |
-| <C-u>      | Delete back to start of line          |
+| `<Ctrl-h>` | Delete back one character (backspace) |
+| `<Ctrl-w>` | Delete back one word                  |
+| `<Ctrl-u>` | Delete back to start of line          |
 
 이 명령은 입력 모드나 Vim에만 힌정된 것이 아니다. Vim의 명령행은 물론 bash 셸에서도 사용할 수 있다.
 
@@ -329,20 +329,20 @@ Operator-Pending 모드는 간과하기 쉬운 모드 중 하나이다. 하루�
 
 | Keystrokes | Effect                       |
 |------------|------------------------------|
-| <Esc>      | Switch to Normal mode        |
-| <C-[>      | Switch to Normal mode        |
-| <C-o>      | Switch to Insert Normal mode |
+| `<Esc>`    | Switch to Normal mode        |
+| `<Ctrl-[>` | Switch to Normal mode        |
+| `<Ctrl-o>` | Switch to Insert Normal mode |
 
 #### Meet Insert Normal Mode
 
 입력-일반 모드는 일반 모드의 특별판이며, 총알 하나만 주는 것이다. 즉, 명령 하나만 발사하고 바로 입력 모드로 돌아온다.
 
-입력 중인 행이 창의 상단 또는 하단에 있을 때 추가 맥락을 보기위해 화면을 스크롤하고 싶을 때 `<C-o>zz`를 자주 사용한다. 입력 모드로 바로 돌아와 끊김없이 타이핑을 계속할 수 있다.
+입력 중인 행이 창의 상단 또는 하단에 있을 때 추가 맥락을 보기위해 화면을 스크롤하고 싶을 때 `<Ctrl-o>zz`를 자주 사용한다. 입력 모드로 바로 돌아와 끊김없이 타이핑을 계속할 수 있다.
 
 ### Tip 15. Paste from a Register Without Leaving Insert Mode
 
 `insert_mode/practical-vim.txt`에서 마지막 줄에 첫 줄의 내용을 복사한 후 붙여넣는다.
-`yt,`로 첫 줄의 ","전까지를 복사하고, `jA `로 이동하고, `<C-r>0`로 레지스터 0의 내용을 붙여넣는다. `.<Esc>`로 마미표를 찍고 일반 모드로 돌아온다.
+`yt,`로 첫 줄의 ","전까지를 복사하고, `jA `로 이동하고, `<Ctrl-r>0`로 레지스터 0의 내용을 붙여넣는다. `.<Esc>`로 마미표를 찍고 일반 모드로 돌아온다.
 
 >
 #### Remap the Caps Lock Key
@@ -352,11 +352,11 @@ Vim 사용자에게 Caps Lock은 골치거리다. Caps Lock이 켜져 있으면 
 많은 사용자들이 Caps Lock 키를 `<Esc>`나 `<Ctrl>`로 재설정한다.
 >
 
-#### Use <C-r>{register} for Character-wise Registers
+#### Use `<Ctrl-r>{register}` for Character-wise Registers
 
 `C-r>{register}` 명령은 입력 모드에서 몇 단어를 붙여넣을 때 편리하다. 레지스터 내용이 많으면, 화면 갱신 전 약간 지연이 있을 수 있다. Vim이 레지스터로부터 한 번에 한 글자씩 삽입하기 때문이다. 'textwidth'나 'autoindent'가 켜져있으면, 원하지않는 개행이나 불필요한 들여쓰기가 추가될 수 있다.
 
-`<C-r><C-p>{register}` 명령이 더 똑똑하다(:h i_CTRL-R_CTRL-P 참고). 여러 줄의 내용이 있는 레지스터를 붙여넣는다면 일반 모드로 전환하고 put 명령을 사용한다.
+`<Ctrl-r><Ctrl-p>{register}` 명령이 더 똑똑하다(:h i_CTRL-R_CTRL-P 참고). 여러 줄의 내용이 있는 레지스터를 붙여넣는다면 일반 모드로 전환하고 put 명령을 사용한다.
 
 ### Tip 16. Do Back-of-the-Envelope Calculations in Place
 
@@ -366,26 +366,26 @@ Vim 사용자에게 Caps Lock은 골치거리다. Caps Lock이 켜져 있으면 
 
 표현식 레지스터는 다르다. Vim 스크립트 코드를 실행하고 그 결과를 돌려준다. 계산기처럼 사용할 수 있다. 1+1과 같은 간단한 산술 표현식을 전달하면 2라는 결과가 나온다. 표현식 레지스터에서 받은 값을 일반 레지스터에 저장된 내용처럼 사용할 수 있다.
 
-표현식 레지스터는 `=` 기호로 참조한다. 입력 모드에서 `<C-r>=`로 접근할 수 있다. 계산하길 원하는 표현식을 입력할 수 있는 프롬프트가 화면 하단에 열린다. 입력을 끝내고 `<CR>`을 누르면 Vim이 현재 위치에 결과를 입력한다.
+표현식 레지스터는 `=` 기호로 참조한다. 입력 모드에서 `<Ctrl-r>=`로 접근할 수 있다. 계산하길 원하는 표현식을 입력할 수 있는 프롬프트가 화면 하단에 열린다. 입력을 끝내고 `<CR>`을 누르면 Vim이 현재 위치에 결과를 입력한다.
 
-`insert_mode/back-of-envelope.txt`에서 `A`로 줄의 끝에서 입력 모드로 전환하고, `<C-r>=6*35<CR>`로 결과값을 입력한다.
+`insert_mode/back-of-envelope.txt`에서 `A`로 줄의 끝에서 입력 모드로 전환하고, `<Ctrl-r>=6*35<CR>`로 결과값을 입력한다.
 
 ### Tip 17. Insert Unusual Characters by Character Code
 
-숫자 코드로 어떤 문자라도 입력할 수 있다. 입력 모드에서 `<C-v>{code}`만 입력하면 된다. 숫자 코드는 3개의 숫자이다. "A"의 문자 코드는 65이며, `<C-v>065`를 입력하면 된다.
+숫자 코드로 어떤 문자라도 입력할 수 있다. 입력 모드에서 `<Ctrl-v>{code}`만 입력하면 된다. 숫자 코드는 3개의 숫자이다. "A"의 문자 코드는 65이며, `<Ctrl-v>065`를 입력하면 된다.
 
-유니코드 기본 다국어 목록은 65,535 문자까지 사용할 수 있는데, 세 자리보다 큰 문자는 4자리의 16진수인 `<C-v>u{1234}`로 입력한다(숫자 앞에 _u_ 를 붙여야 한다). 뒤집어진 물음표 ("¿")는 `<C-v>u00bf`를 입력한다. :h i_CTRL-V_digit 참조.
+유니코드 기본 다국어 목록은 65,535 문자까지 사용할 수 있는데, 세 자리보다 큰 문자는 4자리의 16진수인 `<Ctrl-v>u{1234}`로 입력한다(숫자 앞에 _u_ 를 붙여야 한다). 뒤집어진 물음표 ("¿")는 `<Ctrl-v>u00bf`를 입력한다. :h i_CTRL-V_digit 참조.
 
 커서를 문자 위에 놓고 `ga` 명령을 실행하면 화면 하단에 십진수와 16진수, 8진수 코드를 출력한다(:h ga 참조).
 
-`<C-v>` 명령 뒤에 숫자가 아닌 키를 입력하는 방법도 있다. 'expandtab' 옵션이 활성된 상태에서 `<Tab` 키를 누르면 탭문자 대신 공백 문자를 추가한다. 그러나, `<C-v><Tab>은 탭 문자를 그대로 입력한다.
+`<Ctrl-v>` 명령 뒤에 숫자가 아닌 키를 입력하는 방법도 있다. 'expandtab' 옵션이 활성된 상태에서 `<Tab>` 키를 누르면 탭문자 대신 공백 문자를 추가한다. 그러나, `<Ctrl-v><Tab>`은 탭 문자를 그대로 입력한다.
 
-| Keystrokes          | Effect                                                      |
-|---------------------|-------------------------------------------------------------|
-| <C-v>{123}          | Insert character by decimal code                            |
-| <C-v>u{1234}        | Insert character by hexadecimal code                        |
-| <C-v>{nondigit}     | Insert nondigit literally                                   |
-| <C-k>{char1}{char2} | Insert Unusual Characters by Digraph {char1}{char2} digraph |
+| Keystrokes               | Effect                                                      |
+|--------------------------|-------------------------------------------------------------|
+| `<Ctrl-v>{123}`          | Insert character by decimal code                            |
+| `<Ctrl-v>u{1234}`        | Insert character by hexadecimal code                        |
+| `<Ctrl-v>{nondigit}`     | Insert nondigit literally                                   |
+| `<Ctrl-k>{char1}{char2}` | Insert Unusual Characters by Digraph {char1}{char2} digraph |
 
 Table 3—Inserting Unusual Characters
 
@@ -393,9 +393,9 @@ Table 3—Inserting Unusual Characters
 
 이중자`digraph`로 입력할 수도 있다: 이중자는 기억하기 쉬운 문자쌍이다.
 
-입력 모드에서 `<C-k>{char1}{char2}`를 입력하면 된다. `¿ `를 입력하고 싶다면, `<C-v>?I`를 입력한다.
+입력 모드에서 `<Ctrl-k>{char1}{char2}`를 입력하면 된다. `¿ `를 입력하고 싶다면, `<Ctrl-v>?I`를 입력한다.
 
-이중자에서 사용하는 문자 쌍은 문자를 묘사하게 선택하였으므로 기억하거나 추측하기 쉽다. 예를 들어 겹화살 괄호인 «와 »는 이중자 <<, >>으로 입력할 수 있다; 분수 ½, ¼, ¾는 이중자 12, 14, 34로 입력할 수 있다. Vim 이중자의 기본 목록은 `:h digraphs-default`에 요약되어 있다. `:digraphs`에서 가능한 목록을 볼 수도 있지만 살펴보기 어렵다. `:h digraph-table`로 더 많은 가능한 목록을 볼 수 있다.
+이중자에서 사용하는 문자 쌍은 문자를 묘사하게 선택하였으므로 기억하거나 추측하기 쉽다. 예를 들어 겹화살 괄호인 `«`와 `»`는 이중자 `<<`, `>>`으로 입력할 수 있다; 분수 ½, ¼, ¾는 이중자 12, 14, 34로 입력할 수 있다. Vim 이중자의 기본 목록은 `:h digraphs-default`에 요약되어 있다. `:digraphs`에서 가능한 목록을 볼 수도 있지만 살펴보기 어렵다. `:h digraph-table`로 더 많은 가능한 목록을 볼 수 있다.
 
 ### Tip 19. Overwrite Existing Text with Replace Mode
 
@@ -403,7 +403,7 @@ Table 3—Inserting Unusual Characters
 
 `insert_mode/replace.txt`의 문서 처음에서 `f.`으로 다음 "."으로 이동한다. `R, b<Esc>`로 ". B"를 ", b"로 바꾸어 하나의 문장으로 변경한다.
 
-`<Insert>로 입력 모드와 바꾸기 모드를 전환할 수도 있다.
+`<Insert>`로 입력 모드와 바꾸기 모드를 전환할 수도 있다.
 
 #### Overwrite Tab Characters with Virtual Replace Mode
 
@@ -440,7 +440,7 @@ Vim은 문자, 행, 사각형 영역과 동작하는 세 가지 비주얼 모드
 >
 선택 모드`Select Mode`는 내장 문서에서 "마이크로소프트 윈도우에서의 고르기 모드와 닮았다"고 한다(:h Select-mode 참고).
 >
-비주얼 모드와 선택 모드는 `<C-g>`로 전환할 수 있다. 화면 하단에 `-- VISUAL --`과 `-- SELECT --`로 구분할 수 있다. 선택 모드에서 문자를 입력하면 선택된 영역이 지워진 후 입력 모드로 들어가서 문자를 입력할 수 있다. 물론 비주얼 모드에서 `c` 키로 선택 영역을 변경할 수도 있다.
+비주얼 모드와 선택 모드는 `<Ctrl-g>`로 전환할 수 있다. 화면 하단에 `-- VISUAL --`과 `-- SELECT --`로 구분할 수 있다. 선택 모드에서 문자를 입력하면 선택된 영역이 지워진 후 입력 모드로 들어가서 문자를 입력할 수 있다. 물론 비주얼 모드에서 `c` 키로 선택 영역을 변경할 수도 있다.
 >
 Vim의 모달 본성을 좋아한다면 선택 모드는 되도록 사용하지 말아야 한다. 선택 모드를 계속 사용하게되는 시간은 한 가지이다. TextMate의 스니핏 기능을 에뮬레이트하는 플러그인 사용할 때, 선택 모드가 활성화된다.
 >
@@ -451,28 +451,28 @@ Vim은 세 가지 비주얼 모드가 있다. 문자 단위 비주얼 모드에�
 
 #### Enabling Visual Modes
 
-`v` 키는 비주얼 모드로의 통로이다. 일반 모드에서 `v`를 누르면 문자 단위 비주얼 모드, `V`로 행 단위 비주얼 모드, <C-v>로 블록 단위 비주얼 모드를 활성한다.
+`v` 키는 비주얼 모드로의 통로이다. 일반 모드에서 `v`를 누르면 문자 단위 비주얼 모드, `V`로 행 단위 비주얼 모드, `<Ctrl-v>`로 블록 단위 비주얼 모드를 활성한다.
 
-| Command | Effect                             |
-|---------|------------------------------------|
-| v       | Enable character-wise Visual mode  |
-| V       | Enable line-wise Visual mode       |
-| <C-v>   | Enable block-wise Visual mode      |
-| gv      | Reselect the last visual selection |
+| Command    | Effect                             |
+|------------|------------------------------------|
+| v          | Enable character-wise Visual mode  |
+| V          | Enable line-wise Visual mode       |
+| `<Ctrl-v>` | Enable block-wise Visual mode      |
+| gv         | Reselect the last visual selection |
 
 `gv` 명령은 비주얼 모드에서 마지막으로 선택했던 범위를 다시 선택해주는 단축키다. 문자 단위, 행 단위, 블럭 단위인지는 상관없지만, 선택 영역이 지워진 상황에서 사용하면 혼란스러울 수 있다.
 
 #### Switching Between Visual Modes
 
-| Command       | Effect                                                     |
-|---------------|------------------------------------------------------------|
-| <Esc> / <C-[> | Switch to Normal mode                                      |
-| v / V /       | Switch to Normal mode (when used from character-, line- or |
-| <C-v>         | block-wise Visual mode, respectively                       |
-| v             | Switch to character-wise Visual mode                       |
-| V             | Switch to line-wise Visual mode                            |
-| <C-v>         | Switch to block-wise Visual mode                           |
-| o             | Go to other end of highlighted text                        |
+| Command              | Effect                                                     |
+|----------------------|------------------------------------------------------------|
+| `<Esc>` / `<Ctrl-[>` | Switch to Normal mode                                      |
+| v / V /              | Switch to Normal mode (when used from character-, line- or |
+| `<Ctrl-v>`           | block-wise Visual mode, respectively                       |
+| v                    | Switch to character-wise Visual mode                       |
+| V                    | Switch to line-wise Visual mode                            |
+| `<Ctrl-v>`           | Switch to block-wise Visual mode                           |
+| o                    | Go to other end of highlighted text                        |
 
 #### Toggling the Free End of a Selection
 
@@ -518,7 +518,7 @@ Vim은 세 가지 비주얼 모드가 있다. 문자 단위 비주얼 모드에�
 
 ### Tip 24. Edit Tabular Data with Visual-Block Mode
 
-`visual_mode/chapter-table.txt`에서 `<C-v>`로 비주얼 블록 모드로 전환. `3j`로 아래 3열을 추가한 후 `x`를 눌러서 선택한 열을 제거하고 `.` 명령을 여러 번 눌러서 같은 범위를 여러 번 지운다. 두 열의 간격이 적당해질 때까지 반복한다. 넓은 범위를 선택해서 한번에 지워도 되지만 한 열씩 지우면 시각적으로 바로 확인할 수 있으므로 한 열씩 제거하는 방법이 낫다. 마지막으로 선택했던 범위를 `gv` 명령으로 다시 선택하여 `r|`로 선택한 범위를 모두 파이프 문자로 바꾼다. 행 단위 복사, 붙여넣기로 최상단 행을 복제한 후에(`yyp`) 복제한 행에서 모든 문자를 대시(-) 문자로 치환한다(`Vr-`).
+`visual_mode/chapter-table.txt`에서 `<Ctrl-v>`로 비주얼 블록 모드로 전환. `3j`로 아래 3열을 추가한 후 `x`를 눌러서 선택한 열을 제거하고 `.` 명령을 여러 번 눌러서 같은 범위를 여러 번 지운다. 두 열의 간격이 적당해질 때까지 반복한다. 넓은 범위를 선택해서 한번에 지워도 되지만 한 열씩 지우면 시각적으로 바로 확인할 수 있으므로 한 열씩 제거하는 방법이 낫다. 마지막으로 선택했던 범위를 `gv` 명령으로 다시 선택하여 `r|`로 선택한 범위를 모두 파이프 문자로 바꾼다. 행 단위 복사, 붙여넣기로 최상단 행을 복제한 후에(`yyp`) 복제한 행에서 모든 문자를 대시(-) 문자로 치환한다(`Vr-`).
 
 ![표만들기](https://c2.staticflickr.com/6/5330/30646444713_04a5a31265_z.jpg)
 
@@ -550,7 +550,7 @@ Vim은 세 가지 비주얼 모드가 있다. 문자 단위 비주얼 모드에�
 ### Tip 27. Meet Vim’s Command Line
 
 명령행 모드는 Ex 명령, 검색 패턴, 표현식을 입력했을 때 활성된다. `:`을 누르면 명령행 모드로 바뀐다. 이 모드는 쉘 명령행과 비슷하다. 명령을 입력한 후 `<CR>`을 눌러 실행한다. 명령행 모드에서 다시 일반 모드로 돌아가려면 `<Esc>`를 누른다.
-`/`를 눌러 검색 프롬프트(search prompt)를 불러오거나 `<C-r>=`로 표현식 레지스터에 접근할 때에도 활성된다.
+`/`를 눌러 검색 프롬프트(search prompt)를 불러오거나 `<Ctrl-r>=`로 표현식 레지스터에 접근할 때에도 활성된다.
 
 | Command                                         | Effect                                                                          |
 |-------------------------------------------------|---------------------------------------------------------------------------------|
@@ -580,7 +580,7 @@ Vim은 향상된 vi(vi improved)라는 뜻이다. 과소평가된 것이다! vi�
 
 #### Special Keys in Vim’s Command-Line Mode
 
-입력 모드는 입력 내용이 버퍼에 작성되지만 명령행 모드는 프롬프트에 나타난다. 두 모드에서는 `<Ctrl>` 조합 키로 명령을 호출할 수 있다. 두 모드는 몇 가지 명령을 공유한다. 예를 들어 `<C-w>`와 `<C-u>`는 각각 이전 단어까지, 또는 행의 시작까지 역방향으로 지운다. `<C-v>`와 `<C-k>`는 키보드에 없는 문자를 입력할 수 있다. `<C-r>{register}` 명령으로 명령행에 어떤 레지스터의 내용을 입력할 수 있다.
+입력 모드는 입력 내용이 버퍼에 작성되지만 명령행 모드는 프롬프트에 나타난다. 두 모드에서는 `<Ctrl>` 조합 키로 명령을 호출할 수 있다. 두 모드는 몇 가지 명령을 공유한다. 예를 들어 `<Ctrl-w>`와 `<Ctrl-u>`는 각각 이전 단어까지, 또는 행의 시작까지 역방향으로 지운다. `<Ctrl-v>`와 `<Ctrl-k>`는 키보드에 없는 문자를 입력할 수 있다. `<Ctrl-r>{register}` 명령으로 명령행에 어떤 레지스터의 내용을 입력할 수 있다.
 
 명령행 프롬프트에서는 이동이 제한적이다. `<left>`와 `<right>` 방향키를 사용하여 한 글자씩 이동할 수 있지만 일반 모드보다 많이 제한된다. 그러나 프롬프트에서 복잡한 명령들을 작성하길 원한다면 명령행 창으로 모든 편집 기능을 사용할 수 있다.
 
@@ -661,7 +661,9 @@ Vim은 향상된 vi(vi improved)라는 뜻이다. 과소평가된 것이다! vi�
 
 복잡하게 보이지만, 일반적인 범위 형식인 `:{start},{end}`이다. {start} 주소가 `/<html>/` 패턴이고, {end} 주소는 `/<\/html>/`이다. 달리 말해 `<html>` 태그가 열린 행부터 닫힌 행까지이다.
 
+```vim
 :/<html>/+1,/<\/html>/-1p
+```
 
 #### Modify an Address Using an Offset
 
@@ -713,7 +715,7 @@ Vim에서 실제로 파일을 편집하는 것이 아니다. 사실은 메모리
 
 Vim이 실행되면서 파일을 불러오면 첫 번째 파일을 창에 출력한다. 두 번째 파일은 버퍼로 불러온 후 백그라운드에 놓이기 때문에 보이지 않는다. `:ls` 명령으로 현재 메모리에 존재하는 모든 버퍼 목록을 확인할 수 있다 (:h :ls 참고).
 
-다음 버퍼를 현재 창으로 불러오고 싶다면 `:bnext` 명령을 사용한다. 버퍼목록에서 `%` 기호는 현재 창에서 볼 수 있는 버퍼를 표시한다. `#` 기호는 현재 활성된 버퍼와 교대한 버퍼를 나타낸다. `<C-^>`로 현재 버퍼와 이전 버퍼를 전환할 수 있다.
+다음 버퍼를 현재 창으로 불러오고 싶다면 `:bnext` 명령을 사용한다. 버퍼목록에서 `%` 기호는 현재 창에서 볼 수 있는 버퍼를 표시한다. `#` 기호는 현재 활성된 버퍼와 교대한 버퍼를 나타낸다. `<Ctrl-^>`로 현재 버퍼와 이전 버퍼를 전환할 수 있다.
 
 #### Use the Buffer List
 
@@ -1129,7 +1131,7 @@ excellent로 이동하기 위해서 `fe`를 사용하면 `;`을 세 번이나 �
 
 Vim은 점프할 때 이동 전과 후의 위치를 모두 저장하고, 그 발자취를 알 수 있는 명령을 제공한다.
 
-웹 브라우저에서는 뒤로 버튼으로 이전에 방문했던 페이지로 이동할 수 있다. Vim은 비슷한 기능을 하는 점프 목록(jump list)이 있다. `<C-o>` 명령이 뒤로 버튼과 같으며 `<C-i>` 명령은 앞으로 버튼과 같다. 이 명령으로 점프 목록을 오갈수 있다.
+웹 브라우저에서는 뒤로 버튼으로 이전에 방문했던 페이지로 이동할 수 있다. Vim은 비슷한 기능을 하는 점프 목록(jump list)이 있다. `<Ctrl-o>` 명령이 뒤로 버튼과 같으며 `<Ctrl-i>` 명령은 앞으로 버튼과 같다. 이 명령으로 점프 목록을 오갈수 있다.
 
 모션은 파일 안에서 이동할 때 사용하고, 점프는 파일 사이를 이동할 때 사용한다.(모션 중 점프로 구분되는 일부 모션이 있지만)
 
@@ -1146,45 +1148,45 @@ jump line col file/text
 Press Enter or type command to continue
 ```
 
-현재 창에서 파일을 변경하는 명령은 모두 점프 명령이라고 말할 수 있다. Vim은 점프 명령을 실행하 기 전과 후의 위치를 점프 목록에 기록한다. `:edit` 명령으로 새 파일을 열었다면 두 파일을 `<C-o>`와 `<C-i>` 명령으로 오갈 수 있다.
+현재 창에서 파일을 변경하는 명령은 모두 점프 명령이라고 말할 수 있다. Vim은 점프 명령을 실행하 기 전과 후의 위치를 점프 목록에 기록한다. `:edit` 명령으로 새 파일을 열었다면 두 파일을 `<Ctrl-o>`와 `<Ctrl-i>` 명령으로 오갈 수 있다.
 
 `[count]G`로 특정 행으로 바로 이동하는 것은 점프이지만 한 행씩 이동하는 것은 점프가 아니다. 문장 단위 및 단락 단위의 모션은 점프이지만 문자와 단어의 모션은 점프가 아니다. 일반적으로 장거리 모션은 점프로 분류될 수 있지만 단거리 모션은 그냥 모션이다.
 
 점프로 처리되는 명령을 정리한다:
 
-| Command                       | Effect                                         |
-|-------------------------------|------------------------------------------------|
-| [count]G                      | Jump to line number                            |
-| /pattern<CR>/?pattern<CR>/n/N | Jump to next/previous occurrence of pattern    |
-| %                             | Jump to matching parenthesis                   |
-| ( / )                         | Jump to start of previous/next sentence        |
-| { / }                         | Jump to start of previous/next paragraph       |
-| H / M / L                     | Jump to top/middle/bottom of screen            |
-| gf                            | Jump to file name under the cursor             |
-| <C-]>                         | Jump to definition of keyword under the cursor |
-| '{mark} / `{mark}             | Jump to a mark                                 |
+| Command                           | Effect                                         |
+|-----------------------------------|------------------------------------------------|
+| [count]G                          | Jump to line number                            |
+| /pattern`<CR>`/?pattern`<CR>`/n/N | Jump to next/previous occurrence of pattern    |
+| %                                 | Jump to matching parenthesis                   |
+| ( / )                             | Jump to start of previous/next sentence        |
+| { / }                             | Jump to start of previous/next paragraph       |
+| H / M / L                         | Jump to top/middle/bottom of screen            |
+| gf                                | Jump to file name under the cursor             |
+| `<Ctrl-]>`                        | Jump to definition of keyword under the cursor |
+| '{mark} / `{mark}                 | Jump to a mark                                 |
 
-`<C-o>`와 `<C-i>` 명령 자체는 모션으로 처리되지 않는다. 비주얼 모드에서 선택 영역을 확장하거나 동작-대기 모드에서 이 명령을 사용할 수 없다는 뜻이다.
+`<Ctrl-o>`와 `<Ctrl-i>` 명령 자체는 모션으로 처리되지 않는다. 비주얼 모드에서 선택 영역을 확장하거나 동작-대기 모드에서 이 명령을 사용할 수 없다는 뜻이다.
 
-Vim은 여러 점프 목록을 동시에 관리 한다. 실은 각 창마다 각 점프 목록이 있다. 창 분할이나 다중 탭 페이지를 사용하고 있다면 `<C-o>`와 `<C-i>` 명령은 항상 활성 창의 점프 목록을 따라 이동한다.
+Vim은 여러 점프 목록을 동시에 관리 한다. 실은 각 창마다 각 점프 목록이 있다. 창 분할이나 다중 탭 페이지를 사용하고 있다면 `<Ctrl-o>`와 `<Ctrl-i>` 명령은 항상 활성 창의 점프 목록을 따라 이동한다.
 
 >
 #### Beware of Mapping the Tab Key
 >
-입력 모드에서 `<C-i>`는 `<Tab>`을 입력하는 것과 같다. Vim이 `<C-i>`와 `<Tab>`을 같은 것으로 보기 때문이다.
+입력 모드에서 `<Ctrl-i>`는 `<Tab>`을 입력하는 것과 같다. Vim이 `<Ctrl-i>`와 `<Tab>`을 같은 것으로 보기 때문이다.
 >
-`<Tab>` 키의 매핑을 변경하면, `<C-i>`를 누를 때도 변경된 매핑을 실행한다.(반대도 마찬가지다) 그러므로 `<Tab>`을 다른  기능으로 변경할 때는 점프 목록을 이동하는 `<C-i>`를 포기할 만큼 중요한지 고려해야 한다. 한 방향으로만 이동하는 것은 그다지 유용하지 않기 때문이다.
+`<Tab>` 키의 매핑을 변경하면, `<Ctrl-i>`를 누를 때도 변경된 매핑을 실행한다.(반대도 마찬가지다) 그러므로 `<Tab>`을 다른  기능으로 변경할 때는 점프 목록을 이동하는 `<Ctrl-i>`를 포기할 만큼 중요한지 고려해야 한다. 한 방향으로만 이동하는 것은 그다지 유용하지 않기 때문이다.
 >
 
 ### Tip 57. Traverse the Change List
 
-작업을 취소하는 명령과 취소한 작업을 다시 되돌리는 명령을 실행하면 최근에 변경한 위치로 이동하는 부차적인 효과도 생긴다. 실행 취소 명령은 최근 변경 위치로 돌아가고 싶은 경우에도 유용하다. `u<C-r>`은 일종의 해킹이다.
+작업을 취소하는 명령과 취소한 작업을 다시 되돌리는 명령을 실행하면 최근에 변경한 위치로 이동하는 부차적인 효과도 생긴다. 실행 취소 명령은 최근 변경 위치로 돌아가고 싶은 경우에도 유용하다. `u<Ctrl-r>`은 일종의 해킹이다.
 
 Vim은 편집 세션 중에 각 버퍼에 대한 수정 목록을 관리한다. 이 것을 변경 목록(change list)이라고 한다.(:h changelist) `:changes` 명령으로 내용을 볼 수 있다.
 
 `g;`와 `g,` 명령으로 변경 목록에서 앞 뒤로 이동할 수 있다. `;`와 `,` 명령이 `f{char}` 명령을 반복하거나 역반복할 수 있다는 것을 생각하면 기억하기 쉬울 것이다.
 
-문서에서 최근 변경으로 되돌아 가려면 `g;`를 입력한다. `u<C-r>`을 입력해도 결과는 같지만, 문서에 일시적인 변경을 만든다.
+문서에서 최근 변경으로 되돌아 가려면 `g;`를 입력한다. `u<Ctrl-r>`을 입력해도 결과는 같지만, 문서에 일시적인 변경을 만든다.
 
 #### Marks for the Last Change
 
@@ -1528,10 +1530,10 @@ Ex 명령 두 개로 분리해서 실행하기 때문에 더 일하는 것 같�
 
 주의 깊게 봐야 하는 부분은 항상 인자 목록(##)과 검색 히스토리의 현재 정보를 사용한다는 것이다. 만약 이 명령을 나중에 반복하면 인자 목록과 검색 히스토리에 따라서 다르게 동작할 것이다.
 
-그 대신에 `<C-r>/`로 검색 필드를 현재 패턴의 값으로 채울 수 있다. 검색 결과는 어느 쪽이든 같지만 명령 히스토리는 다르다.
+그 대신에 `<Ctrl-r>/`로 검색 필드를 현재 패턴의 값으로 채울 수 있다. 검색 결과는 어느 쪽이든 같지만 명령 히스토리는 다르다.
 
 ```vim
-:vim /<C-r>//g ##
+:vim /<Ctrl-r>//g ##
 ```
 
 `:vimgrep` 명령을 다시 사용하더라도 패턴이 명령 히스토리에 포함되어 있기 때문에 더 유용할 것이다.
