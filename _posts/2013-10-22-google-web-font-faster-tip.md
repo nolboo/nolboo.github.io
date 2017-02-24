@@ -75,6 +75,7 @@ tags: [css, font, google, html, webfont]
 
 ## 추가링크
 
+* [웹폰트 사용하기 (웹폰트 101)](http://wit.nts-corp.com/2017/02/13/4258)
 * [Web fonts, boy, I don't know – Monica Dinculescu](http://meowni.ca/posts/web-fonts/): 웹 폰트 Lazy load
 * [Using Web Fonts The Best Way (in 2015). – Anselm Hannemann, Freelance HTML & CSS Contractor](https://helloanselm.com/2015/using-webfonts-in-2015/?ref=webdesignernews.com)
 * [Coderifleman – 한글 웹 폰트 경량화해 사용하기](http://blog.coderifleman.com/post/111825720099/%ED%95%9C%EA%B8%80-%EC%9B%B9-%ED%8F%B0%ED%8A%B8-%EA%B2%BD%EB%9F%89%ED%99%94%ED%95%B4-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0)

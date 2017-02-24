@@ -213,7 +213,7 @@ https://github.com/vmg/redcarpet/blob/v2.2.2/README.markdown#and-its-like-really
 이것은 주석이다.[^1]
 주석이 수퍼스크립트로 해석되거나, 수퍼스크립트를 빼도 레퍼런스 링크 또는 아예 해석되지 않는다. 깃허브에서도 지원되지 않는다.
 
-[^1]: 
+[^1]:
 주석이 안먹는다.
 
 최종적으로 선택한 옵션은 다음과 같다.
@@ -229,7 +229,7 @@ https://github.com/vmg/redcarpet/blob/v2.2.2/README.markdown#and-its-like-really
 ## 코드블럭 하일라이트
 
 https://github.com/vmg/redcarpet
-    하일라이트 등의 설정이 안먹는군. 
+    하일라이트 등의 설정이 안먹는군.
     Liquid Exception: invalid byte sequence in UTF-8 in feed.xml 에러로 제너레이팅 실패.
 
 http://bloerg.net/2013/03/07/using-kramdown-instead-of-maruku.html 마크다운 엔진 비교표 있음.
@@ -247,3 +247,8 @@ http://bloerg.net/2013/03/07/using-kramdown-instead-of-maruku.html 마크다운 
 kramdown은 pygment 대신 [CodeRay](http://coderay.rubychan.de/)를 사용.
 
 라인 넘버는 이쁘지 않아서 사용하지 않음.
+
+
+## 기타
+
+[Instapaper Highlights](http://blog.instapaper.com/private/85019783416/tumblr_n4yojeI3ey1qz8fxi)

@@ -61,7 +61,7 @@ Create a new key pair를 선택하여 private key file(*.pem)을 **반드시 다
 
 마지막으로 인스턴스를 생성하면 약간의 시간이 지난 뒤 pending되었던 인스턴스가 초록색의 running으로 바뀌면 자신의 가상 리눅스 서버를 갖게 된다.
 
-## SSH 
+## SSH
 
 상단의 Connect를 누르면 서버에 접속하는 방법이 뜬다. 그대로 하면 되나 먼저 아까 다운로드받은 개인키 파일(wordpress.pem)을 `~/.ssh`로 이동하고 파일 권한을 변경한다.
 
@@ -323,7 +323,7 @@ cp wp-config-sample.php wp-config.php
 nano wp-config.php
 </pre>
 
-워드프레스에서 사용할 데이터베이스 이름, 사용자, 비밀번호를 입력한다. 
+워드프레스에서 사용할 데이터베이스 이름, 사용자, 비밀번호를 입력한다.
 
 ```
 define('DB_NAME', 'wordpress-db');
@@ -366,7 +366,7 @@ mysql>
 앞서 만든 워드프레스 사용자 이름과 비밀번호로 워드프레스가 MySQL 데이터베이스에 접속할때 사용하는 사용자를 만든다.
 
 <pre class="terminal">
-mysql> CREATE USER 'wordpress-user'@'localhost' IDENTIFIED BY 'strong_password'; 
+mysql> CREATE USER 'wordpress-user'@'localhost' IDENTIFIED BY 'strong_password';
 Query OK, 0 rows affected (0.00 sec)
 </pre>
 
@@ -375,21 +375,21 @@ localhost 즉, 리눅스 서버 인스턴스에서만 접근할 수 있도록 �
 워드프레스가 사용할 데이터베이스를 만든다. 데이터베이스 이름을 둘러싼 기호는 백틱`backtick`(`)이다. 표준 키보드에서 Tab 키 위에 틸더(~)와 함께 있다. 백틱으로 감싸면 데이터베이스 이름에 하이픈(-) 등 허용되지 않는 문자를 사용할 수 있다.
 
 <pre class="terminal">
-mysql> CREATE DATABASE `wordpress-db`; 
+mysql> CREATE DATABASE `wordpress-db`;
 Query OK, 1 row affected (0.01 sec)
 </pre>
 
 `wordpress-user` 사용자에게 `wordpress-db` 데이터베이스에 관한 전체 권한을 준다.
 
 <pre class="terminal">
-mysql> GRANT ALL PRIVILEGES ON `wordpress-db`.* TO "wordpress-user"@"localhost"; 
+mysql> GRANT ALL PRIVILEGES ON `wordpress-db`.* TO "wordpress-user"@"localhost";
 Query OK, 0 rows affected (0.00 sec)
 </pre>
 
 MySQL 권한을 새로고침(flush)해서 모든 변경사항이 적용되도록 한다.
 
 <pre class="terminal">
-mysql> FLUSH PRIVILEGES; 
+mysql> FLUSH PRIVILEGES;
 Query OK, 0 rows affected (0.01 sec)
 </pre>
 
@@ -425,7 +425,7 @@ sudo nano /etc/httpd/conf/httpd.conf
 ```
 <Directory "/var/www/html">
 ...
-AllowOverride All 
+AllowOverride All
 ...
 ```
 
@@ -444,12 +444,12 @@ $ sudo service httpd restart
 
 이제 웹브라우져로 `http://54.XXX.XXX.XXX/`인 Public IP로 접속하면 아래와 같은 워드프레스 설치 화면을 볼 수있다.
 
-![워드프레스 최초 설정화면](http://cdn.creativeworksofknowledge.com/wp-content/uploads/2014/08/aws-wordpress04-825x1024.jpg)
+![워드프레스 최초 설정화면](http://cfile2.uf.tistory.com/image/220A853A5380568F263091)
 
 Welcome to WordPress
 
 - WordPress 사이트의 이름을 `[사이트 제목]`에 입력한다.
-- WordPress 관리자의 이름을 `사용자명`에 입력한다. 보안을 위해 사용자의 기본 사용자 이름(admin)보다 어려운 이름을 선택한다. 
+- WordPress 관리자의 이름을 `사용자명`에 입력한다. 보안을 위해 사용자의 기본 사용자 이름(admin)보다 어려운 이름을 선택한다.
 - 강력한 비밀번호를 입력한다.
 - 알림에 사용할 이메일 주소를 입력합니다.
 
@@ -478,7 +478,7 @@ Welcome to WordPress
 
 ## TODO
 
-- [ ] : [디지털오션 서버에 워드프레스 블로그 두 개 설치하기 (왕초보) | SEOULRAIN](http://seoulrain.net/2016/04/18/digitaloceanwordpress/): 멀티 호스트를 비롯한 자세한 설명
+- [ ] : [디지털오션 서버에 워드프레스 블로그 두 개 설치하기 (왕초보)](http://seoulrain.net/2016/04/18/digitaloceanwordpress/): 멀티 호스트를 비롯한 자세한 설명
 - [ ] : [CDN을 이용해 워드프레스 블로그에 쉽게 HTTPS 적용하기](https://blog.iamseapy.com/archives/488): SSL을 적용하자
 
 

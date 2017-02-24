@@ -8,7 +8,7 @@ tags: [cron, event-driven, file-watch, watchman, wiki]
 
 [마크다운 파일로 위키를 관리](https://nolboo.kim/blog/2013/12/17/markdown-wiki-bitbucket-gollum/)하다 보니 깃푸시를 자주해야 하는데 그렇지 못했다. 얼마 전에 심플노트가 오픈소스로 공개하여 다시 심플노트 동기화를 켰더니 크기가 큰 파일 위주로 300여 개의 파일을 삭제하는 [참사](https://nolboo.kim/blog/2014/04/15/how-to-use-markdown/#nvalt-2--)를 당했다. 다행히 동기화를 하기 며칠 전 기존 위키 서비스를 검토하는 과정에서 저장소로 푸시한 것이 있어 거의 복구했다. 다시 되풀이하지 않기 위해서 푸시를 자동화하는 것을 고려했다.
 
-시간 주기(time-driven)로 반복적인 작업을 처리할 때 운영체제에서 기본으로 제공하는 [Cron](https://www.wikiwand.com/en/Cron)을 많이 쓰는 것 같다. [crontab](http://ss64.com/osx/crontab.html)에서 시간 설정하는 법만 눈여겨보면 그리 어렵지 않게 사용할 수 있다. 
+시간 주기(time-driven)로 반복적인 작업을 처리할 때 운영체제에서 기본으로 제공하는 [Cron](https://www.wikiwand.com/en/Cron)을 많이 쓰는 것 같다. [crontab](http://ss64.com/osx/crontab.html)에서 시간 설정하는 법만 눈여겨보면 그리 어렵지 않게 사용할 수 있다.
 
 > - [Mac OS X startup jobs with crontab, er, launchd](http://alvinalexander.com/mac-os-x/mac-osx-startup-crontab-launchd-jobs): 크론 위주로 자세하게 잘 설명되어 있으니 크론 사용하실 분은 참고하세요.(영어)
 
@@ -46,11 +46,11 @@ watchman watch ~/Dropbox/synapse
 watchman -- trigger ~/Dropbox/synapse sync -- ~/Dropbox/synapse/sync.sh
 ```
 
-첫 번째 명령은 watch 서버를 구동시키면서 지정된 폴더를 지켜보도록 한다. 두 번째 명령은 트리거를 생성하여 이름과 후속 명령을 지정한다. `~/Dropbox/synapse`와 `~/Dropbox/synapse/sync.sh` 부분을 자신이 와치하길 원하는 폴더와 명령으로 바꾸면 된다. 
+첫 번째 명령은 watch 서버를 구동시키면서 지정된 폴더를 지켜보도록 한다. 두 번째 명령은 트리거를 생성하여 이름과 후속 명령을 지정한다. `~/Dropbox/synapse`와 `~/Dropbox/synapse/sync.sh` 부분을 자신이 와치하길 원하는 폴더와 명령으로 바꾸면 된다.
 
 > $PATH가 변경되는 것을 와치맨이 인지하지 못하므로 명령어는 절대 경로를 지정하는 것이 좋다. 단, 와치 루트에 트리거 스크립트를 등록했다면 루트의 상대경로를 지정할 수 있다.
 
-실행해보니 500여 개 파일의 폴더에 대해서 3MB 정도의 메모리를 차지하고 속도도 빠르다. 와치맨은 백그라운드로 실행되기 때문에 출력은 `log` 파일에 쌓이고, 모든 와치와 결합한 트리거를 기억하며, `state` 파일에 저장한다. 이 파일들의 위치는 
+실행해보니 500여 개 파일의 폴더에 대해서 3MB 정도의 메모리를 차지하고 속도도 빠르다. 와치맨은 백그라운드로 실행되기 때문에 출력은 `log` 파일에 쌓이고, 모든 와치와 결합한 트리거를 기억하며, `state` 파일에 저장한다. 이 파일들의 위치는
 
 > The default location for logfile will be <STATEDIR>/<USER>.log.
 
@@ -90,7 +90,7 @@ watchman -- trigger ~/Dropbox/synapse sync *.md -- ~/Dropbox/synapse/sync.sh
 
 `*.md` 파일 이외의 파일도 와치할 수 있도록 설정하려면 [설정 파일](https://facebook.github.io/watchman/docs/config.html)을 이용하면 된다.
 
-주로 서버가 참조하는 글로벌 설정 파일은 `/etc/watchman.json`이고 해당 루트 설정 파일은 `.watchmanconfig`이다. 
+주로 서버가 참조하는 글로벌 설정 파일은 `/etc/watchman.json`이고 해당 루트 설정 파일은 `.watchmanconfig`이다.
 
 > 루트라는 것은 트리거를 설정한 폴더를 말하며, 여러 개를 만들 수 있다. 이 포스트에서는 `~/Dropbox/synapse sync` 폴더이다.
 
@@ -169,5 +169,6 @@ watchman watch-del-all
 
 - [How to install and use Watchman – Code Yarns](https://codeyarns.com/2015/02/10/how-to-install-and-use-watchman/) 삭제 방법. 소스 이용.
 - [Watchman » ADMIN Magazine](http://www.admin-magazine.com/Archive/2015/26/Look-for-file-changes-and-kick-off-actions-with-Watchman/) 자세한 시리즈 글
+- [kimmobrunfeldt/chokidar-cli: Fast cross-platform cli utility to watch file system changes](https://github.com/kimmobrunfeldt/chokidar-cli) 와치맨이 CPU를 많이 소모하는 버그를 가지고 있어 대체재로 고려.
 
 
