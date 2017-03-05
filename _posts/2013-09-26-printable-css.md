@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "CSS로 웹사이트를 인쇄가능하게 만들기" 
+title: "CSS로 웹사이트를 인쇄가능하게 만들기"
 description: "웹페이지를 이쁘게 인쇄할 수 있도록 CSS를 코딩하는 방법을 번역"
 category: blog
 tags: [css, print]
@@ -23,7 +23,7 @@ Step 01. Getting started
 
 웹페이지는 무한대로 스크롤할 수 있지만, 인쇄된 페이지는 종이 크기에 제한된다. 웹페이지가 비디오, 오디오, 접촉을 통한 피드백도 가능한 접근성을 갖는 반면, 인쇄된 페이지는 철저히 보는 매체이다. 웹페이지는 비트맵 데이타(사진, 그래픽)와 벡터 데이타(서체, SVG)를 표현할 수 있지만, 일단 인쇄되면 종이 위에 비트맵 데이타일 뿐이다. 웹페이지는 인터랙티브하고 스크린 상의 엘리먼트를 변경할 수 있지만, 인쇄된 페이지는 그렇지 않다. 이러한 것들이 인쇄된 페이지의 컨텐츠에 대한 결정을 하는 요인이 되기 때문에 모두 기억해두는 것이 유용할 것이다.
 
-![](http://media.creativebloq.futurecdn.net/sites/creativebloq.com/files/images/2013/05/Hannah/01(67).jpg)  
+![](http://media.creativebloq.futurecdn.net/sites/creativebloq.com/files/images/2013/05/Hannah/01(67).jpg)
 **파이어폭스 테스크탑 브라우저에 본 예제 페이지. 오래 되었지만 아직 인쇄할만한다.**
 
 페이지를 볼 때 사용자가 보길 원하는 것은 단 하나: 컨텐츠. 내 사이트이므로, 사용자가 인쇄할 때 유지해야할 페이지 상의 엘리먼트를 확실하게 하고 싶다:
@@ -65,7 +65,7 @@ Step 02. Make a home for print styles
 
 이 방법은 추가적인 HTTP 요청과 관련이 있다. 브라우저는 페이지를 렌더링할 때 프린트 스타일이 필요하지 않으나, 대부분 모든 CSS 화일을 내려받기 전 까지는 페이지를 렌더링하지 않을 것이다; 오페라는 예외이다. 게다가, 최신 브라우저는 모든 화일이 다운로드되기 전까지는 어떤 온로드 이벤트를 작동하지 않는다. 프린트 스타일은 매우 적은 선언만을 포함할 수 있기 때문에 화일을 분리한다고 해서 추가적인 HTTP 오버헤드와 렌더링 지연이나 이벤트 작동을 고려할 필요가 그리 잦은 것은 아니다.
 
-![](http://media.creativebloq.futurecdn.net/sites/creativebloq.com/files/images/2013/05/Hannah/02(63).jpg)  
+![](http://media.creativebloq.futurecdn.net/sites/creativebloq.com/files/images/2013/05/Hannah/02(63).jpg)
 **파이어폭스에서 PDF로 인쇄한 동일한 페이지. 몇 개가 사라지고 레이아웃이 단순해진 것을 볼 수 있다.**
 
 Step 03. Applying the styles
@@ -120,7 +120,7 @@ Step 03. Applying the styles
 
 다섯번째 목표는 문맥에 따른 링크의 전체 주소를 보여주는 것이다. 모든 링크 뒤에 주소를 포함하곤한다: 그러나, 몇몇 링크 주소를 믿을 수 없이 긴 - 사용자가 다시 타이핑할 수 없을 정도로 - 문제가 있을 수 있다.
 
-![](http://media.creativebloq.futurecdn.net/sites/creativebloq.com/files/images/2013/05/Hannah/03(58).jpg)  
+![](http://media.creativebloq.futurecdn.net/sites/creativebloq.com/files/images/2013/05/Hannah/03(58).jpg)
 **크롬에서 인쇄 미리보기 대화 상자. 모든 인쇄 미리보기에서와 같이, 예상한 것에 대한 빠른 아이디어를 제공한다.**
 
 하이퍼링크를 보여주기로 하였다면, 컨텐츠에 따라 제한하고 - 이동경로와 푸터에선 URL을 보여주지 않는다 - 가능하면 이미지에서 제외한 것 등을 기억하는 것이 중요하다.
@@ -199,7 +199,7 @@ body {
 -	서체 크기를 재설정하고 텍스트를 검정색으로 설정한다.
 -	페이지의 `<abbr>`과 `<acronym>` 타이틀 속성 값을 입력한다.(이미지의 `alt text`와 같은 엘리먼트에도 사용할 수 있지만, 적당한 것은 아니다.)
 
-![](http://media.creativebloq.futurecdn.net/sites/creativebloq.com/files/images/2013/05/Hannah/04(61).jpg)  
+![](http://media.creativebloq.futurecdn.net/sites/creativebloq.com/files/images/2013/05/Hannah/04(61).jpg)
 **다른 종이 크기에서 테스트해야 한다. 랜드스케이프는 보기도 쉽고, 크기 조절 문제를 빠르게 테스트할 수 있게 한다.**
 
 Step 04. Further tweaks
@@ -215,7 +215,7 @@ Step 04. Further tweaks
 
 인쇄 페이지에서 그것들을 같이 제거하는 것을 원할 것이다. 그렇지 않으면, 임베딩된 유투브 디비오는 많은 공간을 차지하거나 여백으로 나타날 것이다.
 
-![](http://media.creativebloq.futurecdn.net/sites/creativebloq.com/files/images/2013/05/Hannah/05(59).jpg)  
+![](http://media.creativebloq.futurecdn.net/sites/creativebloq.com/files/images/2013/05/Hannah/05(59).jpg)
 **어떤 유저는 페이지를 쉽게 읽게 하기위해 텍스트 크기를 키울 수 있다. 스타일을 조정할 필요가 있는지 이런 것을 테스트해라.**
 
 Step 05. Testing
@@ -225,4 +225,5 @@ Step 05. Testing
 
 ## 추가링크
 
--	[CSS: The Perfect Print Stylesheet - NOUPE](http://www.noupe.com/design/css-perfect-print-stylesheet-98272.html)
+- [CSS: The Perfect Print Stylesheet - NOUPE](http://www.noupe.com/design/css-perfect-print-stylesheet-98272.html)
+- [BafS/Gutenberg: Modern framework to print the web correctly.](https://github.com/BafS/Gutenberg)

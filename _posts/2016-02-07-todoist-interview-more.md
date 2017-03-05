@@ -145,4 +145,5 @@ Todoist는 기록을 보니 2014년 4월에 접해서 본격적으로 사용한 
 * [53 Productivity Ideas from 3 of The Best Books on Getting Things Done](http://alltopstartups.com/2015/10/13/actionable-ideas-on-work-and-productivity/)
 * [어떤 구글직원의 시간관리](https://brunch.co.kr/@jade/98)
 * [싱글태스킹이 가장 훌륭한 경쟁력인 이유(그리고 능력있는 싱글태스커가 되는 19가지 방법)](https://blog.todoist.com/ko/2015/09/25/why-single-tasking-is-your-greatest-competitive-advantage/)
+* [하루 20 분 동안 이메일을 보내는 마음가짐 가이드](https://zenhabits.net/email/)
 
