@@ -97,6 +97,7 @@ mackup으로 환경설정을 복원했다면 이 때 아래 패키지들이 한�
 - [VLC media player](http://www.videolan.org/vlc/download-macosx.html)
 - [곰플레이어](http://gom2.gomtv.com/release/gom_player_mac.htm)
 - [Scrivener](https://www.literatureandlatte.com/download_mac.php): [Scrivener 튜토리얼 가이드 한글번역본](http://macnews.tistory.com/2494)
+- [개인용 핫스팟 사용 시 데이터가 줄줄 새는 것을 막아 주는 TripMode](http://macnews.tistory.com/3322)
 
 ### 앱스토어
 
