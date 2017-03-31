@@ -144,4 +144,5 @@ Vim에는 이동과 관련된 명령이 많이 준비되어 있다. 만약 위�
 - [Vim에 대해 점진적으로 학습하기](http://www.mimul.com/pebble/default/2014/07/15/1405420918073.html)
 - [VIM Adventures](http://vim-adventures.com/): 게임으로 배우는 Vim
 - [Vimdoc : the online source for Vim documentation](http://vimdoc.sourceforge.net/)
+- [Why Vim?](http://jaywon.org/why-vim/)
 
