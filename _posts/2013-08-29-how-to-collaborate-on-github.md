@@ -20,12 +20,12 @@ tags: [collaboration, git, github, project]
 
 깃허브의 일반적인 워크플로우는 꽤 단순하다.
 
-1. 자신의 계정으로 target 저장소를 fork한다. 
-2. 로컬 컴퓨터에 저장소를 clone한다. 
-3. “topic 브랜치”로 check out하고 소스를 변경한다. 
-4. 자신의 fork에 topic 브랜치를 push한다. 
-5. 토론을 통해 pull request를 만들기위해 깃허브의 diff 뷰어를 사용한다. 
-6. 요청된 변경을 만든다. 
+1. 자신의 계정으로 target 저장소를 fork한다.
+2. 로컬 컴퓨터에 저장소를 clone한다.
+3. “topic 브랜치”로 check out하고 소스를 변경한다.
+4. 자신의 fork에 topic 브랜치를 push한다.
+5. 토론을 통해 pull request를 만들기위해 깃허브의 diff 뷰어를 사용한다.
+6. 요청된 변경을 만든다.
 7. pull 요청이 (보통 master 브랜치 안으로) merge되고 topic 브랜치는 upstream(target) 저장소에서 지워진다.
 
 워크플로우에서 각 프로젝트마다 많은 차이가 있다. 예로, topic 브랜치의 이름 규약은 서로 다르다. 어떤 프로젝트는 깃허브 이슈의 ID #가 345일 때 `bug_345`와 같은 규약을 사용한다. 어떤 프로젝트에선 더 짧은 커밋 메시지를 선호한다.
@@ -129,4 +129,4 @@ pull 요청만이 공헌할 수 있는 유일한 방법이라고 생각하지 �
    [6]: http://cdn.tutsplus.com/net/uploads/2013/08/compare_pull_request.png
    [7]: http://cdn.tutsplus.com/net/uploads/2013/08/switch_branches.png
    [8]: http://zachholman.com/talk/how-github-uses-github-to-build-github/
-  
+
