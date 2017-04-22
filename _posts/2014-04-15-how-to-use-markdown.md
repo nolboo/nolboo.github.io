@@ -208,6 +208,7 @@ ST3와 [Bitbucket](https://bitbucket.org)을 이용하여 *마크다운 문법�
 * [마크다운(Markdown)으로 글을 써보자](http://blog.kalkin7.com/2014/02/10/lets-write-using-markdown/)
 * [ONE™의 노트작성 레시피](http://macnews.tistory.com/2008)
 * [How I use nvALT - 한량넷](http://halryang.net/How-I-Use-nvALT/)
-* [Vim에서 한글 입출력 - @n0lb00's Blog](http://localhost:4000/blog/2016/11/07/vim-korean/)
+* [Vim에서 한글 입출력](http://localhost:4000/blog/2016/11/07/vim-korean/)
+* [마크다운을 웹페이지로 만들어주는 Markserv](http://blog.kichul.co.kr/2017-03-30-markserv/)
 * [TextBundle.org!](http://textbundle.org/)
 
