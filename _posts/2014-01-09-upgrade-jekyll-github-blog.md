@@ -106,7 +106,7 @@ tags: [jekyll, blog, liquid, pagination, tag, category]
 
 아래와 같은 순서로 구현하는 것을 설명해 놓았는데:
 
-1. `search.json`과 `post.json`을 만들어 각 포스트의 태그를 포함하는 일종의 데이타베이스 역할을 하는 화일을 만다.
+1. `search.json`과 `post.json`을 만들어 각 포스트의 태그를 포함하는 일종의 데이타베이스 역할을 하는 화일을 만든다.
 2. 각 태그 검색의 결과 페이지인 `search.html`을 만든다.
 3. 필요한 자바스크립트를 적용한다.
 
