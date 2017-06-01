@@ -1,7 +1,7 @@
 ---
-layout: post 
-title: "파이썬을 배우는 최고의 방법" 
-description: "파이썬을 배우는 최고의 방법을 설명한 Tuts+의 글의 요약 번역" 
+layout: post
+title: "파이썬을 배우는 최고의 방법"
+description: "파이썬을 배우는 최고의 방법을 설명한 Tuts+의 글의 요약 번역"
 category: blog
 tags: [python, beginner, guide]
 ---
@@ -144,3 +144,4 @@ Python Imaging Library (PIL)는 이미지를 다루는 모든 일에 훌륭하�
 -	[Full Stack Python의 'Best Python Resources'를 공부하면서 나름대로 정리한 자료](http://www.sangkon.com/2015/09/16/best_python_resources_kor/)
 -	[20 Best Free Tutorials to Learn Python: PDFs, eBooks, Online](http://noeticforce.com/best-free-tutorials-to-learn-python-pdfs-ebooks-online-interactive)
 -	[어떻게 무료로 데이터 과학자가 될 수 있는지](http://sbislab.tistory.com/entry/%EC%96%B4%EB%96%BB%EA%B2%8C-FREE1%EC%97%90-%EB%8C%80%ED%95%9C-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EA%B3%BC%ED%95%99%EC%9E%90%EA%B0%80-%EB%90%A0-%EC%88%98-%EC%9E%88%EB%8A%94%EC%A7%80)
+- [Python for JavaScript Developers](https://dev.to/underdogio/python-for-javascript-developers?imm_mid=0f18e5&cmp=em-prog-na-na-newsltr_20170513)
