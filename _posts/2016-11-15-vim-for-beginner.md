@@ -12,7 +12,7 @@ tags: [vim, macvim, beginner]
 
 아래 그림도 풍자이긴 하지만 꾸준히 회자하고 있는 주요 에디터 학습 곡선 그래프이다. Vim은 한가운데에 있다.
 
-![editor learning curves](http://www.manuelmagic.me/resources/Geek/Text-editors/text_editors.jpg)
+![editor learning curves](/images/posts/editor-learning-curves.jpeg)
 
 세상에! 뭔 그래프가 직각이냐!! 처음에 저 수준까지 배우지 않으면 하나도 이용하지 못한다는 얘기인가?
 
