@@ -260,7 +260,6 @@ git push origin master // 깃허브로 푸시한다.
 ## Git Resources
 
 * [깃(?)똥차게 좋은 GIT 기초](http://slowalk.tistory.com/2470)
-* [GIT - 생활코딩](https://opentutorials.org/course/1492). 이보다 더 잘 설명한 한글 동영상 강좌를 본 적이 없다!
 * [어떻게 깃을 사용하는지 빠르게 알아봅시다](https://github.com/KennethanCeyer/tutorial-git)
 * [Git, 가장 쉽게 사용하기 - (1) 심플함이 답이다](http://blog.naver.com/PostView.nhn?blogId=tmondev&logNo=220759303637&redirect=Dlog), [Git, 가장 쉽게 사용하기 - (2) commit, branch 전략 잘 짜는 법](http://blog.naver.com/PostView.nhn?blogId=tmondev&logNo=220763012361&redirect=Dlog)
 * [Git을 이용한 협업 워크플로우 배우기](http://blog.appkr.kr/learn-n-think/comparing-workflows/)
@@ -275,6 +274,7 @@ git push origin master // 깃허브로 푸시한다.
 * [GitTips - Git SCM Wiki](https://git.wiki.kernel.org/index.php/GitTips)
 * [Git Tutorials and Training - Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials/)
 * 버전관리를 들어본적 없는 사람들을 위한 DVCS - Git : 잘 정리된 슬라이드(역자 추가)
+* [GIT - 생활코딩](https://opentutorials.org/course/1492). 이보다 더 잘 설명한 한글 동영상 강좌를 본 적이 없다!
 * <iframe src="//www.slideshare.net/slideshow/embed_code/37077214" width="427" height="356" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/ibare/dvcs-git" title="버전관리를 들어본적 없는 사람들을 위한 DVCS - Git" target="_blank">버전관리를 들어본적 없는 사람들을 위한 DVCS - Git</a> </strong> from <strong><a href="http://www.slideshare.net/ibare" target="_blank">민태 김</a></strong> </div>
 
 ## GitHub Resource
@@ -284,6 +284,7 @@ git push origin master // 깃허브로 푸시한다.
 * [GitHub 치트 시트](https://github.com/tiimgreen/github-cheat-sheet/blob/master/README.ko.md)
 * [GitHub Glossary][22]. 역자가 추가한 깃허브 공식 용어 사전
 * [Git flow, GitHub flow, GitLab flow](http://ujuc.github.io/2015/12/16/git-flow-github-flow-gitlab-flow/)
+* [초심자를 위한 Github 협업 튜토리얼 (with 토끼와 거북이)](https://milooy.wordpress.com/2017/06/21/working-together-with-github-tutorial/)
 
 
    [1]: http://j.mp/1g3el6I
