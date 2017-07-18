@@ -36,13 +36,11 @@ description: Learn to do, Learn  by doing
 
 <div class="separator"></div>
 
-#### 이 곳에서는 블로그 주제와 상관없이 이야기할 수 있습니다.
+#### 이 곳에서는 주제와 상관없이 이야기할 수 있습니다.
 
 <div class="separator"></div>
 
 <section class="comments">
-  <div class="fb-comments" data-href="{{ site.url }}{{ page.url }}" data-width="100%" data-numposts="5"></div>
-
   <div id="disqus_thread"></div>
     <script type="text/javascript">
         /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
