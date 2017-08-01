@@ -17,6 +17,7 @@ description: Learn to do, Learn  by doing
 - Writing & Publishing Service
 - Learning Map System
 - Expert Network Service
+- Contents Payment System
 
 ### 웹 개발/디자인/기획
 
