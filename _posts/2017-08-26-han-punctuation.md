@@ -399,3 +399,6 @@ tags : [hangul, puctuation]
 
 * [문장 부호 - 위키백과, 우리 모두의 백과사전](https://ko.wikipedia.org/wiki/%EB%AC%B8%EC%9E%A5_%EB%B6%80%ED%98%B8)
 * [Punctuation - Wikipedia](https://en.wikipedia.org/wiki/Punctuation)
+* [2014년 보도 자료와 그림표 - 컴퓨터로 글쓰는 시대에 맞춰… 한글맞춤법 문장부호 26년만에 개정)](http://www.urimal.kr/urimal/intro/coverage.jsp?mode=view&article_no=559) - 아래 표에서 틀린 것을 찾으세요^^
+
+![](/images/posts/han-punctuation.jpg)
