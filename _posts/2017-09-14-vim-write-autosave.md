@@ -72,3 +72,43 @@ let g:auto_save_silent = 1
 같은 명령으로 다시 켤 수 있다. 토글 명령이다.
 
 즐빔!
+
+## 자동 저장 이벤트
+
+AutoSave를 사용할 때 일반 모드 변경이 일어날 때마다 저장하면 매크로를 실행할 때 느려지는 것이 싫을 때가 있다는 제보가 있다. 이럴 때는 [저장 이벤트](https://github.com/907th/vim-auto-save#events)를 지정할 수 있다.
+
+g:auto_save_events 옵션은 앞서 말한 바와 같이 일반 모드 변경(TextChanged)과 입력 모드를 벗어날 때(InsertLeave)가 기본값으로 되어 있다. vimrc 파일에 다음과 같이 입력한 것과 같다.
+
+```vim
+let g:auto_save_events = ["InsertLeave", "TextChanged"]
+```
+
+일반 모드 변경을 빼고 싶다면 다음과 같이 TextChanged를 빼면 된다.
+
+```vim
+let g:auto_save_events = ["InsertLeave"]
+```
+
+Vim이 인식할 수 있는 다른 이벤트들도 추가할 수 있다(:h autocmd-events). AutoSave가 추천하는 이벤트는 입력 모드 변경(TextChangedI), 키를 일정 시간 입력하지 않음(CursorHold, CursorHoldI), 입력 모드 자동 완성(CompleteDone)이 있다. 다만, CursorHold, CursorHoldI는 시간을 1000 이상 설정을 권한다.
+
+## Esc 키매핑
+
+`<Esc>`를 누를 때마다 저장하도록 키매핑하려면 다음을 vimrc 파일에 추가한다.
+
+```vim
+inoremap <silent> <Esc> <Esc>:w<CR>
+```
+
+`<Esc>`키를 누를 때마다 저장된다. `<silent>`는 ":w<CR>" 명령을 보이지 않게 한다. 그러나, 파일 저장 메시지는 보인다. AutoSave에서는 'auto_save_silent' 옵션으로 메시지도 보이지 않게 할 수 있다.
+
+## autowriteall 옵션
+
+사실 Vim 자체에서도 자동 저장 옵션 'autowrite'와 'autowriteall'을 기본 제공하고 있다. ":next", ":make", `<CTRL-O>`와 `<CTRL-I>` 점프 명령과 ":edit", ":quit" 명령을 내릴 때 파일의 변경이 있으면 저장한다.
+
+'autowrite'보다 'autowriteall'이 더 많은 명령을 - 특히 ":e", ":q" - 지원한다. vimrc 파일에 다음을 추가한다.
+
+```vim
+set autowriteall
+```
+
+끝!
