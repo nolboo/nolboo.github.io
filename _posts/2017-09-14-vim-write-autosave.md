@@ -99,7 +99,9 @@ Vim이 인식할 수 있는 다른 이벤트들도 추가할 수 있다(:h autoc
 inoremap <silent> <Esc> <Esc>:w<CR>
 ```
 
-`<Esc>`키를 누를 때마다 저장된다. `<silent>`는 ":w<CR>" 명령을 보이지 않게 한다. 그러나, 파일 저장 메시지는 보인다. AutoSave에서는 'auto_save_silent' 옵션으로 메시지도 보이지 않게 할 수 있다.
+`<Esc>`키를 누를 때마다 저장된다. `<silent>`는 ":w<CR>" 명령을 보이지 않게 한다. 그러나, 파일 저장 메시지는 보인다. 앞서 말한 바와 같이 `<CTRL-S>`와 `<Esc>` 키매핑 방법은 (맥 터미널과 같은) 특정 환경 에서는 제대로 동작하지 않을 때가 있다.
+
+>AutoSave에서는 'auto_save_silent' 옵션으로 저장 메시지도 보이지 않게 할 수 있다.
 
 ## autowriteall 옵션
 
