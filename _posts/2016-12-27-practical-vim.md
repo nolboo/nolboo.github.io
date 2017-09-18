@@ -129,7 +129,6 @@ Improve your writing by deleting excellent adjectives.
 
 excellent로 이동하기 위해서 `fe`를 사용하면 `;`을 세 번이나 더 눌러야 한다. `fx`를 사용한다면 한 번에 원하는 단어로 이동하여 `daw`로 단어를 삭제한다.
 
-
 ### 시리즈 포스트를 한 장의 페이지로도 정리합니다.
 
 * [Practical Vim 2판 정리 페이지](https://nolboo.kim/practical-vim/)

@@ -12,17 +12,22 @@ description: Learn to do, Learn  by doing
 
 ## 주요 비즈니스
 
+### 웹 개발/디자인/기획
+
+- Static Website
+    - 일반 홈페이지 및 멀티 페이지 디자인 및 개발
+    - 이메일, 폼, 맵 플러그인
+
+- WordPress, WooCommerce
+    - 사이트 디자인 및 개발
+    - 플러그인 개발
+
 ### 인터넷 서비스 및 비즈니스 개발
 
 - Writing & Publishing Service
 - Learning Map System
 - Expert Network Service
 - Contents Payment System
-
-### 웹 개발/디자인/기획
-
-- Static Website
-- Wordpress
 
 ### 앱 개발/기획
 

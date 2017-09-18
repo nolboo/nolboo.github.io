@@ -39,7 +39,7 @@ Vim은 문자, 행, 사각형 영역과 동작하는 세 가지 비주얼 모드
 >
 선택 모드`Select Mode`는 내장 문서에서 "마이크로소프트 윈도우에서의 고르기 모드와 닮았다"고 한다(:h Select-mode 참고).
 >
-비주얼 모드와 선택 모드는 `<C-g>`로 전환할 수 있다. 화면 하단에 `-- VISUAL --`과 `-- SELECT --`로 구분할 수 있다. 선택 모드에서 문자를 입력하면 선택된 영역이 지워진 후 입력 모드로 들어가서 문자를 입력할 수 있다. 물론 비주얼 모드에서 `c` 키로 선택 영역을 변경할 수도 있다.
+비주얼 모드와 선택 모드는 `<Ctrl-g>`로 전환할 수 있다. 화면 하단에 `-- VISUAL --`과 `-- SELECT --`로 구분할 수 있다. 선택 모드에서 문자를 입력하면 선택된 영역이 지워진 후 입력 모드로 들어가서 문자를 입력할 수 있다. 물론 비주얼 모드에서 `c` 키로 선택 영역을 변경할 수도 있다.
 >
 Vim의 모달 본성을 좋아한다면 선택 모드는 되도록 사용하지 말아야 한다. 선택 모드를 계속 사용하게되는 시간은 한 가지이다. TextMate의 스니핏 기능을 에뮬레이트하는 플러그인 사용할 때, 선택 모드가 활성화된다.
 >
@@ -50,28 +50,28 @@ Vim은 세 가지 비주얼 모드가 있다. 문자 단위 비주얼 모드에�
 
 #### Enabling Visual Modes
 
-`v` 키는 비주얼 모드로의 통로이다. 일반 모드에서 `v`를 누르면 문자 단위 비주얼 모드, `V`로 행 단위 비주얼 모드, <C-v>로 블록 단위 비주얼 모드를 활성한다.
+`v` 키는 비주얼 모드로의 통로이다. 일반 모드에서 `v`를 누르면 문자 단위 비주얼 모드, `V`로 행 단위 비주얼 모드, `<Ctrl-v>`로 블록 단위 비주얼 모드를 활성한다.
 
-| Command | Effect                             |
-|---------|------------------------------------|
-| v       | Enable character-wise Visual mode  |
-| V       | Enable line-wise Visual mode       |
-| <C-v>   | Enable block-wise Visual mode      |
-| gv      | Reselect the last visual selection |
+| Command    | Effect                             |
+|------------|------------------------------------|
+| v          | Enable character-wise Visual mode  |
+| V          | Enable line-wise Visual mode       |
+| `<Ctrl-v>` | Enable block-wise Visual mode      |
+| gv         | Reselect the last visual selection |
 
 `gv` 명령은 비주얼 모드에서 마지막으로 선택했던 범위를 다시 선택해주는 단축키다. 문자 단위, 행 단위, 블럭 단위인지는 상관없지만, 선택 영역이 지워진 상황에서 사용하면 혼란스러울 수 있다.
 
 #### Switching Between Visual Modes
 
-| Command       | Effect                                                     |
-|---------------|------------------------------------------------------------|
-| <Esc> / <C-[> | Switch to Normal mode                                      |
-| v / V /       | Switch to Normal mode (when used from character-, line- or |
-| <C-v>         | block-wise Visual mode, respectively                       |
-| v             | Switch to character-wise Visual mode                       |
-| V             | Switch to line-wise Visual mode                            |
-| <C-v>         | Switch to block-wise Visual mode                           |
-| o             | Go to other end of highlighted text                        |
+| Command              | Effect                                                     |
+|----------------------|------------------------------------------------------------|
+| `<Esc>` / `<Ctrl-[>` | Switch to Normal mode                                      |
+| v / V /              | Switch to Normal mode (when used from character-, line- or |
+| `<Ctrl-v>`           | block-wise Visual mode, respectively                       |
+| v                    | Switch to character-wise Visual mode                       |
+| V                    | Switch to line-wise Visual mode                            |
+| `<Ctrl-v>`           | Switch to block-wise Visual mode                           |
+| o                    | Go to other end of highlighted text                        |
 
 #### Toggling the Free End of a Selection
 

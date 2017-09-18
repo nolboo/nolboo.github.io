@@ -24,9 +24,9 @@ tags: [practical, vim, tip, beginner, advance]
 
 | Keystrokes | Effect                                |
 |------------|---------------------------------------|
-| <C-h>      | Delete back one character (backspace) |
-| <C-w>      | Delete back one word                  |
-| <C-u>      | Delete back to start of line          |
+| `<Ctrl-h>` | Delete back one character (backspace) |
+| `<Ctrl-w>` | Delete back one word                  |
+| `<Ctrl-u>` | Delete back to start of line          |
 
 이 명령은 입력 모드나 Vim에만 힌정된 것이 아니다. Vim의 명령행은 물론 bash 셸에서도 사용할 수 있다.
 
@@ -36,20 +36,20 @@ tags: [practical, vim, tip, beginner, advance]
 
 | Keystrokes | Effect                       |
 |------------|------------------------------|
-| <Esc>      | Switch to Normal mode        |
-| <C-[>      | Switch to Normal mode        |
-| <C-o>      | Switch to Insert Normal mode |
+| `<Esc>`    | Switch to Normal mode        |
+| `<Ctrl-[>` | Switch to Normal mode        |
+| `<Ctrl-o>` | Switch to Insert Normal mode |
 
 #### Meet Insert Normal Mode
 
 입력-일반 모드는 일반 모드의 특별판이며, 총알 하나만 주는 것이다. 즉, 명령 하나만 발사하고 바로 입력 모드로 돌아온다.
 
-입력 중인 행이 창의 상단 또는 하단에 있을 때 추가 맥락을 보기위해 화면을 스크롤하고 싶을 때 `<C-o>zz`를 자주 사용한다. 입력 모드로 바로 돌아와 끊김없이 타이핑을 계속할 수 있다.
+입력 중인 행이 창의 상단 또는 하단에 있을 때 추가 맥락을 보기위해 화면을 스크롤하고 싶을 때 `<Ctrl-o>zz`를 자주 사용한다. 입력 모드로 바로 돌아와 끊김없이 타이핑을 계속할 수 있다.
 
 ### Tip 15. Paste from a Register Without Leaving Insert Mode
 
 `insert_mode/practical-vim.txt`에서 마지막 줄에 첫 줄의 내용을 복사한 후 붙여넣는다.
-`yt,`로 첫 줄의 ","전까지를 복사하고, `jA `로 이동하고, `<C-r>0`로 레지스터 0의 내용을 붙여넣는다. `.<Esc>`로 마미표를 찍고 일반 모드로 돌아온다.
+`yt,`로 첫 줄의 ","전까지를 복사하고, `jA `로 이동하고, `<Ctrl-r>0`로 레지스터 0의 내용을 붙여넣는다. `.<Esc>`로 마미표를 찍고 일반 모드로 돌아온다.
 
 >
 #### Remap the Caps Lock Key
@@ -59,11 +59,11 @@ Vim 사용자에게 Caps Lock은 골치거리다. Caps Lock이 켜져 있으면 
 많은 사용자들이 Caps Lock 키를 `<Esc>`나 `<Ctrl>`로 재설정한다.
 >
 
-#### Use <C-r>{register} for Character-wise Registers
+#### Use `<Ctrl-r>{register}` for Character-wise Registers
 
 `C-r>{register}` 명령은 입력 모드에서 몇 단어를 붙여넣을 때 편리하다. 레지스터 내용이 많으면, 화면 갱신 전 약간 지연이 있을 수 있다. Vim이 레지스터로부터 한 번에 한 글자씩 삽입하기 때문이다. 'textwidth'나 'autoindent'가 켜져있으면, 원하지않는 개행이나 불필요한 들여쓰기가 추가될 수 있다.
 
-`<C-r><C-p>{register}` 명령이 더 똑똑하다(:h i_CTRL-R_CTRL-P 참고). 여러 줄의 내용이 있는 레지스터를 붙여넣는다면 일반 모드로 전환하고 put 명령을 사용한다.
+`<Ctrl-r><Ctrl-p>{register}` 명령이 더 똑똑하다(:h i_CTRL-R_CTRL-P 참고). 여러 줄의 내용이 있는 레지스터를 붙여넣는다면 일반 모드로 전환하고 put 명령을 사용한다.
 
 ### Tip 16. Do Back-of-the-Envelope Calculations in Place
 
@@ -73,26 +73,26 @@ Vim 사용자에게 Caps Lock은 골치거리다. Caps Lock이 켜져 있으면 
 
 표현식 레지스터는 다르다. Vim 스크립트 코드를 실행하고 그 결과를 돌려준다. 계산기처럼 사용할 수 있다. 1+1과 같은 간단한 산술 표현식을 전달하면 2라는 결과가 나온다. 표현식 레지스터에서 받은 값을 일반 레지스터에 저장된 내용처럼 사용할 수 있다.
 
-표현식 레지스터는 `=` 기호로 참조한다. 입력 모드에서 `<C-r>=`로 접근할 수 있다. 계산하길 원하는 표현식을 입력할 수 있는 프롬프트가 화면 하단에 열린다. 입력을 끝내고 `<CR>`을 누르면 Vim이 현재 위치에 결과를 입력한다.
+표현식 레지스터는 `=` 기호로 참조한다. 입력 모드에서 `<Ctrl-r>=`로 접근할 수 있다. 계산하길 원하는 표현식을 입력할 수 있는 프롬프트가 화면 하단에 열린다. 입력을 끝내고 `<CR>`을 누르면 Vim이 현재 위치에 결과를 입력한다.
 
-`insert_mode/back-of-envelope.txt`에서 `A`로 줄의 끝에서 입력 모드로 전환하고, `<C-r>=6*35<CR>`로 결과값을 입력한다.
+`insert_mode/back-of-envelope.txt`에서 `A`로 줄의 끝에서 입력 모드로 전환하고, `<Ctrl-r>=6*35<CR>`로 결과값을 입력한다.
 
 ### Tip 17. Insert Unusual Characters by Character Code
 
-숫자 코드로 어떤 문자라도 입력할 수 있다. 입력 모드에서 `<C-v>{code}`만 입력하면 된다. 숫자 코드는 3개의 숫자이다. "A"의 문자 코드는 65이며, `<C-v>065`를 입력하면 된다.
+숫자 코드로 어떤 문자라도 입력할 수 있다. 입력 모드에서 `<Ctrl-v>{code}`만 입력하면 된다. 숫자 코드는 3개의 숫자이다. "A"의 문자 코드는 65이며, `<Ctrl-v>065`를 입력하면 된다.
 
-유니코드 기본 다국어 목록은 65,535 문자까지 사용할 수 있는데, 세 자리보다 큰 문자는 4자리의 16진수인 `<C-v>u{1234}`로 입력한다(숫자 앞에 _u_ 를 붙여야 한다). 뒤집어진 물음표 ("¿")는 `<C-v>u00bf`를 입력한다. :h i_CTRL-V_digit 참조.
+유니코드 기본 다국어 목록은 65,535 문자까지 사용할 수 있는데, 세 자리보다 큰 문자는 4자리의 16진수인 `<Ctrl-v>u{1234}`로 입력한다(숫자 앞에 _u_ 를 붙여야 한다). 뒤집어진 물음표 ("¿")는 `<Ctrl-v>u00bf`를 입력한다. :h i_CTRL-V_digit 참조.
 
 커서를 문자 위에 놓고 `ga` 명령을 실행하면 화면 하단에 십진수와 16진수, 8진수 코드를 출력한다(:h ga 참조).
 
-`<C-v>` 명령 뒤에 숫자가 아닌 키를 입력하는 방법도 있다. 'expandtab' 옵션이 활성된 상태에서 `<Tab` 키를 누르면 탭문자 대신 공백 문자를 추가한다. 그러나, `<C-v><Tab>은 탭 문자를 그대로 입력한다.
+`<Ctrl-v>` 명령 뒤에 숫자가 아닌 키를 입력하는 방법도 있다. 'expandtab' 옵션이 활성된 상태에서 `<Tab>` 키를 누르면 탭문자 대신 공백 문자를 추가한다. 그러나, `<Ctrl-v><Tab>`은 탭 문자를 그대로 입력한다.
 
-| Keystrokes          | Effect                                                      |
-|---------------------|-------------------------------------------------------------|
-| <C-v>{123}          | Insert character by decimal code                            |
-| <C-v>u{1234}        | Insert character by hexadecimal code                        |
-| <C-v>{nondigit}     | Insert nondigit literally                                   |
-| <C-k>{char1}{char2} | Insert Unusual Characters by Digraph {char1}{char2} digraph |
+| Keystrokes               | Effect                                                      |
+|--------------------------|-------------------------------------------------------------|
+| `<Ctrl-v>{123}`          | Insert character by decimal code                            |
+| `<Ctrl-v>u{1234}`        | Insert character by hexadecimal code                        |
+| `<Ctrl-v>{nondigit}`     | Insert nondigit literally                                   |
+| `<Ctrl-k>{char1}{char2}` | Insert Unusual Characters by Digraph {char1}{char2} digraph |
 
 Table 3—Inserting Unusual Characters
 
@@ -100,9 +100,9 @@ Table 3—Inserting Unusual Characters
 
 이중자`digraph`로 입력할 수도 있다: 이중자는 기억하기 쉬운 문자쌍이다.
 
-입력 모드에서 `<C-k>{char1}{char2}`를 입력하면 된다. `¿ `를 입력하고 싶다면, `<C-v>?I`를 입력한다.
+입력 모드에서 `<Ctrl-k>{char1}{char2}`를 입력하면 된다. `¿ `를 입력하고 싶다면, `<Ctrl-v>?I`를 입력한다.
 
-이중자에서 사용하는 문자 쌍은 문자를 묘사하게 선택하였으므로 기억하거나 추측하기 쉽다. 예를 들어 겹화살 괄호인 «와 »는 이중자 <<, >>으로 입력할 수 있다; 분수 ½, ¼, ¾는 이중자 12, 14, 34로 입력할 수 있다. Vim 이중자의 기본 목록은 `:h digraphs-default`에 요약되어 있다. `:digraphs`에서 가능한 목록을 볼 수도 있지만 살펴보기 어렵다. `:h digraph-table`로 더 많은 가능한 목록을 볼 수 있다.
+이중자에서 사용하는 문자 쌍은 문자를 묘사하게 선택하였으므로 기억하거나 추측하기 쉽다. 예를 들어 겹화살 괄호인 `«`와 `»`는 이중자 `<<`, `>>`으로 입력할 수 있다; 분수 ½, ¼, ¾는 이중자 12, 14, 34로 입력할 수 있다. Vim 이중자의 기본 목록은 `:h digraphs-default`에 요약되어 있다. `:digraphs`에서 가능한 목록을 볼 수도 있지만 살펴보기 어렵다. `:h digraph-table`로 더 많은 가능한 목록을 볼 수 있다.
 
 ### Tip 19. Overwrite Existing Text with Replace Mode
 
@@ -110,7 +110,7 @@ Table 3—Inserting Unusual Characters
 
 `insert_mode/replace.txt`의 문서 처음에서 `f.`으로 다음 "."으로 이동한다. `R, b<Esc>`로 ". B"를 ", b"로 바꾸어 하나의 문장으로 변경한다.
 
-`<Insert>로 입력 모드와 바꾸기 모드를 전환할 수도 있다.
+`<Insert>`로 입력 모드와 바꾸기 모드를 전환할 수도 있다.
 
 #### Overwrite Tab Characters with Virtual Replace Mode
 

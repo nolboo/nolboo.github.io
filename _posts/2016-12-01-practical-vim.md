@@ -36,8 +36,6 @@ $ vim -u essential.vim
 
 로 실행한다. netrw, 옴니 완성 등을 실행할 수 있다.
 
-`:version`으로 설치된 Vim의 버전과 컴파일 설정을 볼 수 있다.
-
 - [ ] :version 으로 보니 -hangul_input이 포함되지 않고 컴파일되었네??
 
 ## 1. The Vim Way
@@ -149,21 +147,21 @@ Table 1. Repeatable Actions and How to Reverse Them
 
  `*` 명령은 커서 밑의 단어를 찾는다. `/content`로 "content"를 검색할 수도 있다.
 
- 두 번째 "content" 단어에 커서를 놓고 `*`로 세 번째 "content"로 이동한 후 `cw`copy`<Esc>`를 실행하여 "content"를 "copy"로 변경한다. `n`로 첫 번째 "content"로 이동한 후에 `.` 명령을 실행한다.
+두 번째 "content" 단어에 커서를 놓고 `*`로 세 번째 "content"로 이동한 후 `cw`copy`<Esc>`를 실행하여 "content"를 "copy"로 변경한다. `*`로 첫 번째 "content"로 이동한 후에 `.` 명령을 실행한다.
 
- `:set hls`로 검색 하일라이트를 해보라.
+`:set hls`로 검색 하일라이트를 해보라.
 
- "content"를 한번 검색한 후에는 `n` 키로 다음 검색을 진행할 수 있다. 이 경우에는 `*nn`으로 모든 경우를 순환한다.
+"content"를 한번 검색한 후에는 `n` 키로 다음 검색을 진행할 수 있다. 이 경우에는 `*nn`으로 모든 경우를 순환한다.
 
- `cw` 명령은 단어를 지우고 입력 모드로 바꾼다. "copy"를 입력하면 Vim은 입력 모드를 벗어나기 전까지를 기록한다. `cw`copy`<Esc>`가 하나의 변경이다. `.` 명령을 누르면 커서 밑의 단어를 지우고 "copy"를 입력하게 된다.
+`cw` 명령은 단어를 지우고 입력 모드로 바꾼다. "copy"를 입력하면 Vim은 입력 모드를 벗어나기 전까지를 기록한다. `cw`copy`<Esc>`가 하나의 변경이다. `.` 명령을 누르면 커서 밑의 단어를 지우고 "copy"를 입력하게 된다.
 
- `n.n.n.`은 `:%s/content/copy/g`와 같다. 그래서 원하는 경우에만 `.`을 사용한다.
+`n.n.n.`은 `:%s/content/copy/g`와 같다. 그래서 원하는 경우에만 `.`을 사용한다.
 
- ### Tip 6. Meet Dot formular
+### Tip 6. Meet Dot formular
 
- #### 이상적 해결책: 한 키로 이동, 한 키로 실행
+#### 이상적 해결책: 한 키로 이동, 한 키로 실행
 
- 이런 이상적 패턴을 편의상 Dot Fomular라고 말하겠다.
+이런 이상적 패턴을 편의상 Dot Fomular라고 말하겠다.
 
 ### 시리즈 포스트를 한 장의 페이지로도 정리합니다.
 
