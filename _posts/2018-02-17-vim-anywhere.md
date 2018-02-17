@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Vim을 모든 앱에서 사용하는 법"
-description: "Vim에서 저장하는 가장 기초적인 명령과 자동 저장을 할 수 있는 플러그인을 소개한다"
+title: "모든 앱에서 Vim을 사용하는 법 - QuickCursorKM과 vim-anywhere"
+description: "모든 맥앱에서 Vim을 사용하는 방법을 키보드 마에스트로 매크로와 스크립트 두 가지 방법을 소개한다"
 category: blog
-tags: [vi, vim, write, save, tip]
+tags: [vi, vim, tip]
 ---
 
 ![Vim 3D](/images/posts/vim.jpg)

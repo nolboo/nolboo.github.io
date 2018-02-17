@@ -79,6 +79,8 @@ tags: [focus, productivity, classic, music, wihtenoise]
 
 ## 추가링크
 
+* [English :: Audials](https://audials.com/en) 광고 없는 스트리밍 라디오. 웹/iOS/안드/윈도 지원
+* [Tide - Pomodoro & White Noise for Creators](https://tide.moreless.io/en/#slide6): 포모도로와 화이트 노이즈의 결합. 무료 모바일 앱.
 * [ClassicManager](https://classicmanager.com/): 저작권이 만료된 클래식 스트리밍.
 * [저작권과 저작인접권이 모두 만료된 클래식 mp3 음원 모음](http://www.kkacl.com/md)
 * [공부할 때 듣기 좋은 잔잔한 클래식 음악 모음](http://blog.naver.com/beeman11/220331507676)

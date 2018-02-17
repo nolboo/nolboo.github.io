@@ -10,20 +10,28 @@ description: Learn to do, Learn  by doing
 
 내면에서 발생하는 호기심을 따라 이리저리 여행하는 지식 방랑자.
 
+## 주특기
+
+한달의 시간만 주어지면 새 비즈니스를 만들어 낸다.
+
 ## 주요 비즈니스
 
-### 웹 개발/디자인/기획
+### Web Business
+
+#### 웹사이트 구축
 
 - Static Website
-    - 일반 홈페이지 및 멀티 페이지 디자인 및 개발
-    - 이메일, 폼, 맵 플러그인
+- WordPress, WooCommerce Developement
 
-- WordPress, WooCommerce
-    - 사이트 디자인 및 개발
-    - 플러그인 개발
+#### 온라인 마케팅 컨설팅 및 운영 대행
+
+- Search Engine Optimization
+- Facebook, Instagram Marketing
+- Data-based Analystics
 
 ### 인터넷 서비스 및 비즈니스 개발
 
+- 인터넷 비즈니스 코칭 및 모델 개발
 - Writing & Publishing Service
 - Learning Map System
 - Expert Network Service
