@@ -32,3 +32,11 @@ tags: [youtube, rss, feed, subscribe]
 
 끝!
 
+---
+
+## 2018년3월25일 추가
+
+* `https://www.youtube.com/feeds/videos.xml?channel_id=` 이후에 원하는 채널 아이디를 추가하면 됩니다.
+* 채널 아이디는 원하는 채널의 홈 URL의 `https://www.youtube.com/channel/` 다음에 나오는 아이디입니다.
+
+
