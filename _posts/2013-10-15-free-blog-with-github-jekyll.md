@@ -244,7 +244,6 @@ title: Blogging Like a Hacker
 - <mark>[지킬 공식 사이트 한글 번역](http://svperstarz.github.io/jekyll-docs-ko/)</mark>
 - [지킬 테마 모음](http://jekyllthemes.org/)
 - [Notepad: Notepad is a Jekyll theme which is very simple, clean and beautiful](https://github.com/hmfaysal/Notepad)   
-- Sass기반 지킬 블로그 테마: [머핀](http://www.richbray.me/muffin/)
 - 지킬 기반 블로그 플랫폼
     1.	[옥토프레스](http://octopress.org/) : 이 블로그는 여러 편의 때문에 옥토프레스로 먼저 만들어졌다. 설치방법은 [옥토프레스로 블로깅하기](http://j.mp/1b4M9AD) 참조.
     2.  [지킬 부트스트랩](http://jekyllbootstrap.com/)
